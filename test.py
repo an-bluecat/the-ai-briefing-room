@@ -22,12 +22,10 @@ Attributes Json Example
 }
 '''
 
-article = NewsPlease.from_url('https://matduggan.com/why-cant-my-mom-email-me/')
+article = NewsPlease.from_url(
+    'https://matduggan.com/why-cant-my-mom-email-me/')
 print(article)
 print(article.title)
 print(article.authors)
 print(article.date_publish)
 print(article.maintext)
-
-
-
