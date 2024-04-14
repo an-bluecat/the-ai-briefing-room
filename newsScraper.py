@@ -58,3 +58,21 @@ def scrape_techcrunch(current_date):
     articles = [[item.text.strip(), item.a['href']] for item in items if is_today(item.a['href'], current_date)]    
     return articles
 
+
+
+
+if __name__ == '__main__':
+    
+    #today = datetime.date.today()
+    today = datetime.date(2024, 4, 12)
+    print(today)
+
+    all_news = scrape_verge(today) + scrape_cnbctech(today) + scrape_techcrunch(today)
+    
+    print(len(all_news))
+    
+    for news in all_news:
+        print(news)
+        
+        
+
