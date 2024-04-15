@@ -17,6 +17,8 @@ TEXT_MODEL = "gpt-4-turbo-preview"
 MAX_RETRIES = 1
 RETRY_DELAY = 2  # seconds in case of retries
 OUTPUT_DIRECTORY = './output/'  # Default output directory for files
+PRODUCTION_MODE = False  # Set to True to enable audio file generation
+
 
 class NewsPodcastOrchestrator:
     """ Orchestrates the creation of a podcast script from scraped news, using OpenAI's GPT models. """
@@ -69,6 +71,11 @@ class NewsPodcastOrchestrator:
             logging.error(f"Failed to convert text to speech: {e}")
             return None
 
+    def generate_podcast_title(self, transcript):
+        """ Generates a podcast title from the provided transcript. """
+        input_ask = "Generate a title for this podcast. Include no more than three key topics (if there are many, choose the three most important ones). Incorporate emojis where appropriate. Follow the style of titles such as: 'Tesla Showcases FSD Demo 🚗, Adam Neuman's WeWork Bid 💰, CSV Conundrums 🖥️','Anthropic’s $4B Amazon Boost 💰, Brex's Valuation Leap to $12B 💳, Strategies for Success ✨','The OpenAI Voice Revolution 🗣️, AI Safety Measures 🦺, LLMs Go Mobile 📱'. Here's the transcript excerpt: " + transcript
+        return self.ask_gpt(input_ask)
+
 
 # Example usage:
 if __name__ == "__main__":
@@ -91,22 +98,27 @@ if __name__ == "__main__":
     top_news = orchestrator.get_top_news(titles)
     if top_news:
         script = orchestrator.generate_podcast_script(top_news)
-        if script:
-            audio_file_path = orchestrator.text_to_speech(
-                script, output_directory)
-            if audio_file_path:
-                logging.info(
-                    f"Podcast production completed successfully. Audio file at: {audio_file_path}")
+        podcast_title = orchestrator.generate_podcast_title(script)
+        if script and podcast_title:
+            if PRODUCTION_MODE:
+                audio_file_path = orchestrator.text_to_speech(
+                    script, output_directory)
+                if audio_file_path:
+                    logging.info(
+                        f"Podcast production completed successfully. Audio file at: {audio_file_path}")
 
+                # Prepare the output text data
+                output_data = f"Titles:\n{chr(10).join(titles)}\n\nTop News:\n{chr(10).join(top_news)}\n\nScript:\n{script}\n\nPodcast Title:\n{podcast_title}\n"
                 output_file_path = f"{OUTPUT_DIRECTORY}podcast_data_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.txt"
+
+                # Write the output data to the file
                 with open(output_file_path, 'w') as file:
-                    file.write("Titles:\n" + "\n".join(titles) + "\n\nTop News:\n" +
-                               "\n".join(top_news) + "\n\nScript:\n" + script)
+                    file.write(output_data)
                     logging.info(f"All data saved to {output_file_path}.")
 
             else:
                 logging.error("Failed to generate audio file.")
         else:
-            logging.error("Failed to generate podcast script.")
+            logging.error("Failed to generate podcast script or title.")
     else:
         logging.error("Failed to identify top news.")
