@@ -23,6 +23,7 @@ def is_today(date_input, current_date):
                 return parsed_date == current_date
         except ValueError as e:
             print(f"Error parsing date: {e}")
+            return False
     return False
 
 
@@ -58,7 +59,7 @@ def scrape_cnbctech(current_date):
                 date_object = datetime.datetime.strptime(
                     date_str, '%a, %b %d %Y')
             except ValueError as e:
-                print(f"Error parsing date: {e}")
+                print(f"Error parsing date: {e}, treating as today")
                 date_object = datetime.datetime.today()
             if is_today(date_object, current_date):
                 articles.append([title, link])
@@ -78,18 +79,35 @@ def scrape_techcrunch(current_date):
 
 
 def classify_titles(titles):
-    prompt_text = "Being accurate and specific as possible, group the following news titles by the event they discuss:\n\n" + \
+    prompt_text = "You are classifying news titles together into specific events. Be as accurate and specific as possible. Group the following news titles by the particular event they discuss:\n\n" + \
         "\n".join(f"{i+1}. {title}" for i, title in enumerate(titles))
    # print((prompt_text))
     try:
         response = client.chat.completions.create(
             model=TEXT_MODEL,
             messages=[
-                {"role": "system", "content": "You are classifying news titles together into specific events. Output the response as a dictionary of specific event names and the titles that belong to them."},
+                {"role": "system", "content": "Output the response as a dictionary of specific event names and the titles that belong to them."},
                 {"role": "user", "content": prompt_text}
             ]
         )
         print(response)
+        output = response.choices[0].message.content
+        return output
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return None
+    
+def select_events(titles):
+    prompt_text = "You are trying to select most popular news that people will read. Based on the frequency of the event titles and the importance of the event itself, select top 5 news events and return the title of the event from the json.:\n\n" + \
+        "\n".join(f"{i+1}. {title}" for i, title in enumerate(titles))
+    try:
+        response = client.chat.completions.create(
+            model=TEXT_MODEL,
+            messages=[
+                {"role": "system", "content": " Output the response as string titles seperated by newline that are most important."},
+                {"role": "user", "content": prompt_text}
+            ]
+        )
         output = response.choices[0].message.content
         return output
     except Exception as e:
@@ -103,20 +121,26 @@ if __name__ == '__main__':
     client = OpenAI()
     client.api_key = os.getenv('OPENAI_API_KEY')
 
-    # today = datetime.date.today()
-    today = datetime.date(2024, 4, 12)
+    today = datetime.date.today()
+   # today = datetime.date(2024, 4, 12)
    # print(today)
 
     all_news = scrape_verge(
         today) + scrape_cnbctech(today) + scrape_techcrunch(today)
-    titles = [news[0] for news in all_news]
+    #print(all_news)
+    titles = [str(news[0]) for news in all_news]
+    news_to_URL = {news[0]: news[1] for news in all_news}
 
     grouped_titles = classify_titles(titles)
-    # grouped_titles = True
+    selected_events = select_events(grouped_titles).split("\n")
+    
+    #print(selected_titles)
+    
     if grouped_titles:
-        print(grouped_titles)
+        #print(grouped_titles)
         # Prepare output data
-        output_data = f"Titles:\n{chr(10).join(titles)}\n\nall_news:\n{chr(10).join(all_news)}\n\ngrouped_titles:\n{grouped_titles}\n"
+       # output_data = f"Titles:\n{chr(10).join(titles)}\n\nall_news:\n{chr(10).join(all_news)}\n\ngrouped_titles:\n{grouped_titles}\n"
+        output_data = f"Titles:\n{chr(10).join(titles)}\n\ngrouped_titles:\n{grouped_titles}\n\nselected_events:\n{selected_events}\n"
         output_file_path = f"{OUTPUT_DIRECTORY}grouped_title_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.txt"
 
         # Write output data to file
@@ -125,3 +149,5 @@ if __name__ == '__main__':
 
     else:
         print("Failed to group the titles.")
+
+
