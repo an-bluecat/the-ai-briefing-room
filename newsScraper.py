@@ -113,6 +113,42 @@ def select_events(titles):
     except Exception as e:
         print(f"An error occurred: {e}")
         return None
+    
+    
+# below functions are for grouping by source
+def scrape_and_group_by_source(current_date):
+    sources = {
+        'TechCrunch': scrape_techcrunch(current_date),
+        'The Verge': scrape_verge(current_date),
+        'CNBC Tech': scrape_cnbctech(current_date),
+    }
+
+    return sources
+
+def format_grouped_titles_by_source(grouped_sources):
+    formatted_text = ""
+    for source, articles in grouped_sources.items():
+        formatted_text += f"{source}\n" + "\n".join(title for title, _ in articles) + "\n\n"
+    return formatted_text.strip()
+
+def select_events_by_source(titles):
+    
+    prompt_text = "You are creating newsletters for audience. From the list of sources and their news, select the top 5 news events that you would include in the newsletter.:\n\n" + \
+        "\n Grouped By Source:\n"+ titles
+    
+    try:
+        response = client.chat.completions.create(
+            model=TEXT_MODEL,
+            messages=[
+                {"role": "system", "content": " Output the response as string titles seperated by newline that are most important."},
+                {"role": "user", "content": prompt_text}
+            ]
+        )
+        output = response.choices[0].message.content
+        return output
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return None
 
 
 if __name__ == '__main__':
@@ -120,34 +156,50 @@ if __name__ == '__main__':
     TEXT_MODEL = "gpt-4-turbo-preview"
     client = OpenAI()
     client.api_key = os.getenv('OPENAI_API_KEY')
-
-    today = datetime.date.today()
-   # today = datetime.date(2024, 4, 12)
+    group_by_source = True  # Change to true for new mode
+    #today = datetime.date.today()
+    today = datetime.date(2024, 4, 16)
    # print(today)
-
     all_news = scrape_verge(
-        today) + scrape_cnbctech(today) + scrape_techcrunch(today)
-    #print(all_news)
+            today) + scrape_cnbctech(today) + scrape_techcrunch(today)
     titles = [str(news[0]) for news in all_news]
     news_to_URL = {news[0]: news[1] for news in all_news}
-
-    grouped_titles = classify_titles(titles)
-    selected_events = select_events(grouped_titles).split("\n")
-    
-    #print(selected_titles)
-    
-    if grouped_titles:
-        #print(grouped_titles)
-        # Prepare output data
-       # output_data = f"Titles:\n{chr(10).join(titles)}\n\nall_news:\n{chr(10).join(all_news)}\n\ngrouped_titles:\n{grouped_titles}\n"
-        output_data = f"Titles:\n{chr(10).join(titles)}\n\ngrouped_titles:\n{grouped_titles}\n\nselected_events:\n{selected_events}\n"
-        output_file_path = f"{OUTPUT_DIRECTORY}grouped_title_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.txt"
-
-        # Write output data to file
-        with open(output_file_path, 'w') as file:
-            file.write(output_data)
+   
+   
+    if group_by_source:
+        grouped_sources = scrape_and_group_by_source(today)
+        formatted_text = format_grouped_titles_by_source(grouped_sources)
+        prompt_text = "You are creating newsletters for audience. From the list of sources and their news, consider the frequency of the event being discussed and how interesting audience find them to be. Then, select the top 5 news events that you would include in the newsletter:\n\n" + \
+        "Grouped By Source:\n"+ formatted_text
+        
+        news_titles = select_events_by_source(formatted_text)
+        print(news_titles)
+        output_data = f"Titles:\n{chr(10).join(titles)}\n\nselected_news:\n{news_titles}\n"
+        output_file_path = f"{OUTPUT_DIRECTORY}grouped_by_source{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.txt"
 
     else:
-        print("Failed to group the titles.")
+       
+        #print(all_news)
+       
+
+        grouped_titles = classify_titles(titles)
+        selected_events = select_events(grouped_titles).split("\n")
+        
+    
+    
+        if grouped_titles:
+            #print(grouped_titles)
+            # Prepare output data
+        # output_data = f"Titles:\n{chr(10).join(titles)}\n\nall_news:\n{chr(10).join(all_news)}\n\ngrouped_titles:\n{grouped_titles}\n"
+            output_data = f"Titles:\n{chr(10).join(titles)}\n\ngrouped_titles:\n{grouped_titles}\n\nselected_events:\n{selected_events}\n"
+            output_file_path = f"{OUTPUT_DIRECTORY}grouped_by_event{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.txt"
+
+        else:
+            print("Failed to group the titles.")
+            
+            
+    # Write output data to file
+    with open(output_file_path, 'w') as file:
+        file.write(output_data)
 
 
