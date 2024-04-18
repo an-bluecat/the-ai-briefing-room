@@ -1,0 +1,64 @@
+prompt:
+Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance. Here are the news of today:\n\n" + \
+
+Titles:
+Logitech wants you to press its new AI button
+Coding bootcamp Lambda School — now BloomTech — is finally getting punished
+Twitch is bringing its TikTok-style feed to everyone this month
+Sega is turning Golden Axe into an animated series
+TikTok to restrict users who repeatedly post problematic topics from ‘For You’ feed
+A real privacy law? House lawmakers are optimistic this time
+TikTok Notes starts rolling out as a new rival to Instagram
+The Pixel 7A is a knockout at its record-low $349
+Boston Dynamics’ new Atlas robot is a swiveling, shape-shifting nightmare
+Apple TV Plus’ For All Mankind is getting a fifth season and a new spinoff series
+Samsung’s art-inspired Frame TVs are up to $1,000 off right now
+The free Delta game emulator for iPhones is live on Apple’s App Store
+Amazon insists Just Walk Out isn’t secretly run by workers watching you shop
+Nine Google employees arrested after eight-hour sit-in protest
+Visible’s new annual plans cut the price on a full year of service
+Netflix’s Sweet Tooth returns for season 3 in June
+Comcast rolls out ‘Now’ prepaid phone and internet plans
+Sony might have perfected Mini LED TVs with its new 2024 lineup
+Stability AI is giving more developers access to its next-gen text-to-image generator
+NASA has greenlit plans to send a giant drone to Saturn’s largest moon
+Tesla is laying off 285 employees in Buffalo, New York as part of a broad restructuring
+Google workers arrested after nine-hour protest in cloud chief's office
+Google restructures finance team as part of AI shift, CFO tells employees in memo
+ASML earnings drag semiconductor stocks lower
+Amazon starts selling smart grocery carts to other retailers
+Amazon cloud kills Snowmobile data transfer truck eight years after driving it onstage
+Tesla asks shareholders to vote again on Musk's $56 billion payout
+Apple will 'look at' manufacturing in Indonesia, CEO Cook says
+Shares of critical chip firm ASML drop 5% as sales miss expectations with 22% fall
+Consumer Financial Protection Bureau fines BloomTech for false claims
+7 Waymo robotaxis block traffic to San Francisco freeway on-ramp
+Ramp raises another $150M co-led by Khosla and Founders Fund at a $7.65B valuation
+Alphabet X’s Bellwether harnesses AI to help predict natural disasters
+Don’t blame MKBHD for the fate of Humane AI and Fisker
+Dark is building a rocket-powered boxing glove to push debris out of orbit
+AirChat, the buzzy new social app, could be great — or, it could succumb to the same fate as Clubhouse
+Mastering finance essentials with Mercury’s VP of finance, Dan Kang, at TechCrunch Early Stage
+Adtech giants like Meta must give EU users real privacy choice, says EDPB
+LinkedIn testing Premium Company Page subscription with AI-assisted content creation
+Reddit CPO talks new features — better translations, moderation and dev tools
+TikTok starts testing its Instagram competitor TikTok Notes in Canada and Australia
+Live selling startup CommentSold uses AI to generate shoppable, social-ready clips
+Palo Alto Networks’ firewall bug under attack brings fresh havoc to thousands of companies
+TechCrunch Minute: New Atlas robot stuns experts in first reveal from Boston Dynamics
+Brave Search is adopting AI to answer your queries
+Cherub, an angel investing community inspired by dating apps, entices investors and founders to pair up
+a16z-backed Rewind pivots to build AI-powered pendant to record your conversations
+ByteDance gets 24 hours to show EU a DSA risk assessment for TikTok Lite
+NeuBird is building a generative AI solution for complex cloud-native environments
+Consumer Financial Protection Bureau fines BloomTech for false claims
+Don’t blame MKBHD for the fate of Humane AI and Fisker
+Boston Dynamics’ Atlas humanoid robot goes electric
+7 Waymo robotaxis block traffic to San Francisco freeway on-ramp
+
+selected_news:
+Consumer Financial Protection Bureau fines BloomTech for false claims
+Alphabet X’s Bellwether harnesses AI to help predict natural disasters
+TechCrunch Minute: New Atlas robot stuns experts in first reveal from Boston Dynamics
+Boston Dynamics’ new Atlas robot is a swiveling, shape-shifting nightmare
+Tesla is laying off 285 employees in Buffalo, New York as part of a broad restructuring
