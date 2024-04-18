@@ -1,5 +1,6 @@
 from newsplease import NewsPlease
-
+from newsScraper import scrape_verge, scrape_cnbctech, scrape_techcrunch, scrape_and_group_by_source, format_grouped_titles_by_source, select_events_by_source
+import datetime
 
 '''
 Attributes Json Example
@@ -21,9 +22,24 @@ Attributes Json Example
   "url": "https://www.rt.com/news/203203-ukraine-russia-troops-border/"
 }
 '''
+today = datetime.date.today()
+
+all_news = scrape_verge(
+    today) + scrape_cnbctech(today) + scrape_techcrunch(today)
+
+titles = [x[0] for x in all_news]
+news_to_URL = {news[0].lower(): news[1] for news in all_news}
+
+arr = ['alphabet x’s bellwether harnesses ai to help predict natural disasters', 'boston dynamics’ new atlas robot is a swiveling, shape-shifting nightmare', 'airchat, the buzzy new social app, could be great — or, it could succumb to the same fate as clubhouse', '7 waymo robotaxis block traffic to san francisco freeway on-ramp', 'nasa has greenlit plans to send a giant drone to saturn’s largest moon']
+
+
+#print(news_to_URL)
+url_arr = []
+for title in arr:
+    url_arr.append(news_to_URL[title.lower()])
 
 article = NewsPlease.from_url(
-    'https://matduggan.com/why-cant-my-mom-email-me/')
+   url_arr[2])
 print(article)
 print(article.title)
 print(article.authors)

@@ -144,7 +144,7 @@ def select_events_by_source(titles):
         response = client.chat.completions.create(
             model=TEXT_MODEL,
             messages=[
-                {"role": "system", "content": " Output the response as string titles seperated by newline that are most important."},
+                {"role": "system", "content": "Output the response as string titles seperated by newline that are most important."},
                 {"role": "user", "content": prompt_text}
             ]
         )

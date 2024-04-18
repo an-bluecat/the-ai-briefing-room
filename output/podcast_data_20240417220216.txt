@@ -1,0 +1,100 @@
+Titles:
+Logitech wants you to press its new AI button
+Coding bootcamp Lambda School — now BloomTech — is finally getting punished
+Twitch is bringing its TikTok-style feed to everyone this month
+Sega is turning Golden Axe into an animated series
+TikTok to restrict users who repeatedly post problematic topics from ‘For You’ feed
+A real privacy law? House lawmakers are optimistic this time
+TikTok Notes starts rolling out as a new rival to Instagram
+The Pixel 7A is a knockout at its record-low $349
+Boston Dynamics’ new Atlas robot is a swiveling, shape-shifting nightmare
+Apple TV Plus’ For All Mankind is getting a fifth season and a new spinoff series
+Samsung’s art-inspired Frame TVs are up to $1,000 off right now
+The free Delta game emulator for iPhones is live on Apple’s App Store
+Amazon insists Just Walk Out isn’t secretly run by workers watching you shop
+Nine Google employees arrested after eight-hour sit-in protest
+Visible’s new annual plans cut the price on a full year of service
+Netflix’s Sweet Tooth returns for season 3 in June
+Comcast rolls out ‘Now’ prepaid phone and internet plans
+Sony might have perfected Mini LED TVs with its new 2024 lineup
+Stability AI is giving more developers access to its next-gen text-to-image generator
+NASA has greenlit plans to send a giant drone to Saturn’s largest moon
+Baidu releases new AI tools to promote application development
+Tesla is laying off 285 employees in Buffalo, New York as part of a broad restructuring
+Google workers arrested after nine-hour protest in cloud chief's office
+Google restructures finance team as part of AI shift, CFO tells employees in memo
+ASML earnings drag semiconductor stocks lower
+Amazon starts selling smart grocery carts to other retailers
+Amazon cloud kills Snowmobile data transfer truck eight years after driving it onstage
+Tesla asks shareholders to vote again on Musk's $56 billion payout
+Apple will 'look at' manufacturing in Indonesia, CEO Cook says
+Shares of critical chip firm ASML drop 5% as sales miss expectations with 22% fall
+Consumer Financial Protection Bureau fines BloomTech for false claims
+7 Waymo robotaxis block traffic to San Francisco freeway on-ramp
+Ramp raises another $150M co-led by Khosla and Founders Fund at a $7.65B valuation
+Alphabet X’s Bellwether harnesses AI to help predict natural disasters
+Don’t blame MKBHD for the fate of Humane AI and Fisker
+Dark is building a rocket-powered boxing glove to push debris out of orbit
+AirChat, the buzzy new social app, could be great — or, it could succumb to the same fate as Clubhouse
+Mastering finance essentials with Mercury’s VP of finance, Dan Kang, at TechCrunch Early Stage
+Adtech giants like Meta must give EU users real privacy choice, says EDPB
+LinkedIn testing Premium Company Page subscription with AI-assisted content creation
+Reddit CPO talks new features — better translations, moderation and dev tools
+TikTok starts testing its Instagram competitor TikTok Notes in Canada and Australia
+Live selling startup CommentSold uses AI to generate shoppable, social-ready clips
+Palo Alto Networks’ firewall bug under attack brings fresh havoc to thousands of companies
+TechCrunch Minute: New Atlas robot stuns experts in first reveal from Boston Dynamics
+Brave Search is adopting AI to answer your queries
+Cherub, an angel investing community inspired by dating apps, entices investors and founders to pair up
+a16z-backed Rewind pivots to build AI-powered pendant to record your conversations
+ByteDance gets 24 hours to show EU a DSA risk assessment for TikTok Lite
+NeuBird is building a generative AI solution for complex cloud-native environments
+Consumer Financial Protection Bureau fines BloomTech for false claims
+Don’t blame MKBHD for the fate of Humane AI and Fisker
+Boston Dynamics’ Atlas humanoid robot goes electric
+7 Waymo robotaxis block traffic to San Francisco freeway on-ramp
+
+Top News:
+alphabet x’s bellwether harnesses ai to help predict natural disasters
+techcrunch minute: new atlas robot stuns experts in first reveal from boston dynamics
+twitch is bringing its tiktok-style feed to everyone this month
+nasa has greenlit plans to send a giant drone to saturn’s largest moon
+tesla asks shareholders to vote again on musk's $56 billion payout
+
+Script:
+[intro music]
+
+welcome to the tech spectrum, where cutting-edge meets the headlines. i'm your host, alex, and today we're diving into a mix of innovation, controversy, and a glimpse into the future of tech and space exploration. so, let's get straight into it. 
+
+[pause]
+
+first off, alphabet x’s project bellwether is making waves as it aims to use ai for predicting natural disasters. with the planet facing increasing challenges from wildfires to floods, this could be a gamechanger for emergency responses. according to project head sarah russell, bellwether is leveraging recent advances in machine learning to tackle geospatial questions that were once prohibitively expensive and complex. partnering with the united states national guard, bellwether’s prediction engine could significantly speed up the response times to natural disasters, potentially saving lives and properties.
+
+[pause]
+
+in robotics news, boston dynamics just turned a new page with the unveiling of its electrically powered atlas robot. unlike its hydraulic predecessor, this new atlas boasts a leaner frame and enhanced range-of-motion. techcrunch’s brian heater notes the shift to electricity marks a significant step forward. initially set to assist in hyundai factories, this development underlines the rapid pace of innovation in robotics. and with companies like figure, agility, and tesla all in the race, the dream of a versatile humanoid robot is inching closer to reality.
+
+[pause]
+
+turning our attention to the digital realm, twitch is poised to update its platform with a brand-new tiktok-style discovery feed. after months of testing, this feature will offer users a fresh way to explore clips and live streams, marking a strategic move to enhance content discoverability on the platform. given twitch's influence in live streaming, this update could significantly impact how content creators and viewers interact.
+
+[pause]
+
+meanwhile, nasa is setting its sights beyond the stars with plans to send a drone lander to titan, saturn’s largest moon. the mission, named dragonfly, will explore titan's thick atmosphere and diverse geography in search of prebiotic chemical processes. scheduled for a 2028 launch, this ambitious project underscores nasa's commitment to unlocking the mysteries of our solar system and possibly shedding light on the origins of life.
+
+[pause]
+
+in the corporate sphere, tesla is once again in the headlines with plans to reinstate ceo elon musk's hefty $56 billion pay package, subject to shareholder vote. this move, coupled with the proposed shift of the company’s incorporation from delaware to texas, is stirring quite the debate. the decision follows a delaware judge's ruling against musk's original compensation package, marking a pivotal moment for tesla's governance structure and its relationship with shareholders.
+
+[pause]
+
+there you have it — from ai-driven disaster prediction and the evolution of robotics, to novel approaches in social media and bold endeavors in space exploration, the tech world continues to offer groundbreaking developments. and as we witness giants like tesla navigating through legal and corporate challenges, it's clear that the path of innovation is as tumultuous as it is exciting.
+
+[outro music]
+
+thank you for tuning into tech spectrum. don't forget to subscribe for more insights into the ever-evolving tech landscape. i'm alex, and we'll see you in the next briefing.
+
+[end]
+
+Podcast Title:
+ai's role in disaster prediction 🌪️, evolution of humanoid robotics ⚙️, titan's drone lander mission 🚀
