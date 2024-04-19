@@ -1,0 +1,171 @@
+Titles:
+Maybe I don’t want a Rosey the Robot after all
+AirPlay turns the Delta emulator into a full-on retro console
+Taylor Swift gets custom collab with TikTok as UMG battle continues
+A 14-year-old is charged in fire that destroyed a driverless Waymo vehicle
+Emulators are taking over the App Store
+Tesla recalls all 3,878 Cybertrucks over faulty accelerator pedal
+Drone startup Zipline hits 1 million deliveries, looks to restaurants as it continues to grow
+Super Micro plunges as investors rotate out of hot AI stock ahead of earnings
+Dutch government says it may stop using Facebook over privacy concerns
+Apple pulls Meta's WhatsApp, Threads from China App Store
+Tesla recalls Cybertruck over 'trapped pedal' issue seen in viral TikTok video
+Los Angeles is using AI in a pilot program to predict homelessness
+Bitcoin evangelist Michael Saylor made $370 million from MicroStrategy sales
+Messaging app Telegram to allow Tether stablecoin payments
+Dutch minister confident ASML will stay in Netherlands after threat to leave
+Taiwan plays 'very crucial role' in AI supply chain, says stock exchange chief
+Wall Street doesn’t seem too keen on a potential Salesforce-Informatica pairing
+Equities platform Midas raises $45M Series A as fintech retains its sparkle in Turkey
+Pitch Deck Teardown: Geodesic.Life’s $500K pre-seed deck
+TechCrunch Minute: Meta’s new Llama 3 models give open source AI a boost
+Tesla’s newsy week, and is fintech having a moment?
+Webflow acquires Intellimize to add AI-powered webpage personalization
+a16z promotes Jennifer Li to help lead the new $1.25B Infrastructure fund
+Langdock raises $3M with General Catalyst to help companies avoid vendor lock-in with LLMs
+Meta AI is restricting election-related responses in India
+Apple pulls WhatsApp, Threads from China App Store following state order
+Tesla recalls the Cybertruck for faulty accelerator pedals that can get stuck
+Fintech CRED secures in-principle approval for payment aggregator license
+Wall Street doesn’t seem too keen on a potential Salesforce-Informatica pairing
+TechCrunch Minute: Meta’s new Llama 3 models give open source AI a boost
+Webflow acquires Intellimize to add AI-powered webpage personalization
+Pitch Deck Teardown: Geodesic.Life’s $500K pre-seed deck
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+Wall Street doesn’t seem too keen on a potential Salesforce-Informatica pairing
+Equities platform Midas raises $45M Series A as fintech retains its sparkle in Turkey
+Pitch Deck Teardown: Geodesic.Life’s $500K pre-seed deck
+TechCrunch Minute: Meta’s new Llama 3 models give open source AI a boost
+Tesla’s newsy week, and is fintech having a moment?
+Webflow acquires Intellimize to add AI-powered webpage personalization
+a16z promotes Jennifer Li to help lead the new $1.25B Infrastructure fund
+Langdock raises $3M with General Catalyst to help companies avoid vendor lock-in with LLMs
+Meta AI is restricting election-related responses in India
+Apple pulls WhatsApp, Threads from China App Store following state order
+Tesla recalls the Cybertruck for faulty accelerator pedals that can get stuck
+Fintech CRED secures in-principle approval for payment aggregator license
+Wall Street doesn’t seem too keen on a potential Salesforce-Informatica pairing
+TechCrunch Minute: Meta’s new Llama 3 models give open source AI a boost
+Webflow acquires Intellimize to add AI-powered webpage personalization
+Pitch Deck Teardown: Geodesic.Life’s $500K pre-seed deck
+
+The Verge
+Maybe I don’t want a Rosey the Robot after all
+AirPlay turns the Delta emulator into a full-on retro console
+Taylor Swift gets custom collab with TikTok as UMG battle continues
+A 14-year-old is charged in fire that destroyed a driverless Waymo vehicle
+Emulators are taking over the App Store
+Tesla recalls all 3,878 Cybertrucks over faulty accelerator pedal
+
+CNBC Tech
+Drone startup Zipline hits 1 million deliveries, looks to restaurants as it continues to grow
+Super Micro plunges as investors rotate out of hot AI stock ahead of earnings
+Dutch government says it may stop using Facebook over privacy concerns
+Apple pulls Meta's WhatsApp, Threads from China App Store
+Tesla recalls Cybertruck over 'trapped pedal' issue seen in viral TikTok video
+Los Angeles is using AI in a pilot program to predict homelessness
+Bitcoin evangelist Michael Saylor made $370 million from MicroStrategy sales
+Messaging app Telegram to allow Tether stablecoin payments
+Dutch minister confident ASML will stay in Netherlands after threat to leave
+Taiwan plays 'very crucial role' in AI supply chain, says stock exchange chief
+
+Top News:
+tesla recalls cybertruck over 'trapped pedal' issue seen in viral tiktok video
+apple pulls meta's whatsapp, threads from china app store
+meta ai is restricting election-related responses in india
+drone startup zipline hits 1 million deliveries, looks to restaurants as it continues to grow
+dutch government says it may stop using facebook over privacy concerns
+
+Generate_scipt_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Tony Chang, and this is your CNBC techcheck Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending, and replace CNBC techcheck briefing to 'Tony AI briefing' 
+ Tesla Cybertruck recalled over trapped pedal issue seen in viral video
+Tesla's new Cybertruck is shown on display at a Tesla store in San Diego, California, on Dec. 9, 2023.
+Tesla has issued a voluntary recall of 3,878 Cybertrucks to fix a "stuck pedal" issue that had been depicted in a viral TikTok video posted last week by owner Jose Martinez.
+A pad on top of the Cybertruck's accelerator pedal could come loose and get trapped in the interior trim causing unintended acceleration, a Tesla filing with the National Highway Traffic Safety Administration acknowledged.
+Tesla's service department plans to replace or repair the accelerator pedal assembly, free of charge for owners.
+In a defect notice, Tesla revealed that an "unapproved change introduced lubricant (soap) to aid in the component assembly of the pad onto the accelerator pedal. Residual lubricant reduced the retention of the pad to the pedal."
+Tesla first became aware of this issue on March 31, 2024, according to the filing. After assessing the problem, Tesla on April 12 decided to issue a voluntary recall of the Cybertrucks, the filing says.
+Deliveries of the Cybertruck have been low, with under 4,000 units shipped since CEO Elon Musk kicked off deliveries at an unveiling event on Nov. 30, 2023, the filings said.
+The company reported disappointing first-quarter vehicle deliveries for 2024, totaling 386,810 cars. That represented a drop of 8.5% from the same quarter last year. Tesla reports first-quarter earnings on Tuesday.
+CNBC asked the NHTSA about the trapped pedal issue on the Cybertruck on April 14, after Martinez's video raised public awareness of the defect and unintended acceleration.
+A representative for the NHTSA said on Monday that the agency had received three vehicle owner complaints about the Cybertruck and that the agency was aware of the video. The NHTSA said it "uses many data sources in its enforcement processes, including social media and vehicle owner and other related forums."
+Correction: This article has been updated to reflect the correct date of the Cybertruck unveiling event in 2023.
+
+Apple pulls Meta's WhatsApp, Threads from China App Store
+Apple CEO Tim Cook looks on following a conversation on mental health, during a spousal program on the last day of the Asia-Pacific Economic Cooperation (APEC) Leaders' Week at Apple Park in San Francisco, California, on November 17, 2023.
+Apple on Friday said it pulled several messaging apps like Meta 's WhatsApp and Threads from the App Store in China after the nation's government ordered the removal, citing security concerns.
+The move further escalates tensions between the U.S. and China over technology and other policies. In recent days, Congress has been looking to fast-track legislation to push TikTok's Chinese parent company, ByteDance, to divest the social media app. The House could vote on a new bill as soon as Saturday, and U.S. President Joe Biden has said he will sign it into law if it reaches his desk.
+"We are obligated to follow the laws in the countries where we operate, even when we disagree," Apple said in a statement. "The Cyberspace Administration of China ordered the removal of these apps from the China storefront based on their national security concerns."
+Other messaging platforms like Signal and Telegram were also removed from China's App Store.
+
+Meta AI is restricting election-related responses in India
+Last week, Meta started testing its AI chatbot in India across WhatsApp, Instagram and Messenger. But with the Indian general elections beginning today, the company is already blocking specific queries in its chatbot.
+Meta confirmed that it is restricting certain election-related keywords for AI in the test phase. It also said that it is working to improve the AI response system.
+“This is a new technology, and it may not always return the response we intend, which is the same for all generative AI systems. Since we launched, we’ve constantly released updates and improvements to our models, and we’re continuing to work on making them better,” a company spokesperson told TechCrunch.
+The move makes the social media giant the latest big tech company proactively curtailing the scope of its generative AI services as it gears up for a major set of elections.
+One of the big concerns from critics has been that GenAI could provide misleading or outright false information to users, playing an illegal and unwelcome role in the democratic process.
+Last month, Google started blocking election-related queries in its Gemini chatbot experience in India and other markets where elections are taking place this year.
+Meta’s approach follows a bigger effort the company has announced around what it allows and does not allow on its platform leading up to elections. It pledged to block political ads in the week leading up to an election in any country, and it is working to identify and disclose when images in ads or other content have been created with AI.
+Meta’s handling of GenAI queries appears to be based around a blocklist. When you ask Meta AI about specific politicians, candidates, officeholders and certain other terms, it will redirect you to the Election Commission’s website.
+“This question may pertain to a political figure during general elections, please refer to the link https://elections24.eci.gov.in,” the response says.
+Notably, the company is not strictly blocking responses to questions containing party names. However, if a query includes the names of candidates or other terms, you might see the boilerplate answer cited above.
+But just like other AI-powered systems, Meta AI has some inconsistencies. For instance, when TechCrunch asked for information about “Indi Alliance” — a political alliance of multiple parties that is fighting against the incumbents Bharatiya Janata Party (BJP) — it responded with information containing a politician’s name. However, when we asked about that politician in a separate query, the chatbot didn’t respond with any information.
+This week, the company rolled out a new Llama 3-powered Meta AI chatbot in more than a dozen countries, including the U.S., but India was missing from the list. Meta said that the chatbot will be in the test phase in the country for now.
+“We continue to learn from our users tests in India. As we do with many of our AI products and features, we test them publicly in varying phases and in a limited capacity,” a company spokesperson told TechCrunch in a statement.
+Currently, Meta AI is not blocking queries about elections for U.S.-related terms such as “Tell me about Joe Biden.” We have asked Meta if the company plans to restrict Meta AI queries during the U.S. elections or in other markets. We will update the story if we hear back.
+
+Autonomous drone startup Zipline hits 1 million deliveries
+Autonomous delivery drone startup Zipline said Friday that it hit its 1 millionth delivery to customers and that it's eyeing restaurant partnerships in its next phase of growth.
+The San Francisco-based startup designs, builds and operates autonomous delivery drones, working with clients that range from more than 4,700 hospitals, including the Cleveland Clinic, to major brands such as Walmart and GNC. It's raised more than $500 million so far from investors including Sequoia Capital, a16z and Google Ventures. Zipline is also a CNBC Disruptor 50 company.
+The company said its zero-emission drones have now flown more than 70 million autonomous commercial miles across four continents and delivered more than 10 million products.
+The milestone 1 millionth delivery carried two bags of IV fluid from a Zipline distribution center in Ghana to a local health facility.
+As the company continues to expand, it will bring on Panera Bread in Seattle, Memorial Hermann Health System in Houston, and Jet's Pizza in Detroit.
+Zipline CEO Keller Rinaudo Cliffton told CNBC that 70% of the company's deliveries have happened in the past two years and, in the future, the goal is to do 1 million deliveries a day.
+"The three areas where the incentive really makes the most sense today are health care, quick commerce and food, and those are the three main markets that we focus on," Rinaudo Cliffton said. "Our goal is to work with really the best brands or the best institutions in each of those markets."
+The push into restaurant partnerships marks an "obvious transition" he said, due to the continuing growth in interest in instant food delivery. Zipline already delivers food from Walmart to customers.
+"We need to start using vehicles that are light, fast, autonomous and zero-emission," Rinaudo Cliffton said. "Delivering in this way is 10 times as fast, it's less expensive … and relative to the traditional delivery apps that most restaurants will be working with, we triple the service radius, which means you actually [get] 10 times the number of customers who are reachable via instant delivery."
+Zipline deliveries for some Panera locations in Seattle are expected to begin next year, the Panera franchisee's Chief Operating Officer Ron Bellamy told CNBC. Delivery continues to grow for its business, even in an inflationary environment, he said. Costs with Zipline are anticipated to be on par with what third-party delivery is now, he added, with the hope of that cost lowering over time.
+"I'm encouraged about it, not just even in terms of what I can do for the business, but as a consumer, I think at the end of the day, if it is economical, and it delivers a better overall experience, then the consumer will speak," Bellamy said.
+
+Dutch government may stop using Facebook after privacy concerns
+The Dutch government said Friday that it may be forced to stop using Facebook after a warning from the Netherlands' privacy regulator about the Meta -owned social media platform's privacy risks.
+The Dutch Data Protection Authority (DPA) issued a statement advising the Dutch Interior Ministry not to rely on Facebook pages to communicate with citizens if it doesn't have a clear idea of how Facebook uses the personal data of people who visit government pages.
+The Interior Ministry had previously asked the DPA to advise on whether the government could use Facebook pages in a compliant way.
+The government wants clarity from Meta "as soon as possible, at the latest before the summer recess, on how they are addressing our concerns," Alexandra van Huffelen, the Dutch Minister for Digitalization, said in a statement.
+"Otherwise, in line with the advice of the DPA, we will be forced to stop our activities on Facebook pages," she added.
+Response:
+
+Script:
+i'm tony chang, and this is your tony ai tech briefing. tesla is issuing a recall for 3,878 of its cybertrucks over a trapped pedal issue made famous by a viral tiktok video. the recall aims to address a "stuck pedal" problem where a pad could come loose and trap inside the trim, causing unintended acceleration. this issue, rooted in an "unapproved change" involving lubricant used during assembly, has prompted tesla's service department to offer free repairs or replacements for affected owners. this comes as tesla reported a significant drop in its first-quarter vehicle deliveries for 2024.
+
+in international tech news, apple has removed meta's whatsapp and threads apps from its app store in china, following orders from the chinese government citing security concerns. this action highlights escalating tensions between the us and china over technology and policy, with congress moving to force tiktok's divestment by its chinese parent company, bytedance.
+
+meanwhile, as india kicks off its general elections, meta ai is restricting election-related responses in its chatbot applications. the company confirmed it is blocking certain queries to avoid spreading misleading information during this sensitive period. this move is part of a larger effort by meta and other big tech companies to ensure their platforms do not play a disruptive role in elections.
+
+autonomous drone delivery company zipline celebrated its 1 millionth delivery, as it sets its sights on partnerships with restaurants for its next growth phase. having already established a significant presence in healthcare and quick commerce deliveries, zipline aims to revolutionize food delivery with its zero-emission drones. the company is starting with partnerships including panera bread in seattle, hinting at a future where drone deliveries become a norm for the restaurant industry.
+
+finally, in a move concerning digital privacy, the dutch government may cease using facebook to communicate with its citizens. this follows a warning from the netherlands' privacy regulator about the risks associated with how facebook uses personal data from government pages. the dutch minister for digitalization called for clarity from meta on addressing these concerns, hinting at a potential cessation of facebook use if these issues persist.
+
+that's all for today's roundup. we'll see you back here tomorrow
+
+polished_script:
+i'm tony chang, and this is your tony ai tech briefing. in today's tech landscape, tesla is navigating through choppy waters as it initiates a recall for 3,878 of its much-anticipated cybertrucks. the recall springs from a viral tiktok video highlighting a "stuck pedal" issue, where a pad could dislodge and wedge itself inside the trim, leading to unintended acceleration. rooted in an "unapproved change" to the lubricant used during assembly, tesla's move to offer free repairs or replacements to affected owners underscores its commitment to safety and quality. this development unfolds as tesla grapples with a notable decline in its first-quarter vehicle deliveries for 2024, casting shadows over its operational momentum.
+
+shifting gears to the international tech scene, apple finds itself at the center of geopolitical tensions between the us and china. the tech giant has pulled meta's whatsapp and threads apps from its app store in china, acquiescing to the chinese government's directives over security concerns. this move underscores the escalating us-china tech and policy frictions, notably with congress pushing for tiktok's divestment by its chinese parent company, bytedance.
+
+on the election frontier, as india embarks on its general elections, meta ai is tightening the reins on election-related responses in its chatbot applications. the tech behemoth is diligently blocking certain queries to prevent the spread of misleading information throughout this critical period. meta's strategic restraint is indicative of a broader tech industry consensus on the imperative to shield electoral processes from the turbulent waves of misinformation.
+
+innovations in logistics manifest as zipline, the autonomous drone delivery company, celebrates a milestone one-millionth delivery. zipline is now venturing beyond the realm of healthcare and quick commerce deliveries into the gastronomic universe, partnering with restaurants to redefine food delivery. with entities like panera bread in seattle jumping on board, zipline's zero-emission drones are poised to herald a new epoch in the restaurant industry's delivery dynamics.
+
+lastly, the digital privacy discourse intensifies in the netherlands, as the dutch government contemplates discontinuing facebook for official communications with its citizenry. this consideration follows the netherlands' privacy regulator's stark cautions regarding facebook's handling of personal data on government pages. the call for meta to furnish clarifications signals a potential pivot in how governmental bodies engage with social media platforms, prioritizing citizen data protection.
+
+that wraps up today's tech briefing. stay tuned for more insights into the ever-evolving tech landscape. see you back here tomorrow
+
+Podcast Title:
+"cybertruck recall drama 🚘, u.s.-china tech tensions rise 🌏, zipline's delivery milestone 🚀"
