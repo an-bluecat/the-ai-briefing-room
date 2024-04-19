@@ -1,0 +1,139 @@
+Titles:
+Taylor Swift gets custom collab with TikTok as UMG battle continues
+A 14-year-old is charged in fire that destroyed a driverless Waymo vehicle
+Emulators are taking over the App Store
+Tesla recalls all 3,878 Cybertrucks over faulty accelerator pedal
+Dutch government says it may stop using Facebook over privacy concerns
+Apple pulls Meta's WhatsApp, Threads from China App Store
+Tesla recalls Cybertruck over 'trapped pedal' issue seen in viral TikTok video
+Los Angeles is using AI in a pilot program to predict homelessness
+Bitcoin evangelist Michael Saylor made $370 million from MicroStrategy sales
+Messaging app Telegram to allow Tether stablecoin payments
+Dutch minister confident ASML will stay in Netherlands after threat to leave
+Taiwan plays 'very crucial role' in AI supply chain, says stock exchange chief
+TechCrunch Minute: Meta’s new Llama 3 models give open-source AI a boost
+Tesla’s newsy week, and is fintech having a moment?
+Webflow acquires Intellimize to add AI-powered webpage personalization
+a16z promotes Jennifer Li to help lead the new $1.25B Infrastructure fund
+Langdock raises $3M with General Catalyst to help companies avoid vendor lock-in with LLMs
+Meta AI is restricting election-related responses in India
+Apple pulls WhatsApp, Threads from China App Store following state order
+Tesla recalls the Cybertruck for faulty accelerator pedals that can get stuck
+Fintech CRED secures in-principle approval for payment aggregator license
+TechCrunch Minute: Meta’s new Llama 3 models give open-source AI a boost
+Webflow acquires Intellimize to add AI-powered webpage personalization
+Apple pulls WhatsApp, Threads from China App Store following state order
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+TechCrunch Minute: Meta’s new Llama 3 models give open-source AI a boost
+Tesla’s newsy week, and is fintech having a moment?
+Webflow acquires Intellimize to add AI-powered webpage personalization
+a16z promotes Jennifer Li to help lead the new $1.25B Infrastructure fund
+Langdock raises $3M with General Catalyst to help companies avoid vendor lock-in with LLMs
+Meta AI is restricting election-related responses in India
+Apple pulls WhatsApp, Threads from China App Store following state order
+Tesla recalls the Cybertruck for faulty accelerator pedals that can get stuck
+Fintech CRED secures in-principle approval for payment aggregator license
+TechCrunch Minute: Meta’s new Llama 3 models give open-source AI a boost
+Webflow acquires Intellimize to add AI-powered webpage personalization
+Apple pulls WhatsApp, Threads from China App Store following state order
+
+The Verge
+Taylor Swift gets custom collab with TikTok as UMG battle continues
+A 14-year-old is charged in fire that destroyed a driverless Waymo vehicle
+Emulators are taking over the App Store
+Tesla recalls all 3,878 Cybertrucks over faulty accelerator pedal
+
+CNBC Tech
+Dutch government says it may stop using Facebook over privacy concerns
+Apple pulls Meta's WhatsApp, Threads from China App Store
+Tesla recalls Cybertruck over 'trapped pedal' issue seen in viral TikTok video
+Los Angeles is using AI in a pilot program to predict homelessness
+Bitcoin evangelist Michael Saylor made $370 million from MicroStrategy sales
+Messaging app Telegram to allow Tether stablecoin payments
+Dutch minister confident ASML will stay in Netherlands after threat to leave
+Taiwan plays 'very crucial role' in AI supply chain, says stock exchange chief
+
+Top News:
+tesla recalls cybertruck over 'trapped pedal' issue seen in viral tiktok video
+apple pulls meta's whatsapp, threads from china app store
+dutch government says it may stop using facebook over privacy concerns
+tesla’s newsy week, and is fintech having a moment?
+los angeles is using ai in a pilot program to predict homelessness
+
+Generate_scipt_prompt:
+
+        Prompt: Give a quick tech news update script in the style of AI techcheck briefing as an example.
+        Response: I'm Tony Chang, and this is your AI Tech Check Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+
+        Prompt: Give a quick tech news update script in the style of AI techcheck briefing using the following news titles and content. Closely follow how AI techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending, and replace AI techcheck briefing to 'Tony AI briefing' 
+ Tesla Cybertruck recalled over trapped pedal issue seen in viral video
+Tesla's new Cybertruck is shown on display at a Tesla store in San Diego, California, on Dec. 9, 2023.
+Tesla has issued a voluntary recall of 3,878 Cybertrucks to fix a "stuck pedal" issue that had been depicted in a viral TikTok video posted last week by owner Jose Martinez.
+A pad on top of the Cybertruck's accelerator pedal could come loose and get trapped in the interior trim causing unintended acceleration, a Tesla filing with the National Highway Traffic Safety Administration acknowledged.
+Tesla's service department plans to replace or repair the accelerator pedal assembly, free of charge for owners.
+In a defect notice, Tesla revealed that an "unapproved change introduced lubricant (soap) to aid in the component assembly of the pad onto the accelerator pedal. Residual lubricant reduced the retention of the pad to the pedal."
+Tesla first became aware of this issue on March 31, 2024, according to the filing. After assessing the problem, Tesla on April 12 decided to issue a voluntary recall of the Cybertrucks, the filing says.
+Deliveries of the Cybertruck have been low, with under 4,000 units shipped since CEO Elon Musk kicked off deliveries at an unveiling event on Nov. 30, 2023, the filings said.
+The company reported disappointing first-quarter vehicle deliveries for 2024, totaling 386,810 cars. That represented a drop of 8.5% from the same quarter last year. Tesla reports first-quarter earnings on Tuesday.
+CNBC asked the NHTSA about the trapped pedal issue on the Cybertruck on April 14, after Martinez's video raised public awareness of the defect and unintended acceleration.
+A representative for the NHTSA said on Monday that the agency had received three vehicle owner complaints about the Cybertruck and that the agency was aware of the video. The NHTSA said it "uses many data sources in its enforcement processes, including social media and vehicle owner and other related forums."
+Correction: This article has been updated to reflect the correct date of the Cybertruck unveiling event in 2023.
+
+Apple pulls Meta's WhatsApp, Threads from China App Store
+Apple CEO Tim Cook looks on following a conversation on mental health, during a spousal program on the last day of the Asia-Pacific Economic Cooperation (APEC) Leaders' Week at Apple Park in San Francisco, California, on November 17, 2023.
+Apple on Friday said it pulled several messaging apps like Meta 's WhatsApp and Threads from the App Store in China after the nation's government ordered the removal, citing security concerns.
+The move further escalates tensions between the U.S. and China over technology and other policies. In recent days, Congress has been looking to fast-track legislation to push TikTok's Chinese parent company, ByteDance, to divest the social media app. The House could vote on a new bill as soon as Saturday, and U.S. President Joe Biden has said he will sign it into law if it reaches his desk.
+"We are obligated to follow the laws in the countries where we operate, even when we disagree," Apple said in a statement. "The Cyberspace Administration of China ordered the removal of these apps from the China storefront based on their national security concerns."
+Other messaging platforms like Signal and Telegram were also removed from China's App Store.
+
+Dutch government may stop using Facebook after privacy concerns
+The Dutch government said Friday that it may be forced to stop using Facebook after a warning from the Netherlands' privacy regulator about the Meta -owned social media platform's privacy risks.
+The Dutch Data Protection Authority (DPA) issued a statement advising the Dutch Interior Ministry not to rely on Facebook pages to communicate with citizens if it doesn't have a clear idea of how Facebook uses the personal data of people who visit government pages.
+The Interior Ministry had previously asked the DPA to advise on whether the government could use Facebook pages in a compliant way.
+The government wants clarity from Meta "as soon as possible, at the latest before the summer recess, on how they are addressing our concerns," Alexandra van Huffelen, the Dutch Minister for Digitalization, said in a statement.
+"Otherwise, in line with the advice of the DPA, we will be forced to stop our activities on Facebook pages," she added.
+
+Tesla's newsy week, and is fintech having a moment?
+It’s been more than a minute since Tesla went public, but the EV company was inescapable on TechCrunch this week. From layoffs to pricing changes and more, it was a week dyed deeply in Tesla colors so we had to chat through the latest.
+But that was just one element of what we got into on Equity this week. We also dug into Mary Ann’s reporting about Ramp’s latest round — and up valuation — that fit neatly next to Rippling’s own impending fundraise. If you are handling money, it’s a good time to be a startup.
+The team also dug into Cherub, which wants to connect investors and founders, discussed Maven Ventures’ consumer investing push, and touched on what Mercury is up to. All told, we were fortunate to have Kirsten Korosec along with us this week given the sheer volume and diversity of transportation news to chew through, especially as it relates to Tesla.
+Equity is back tomorrow with a special interview between Mary Ann and Notable Capital’s Hans Tung, so stay tuned! Until then, hit play and let’s have some fun.
+
+Los Angeles is using an AI pilot program to try to predict homelessness
+In December of last year, single mom Courtney Peterson was laid off from her job working for a now-shuttered inpatient transitional living program. Aside from the flexibility it allowed her to sometimes bring her seven-year-old son to work, it paid enough to cover rent in a studio apartment in the Van Nuys neighborhood in Los Angeles, where they had lived for a year and a half.
+Peterson said she began to research potential avenues for help, immediately concerned about making January's rent. When her son was an infant, they lived in a travel trailer, she said, a situation she did not want to return to.
+"I started to reach out to local churches or places that said they offered rent assistance," Peterson told CNBC. "But a lot of them wanted me to have active eviction notices in order to give me assistance. I felt like I was running out of options. I'd reached out to pretty much everyone I could possibly think of with no luck."
+Instead of an eviction notice, Peterson received a letter from Homelessness Prevention Unit within the Los Angeles County Department of Health Services, offering a lifeline. The pilot program uses predictive artificial intelligence to identify individuals and families at risk of becoming homeless, offering aid to help them stabilize and remain housed.
+In 2023, California had more than 181,000 homeless individuals, up more than 30 percent since 2007, according to data from the U.S Department of Housing and Urban Development. A report from the Auditor of the State of California found the state spent $24 billion on homelessness from 2018 through 2023.
+Launched in 2021, the technology has helped the department serve nearly 800 individuals and families at risk of becoming homeless, with 86 percent of participants retaining permanent housing when they leave the program, according to Dana Vanderford, associate director of homelessness prevention at the county's Department of Health Services.
+Individuals and families have access to between $4,000 and $8,000, she said, with the majority of the funding for the program coming from the American Rescue Plan Act. Tracking down individuals to help and convincing them that the offer is real and not a scam can be a challenge, but once contact is established, aid is quickly put into motion.
+"We often meet our clients within days of a loss of housing, or days after they've had a medical emergency. The timing with which we meet people feels critical," Vanderford said. "Our ability to appear out of nowhere, cold-call a person, provide them with resources and prevent that imminent loss of housing for 86 percent of the people that we've worked with feels remarkable."
+Peterson said she and her son received some $8,000 to cover rent, utilities and basic needs, allowing her to stay put in her apartment while she looks for a new job. The program works with clients for four months and then follows up with them at the six-month mark and the 12-month mark, as well as 18 months after discharge. Case workers like Amber Lung, who helped Peterson, say they can see how important preventative work is firsthand.
+"Once folks do lose that housing, it feels like there's so many more hurdles to get back to [being] housed, and so if we can fill in just a little bit of a gap there might be to help them retain that housing, I think it's much easier to stabilize things than if folks end up in a shelter or on the streets to get them back into that position," Lung said.
+Response:
+
+Script:
+i'm tony chang, and this is your tony ai briefing. a dramatic turn for tesla this week as the company recalls nearly 4,000 cybertrucks due to a "stuck pedal" issue spotlighted by a tiktok video. the viral clip, shot by cybertruck owner jose martinez, displayed an acceleration pad getting trapped, sparking safety concerns. tesla's scramble to address the flaw, discovered post a soap-related assembly mishap, marks a rare stumble, underscoring the tech titan's ambitious push into the future of transportation. meanwhile, vehicle deliveries dip by 8.5% in a challenging quarter, with the ev maker setting sights on its upcoming earnings report.
+
+in other news, apple finds itself entangled in geopolitics, withdrawing meta's whatsapp and threads from the china app store. the pullout, ordered by the chinese government over security fears, adds fuel to the simmering tech tussle between the u.s. and china. as global tech firms navigate these turbulent waters, the spotlight on digital sovereignty and cybersecurity intensifies, echoing wider conversations around technology's role in geopolitics.
+
+crossing over to europe, the dutch government signals a potential break-up with facebook, prioritizing privacy over public discourse. with the dutch data protection authority raising red flags, the move underscores growing concerns around data privacy and the handling of user information on social media platforms.
+
+back in the u.s., los angeles embarks on an innovative journey using ai to predict and prevent homelessness. this cutting-edge pilot program, buoyed by federal funds, illustrates the transformative potential of technology in addressing social challenges, offering a glimmer of hope for vulnerable communities.
+
+finally, tesla's rollercoaster week encapsulates the highs and lows of tech innovation, from cybertruck controversies to delivery dilemmas. as the digital and physical worlds collide, the narratives of companies like apple and tesla, alongside initiatives like la's homelessness ai, sketch a vivid tableau of technology's omnipresence in our lives. that's all for today. we'll see you back here tomorrow
+
+polished_script:i'm tony chang, and this is your tech briefing. in a surprising turn of events this week, tesla is initiating a recall of nearly 4,000 cybertrucks due to a stuck pedal issue, first brought to light by a viral tiktok video. the owner, jose martinez, provided a firsthand look at the acceleration pedal becoming trapped, raising immediate safety concerns. this incident, stemming from a soap-related assembly mishap, represents a rare misstep for tesla, highlighting the challenges faced by the electric vehicle giant in its bid to revolutionize transportation. tesla's immediate response to address the defect comes amid an 8.5% drop in vehicle deliveries this quarter, with the industry giant also gearing up for its upcoming earnings report.
+
+in international tech news, apple finds itself at the center of geopolitical tensions, having removed meta's whatsapp and threads from the china app store. this action, taken at the behest of the chinese government due to security concerns, escalates the ongoing tech conflict between the u.s. and china. as tech companies worldwide continue to grapple with these issues, the focus on digital sovereignty and cybersecurity becomes increasingly pronounced, reflecting broader discussions on the role of technology in global politics.
+
+elsewhere in europe, the dutch government contemplates parting ways with facebook, citing privacy concerns over public discourse. the netherlands' data protection authority has flagged significant issues, signaling a growing unease around data privacy and the management of user information across social media platforms.
+
+back in the united states, los angeles is taking a novel approach by employing ai to anticipate and mitigate homelessness. this pioneering pilot program, supported by federal funding, showcases the potential of technology to tackle societal problems, providing a beacon of hope for the most vulnerable populations.
+
+conclusively, tesla's eventful week serves as a stark reminder of the hurdles and opportunities that lie on the path to technological innovation. from controversies around the cybertruck to global tech companies navigating political and privacy concerns, stories like these underscore the ever-present role of technology in our daily lives. that's the wrap for today. join us again tomorrow for more insights
+
+Podcast Title:
+"cybertruck recall crisis 🚨, apple vs. china tech clash 🇨🇳💻, ai battles homelessness in la 🏠✨"

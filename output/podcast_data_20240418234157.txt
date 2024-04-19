@@ -1,0 +1,229 @@
+Titles:
+Gmail’s tabs are actually useful now that I’ve found this extension
+Apple is finally rolling out AirPlay in hotel rooms
+Razer’s Kishi Ultra gaming controller brings haptics to your USB-C phone, PC, or tablet
+Amazon’s Fallout has been renewed for season 2
+The Meta Quest 2 gets a permanent price cut to $199
+Netflix is all about the money, not the members
+Senate advances vote on reauthorizing warrantless surveillance program
+Your Happy Hacking Keyboard deserves some fresh caps
+Meta says Llama 3 beats most other models, including Gemini
+The Humane AI Pin is lost in translation
+You should be playing Music League
+Meta is adding real-time AI image generation to WhatsApp
+The future of the Xbox looks a lot like a PC
+Netflix’s The Witcher will end with season 5
+Everything you need to know about Disney, ESPN, and Bob Iger’s return as CEO
+TikTok divest-or-ban legislation could suddenly be fast-tracked in the Senate
+At Kernel, your veggie burger will be served by a robot
+Google terminates 28 employees after multicity protests: Read the full memo
+Taiwan plays 'very crucial role' in AI supply chain, says stock exchange chief
+Meta AI assistant rolling out to WhatsApp, Instagram, Facebook and Messenger
+23andMe CEO Anne Wojcicki considers taking company private
+AI startup Stability lays off staff after controversial CEO's exit
+Police agencies take down scam website that defrauded thousands of victims
+Tim Cook visits Singapore amid Apple's Southeast Asia expansion efforts
+After chip breakthrough, Huawei launches new phones to challenge Apple in China
+Cisco debuts new AI-focused security system after $28 billion deal to buy Splunk
+TSMC beats first-quarter revenue and profit expectations on strong AI chip demand
+Elon Musk says Tesla sent 'incorrectly low' severance to some laid-off employees
+Internet users are getting younger; now the UK is weighing up if AI can help protect them
+Hugging Face releases a benchmark for testing generative AI on health tasks
+Tesla still plans to build 1,800-mile charging corridor for semi trucks despite Biden funding snub
+Robots can make jobs less meaningful for human colleagues
+Ibotta’s IPO opens sharply higher, hinting at warming public-market interest in tech shares
+Lacework, last valued at $8.3B, is in talks to sell for just $150M to $200M, say sources
+Hackers are threatening to publish a huge stolen sanctions and financial crimes watchlist
+How to play Pokémon and other Game Boy games on your iPhone
+Cape dials up $61M from a16z and more for mobile service that doesn’t use personal data
+Meta releases Llama 3, claims it’s among the best open models available
+Meta adds its AI chatbot, powered by Llama 3, to the search bar across its apps
+TechCrunch Minute: NASA needs your help to bring rocks back from Mars
+Uber, Nvidia-backed Serve Robotics hits public markets with $40M splash
+Building owners are often in the dark about their carbon pollution — a new algorithm could shed light on it
+Magnus Metal wants to revamp the 4,000-year-old way metal parts are made
+Apex Legends hacker says game developers patched exploit used on streamers
+For Dataplor’s data intelligence tool, it’s all about location, location, location
+Screen Skinz raises $1.5M seed to create custom screen protectors
+Trellis Climate aims to bridge the ‘commercial valley of death’ for climate tech
+ChatGPT is a squeeze away with Nothing’s upgraded earbuds
+Lacework, last valued at $8.3B, is in talks to sell for just $150M to $200M, say sources
+Hugging Face releases a benchmark for testing generative AI on health tasks
+Tesla still plans to build 1,800-mile charging corridor for semi trucks despite Biden funding snub
+How to play Pokémon and other Game Boy games on your iPhone
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+Internet users are getting younger; now the UK is weighing up if AI can help protect them
+Hugging Face releases a benchmark for testing generative AI on health tasks
+Tesla still plans to build 1,800-mile charging corridor for semi trucks despite Biden funding snub
+Robots can make jobs less meaningful for human colleagues
+Ibotta’s IPO opens sharply higher, hinting at warming public-market interest in tech shares
+Lacework, last valued at $8.3B, is in talks to sell for just $150M to $200M, say sources
+Hackers are threatening to publish a huge stolen sanctions and financial crimes watchlist
+How to play Pokémon and other Game Boy games on your iPhone
+Cape dials up $61M from a16z and more for mobile service that doesn’t use personal data
+Meta releases Llama 3, claims it’s among the best open models available
+Meta adds its AI chatbot, powered by Llama 3, to the search bar across its apps
+TechCrunch Minute: NASA needs your help to bring rocks back from Mars
+Uber, Nvidia-backed Serve Robotics hits public markets with $40M splash
+Building owners are often in the dark about their carbon pollution — a new algorithm could shed light on it
+Magnus Metal wants to revamp the 4,000-year-old way metal parts are made
+Apex Legends hacker says game developers patched exploit used on streamers
+For Dataplor’s data intelligence tool, it’s all about location, location, location
+Screen Skinz raises $1.5M seed to create custom screen protectors
+Trellis Climate aims to bridge the ‘commercial valley of death’ for climate tech
+ChatGPT is a squeeze away with Nothing’s upgraded earbuds
+Lacework, last valued at $8.3B, is in talks to sell for just $150M to $200M, say sources
+Hugging Face releases a benchmark for testing generative AI on health tasks
+Tesla still plans to build 1,800-mile charging corridor for semi trucks despite Biden funding snub
+How to play Pokémon and other Game Boy games on your iPhone
+
+The Verge
+Gmail’s tabs are actually useful now that I’ve found this extension
+Apple is finally rolling out AirPlay in hotel rooms
+Razer’s Kishi Ultra gaming controller brings haptics to your USB-C phone, PC, or tablet
+Amazon’s Fallout has been renewed for season 2
+The Meta Quest 2 gets a permanent price cut to $199
+Netflix is all about the money, not the members
+Senate advances vote on reauthorizing warrantless surveillance program
+Your Happy Hacking Keyboard deserves some fresh caps
+Meta says Llama 3 beats most other models, including Gemini
+The Humane AI Pin is lost in translation
+You should be playing Music League
+Meta is adding real-time AI image generation to WhatsApp
+The future of the Xbox looks a lot like a PC
+Netflix’s The Witcher will end with season 5
+Everything you need to know about Disney, ESPN, and Bob Iger’s return as CEO
+TikTok divest-or-ban legislation could suddenly be fast-tracked in the Senate
+At Kernel, your veggie burger will be served by a robot
+
+CNBC Tech
+Google terminates 28 employees after multicity protests: Read the full memo
+Taiwan plays 'very crucial role' in AI supply chain, says stock exchange chief
+Meta AI assistant rolling out to WhatsApp, Instagram, Facebook and Messenger
+23andMe CEO Anne Wojcicki considers taking company private
+AI startup Stability lays off staff after controversial CEO's exit
+Police agencies take down scam website that defrauded thousands of victims
+Tim Cook visits Singapore amid Apple's Southeast Asia expansion efforts
+After chip breakthrough, Huawei launches new phones to challenge Apple in China
+Cisco debuts new AI-focused security system after $28 billion deal to buy Splunk
+TSMC beats first-quarter revenue and profit expectations on strong AI chip demand
+Elon Musk says Tesla sent 'incorrectly low' severance to some laid-off employees
+
+Top News:
+1. hackers are threatening to publish a huge stolen sanctions and financial crimes watchlist
+2. tesla still plans to build 1,800-mile charging corridor for semi trucks despite biden funding snub
+3. meta ai assistant rolling out to whatsapp, instagram, facebook and messenger
+4. internet users are getting younger; now the uk is weighing up if ai can help protect them
+5. cisco debuts new ai-focused security system after $28 billion deal to buy splunk
+
+Generate_scipt_prompt:
+
+        Prompt: Give a quick tech news update script in the style of AI techcheck briefing as an example.
+        Response: I'm Tony Chang, and this is your AI Tech Check Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+
+        Prompt: Give a quick tech news update script in the style of AI techcheck briefing using the following news titles and content. Closely follow how AI techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending, and replace AI techcheck briefing to 'Tony AI briefing' 
+ Hackers are threatening to publish a huge stolen sanctions and financial crimes watchlist
+Hackers are threatening to publish a huge stolen sanctions and financial crimes watchlist The stolen World-Check database contains 5.3 million records
+A financially motivated criminal hacking group says it has stolen a confidential database containing millions of records that companies use for screening potential customers for links to sanctions and financial crime.
+The hackers, which call themselves GhostR, said they stole 5.3 million records from the World-Check screening database in March and are threatening to publish the data online.
+World-Check is a screening database used for “know your customer” checks (or KYC), allowing companies to determine if prospective customers are high risk or potential criminals, such as people with links to money laundering or who are under government sanctions. The hackers told TechCrunch that they stole the data from a Singapore-based firm with access to the World-Check database, but did not name the firm.
+A portion of the stolen data, which the hackers shared with TechCrunch, includes individuals who were sanctioned as recently as this year.
+Simon Henrick, a spokesperson for the London Stock Exchange Group, which maintains the database, told TechCrunch: “This was not a security breach of LSEG/our systems. The incident involves a third party’s data set, which includes a copy of the World-Check data file. This was illegally obtained from the third party’s system. We are liaising with the affected third party, to ensure our data is protected and ensuring that any appropriate authorities are notified.”
+LSEG did not name the third-party company, but did not dispute the amount of data stolen.
+The portion of stolen data seen by TechCrunch contains records on thousands of people, including current and former government officials, diplomats, and private companies whose leaders are considered “politically exposed people,” who are at a higher risk of involvement in corruption or bribery. The list also contains individuals accused of involvement in organized crime, suspected terrorists, intelligence operatives and a European spyware vendor.
+The data varies by record. The database contains names, passport numbers, Social Security numbers, online crypto account identifiers and bank account numbers, and more.
+World-Check is currently owned by the London Stock Exchange Group following a $27 billion deal to buy financial data provider Refinitiv in 2021. LSEG collects information from public sources, including sanctions lists, government sources and news outlets, then provides the database as a subscription to companies for conducting customer due diligence.
+But privately run databases, like World-Check, are known to contain errors that can affect entirely innocent people with no nexus or connection to crime but whose information is stored in these databases.
+In 2016, an older copy of the World-Check database leaked online following a security lapse at a third-party company with access to the data, including a former advisor to the U.K. government that World-Check had applied a “terrorism” label to his name. Banking giant HSBC shut down bank accounts belonging to several prominent British Muslims after the World-Check database branded them with “terrorism” tags.
+A spokesperson for the U.K.’s data protection authority, the Information Commissioner’s Office, did not immediately comment on the breach.
+To contact this reporter, get in touch on Signal and WhatsApp at +1 646-755-8849, or by email. You can also send files and documents via SecureDrop.
+
+Tesla still plans to build 1,800-mile charging corridor for semi trucks despite Biden funding snub
+Tesla is pushing forward with a plan to build an electric big rig charging corridor stretching from Texas to California, despite being snubbed by a lucrative federal funding program that’s part of President Biden’s Bipartisan Infrastructure Law. But the original scope of the project could still change, TechCrunch has learned.
+The company had been seeking nearly $100 million from the Charging and Fueling Infrastructure (CFI) Discretionary Grant program under the Federal Highway Administration (FHWA). Combined with around $24 million of its own money, Tesla wanted to build nine electric semi-truck charging stations between Laredo, Texas and Fremont, California.
+The corridor, if built, would be a first-of-its-kind charging network that could enable both long-distance and regional electric trucking and help clean up a big chunk of the otherwise dirty transportation sector. Without it, though, Tesla’s promise to electrify heavy-duty trucking could fall even further behind schedule than it already is.
+The project as pitched to the FHWA was called TESSERACT, which stands for “Transport Electrification Supporting Semis Operating in Arizona, California, and Texas,” according to a slide buried in a 964-page filing with the South Coast Air Quality Management District. (Tesla collaborated with SCAQMD on the application.)
+But Tesla was not among the 47 recipients that the Biden administration announced in January. Collectively, those winners received $623 million to build electric vehicle charging and refueling stations across the country. This is despite Tesla winning around 13% of all other charging awards so far from the Infrastructure Act, though that has only netted the company around $17 million.
+Rohan Patel, who left his VP position at Tesla this week as the company laid off 10% of its workforce, said in a message to TechCrunch that Tesla may turn to state funding opportunities, or future rounds of the CFI program. Some of the sites along the route “are no-brainers even without funding,” he said.
+The 1,800-mile route would theoretically connect Tesla’s two North American vehicle factories, as well as one that is planned — but delayed — in Mexico. Each station was originally slated to be equipped with eight 750kW chargers for Tesla Semis, and four chargers open to other electric trucks. It’s unclear how effective it would be if the company was unable to build all nine stations, which are situated at roughly equal distances along the route.
+About half of the Biden administration’s choices for the CFI funding focused on building out EV charging infrastructure in “urban and rural communities, including at convenient and high-use locations like schools, parks, libraries, multi-family housing, and more.”
+The other half was dedicated to funding 11 “corridor” projects, including a number on the same I-10 corridor that makes up part of Tesla’s proposed route. That includes $70 million to the North Texas Council of Governments to build up to five hydrogen fueling stations for medium and heavy-duty trucks in the Dallas, Houston, Austin and San Antonio areas.
+“The project will help create a hydrogen corridor from southern California to Texas,” the Department of Transportation wrote in a statement in January.
+“Funding hydrogen stations will go down as purely wasted money,” Patel told TechCrunch this week.
+While he no longer speaks on behalf of Tesla, he also criticized funding hydrogen infrastructure when he was still with the company.
+“Governments around the globe are wasting tax dollars on hydrogen for light/heavy duty infrastructure,” he wrote on X in February. “Like smoking, it’s never too late to quit.”
+Funding isn’t the only challenge to the project. Another complicating factor could be Tesla’s recent restructuring.
+Tesla CEO Elon Musk has said the company is now “balls to the wall for autonomy,” and has reportedly already sacrificed a planned low-cost EV in favor of making a purpose-built robotaxi the company’s priority. The Semi is years behind schedule, and Tesla has only built around 100 to date.
+Despite all this, the Tesla Semi program is still slowly attracting customers. Just a few days after the restructuring, the head of the Semi program, Dan Priestley, announced via social media a new potential customer for the trucks. Priestley also said in March that Tesla has been using Semis to ship battery packs from Nevada to the Fremont factory.
+
+Meta AI assistant comes to WhatsApp, Instagram, Facebook and Messenger
+Meta founder and CEO Mark Zuckerberg speaks during Meta Connect event at Meta headquarters in Menlo Park, California on September 27, 2023.
+Meta on Thursday announced its free artificial intelligence assistant, Meta AI, is rolling out across its social media platforms WhatsApp, Instagram, Facebook and Messenger. It's the company's biggest push into AI yet.
+The assistant can answer questions, create animations and generate images, Meta CEO Mark Zuckerberg said in a video. Meta AI was built on the company's latest large language model called Meta Llama 3, which was also announced Thursday.
+The AI tool is Meta's competitor to OpenAI's ChatGPT and Google Gemini but, in a unique twist, Meta has also partnered with Google and Microsoft to provide results from both companies' search engines.
+"We believe that Meta AI is now the most intelligent AI assistant that you can freely use," Meta CEO Mark Zuckerberg said in the video.
+Shares of Meta closed up more than 1% Thursday.
+Meta AI is built into the search box of the WhatsApp, Instagram, Facebook and Messenger apps so users can easily ask questions that can be answered through the new tool.
+
+Internet users are getting younger; now the UK is weighing up if AI can help protect them
+Internet users are getting younger; now the UK is weighing up if AI can help protect them
+Artificial intelligence has been in the crosshairs of governments concerned about how it might be misused for fraud, disinformation and other malicious online activity; now in the U.K. a regulator is preparing to explore how AI is used in the fight against some of the same, specifically as it relates to content harmful to children.
+Ofcom, the regulator charged with enforcing the U.K.’s Online Safety Act, announced that it plans to launch a consultation on how AI and other automated tools are used today, and can be used in the future, to proactively detect and remove illegal content online, specifically to protect children from harmful content and to identify child sex abuse material previously hard to detect.
+The tools would be part of a wider set of proposals Ofcom is putting together focused on online child safety. Consultations for the comprehensive proposals will start in the coming weeks with the AI consultation coming later this year, Ofcom said.
+Mark Bunting, a director in Ofcom’s Online Safety Group, says that its interest in AI is starting with a look at how well it’s used as a screening tool today.
+“Some services do already use those tools to identify and shield children from this content,” he said in an interview with TechCrunch. “But there isn’t much information about how accurate and effective those tools are. We want to look at ways in which we can ensure that industry is assessing [that] when they’re using them, making sure that risks to free expression and privacy are being managed.”
+One likely result will be Ofcom recommending how and what platforms should assess, which could potentially lead not only to the platforms adopting more sophisticated tooling, but potentially fines if they fail to deliver improvements either in blocking content, or creating better ways to keep younger users from seeing it.
+“As with a lot of online safety regulation, the responsibility sits with the firms to make sure that they’re taking appropriate steps and using appropriate tools to protect users,” he said.
+There will be both critics and supporters of the moves. AI researchers are finding ever-more sophisticated ways of using AI to detect, for example, deepfakes, as well as to verify users online. Yet there are just as many skeptics who note that AI detection is far from foolproof.
+Ofcom announced the consultation on AI tools at the same time it published its latest research into how children are engaging online in the U.K., which found that overall, there are more younger children connected up than ever before, so much so that Ofcom is now breaking out activity among ever-younger age brackets.
+Nearly one-quarter, 24%, of all 5- to 7-year-olds now own their own smartphones, and when you include tablets, the numbers go up to 76%, according to a survey of U.S. parents. That same age bracket is also using media a lot more on those devices: 65% have made voice and video calls (versus 59% just a year ago), and half of the kids (versus 39% a year ago) are watching streamed media.
+Age restrictions around some mainstream social media apps are getting lower, yet whatever the limits, in the U.K. they do not appear to be heeded anyway. Some 38% of 5- to 7-year-olds are using social media, Ofcom found. Meta’s WhatsApp, at 37%, is the most popular app among them. And in possibly the first instance of Meta’s flagship image app being relieved to be less popular than ByteDance’s viral sensation, TikTok was found to be used by 30% of 5- to 7-year-olds, with Instagram at “just” 22%. Discord rounded out the list but is significantly less popular at only 4%.
+Around one-third, 32%, of kids of this age are going online on their own, and 30% of parents said that they were fine with their underaged children having social media profiles. YouTube Kids remains the most popular network for younger users, at 48%.
+Gaming, a perennial favorite with children, has grown to be used by 41% of 5- to 7-year-olds, with 15% of kids of this age bracket playing shooter games.
+While 76% of parents surveyed said that they talked to their young children about staying safe online, there are question marks, Ofcom points out, between what a child sees and what that child might report. In researching older children aged 8-17, Ofcom interviewed them directly. It found that 32% of the kids reported that they’d seen worrying content online, but only 20% of their parents said they reported anything.
+Even accounting for some reporting inconsistencies, “The research suggests a disconnect between older children’s exposure to potentially harmful content online, and what they share with their parents about their online experiences,” Ofcom writes. And worrying content is just one challenge: deepfakes are also an issue. Among children aged 16-17, Ofcom said, 25% said they were not confident about distinguishing fake from real online.
+
+Cisco debuts new AI-focused cybersecurity system after Splunk deal
+In this article CSCO Follow your favorite stocks CREATE FREE ACCOUNT
+The Cisco logo is on display at the Mobile World Congress in Barcelona, Spain, on February 26, 2024. Charlie Perez | Nurphoto | Getty Images
+How it works
+HyperShield serves as a "shield for security," Patel said, explaining that it takes security directly to the things that need to be secured.
+The technology acts like a "fabric," rather than a "fence," giving cyber workers better visibility of software vulnerabilities across applications, according to Patel. The product has an autonomous segmentation feature aimed at helping businesses avoid vulnerabilities and breaches. It allows Cisco's AI to divide a computer network into smaller parts to improve performance and security. Another feature, called self-qualifying upgrades, lets organizations automate the process of testing and deploying upgrades. Patel said organizations dealing with critical infrastructure — such as oil rigs, internet of things (IoT) devices, and MRI machines in hospitals — need to take particular care when upgrading their systems.
+Designed with AI in mind
+Patel said Cisco's HyperShield technology was designed with a new world of digital AI assistants – like ChatGPT, Google Gemini, and other advanced tools – in mind. "We're moving from a world of scarcity to a world of abundance, with digital AI assistants for everything," Patel told CNBC. "Those assistants live in data centres."
+watch now
+"So when you consider the increase in requirements that this places on the data centre, and how we build for that, there is a need to rearchitect, not build more of the same," said Patel. He noted that a security architecture like HyperShield hadn't been built previously because much of the architectures across the industry were created in a time when modern-day applications and technologies like generative AI didn't exist. It currently takes roughly four days for a network vulnerability to be discovered before it's exploited, and the time taken to patch it is even longer at an average 45 days, according to Patel. He said that new technologies like AI and machine learning are needed to identify and patch vulnerabilities to be compressed from days to minutes. "Previously you had to work on the assumption that a breach had happened, [and that] once someone was in, there was lateral movement that you had to identify before you could respond," Patel told CNBC. "We need to move to a position where we can predict and respond."
+Why it matters for investors
+Cisco shares have underperformed the Nasdaq in the last 12 months, falling nearly 5% year-over-year while the tech-heavy index has jumped over 30%. Over the past five years, it's been an even worse investment relative to the broader sector. The stock is down 14% over that stretch, trailing the Nasdaq's 95% gain.
+Stock Chart Icon Stock chart icon Cisco share price performance year-over-year, compared with the performance of the Nasdaq Composite over the same period.
+Response:
+
+Script:
+i'm tony chang, and this is your tony ai briefing. in today's top story, a group of hackers known as ghostr is threatening to unleash a massive leak of financial crime and sanctions data. they claim to have pilfered 5.3 million records from the world-check database, a tool used globally for "know your customer" checks. this hack could potentially lay bare sensitive information on individuals and entities involved in financial crimes. the london stock exchange group, which owns world-check, is working to mitigate the fallout from this data breach, originally sourced from a third-party's systems in singapore.
+
+in other news, in a bold move defying a funding snub from the biden administration, tesla marches forward with its ambitions to build an 1,800-mile charging corridor for electric semi-trucks. spanning from texas to california, this project aims to revolutionize freight transport in the americas, despite missing out on federal funding earmarked for infrastructure development.
+
+meta is making waves too, with ceo mark zuckerberg announcing the launch of meta ai across its platforms including whatsapp, instagram, facebook, and messenger. this new ai assistant, built on meta's latest language model meta llama 3, promises to offer users an unparalleled interactive experience, rivaling other tech giants in the ai space.
+
+meanwhile, the uk is considering employing ai technology to bolster online safety for its youngest internet users. with an increasing number of children accessing the web, ofcom is looking into ai's potential to sift through and remove harmful content, aiming to better shield minors from the internet's darker corners.
+
+lastly, cisco has unveiled hypershield, a cutting-edge ai-driven cybersecurity system, marking its first big launch following its acquisition of splunk. this new technology aims to redefine cyber protection, offering advanced features to safeguard against vulnerabilities and breaches, showcasing a significant leap forward in cybersecurity.
+
+that wraps up our briefing for today. stay tuned for more essential updates tomorrow
+
+polished_script:i'm tony chang, and welcome to your ai tech briefing. today's headlines are buzzing with innovation and cybersecurity concerns. starting off, the cybersecurity world is on high alert as a group known as ghostr claims a significant breach in the financial sector. they've reportedly stolen 5.3 million records from the world-check database, a cornerstone resource for global "know your customer" checks, owned by the london stock exchange group. this breach, originating from third-party systems in singapore, threatens to expose intricate details of financial crimes and sanctions, putting the spotlight on the ever-pressing need for robust cybersecurity measures.
+
+shifting gears to the automotive and energy sector, tesla, led by the visionary elon musk, is boldly advancing its green transportation agenda with plans for an 1,800-mile charging corridor for electric semi-trucks. stretching from texas to california, this initiative aims to redefine freight transport in the americas. this ambitious project moves forward despite tesla not securing federal funding from the biden administration, earmarked for infrastructure development, underscoring tesla's commitment to sustainability and innovation.
+
+in the realm of social media and ai, meta is stepping up its game. mark zuckerberg has announced the rollout of meta ai across its platforms, including whatsapp, instagram, facebook, and messenger. built on meta's cutting-edge language model, meta llama 3, this new ai assistant is poised to enhance user engagement through advanced interactive experiences, setting a new benchmark in the ai assistant landscape.
+
+across the pond, the uk is keen on leveraging ai to foster a safer online environment for children. with digital access becoming more ubiquitous among the younger population, ofcom is investigating ai's potential to sift and eliminate harmful content from the web, aiming to protect minors from the undesirable elements of the internet.
+
+lastly, in cybersecurity advancements, cisco reveals hypershield, its latest ai-driven cybersecurity solution, following the acquisition of splunk. this ground-breaking technology promises to revolutionize cyber protection, offering state-of-the-art features to defend against emerging vulnerabilities and breaches, marking a pivotal development in the cybersecurity domain.
+
+that concludes today's ai tech briefing. stay connected for more insights and updates tomorrow
+
+Podcast Title:
+"ghostr's financial leak nightmare 🕵️‍♂️, tesla's bold ev charging vision ⚡, meta unleashes ai titan 🤖"

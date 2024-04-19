@@ -175,6 +175,9 @@ if __name__ == '__main__':
         prompt_text = "You are creating newsletters for audience. From the list of sources and their news, consider the frequency of the event being discussed and how interesting audience find them to be. Then, select the top 5 news events that you would include in the newsletter:\n\n" + \
             "Grouped By Source:\n" + formatted_text
 
+        prompt_text = "Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events. Here are the news of today:\n"
+        + formatted_text
+
         news_titles = select_events_by_source(formatted_text)
         print(news_titles)
         output_data = f"Titles:\n{chr(10).join(titles)}\n\nselected_news:\n{news_titles}\n"

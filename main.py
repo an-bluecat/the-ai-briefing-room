@@ -8,6 +8,7 @@ import datetime
 from newsScraper import scrape_verge, scrape_cnbctech, scrape_techcrunch, scrape_and_group_by_source, format_grouped_titles_by_source, select_events_by_source
 from newsplease import NewsPlease
 import re
+import difflib
 
 # Setup basic configuration for logging
 logging.basicConfig(level=logging.INFO,
@@ -47,7 +48,6 @@ class NewsPodcastOrchestrator:
                 time.sleep(RETRY_DELAY)
                 attempts += 1
         return None
-    
 
     def get_top_news(self):
         # get top news titles from the sources
@@ -55,32 +55,70 @@ class NewsPodcastOrchestrator:
         formatted_text = format_grouped_titles_by_source(grouped_sources)
         input_ask = "You are creating newsletters for audience. From the list of sources and their news, consider the frequency of the event being discussed and how interesting audience find them to be. Then, select the top 5 news events that you would include in the newsletter:\n\n" + \
             "Grouped By Source:\n" + formatted_text
-        role = "Output the response as string titles in the seperated by newline that are most important." 
+        input_ask = "Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events. \
+            Here are the news of today:\n" + formatted_text
+        role = "Output the response as string titles in the seperated by newline. Each title should be exactly how it is in the news source."
 
-        output = self.ask_gpt(input_ask, role)        
-        return output.split('\n') if output else []
+        output = self.ask_gpt(input_ask, role)
+        return input_ask, output.split('\n') if output else []
 
     def generate_podcast_script(self, top_news):
         """ Generates a podcast script based on the top news titles. """
-        
+
         news_concat = []
         for news in top_news:
             if news not in self.news_to_URL:
+                # Search for news in the dictionary keys
+                possible_news = difflib.get_close_matches(
+                    news, self.news_to_URL.keys())
+
+                # If a close match is found, use the full string as the key
+                if possible_news:
+                    news = possible_news[0]
+                else:
+                    logging.warning(
+                        f"News '{news}' not found in the available news sources. Skipping")
+                    continue
                 logging.warning(
-                    f"News '{news}' not found in the available news sources.")
-                return None
-            
+                    f"News '{news}' not found in the available news sources. Skipping")
+                continue
+
             curr_news = NewsPlease.from_url(self.news_to_URL[news])
-            news_concat.append(curr_news.title + "\n" +curr_news.maintext)
-            
-        
-        
+            news_concat.append(curr_news.title + "\n" + curr_news.maintext)
+
         news_concat = "\n\n".join(news_concat)
-        
-        input_ask = f'''Create a podcast script under 500 words using these top news titles and content with a tone similar to CNBC TechCheck Briefings.
-        Start with a sentence of introduction, and dive straight into news. Be sure to keep an interesting tone and pause/transition in between news. Also think about how to keep audience engaged.: {news_concat}
-        '''
-        return self.ask_gpt(input_ask)
+        first_shot = """
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Tony Chang, and this is your CNBC techcheck Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+
+        """
+
+        # input_ask = f'''Create a podcast script under 500 words using these top news titles and content with a tone similar to CNBC TechCheck Briefings.
+        # Start with a sentence of introduction, and dive straight into news. Be sure to keep an interesting tone and pause/transition in between news. Also think about how to keep audience engaged.: {news_concat}
+        #
+        prompt = f"Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending, and replace CNBC techcheck briefing to 'Tony AI briefing' \n {news_concat}\n"
+        response_begin = "Response:"
+        input_ask = first_shot + prompt + response_begin
+
+        return input_ask, self.ask_gpt(input_ask)
+
+    def polish_podcast_script(self, script):
+        """Polishes the podcast script using the GPT API."""
+
+        # Make a request to the GPT API to polish the script
+        input_ask = script + """
+    
+        This is not up to standards with the style of 'CNBC techcheck', here is a example. Carefully inspect the language style, sentence structure, use of words and order of words in sentences of the following examples of 'CNBC techcheck':
+example 1:
+"I'm Julia Boorstin, and this is your tech Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow."
+example 2: 
+"I'm Steve Kovach, and this is your tech Briefing. AMD revealing today its latest AI chips. The new chips will be for so-called AI PCs, or PCs with special processors, for tasks like real-time language translation, or using tools like Microsoft's Copilot Assistant more efficiently. Last month, Intel put its latest AI PC chip in Microsoft's new Surface computer lineup, and Qualcomm is expected to put its chips in PCs starting next month. Sticking with AI, Microsoft announcing today a $1.5 billion investment in G42, a startup based in the United Arab Emirates. As part of the deal, G42 will use Microsoft's Azure Cloud to run its AI applications, and Microsoft President Brad Smith will join the company's board. Microsoft has made several foreign AI and cloud investments so far this year. Some examples include the company said it would open a headquarters in London, invest in the French startup Mistral, and invest $2.9 billion in AI infrastructure in Japan. Now over to China. Baidu, the Chinese search company, announced its AI chatbot ErnieBot has surpassed 200 million users. ErnieBot launched last year, and other companies like Samsung and Honor have integrated Ernie into their devices. Apple is reportedly going to partner with Baidu as well to help power new AI features in devices sold in China. That's all from today. We'll see you back here tomorrow."
+Make my original podcast script more like the examples above to an extend that it is similar in style, language, sentence structure, and use of words and so closely resembled so that no one can tell the difference between the style.
+refined podcast script:
+"""
+        role = "Output the polished script."
+        polished_script = orchestrator.ask_gpt(input_ask, role)
+        return polished_script
 
     def text_to_speech(self, script, output_path):
         """ Converts the generated script to speech and saves the audio file. """
@@ -108,6 +146,7 @@ def remove_leading_numbers(lst):
     # This will apply the regex substitution to each string in the list
     return [pattern.sub('', s) for s in lst]
 
+
 # Example usage:
 if __name__ == "__main__":
     # Load environment variables from .env file
@@ -129,32 +168,33 @@ if __name__ == "__main__":
 
     orchestrator = NewsPodcastOrchestrator(api_key, today, news_to_URL)
 
-    top_news = orchestrator.get_top_news()
-    
+    top_news_prompt, top_news = orchestrator.get_top_news()
+
     if top_news:
-        script = orchestrator.generate_podcast_script(remove_leading_numbers(top_news))
+        generate_script_prompt, script = orchestrator.generate_podcast_script(
+            remove_leading_numbers(top_news))
+
+        polished_script = orchestrator.polish_podcast_script(script)
         podcast_title = orchestrator.generate_podcast_title(script)
-        if script and podcast_title:
+        if polished_script and podcast_title:
             if PRODUCTION_MODE:
                 audio_file_path = orchestrator.text_to_speech(
-                    script, output_directory)
+                    polished_script, output_directory)
                 if audio_file_path:
                     logging.info(
                         f"Podcast production completed successfully. Audio file at: {audio_file_path}")
+                else:
+                    logging.error("Failed to generate audio file.")
+            # Prepare the output text data
+            output_data = f"Titles:\n{chr(10).join(titles)}\n\ntop_news_prompt: {top_news_prompt}\n\nTop News:\n{chr(10).join(top_news)}\n\nGenerate_scipt_prompt:\n{generate_script_prompt}\n\nScript:\n{script}\n\npolished_script:\n{polished_script}\n\nPodcast Title:\n{podcast_title}\n"
+            output_file_path = f"{OUTPUT_DIRECTORY}podcast_data_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.txt"
 
-                # Prepare the output text data
-                output_data = f"Titles:\n{chr(10).join(titles)}\n\nTop News:\n{chr(10).join(top_news)}\n\nScript:\n{script}\n\nPodcast Title:\n{podcast_title}\n"
-                output_file_path = f"{OUTPUT_DIRECTORY}podcast_data_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.txt"
+            # Write the output data to the file
+            with open(output_file_path, 'w') as file:
+                file.write(output_data)
+                logging.info(f"All data saved to {output_file_path}.")
 
-                # Write the output data to the file
-                with open(output_file_path, 'w') as file:
-                    file.write(output_data)
-                    logging.info(f"All data saved to {output_file_path}.")
-
-            else:
-                logging.error("Failed to generate audio file.")
         else:
             logging.error("Failed to generate podcast script or title.")
     else:
         logging.error("Failed to identify top news.")
-    
