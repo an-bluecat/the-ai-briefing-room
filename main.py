@@ -89,14 +89,10 @@ class NewsPodcastOrchestrator:
         news_concat = "\n\n".join(news_concat)
         first_shot = """
         Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
-        Response: I'm Tony Chang, and this is your CNBC techcheck Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
-
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
         """
 
-        # input_ask = f'''Create a podcast script under 500 words using these top news titles and content with a tone similar to CNBC TechCheck Briefings.
-        # Start with a sentence of introduction, and dive straight into news. Be sure to keep an interesting tone and pause/transition in between news. Also think about how to keep audience engaged.: {news_concat}
-        #
-        prompt = f"Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending, and replace CNBC techcheck briefing to 'Tony AI briefing' \n {news_concat}\n"
+        prompt = f"Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including host name), and replace CNBC techcheck briefing to 'AI briefing' \n {news_concat}\n"
         response_begin = "Response:"
         input_ask = first_shot + prompt + response_begin
 
@@ -107,7 +103,6 @@ class NewsPodcastOrchestrator:
 
         # Make a request to the GPT API to polish the script
         input_ask = script + """
-    
         This is not up to standards with the style of 'CNBC techcheck', here is a example. Carefully inspect the language style, sentence structure, use of words and order of words in sentences of the following examples of 'CNBC techcheck':
 example 1:
 "I'm Julia Boorstin, and this is your tech Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow."
@@ -119,6 +114,16 @@ refined podcast script:
         role = "Output the polished script."
         polished_script = orchestrator.ask_gpt(input_ask, role)
         return polished_script
+
+    def generate_podcast_description(self, script):
+        """ Generates a podcast description from the provided script. """
+        input_ask = """
+            Generate a description for this podcast. Summarize the key topics discussed and highlight any interesting insights or takeaways. This will be the script we use for the podcast description on Apple Podcast. So please be concise, use bullet point when possible.
+            Here's the podcast script: 
+            {script}
+            Description:
+            """
+        return self.ask_gpt(input_ask)
 
     def text_to_speech(self, script, output_path):
         """ Converts the generated script to speech and saves the audio file. """
@@ -175,18 +180,21 @@ if __name__ == "__main__":
             remove_leading_numbers(top_news))
 
         polished_script = orchestrator.polish_podcast_script(script)
+        podcast_description = orchestrator.generate_podcast_description(
+            polished_script)
         podcast_title = orchestrator.generate_podcast_title(script)
         if polished_script and podcast_title:
             if PRODUCTION_MODE:
                 audio_file_path = orchestrator.text_to_speech(
                     polished_script, output_directory)
+
                 if audio_file_path:
                     logging.info(
                         f"Podcast production completed successfully. Audio file at: {audio_file_path}")
                 else:
                     logging.error("Failed to generate audio file.")
             # Prepare the output text data
-            output_data = f"Titles:\n{chr(10).join(titles)}\n\ntop_news_prompt: {top_news_prompt}\n\nTop News:\n{chr(10).join(top_news)}\n\nGenerate_scipt_prompt:\n{generate_script_prompt}\n\nScript:\n{script}\n\npolished_script:\n{polished_script}\n\nPodcast Title:\n{podcast_title}\n"
+            output_data = f"Titles:\n{chr(10).join(titles)}\n\ntop_news_prompt: {top_news_prompt}\n\nTop News:\n{chr(10).join(top_news)}\n\nGenerate_scipt_prompt:\n{generate_script_prompt}\n\nScript:\n{script}\n\npolished_script:\n{polished_script}\n\nPodcast Title:\n{podcast_title}\n\npodcast_description:\n{podcast_description}\n"
             output_file_path = f"{OUTPUT_DIRECTORY}podcast_data_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.txt"
 
             # Write the output data to the file
