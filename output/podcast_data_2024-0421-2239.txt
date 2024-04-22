@@ -1,0 +1,291 @@
+
+Titles:
+Why is Windows 11 so annoying?
+The future of AI gadgets is just phones
+The game emulator your phone has been missing
+Bitcoin miners upgrade power centers and get into AI to brace for slashed revenue post halving
+Peak XV’s Piyush Gupta is leaving firm to start own secondary-focused VC fund
+Tinder gets a ‘Share My Date’ feature for users to send date plans to their curious friends
+TikTok Shop expands its secondhand luxury fashion offering to the UK
+Tesla layoffs, Cybertruck recalls and Serve Robotics goes public
+Women in AI: Anna Korhonen studies the intersection between linguistics and AI
+How United Airlines uses AI to make flying the friendly skies a bit easier
+Fintech startup Ramp sees 32% bump in valuation, Mercury expands into consumer banking
+Women in AI: Anna Korhonen studies the intersection between linguistics and AI
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+Peak XV’s Piyush Gupta is leaving firm to start own secondary-focused VC fund
+Tinder gets a ‘Share My Date’ feature for users to send date plans to their curious friends
+TikTok Shop expands its secondhand luxury fashion offering to the UK
+Tesla layoffs, Cybertruck recalls and Serve Robotics goes public
+Women in AI: Anna Korhonen studies the intersection between linguistics and AI
+How United Airlines uses AI to make flying the friendly skies a bit easier
+Fintech startup Ramp sees 32% bump in valuation, Mercury expands into consumer banking
+Women in AI: Anna Korhonen studies the intersection between linguistics and AI
+
+The Verge
+Why is Windows 11 so annoying?
+The future of AI gadgets is just phones
+The game emulator your phone has been missing
+
+CNBC Tech
+Bitcoin miners upgrade power centers and get into AI to brace for slashed revenue post halving
+
+Top News:
+tesla layoffs, cybertruck recalls and serve robotics goes public
+bitcoin miners upgrade power centers and get into ai to brace for slashed revenue post halving
+tiktok shop expands its secondhand luxury fashion offering to the uk
+fintech startup ramp sees 32% bump in valuation, mercury expands into consumer banking
+tinder gets a ‘share my date’ feature for users to send date plans to their curious friends
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including host name), and replace CNBC techcheck briefing to 'AI briefing' 
+ Tesla layoffs, Cybertruck recalls and Serve Robotics goes public
+Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation. Sign up here — just click TechCrunch Mobility — to receive the newsletter every weekend in your inbox. Subscribe for free.
+Tesla is back in the news cycle and our crystal ball says it’s one of those long-term affairs. The week kicked off with layoffs — about 10% of its more than 140,000-person workforce — and CEO Elon Musk declaring he was going “balls to the wall” on autonomy. It ended with a Cybertruck recall. Cool cool.
+There’s lots more in the newsletter than just Tesla — although before we move on, do check out Sean O’Kane’s scoop about the company’s 1,800-mile Tesla Semi charging corridor program. Read on to catch up on Serve Robotics’ public market debut, a week of highs and lows for Waymo, and more.
+Let’s go!
+A little bird
+While much of our focus is on startups and Silicon Valley, we do have some little birds in Washington, D.C.
+A little bird told us recently that federal regulators are getting close to publishing a Notice of Proposed Rulemaking on autonomous vehicle regulations, which would be the first set of federal guardrails proposed for the industry.
+Our source said the Federal Motor Carrier Safety Administration (FMCSA), which regulates commercial vehicles in the U.S., should have a proposal out by this summer, fall at the latest. We’re told that the federal ruling on AVs will likely establish a minimum safety standard for AVs to operate on public roads but that state governments could enforce stricter regulations within their own borders. We’ve been hearing about discussions and plans around federal AV regulations for years now. Have we finally started to make headway? We shall see.
+Got a tip for us? Email Kirsten Korosec at kirsten.korosec@techcrunch.com, Sean O’Kane at sean.okane@techcrunch.com or Rebecca Bellan at rebecca.bellan@techcrunch.com. If you prefer to remain anonymous, click here to contact us, which includes SecureDrop (instructions here) and various encrypted messaging apps.
+Deal of the week
+Serve Robotics, the Nvidia- and Uber-backed sidewalk robot delivery company, hit the public markets this week via a reverse merger. Serve expects its public debut to bring in around $40 million in gross proceeds, funding that will go toward R&D for future robots, manufacturing of new robots, geographic expansion and more.
+Serve’s goal is to increase its fleet from the 100 robots deployed today around Los Angeles to 2,000 robots across multiple U.S. cities by the end of 2025, via a partnership with Uber Eats. Serve has huge revenue ambitions, with plans to generate between $60 million and $80 million in annual revenue by that same deadline. In 2023, Serve brought in $207,545 in revenue at a loss of $1.5 million.
+FWIW, Uber and Nvidia are still shareholders, but their shares in the company are decreasing with this debut. Pre-IPO, Uber and Nvidia held a 16.6% stake and 14.3% stake, respectively. Once the offering closes, those stakes will change to 11.5% and 10.1%, per regulatory filings.
+Serve’s share price was $4 at market open on Thursday, and it closed that day at around $3.
+Other deals that got my attention …
+Found Energy, a startup that uses waste aluminum to generate heat and hydrogen, raised a $12 million seed round, but Tim De Chant’s story on the company is about so much more.
+Getir, a Turkish delivery company that was once worth $12 billion, is reportedly weighing asset sales and exits from non-core markets as investors put the pressure on to cut losses.
+Swtch Energy, a company building EV charging solutions for apartment buildings, raised $27.2 million in a Series B to expand its charging network and boost the tech behind its charging and energy management solutions. Blue Earth Capital led the round with participation from Alantra’s Energy Transition Fund Klima, Active Impact Investments and GIGA Investments Corp.
+Notable reads and other tidbits
+ADAS
+Mobileye has secured orders to ship 46 million of its EyeQ6 Light ADAS chips over the next few years to automakers. Multiple models launching this year will feature the chip, which promises to deliver improved sensing of wet roads, detection of and reaction to objects at a greater distance, and better ability to read key text phrases on road signs. TechCrunch had the chance to dig into this, and our main takeaways are that automakers will probably love this chip because it’s more powerful than Mobileye’s last chip, but it’s the same price.
+Autonomous vehicles
+Waymo has begun initial data collection and mapping in Atlanta, the company’s latest geographic win. The Alphabet-owned company didn’t say whether it plans to launch in the Georgian city or any other city it is mapping in, such as Washington, D.C., and Buffalo. Aside from San Francisco, Waymo has launched commercial robotaxi services in Los Angeles and Phoenix, with Austin planned for the end of this year.
+But with ups, come downs. Six Waymo vehicles also got caught blocking traffic to an on-ramp in San Francisco. The vehicles were caught between a construction zone and the on-ramp and had to pull over to await rescue. A spokesperson told TechCrunch that while Waymo does have the green light to go fully driverless on freeways in San Francisco, the company has not yet pulled the driver out.
+Electric vehicles, charging & batteries
+General Motors launched a home EV charger and vehicle-to-home (V2H) kit that lets a home pull energy from an EV battery in the event of a blackout. Customers in California, Florida, Texas, Michigan and New York can purchase today.
+Gogoro, the two-wheeler battery-swapping company, and TSMC, a global semiconductor company, are partnering to introduce 15 GoStations across Taiwan that use 100% clean energy. They’ll also be launching Gogoro’s scooter-sharing service in TSMC’s headquarter city, Hsinchu, and expanding the charging network in the city.
+TeslaCrunch
+We’ve been all over Tesla this week, so let’s dive in.
+The week started out with company-wide layoffs that affected at least 10% of the entire 140,000-person organization, with some teams seeing 20% of their staff gutted. Two high-profile executives departed Tesla as well: Drew Baglino, Tesla’s SVP of Powertrain and Energy, and Rohan Patel, VP of Public Policy and Business Development. Patel told TechCrunch he left because of “[b]ig overall changes” at the company that he declined to specify. In an email sent to the company, CEO Elon Musk said the cuts were necessary to increase productivity and prepare for Tesla’s “next phase of growth.”
+(Psssst! Don’t want to read about Tesla layoffs and what comes next? You can watch about it instead.)
+Many of those who were cut, sources say, were high performers who just happened to be working on lower-priority projects. Sources at Tesla also told TechCrunch the company made the cuts because it expects poor first-quarter earnings. Deliveries were subpar, and all those price cuts last year that continued early into 2024 likely had an effect on Tesla’s margins. Deliveries were down in Q1 year-over-year, despite the $200,000 Tesla spent on advertising on X, per our reporting.
+Which might be why Tesla ditched its EV inventory price discounts this week. On X, Musk said this move was in line with Tesla’s strategy to “streamline the whole Tesla sales and delivery system.”
+These changes in general, and the layoffs in particular, are made more stark by Tesla’s proxy statement that calls on the board to reinstate Musk’s $56 billion payout, which a Delaware judge earlier this year voided. In a huff, Musk threatened to reincorporate Tesla in Texas instead, and it appears that plan will also be put to the board soon.
+Meanwhile, on the charging front, Tesla is moving forward with its plan to build an electric big rig charging corridor stretching from Texas to California, despite being snubbed by a lucrative federal funding program that’s part of Biden’s Bipartisan Infrastructure law.
+Tesla this week also had to recall the 3,878 Cybertrucks that it has delivered to customers to date over faulty accelerator pedals that can get stuck. I know what you’re thinking. Finally we know how many Cybertrucks Tesla delivered.
+This week’s wheels
+I’ve been in a handful of new vehicles and I’m eager to share my thoughts, but we’re also running out of space this week. In the coming issues, we’ll have some takes on electric bikes, the 2024 Lexus LC 500h, the 2024 Mercedes-Benz eSprinter and more.
+See y’all next week!
+
+Bitcoin miners get into AI to survive halving
+watch now
+AUSTIN, TEXAS — Adam Sullivan left investment banking to mine bitcoin at an awkward time. It was May 2023, bitcoin was trading at around $21,000, U.S. regulators were in the thick of cracking down on the sector writ large, and Core Scientific , the company he had agreed to take over, was battling angry lenders in a Texas bankruptcy court over tens of millions of dollars in outstanding debt. But Sullivan knew that, with a lifeline, he could get the business to a much better place. That's because the halving was on the way, and with it would likely come a big rally in bitcoin. Late Friday night, the bitcoin code automatically cut new issuance of the world's largest cryptocurrency in half. It happens roughly every four years, and in addition to helping to stave off inflation, it historically precedes a major run-up in the price of bitcoin. The technical event is relatively simple: Bitcoin miners get paid in bitcoin to validate transactions, and after 210,000 blocks of transactions are computed and added to the main chain, the reward given to the miners securing bitcoin is 'halved.' There are more than a dozen publicly traded miners on the network and thousands of smaller, private ones around the globe, constantly racing to process transactions and get paid in new bitcoin. Because the event leads to a cut to rewards paid to miners directly, they'll be the first ones to feel the impact of the halving.
+Zoom In Icon Arrows pointing outwards The price of bitcoin has touched new all-time highs after each "halving" event. CNBC
+Typically, when the halving cuts supply, it's led to huge rallies for bitcoin. In fact, the previous (and only) three halvings in the chain's history have come before every bull run, in which the coin has touched new all-time highs and a surge of investors have entered the market for the first time. That rapid price increase has helped many miners stave off the worst since it tends to offset the impact of having the block prize cut in half. "As a company that was already in the process of scaling our infrastructure during the previous halving, we know the toll that halvings can take on a company if it is not adequately prepared," Core's Sullivan told CNBC. The aggregate market cap of the 14 U.S.-listed bitcoin miners tracked by JPMorgan analysts, which accounts for around 21% of the global Bitcoin network, declined 28% over the first half of April to $14.2 billion, reaching year-to-date lows. Bitdeer was the best-performing stock over the period, down around 20%, versus Stronghold Digital , which was 46% lower. Some have billed the 2024 bitcoin halving as a seminal moment for the mining sector. Depending on how much prep work miners have done, it could easily make or break them. "Being prepared for a halving means evaluating all of your power strategies, all of your software capabilities, all of your operations," continued Sullivan. Others are less concerned given recent price moves in bitcoin. In a research note from Needham on Apr. 16, analysts said they expect the halving to only have a modest impact to miners' estimated EBITDA margins, despite the 50% reduction in revenue, since the price of bitcoin has been trading in the range of $60,000 to $70,000. "We expect geopolitical tensions and interest rate policy to be the biggest near-term drivers of crypto price action," Needham analysts wrote, adding that at a bitcoin price above $60,000, the halving is "derisked for nearly all public miners." The bank did, however, single out their preference for low-cost bitcoin producers like Riot Platforms , Bitdeer, and Cipher Mining . Meanwhile, if bitcoin prices fall, Needham says the most outsized native impact will be felt by higher cost producers that are also levered to higher bitcoin prices via large treasury holdings. Analysts from JPMorgan echoed a similar sentiment, writing in an Apr. 16 research note that they think "recent weakness offers an attractive entry point" for investors and that they are "especially bullish" on Riot, which they believe offers attractive relative valuations.
+Power supply for Whinstone's bitcoin mine in Rockdale, Texas.
+Years spent bracing for the halving
+Miners have had years to prepare for the halving, including seeking lower power costs and upgrading their fleets to more efficient machines. "Bitcoin's halving happens like clockwork every four years," said Haris Basit, chief strategy officer of Bitdeer Technologies Group. "It's a known variable that is a benchmark for us to remain focused on operational excellence." To that end, the Singapore-headquartered mining firm has invested in new data centers, but its core strategy has been to increase vertical integration through research and development. 25% of its staff is focused on R&D efforts, which Basit says have "led to new innovations and revenue pathways, such as our recently announced 4nm mining rigs and AI Cloud offerings." Analysts at Cantor Fitzgerald recently named Bitdeer as having one of the industry's lowest "all-in" cost-per-coin. Greg Beard, the CEO and Chairman of Stronghold Digital Mining, tells CNBC that miners whose only lever is more efficient machines will be at a disadvantage. "Miners who own their low-cost power are better positioned," said Beard. "Operational costs will be lower, allowing them to be more flexible with their capital." Core's Sullivan agrees, noting that bitcoin mining data centers in the future will work hand-in-glove with power generators and grid operators to serve as a virtual battery for grid operators – allowing them to increase base load, curtail bitcoin data centers when they need to, and avoid peak generation loads, which he says are dirty and expensive. "We own and operate our infrastructure, giving us greater control over operational and strategic decisions, such as the potential to expand into high-performance computing hosting," said Sullivan. Core Scientific, which launched in 2017 and now manages seven mining sites in five U.S. states, also owns the full technology stack. The company has been looking to diversify its revenue streams beyond purely bitcoin. Sullivan says that existing data centers offer reconfiguration opportunities to accommodate new types of high-value compute. "Certain data centers are located in close proximity to major metropolitan areas, making them candidates for low-latency, high-value compute applications," said Core's CEO.
+Bitdeer's bitcoin mine in Rockdale, Texas.
+Riot Platforms CEO Jason Les told CNBC that preparation for the halving came down to the company's long-standing focus on achieving a low cost of power, strong balance sheet, and significant scale of operations. Les says that's what has positioned the firm to both withstand the halving with positive margins and be well positioned for upside on the other side of it. "Our new Corsicana Facility was energized just this week, and we will be significantly scaling up our hash rate with next-generation equipment at that new site over the remainder of the year," said Les. "As a result, we are positioned to mine more bitcoin per day at the end of the year than we do today, despite the halving." Marathon Digital , which has seen its stock rise more than 70% in the last year, took a different approach to scaling the business than its rivals. CEO Fred Thiel tells CNBC that the company grew quickly using an asset-light approach, where Capex was spent on mining rigs rather than infrastructure. "In December, we owned less than 5% of the sites where we were hosting our miners," said Thiel. "Today we now own 53% of our total 1.1 gigawatts of capacity, having purchased it at less than the build and replacement cost." Owning sites lowers Marathon's cost to mine by up to 20% on a marginal cost basis. Thiel also noted that by the end of 2024, Marathon expects to further improve efficiency by 10% to 15% as they deploy the next generation rigs across their new sites. That boost to efficiency isn't just about new gear, however. The firm is deploying its own custom firmware, which allows it to operate even more efficiently. Marathon, along with other mining firms, has begun diversifying its business model into ancillary operations beyond purely bitcoin mining, as well. Thiel says the company recently launched an energy harvesting division, where they are compensated for converting stranded methane and bio-mass into energy, which they then sell heat back into an industrial or commercial process. The service essentially subsidizes and lowers Marathon's cost to mine significantly. The company expects this new business line to generate a significant portion of its revenues by the halving in 2028.
+watch now
+Diversifying revenue
+The April 2024 bitcoin halving looks a lot different than the three that came before it. For years, increased competition resulting from new miners coming online has been cutting into profits, because more miners means more people are sharing the same pool of rewards. In a research note from JPMorgan on Apr. 16, analysts note that the network hashrate, a proxy for industry competition and mining difficulty, was up 4% in April from the month before. Stronghold's Beard says the halving is a headwind dwarfed by the global hashrate increasing nearly five-fold from the last one in May 2020. "Mining is a tough industry especially because there are a lot of nation states that have extra power power and they're dedicating it to mining," said Nic Carter of Castle Island Ventures. "It's a free market, anybody can enter into it as long as they have the basics." U.S. spot bitcoin exchange-traded funds have also significantly shifted the pricing dynamics. In years past, the price of bitcoin didn't surge until after the halving. But in the wake of record flows into these spot bitcoin funds, the world's largest cryptocurrency touched a fresh all-time-high above $73,000 in March. "The recently approved bitcoin ETFs have proven to be huge pipelines of capital into bitcoin and that universe of ETFs continues to grow with the recent approvals in Hong Kong as well," said Riot's Les. "We think the price action we've seen in bitcoin year-to-date reflect that and has us very optimistic on what bitcoin mining economics can look like in the months and years post-halving."
+watch now
+Blackrock's ETF reached $17 billion in net assets within a few months of launching. Beard of Stronghold tells CNBC that if Blackrock added even just a billion dollars more of bitcoin in April to its ETF, it would single handedly create demand for more coins than the mining industry will supply post halving. What is also different this time around is that the block reward is no longer the primary form of miner revenue. Recent programming innovations in bitcoin have given way to a burgeoning ecosystem of projects building on top of bitcoin's blockchain, which has translated to greater transaction fee revenue for miners. There is a limit to how large the blocks can go but the value of those blocks is about to increase significantly, according to Bill Barhydt, who is the CEO and founder of Abra. From Barhydt's vantage point, he supports miners with a mix of services, including their auto liquidations, so he has access to a lot of macro data across the sector. "The math is simple," begins Barhydt. "Bitcoin blocks are fixed in size and the demand for data within those blocks is going to increase significantly for several reasons, including more retail wallet holders moving their bitcoin into and out of storage, new uses cases like Ordinals (NFTs for bitcoin) and DeFi on bitcoin, institutional settlement requirements for exchange traded products in the U.S., Hong Kong, Europe, etc., lightning settlement transactions, and more." At the current rate of adoption, Barhydt believes that transaction fees in this cycle would likely peak within 24 months at 10 times their cost during the previous cycle peak, due to a combination of a higher price for bitcoin itself, combined with higher demand for the space inside each block. Castle Island's Carter isn't so sure that fee-based revenue can completely make up for lost income post-halving. "It's not entirely clear that fees are fully offsetting the lost revenue, and in fact, I don't expect that to happen" said Carter. Fees tend to be really cyclical. They rise sharply during periods of congestion, and they fall back to near zero during other normal periods. Carter cautions that miners will see spikes in fees, but there is not yet an enduring, strong, and robust fee market most of the time.
+watch now
+Swapping ASICs for AI
+In the last year, there has been a surge in demand for AI compute and infrastructure that can support the massive workloads required to power these novel machine learning applications. In a new report, digital asset fund manager CoinShares says it expects to see more miners shift toward artificial intelligence in energy-secure locations because of the potential for higher revenues. Already, mining firms like BitDigital, Hive, Hut 8, Terawfulf, and Core Scientific all have either current AI operations or AI growth plans. "This trend suggests that bitcoin mining may increasingly move to stranded energy sites while investment in AI grows at more stable locations," write analysts at CoinShares. But pivoting from bitcoin mining to AI isn't as simple as re-purposing existing infrastructure and machines. The data center requirements are different, as are the data network needs. "AI presents several challenges, notably the need for distinct and considerably more costly infrastructure, which establishes barriers to entry for smaller, less capitalized entities," continues the report. "Additionally, the necessity for a different skill set among employees leads to increased costs as companies hire more AI-skilled talent." The rigs used to mine bitcoin are called ASICs, short for Application-Specific Integrated Circuits. The "Specific" in that acronym means that it can't be used to do other things, like supporting the underlying infrastructure for AI. "If you're a bitcoin miner, your machines can't be repurposed," explains Carter. "You have to buy net new machines in order to do it and the data center requirements are different for AI versus bitcoin mining." Sullivan says that Core Scientific, which has been mining a mix of digital assets since 2017, began to diversify into other services in 2019. "The company has owned and hosted Nvidia DGX systems and GPUs for AI computing, having built and deployed a specialized facility specifically for high-value compute applications at our Dalton, Georgia data center campus," he said. Core Scientific has also partnered with CoreWeave, a cloud provider which provides infrastructure for use cases like machine learning. Sullivan says the combined capabilities will support both AI and High Performance Compute workloads, resulting in an estimated revenue of $100 million, though he says the total potential revenue is much higher given their significant infrastructure footprint that can be fitted to host some of the most advanced GPU compute coming to market. "Bitcoin mining is an early example of high-value compute, attracting significant capital and a number of companies scaling their operations to support the Bitcoin network," said Sullivan. But Sullivan thinks few operators will be able to make the transition to AI. Sullivan continued, "Bitcoin mining sites can only be repurposed if they meet the attributes that are required for HPC. Many existing sites across North America do not meet these needs."
+
+TikTok Shop expands its secondhand luxury fashion offering to the UK
+TikTok Shop, TikTok’s social commerce marketplace, is launching a secondhand luxury category in the U.K., putting it in closer competition with The RealReal, Vestiaire Collective, Depop, Poshmark, and Mercari, among others. The offering has already existed in TikTok Shop U.S. for over six months.
+The new category allows customers in the U.K. to purchase pre-owned high-end clothing, designer handbags, and other accessories, all without leaving the TikTok app. At launch, only five U.K. brands are available, including Sellier, Luxe Collective, Sign of the Times, HardlyEverWornIt, and Break Archive.
+Since launching TikTok Shop in 2022, the platform has sold around $1 billion or more worth of products. However, despite its success, some argue that TikTok Shop is ruining the short-form video-sharing app, claiming fakes and poor-quality products are flooding the marketplace. Counterfeits are the biggest risk when buying pre-owned luxury goods online, with even the largest e-commerce giants (Amazon, eBay, and others) facing authenticity issues.
+Like all resale marketplaces, TikTok Shop has an anti-counterfeit policy that guarantees a full refund if a seller is proven to have sold a counterfeit product. Bloomberg recently reported that the company is in talks with luxury goods company LVMH to help crack down on counterfeiting.
+All secondhand brands on TikTok Shop U.S. are required to have certificates from third-party authenticators. TikTok partnered with authentication services Entrupy and Real Authentication to ensure that designer handbags on the platform are genuine.
+Meanwhile, a TikTok spokesperson told TechCrunch that the five U.K. brands all have their own in-house authentication process. They wouldn’t say when it would begin accepting other secondhand brands.
+The launch of TikTok Shop’s secondhand luxury category is a strategic move to tap into the growing market of preowned luxury items. The secondhand luxury market is a thriving multibillion-dollar business, with an estimated $49.3 billion (€45 billion) worth of secondhand designer items sold worldwide in 2023.
+Additionally, this expansion aligns with the increasing trend of people embracing preloved fashion, and it opens up new avenues for secondhand brands in the U.K. to reach a wider customer base. The popularity of secondhand fashion on TikTok is evident, with over 144,000 TikTok posts using the hashtag #secondhandfashion, which has garnered approximately 1.2 billion views.
+Today’s announcement arrives on the heels of the U.S. House of Representatives passing a bill that requires ByteDance to sell TikTok or face a ban in the U.S., a bill that appears to be gaining support in the Senate. A ban would be a serious blow to American merchants selling on the app. According to the company, the short video-sharing app generated $14.7 billion for small- to mid-size businesses in 2023.
+
+Fintech startup Ramp sees 32% bump in valuation, Mercury expands into consumer banking
+Welcome to TechCrunch Fintech! This week, we’re looking at Ramp’s big raise and valuation jump, Mercury’s move into personal banking, Klarna’s new credit card, global funding rounds and more!
+To get a roundup of TechCrunch’s biggest and most important fintech stories delivered to your inbox every Sunday at 7:00 a.m. PT, subscribe here.
+The big story
+Ramp, a spend management startup rivaling the likes of Brex, Navan and Airbase, told TechCrunch exclusively last week that it had raised $150 million at a post-money $7.65 billion valuation. Khosla Ventures and Founders Fund co-led the round, which represented a 31.9% bump in valuation from its August 2023 raise. It’s an impressive feat in a challenging market full of down rounds. Also, notably, Ramp is one of the few larger fintechs that hasn’t had to lay off staff. What’s driving all the investor interest in Ramp? CEO Eric Glyman believes it’s the company’s continued growth and emphasis on AI.
+Analysis of the week
+Business banking startup Mercury is expanding into consumer banking. The seven-year-old company today serves more than 100,000 businesses, many of which are startups, via its B2B practice. CEO and co-founder Immad Akhund tells TechCrunch that Mercury hopes to convert many of its business clients into customers, rather than go after the masses. Onyx Private, with a similar offering, recently did a reverse move, pivoting from B2C to B2B. Industry experts I talked to emphasize business and personal banking are “two different beasts,” but also, Mercury is not starting completely from scratch.
+You can listen to the Equity crew discuss this week’s fintech news here:
+Dollars and cents
+Berlin-based embedded fintech startup finmid has raised $24.7 million in a Series A round at a $107 million post-money valuation to further build out its product and enter new markets.
+Since 2015, Pula, an insurtech based in Kenya, has been keen on enhancing the access to agricultural insurance by small-holder farmers across emerging markets. So far, the insurtech has supported 15.4 million farmers in Africa, Asia and Latin America to get insured, and it is eyeing more following a $20 million Series B funding round.
+Midas, a fintech startup that allows people in Turkey to invest in U.S. and Turkish equities, says it has raised $45 million in a funding round led by Portage of Canada.
+Rumor has it that HR/fintech startup Rippling is raising $200 million, with another $670 million worth of shares being sold by existing stockholders.
+What else we’re writing
+Klarna has launched its credit card in the United States, the Swedish fintech giant told TechCrunch in an exclusive interview. With the Klarna credit card, the company is now competing with the likes of Apple and more recently, Robinhood, as well as rival BNPL player Affirm in offering a credit card in the United States.
+More stories for you:
+Google Wallet appears in India, with local integrations, but Pay will stay
+India scrambles to curb PhonePe and Google’s dominance in mobile payments
+Jio Financial, BlackRock to tap India’s wealth management market
+Inside LemFi’s play to be fintech to the Global South diaspora
+High-interest headlines
+Pipe launches embedded capital-as-a-service for small business
+Kamina raises $3.2M in Ecuador’s largest pre-seed round
+Finix launches tool to onboard merchants for payment acceptance
+This fintech wants to finance the middle class. SRM Ventures “lent” R$40M to the idea
+Forage and Uber Eats partner on SNAP EBT grocery delivery (TC previously covered Forage here.)
+Public acquires Stocktwits trading accounts
+Bolt co-founder pulled strings on unusual stock buyback, suit alleges
+
+Tinder gets a ‘Share My Date’ feature for users to send date plans to their curious friends
+It’s not uncommon for people to screenshot dating profiles and send them to their friends and loved ones, either to get feedback or to let them know who they’re seeing that weekend. Now, Tinder users are able to share their date plans directly from the app thanks to a new feature called “Share My Date.”
+Tinder announced Monday that users will now be able to send a link that includes details about the upcoming date, including the match’s name, meeting location, date, and time. There’s also an option to type a note at the bottom. Links can be sent up to 30 days prior to the day of the date and are editable, so users can update the details whenever they want.
+“Share My Date” links are viewable for every recipient, including non-Tinder users. Friends with a Tinder account can view the match’s full profile, but they can’t interact with it, including messaging the match. Non-users see a limited version of the profile in their browser, only being able to see the match’s photos, name, and age, a Tinder spokesperson explained to TechCrunch.
+Like Tinder’s “Matchmaker” feature, which lets users’ friends suggest potential matches, the “Share My Date” link expires after a certain period. This is to discourage people from sharing on social media, the spokesperson told us.
+The new feature was inspired by Tinder user data — 51% of singles under 30 let their friends know the details of their dates beforehand.
+“At Tinder, we continue to release new features that aim to create a fun, safe, and respectful experience for all,” Tinder CMO Melissa Hobley said in a statement. “Discussing plans with friends and family is a time-honored dating ritual. Share My Date streamlines this basic info-sharing so singles can jump right to the exciting part, from figuring out what to wear to prepping conversation topics.”
+In the coming months, the new feature will roll out across the U.S., U.K., Australia, Canada, France, Spain, Italy, Netherlands, India, Germany, Ireland, Japan, Brazil, Singapore, Switzerland, Mexico, Korea, Vietnam, and Thailand.
+The launch of “Share My Date” comes at a time when dating apps are experiencing slow growth. As of last January, there were only about 12.7 million installs in the U.S., growth of 2.38% compared to the almost 16% growth in the year prior. In the fourth quarter of 2023, Tinder’s total number of paying customers dropped by 8% year over year to 10 million.
+Parent company Match Group — which owns Tinder, Match, Hinge, OkCupid, PlentyOfFish, and others — is set to report its Q1 2024 earnings on Wednesday, May 8.
+Response:
+
+Script:
+我是瓦力，这是您的技术简报。首先，本周特斯拉遇到了波折，宣布将削减员工数量10%。ceo伊隆·马斯克对全自动驾驶车辆的坚定推进表现出不遗余力的策略。此外，备受瞩目的赛博卡车首秀遇到召回通告的阻碍，这表明特斯拉的创新轨迹可能遇到潜在挑战。
+
+在移动解决方案领域，serve robotics通过宣布一项反向合并以及旨在筹集4000万美元用于研发和扩展的战略性融资目标，吸引了行业的关注。计划到2025年推出2000个机器人舰队，服务于uber eats，该公司正凭借其雄心勃勃的蓝图，准备彻底改革配送生态系统。
+
+转向监管发展，华盛顿对提议的自动驾驶车辆标准充满期待。这些法规旨在为公路上自动驾驶车辆的安全建立一个全国性框架，对行业进步来说是一个关键的里程碑。
+
+进军奢侈品电商领域，tiktok shop uk大胆进入奢侈品二手市场。通过进入这一领域，tiktok将自己定位为the realreal和vestiaire collective等成熟实体的竞争对手，抓住2023年全球价值493亿美元的二手奢侈品市场的增长机会。
+
+在金融科技方面，ramp的市场估值在最新一轮融资后上涨了32%，表明在更广泛市场不确定性中投资者信心强劲。同时，mercury正向消费者银行业务多元化，旨在将其商业客户转向一系列新的以消费者为中心的服务。
+
+在加密货币挖矿领域，策略转向人工智能成为一个值得注意的趋势，特别是在即将到来的比特币减半事件中。这一转变强调了该行业在快速变化的环境中追求创新和适应性的动力。
+
+以安全优先的举措作为结束，tinder推出了“分享我的约会”功能，旨在通过允许与朋友分享约会详情，提高用户安全性和社区连接。此举反映出约会应用行业内不断变化的消费者期望。
+
+今天的技术洞察到此结束。请继续关注更多更新。我是瓦力，我们明天再见。
+
+Polished Script:
+"i'm wall-e, and this is your tech briefing. starting off, tesla finds itself in choppy waters this week, signaling a workforce reduction by 10%. ceo elon musk's relentless drive towards fully autonomous vehicles remains undeterred, embodying a 'no holds barred' strategy. furthermore, the debut of the much-touted cybertruck hits a snag with a recall announcement, indicating potential headwinds for tesla's innovation trajectory.
+
+in the realm of mobility solutions, serve robotics has captured the industry's focus by announcing a reverse merger, alongside a strategic fundraising goal of $40 million for r&d and expansion efforts. with plans to roll out a 2,000-robot fleet servicing uber eats by 2025, the company is poised to revolutionize the delivery ecosystem with its ambitious blueprint.
+
+shifting gears to regulatory developments, there’s growing anticipation in washington for proposed autonomous vehicle standards. these regulations aim to establish a national framework for the safety of autonomous vehicles on public roads, marking a crucial milestone for the sector's advancement.
+
+venturing into the luxury e-commerce scene, tiktok shop uk makes a bold entrance into the secondary market for luxury goods. by venturing into this space, tiktok positions itself against established entities like the realreal and vestiaire collective, capitalizing on the growing $49.3 billion global market for pre-owned luxury items in 2023.
+
+on the financial technology front, ramp's market valuation witnesses a 32% upsurge following its latest funding round, signaling robust investor confidence amidst broader market uncertainties. concurrently, mercury is diversifying into consumer banking, aiming to transition its business clientele to a range of new consumer-focused services.
+
+in the cryptocurrency mining sphere, the strategy pivot towards artificial intelligence emerges as a noteworthy trend, especially with the upcoming bitcoin halving event. this shift underlines the sector's drive towards innovation and adaptability in a rapidly changing landscape.
+
+concluding with a safety-first initiative, tinder unveils a 'share my date' feature, designed to enhance user safety and community connection by allowing date details to be shared with friends. this move reflects the evolving consumer expectations within the dating app industry.
+
+that concludes today’s tech insights. stay engaged for more updates. i'm wall-e, see you back here tomorrow."
+
+Podcast Title:
+"tesla's workforce trim & cybertruck recall 🚗, serve robotics' major merger and expansion 🤖, tiktok's luxury e-commerce leap 💎"
+
+Podcast Description:
+join us on "your tech briefing" hosted by wall-e, as we navigate the complex and fast-evolving world of technology. each episode offers you insights into the latest happenings, challenges, and breakthroughs across various tech sectors. in today's episode, we tackle a wide range of topics that underline the intersection of innovation, regulation, and consumer trends. here's what's on tap:
+
+- **tesla's turbulence**: we delve into tesla's recent challenges, from workforce reductions to the cybertruck recall, and how elon musk's quest for full autonomy is navigating these rough waters.
+
+- **serve robotics' big move**: discover how serve robotics plans to disrupt the delivery ecosystem with a fleet of 2,000 robots through a reverse merger and a $40 million fundraising round aimed at servicing uber eats.
+
+- **autonomous vehicle regulations**: the anticipated national framework for autonomous vehicle safety in the u.s. could be a game-changer. we explore the implications for the industry's future.
+
+- **tiktok's luxury leap**: tiktok shop uk enters the luxury goods market, hoping to make a splash in the competitive arena of pre-owned luxury item sales. is this a strategic masterstroke?
+
+- **fintech flourishes**: unpack the reasons behind ramp's valuation surge and mercury's pivot into consumer banking. what does this mean for the fintech industry amidst uncertain economic climates?
+
+- **crypto mining's ai pivot**: with the bitcoin halving event on the horizon, the cryptocurrency mining sector's turn towards artificial intelligence highlights a strategic adaptability. we break down the potential impacts.
+
+- **tinder's safety innovation**: tinder introduces the 'share my date' feature to improve user safety and trust. we discuss the significance of this move in the broader context of evolving user expectations in dating apps.
+
+packed with analysis and expert perspectives, "your tech briefing" provides the information you need to stay informed about the changing tech landscape. whether you're a tech enthusiast, an industry professional, or simply curious about where the digital world is headed, this episode is tailored for you. see you back here tomorrow for more updates. i'm wall-e, bringing you the tech insights that matter
+
+Polished Script (Spanish):
+"soy wall-e, y este es tu informe tecnológico. comenzando, tesla se encuentra en aguas turbulentas esta semana, señalando una reducción de la fuerza laboral del 10%. el incansable empeño del ceo elon musk hacia vehículos totalmente autónomos permanece sin disuasión, adoptando una estrategia sin restricciones. además, el debut del muy esperado cybertruck enfrenta un contratiempo con un anuncio de retiro del mercado, indicando posibles dificultades para la trayectoria de innovación de tesla.
+
+en el ámbito de soluciones de movilidad, serve robotics ha capturado el foco de la industria al anunciar una fusión inversa, junto con un objetivo estratégico de recaudación de fondos de $40 millones para i+d y esfuerzos de expansión. con planes de desplegar una flota de 2,000 robots sirviendo a uber eats para 2025, la empresa está preparada para revolucionar el ecosistema de entrega con su ambicioso plan.
+
+cambiando a desarrollos regulatorios, hay una creciente anticipación en washington para los estándares propuestos de vehículos autónomos. estas regulaciones buscan establecer un marco nacional para la seguridad de vehículos autónomos en vías públicas, marcando un hito crucial para el avance del sector.
+
+adentrándose en la escena del comercio electrónico de lujo, tiktok shop uk hace una entrada audaz en el mercado secundario de bienes de lujo. al adentrarse en este espacio, tiktok se posiciona contra entidades establecidas como the realreal y vestiaire collective, capitalizando en el creciente mercado global de $49.3 mil millones de artículos de lujo de segunda mano en 2023.
+
+en el frente de la tecnología financiera, la valoración de mercado de ramp experimenta un aumento del 32% tras su última ronda de financiación, señalando una sólida confianza de los inversores a pesar de las incertidumbres del mercado más amplio. concurrentemente, mercury se está diversificando hacia la banca de consumo, buscando hacer la transición de su clientela de negocios a una gama de nuevos servicios enfocados en el consumidor.
+
+en el ámbito de la minería de criptomonedas, el giro estratégico hacia la inteligencia artificial emerge como una tendencia notable, especialmente con el próximo evento de halving de bitcoin. este cambio subraya el impulso del sector hacia la innovación y adaptabilidad en un panorama que cambia rápidamente.
+
+concluyendo con una iniciativa de seguridad primero, tinder revela una función de 'compartir mi cita', diseñada para mejorar la seguridad del usuario y la conexión comunitaria permitiendo que los detalles de la cita se compartan con amigos. este movimiento refleja las expectativas del consumidor en evolución dentro de la industria de aplicaciones de citas.
+
+eso concluye los informes tecnológicos de hoy. mantente atento para más actualizaciones. soy wall-e, nos vemos aquí mañana."
+
+Podcast Title (Spanish):
+recorte de personal de tesla y retirada del cybertruck 🚗, gran fusión y expansión de serve robotics 🤖, salto al comercio electrónico de lujo de tiktok 💎
+
+Podcast Description (Spanish):
+únase a nosotros en "tu resumen tecnológico" presentado por wall-e, mientras navegamos por el complejo y rápidamente evolutivo mundo de la tecnología. cada episodio te ofrece perspectivas sobre los últimos acontecimientos, desafíos y avances en diversos sectores tecnológicos. en el episodio de hoy, abordamos una amplia gama de temas que subrayan la intersección de la innovación, la regulación y las tendencias de consumo. esto es lo que te espera:
+
+- **la turbulencia de tesla**: profundizamos en los recientes desafíos de tesla, desde la reducción de la fuerza laboral hasta la retirada del cybertruck, y cómo la búsqueda de elon musk por la autonomía completa está navegando estas aguas turbulentas.
+
+- **el gran movimiento de serve robotics**: descubre cómo serve robotics planea revolucionar el ecosistema de entregas con una flota de 2,000 robots a través de una fusión inversa y una ronda de financiación de $40 millones enfocada en servir a uber eats.
+
+- **regulaciones para vehículos autónomos**: el anticipado marco nacional para la seguridad de vehículos autónomos en ee. uu. podría cambiar las reglas del juego. exploramos las implicaciones para el futuro de la industria.
+
+- **el gran salto de lujo de tiktok**: tiktok shop uk entra en el mercado de bienes de lujo, con la esperanza de hacerse un lugar en el competitivo ámbito de ventas de artículos de lujo de segunda mano. ¿es este un golpe maestro estratégico?
+
+- **el auge de las fintech**: analizamos las razones detrás del aumento de valoración de ramp y el giro de mercury hacia la banca al consumidor. ¿qué significa esto para la industria de las fintech en medio de climas económicos inciertos?
+
+- **el giro de la minería cripto hacia la ia**: con el evento de halving de bitcoin en el horizonte, el giro del sector de minería de criptomonedas hacia la inteligencia artificial destaca una adaptabilidad estratégica. desglosamos los posibles impactos.
+
+- **la innovación en seguridad de tinder**: tinder introduce la característica "compartir mi cita" para mejorar la seguridad y confianza del usuario. discutimos la importancia de este movimiento en el contexto más amplio de las expectativas de los usuarios en evolución en aplicaciones de citas.
+
+lleno de análisis y perspectivas de expertos, "tu resumen tecnológico" proporciona la información que necesitas para mantenerte informado sobre el cambiante paisaje tecnológico. ya seas un entusiasta de la tecnología, un profesional de la industria o simplemente alguien curioso sobre hacia dónde se dirige el mundo digital, este episodio está hecho para ti. nos vemos aquí mañana para más actualizaciones. soy wall-e, trayéndote las perspectivas tecnológicas que importan
+
+Polished Script (Chinese):
+我是瓦力，这是您的技术简报。首先，本周特斯拉遇到了波折，宣布将削减员工数量10%。ceo伊隆·马斯克对全自动驾驶车辆的坚定推进表现出不遗余力的策略。此外，备受瞩目的赛博卡车首秀遇到召回通告的阻碍，这表明特斯拉的创新轨迹可能遇到潜在挑战。
+
+在移动解决方案领域，serve robotics通过宣布一项反向合并以及旨在筹集4000万美元用于研发和扩展的战略性融资目标，吸引了行业的关注。计划到2025年推出2000个机器人舰队，服务于uber eats，该公司正凭借其雄心勃勃的蓝图，准备彻底改革配送生态系统。
+
+转向监管发展，华盛顿对提议的自动驾驶车辆标准充满期待。这些法规旨在为公路上自动驾驶车辆的安全建立一个全国性框架，对行业进步来说是一个关键的里程碑。
+
+进军奢侈品电商领域，tiktok shop uk大胆进入奢侈品二手市场。通过进入这一领域，tiktok将自己定位为the realreal和vestiaire collective等成熟实体的竞争对手，抓住2023年全球价值493亿美元的二手奢侈品市场的增长机会。
+
+在金融科技方面，ramp的市场估值在最新一轮融资后上涨了32%，表明在更广泛市场不确定性中投资者信心强劲。同时，mercury正向消费者银行业务多元化，旨在将其商业客户转向一系列新的以消费者为中心的服务。
+
+在加密货币挖矿领域，策略转向人工智能成为一个值得注意的趋势，特别是在即将到来的比特币减半事件中。这一转变强调了该行业在快速变化的环境中追求创新和适应性的动力。
+
+以安全优先的举措作为结束，tinder推出了“分享我的约会”功能，旨在通过允许与朋友分享约会详情，提高用户安全性和社区连接。此举反映出约会应用行业内不断变化的消费者期望。
+
+今天的技术洞察到此结束。请继续关注更多更新。我是瓦力，我们明天再见。
+
+Podcast Title (Chinese):
+"特斯拉裁员及cybertruck召回 🚗，serve robotics的重大合并与扩张 🤖，抖音豪华电商的飞跃 💎"
+
+Podcast Description (Chinese):
+加入我们的“科技简报”，由瓦力主持，一同导航这个复杂且快速发展的科技世界。每一集都会为您提供最新动态、挑战和各个科技领域的突破性进展的见解。在今天的剧集中，我们将涉及一系列主题，强调创新、监管和消费趋势的交汇点。以下是本集的内容：
+
+- **特斯拉的波动**：我们深入探讨了特斯拉最近的挑战，从员工减少到赛博卡车召回，以及伊隆·马斯克对全自主的追求如何在这些波涛中航行。
+
+- **serve robotics的重大举措**：探索serve robotics如何通过逆向合并和一轮4000万美元的融资，计划用2000台机器人颠覆配送生态系统，旨在为uber eats提供服务。
+
+- **自动驾驶车辆法规**：美国预期的自动驾驶车辆安全国家框架可能是一个游戏规则改变者。我们探讨了这对行业未来的影响。
+
+- **tiktok的奢侈品跳跃**：tiktok shop uk进入奢侈品市场，希望在竞争激烈的二手奢侈品销售领域中大放异彩。这是一个战略高招吗？
+
+- **金融科技的繁荣**：解析ramp估值激增和mercury转向消费者银行背后的原因。这对于在不确定的经济环境中的金融科技行业意味着什么？
+
+- **加密挖矿的ai转变**：随着比特币减半事件的临近，加密货币挖矿行业转向人工智能突显出战略适应性。我们分析了潜在的影响。
+
+- **tinder的安全创新**：tinder引入了“分享我的约会”功能，以提高用户的安全性和信任度。我们讨论了这一举措在不断发展的约会应用用户期望的更广泛背景下的重要性。
+
+《科技简报》充满了分析和专家视角，为您提供了了解不断变化的科技领域所需的信息。无论您是科技爱好者、行业专业人士，还是仅仅对数字世界的走向感到好奇，这一集都是为您量身定制的。明天再见，我们将带来更多更新。我是瓦力，为您带来重要的科技洞见。

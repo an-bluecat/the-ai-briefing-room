@@ -49,6 +49,15 @@ class NewsPodcastOrchestrator:
                 attempts += 1
         return None
 
+    def translate_text(self, text, target_language):
+        """ Translates text to the specified target language using the GPT model. """
+        # first prompt:
+        prompt = f"Translate the English part of the text to {target_language}. Do not translate word by word; Do Translation naturally:\n\n{text}\n Translation:"
+        # second prompt:
+        # prompt = f"Translate the English part of the text to {target_language}. Use your maximum effort to adjust the content to adapt for culture and language differences so that it flows the best. Remember to use your creativity to adjust the content for the best {target_language} experience::\n\n{text}\n Translation:"
+        translation = self.ask_gpt(prompt)
+        return translation
+
     def get_top_news(self):
         # get top news titles from the sources
         grouped_sources = scrape_and_group_by_source(self.date)
@@ -117,7 +126,7 @@ refined podcast script:
 
     def generate_podcast_description(self, script):
         """ Generates a podcast description from the provided script. """
-        input_ask = """
+        input_ask = f"""
             Generate a description for this podcast. Summarize the key topics discussed and highlight any interesting insights or takeaways. This will be the script we use for the podcast description on Apple Podcast. So please be concise, use bullet point when possible.
             Here's the podcast script: 
             {script}
@@ -125,15 +134,17 @@ refined podcast script:
             """
         return self.ask_gpt(input_ask)
 
-    def text_to_speech(self, script, output_path):
-        """ Converts the generated script to speech and saves the audio file. """
+    def text_to_speech(self, script, output_path, language='English'):
+        """ Converts the generated script to speech and saves the audio file. Now supports multiple languages. """
+
         try:
             response = self.client.audio.speech.create(
                 model="tts-1", voice="alloy", input=script)
             speech_file_path = Path(
-                output_path) / f"speech_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.mp3"
+                output_path) / f"{language}_speech_{datetime.datetime.now().strftime('%Y-%m%d-%H%M')}.mp3"
             response.stream_to_file(speech_file_path)
-            logging.info(f"Generated speech saved to {speech_file_path}.")
+            logging.info(
+                f"Generated {language} speech saved to {speech_file_path}.")
             return speech_file_path
         except Exception as e:
             logging.error(f"Failed to convert text to speech: {e}")
@@ -158,9 +169,7 @@ if __name__ == "__main__":
     load_dotenv()
 
     api_key = os.getenv('OPENAI_API_KEY')
-    # titles = ['X is removing ability to hide checkmarks for premium users', 'OpenAI makes ChatGPT ‘more direct, less verbose’', 'Virtual physical therapist Hinge Health lays off 10% of its workforce', 'Space Force tees up new ‘responsive space’ mission from Rocket Lab and True Anomaly', 'Ford’s hands-free BlueCruise system was active before fatal Texas crash', 'Internal pre-Starlink SpaceX financials show big spending on moonshot bets', 'Walmart will deploy robotic forklifts in its distribution centers', 'US says Russian hackers stole federal government emails during Microsoft cyberattack', 'Introducing the ScaleUp Startups Program at Disrupt 2024 for Series A to B startups', 'Taylor Swift’s music is back on TikTok, despite platform’s ongoing UMG dispute', 'Quibi redux? Short drama apps saw record revenue in Q1 2024', 'Megan Thee Stallion’s favorite app is Pinterest, obviously',
-    #           'UK’s antitrust enforcer sounds the alarm over Big Tech’s grip on GenAI', 'Airtree Ventures already returned its first fund thanks to Canva while maintaining the majority of its stake', 'TechCrunch Minute: TikTok and Meta’s latest moves signal a more commodified internet', 'Cendana, Kline Hill have a fresh $105M to buy stakes in seed VC funds from LPs looking to sell', 'Lyrak to take on X by combining the best of Twitter with fediverse integration', 'Flipboard deepens its ties to the open source social web (aka the fediverse)', 'Substack now allows podcasters to sync and distribute their episodes to Spotify', 'Humane’s $699 Ai Pin is now available', 'Ford’s hands-free BlueCruise system was active before fatal Texas crash', 'Virtual physical therapist Hinge Health lays off 10% of its workforce', 'Humane’s Ai Pin considers life beyond the smartphone', 'US says Russian hackers stole federal government emails during Microsoft cyberattack']
-   # today = datetime.date(2024, 4, 12)
+
     today = datetime.date.today()
 
     all_news = scrape_verge(
@@ -182,20 +191,86 @@ if __name__ == "__main__":
         polished_script = orchestrator.polish_podcast_script(script)
         podcast_description = orchestrator.generate_podcast_description(
             polished_script)
-        podcast_title = orchestrator.generate_podcast_title(script)
-        if polished_script and podcast_title:
-            if PRODUCTION_MODE:
-                audio_file_path = orchestrator.text_to_speech(
-                    polished_script, output_directory)
+        podcast_title = orchestrator.generate_podcast_title(polished_script)
 
+        # Translate the polished script, description, and title to Spanish and Chinese
+        spanish_script = orchestrator.translate_text(
+            polished_script, "Spanish")
+        spanish_description = orchestrator.translate_text(
+            podcast_description, "Spanish")
+        spanish_title = orchestrator.translate_text(podcast_title, "Spanish")
+
+        chinese_script = orchestrator.translate_text(
+            polished_script, "Chinese")
+        chinese_description = orchestrator.translate_text(
+            podcast_description, "Chinese")
+        chinese_title = orchestrator.translate_text(podcast_title, "Chinese")
+
+        # if PRODUCTION_MODE:
+        #     audio_file_path = orchestrator.text_to_speech(
+        #         polished_script, output_directory)
+
+        #     if audio_file_path:
+        #         logging.info(
+        #             f"Podcast production completed successfully. Audio file at: {audio_file_path}")
+        #     else:
+        #         logging.error("Failed to generate audio file.")
+        # Text to Speech for each language, including the original English
+        if PRODUCTION_MODE:
+            for language, script in [('English', polished_script), ('Spanish', spanish_script), ('Chinese', chinese_script)]:
+                audio_file_path = orchestrator.text_to_speech(
+                    script, output_directory, language)
                 if audio_file_path:
                     logging.info(
-                        f"Podcast production completed successfully. Audio file at: {audio_file_path}")
+                        f"Podcast in {language} completed successfully. Audio file at: {audio_file_path}")
                 else:
-                    logging.error("Failed to generate audio file.")
+                    logging.error(f"Failed to generate {language} audio file.")
+
             # Prepare the output text data
-            output_data = f"Titles:\n{chr(10).join(titles)}\n\ntop_news_prompt: {top_news_prompt}\n\nTop News:\n{chr(10).join(top_news)}\n\nGenerate_scipt_prompt:\n{generate_script_prompt}\n\nScript:\n{script}\n\npolished_script:\n{polished_script}\n\nPodcast Title:\n{podcast_title}\n\npodcast_description:\n{podcast_description}\n"
-            output_file_path = f"{OUTPUT_DIRECTORY}podcast_data_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.txt"
+            # output_data = f"Titles:\n{chr(10).join(titles)}\n\ntop_news_prompt: {top_news_prompt}\n\nTop News:\n{chr(10).join(top_news)}\n\nGenerate_scipt_prompt:\n{generate_script_prompt}\n\nScript:\n{script}\n\npolished_script:\n{polished_script}\n\nPodcast Title:\n{podcast_title}\n\npodcast_description:\n{podcast_description}\n"
+            output_data = f"""
+Titles:
+{chr(10).join(titles)}
+
+top_news_prompt: {top_news_prompt}
+
+Top News:
+{chr(10).join(top_news)}
+
+Generate_script_prompt:
+{generate_script_prompt}
+
+Script:
+{script}
+
+Polished Script:
+{polished_script}
+
+Podcast Title:
+{podcast_title}
+
+Podcast Description:
+{podcast_description}
+
+Polished Script (Spanish):
+{spanish_script}
+
+Podcast Title (Spanish):
+{spanish_title}
+
+Podcast Description (Spanish):
+{spanish_description}
+
+Polished Script (Chinese):
+{chinese_script}
+
+Podcast Title (Chinese):
+{chinese_title}
+
+Podcast Description (Chinese):
+{chinese_description}
+"""
+            output_file_path = f"{OUTPUT_DIRECTORY}podcast_data_{datetime.datetime.now().strftime('%Y-%m%d-%H%M')}.txt"
 
             # Write the output data to the file
             with open(output_file_path, 'w') as file:
