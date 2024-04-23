@@ -71,9 +71,24 @@ class NewsPodcastOrchestrator:
         output = self.ask_gpt(input_ask, role)
         return input_ask, output.split('\n') if output else []
 
-    def generate_podcast_script(self, top_news):
+    def generate_podcast_script(self, news_concat, language=None):
         """ Generates a podcast script based on the top news titles. """
+        output_response_prompt = ""
+        if language:
+            output_response_prompt = f"Output the response in {language}."
+        first_shot = """
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        """
 
+        prompt = f"Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including host name), and replace CNBC techcheck briefing to 'AI briefing' \n {news_concat}\n" + \
+            output_response_prompt + "\n"
+        response_begin = "Response:"
+        input_ask = first_shot + prompt + response_begin
+
+        return input_ask, self.ask_gpt(input_ask)
+
+    def get_news_content_concat(self, top_news):
         news_concat = []
         for news in top_news:
             if news not in self.news_to_URL:
@@ -96,16 +111,7 @@ class NewsPodcastOrchestrator:
             news_concat.append(curr_news.title + "\n" + curr_news.maintext)
 
         news_concat = "\n\n".join(news_concat)
-        first_shot = """
-        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
-        Response: I'm Wall-E, and this is your CNBC techcheck Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
-        """
-
-        prompt = f"Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including host name), and replace CNBC techcheck briefing to 'AI briefing' \n {news_concat}\n"
-        response_begin = "Response:"
-        input_ask = first_shot + prompt + response_begin
-
-        return input_ask, self.ask_gpt(input_ask)
+        return news_concat
 
     def polish_podcast_script(self, script):
         """Polishes the podcast script using the GPT API."""
@@ -124,14 +130,23 @@ refined podcast script:
         polished_script = orchestrator.ask_gpt(input_ask, role)
         return polished_script
 
-    def generate_podcast_description(self, script):
+    def generate_podcast_description(self, script, language=None):
         """ Generates a podcast description from the provided script. """
+
+        output_response_prompt = ""
+        if language:
+            output_response_prompt = f"Output the Description in {language}."
+
         input_ask = f"""
-            Generate a description for this podcast. Summarize the key topics discussed and highlight any interesting insights or takeaways. This will be the script we use for the podcast description on Apple Podcast. So please be concise, use bullet point when possible.
+            Generate a description for this podcast. Summarize topics discussed. This will be the script we use for the podcast description on Apple Podcast. So please be concise, use bullet point when possible. Please use plain text, no markdown.
             Here's the podcast script: 
+            "
             {script}
+            "
+            {output_response_prompt}
             Description:
             """
+
         return self.ask_gpt(input_ask)
 
     def text_to_speech(self, script, output_path, language='English'):
@@ -150,9 +165,12 @@ refined podcast script:
             logging.error(f"Failed to convert text to speech: {e}")
             return None
 
-    def generate_podcast_title(self, transcript):
+    def generate_podcast_title(self, transcript, language=None):
         """ Generates a podcast title from the provided transcript. """
-        input_ask = "Generate a title for this podcast. Include no more than three key topics (if there are many, choose the three most important ones). Incorporate emojis where appropriate. Follow the style of titles such as: 'Tesla Showcases FSD Demo 🚗, Adam Neuman's WeWork Bid 💰, CSV Conundrums 🖥️','Anthropic’s $4B Amazon Boost 💰, Brex's Valuation Leap to $12B 💳, Strategies for Success ✨','The OpenAI Voice Revolution 🗣️, AI Safety Measures 🦺, LLMs Go Mobile 📱'. Here's the transcript excerpt: " + transcript
+        output_response_prompt = ""
+        if language:
+            output_response_prompt = f"Output the Title in {language}."
+        input_ask = "Generate a title for this podcast. Include no more than three key topics (if there are many, choose the three most important ones). Incorporate emojis where appropriate. Follow the style of titles such as: 'Tesla Showcases FSD Demo 🚗, Adam Neuman's WeWork Bid 💰, CSV Conundrums 🖥️','Anthropic’s $4B Amazon Boost 💰, Brex's Valuation Leap to $12B 💳, Strategies for Success ✨','The OpenAI Voice Revolution 🗣️, AI Safety Measures 🦺, LLMs Go Mobile 📱'. Here's the transcript excerpt: " + transcript + "\n" + output_response_prompt + "\nTitle:"
         return self.ask_gpt(input_ask)
 
 
@@ -183,43 +201,51 @@ if __name__ == "__main__":
     orchestrator = NewsPodcastOrchestrator(api_key, today, news_to_URL)
 
     top_news_prompt, top_news = orchestrator.get_top_news()
-
+    news_concat = orchestrator.get_news_content_concat(
+        remove_leading_numbers(top_news))
     if top_news:
         generate_script_prompt, script = orchestrator.generate_podcast_script(
-            remove_leading_numbers(top_news))
+            news_concat)
 
         polished_script = orchestrator.polish_podcast_script(script)
         podcast_description = orchestrator.generate_podcast_description(
             polished_script)
         podcast_title = orchestrator.generate_podcast_title(polished_script)
+        TRANSLATE = False
+        if TRANSLATE:
+            # Translate the polished script, description, and title to Spanish and Chinese
+            spanish_script = orchestrator.translate_text(
+                polished_script, "Spanish")
+            spanish_description = orchestrator.translate_text(
+                podcast_description, "Spanish")
+            spanish_title = orchestrator.translate_text(
+                podcast_title, "Spanish")
 
-        # Translate the polished script, description, and title to Spanish and Chinese
-        spanish_script = orchestrator.translate_text(
-            polished_script, "Spanish")
-        spanish_description = orchestrator.translate_text(
-            podcast_description, "Spanish")
-        spanish_title = orchestrator.translate_text(podcast_title, "Spanish")
+            chinese_script = orchestrator.translate_text(
+                polished_script, "Chinese")
+            chinese_description = orchestrator.translate_text(
+                podcast_description, "Chinese")
+            chinese_title = orchestrator.translate_text(
+                podcast_title, "Chinese")
+        else:
+            _, spanish_script = orchestrator.generate_podcast_script(
+                news_concat, language="Spanish")
+            _, chinese_script = orchestrator.generate_podcast_script(
+                news_concat, language="Chinese")
+            spanish_description = orchestrator.generate_podcast_description(
+                spanish_script, language="Spanish")
+            chinese_description = orchestrator.generate_podcast_description(
+                chinese_script, language="Chinese")
+            spanish_title = orchestrator.generate_podcast_title(
+                spanish_script, language="Spanish")
+            chinese_title = orchestrator.generate_podcast_title(
+                chinese_script, language="Chinese")
 
-        chinese_script = orchestrator.translate_text(
-            polished_script, "Chinese")
-        chinese_description = orchestrator.translate_text(
-            podcast_description, "Chinese")
-        chinese_title = orchestrator.translate_text(podcast_title, "Chinese")
-
-        # if PRODUCTION_MODE:
-        #     audio_file_path = orchestrator.text_to_speech(
-        #         polished_script, output_directory)
-
-        #     if audio_file_path:
-        #         logging.info(
-        #             f"Podcast production completed successfully. Audio file at: {audio_file_path}")
-        #     else:
-        #         logging.error("Failed to generate audio file.")
-        # Text to Speech for each language, including the original English
+            # Text to Speech for each language, including the original English
         if PRODUCTION_MODE:
-            for language, script in [('English', polished_script), ('Spanish', spanish_script), ('Chinese', chinese_script)]:
+            for language, cur_script in [('English', polished_script), ('Spanish', spanish_script), ('Chinese', chinese_script)]:
                 audio_file_path = orchestrator.text_to_speech(
-                    script, output_directory, language)
+                    cur_script, output_directory, language)
                 if audio_file_path:
                     logging.info(
                         f"Podcast in {language} completed successfully. Audio file at: {audio_file_path}")
