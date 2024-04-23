@@ -191,7 +191,7 @@ if __name__ == "__main__":
         polished_script = orchestrator.polish_podcast_script(script)
         podcast_description = orchestrator.generate_podcast_description(
             polished_script)
-        podcast_title = orchestrator.generate_podcast_title(polished_script)
+        podcast_title = orchestrator.generate_podcast_title(polished_script).title()
 
         # Translate the polished script, description, and title to Spanish and Chinese
         spanish_script = orchestrator.translate_text(
@@ -217,7 +217,7 @@ if __name__ == "__main__":
         #         logging.error("Failed to generate audio file.")
         # Text to Speech for each language, including the original English
         if PRODUCTION_MODE:
-            for language, script in [('English', polished_script), ('Spanish', spanish_script), ('Chinese', chinese_script)]:
+            for language, script in [('English', polished_script)]:
                 audio_file_path = orchestrator.text_to_speech(
                     script, output_directory, language)
                 if audio_file_path:
