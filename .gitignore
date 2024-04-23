@@ -2,5 +2,4 @@
 .venv/
 .gitignore
 .env
-*.mp3
 *.pyc
