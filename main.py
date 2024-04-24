@@ -18,7 +18,6 @@ logging.basicConfig(level=logging.INFO,
 TEXT_MODEL = "gpt-4-turbo-preview"
 MAX_RETRIES = 1
 RETRY_DELAY = 2  # seconds in case of retries
-OUTPUT_DIRECTORY = './output/'  # Default output directory for files
 PRODUCTION_MODE = True  # Set to True to enable audio file generation
 
 
@@ -189,14 +188,17 @@ if __name__ == "__main__":
     api_key = os.getenv('OPENAI_API_KEY')
 
     today = datetime.date.today()
-
+    today_date = today.strftime('%Y-%m-%d')
+    
     all_news = scrape_verge(
         today) + scrape_cnbctech(today) + scrape_techcrunch(today)
 
     titles = [x[0] for x in all_news]
     news_to_URL = {news[0].lower(): news[1] for news in all_news}
 
-    output_directory = './output/'
+    output_directory = f'./output/{today_date}/'
+    # add today as file path of output_directory
+    os.makedirs(output_directory, exist_ok=True)
 
     orchestrator = NewsPodcastOrchestrator(api_key, today, news_to_URL)
 
@@ -210,7 +212,7 @@ if __name__ == "__main__":
         polished_script = orchestrator.polish_podcast_script(script)
         podcast_description = orchestrator.generate_podcast_description(
             polished_script)
-        podcast_title = orchestrator.generate_podcast_title(polished_script)
+        podcast_title = orchestrator.generate_podcast_title(polished_script).title()
         TRANSLATE = False
         if TRANSLATE:
             # Translate the polished script, description, and title to Spanish and Chinese
@@ -296,7 +298,7 @@ Podcast Title (Chinese):
 Podcast Description (Chinese):
 {chinese_description}
 """
-            output_file_path = f"{OUTPUT_DIRECTORY}podcast_data_{datetime.datetime.now().strftime('%Y-%m%d-%H%M')}.txt"
+            output_file_path = f"{output_directory}podcast_data.txt"
 
             # Write the output data to the file
             with open(output_file_path, 'w') as file:

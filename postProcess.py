@@ -1,6 +1,6 @@
 from pydub import AudioSegment
 
-def custom_bgm_loop_with_podcast_smooth_transitions(podcast_path, bgm_path):
+def add_bgm(podcast_path, bgm_path):
     # Load the podcast and BGM
     podcast = AudioSegment.from_file(podcast_path)
     bgm = AudioSegment.from_file(bgm_path)
@@ -31,4 +31,7 @@ def custom_bgm_loop_with_podcast_smooth_transitions(podcast_path, bgm_path):
     final_mix.export("final_podcast.mp3", format="mp3")
 
 # Replace 'your_podcast.mp3' and 'your_bgm.mp3' with your actual file paths
-custom_bgm_loop_with_podcast_smooth_transitions('output/speech_20240419133621.mp3', 'bgm.mp3')
+#add_bgm('output/2024-04-23/English_speech_2024-0423-2242.mp3', 'bgm.mp3')
+
+string = "tiktok faces u.s. divestment mandate 🚫, tesla's profit tumbles amid ev wars ⚡, perplexity ai's funding triumph 🤖"
+print(string.title())
