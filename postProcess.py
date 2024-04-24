@@ -1,6 +1,6 @@
 from pydub import AudioSegment
 
-def add_bgm(podcast_path, bgm_path):
+def add_bgm(podcast_path, bgm_path, final_path):
     # Load the podcast and BGM
     podcast = AudioSegment.from_file(podcast_path)
     bgm = AudioSegment.from_file(bgm_path)
@@ -28,7 +28,7 @@ def add_bgm(podcast_path, bgm_path):
     final_mix = bgm_full.overlay(podcast, position=len(bgm_intro))
 
     # Export the final mix to a new file
-    final_mix.export("final_podcast.mp3", format="mp3")
+    final_mix.export(final_path, format="mp3")
 
 # Replace 'your_podcast.mp3' and 'your_bgm.mp3' with your actual file paths
 #add_bgm('output/2024-04-23/English_speech_2024-0423-2242.mp3', 'bgm.mp3')

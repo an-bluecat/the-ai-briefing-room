@@ -9,6 +9,7 @@ from newsScraper import scrape_verge, scrape_cnbctech, scrape_techcrunch, scrape
 from newsplease import NewsPlease
 import re
 import difflib
+from postProcess import add_bgm
 
 # Setup basic configuration for logging
 logging.basicConfig(level=logging.INFO,
@@ -19,7 +20,7 @@ TEXT_MODEL = "gpt-4-turbo-preview"
 MAX_RETRIES = 1
 RETRY_DELAY = 2  # seconds in case of retries
 PRODUCTION_MODE = True  # Set to True to enable audio file generation
-
+BGM_PATH = "bgm.mp3"
 
 class NewsPodcastOrchestrator:
     """ Orchestrates the creation of a podcast script from scraped news, using OpenAI's GPT models. """
@@ -155,8 +156,16 @@ refined podcast script:
             response = self.client.audio.speech.create(
                 model="tts-1", voice="alloy", input=script)
             speech_file_path = Path(
-                output_path) / f"{language}_speech_{datetime.datetime.now().strftime('%Y-%m%d-%H%M')}.mp3"
+                output_path) / f"{language}.mp3"
             response.stream_to_file(speech_file_path)
+            
+            final_podcast_path = Path(output_path) / f"{language}_final_podcast.mp3"
+
+                # Add BGM to the generated speech
+            add_bgm(str(speech_file_path), BGM_PATH, str(final_podcast_path))
+            
+            os.remove(speech_file_path)
+
             logging.info(
                 f"Generated {language} speech saved to {speech_file_path}.")
             return speech_file_path
