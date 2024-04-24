@@ -10,13 +10,15 @@ from newsplease import NewsPlease
 import re
 import difflib
 from postProcess import add_bgm
+from openai import AzureOpenAI
+from utils import spanish_title_case
 
 # Setup basic configuration for logging
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Configuration constants
-TEXT_MODEL = "gpt-4-turbo-preview"
+TEXT_MODEL = "GPT4"
 MAX_RETRIES = 1
 RETRY_DELAY = 2  # seconds in case of retries
 PRODUCTION_MODE = True  # Set to True to enable audio file generation
@@ -26,7 +28,13 @@ class NewsPodcastOrchestrator:
     """ Orchestrates the creation of a podcast script from scraped news, using OpenAI's GPT models. """
 
     def __init__(self, api_key, date, news_to_URL):
-        self.client = openai.OpenAI(api_key=api_key)
+        self.azure_client = AzureOpenAI(
+        azure_endpoint =  os.getenv("AZURE_OPENAI_ENDPOINT"), 
+        api_key= os.getenv("AZURE_OPENAI_API_KEY"),  
+        api_version=os.getenv("API_VERSION")
+    )
+        self.openai_client = openai.OpenAI(api_key=api_key)
+
         self.date = date
         self.news_to_URL = news_to_URL
 
@@ -35,7 +43,7 @@ class NewsPodcastOrchestrator:
         attempts = 0
         while attempts < MAX_RETRIES:
             try:
-                completion = self.client.chat.completions.create(
+                completion = self.azure_client.chat.completions.create(
                     model=TEXT_MODEL,
                     messages=[{"role": "system", "content": role},
                               {"role": "user", "content": input_ask}]
@@ -153,7 +161,7 @@ refined podcast script:
         """ Converts the generated script to speech and saves the audio file. Now supports multiple languages. """
 
         try:
-            response = self.client.audio.speech.create(
+            response = self.openai_client.audio.speech.create(
                 model="tts-1", voice="alloy", input=script)
             speech_file_path = Path(
                 output_path) / f"{language}.mp3"
@@ -195,6 +203,7 @@ if __name__ == "__main__":
     load_dotenv()
 
     api_key = os.getenv('OPENAI_API_KEY')
+    #api_key = os.getenv('AZURE_OPENAI_API_KEY')
 
     today = datetime.date.today()
     today_date = today.strftime('%Y-%m-%d')
@@ -229,8 +238,8 @@ if __name__ == "__main__":
                 polished_script, "Spanish")
             spanish_description = orchestrator.translate_text(
                 podcast_description, "Spanish")
-            spanish_title = orchestrator.translate_text(
-                podcast_title, "Spanish")
+            spanish_title = spanish_title_case(spanish_title_case(orchestrator.translate_text(
+                podcast_title, "Spanish")))
 
             chinese_script = orchestrator.translate_text(
                 polished_script, "Chinese")
@@ -318,3 +327,6 @@ Podcast Description (Chinese):
             logging.error("Failed to generate podcast script or title.")
     else:
         logging.error("Failed to identify top news.")
+
+
+
