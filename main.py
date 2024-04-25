@@ -12,6 +12,8 @@ import difflib
 from postProcess import add_bgm
 from openai import AzureOpenAI
 from utils import spanish_title_case
+import sys
+
 
 # Setup basic configuration for logging
 logging.basicConfig(level=logging.INFO,
@@ -208,6 +210,13 @@ if __name__ == "__main__":
     today = datetime.date.today()
     today_date = today.strftime('%Y-%m-%d')
     
+    if len(sys.argv) > 1:
+        episode_prefix = sys.argv[1]
+        episode_number = f"EP-{episode_prefix} "
+        print(episode_number)
+    else:
+        raise ValueError("No additional argument provided.")
+    
     all_news = scrape_verge(
         today) + scrape_cnbctech(today) + scrape_techcrunch(today)
 
@@ -230,7 +239,7 @@ if __name__ == "__main__":
         polished_script = orchestrator.polish_podcast_script(script)
         podcast_description = orchestrator.generate_podcast_description(
             polished_script)
-        podcast_title = orchestrator.generate_podcast_title(polished_script).title()
+        podcast_title = episode_number +  orchestrator.generate_podcast_title(polished_script).title()
         TRANSLATE = False
         if TRANSLATE:
             # Translate the polished script, description, and title to Spanish and Chinese
@@ -238,14 +247,14 @@ if __name__ == "__main__":
                 polished_script, "Spanish")
             spanish_description = orchestrator.translate_text(
                 podcast_description, "Spanish")
-            spanish_title = spanish_title_case(spanish_title_case(orchestrator.translate_text(
+            spanish_title = episode_number + spanish_title_case(spanish_title_case(orchestrator.translate_text(
                 podcast_title, "Spanish")))
 
             chinese_script = orchestrator.translate_text(
                 polished_script, "Chinese")
             chinese_description = orchestrator.translate_text(
                 podcast_description, "Chinese")
-            chinese_title = orchestrator.translate_text(
+            chinese_title = episode_number +  orchestrator.translate_text(
                 podcast_title, "Chinese")
         else:
             _, spanish_script = orchestrator.generate_podcast_script(
@@ -256,9 +265,9 @@ if __name__ == "__main__":
                 spanish_script, language="Spanish")
             chinese_description = orchestrator.generate_podcast_description(
                 chinese_script, language="Chinese")
-            spanish_title = orchestrator.generate_podcast_title(
-                spanish_script, language="Spanish")
-            chinese_title = orchestrator.generate_podcast_title(
+            spanish_title = episode_number + spanish_title_case(orchestrator.generate_podcast_title(
+                spanish_script, language="Spanish"))
+            chinese_title = episode_number +  orchestrator.generate_podcast_title(
                 chinese_script, language="Chinese")
 
             # Text to Speech for each language, including the original English

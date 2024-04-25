@@ -1,5 +1,6 @@
 
 Titles:
+Zuckerberg says it will take Meta years to make money from generative AI
 Threads wants to let you wipe your old posts away
 The BattlerGC Pro might be the GameCube controller’s final form
 Drake threatened with lawsuit over diss track featuring AI Tupac
@@ -15,8 +16,9 @@ Nissan’s Iruyo knows when your baby is sleeping, knows when they’re awake
 Biden signs TikTok ‘ban’ bill into law, starting the clock for ByteDance to divest it
 ‘PBS Retro’ is coming to Roku as a FAST channel
 Qualcomm strong-arms its way into Windows laptops this summer
-Lamborghini’s popular Urus SUV grows a plug — and goes hybrid
 Meta plunges 16% on weak revenue guidance even as first-quarter results top estimates
+StanChart doubles down on prediction that bitcoin will hit $150,000 by year-end
+Meta loses $200 billion in value as Zuckerberg focuses on the ways company bleeds cash
 Rubrik prices IPO at $32 per share, above the expected range
 Meta's Reality Labs posts $3.85 billion loss in first quarter
 IBM to acquire HashiCorp in $6.4 billion deal, reports another revenue miss
@@ -28,6 +30,8 @@ Microsoft, Amazon AI partnerships face scrutiny from British regulators
 U.S. prosecutors seek 36-month sentence for ex-Binance CEO Changpeng Zhao
 Amazon is opening cloud regions in Southeast Asia to meet customer demand, CTO says
 Tesla jumps after Musk says company aims to start producing affordable new EV by early 2025
+Xaira, an AI drug discovery startup, launches with a massive $1B, says it’s ‘ready’ to start developing drugs
+Anduril moves ahead in Pentagon program to develop unmanned fighter jets
 IBM moves deeper into hybrid cloud management with $6.4B HashiCorp acquisition
 Rabbit’s R1 is a little AI gadget that grows on you
 JioCinema, the Indian streaming service, launches 35-cent tier to box out Netflix and Prime Video
@@ -46,15 +50,14 @@ Stainless is helping OpenAI, Anthropic and others build SDKs for their APIs
 Fintech gaming startup Sanlo’s webshop tool could help developers avoid costly app store fees
 Anon is building an automated authentication layer for the GenAI age
 The TikTok ban clears key hurdle while Perplexity AI continues to shake up search
-Nvidia acquires AI workload management startup Run:ai for $700M, sources say
-Security bugs in popular phone-tracking app iSharing exposed users’ precise locations
-IBM moves deeper into hybrid cloud management with $6.4B HashiCorp acquisition
+Rabbit’s R1 is a little AI gadget that grows on you
 Stripe, doubling down on embedded finance, de-couples payments from the rest of its stack
 Eric Schmidt-backed Augment, a GitHub Copilot rival, launches out of stealth with $252M
 Nvidia acquires AI workload management startup Run:ai for $700M, sources say
 
 top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
 TechCrunch
+Anduril moves ahead in Pentagon program to develop unmanned fighter jets
 IBM moves deeper into hybrid cloud management with $6.4B HashiCorp acquisition
 Rabbit’s R1 is a little AI gadget that grows on you
 JioCinema, the Indian streaming service, launches 35-cent tier to box out Netflix and Prime Video
@@ -74,13 +77,13 @@ Fintech gaming startup Sanlo’s webshop tool could help developers avoid costly
 Anon is building an automated authentication layer for the GenAI age
 The TikTok ban clears key hurdle while Perplexity AI continues to shake up search
 Nvidia acquires AI workload management startup Run:ai for $700M, sources say
-Security bugs in popular phone-tracking app iSharing exposed users’ precise locations
-IBM moves deeper into hybrid cloud management with $6.4B HashiCorp acquisition
+Rabbit’s R1 is a little AI gadget that grows on you
 Stripe, doubling down on embedded finance, de-couples payments from the rest of its stack
 Eric Schmidt-backed Augment, a GitHub Copilot rival, launches out of stealth with $252M
 Nvidia acquires AI workload management startup Run:ai for $700M, sources say
 
 The Verge
+Zuckerberg says it will take Meta years to make money from generative AI
 Threads wants to let you wipe your old posts away
 The BattlerGC Pro might be the GameCube controller’s final form
 Drake threatened with lawsuit over diss track featuring AI Tupac
@@ -96,10 +99,11 @@ Nissan’s Iruyo knows when your baby is sleeping, knows when they’re awake
 Biden signs TikTok ‘ban’ bill into law, starting the clock for ByteDance to divest it
 ‘PBS Retro’ is coming to Roku as a FAST channel
 Qualcomm strong-arms its way into Windows laptops this summer
-Lamborghini’s popular Urus SUV grows a plug — and goes hybrid
 
 CNBC Tech
 Meta plunges 16% on weak revenue guidance even as first-quarter results top estimates
+StanChart doubles down on prediction that bitcoin will hit $150,000 by year-end
+Meta loses $200 billion in value as Zuckerberg focuses on the ways company bleeds cash
 Rubrik prices IPO at $32 per share, above the expected range
 Meta's Reality Labs posts $3.85 billion loss in first quarter
 IBM to acquire HashiCorp in $6.4 billion deal, reports another revenue miss
@@ -113,18 +117,29 @@ Amazon is opening cloud regions in Southeast Asia to meet customer demand, CTO s
 Tesla jumps after Musk says company aims to start producing affordable new EV by early 2025
 
 Top News:
+biden signs bill that would ban tiktok if bytedance fails to sell the app
 ibm to acquire hashicorp in $6.4 billion deal, reports another revenue miss
-tiktok ban signed into law by president biden: how we got here, and what comes next
 nvidia acquires ai workload management startup run:ai for $700m, sources say
-meta plunges 16% on weak revenue guidance even as first-quarter results top estimates
-stripe, doubling down on embedded finance, de-couples payments from the rest of its stack
+meta loses $200 billion in value as zuckerberg focuses on the ways company bleeds cash
+tesla surges after elon musk says new affordable ev models coming
 
 Generate_script_prompt:
 
         Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
         Response: I'm Wall-E, and this is your CNBC techcheck Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
         Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including host name), and replace CNBC techcheck briefing to 'AI briefing' 
- IBM to acquire HashiCorp
+ Biden signs bill that would ban TikTok if ByteDance fails to sell the app
+President Biden has signed a bill that would ban TikTok if its Chinese parent company, ByteDance, fails to sell it within a year. The bill, which includes aid for Ukraine and Israel, was passed by the U.S. Senate in a 79-18 vote late Tuesday after the House passed it with overwhelming majority over the weekend.
+The bill gives ByteDance nine months to divest TikTok, with a 90-day extension available to complete a deal. If ByteDance doesn’t sell TikTok, it would become illegal for app stores to distribute the app in the U.S.
+In an emailed statement to TechCrunch, TikTok said it would challenge the “unconstitutional law” in court.
+“We believe the facts and the law are clearly on our side, and we will ultimately prevail,” the statement reads. “The fact is, we have invested billions of dollars to keep U.S. data safe and our platform free from outside influence and manipulation. This ban would devastate 7 million businesses and silence 170 million Americans. As we continue to challenge this unconstitutional ban, we will continue investing and innovating to ensure TikTok remains a space where Americans of all walks of life can safely come to share their experiences, find joy, and be inspired.”
+TikTok CEO Shou Zi Chew shared his own video response on Wednesday, calling the news “a disappointing moment” and stating that TikTok “will keep fighting.”
+Back in March, the House passed a similar standalone bill to ban TikTok or force its sale within six-months time, but the Senate never took that bill up. This time, the House packaged the TikTok bill with foreign aid to U.S. allies, which essentially forced the Senate to make a decision.
+TikTok has spent the last few months arguing that its platform is essential for creators and small businesses in the United States. A few weeks ago, the company released an economic impact report revealing that TikTok generated $14.7 billion for small to mid-sized companies in the U.S.
+The ban would not be a first for TikTok. Four years ago, India banned the app following a military battle along the India-China border, and both Google and Meta quickly seized the opportunity to capture both local creators and TikTok users via their respective copycat products, YouTube Shorts and Instagram’s Reels.
+Numerous other countries also banned the service, including Senegal, Nepal, Afghanistan, Somalia and Iran.
+
+IBM to acquire HashiCorp
 IBM CEO Arvind Krishna appears at the World Economic Forum in Davos, Switzerland, on Jan. 16, 2024.
 IBM shares slipped as much as 9% in extended trading Wednesday after the hardware, software and consulting provider said it would acquire cloud software maker HashiCorp and reported first-quarter revenue that was lower than analysts had predicted.
 In a statement, IBM announced that it intends to pay $35 per share in cash for HashiCorp in a deal with a $6.4 billion enterprise value, net of cash. On Tuesday, The Wall Street Journal reported that IBM was getting close to acquiring HashiCorp, sending shares upward. Bloomberg said earlier on Wednesday that IBM was looking to offer $35 per share.
@@ -147,49 +162,6 @@ During the quarter, IBM said it was providing its 160,000 consultants with artif
 Notwithstanding the after-hours move, IBM shares are up about 13% so far this year, outperforming the S&P 500 index, which is up 6% over the same period.
 WATCH: IBM's in-office ultimatum: Move near office or leave company
 
-TikTok ban signed into law by President Biden: How we got here, and what comes next
-TikTok ban signed into law by President Biden: How we got here, and what comes next The TikTok ban has cleared Congress and received White House approval, putting new pressure on Bytedance to divest.
-TikTok faces an uncertain fate in the U.S. once again. A bill including a deadline for TikTok parent company Bytedance to divest within nine months or face a ban on app stores to distribute the app in the U.S., was signed by President Joe Biden on Wednesday as part of broader legislation including military aid for Israel and Ukraine. The White House’s approval comes swiftly after strong bipartisan approval in the House and a 79-18 Senate vote Tuesday in favor of moving the bill forward.
-TikTok is based in Los Angeles and Singapore but is owned by Chinese tech giant ByteDance. That relationship has raised eyebrows among U.S. officials, who warn that the app could be leveraged to further the interests of an adversary. The bill’s critics argue that the U.S. is unfairly targeting a well-loved social network when the government could be dealing with household issues that directly benefit Americans.
-What happened in the Senate?
-Senate Majority Leader Chuck Schumer, who has the power to set the chamber’s priorities and round up Democrats for a unified vote, initially said that the Senate “will review the legislation when it comes over from the House.”
-The Senate at first seemed far from presenting a united front against TikTok. Some Republican China hawks like Sens. Josh Hawley and Marsha Blackburn were pushing their chamber of Congress to take up the bill. On the Democratic side, Senate Intelligence Committee Chairman Mark Warner issued a joint statement with his Republican committee counterpart, Marco Rubio, in support of a forced sale or ban for TikTok.
-“We are united in our concern about the national security threat posed by TikTok — a platform with enormous power to influence and divide Americans whose parent company ByteDance remains legally required to do the bidding of the Chinese Communist Party,” Warner and Rubio said in an emailed statement. Their Senate committee, which is frequently briefed on national security matters, is particularly relevant given the nature of the concerns expressed by TikTok’s critics in Congress.
-Late Tuesday, the Senate approved the $95 billion aid package — including aid for Taiwan and humanitarian aid for Gaza — that also contained the much-debated TikTok ban.
-What happened in the House?
-In March, the House Energy and Commerce Committee introduced a new bill designed to pressure ByteDance into selling TikTok. The bill marked a fresh push by the U.S. government to separate the company from its Chinese ownership or force it out of the country.
-The bill, known as the Protecting Americans from Foreign Adversary Controlled Applications Act, would make it illegal for software with ties to U.S. adversaries to be distributed by U.S. app stores or supported by U.S. web hosts. Within the bill’s definitions, ownership by an entity based in an adversary country, like ByteDance in China, counts.
-In language of the bill, which goes on to name TikTok explicitly, “it shall be unlawful for an entity to distribute, maintain, or update (or enable the distribution, maintenance, or updating of) a foreign adversary controlled application.” If the bill became law, Apple’s App Store and Google Play could not legally distribute the app in the U.S.
-The bill, which many of its detractors reasonably describe as a “ban,” would force ByteDance to sell TikTok within six months for the app to continue operating here. It also empowers the president to have oversight of this process to ensure that it results in the company in question “no longer being controlled by a foreign adversary.”
-After getting wind of the bill’s swift and sudden progress in Congress, TikTok pushed back with a mass in-app message to U.S. users, complete with a button for calling their representatives.
-“Speak up now — before your government strips 170 million Americans of their Constitutional right to free expression,” the message read. “Let Congress know what TikTok means to you and tell them to vote NO.”
-In spite of TikTok’s decision to rile up its users — or perhaps because of it — the bill to force ByteDance to sell TikTok passed through the House Energy and Commerce Committee with a 50-0 vote. The fast-tracked bill passed a full vote in the House on March 13.
-Prior to the vote, subcommittee members had a classified briefing with the FBI, the Justice Department and Office of the Director of National Intelligence at the behest of the Biden administration, Punchbowl News reported.
-President Biden also explicitly said that he would sign the bill if it reaches his desk. “If they pass it, I’ll sign it,” Biden told a group of reporters. And Biden followed through with that statement in signing the bill Wednesday.
-Why does the U.S. say TikTok is a threat?
-To be clear, there is currently no public evidence that China has ever tapped into TikTok’s stores of data on Americans or otherwise compromised the app.
-Still, that fact hasn’t stopped the U.S. government from highlighting the possibility that China could if it wanted to. The Chinese government hasn’t been shy about going hands-on with companies in the country or keeping critics from its business community in line.
-FBI director Chris Wray once cautioned that users might not see “outward signs” if China were ever to meddle with TikTok. “Something that’s very sacred in our country — the difference between the private sector and the public sector — that’s a line that is nonexistent in the way the CCP operates,” Wray said in a Senate hearing last year.
-TikTok has vehemently denied these accusations. “Let me state this unequivocally: ByteDance is not an agent of China or any other country,” TikTok CEO Shou Zi Chew said last year during a separate hearing with the House Energy and Commerce Committee.
-To TikTok’s credit, if China wanted to get its hands on information about U.S. users, Beijing could easily turn to data brokers who openly sell troves of user data around the globe with little oversight.
-Because the U.S. has not produced any public evidence to back up its serious claims, there’s a major disconnect between how politicians feel about TikTok and how most Americans do. For many TikTok users, the U.S. crackdown is just one more way that politicians are out of touch with young people and don’t understand how they use the internet. For them — and other skeptics of the U.S. government’s claims — the situation looks like pure political posturing between two countries with bad blood, sometimes with a dash of racism.
-Where did this idea come from?
-The campaign to force ByteDance to sell TikTok to a U.S. company originated with an executive order during the Trump administration. Trump’s threats against the company culminated in a plan to force TikTok to sell its U.S. operations to Oracle in late 2020. In the process, TikTok rejected an acquisition offer from Microsoft but ultimately didn’t sell to Oracle, either, in spite of Trump’s efforts to steer the acquisition to benefit close ally and Republican mega donor Larry Ellison.
-The executive action ultimately fizzled in 2021 after Biden took office. But last year, the Biden administration picked up the baton, escalating a pressure campaign against the app along with Congress. Now that campaign looks to be back on track.
-Oddly, former President Donald Trump, who himself initiated the idea of a forced TikTok sale four years ago, is no longer in support of a TikTok crackdown. Trump explained his abrupt about-face on TikTok by highlighting the benefit a ban or forced sale could have on Meta, which suspended the former president’s account over his role in inciting violence on January 6.
-“Without TikTok, you can make Facebook bigger, and I consider Facebook to be an enemy of the people,” Trump told CNBC. Trump’s tune on TikTok may have changed following a recent meeting with billionaire Republican donor Jeffrey Yass, who owns a 15% stake in TikTok’s Chinese parent company ByteDance.
-What’s TikTok’s response to the potential ban?
-There is some strong bipartisan congressional support for regulating TikTok, but things are still pretty complex. The most obvious complication: TikTok is enormously popular and we’re in an election year. TikTok has 170 million users in the U.S. and they aren’t likely to quietly watch as Congress effectively bans their favorite source of entertainment and information.
-TikTok’s creators and their followers likely won’t go quietly. TikTok accounts with millions of followers have a built-in platform for organizing against the threat to the app that connects them to their communities and facilitates brand deals and advertising income.
-TikTok itself would also surely mount a strong legal challenge against the forced sale, much as it did when the Trump administration previously tried to accomplish the same thing through executive action. TikTok also sued when Montana attempted to enact its own ban at the state level, which ultimately resulted in a federal judge issuing an injunction and blocking the effort as unconstitutional.
-Our CEO Shou Chew's response to the TikTok ban: pic.twitter.com/l0RAPJMobK — TikTok Policy (@TikTokPolicy) April 24, 2024
-“This legislation has a predetermined outcome: a total ban of TikTok in the United States,” TikTok spokesperson Alex Haurek told TechCrunch in an emailed statement. “The government is attempting to strip 170 million Americans of their Constitutional right to free expression,” Haurek said, foreshadowing the massive public outcry that could result.
-The cultural reach of TikTok is so great that Biden is campaigning on TikTok, even as the White House calls the app a national security threat.
-Even though the White House has now signed off on the legislation, the U.S. scheme to force ByteDance to sell TikTok could still fail — an outcome that may or may not result in a ban. China has previously stated that it would oppose a forced sale of TikTok, which is well within the Chinese government’s rights following an update to the country’s export rules in late 2020.
-Beyond Congress and the courts, TikTok holds a direct line to a massive chunk of the American electorate and a fleet of creators who command many millions of loyal followers. Those levers of power shouldn’t be underestimated in the fight to come.
-Still, it’s difficult for TikTok to more effectively organize these millions. Though the X platform, when it operated as Twitter, was highly efficient as a mechanism to share breaking news, TikTok’s algorithms make it less effective as a means of understanding what is happening minute by minute. Though TikTok users say it has become a source of news — among adults, those ages 18 to 29 are most likely to say they receive their news regularly on TikTok — that information tends to be highly targeted and asynchronous. While many users may know something is brewing in Washington, it’s likely they are less aware of the steps required to fight it, making it harder for TikTok to mobilize them.
-This post was originally posted March 13, and has been updated as the legislation moves forward.
-
 Nvidia acquires AI workload management startup Run:ai for $700M, sources say
 Nvidia is acquiring Run:ai, a Tel Aviv-based company that makes it easier for developers and operations teams to manage and optimize their AI hardware infrastructure. Terms of the deal aren’t being disclosed publicly, but two sources close to the matter tell TechCrunch that the price tag was $700 million.
 CTech reported earlier this morning the companies were in “advanced negotiations” that could see Nvidia pay upwards of $1 billion for Run:ai. Evidently, the negotiations went off without a hitch, apart from a possible price change.
@@ -203,146 +175,127 @@ A recent survey of organizations adopting AI from ClearML, the machine learning 
 “Managing and orchestrating generative AI, recommender systems, search engines and other workloads requires sophisticated scheduling to optimize performance at the system level and on the underlying infrastructure,” Bjorlin said. “Nvidia’s accelerated computing platform and Run:ai’s platform will continue to support a broad ecosystem of third-party solutions, giving customers choice and flexibility. Together with Run:ai, Nvidia will enable customers to have a single fabric that accesses GPU solutions anywhere.”
 Run:ai is among Nvidia’s biggest acquisitions since its purchase of Mellanox for $6.9 billion in March 2019.
 
-Meta (META) Q1 2024 earnings
-Mark Zuckerberg, CEO of Meta, testifies during the Senate Judiciary Committee hearing titled "Big Tech and the Online Child Sexual Exploitation Crisis," in Dirksen building on Wednesday, January 31, 2024.
-Meta shares plunged 16% in extended trading on Wednesday after the company issued a light forecast, which overshadowed better-than-expected first-quarter results.
-Here are the key numbers:
-Earnings per share : $4.71 per share vs. $4.32 per share expected by LSEG
-: $4.71 per share vs. $4.32 per share expected by LSEG Revenue: $36.46 billion vs. $36.16 billion expected by LSEG
-Revenue increased 27% from $28.65 billion in the same period a year earlier, the fastest rate of expansion for any quarter since 2021. Net income more than doubled to $12.37 billion, or $4.71 per share, from $5.71 billion, or $2.20 per share, a year ago.
-One reason for the pop in net income is that, while revenue growth accelerated, sales and marketing costs dropped 16% from the year-earlier period.
-Meta said it expects sales in the second quarter of $36.5 billion to $39 billion. The midpoint of the range, $37.75 billion, would represent 18% year-over-year growth and is below analysts' average estimate of $38.3 billion.
-The stock sell-off accelerated early in the earnings call after CEO Mark Zuckerberg jumped into his discussion about investments, namely in areas like glasses and mixed reality, where the company doesn't currently make money. And he said investments in artificial intelligence are increasing.
-"On the upside, once our new AI services reach scale, we have a strong track record of monetizing them effectively," Zuckerberg said.
-The Facebook parent no longer reports daily active users and monthly active users. It now gives a figure for what it calls "family daily active people." That number was 3.24 billion for March 2024, a 7% increase from a year earlier.
-Meta has raised investor expectations due to its improved financial performance in recent quarters, leaving little room for error. The stock is up about 40% this year, as of Wednesday's close, after almost tripling last year. In February 2023, Zuckerberg told investors it would be the "year of efficiency," which initiated the rally.
-At the time, Zuckerberg said the company would be better at eliminating unnecessary projects and cracking down on bloat, which would help Meta become a "stronger and more nimble organization." The company cut about 21,000 jobs in the first half of 2023, and Zuckerberg said in February of this year that hiring will be "relatively minimal compared to what we would have done historically."
-Headcount declined by 10% in the first quarter from a year earlier to 69,329.
-Capital expenditures for 2024 are anticipated to be in the $35 billion to $40 billion range, an increase from a prior forecast of $30 billion to $37 billion "as we continue to accelerate our infrastructure investments to support our artificial intelligence (AI) roadmap," Meta said.
-Average revenue per user in the quarter was $11.20, the company said.
-Meta has been clawing back digital ad market share after a dismal 2022. At that time, it was reeling from Apple's iOS privacy update and macroeconomic concerns that led many brands to rein in spending.
-Zuckerberg spearheaded an initiative to rebuild the ad business with a focus on AI. On the company's last earnings call in February, finance chief Susan Li said Meta has been investing in AI models that can accurately predict relevant ads for users, as well as tools that automate the ads-creation process.
-Advertising revenue, which accounts for the vast majority of Meta's business, jumped 27% in the first quarter to $35.64 billion.
-Meta is benefiting from a stabilizing economy and surge in spending from Chinese discount retailers like Temu and Shein, which have been pumping money into Facebook and Instagram in an effort to reach a wider swath of users. Some analysts have warned that slower spending from China-based advertisers could be a source of concern in the first quarter and as the year progresses.
-Li said on Wednesday's earnings call that the company isn't quantifying the contribution from China in the quarter, but she said advertising revenue in the Asia-Pacific region increased 41% from a year earlier, making it the fastest growing region, and was boosted by online commerce and gaming.
-The company's Reality Labs unit, which houses its hardware and software for development of the nascent metaverse, continues to bleed cash. Reality Labs reported sales of $440 million for the quarter and $3.85 billion in losses, bringing total losses since the end of 2020 to over $45 billion. Analysts expected the division to show an operating loss of $4.31 billion for the quarter.
+Meta loses $200 billion in value, Zuckerberg focuses on AI, metaverse
+Mark Zuckerberg, CEO of Meta testifies before the Senate Judiciary Committee at the Dirksen Senate Office Building on January 31, 2024 in Washington, DC.
+Mark Zuckerberg started Meta 's earnings call by talking about artificial intelligence. Then he moved onto the metaverse, touting his company's headsets, glasses and operating system. He spent almost the entirety of his opening remarks focused on the many ways Meta loses money.
+Investors weren't into it. Meta shares tumbled as much as 19% in extended trading on Wednesday, wiping out more than $200 billion in market cap. The drop came despite Meta reporting better-than-expected profit and revenue for the first quarter.
+Zuckerberg appeared ready for the sell-off.
+"I think it's worth calling that out, that we've historically seen a lot of volatility in our stock during this phase of our product playbook where we're investing in scaling a new product but aren't yet monetizing it," Zuckerberg said. He cited past efforts like short-video service Reels, Stories and the transition to mobile.
+Meta generates 98% of its revenue from digital advertising. But to the extent Zuckerberg talked about ads, he was looking to the future and the ways the company could potentially turn its current investments into ad dollars. In discussing Meta's effort to build a "leading AI," Zuckerberg said, "There are several ways to build a massive business here including scaling business messaging, introducing ads or paid content into AI interactions."
+He spent more time talking about Meta Llama 3, the company's newest large language model, and the recent rollout of Meta AI, the company's answer to OpenAI's ChatGPT.
+Zuckerberg then moved onto potential opportunities for expansion within the mixed-reality headset market, like a headset for work or fitness. Meta opened up access to the operating system that powers its Quest headsets on Monday, which Zuckerberg said will help the mixed-reality ecosystem grow faster.
+He also talked up Meta's AR glasses, which he called "the ideal device for an AI assistant because you can let them see what you see and hear what you hear."
 
-Stripe, doubling down on embedded finance, de-couples payments from the rest of its stack
-Stripe continues to hold the title of being the biggest financial technology business still in private hands, with a current valuation of about $65 billion and a whopping $1 trillion in total processed payment volume last year alone. But fintech is fragmented and a fast-moving target, and with competitors chipping away at its place, Stripe is changing up its approach.
-Today, Stripe announced that it will be de-coupling payments — the jewel in its crown — from the rest of its financial services stack. This is a big change, considering that in the past, even as Stripe grew its list of services, it required businesses to be payments customers in order to use any of the rest. Alongside this, the company is adding in a number of new embedded finance features and a new wave of AI tools.
-The updates were unveiled at Sessions, Stripe’s big developer event in San Francisco, where the company said it would be announcing more than 50 (yes, 50) new features on its platform, part of a slate of more than 250 (yes, 250) that have been announced so far this year.
-That might sound like a lot of noise, but in truth, most of the list of new items is actually on the incremental side — updates and new features to bigger products already announced.
-“Our mission is to grow the GDP of the internet. Our strategy is to listen carefully to the needs of the most sophisticated and innovative businesses in the world,” said Patrick Collison, the CEO and co-founder of the company, at the event. “This year, because of our scale, Stripe is well positioned to help our users deal with the increasingly complex payments landscape and put AI to work to drive growth. We’re also making Stripe more modular, so companies can use just the parts of Stripe most useful to them.”
-Stripe removing its requirement to use its payments API addresses a major piece of friction for customers and would-be customers who might have wanted to use some of the company’s other tools — which include the likes of fraud, risk and verification services, billing and invoicing, in-person payments, financial account data, and more — but did not want to be all in on Stripe’s larger platform. It signifies a shift in how Stripe views its wider platform: In the past it took the approach that the launch of other services could help lure users to taking its payment services; now it appears to be willing to explore how it can sell some of those other, non-payments services on their own.
-In an interview, Will Gaybrick, Stripe’s chief product officer, admitted that users had been asking the company to open up its walled garden for some time, but he claimed that one of the main reasons why it delayed doing so until now was due to it being technically hard to create integrations for legacy services.
-On another level, it underscores an interesting shift in the market: Companies like Stripe (and many others like Adyen) have taken a platform approach to the business of payments services. They aim for bigger revenues and margins per customer by becoming one-stop shops. But the truth is that the market is huge and fragmented, and customers of all sizes have dozens, sometimes hundreds, of options for what to use.
-Indeed, some will want to have the freedom to be flexible, and some might well be locked into contracts, and some may simply want to work with multiple providers depending on the market in question, or to de-risk by using multiple platforms. That has clearly started to become a bigger opportunity for the company; hence opening up its walled garden now.
-Other notable updates announced today
-Adding AI tooling to the checkout and fraud tools
-Stripe announced a new version of its checkout experience that will be using AI to give a more precise selection of payment options to customers depending on location and what customers may have already used. To fuel the personalization, it’s doubling the number of payment methods to 100. They include the likes of Amazon Pay, Revolut Pay, Swish, Twint, and Zip.
-“What we’ve heard historically is, hey, we need more payment method coverage if you want us to go all in on Stripe,” Gaybrick said. OpenAI (which is also one of Stripe’s AI partners), Slack and River Island are among Stripe’s customers for this service.
-Stripe said that developers will also be seeing more AI when it runs A/B testing on the checkout flow.
-On the fraud front, this is one area where Stripe is very much following the market trends, where we are seeing AI tooling being added into a number of fraud detection services. In its case, it’s launching a new tool called “Radar Assistant,” which lets users create new fraud tools on its Radar risk platform using natural language commands.
-Big embedded finance feature update
-Embedded finance — which involves companies, which may or may not be focusing on financial services, integrating financial products into their apps and other services to improve customer loyalty, revenues and experience — has become a growing area in fintech, with companies like Rapyd, Plaid, Airwallex and TrueLayer among the dozens of companies building and provisioning these tools to neobanks, other fintechs and others. Given that many “as a service” offerings also offer payments, it’s important that Stripe continue to build out its own embedded finance efforts, branded Stripe Connect, to remain competitive.
-Today it announced a number of upgrades to bring the total number of Connect tools to 17, including 10 focused on different payments services. These include, for example, adding in Stripe Capital to offer loans to customers, it said. Gaybrick told TechCrunch that Lightspeed, the point-of-sale company, makes 50% of its revenues now from embedded finance products, so it’s an important area for Stripe to keep developing.
-Usage-based billing upgrade
-Stripe has, frankly speaking, been somewhat slow on building out more sophisticated subscription and billing products, opening the door for companies like Paddle and more recent arrivals like Lago (which focuses on open sourced billing) to create significantly more nuanced offerings to address the wave of new technology and pricing for that tech in the market. These range not just to more granular and customizable subscription models, but also the introduction of usage-based billing, based on whatever parameters that customers want to create. Now Stripe is also throwing its hat into that game. Anthropic is a high-profile customer using various billing tools from Stripe to tailor how it charges and bills for its API. However it’s not (yet) adopting usage-based billing, the company said.
-“For Claude Pro, we use Stripe Billing to manage subscriptions. For our API, we use Stripe Invoicing to make it easy to automate accounts receivable, collect payments, and reconcile transactions. This improves the experience for Anthropic and our customers alike,” said Daniela Amodei, co-founder and president of Anthropic, in a statement.
-Updated to clarify that Anthropic is not yet using Stripe’s usage-based billing feature.
+Tesla surges after Elon Musk says new affordable EV models coming
+Tesla shares closed up 12% on Wednesday after CEO Elon Musk said the electric-vehicle company plans to begin production of new affordable EV models by early 2025.
+Musk's comments came during Tesla's earnings call on Tuesday after the company reported disappointing first-quarter numbers. Revenue fell 9% year over year, its steepest annual decline since 2012.
+The company previously expected to start production of the new EV models in the second half of 2025. Tesla has not disclosed any details about affordable new models in the works. Typically, the company promotes design concepts years ahead of production in "unveiling" events.
+Tesla reported 45 cents in adjusted earnings per share on $21.3 billion in revenue, falling short of the 51 cents in expected earnings per share and $22.15 billion in expected sales, per LSEG.
+Revenue dropped from $23.3 billion a year before and from $25.17 billion in the previous quarter.
+Analysts of Bank of America said in an investor note Wednesday that Tesla's first-quarter results and leadership's commentary "addressed key concerns" and "revitalized the growth narrative," prompting them to upgrade the stock from neutral to buy while maintaining their $220 price target.
 
 Response:
 
 Script:
-i'm wall-e, and this is your ai briefing. big news in the tech world as ibm announces its intent to buy cloud software maker hashicorp for a whopping $6.4 billion, dipping ibm shares by 9% in extended trading. this acquisition plays into ibm's strategy to complement its 2019 red hat purchase, signaling a deeper dive into cloud infrastructure management. despite a revenue miss this quarter, ibm's move highlights its ambition to reinforce its cloud and software services.
+i'm wall-e, and this is your ai briefing for today. 
 
-in legislative developments, a tiktok ban has officially been signed into law by president biden amidst bipartisan concerns over national security linked to its chinese parent company, bytedance. this marks a pivotal moment for the future of tiktok in the u.s., prompting a potential divestment within nine months to avoid a comprehensive app store ban. the move has sparked widespread debate over the balance between security and free expression online.
+in a significant development, president biden has signed a bill that could spell the end for tiktok in the u.s. unless its parent company, bytedance, finds a buyer within the year. this decision follows a substantial senate vote and highlights growing concerns over data privacy and national security. tiktok has vowed to fight back, claiming it has already taken significant steps to protect user data on its platform. the move echoes similar actions taken by india and a handful of other countries in recent years, each citing their own reasons for sidelining the popular app.
 
-switching gears to acquisitions, nvidia is stepping up its ai game with a $700 million purchase of run:ai, a company specializing in ai workload management. this strategic move aims to bolster nvidia's ai platform capabilities, specifically catering to the complex demands of generative ai deployments across various data center locations.
+meanwhile, in the corporate sphere, ibm has announced a pending acquisition of cloud software company hashicorp for $35 per share, translating to a total enterprise value of $6.4 billion. this strategic move aims at bolstering ibm’s already robust cloud services, following the successful integration of red hat. however, news of the acquisition comes alongside a reported dip in ibm's first-quarter revenue, sending shares tumbling in extended trading.
 
-meta, formerly known as facebook, reported a significant plunge of 16% in extended trading following a forecast that failed to meet expectations, despite beating first-quarter earnings and revenue estimates. ceo mark zuckerberg's focus on long-term investments in ai, glasses, and mixed reality prompts questions about their current revenue-generation capabilities amidst soaring expectations for meta's financial performance.
+not to be outdone, nvidia is expanding its ai prowess with the purchase of run:ai, a startup focusing on ai workload management, for a reported $700 million. this acquisition, poised to enhance nvidia’s dgx cloud ai platform, underscores the tech giant's commitment to leading the charge in ai infrastructure optimization across various industries.
 
-lastly, stripe is making waves by decoupling its flagship payments service from the rest of its financial services stack. this monumental shift allows businesses to tap into stripe's versatile suite of services without being tethered to its payments api, a move that signifies stripe's adaptive response to the diversified demands of today's fintech landscape.
+in other news, meta’s valuation took a steep $200 billion dive as ceo mark zuckerberg's focus on ai and the metaverse failed to enthuse investors. despite meta posting better-than-expected profit and revenue for q1, the company’s heavy investment in unproven markets has led to skepticism about its future profitability and growth trajectory.
 
-that's a wrap on today's tech highlights. catch you back here tomorrow for more insights into the ever-evolving world of technology
+on a brighter note, tesla's stock surged by 12% following ceo elon musk's announcement of new, more affordable ev models set to begin production by early 2025. this news comes as a revitalizing boost after the electric-vehicle maker reported its steepest yearly revenue decline since 2012, underscoring the challenges and competition it faces in the automotive market.
+
+that’s it for today's ai briefing. we’ve covered the biggest movements shaking the tech world, from legislative challenges to pivotal acquisitions and strategic pivots. tune in tomorrow for more updates
 
 Polished Script:
-i'm wall-e, and this is your tech briefing. big news from ibm as it aims to strengthen its cloud arsenal by acquiring cloud software powerhouse hashicorp for an astonishing $6.4 billion. shares of ibm took a dive, down by 9% in after-hours trading, underscoring the hefty price tag of this expansion. this move is a key part of ibm's strategy, serving as a complement to its 2019 acquisition of red hat, and signals a major push into cloud infrastructure management. despite falling short on revenue this quarter, ibm's bold step emphasizes its commitment to fortifying its cloud and software services.
+i'm wall-e, and welcome to your tech briefing. 
 
-turning to legislative matters, president biden has just signed into law a ban on tiktok, amidst strong bipartisan concerns over the national security implications of its chinese parent company, bytedance. this critical development could force tiktok to sever ties within nine months to steer clear of an outright app store ban. the legislation has ignited a fierce debate on the tightrope walk between ensuring national security and preserving freedom of expression online.
+big news out of washington as president biden has inked a bill potentially marking the end of tiktok's presence in the u.s. the clock is ticking for its parent company, bytedance, to find a buyer within a year. this decision, underscored by a considerable senate vote, heightens the focus on data privacy and national security issues. in retaliation, tiktok is mounting a defense, asserting its efforts in safeguarding user data on its platform. this move mirrors steps taken by india and other nations, each with their motives for pushing aside the popular app.
 
-in other acquisition news, nvidia is ramping up its presence in the ai space with a strategic $700 million acquisition of run:ai, specialists in ai workload management. this move is poised to enhance nvidia's ai platform capabilities, especially in managing the intricate demands of generative ai across various data center environments.
+switching gears to the corporate landscape, ibm has announced its plans to acquire cloud software firm hashicorp at $35 per share, totaling a valuation of $6.4 billion. this acquisition is poised to enhance ibm’s cloud service offerings, building on the successful integration of red hat. however, ibm revealed a dip in first-quarter revenue alongside this announcement, which saw its shares decline in after-hours trading.
 
-meta, previously known as facebook, has experienced a significant downturn, with shares plunging 16% in extended trading. this comes as the company's outlook falls short of wall street forecasts, despite outperforming first-quarter earnings and revenue expectations. ceo mark zuckerberg's heavy investment in ai, glasses, and mixed reality technologies raises important questions about their immediate revenue potential amidst soaring financial performance expectations.
+not to be left behind, nvidia has declared its intentions to elevate its ai capabilities with the acquisition of run:ai, a startup specializing in ai workload management, tagged at $700 million. this strategic move aims to boost nvidia's dgx cloud ai platform, showcasing the tech titan's dedication to pioneering ai infrastructure optimization across a spectrum of industries.
 
-lastly, stripe is making headlines by separating its flagship payments service from its broader financial services offerings. this significant change allows businesses more flexibility to integrate stripe's comprehensive suite of services without being bound to its payments api. a strategic response to the evolving demands of the fintech ecosystem, this move positions stripe to better cater to a diverse range of financial operations.
+in other developments, meta faces a challenging period as its valuation plummeted by $200 billion following ceo mark zuckerberg's push towards ai and the metaverse, a move that left investors unenthused. despite posting profits and revenue that exceeded expectations for q1, meta’s substantial investments in speculative markets have cast doubts over its future profitability and growth prospects.
 
-that's all for today's tech highlights. join us again tomorrow for more updates on the dynamic world of technology
+on a more positive note, tesla's shares ascended by 12% after ceo elon musk announced the forthcoming production of new, more affordable ev models slated for early 2025. this announcement comes as a welcome uplift after the company reported its steepest annual revenue downturn since 2012, highlighting the intensified competition and obstacles within the automotive sector.
+
+that wraps up today's tech briefing, where we've dived into the significant shifts stirring the tech world, from legislative moves to crucial acquisitions and strategic adjustments. join us again tomorrow for the latest updates
 
 Podcast Title:
-"Ibm'S Cloud Power Play With Hashicorp Buyout 💼🌐, Tiktok'S Legislative Hurdles 🚫📱, Nvidia'S Ai Ambitions With Run:Ai Acquisition 💡💳"
+EP-4 Biden'S Tiktok Takedown 🇺🇸🚫, Ibm'S Hashicorp Heist 💼🔒, Nvidia'S Ai Ambitions 🤖💡
 
 Podcast Description:
-title: today's tech highlights: ibm's big acquisition, tiktok ban, and more
+welcome to your tech briefing, hosted by wall-e, where we dissect the latest happenings in the technology sector, shining a spotlight on the legislative moves, corporate acquisitions, and strategic adjustments reshaping the tech landscape. in today's episode:
 
-description:
+- the u.s. increases pressure on tiktok with president biden signing a bill to potentially end its presence in the u.s., emphasizing the ongoing debates over data privacy and national security.
+- ibm announces its acquisition of hashicorp for $6.4 billion, aiming to bolster its cloud services despite facing a dip in first-quarter revenue.
+- nvidia invests in enhancing its ai capabilities through the acquisition of run:ai for $700 million, underscoring its commitment to ai infrastructure optimization.
+- meta confronts investor skepticism with a valuation drop of $200 billion, despite ceo mark zuckerberg's aggressive ai and metaverse development push.
+- tesla's stock rises by 12% following ceo elon musk's announcement of new, more affordable ev models set for release in early 2025, amidst the company’s revenue challenges.
 
-in this episode of your tech briefing, host wall-e delves into the latest developments shaking the tech world. key points covered:
-
-- ibm's ambitious expansion with its $6.4 billion acquisition of hashicorp, aiming to boost its presence in the cloud sector. the acquisition comes as ibm's shares see a decline but highlights the company's strategy to reinforce its cloud and software services.
-- the new legislation signed by president biden banning tiktok due to national security concerns, pushing the app towards possible drastic changes to avoid an app store ban. this sparks debate on balancing national security and free expression.
-- nvidia enhances its ai capabilities with a crucial $700 million acquisition of run:ai, a move that strengthens its position in ai workload management across data centers.
-- meta faces a declining stock price after its latest financial outlook disappoints wall street, raising questions about its considerable investments in ai and mixed reality technologies.
-- stripe announces a significant restructuring of its services, separating its payments solution from its broader financial offerings, catering to the evolving demands of the fintech ecosystem.
-
-stay tuned for a comprehensive analysis of these stories, reflecting on how they shape the current and future landscape of the tech industry. join us for more updates in tomorrow's episode on the dynamic world of technology
+join us as we delve into these significant shifts and what they mean for the tech industry's future. tune in tomorrow for more updates
 
 Polished Script (Spanish):
-soy wall-e, y este es tu ai briefing. ibm está preparando el terreno para adquirir hashicorp por un valor empresarial neto de efectivo de $6.4 mil millones, anunciando sus planes en el foro económico mundial en davos, suiza. sin embargo, las acciones de ibm cayeron hasta un 9% después de reportar ingresos del primer trimestre por debajo de las expectativas de los analistas. por otro lado, el presidente biden ha firmado una ley que prohíbe tiktok, poniendo a bytedance bajo presión para desinvertir dentro de nueve meses o enfrentar restricciones en las tiendas de aplicaciones de ee. uu. nvidia adquiere la startup de gestión de cargas de trabajo de ia, run:ai, por $700 millones, buscando optimizar la infraestructura de hardware de ia para desarrolladores y equipos de operaciones. finalmente, meta enfrenta una fuerte caída del 16% en sus acciones después de una previsión más débil de lo esperado, a pesar de reportar un aumento del 27% en los ingresos y más del doble de ganancias netas en el primer trimestre de 2024. stripe anuncia importantes actualizaciones, desvinculando los pagos del resto de sus servicios financieros e introduciendo herramientas de ia y nuevas funciones de finanzas integradas. eso es todo por hoy. nos vemos aquí mañana
+soy wall-e, y esta es tu sesión informativa de ai briefing. el presidente biden ha firmado un proyecto de ley que prohibiría tiktok si su empresa matriz china, bytedance, no logra vender la aplicación dentro de un año. la medida, que incluye ayudas para ucrania e israel, fue aprobada por el senado de ee.uu. con una votación de 79-18 el martes por la noche después de que la cámara la pasara con una mayoría abrumadora durante el fin de semana. bytedance tiene nueve meses para desinvertir en tiktok, con una extensión disponible de 90 días para completar un acuerdo. si bytedance no vende tiktok, se volvería ilegal para las tiendas de aplicaciones distribuir la app en ee.uu. en respuesta, tiktok dijo que impugnaría la "ley inconstitucional" en los tribunales.
+
+por otro lado, las acciones de ibm se deslizaron hasta un 9% en el trading extendido el miércoles después de que el proveedor de hardware, software y consultoría anunciara que adquiriría al fabricante de software en la nube hashicorp y reportara ingresos del primer trimestre más bajos de lo que los analistas habían pronosticado. ibm anunció que tiene la intención de pagar $35 por acción en efectivo por hashicorp en un acuerdo con un valor empresarial de $6.4 mil millones, neto de efectivo. hashicorp complementaría a red hat, que ha contribuido al crecimiento de ingresos de ibm desde la adquisición de $34 mil millones en 2019.
+
+en noticias adicionales, nvidia está adquiriendo run:ai, una compañía con sede en tel aviv que facilita a los desarrolladores y equipos de operaciones la gestión y optimización de su infraestructura de hardware ai. aunque los términos del acuerdo no se han hecho públicos, dos fuentes cercanas al asunto le dijeron a techcrunch que el precio fue de $700 millones. nvidia dice que continuará ofreciendo los productos de run:ai "bajo el mismo modelo de negocio" e invertirá en la hoja de ruta del producto de run:ai como parte de la plataforma ai dgx cloud de nvidia.
+
+finalmente, las acciones de tesla cerraron con un alza del 12% el miércoles después de que el ceo elon musk dijera que la compañía de vehículos eléctricos planea comenzar la producción de nuevos modelos ev asequibles a principios de 2025. los comentarios de musk llegaron durante la llamada de ganancias de tesla el martes después de que la compañía reportara números decepcionantes para el primer trimestre. tesla ha informado 45 centavos en ganancias ajustadas por acción sobre $21.3 mil millones en ingresos, quedando por debajo de los 51 centavos en ganancias por acción esperadas y $22.15 mil millones en ventas esperadas, según lseg.
+
+eso es todo por ahora. nos vemos de nuevo mañana
 
 Podcast Title (Spanish):
-"ibm apuesta por hashicorp 💼, biden contra tiktok 🚫, nvidia y la inteligencia artificial 🤖"
+EP-4 "biden contra tiktok 🚫, ibm adquiere hashicorp 💼, nvidia fortalece ai con run:ai 🖥️"
 
 Podcast Description (Spanish):
-descripción:
+bienvenidos a ai briefing con soy wall-e, donde te traemos las últimas noticias y desarrollos en el mundo de la tecnología y la inteligencia artificial. en nuestro episodio de hoy, cubrimos una variedad de temas cruciales que están dando forma al futuro de la industria:
 
-bienvenidos a "tu ai briefing" con soy wall-e, el espacio donde exploramos las últimas tendencias y noticias del mundo de la inteligencia artificial, la tecnología y el ámbito empresarial. en cada episodio, te traemos un resumen conciso de los acontecimientos más destacados. en este episodio, discutimos:
+- el presidente biden firma un proyecto de ley que podría prohibir tiktok en los ee.uu. si bytedance no vende la aplicación dentro de un año. la ley también incluye ayudas para ucrania e israel.
 
-- la próxima adquisición de hashicorp por ibm por un valor empresarial neto de efectivo de $6.4 mil millones, anunciada en el foro económico mundial en davos, suiza, y cómo las acciones de ibm cayeron un 9% tras reportar ingresos por debajo de las expectativas.
+- ibm reporta ingresos del primer trimestre más bajos de lo esperado y anuncia la adquisición de hashicorp por $6.4 mil millones, buscando fortalecer su portafolio junto a red hat.
 
-- la nueva ley firmada por el presidente biden prohibiendo tiktok y las presiones sobre bytedance para desinvertir dentro de nueve meses o enfrentar restricciones en las tiendas de aplicaciones de ee. uu.
+- nvidia adquiere la empresa con sede en tel aviv, run:ai, en un intento por mejorar la gestión y optimización de la infraestructura de hardware ai, con un acuerdo que asciende a los $700 millones.
 
-- la adquisición por parte de nvidia de la startup de gestión de cargas de trabajo de ia, run:ai, por $700 millones, con el objetivo de optimizar la infraestructura de hardware de ia.
+- tesla anuncia planes para comenzar la producción de nuevos modelos ev asequibles a principios de 2025, a pesar de reportar ingresos y ganancias por debajo de las expectativas para el primer trimestre.
 
-- la caída del 16% en las acciones de meta después de una previsión más débil de lo esperado, a pesar de un aumento del 27% en ingresos y más del doble de ganancias netas en el primer trimestre de 2024.
-
-- stripe anunciando actualizaciones significativas, separando los pagos del resto de sus servicios financieros e introduciendo herramientas de ia y nuevas funciones de finanzas integradas.
-
-únete a nosotros para estar al tanto de cómo estos desarrollos pueden impactar el mundo de la tecnología y la inteligencia artificial. nos vemos aquí mañana para más actualizaciones
+únete a nosotros en ai briefing para desglosar estos desarrollos y explorar cómo podrían afectar la industría tecnológica y nuestro futuro. nos vemos de nuevo mañana para más actualizaciones
 
 Polished Script (Chinese):
-我是 wall-e，欢迎来到ai简报。ibm正寻求以每股35美元的现金价格收购hashicorp，并将此次交易的企业价值定为64亿美元，净现金计算在内。ibm本周三在盘后交易中宣布此消息后，其股价一度下跌9%，这是因为该硬件、软件及咨询服务提供商公布的第一季度收入低于分析师预期。ibm表示，该交易预计将在2024年底前完成。此外，ibm发布了与分析师共识相比较的收益情况。
+我是wall-e，欢迎来到您的ai简报。拜登总统签署了一项法案，如果字节跳动公司未能在一年内出售tiktok，该法案将禁止tiktok。该法案包括对乌克兰和以色列的援助，周二晚些时候以79-18票通过了美国参议院审议，此前该法案已在周末获得众议院压倒性多数通过。该法案赋予字节跳动公司九个月时间出售tiktok，有一次90天的延期机会来完成交易。如果字节跳动公司未能出售tiktok，应用商店将被禁止在美国分发该应用。tiktok在一份发给techcrunch的电子邮件声明中表示，它将对这一“违宪法律”提起诉讼。
 
-同时，总统拜登签署了禁止tiktok的法案，这给字节跳动带来了新的压力，要求其在九个月内进行剥离。此举再次让tiktok在美国的命运变得不确定。该法案作为一项更广泛的立法的一部分获得了白宫的批准，该立法包括对以色列和乌克兰的军事援助。
+ibm宣布以每股35美元现金的价格收购云软件制造商hashicorp，交易的企业价值净额为64亿美元。ibm表示，这项交易预计将在收购完成后的第一个完整年度增加调整后的息税折旧摊销前利润，并在收购完成后的第二年增加自由现金流。ibm预计这项交易将在2024年底前完成。
 
-nvidia将以7亿美元的价格收购位于特拉维夫的人工智能工作负载管理创业公司run:ai。nvidia表示，将继续以相同的商业模式提供run:ai的产品，并将投资于run:ai的产品路线图，作为nvidia的dgx cloud ai平台的一部分。
+nvidia正以7亿美元的价格收购位于特拉维夫的公司run:ai，后者简化了开发人员和运营团队管理和优化其ai硬件基础设施的能力。nvidia表示，将继续以“相同的商业模式”提供run:ai的产品，并在nvidia的dgx cloud ai平台中投资run:ai的产品路线图，该平台为企业客户提供了可以用于训练生成式和其他形式ai的计算基础设施和软件。
 
-meta在第一季度财报中发布了超出预期的良好结果，但其发布的展望较轻，导致股价在盘后交易中下跌了16%。meta公布的业绩如下：每股收益4.71美元，预期为4.32美元；收入364.6亿美元，预期为361.6亿美元。尽管财务业绩有所改善，但meta表示计划在2024年的资本支出将位于350亿至400亿美元之间，高于此前的预测。
+meta在周三的盘后交易中暴跌，市值蒸发超过2000亿美元，尽管meta报告的第一季度利润和收入好于预期。扎克伯格开始讲述人工智能，然后转移到元宇宙，推崇他的公司的头戴设备、眼镜和操作系统。他几乎把开场白的全部时间都集中在meta亏损的多种方式上。
 
-stripe宣布将其支付服务与其他金融服务栈分离，并新增了一系列嵌入式金融功能和一批新的ai工具。stripe在其大型开发者活动上宣布了这一消息，并表示今年将发布超过250项新功能。此举展示了stripe视其更广泛平台的新态度：向市场开放，而不再是全面要求客户采用其支付服务。
+tesla在周三收盘时上涨了12%，此前ceo埃隆·马斯克表示，这家电动汽车公司计划在2025年初开始生产新的经济型电动汽车车型。马斯克的评论发表在tesla周二公布令人失望的第一季度财报后的财报电话会议上。营收同比下降9%，这是自2012年以来最大的年度降幅。
 
-以上便是今天的ai简报。我们明天再见。
+今天就到这里。明天再见。
 
 Podcast Title (Chinese):
-ibm收购hashicorp引股价波动 📉, tiktok美国命运再添变数 🚫, nvidia拓展ai版图 💡
+EP-4 tiktok出售倒计时⏳, ibm收购hashicorp云技术🌥️, nvidia加强ai硬件管理🤖
 
 Podcast Description (Chinese):
-欢迎收听ai简报，我是你们的主持人wall-e。在这一集中，我们将梳理最新的ai和科技领域的重要动态，深入解读对行业和市场产生重大影响的新闻。以下是我们本集要讨论的主题：
+description:
 
-- ibm正以64亿美元的企业价值寻求收购hashicorp的最新动态，以及该交易对ibm股价的影响和此次交易的预期完成时间。
-- 美国总统拜登签署的禁止tiktok的新法案如何为字节跳动创造新的挑战，并对tiktok在美国的未来产生影响。
-- nvidia以7亿美元收购位于特拉维夫的ai工作负载管理公司run:ai的详情，以及nvidia如何计划将run:ai整合进其商业模式中。
-- meta在第一季度的超预期财报以及其未来资本支出计划对股价的影响。
-- stripe的最新业务策略调整，包括如何分离支付服务与其他金融服务，并新增ai工具与功能。
+欢迎收听由wall-e主持的"您的ai简报"，我们每期为您带来最新的科技界动态，深入浅出地讲解当前最热的话题。本期内容包括：
 
-加入我们，深入了解这些领导科技和ai领域最前沿的企业和技术如何塑造我们的未来。我们将为您提供精准分析和行业洞察。明天别忘了再次收听ai简报，获取更多资讯。
+- 美国总统拜登签署法案：如字节跳动公司一年内未能出售tiktok，则将禁止tiktok在美国运行，法案还包括对乌克兰和以色列的援助。
+  
+- ibm宣布以64亿美元的价格收购云软件制造商hashicorp，交易预计将增加ibm的利润与自由现金流。
+
+- nvidia以7亿美元收购位于特拉维夫的ai硬件优化公司run:ai，旨在加强自家ai平台的性能和能力。
+
+- 即便meta（原facebook）第一季度利润和收入超出预期，meta的市值仍然在盘后交易中蒸发超过2000亿美元，ceo马克·扎克伯格重点讨论其在人工智能与元宇宙的投资及损失。
+
+- 特斯拉在发布第一季度财报后股价上涨12%，ceo埃隆·马斯克宣布计划在2025年初推出新的经济型电动汽车。
+
+通过深度解读这些重要事件，我们希望为您提供科技行业的宝贵见解。欢迎您在明天继续收听"您的ai简报"。
