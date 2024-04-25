@@ -24,10 +24,7 @@ def add_bgm(podcast_path, bgm_path, final_path):
     # Combine intro, looped middle, and outro of BGM
     bgm_full = bgm_intro + bgm_middle_loop + bgm_outro
 
-    # Overlay the podcast onto the BGM starting right after the intro
     final_mix = bgm_full.overlay(podcast, position=len(bgm_intro))
-
-    # Export the final mix to a new file
     final_mix.export(final_path, format="mp3")
 
 # Replace 'your_podcast.mp3' and 'your_bgm.mp3' with your actual file paths

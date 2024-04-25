@@ -9,7 +9,7 @@ from newsScraper import scrape_verge, scrape_cnbctech, scrape_techcrunch, scrape
 from newsplease import NewsPlease
 import re
 import difflib
-from postProcess import add_bgm
+from addMusic import add_bgm
 from openai import AzureOpenAI
 from utils import spanish_title_case
 import sys
