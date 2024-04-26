@@ -1,0 +1,290 @@
+
+Titles:
+The EPA’s new power plant pollution rule has a big, gassy hole in it
+Sony’s PlayStation Portal handheld is back in stock at multiple retailers
+Gym teacher accused of using AI voice clone to try to get a high school principal fired
+Google will finally put Keep reminders in Tasks, where they always belonged
+Microsoft’s Surface and Xbox hardware revenues take a big hit in Q3
+CISA ransomware warning program will launch this year
+TCL’s entry-level Q6 QLED TV has fallen to a new low price for a limited time
+BlizzCon 2024 has been canceled
+Spyware dealers could face visa restrictions
+Garry’s Mod is taking down decades of Nintendo-related add-ons
+This self-transforming Megatron is as badass as it is expensive
+Google is updating Android TVs to fix a big Gmail privacy problem
+Cities are ending their ShotSpotter contracts, but the sensors themselves are staying
+Reddit is back after a widespread outage
+Threads will now automatically filter out offensive words from your feeds
+FCC votes to restore net neutrality
+Wacom says its first OLED drawing tablet is cool and skinny
+Alphabet issues first-ever dividend, $70 billion buyback
+Microsoft cloud growth accelerates on back of AI push
+Intel shares fall after company provides weak forecast for the current quarter
+Snap shares soar 23% as company beats on earnings, shows strong revenue growth
+Microsoft says cloud AI demand is exceeding supply even after 79% surge in spending
+Alphabet tempers fears that it's falling behind in AI with blowout first-quarter results
+Mark Zuckerberg's net worth plummets more than $18 billion from Meta stock drop
+This startup helps plants talk to farmers, reducing pesticides and agricultural waste
+Rubrik stock pops 16% in NYSE debut after company prices IPO above range
+Stripe co-founder says high interest rates flushed out tech's 'wackiest' ideas
+Alphabet shares jump 14% on earnings beat, first dividend
+Meta tumbles 10% on weak revenue forecast and Zuckerberg's comments on spending
+Nvidia-backed startup Synthesia unveils AI avatars that can convey human emotions
+Meta loses $200 billion in value as Zuckerberg focuses on cash-bleeding ways
+Norwest Venture Partners raises $3B for 17th vehicle, maintaining fund size despite market downturn
+Defense startup True Anomaly lays off around 25%, cancels summer internship
+Boeing’s Starliner set to fly astronauts for the first time on May 6
+Snap says total watch time on its TikTok competitor increased more than 125%
+It’s a sunny day for Google Cloud
+Rubrik’s shares end trading up almost 16% on the company’s public debut
+Why Meta is looking to the fediverse as the future for social media
+Health insurance giant Kaiser will notify millions of a data breach after sharing patients’ data with advertisers
+Sanctuary’s new humanoid robot learns faster and costs less
+Gravitics to develop ‘tactically responsive’ orbital platforms for the Space Force
+Is TikTok getting banned? Not yet, but you should explore alternatives
+Speaker applications close tomorrow for TechCrunch Disrupt 2024
+Breaking down TikTok’s legal arguments around free speech, national security claims
+Gen Z is losing its political voice on social media
+FCC officially votes to reinstate net neutrality
+Bluesky backs a project that would let Mastodon apps, like Ivory, work with its network
+Threads launches custom mute filters, teases controls for quote posts
+After 6-year hiatus, Stripe to start taking crypto payments, starting with USDC stablecoin
+Chilean instant payments API startup Fintoc raises $7 million to turn Mexico into its main market
+TechCrunch Minute: FTC bans noncompetes, court challenge incoming
+Health insurance giant Kaiser will notify millions of a data breach after sharing patients’ data with advertisers
+Why Meta is looking to the fediverse as the future for social media
+Defense startup True Anomaly lays off around 25%, cancels summer internship
+Gen Z is losing its political voice on social media
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+Norwest Venture Partners raises $3B for 17th vehicle, maintaining fund size despite market downturn
+Defense startup True Anomaly lays off around 25%, cancels summer internship
+Boeing’s Starliner set to fly astronauts for the first time on May 6
+Snap says total watch time on its TikTok competitor increased more than 125%
+It’s a sunny day for Google Cloud
+Rubrik’s shares end trading up almost 16% on the company’s public debut
+Why Meta is looking to the fediverse as the future for social media
+Health insurance giant Kaiser will notify millions of a data breach after sharing patients’ data with advertisers
+Sanctuary’s new humanoid robot learns faster and costs less
+Gravitics to develop ‘tactically responsive’ orbital platforms for the Space Force
+Is TikTok getting banned? Not yet, but you should explore alternatives
+Speaker applications close tomorrow for TechCrunch Disrupt 2024
+Breaking down TikTok’s legal arguments around free speech, national security claims
+Gen Z is losing its political voice on social media
+FCC officially votes to reinstate net neutrality
+Bluesky backs a project that would let Mastodon apps, like Ivory, work with its network
+Threads launches custom mute filters, teases controls for quote posts
+After 6-year hiatus, Stripe to start taking crypto payments, starting with USDC stablecoin
+Chilean instant payments API startup Fintoc raises $7 million to turn Mexico into its main market
+TechCrunch Minute: FTC bans noncompetes, court challenge incoming
+Health insurance giant Kaiser will notify millions of a data breach after sharing patients’ data with advertisers
+Why Meta is looking to the fediverse as the future for social media
+Defense startup True Anomaly lays off around 25%, cancels summer internship
+Gen Z is losing its political voice on social media
+
+The Verge
+The EPA’s new power plant pollution rule has a big, gassy hole in it
+Sony’s PlayStation Portal handheld is back in stock at multiple retailers
+Gym teacher accused of using AI voice clone to try to get a high school principal fired
+Google will finally put Keep reminders in Tasks, where they always belonged
+Microsoft’s Surface and Xbox hardware revenues take a big hit in Q3
+CISA ransomware warning program will launch this year
+TCL’s entry-level Q6 QLED TV has fallen to a new low price for a limited time
+BlizzCon 2024 has been canceled
+Spyware dealers could face visa restrictions
+Garry’s Mod is taking down decades of Nintendo-related add-ons
+This self-transforming Megatron is as badass as it is expensive
+Google is updating Android TVs to fix a big Gmail privacy problem
+Cities are ending their ShotSpotter contracts, but the sensors themselves are staying
+Reddit is back after a widespread outage
+Threads will now automatically filter out offensive words from your feeds
+FCC votes to restore net neutrality
+Wacom says its first OLED drawing tablet is cool and skinny
+
+CNBC Tech
+Alphabet issues first-ever dividend, $70 billion buyback
+Microsoft cloud growth accelerates on back of AI push
+Intel shares fall after company provides weak forecast for the current quarter
+Snap shares soar 23% as company beats on earnings, shows strong revenue growth
+Microsoft says cloud AI demand is exceeding supply even after 79% surge in spending
+Alphabet tempers fears that it's falling behind in AI with blowout first-quarter results
+Mark Zuckerberg's net worth plummets more than $18 billion from Meta stock drop
+This startup helps plants talk to farmers, reducing pesticides and agricultural waste
+Rubrik stock pops 16% in NYSE debut after company prices IPO above range
+Stripe co-founder says high interest rates flushed out tech's 'wackiest' ideas
+Alphabet shares jump 14% on earnings beat, first dividend
+Meta tumbles 10% on weak revenue forecast and Zuckerberg's comments on spending
+Nvidia-backed startup Synthesia unveils AI avatars that can convey human emotions
+Meta loses $200 billion in value as Zuckerberg focuses on cash-bleeding ways
+
+Top News:
+alphabet issues first-ever dividend, $70 billion buyback
+microsoft cloud growth accelerates on back of ai push
+fcc officially votes to reinstate net neutrality
+health insurance giant kaiser will notify millions of a data breach after sharing patients’ data with advertisers
+boeing’s starliner set to fly astronauts for the first time on may 6
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including host name), and replace CNBC techcheck briefing to 'AI briefing' 
+ Alphabet issues first-ever dividend, $70 billion buyback
+Google and Alphabet CEO Sundar Pichai departs federal court on October 30, 2023 in Washington, DC. Pichai testified on Monday to defend his company in the largest antitrust case since the 1990s.
+Alphabet said Thursday that it's issuing a 20-cent per share dividend, the company's first ever, and that its board authorized the repurchase of up to $70 billion in stock.
+The company's move comes after Meta's board authorized its first ever dividend in February. Google's parent company had $108 billion in cash and marketable securities on hand as of March 31, 2024.
+Shares shot up 15% in after hours trading. The news was announced alongside better-than-expected first-quarter earnings.
+Alphabet authorized an identically sized repurchase exactly one year ago, during a period of intense cost-cutting and layoffs.
+The dividend is payable to all class of shares, including super-voting Class B shareholders, as well as nonvoting Class C shareholders. Most Google investors own the company through Class A shares. All shareholders of record as of June 10 will receive the dividend the same month.
+Co-founder Sergey Brin, who owns more than 730 million Class B and C shares, will receive a $146 million payout. Co-founder Larry Page, who owns 389 million Class B shares, will get a dividend payment of $78 million.
+Investors have been looking for signs of maturity from technology firms. Every major tech firm announced layoffs and tightened spending beginning in 2022. Investors rewarded those efforts, and have shown a similar reaction to share buybacks and dividend initiations. When Meta announced its first ever dividend in February, it helped send shares soaring more than 14%.
+Notably, Amazon has never issued a dividend, nor has it ever authorized a share buyback close to the size of Google's. Amazon's largest share repurchase, in 2022, was for up to $10 billion.
+Amazon is slated to report first-quarter earnings Tuesday.
+
+Microsoft (MSFT) Q3 earnings 2024
+Microsoft shares rose as much as 5% in extended trading on Thursday after the software maker issued fiscal third-quarter results that outdid Wall Street's expectations.
+Here's how the company did in comparison with the consensus from LSEG:
+Earnings per share: $2.94 vs. $2.82 expected
+$2.94 vs. $2.82 expected Revenue: $61.86 vs. $60.80 billion expected
+Microsoft's total revenue grew 17% year over year in the quarter, which ended on March 31, according to a statement. Net income, at $21.94 billion, or $2.94 per share, was up from $18.30 billion, or $2.45 per share in the year-ago quarter.
+With respect to guidance, Microsoft's finance chief, Amy Hood, called for $64 billion in revenue for the fiscal fourth quarter, below the $64.5 billion LSEG consensus. Hood's forecast implies an operating margin of 42.3%, ahead of the StreetAccount consensus of 41.5%.
+"Currently, near-term AI demand is a bit higher than our available capacity," Hood said. Microsoft has been increasing its capital expenditures to secure Nvidia graphics processing units for training and running artificial intelligence models.
+During the fiscal third quarter, Microsoft's Intelligent Cloud segment, including the Azure public cloud, Windows Server, Nuance and GitHub, generated $26.71 billion in revenue. That's up about 21% and more than the $26.26 billion consensus among analysts surveyed by StreetAccount.
+Revenue from Azure and other cloud services grew 31%, compared with 30% in the previous quarter. Analysts polled by CNBC had expected 28.8%, while the StreetAccount consensus was 28.6%.
+Inside of the Azure growth, 7 percentage points were related to AI, up from 6 points of impact in the previous quarter. Microsoft provides cloud services for the ChatGPT chatbot from startup OpenAI, and companies have been increasingly adopting Azure AI services to develop their own capabilities for summarizing information and writing documents.
+The capacity bottleneck cut into the AI portion of Azure growth, Hood said.
+Microsoft's GitHub Copilot code-generation tool now has 1.8 million paid subscribers, CEO Satya Nadella said on a conference call with analysts.
+
+FCC officially votes to reinstate net neutrality
+The Federal Communications Commission made its official vote Thursday to reinstate net neutrality, which bars broadband providers from slowing or even blocking internet traffic to some sites while improving access to others that pay extra fees. With some changes and protections, passing the order titled Safeguarding and Securing the Open Internet restores rules passed back during the Obama administration in 2015 and rolled back in 2017, after Donald Trump was elected president.
+Since the FCC announced in September that it would be pursuing this as a policy goal, it was more or less a fait accompli; there was no real reason why the Commission, split 3-2 in favor of the Democrats, would vote against it. So though important, Thursday’s development is just another milestone on the road forward.
+Opponents of the move trotted out the same old canards from 10 years ago: net neutrality equals heavy-handed regulation, rate control, the smothering of innovation — general arguments that never really had much weight. As Chairwoman Jessica Rosenworcel points out, the FCC already exerts rules with this authority (like with Title II, for those of you who’ve been with us from the start) in other areas, and they aren’t overcome with Draconian rules and limits.
+Instead, she points out senseless inconsistencies with the last few years of operation. For instance, last year the FCC stripped some wireless providers affiliated with Chinese state actors of their ability to operate in the U.S. “But it is important to understand that our actions did not extend to broadband, thanks to the work of the last FCC,” she said in remarks at the meeting on Thursday.
+Said Rosenworcel: “Our national security authorities are on record detailing how state-affiliated Chinese carriers and others have exploited insecure internet routing protocols to hijack our internet traffic. When we were asked to do something about it, thanks to the last FCC stepping out of the broadband fray, the best we could offer was a forum in the Commission Meeting Room. I don’t think that deters our adversaries.”
+It’s not just the U.S. playing cloak-and-dagger with China, though. Domestic issues exist as well for them to solve: The FCC recently redefined broadband as being 100 megabits up and 25 down. I got an email from Xfinity the morning that change took effect, telling me my speeds had been magically updated at no cost to me. Generous, right? Of course, if the FCC hadn’t done that, I would have just paid more and more for the lowest speed it felt it could get away with.
+Same with zero rating, where an internet provider doesn’t count certain services, like a streaming platform it owns or has a partnership with, toward your bandwidth cap. If these aren’t nipped in the bud, you end up with a bunch of awful bundles between sweetheart corporations — and with a huge proportion of TV now going over streaming, that’s more important than ever on home broadband. What’s standing between you and a Cox Gigabit Plus exclusive on the next season of “Bridgerton”? The FCC, now.
+Rosenworcel summed it up best: “I think in a modern digital economy we should have a national net neutrality policy and make clear the nation’s expert on communications has the ability to act when it comes to broadband.” That’s really all there is to it.
+Wondering why it took so long? Republicans in the Senate blocked the nomination of a fifth Commissioner for years, preventing the agency from doing any real work. When Anna Gomez was finally confirmed, the net neutrality proposal appeared in weeks.
+Of course, as I pointed out recently, the new net neutrality rules are far from secure. They will need to weather challenges in court, and depending on the outcome of the election they could simply be rolled back or legislated away. On the other hand, under a friendly administration, these rules could be enshrined in law during the next term.
+Rosenworcel specifically called out California’s own state net neutrality rules as an example of what happens if federal authorities can’t be relied on. Though she is clearly grateful for California’s legislative stand, there may be matters to work out where the two rules contradict one another. But establishing a national rule as a base level for protections, as we do in so many other industries, seems like the bare minimum.
+It will be some time before the rules take effect, as they have to be published in the Federal Register first, and then there is another waiting period. But you probably won’t even notice when they do. The companies that would have, and occasionally did, attempt to interfere with broadband traffic soon found that it wasn’t worth the risk due to consumer backlash and eventually federal protections. They’ve been more or less on their best behavior, knowing that this rule was likely coming. Plus it gave them the excuse to say, “anti-consumer practices, what anti-consumer practices? We haven’t done anything like that for years!” Don’t believe them.
+If you’re still curious about what the new rule concerns, there’s a nice informative page here (I learned things) and a video where Chairwoman Rosenworcel breaks it down.
+
+Health insurance giant Kaiser will notify millions of a data breach after sharing patients' data with advertisers
+U.S. health conglomerate Kaiser is notifying millions of current and former members of a data breach after confirming it shared patients’ information with third-party advertisers, including Google, Microsoft and X (formerly Twitter).
+In a statement shared with TechCrunch, Kaiser said that it conducted an investigation that found “certain online technologies, previously installed on its websites and mobile applications, may have transmitted personal information to third-party vendors.”
+Kaiser said that the data shared with advertisers includes member names and IP addresses, as well as information that could indicate if members were signed into a Kaiser Permanente account or service and how members “interacted with and navigated through the website and mobile applications, and search terms used in the health encyclopedia.”
+Kaiser said it subsequently removed the tracking code from its websites and mobile apps.
+Kaiser is the latest healthcare organization to confirm it shared patients’ personal information with third-party advertisers by way of online tracking code, often embedded in web pages and mobile apps and designed to collect information about users’ online activity for analytics. Over the past year, telehealth startups Cerebral, Monument and Tempest have pulled tracking code from their apps that shared patients’ personal and health information with advertisers.
+Kaiser spokesperson Diana Yee said that the organization would begin notifying 13.4 million affected current and former members and patients who accessed its websites and mobile apps. The notifications will start in May in all markets where Kaiser Permanente operates, the spokesperson said.
+The health giant also filed a legally required notice with the U.S. government on April 12 but made public on Thursday confirming that 13.4 million residents had information exposed.
+U.S. organizations covered under the health privacy law known as HIPAA are required to notify the U.S. Department of Health and Human Services of data breaches involving protected health information, such as medical data and patient records. Kaiser also notified California’s attorney general of the data breach, but did not provide any further details.
+The Kaiser Foundation Health Plan is the parent organization of several entities that make up Kaiser Permanente, one of the largest healthcare organizations in the United States. The Kaiser Foundation Health Plan provides health insurance plans to employers and reported 12.5 million members as of the end of 2023.
+The breach at Kaiser is listed on the Department of Health and Human Services’ website as the largest confirmed health-related data breach of 2024 so far.
+To contact this reporter, get in touch on Signal and WhatsApp at +1 646-755-8849, or by email. You can also send files and documents via SecureDrop.
+
+Boeing's Starliner set to fly astronauts for the first time on May 6
+Boeing’s Starliner set to fly astronauts for the first time on May 6
+Boeing’s Starliner is a go for launch.
+Leaders from NASA and Boeing told reporters that the first crewed Starliner mission, which will see the capsule carry two astronauts to the International Space Station, is moving ahead toward its historic May 6 launch date.
+NASA and Boeing concluded that the capsule is ready for launch after completing a critical flight test review on Thursday. Barring no issues, astronauts Butch Wilmore and Suni Williams will board Starliner on the evening of May 6 and take their ride on a United Launch Alliance Atlas V rocket to space.
+Around 24 hours later, the two astronauts will arrive at the ISS, where they’ll stay for about a week. Starliner will stay docked with the station; the duo will use it to return to Earth. A total of five parachutes will slow Starliner from ultra-fast orbital speeds to enable a soft landing somewhere in the western U.S.
+This will mark Starliner’s second flight to the ISS: The first, an uncrewed mission called Orbital Flight Test-2, took place in May 2022. If Boeing and NASA are unable to meet the May 6 date, there are additional launch opportunities on May 7, 10 and 11.
+The significance of the mission cannot be understated. NASA established the Commercial Crew Program (CCP) in 2011 to purchase astronaut transportation services from private industry; the agency selected SpaceX and NASA under a multibillion-dollar deal. But as opposed to SpaceX, which has completed all six missions under the original contract plus more, Boeing’s Starliner has been badly delayed by numerous technical issues.
+Boeing has been hit by over $1.5 billion in overrun costs due to those delays. The aerospace giant has been affected by a slew of other near-catastrophes as of late, with the company facing regulatory scrutiny due to screwups in its commercial airplane unit. Earlier this year, it was announced that Boeing CEO Dave Calhoun would step down at the end of 2024.
+For NASA, a new spacecraft means doubling America’s astronaut transportation resources and introducing a much-needed degree of redundancy to the agency’s human spaceflight program. If Boeing nails this test, Starliner will achieve its final certification and can begin regular missions under the CCP contract.
+NASA determined that the probability of loss-of-crew with this Starliner mission is 1-in-295, which is above NASA’s required 1-in-270 odds. (A NASA representative did not have equivalent data for SpaceX’s Crew Dragon.)
+“The lives of our crew members, Suni Williams and Butch Wilmore, are at stake,” NASA’s associate administrator, Jim Free, said. “We don’t take that lightly at all.”
+
+Response:
+
+Script:
+i'm wall-e, and this is your ai briefing. alphabet, the parent company of google, is making headlines by announcing its first-ever dividend and a massive $70 billion stock buyback. this decisive move has sent shares soaring by 15% in after-hours trading. on the legal front, ceo sundar pichai defended the tech giant in federal court against the largest antitrust case since the 1990s. moving to earnings, microsoft outperformed expectations with a 17% increase in total revenue year over year, spotlighting ai's growing impact on its azure cloud services.
+
+in regulatory news, the fcc officially votes to reinstate net neutrality, aiming to ensure a free and open internet. amidst all, the healthcare sector finds itself in a quandary with kaiser notifying millions of a data breach after inadvertently sharing patient information with advertisers.
+
+on the frontier of space, boeing’s starliner is set to fly astronauts to the iss for the first time, marking a significant milestone in nasa’s commercial crew program. if successful, this mission could herald a new era of astronaut transportation.
+
+that’s all for today. we'll see you back here tomorrow
+
+Polished Script:
+"i'm wall-e, and this is your tech briefing. in a landmark announcement, alphabet, the powerhouse behind google, has declared its inaugural dividend alongside a staggering $70 billion stock repurchase plan. this strategic move propelled the company's shares up by a robust 15% during after-market trading hours. amidst legal skirmishes, ceo sundar pichai stands firm, steering google through the rigorous currents of the most sizable antitrust case seen since the dot-com bubble of the 1990s.
+
+switching gears to earnings, microsoft has once again exceeded wall street's forecasts, charting a 17% surge in its total revenue year over year. the spotlight shines brightly on the burgeoning impact of artificial intelligence on its azure cloud services, illustrating a tech landscape ever more reliant on innovative ai solutions.
+
+in the realm of regulation, the fcc casts a pivotal vote, ushering the return of net neutrality. this resolution seeks to cement the foundations for a free and open internet, offering a beacon of hope for digital egalitarianism amidst a sea of corporate giants.
+
+the healthcare sector finds itself amidst turbulence with kaiser permanente's recent admission of a data breach. millions have been notified of the inadvertent exposure of their personal information to advertisers, triggering a wave of concern over privacy practices within the industry.
+
+venturing beyond our earthly confines, boeing’s starliner is primed to escort astronauts to the international space station, heralding a triumphant milestone for nasa’s commercial crew program. this forthcoming mission stands not only as a testament to human ingenuity but also as a beacon heralding new prospects in astronaut transportation.
+
+that wraps up today’s briefing. see you again tomorrow for more insights into the ever-evolving world of technology."
+
+Podcast Title:
+EP-5 "Alphabet'S Dividend Delight 💸 & $70B Buyback, Ai'S Boost To Microsoft'S Azure 🚀, Net Neutrality'S Triumphant Return 🌐"
+
+Podcast Description:
+join wall-e in this compelling episode of your tech briefing, where we navigate through the latest and most pivotal developments in the tech world. tune into our podcast as we succinctly cover a range of topics that are shaping the digital landscape today. here’s what you’ll discover in this episode:
+
+- alphabet’s ground-breaking announcement of its first-ever dividend and a substantial $70 billion stock repurchase plan, signaling a strong financial stance amid significant market movements.
+- insights into microsoft’s impressive earnings report, highlighting a 17% increase in total revenue and the instrumental role of ai in boosting its azure cloud services.
+- a detailed discussion on the fcc’s historic vote on net neutrality, marking a potential shift towards a more open and egalitarian internet.
+- an examination of the healthcare sector's challenges with privacy, spotlighting kaiser permanente’s recent data breach and its implications on millions of individuals.
+- an update on space exploration advancements as boeing’s starliner prepares to transport astronauts to the international space station, symbolizing a pivotal moment for nasa’s commercial crew program and the future of space travel.
+
+stay informed on these critical developments that are not only transforming the tech industry but also impacting our day-to-day lives. your tech briefing is where you’ll find the essential news, explained clearly and concisely for your convenience
+
+Polished Script (Spanish):
+soy wall-e, y esta es su sesión informativa de ia. alphabet anunció el jueves que emitirá un dividendo de 20 centavos por acción, el primero en su historia, y que su junta directiva autorizó la recompra de hasta $70 mil millones en acciones. la medida llega después de que la junta de meta autorizó su primer dividendo en febrero. la compañía matriz de google tenía $108 mil millones en efectivo y valores negociables a mano para el 31 de marzo de 2024. las acciones subieron un 15% en las operaciones posteriores al cierre. la noticia se anunció junto con ganancias del primer trimestre mejores de lo esperado.
+
+en otros lugares, las acciones de microsoft subieron hasta un 5% en el comercio extendido el jueves después de que el fabricante de software publicara resultados del tercer trimestre fiscal que superaron las expectativas de wall street. la compañía informó ganancias por acción de $2.94 frente a los $2.82 esperados y un ingreso total de $61.86 mil millones frente a los $60.80 mil millones esperados. según una declaración, los ingresos totales de microsoft crecieron un 17% interanual en el trimestre.
+
+mientras tanto, la comisión federal de comunicaciones (fcc, por sus siglas en inglés) votó oficialmente el jueves para restablecer la neutralidad de la red, lo que prohíbe a los proveedores de banda ancha ralentizar o incluso bloquear el tráfico de internet hacia algunos sitios mientras mejora el acceso a otros que pagan tarifas adicionales. con algunos cambios y protecciones, la orden titulada salvaguardando y asegurando el internet abierto restaura las reglas aprobadas durante la administración de obama en 2015 y revocadas en 2017.
+
+en el sector de la salud, el gigante de seguros kaiser notificará a millones de un incumplimiento de datos después de compartir información de pacientes con anunciantes terceros, incluidos google, microsoft y x (anteriormente twitter). kaiser comenzó a enviar notificaciones a 13.4 millones de miembros actuales y anteriores afectados y pacientes que accedieron a sus sitios web y aplicaciones móviles.
+
+en noticias de exploración espacial, boeing está listo para lanzar su starliner con astronautas por primera vez el 6 de mayo. siendo este un paso significativo para el programa de tripulación comercial de la nasa, introduciendo un grado de redundancia muy necesario en el programa de vuelos espaciales tripulados de la agencia.
+
+eso es todo por hoy. nos vemos aquí mañana
+
+Podcast Title (Spanish):
+EP-5 "alphabet Anuncia Dividendo Histórico 💰, Microsoft Supera Expectativas 📈, y Restauración de la Neutralidad de Red 🌐"
+
+Podcast Description (Spanish):
+descripción:
+
+bienvenidos a su sesión informativa de ia con soy wall-e, donde exploramos las noticias más recientes e impactantes del mundo de la tecnología, las finanzas y más allá. en esta sesión, abarcamos una variedad de temas cruciales:
+
+- alphabet anuncia su primer dividendo histórico de 20 centavos por acción y autoriza una recompra de $70 mil millones en acciones, tras reportar ganancias del primer trimestre que superaron las expectativas.
+
+- las acciones de microsoft experimentan una subida tras exceder las expectativas de wall street con sus resultados del tercer trimestre fiscal, destacando un aumento del 17% en ingresos totales interanual.
+
+- la fcc vota para restablecer la neutralidad de la red, prohibiendo a los proveedores de banda ancha ralentizar o bloquear el tráfico de internet hacia algunos sitios, una vuelta a las reglas establecidas en 2015.
+
+- kaiser enfrenta un incumplimiento de datos significativo, notificando a 13.4 millones de miembros y pacientes sobre la compartición no autorizada de información con terceros, incluidos gigantes tecnológicos.
+
+- boeing se prepara para lanzar su starliner con astronautas el 6 de mayo, marcando un momento significativo para el programa de tripulación comercial de la nasa.
+
+mantente informado con las noticias más relevantes del día en el mundo de la tecnología, finanzas y exploración espacial. nos vemos mañana para más actualizaciones
+
+Polished Script (Chinese):
+我是wall-e，这是您的ai简报。alphabet宣布发放公司历史上的首次股息，每股20美分，并且其董事会授权回购高达700亿美元的股票。这一举动是在meta董事会在2月份授权其首次股息之后进行的。截至2024年3月31日，谷歌的母公司手头现金及可销售证券为1080亿美元。股票在盘后交易中上涨了15%。这一消息是与超出预期的第一季度盈利一同宣布的。与此同时，微软发布了超出华尔街预期的2024财年第三季度业绩，引发股票在延长交易中最多上涨5%。此外，联邦通信委员会正式投票决定恢复网络中立性，美国健康巨头kaiser因与第三方广告商共享患者数据而通知数百万人数据泄露，而波音的starliner将于5月6日首次搭载宇航员飞往国际空间站。这是今天的所有内容。我们明天再见。
+
+Podcast Title (Chinese):
+EP-5 "alphabet首发股息 💸, 微软盈利超预期 📈, 网络中立性恢复投票 🌐"
+
+Podcast Description (Chinese):
+description:
+
+欢迎收听由我，wall-e主持的ai简报，这里有您需要的所有最新资讯。在本集播客中，我们将概述以下要点：
+
+- alphabet宣布发放公司历史上首次股息，每股20美分，并且其董事会授权回购高达700亿美元的股票。
+- meta董事会在2月份授权其首次股息，alphabet紧随其后。
+- 截至2024年3月31日，谷歌的母公司手头现金及可销售证券为1080亿美元。股票在盘后交易中上涨了15%。
+- 微软发布了超出华尔街预期的2024财年第三季度业绩，股票在延长交易中最多上涨5%。
+- 联邦通信委员会正式投票决定恢复网络中立性。
+- 美国健康巨头kaiser因与第三方广告商共享患者数据而通知数百万人数据泄露。
+- 波音的starliner将于5月6日首次搭载宇航员飞往国际空间站。
+
+以上即是我们今日简报的主要内容，不要错过任何一集以获得最新资讯更新！我们明天再见。
