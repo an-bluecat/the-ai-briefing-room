@@ -11,8 +11,9 @@ import re
 import difflib
 from addMusic import add_bgm
 from openai import AzureOpenAI
-from utils import spanish_title_case
+from utils import spanish_title_case, english_title_case
 import sys
+import requests
 
 
 # Setup basic configuration for logging
@@ -35,7 +36,8 @@ class NewsPodcastOrchestrator:
         api_key= os.getenv("AZURE_OPENAI_API_KEY"),  
         api_version=os.getenv("API_VERSION")
     )
-        self.openai_client = openai.OpenAI(api_key=api_key)
+        # depricated
+        #self.openai_client = openai.OpenAI(api_key=api_key)
 
         self.date = date
         self.news_to_URL = news_to_URL
@@ -159,15 +161,55 @@ refined podcast script:
 
         return self.ask_gpt(input_ask)
 
+    def generate_speech(self,script, output_path):
+                
+        azure_api_key = os.getenv('AZURE_OPENAI_API_KEY')
+        azure_endpoint = os.getenv('AZURE_OPENAI_ENDPOINT')
+
+        # Your deployment name
+        deployment_name = 'podcast_tts'
+
+        # URL for the request
+        url = f"{azure_endpoint}/openai/deployments/{deployment_name}/audio/speech?api-version=2024-02-15-preview"
+
+        # Headers and data payload
+        headers = {
+            "api-key": azure_api_key,
+            "Content-Type": "application/json"
+        }
+        data = {
+            "model": "tts-1-hd",
+            "input": script,
+            "voice": "alloy"
+        }
+
+        # Sending POST request
+        response = requests.post(url, headers=headers, json=data)
+
+        # Saving the response content to a file
+        with open(output_path, 'wb') as file:
+            file.write(response.content)
+        
+        print(f"Audio file saved as {output_path}")
+                
+
     def text_to_speech(self, script, output_path, language='English'):
         """ Converts the generated script to speech and saves the audio file. Now supports multiple languages. """
 
         try:
+            '''
+            depricated since we don't use openai
             response = self.openai_client.audio.speech.create(
                 model="tts-1", voice="alloy", input=script)
             speech_file_path = Path(
                 output_path) / f"{language}.mp3"
             response.stream_to_file(speech_file_path)
+            '''
+            
+            speech_file_path = Path(
+                output_path) / f"{language}.mp3"
+        
+            self.generate_speech(script, speech_file_path)
             
             final_podcast_path = Path(output_path) / f"{language}_final_podcast.mp3"
 
@@ -239,7 +281,7 @@ if __name__ == "__main__":
         polished_script = orchestrator.polish_podcast_script(script)
         podcast_description = orchestrator.generate_podcast_description(
             polished_script)
-        podcast_title = episode_number +  orchestrator.generate_podcast_title(polished_script).title()
+        podcast_title = episode_number +  english_title_case(orchestrator.generate_podcast_title(polished_script))
         TRANSLATE = False
         if TRANSLATE:
             # Translate the polished script, description, and title to Spanish and Chinese
@@ -247,8 +289,8 @@ if __name__ == "__main__":
                 polished_script, "Spanish")
             spanish_description = orchestrator.translate_text(
                 podcast_description, "Spanish")
-            spanish_title = episode_number + spanish_title_case(spanish_title_case(orchestrator.translate_text(
-                podcast_title, "Spanish")))
+            spanish_title = episode_number + spanish_title_case(orchestrator.translate_text(
+                podcast_title, "Spanish"))
 
             chinese_script = orchestrator.translate_text(
                 polished_script, "Chinese")

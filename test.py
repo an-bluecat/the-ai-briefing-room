@@ -12,7 +12,7 @@ azure_api_key = os.getenv('AZURE_OPENAI_API_KEY')
 azure_endpoint = os.getenv('AZURE_OPENAI_ENDPOINT')
 
 # Your deployment name
-deployment_name = 'tts-1'
+deployment_name = 'podcast_tts'
 
 # URL for the request
 url = f"{azure_endpoint}/openai/deployments/{deployment_name}/audio/speech?api-version=2024-02-15-preview"
