@@ -27,17 +27,18 @@ RETRY_DELAY = 2  # seconds in case of retries
 PRODUCTION_MODE = True  # Set to True to enable audio file generation
 BGM_PATH = "bgm.mp3"
 
+
 class NewsPodcastOrchestrator:
     """ Orchestrates the creation of a podcast script from scraped news, using OpenAI's GPT models. """
 
     def __init__(self, api_key, date, news_to_URL):
-        
+
         self.azure_client = AzureOpenAI(
-        azure_endpoint =  os.getenv("AZURE_OPENAI_ENDPOINT"), 
-        api_key= os.getenv("AZURE_OPENAI_API_KEY"),  
-        api_version=os.getenv("API_VERSION")
-    )
-    
+            azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
+            api_key=os.getenv("AZURE_OPENAI_API_KEY"),
+            api_version=os.getenv("API_VERSION")
+        )
+
         # depricated
        # self.openai_client = openai.OpenAI(api_key=api_key)
 
@@ -104,7 +105,7 @@ class NewsPodcastOrchestrator:
 
     def get_news_content_concat(self, top_news):
         news_concat = []
-        for news in top_news:
+        for i, news in enumerate(top_news):
             if news not in self.news_to_URL:
                 # Search for news in the dictionary keys
                 possible_news = difflib.get_close_matches(
@@ -122,9 +123,10 @@ class NewsPodcastOrchestrator:
                 continue
 
             curr_news = NewsPlease.from_url(self.news_to_URL[news])
-            news_concat.append(curr_news.title + "\n" + curr_news.maintext)
+            news_concat.append("title" + str(i) + ":\n" + curr_news.title +
+                               "\n" + "description" + str(i) + ":\n" + curr_news.maintext)
 
-        news_concat = "\n\n".join(news_concat)
+        news_concat = '"' + "\n\n".join(news_concat) + '"'
         return news_concat
 
     def polish_podcast_script(self, script):
@@ -163,8 +165,8 @@ refined podcast script:
 
         return self.ask_gpt(input_ask)
 
-    def generate_speech(self,script, output_path):
-                
+    def generate_speech(self, script, output_path):
+
         azure_api_key = os.getenv('AZURE_OPENAI_API_KEY')
         azure_endpoint = os.getenv('AZURE_OPENAI_ENDPOINT')
 
@@ -191,9 +193,8 @@ refined podcast script:
         # Saving the response content to a file
         with open(output_path, 'wb') as file:
             file.write(response.content)
-        
+
         print(f"Audio file saved as {output_path}")
-                
 
     def text_to_speech(self, script, output_path, language='English'):
         """ Converts the generated script to speech and saves the audio file. Now supports multiple languages. """
@@ -207,17 +208,18 @@ refined podcast script:
                 output_path) / f"{language}.mp3"
             response.stream_to_file(speech_file_path)
             '''
-            
+
             speech_file_path = Path(
                 output_path) / f"{language}.mp3"
-        
-            self.generate_speech(script, speech_file_path)
-            
-            final_podcast_path = Path(output_path) / f"{language}_final_podcast.mp3"
 
-                # Add BGM to the generated speech
+            self.generate_speech(script, speech_file_path)
+
+            final_podcast_path = Path(output_path) / \
+                f"{language}_final_podcast.mp3"
+
+            # Add BGM to the generated speech
             add_bgm(str(speech_file_path), BGM_PATH, str(final_podcast_path))
-            
+
             os.remove(speech_file_path)
 
             logging.info(
@@ -232,7 +234,7 @@ refined podcast script:
         output_response_prompt = ""
         if language:
             output_response_prompt = f"Output the Title in {language}."
-        input_ask = "Generate a title for this podcast. Include no more than three key topics (if there are many, choose the three most important ones). Incorporate emojis where appropriate. Follow the style of titles such as: 'Tesla Showcases FSD Demo 🚗, Adam Neuman's WeWork Bid 💰, CSV Conundrums 🖥️','Anthropic’s $4B Amazon Boost 💰, Brex's Valuation Leap to $12B 💳, Strategies for Success ✨','The OpenAI Voice Revolution 🗣️, AI Safety Measures 🦺, LLMs Go Mobile 📱'. Here's the transcript excerpt: " + transcript + "\n" + output_response_prompt + "\nTitle:"
+        input_ask = "Generate a title for this podcast. Include three key topics (if there are many, choose the three most important ones). Incorporate emojis where appropriate. Follow the style of titles such as: 'Tesla Showcases FSD Demo 🚗, Adam Neuman's WeWork Bid 💰, CSV Conundrums 🖥️','Anthropic’s $4B Amazon Boost 💰, Brex's Valuation Leap to $12B 💳, Strategies for Success ✨','The OpenAI Voice Revolution 🗣️, AI Safety Measures 🦺, LLMs Go Mobile 📱'. Here's the transcript excerpt: " + transcript + "\n" + output_response_prompt + "\nTitle:"
         return self.ask_gpt(input_ask)
 
 
@@ -249,22 +251,22 @@ if __name__ == "__main__":
     load_dotenv()
 
     api_key = os.getenv('OPENAI_API_KEY')
-    #api_key = os.getenv('AZURE_OPENAI_API_KEY')
+    # api_key = os.getenv('AZURE_OPENAI_API_KEY')
 
-    #today = datetime.date.today()
+    # today = datetime.date.today()
     today = datetime.date(2024, 4, 28)
     today_date = today.strftime('%Y-%m-%d')
-    
+
     if len(sys.argv) > 1:
         episode_prefix = sys.argv[1]
         episode_number = f"EP-{episode_prefix} "
         print(episode_number)
     else:
         raise ValueError("No additional argument provided.")
-    
+
     all_news = scrape_verge(
         today) + scrape_cnbctech(today) + scrape_techcrunch(today)
-    print(len(all_news) + " news articles scraped.")
+    print(str(len(all_news)) + " news articles scraped.")
     titles = [x[0] for x in all_news]
     news_to_URL = {news[0].lower(): news[1] for news in all_news}
 
@@ -285,7 +287,9 @@ if __name__ == "__main__":
         polished_script = orchestrator.polish_podcast_script(script)
         podcast_description = orchestrator.generate_podcast_description(
             polished_script)
-        podcast_title = episode_number +  english_title_case(orchestrator.generate_podcast_title(polished_script))
+        podcast_title = episode_number + \
+            english_title_case(
+                orchestrator.generate_podcast_title(polished_script))
         TRANSLATE = False
         if TRANSLATE:
             # Translate the polished script, description, and title to Spanish and Chinese
@@ -300,7 +304,7 @@ if __name__ == "__main__":
                 polished_script, "Chinese")
             chinese_description = orchestrator.translate_text(
                 podcast_description, "Chinese")
-            chinese_title = episode_number +  orchestrator.translate_text(
+            chinese_title = episode_number + orchestrator.translate_text(
                 podcast_title, "Chinese")
         else:
             _, spanish_script = orchestrator.generate_podcast_script(
@@ -313,7 +317,7 @@ if __name__ == "__main__":
                 chinese_script, language="Chinese")
             spanish_title = episode_number + spanish_title_case(orchestrator.generate_podcast_title(
                 spanish_script, language="Spanish"))
-            chinese_title = episode_number +  orchestrator.generate_podcast_title(
+            chinese_title = episode_number + orchestrator.generate_podcast_title(
                 chinese_script, language="Chinese")
 
             # Text to Speech for each language, including the original English
@@ -383,6 +387,3 @@ Podcast Description (Chinese):
             logging.error("Failed to generate podcast script or title.")
     else:
         logging.error("Failed to identify top news.")
-
-
-
