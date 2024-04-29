@@ -31,13 +31,15 @@ class NewsPodcastOrchestrator:
     """ Orchestrates the creation of a podcast script from scraped news, using OpenAI's GPT models. """
 
     def __init__(self, api_key, date, news_to_URL):
+        
         self.azure_client = AzureOpenAI(
         azure_endpoint =  os.getenv("AZURE_OPENAI_ENDPOINT"), 
         api_key= os.getenv("AZURE_OPENAI_API_KEY"),  
         api_version=os.getenv("API_VERSION")
     )
+    
         # depricated
-        #self.openai_client = openai.OpenAI(api_key=api_key)
+       # self.openai_client = openai.OpenAI(api_key=api_key)
 
         self.date = date
         self.news_to_URL = news_to_URL
@@ -249,7 +251,8 @@ if __name__ == "__main__":
     api_key = os.getenv('OPENAI_API_KEY')
     #api_key = os.getenv('AZURE_OPENAI_API_KEY')
 
-    today = datetime.date.today()
+    #today = datetime.date.today()
+    today = datetime.date(2024, 4, 28)
     today_date = today.strftime('%Y-%m-%d')
     
     if len(sys.argv) > 1:
@@ -261,7 +264,7 @@ if __name__ == "__main__":
     
     all_news = scrape_verge(
         today) + scrape_cnbctech(today) + scrape_techcrunch(today)
-
+    print(len(all_news) + " news articles scraped.")
     titles = [x[0] for x in all_news]
     news_to_URL = {news[0].lower(): news[1] for news in all_news}
 
@@ -274,6 +277,7 @@ if __name__ == "__main__":
     top_news_prompt, top_news = orchestrator.get_top_news()
     news_concat = orchestrator.get_news_content_concat(
         remove_leading_numbers(top_news))
+    print("Top News:", top_news)
     if top_news:
         generate_script_prompt, script = orchestrator.generate_podcast_script(
             news_concat)
@@ -315,6 +319,7 @@ if __name__ == "__main__":
             # Text to Speech for each language, including the original English
         if PRODUCTION_MODE:
             for language, cur_script in [('English', polished_script), ('Spanish', spanish_script), ('Chinese', chinese_script)]:
+                print(f"Generating podcast in {language}...")
                 audio_file_path = orchestrator.text_to_speech(
                     cur_script, output_directory, language)
                 if audio_file_path:
