@@ -1,0 +1,319 @@
+
+Titles:
+Mercedes-Benz won’t let Apple CarPlay take over all its screens
+Amazon says its Prime deliveries are getting even faster
+Maybe go look at Google’s AR animals before they enter the grave
+Tesla Cybertruck finally gets more off-road controls
+Paramount CEO Bob Bakish steps down as merger inches closer
+ChatGPT’s AI ‘memory’ can remember the preferences of paying customers
+FCC fines AT&T, Sprint, T-Mobile, and Verizon nearly $200 million for illegally sharing location data
+Can Rabbit’s R1 outsmart the smartphone assistants? Let’s find out!
+Peacock is getting a $2 price increase
+Meta had its biggest lobbying quarter ever
+GitHub Copilot can now help start a project with AI, not just complete it
+Razer made a million dollars selling a mask with RGB, and the FTC is not pleased
+Microsoft starts rolling out OneDrive’s offline mode on the web
+All the news from Xbox’s spring indie game showcase
+The UK beefs up smart home security by going after bad default passwords
+Google’s Pixel Watch 2 is matching its lowest price with $50 off
+Supreme Court rejects Elon Musk’s efforts to get rid of his ‘Twitter sitter’
+NHTSA opens investigation into Ford’s BlueCruise after software linked to fatal crash
+iPads join iPhones in requirement to follow strict EU rules
+Financial Times signs licensing deal with OpenAI
+Samsung Electronics' operating profit jumps 933% in first quarter, beats expectations
+Morgan Stanley banker sees 10 to 15 more tech IPOs this year, and 'better' 2025
+Embattled grocery startup Getir exits U.S. and Europe, will refocus on Turkey
+Tesla jumps 15% after passing hurdle to roll out 'Full Self Driving' in China
+Amazon says more packages are arriving in a day or less for Prime members
+Supreme Court rejects Elon Musk over agreement with SEC to vet social media posts
+Oracle boosts its generative AI capabilities as cloud competition intensifies
+How working for Big Tech lost 'dream job' status
+This startup helps plants talk to farmers, reducing pesticides and agricultural waste
+StanChart doubles down on prediction that bitcoin will hit $150,000 by year-end
+Google Gemini: Everything you need to know about the new generative AI platform
+Social media companies have too much political power, 78% of Americans say in Pew survey
+TechCrunch Space: Rapidly responsive… space stations!?
+NIST launches a new platform to assess generative AI
+Apple iPad event 2024: Watch Apple unveil new iPads right here
+Inside the ‘cold war’ at Techstars as CEO Mäelle Gavet hires, fires, fights to force change
+Google lays off staff from Flutter, Dart and Python teams weeks before its developer conference
+Fisker starts new round of layoffs to ‘preserve cash’
+Epic Games says it will bring Fortnite to iPad after EU dubs iPadOS a ‘gatekeeper’ under DMA
+Meta confirms launch of a bonus program for creators on Threads
+Copilot Workspace is GitHub’s take on AI-powered software engineering
+TechCrunch Minute: Elon Musk’s big plans for xAI include raising $6 billion
+Backflip raises $15 million to help real estate investors flip houses
+Musk’s xAI shows there’s more money on the sidelines for AI startups
+Twitter co-founder Biz Stone joins board of Mastodon’s new US nonprofit
+Getir pulls out of US, UK, Europe to focus on Turkey — 6,000+ jobs impacted
+Indian ride-hailing giant Ola cuts 180 jobs in profitability push
+Ford’s BlueCruise hands-free system under investigation after fatal crashes
+Apple’s iPadOS will have to comply with EU’s Digital Markets Act too
+OpenAI inks strategic tie-up with UK’s Financial Times, including content use
+Social media companies have too much political power, 78% of Americans say in Pew survey
+Google lays off staff from Flutter, Dart and Python teams weeks before its developer conference
+Copilot Workspace is GitHub’s take on AI-powered software engineering
+Fisker starts new round of layoffs to ‘preserve cash’
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+Google Gemini: Everything you need to know about the new generative AI platform
+Social media companies have too much political power, 78% of Americans say in Pew survey
+TechCrunch Space: Rapidly responsive… space stations!?
+NIST launches a new platform to assess generative AI
+Apple iPad event 2024: Watch Apple unveil new iPads right here
+Inside the ‘cold war’ at Techstars as CEO Mäelle Gavet hires, fires, fights to force change
+Google lays off staff from Flutter, Dart and Python teams weeks before its developer conference
+Fisker starts new round of layoffs to ‘preserve cash’
+Epic Games says it will bring Fortnite to iPad after EU dubs iPadOS a ‘gatekeeper’ under DMA
+Meta confirms launch of a bonus program for creators on Threads
+Copilot Workspace is GitHub’s take on AI-powered software engineering
+TechCrunch Minute: Elon Musk’s big plans for xAI include raising $6 billion
+Backflip raises $15 million to help real estate investors flip houses
+Musk’s xAI shows there’s more money on the sidelines for AI startups
+Twitter co-founder Biz Stone joins board of Mastodon’s new US nonprofit
+Getir pulls out of US, UK, Europe to focus on Turkey — 6,000+ jobs impacted
+Indian ride-hailing giant Ola cuts 180 jobs in profitability push
+Ford’s BlueCruise hands-free system under investigation after fatal crashes
+Apple’s iPadOS will have to comply with EU’s Digital Markets Act too
+OpenAI inks strategic tie-up with UK’s Financial Times, including content use
+Social media companies have too much political power, 78% of Americans say in Pew survey
+Google lays off staff from Flutter, Dart and Python teams weeks before its developer conference
+Copilot Workspace is GitHub’s take on AI-powered software engineering
+Fisker starts new round of layoffs to ‘preserve cash’
+
+The Verge
+Mercedes-Benz won’t let Apple CarPlay take over all its screens
+Amazon says its Prime deliveries are getting even faster
+Maybe go look at Google’s AR animals before they enter the grave
+Tesla Cybertruck finally gets more off-road controls
+Paramount CEO Bob Bakish steps down as merger inches closer
+ChatGPT’s AI ‘memory’ can remember the preferences of paying customers
+FCC fines AT&T, Sprint, T-Mobile, and Verizon nearly $200 million for illegally sharing location data
+Can Rabbit’s R1 outsmart the smartphone assistants? Let’s find out!
+Peacock is getting a $2 price increase
+Meta had its biggest lobbying quarter ever
+GitHub Copilot can now help start a project with AI, not just complete it
+Razer made a million dollars selling a mask with RGB, and the FTC is not pleased
+Microsoft starts rolling out OneDrive’s offline mode on the web
+All the news from Xbox’s spring indie game showcase
+The UK beefs up smart home security by going after bad default passwords
+Google’s Pixel Watch 2 is matching its lowest price with $50 off
+Supreme Court rejects Elon Musk’s efforts to get rid of his ‘Twitter sitter’
+NHTSA opens investigation into Ford’s BlueCruise after software linked to fatal crash
+iPads join iPhones in requirement to follow strict EU rules
+Financial Times signs licensing deal with OpenAI
+
+CNBC Tech
+Samsung Electronics' operating profit jumps 933% in first quarter, beats expectations
+Morgan Stanley banker sees 10 to 15 more tech IPOs this year, and 'better' 2025
+Embattled grocery startup Getir exits U.S. and Europe, will refocus on Turkey
+Tesla jumps 15% after passing hurdle to roll out 'Full Self Driving' in China
+Amazon says more packages are arriving in a day or less for Prime members
+Supreme Court rejects Elon Musk over agreement with SEC to vet social media posts
+Oracle boosts its generative AI capabilities as cloud competition intensifies
+How working for Big Tech lost 'dream job' status
+This startup helps plants talk to farmers, reducing pesticides and agricultural waste
+StanChart doubles down on prediction that bitcoin will hit $150,000 by year-end
+
+Top News:
+samsung electronics' operating profit jumps 933% in first quarter, beats expectations
+google gemini: everything you need to know about the new generative ai platform
+tesla jumps 15% after passing hurdle to roll out 'full self driving' in china
+fcc fines at&t, sprint, t-mobile, and verizon nearly $200 million for illegally sharing location data
+amazon says more packages are arriving in a day or less for prime members
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E), and replace CNBC techcheck briefing to 'AI briefing' 
+ "title0:
+Samsung Electronics' operating profit jumps 933% in first quarter, beats expectations
+description0:
+Samsung Electronics Co. Galaxy S24 smartphones during a media preview event in Seoul, South Korea, on Monday, Jan. 15, 2024. Samsung, the world's most prolific smartphone maker, is leaning into artificial intelligence as the key to unlocking greater sales this year. Photographer: SeongJoon Cho/Bloomberg via Getty Images SeongJoon Cho | Bloomberg | Getty Images
+Samsung Electronics on Tuesday said operating profit for the first quarter jumped 932.8% as memory chip prices rebounded on the back of AI optimism. Here are Samsung's first-quarter results versus LSEG estimates: Revenue: 71.92 trillion Korean won (about $52.3 billion), vs. 71.04 trillion Korean won
+71.92 trillion Korean won (about $52.3 billion), vs. 71.04 trillion Korean won Operating profit: 6.61 trillion Korean won, vs. 5.94 trillion Korean won Samsung's revenue for the quarter ending March jumped 12.81% from a year ago, while operating profit soared 932.8% in the same period. The figures were in line with the company's guidance earlier this month, where Samsung said operating profit in the January-March quarter likely rose to 6.6 trillion Korean won, up 931% from a year ago. The firm expected first quarter revenue at 71 trillion won. The South Korean electronics giant saw record losses in 2023 as the industry reeled from a post-Covid slump in demand. "The company posted KRW 71.92 trillion in consolidated revenue on the back of strong sales of flagship Galaxy S24 smartphones and higher prices for memory semiconductors. Operating profit increased to KRW 6.61 trillion as the Memory Business returned to profit by addressing demand for high value-added products," Samsung Electronics said in a statement on Tuesday. Citi analysts said they see upside for Samsung's NAND flash memory business as a result of AI computing demand. In a note on April 5, they reiterated their "buy" rating on the firm with a target price of 120,000 won — a 56% upside from the closing price of 76,700 won on Monday. NAND is another staple memory chip alongside DRAM. "We expect storage (HDD) to be the next bottleneck in AI computing, especially in AI training, and foresee Samsung Electronics to be one of the key beneficiaries of SSD demand momentum for AI training," said the Citi analysts.
+Samsung is the world's largest manufacturer of dynamic random-access memory chips (DRAM), which are commonly found in a wide range of consumer devices including smartphones and computers. Samsung said it expects the second quarter to be driven mostly by demand for generative AI, while mobile demand remains stable. Meanwhile, it expects PC demand to be impacted by slow seasonality, which could lead to customers adjusting inventories before new product launches in the second half of 2024.
+Memory business returns to profit
+Samsung said its semiconductor business logged a 1.91 trillion Korean won in operating profit in the first quarter, as compared to a loss of 4.58 trillion won in the same period a year ago and a loss of 2.18 trillion Korean won in the fourth quarter. "We assume the earnings surprise was driven by higher memory price hike on AI-driven strong upturn cycle. We anticipate the company will guide for positive memory market outlook and emphasize its readiness in AI era including HBM (12H HBM3E, HBM4) and foundry/packaging solution," said SK Kim of Daiwa Capital Markets in emailed comments to CNBC on Monday, ahead of the earnings release. As AI models become more complex and datasets become larger, these models need memory chips with higher capacities and faster speeds to cater to these workloads. Kim said in an April 5 report he expects another price hike on memory chips to drive Samsung's second-quarter earnings on the back of an AI boom and the earthquake in Taiwan. "Especially, we expect more upside in prices resulting from the earthquake in Taiwan," said Kim, adding that the earthquake in early April temporarily impacted TSMC 's and Micron 's production. To meet AI demand, Samsung said it started mass producing HBM3E 8H and V9 NAND in April. It plans to mass produce HBM3E 12H products and a 128GB product based on 1b nanometer 32GB DDR5 within the second quarter. Despite macroeconomic uncertainty and geopolitical tensions, the firm expects the operational environment to "remain positive with demand" – bolstered by generative AI – in the second half of the year. Samsung also said development of 3-nanometer and 2-nanometer processes is "progressing smoothly." Samsung kicked off mass production of 3-nanometer chips in 2022 and plans to start mass producing 2-nanometer chips in 2025.
+Galaxy S24 boost
+Strong sales of Samsung's latest smartphone series Galaxy S24 helped to lift revenue and operating profit of the mobile business, the firm said. AI features on the S24 such as Circle to Search were popular among customers. However, the firm warned that smartphone demand and shipments could decline in the second quarter because of seasonality. But the smartphone market could see a rebound in the second half of the year from "stabilizing consumer sentiment, the expansion of AI products and services, and economic growth in emerging markets." Samsung said it will continue to expand Galaxy AI to existing and new flagship products to drive further growth.
+Growing competition
+Many countries in the world are racing to manufacture advanced semiconductors. Earlier this month, the Biden administration agreed to grant Samsung up to $6.4 billion of funding to create new manufacturing capacity to produce chips in Texas. Micron and TSMC are also poised to receive grants to boost chipmaking in the U.S. after decades of chip production moving to Asia. Samsung and TSMC are set to face competition from Japan's Rapidus Corporation, which was recently granted $3.89 billion in additional subsidies from the Japanese government to mass produce 2-nanometer chips from 2027.
+watch now
+
+title1:
+Google Gemini: Everything you need to know about the new generative AI platform
+description1:
+Google Gemini: Everything you need to know about the new generative AI platform
+Google’s trying to make waves with Gemini, its flagship suite of generative AI models, apps and services.
+So what is Gemini? How can you use it? And how does it stack up to the competition?
+To make it easier to keep up with the latest Gemini developments, we’ve put together this handy guide, which we’ll keep updated as new Gemini models, features and news about Google’s plans for Gemini are released.
+What is Gemini?
+Gemini is Google’s long-promised, next-gen GenAI model family, developed by Google’s AI research labs DeepMind and Google Research. It comes in three flavors:
+Gemini Ultra , the most performant Gemini model.
+, the most performant Gemini model. Gemini Pro , a “lite” Gemini model.
+, a “lite” Gemini model. Gemini Nano, a smaller “distilled” model that runs on mobile devices like the Pixel 8 Pro.
+All Gemini models were trained to be “natively multimodal” — in other words, able to work with and use more than just words. They were pretrained and fine-tuned on a variety of audio, images and videos, a large set of codebases and text in different languages.
+This sets Gemini apart from models such as Google’s own LaMDA, which was trained exclusively on text data. LaMDA can’t understand or generate anything other than text (e.g., essays, email drafts), but that isn’t the case with Gemini models.
+What’s the difference between the Gemini apps and Gemini models?
+Google, proving once again that it lacks a knack for branding, didn’t make it clear from the outset that Gemini is separate and distinct from the Gemini apps on the web and mobile (formerly Bard). The Gemini apps are simply an interface through which certain Gemini models can be accessed — think of it as a client for Google’s GenAI.
+Incidentally, the Gemini apps and models are also totally independent from Imagen 2, Google’s text-to-image model that’s available in some of the company’s dev tools and environments.
+What can Gemini do?
+Because the Gemini models are multimodal, they can in theory perform a range of multimodal tasks, from transcribing speech to captioning images and videos to generating artwork. Some of these capabilities have reached the product stage yet (more on that later), and Google’s promising all of them — and more — at some point in the not-too-distant future.
+Of course, it’s a bit hard to take the company at its word.
+Google seriously underdelivered with the original Bard launch. And more recently it ruffled feathers with a video purporting to show Gemini’s capabilities that turned out to have been heavily doctored and was more or less aspirational.
+Still, assuming Google is being more or less truthful with its claims, here’s what the different tiers of Gemini will be able to do once they reach their full potential:
+Gemini Ultra
+Google says that Gemini Ultra — thanks to its multimodality — can be used to help with things like physics homework, solving problems step-by-step on a worksheet and pointing out possible mistakes in already filled-in answers.
+Gemini Ultra can also be applied to tasks such as identifying scientific papers relevant to a particular problem, Google says — extracting information from those papers and “updating” a chart from one by generating the formulas necessary to re-create the chart with more recent data.
+Gemini Ultra technically supports image generation, as alluded to earlier. But that capability hasn’t made its way into the productized version of the model yet — perhaps because the mechanism is more complex than how apps such as ChatGPT generate images. Rather than feed prompts to an image generator (like DALL-E 3, in ChatGPT’s case), Gemini outputs images “natively,” without an intermediary step.
+Gemini Ultra is available as an API through Vertex AI, Google’s fully managed AI developer platform, and AI Studio, Google’s web-based tool for app and platform developers. It also powers the Gemini apps — but not for free. Access to Gemini Ultra through what Google calls Gemini Advanced requires subscribing to the Google One AI Premium Plan, priced at $20 per month.
+The AI Premium Plan also connects Gemini to your wider Google Workspace account — think emails in Gmail, documents in Docs, presentations in Sheets and Google Meet recordings. That’s useful for, say, summarizing emails or having Gemini capture notes during a video call.
+Gemini Pro
+Google says that Gemini Pro is an improvement over LaMDA in its reasoning, planning and understanding capabilities.
+An independent study by Carnegie Mellon and BerriAI researchers found that the initial version of Gemini Pro was indeed better than OpenAI’s GPT-3.5 at handling longer and more complex reasoning chains. But the study also found that, like all large language models, this version of Gemini Pro particularly struggled with mathematics problems involving several digits, and users found examples of bad reasoning and obvious mistakes.
+Google promised remedies, though — and the first arrived in the form of Gemini 1.5 Pro.
+Designed to be a drop-in replacement, Gemini 1.5 Pro is improved in a number of areas compared with its predecessor, perhaps most significantly in the amount of data that it can process. Gemini 1.5 Pro can take in ~700,000 words, or ~30,000 lines of code — 35x the amount Gemini 1.0 Pro can handle. And — the model being multimodal — it’s not limited to text. Gemini 1.5 Pro can analyze up to 11 hours of audio or an hour of video in a variety of different languages, albeit slowly (e.g., searching for a scene in a one-hour video takes 30 seconds to a minute of processing).
+Gemini 1.5 Pro entered public preview on Vertex AI in April.
+An additional endpoint, Gemini Pro Vision, can process text and imagery — including photos and video — and output text along the lines of OpenAI’s GPT-4 with Vision model.
+Within Vertex AI, developers can customize Gemini Pro to specific contexts and use cases using a fine-tuning or “grounding” process. Gemini Pro can also be connected to external, third-party APIs to perform particular actions.
+In AI Studio, there’s workflows for creating structured chat prompts using Gemini Pro. Developers have access to both Gemini Pro and the Gemini Pro Vision endpoints, and they can adjust the model temperature to control the output’s creative range and provide examples to give tone and style instructions — and also tune the safety settings.
+Gemini Nano Gemini Nano is a much smaller version of the Gemini Pro and Ultra models, and it’s efficient enough to run directly on (some) phones instead of sending the task to a server somewhere. So far, it powers a couple of features on the Pixel 8 Pro, Pixel 8 and Samsung Galaxy S24, including Summarize in Recorder and Smart Reply in Gboard. The Recorder app, which lets users push a button to record and transcribe audio, includes a Gemini-powered summary of your recorded conversations, interviews, presentations and other snippets. Users get these summaries even if they don’t have a signal or Wi-Fi connection available — and in a nod to privacy, no data leaves their phone in the process. Gemini Nano is also in Gboard, Google’s keyboard app. There, it powers a feature called Smart Reply, which helps to suggest the next thing you’ll want to say when having a conversation in a messaging app. The feature initially only works with WhatsApp but will come to more apps over time, Google says. And in the Google Messages app on supported devices, Nano enables Magic Compose, which can craft messages in styles like “excited,” “formal” and “lyrical.” Is Gemini better than OpenAI’s GPT-4? Google has several times touted Gemini’s superiority on benchmarks, claiming that Gemini Ultra exceeds current state-of-the-art results on “30 of the 32 widely used academic benchmarks used in large language model research and development.” The company says that Gemini 1.5 Pro, meanwhile, is more capable at tasks like summarizing content, brainstorming and writing than Gemini Ultra in some scenarios; presumably this will change with the release of the next Ultra model. But leaving aside the question of whether benchmarks really indicate a better model, the scores Google points to appear to be only marginally better than OpenAI’s corresponding models. And — as mentioned earlier — some early impressions haven’t been great, with users and academics pointing out that the older version of Gemini Pro tends to get basic facts wrong, struggles with translations and gives poor coding suggestions. How much does Gemini cost? Gemini 1.5 Pro is free to use in the Gemini apps and, for now, AI Studio and Vertex AI.
+Once Gemini 1.5 Pro exits preview in Vertex, however, the model will cost $0.0025 per character while output will cost $0.00005 per character. Vertex customers pay per 1,000 characters (about 140 to 250 words) and, in the case of models like Gemini Pro Vision, per image ($0.0025).
+Let’s assume a 500-word article contains 2,000 characters. Summarizing that article with Gemini 1.5 Pro would cost $5. Meanwhile, generating an article of a similar length would cost $0.1.
+Ultra pricing has yet to be announced.
+
+title2:
+Tesla (TSLA) stock up after hurdle to roll out Full Self Driving China
+description2:
+Shares of Tesla rose sharply on Monday, their best day since March 2021, after the electric carmaker passed a significant milestone to roll out its advanced driver-assistance technology in China.
+The company's share price closed up 15% as investors reacted to news surrounding Tesla CEO Elon Musk's visit to China.
+Tesla on Sunday said local Chinese authorities removed restrictions on its cars after passing the country's data security requirements.
+The move raised expectations that Tesla's driver-assistance software Full Self-Driving, or FSD, would soon be available in the country, which is the largest market for electric vehicles.
+While Tesla's electric cars are some of the most popular vehicles in China, they have reportedly been banned from some government-related properties due to data security concerns.
+Separately, the Biden administration earlier this year announced a probe into whether imported cars from China pose national security risks due to their ability to potentially collect sensitive data.
+FSD is an upgrade to Tesla's Autopilot driver assistant. Tesla has offered its FSD technology in China for years, but with a restricted feature set that limits it to operations, such as automated lane changing.
+Tesla does not yet make or sell cars capable of full autonomous driving. It sells "Level 2" driver-assistance systems, marketed under the brand name FSD.
+Musk's company has been sued in the U.S. by the California Department of Motor Vehicles for false advertising with its Autopilot and Full Self-Driving driver-assistance systems.
+Tesla responded that the DMV had been aware of its use of these brand names for years and chose not to take action. The firm believes Californian law on advertising of autonomous driving systems violates free speech.
+
+title3:
+FCC fines AT&T, Sprint, T-Mobile, and Verizon nearly $200 million for illegally sharing location data
+description3:
+The Federal Communications Commission is fining the largest US mobile carriers a combined nearly $200 million for allegedly illegally sharing customers’ location data without their consent.
+The FCC says it found the carriers “sold access to its customers’ location information to ‘aggregators,’ who then resold access to such information to third-party location-based service providers.” The agency says the carriers effectively “attempted to offload” their responsibility to get customers’ consent to share their location data with “downstream recipients.” Even after being made aware of the issue, the FCC claims, the carriers still failed to limit access to the information.
+The fines vary across carriers. T-Mobile faces the largest at $80 million. Sprint, which merged with T-Mobile since the investigation began, faces a $12 million fine. AT&T faces the second-largest fine at roughly $57 million, followed by Verizon at around $47 million. T-Mobile’s and Verizon’s fines are actually lower than what was initially proposed by the agency based on their responses to the FCC’s original notice.
+AT&T spokesperson Alex Byers said the FCC’s action “lacks both legal and factual merit. It unfairly holds us responsible for another company’s violation of our contractual requirements to obtain consent, ignores the immediate steps we took to address that company’s failures, and perversely punishes us for supporting life-saving location services like emergency medical alerts and roadside assistance that the FCC itself previously encouraged. We expect to appeal the order after conducting a legal review.”
+Verizon spokesperson Richard Young said that the company took swift action when “one bad actor gained unauthorized access to information relating to a very small number of customers.” He said the central issue involves “an old program that Verizon shut down more than half a decade ago.” Young added that the FCC order “gets it wrong on both the facts and the law, and we plan to appeal this decision.”
+
+title4:
+Amazon says 60% of Prime orders are arriving same day or next day
+description4:
+Products are seen at an Amazon fulfillment center where they are being sorted and shipped out as same-day orders during Cyber Monday at the Same-Day Delivery Facility Fulfillment Center in Tampa, Florida, on Nov. 27, 2023.
+Amazon says it is getting even more packages to customers in one day or sooner, a metric the e-retailer is promoting to customers as it faces heightened competition in online shopping.
+The company said on Monday that nearly 60% of orders placed through Prime in the top 60 U.S. metro areas in the first quarter arrived the same or next day. That is up from roughly 50% in the second quarter of 2023.
+It is a topic that will be of notable interest to investors when Amazon reports first-quarter earnings after the close of trading on Tuesday. Wall Street expects the company to post another quarter of double-digit revenue expansion and for profits to more than double from a year earlier.
+Cost-cutting efforts, cloud-computing demand and faster fulfillment have driven higher profits in recent quarters.
+Speedy delivery is a hallmark of Amazon's Prime subscription offering, which charges members $139 a year for benefits such as two-day shipping and video streaming. The company has said it wants to make same- and next-day delivery the standard, and it plans to double the number of same-day delivery facilities in the U.S. within the next few years.
+"As we get items to customers this fast, customers choose Amazon to fulfill their shopping needs more frequently," CEO Andy Jassy wrote in his letter to shareholders earlier this month. "And we can see the results in various areas including how fast our everyday essentials business is growing (over 20% y/y in Q4 2023)."
+According to RBC Capital Markets data, consumers have been shown to spend and shop more often if they have one-day shipping.
+Amazon's physical footprint swelled between 2020 and 2022 as the pandemic-driven e-commerce boom pushed the company to rapidly add new warehouse and delivery centers to its logistics network. Amazon last year retooled that network into eight regions instead of a national model, which the company says has resulted in faster yet cheaper deliveries. Jassy in his shareholder letter noted that cost to serve, or the cost to get a product to a shopper, was down in 2023 by more than 45 cents per unit year over year.
+Amazon has already stood up more than 55 same-day delivery sites in the U.S., primarily clustered around major metro areas. The facilities are roughly 100,000 square feet, compared to a typical Amazon warehouse, which can be the size of 26 football fields, and they store a smaller selection of goods that are the top-selling items in each city.
+Same-day sites also condense the fulfillment process, typically spread across multiple Amazon facilities under one roof. A package makes fewer stops on its route to a shopper's doorstep, which cuts down on costs per shipment.
+Amazon has bolstered investment in fast shipping as traditional retail rivals Walmart and Target have stepped up their delivery game. Walmart says it can deliver items to shoppers in as little as 30 minutes, while Target in March launched a new loyalty program that offers same-day delivery on orders more than $35 in as little as an hour."
+
+Response:
+
+Script:
+i'm wall-e, and this is your ai briefing. kicking off today with a tech powerhouse, samsung electronics has announced a remarkable rebound with its first-quarter operating profit soaring by 933%. this leap was fueled by a surge in memory chip prices, stirred by growing ai optimism. revenue hit approximately $52.3 billion, with operating profit reaching around $6.61 trillion korean won. samsung attributes this stellar performance to robust sales of its galaxy s24 smartphones and a surge in memory semiconductor prices. analysts from citi project a further upside, especially for samsung's nand flash memory business, propelled by the demand for ai computing.
+
+switching gears to google, the tech giant unveils gemini, a new suite of generative ai models and apps aimed at making a significant mark against competitors. with models ranging from gemini ultra to the mobile-friendly gemini nano, google promises a new age of ai capabilities, including multimodal interactions beyond just text, catering to a variety of complex tasks. despite previous setbacks, google is ambitious about gemini's potential to transform ai utilization across diverse platforms.
+
+in the electric vehicle space, tesla shares saw a sharp increase, the best since march 2021, after securing approval from chinese authorities to roll out its full self-driving technology in china. this development not only underscores tesla’s growing influence in the largest market for electric vehicles but also highlights the geopolitical and regulatory hurdles tech companies face in global expansion.
+
+on a regulatory note, the fcc is imposing hefty fines, nearly $200 million combined, on giants like at&t, sprint, t-mobile, and verizon for illegally sharing customers' location data. this move reflects the growing scrutiny over data privacy practices and the responsibilities of mobile carriers in safeguarding user data.
+
+lastly, amazon flexes its logistical muscle, reporting that nearly 60% of prime orders in the top 60 u.s. metro areas arrived the same or next day in the first quarter. this achievement underscores amazon's relentless efforts to tighten its grip on the e-commerce sector through faster fulfillment alongside cost-cutting measures, setting new benchmarks for delivery timelines in the industry.
+
+that's all for today. we'll see you back here tomorrow
+
+Polished Script:
+i'm wall-e, welcoming you to today's tech briefing for monday, april 29. starting with a financial juggernaut, samsung electronics has just unveiled a staggering first-quarter leap, announcing an operating profit increase by an eye-watering 933%. this financial uplift comes amid a robust uptick in memory chip prices, a trend buoyed by the surging optimism in artificial intelligence technologies. clocking in revenue at a hefty $52.3 billion and operating profits at about 6.61 trillion korean won, samsung's windfall is partly credited to the brisk sales of its latest galaxy s24 smartphones, coupled with a pronounced spike in the demand for memory semiconductors. analysts, like those from citi, are forecasting even sunnier days ahead, particularly for samsung's nand flash memory division, thanks to the burgeoning needs of ai computing.
+
+switching lanes to google, the silicon valley titan has pulled the wraps off gemini, its latest arsenal of generative ai models and applications, poised to redefine the competitive landscape. with offerings that span from the high-octane gemini ultra to the more compact gemini nano, google is setting the stage for an ai revolution that promises to transcend conventional text-based interactions, aiming to tackle a more complex array of tasks. despite navigating through a few bumps on the road earlier on, google remains steadfast in its vision for gemini, hoping to usher in a new era of ai integration across its vast platform ecosystem.
+
+in the realm of electric mobility, tesla's stock is charting new heights, marking its most significant uptick since march 2021, following the green light from chinese regulators to deploy its full self-driving technology in the country. this pivotal approval not only signals tesla's expanding footprint in the world's premier electric vehicle market but also shines a spotlight on the intricate dance of navigating geopolitical and regulatory landscapes for tech giants striving for global dominance.
+
+on the regulatory front, the fcc is taking a firm stance, doling out fines in the ballpark of $200 million collectively to telecommunications behemoths including at&t, sprint, t-mobile, and verizon for the unauthorized sharing of customer location data. this decisive action underscores an emerging vigilance over data privacy norms and the imperative for carriers to prioritize the protection of user data.
+
+rounding off with a logistical showcase, amazon reports that a staggering 60% of prime orders within the top 60 u.s. metro areas boasted same or next-day delivery in the first quarter. this stellar achievement not only cements amazon's supremacy in e-commerce logistics but also highlights the company's relentless pursuit of setting industry precedents in delivery efficiency, all while keeping an eye on cost-efficiency.
+
+that wraps up today's tech panorama. we'll reconvene right here tomorrow for your next dose of tech trends and news
+
+Podcast Title:
+EP-9 "samsung's Profits Skyrocket 📈, Google's Gemini Ai Unveiled 🧠, Tesla's China Breakthrough 🚘"
+
+Podcast Description:
+welcome to our tech briefing podcast, where we dive into the latest trends and breakthroughs shaping the technology world, every monday. in today's episode for april 29, join wall-e as we unpack a wide array of developments across the tech landscape, including:
+
+- **samsung's remarkable financial success**: unveiling an incredible 933% increase in operating profits, largely fueled by the rising demand in memory chip prices and the successful launch of the galaxy s24 smartphones.
+
+- **google's launch of gemini**: introduction of a new set of generative ai models and applications aimed at revolutionizing ai interactions beyond text, reinforcing google's commitment to leading in ai innovation.
+
+- **tesla's regulatory win in china**: tesla's stock surges as chinese regulators approve its full self-driving technology, emphasizing the company's growing influence in the global electric vehicle market.
+
+- **regulatory action on data privacy**: the fcc imposes hefty fines on major telecom providers for misusing customer location data, highlighting the increasing emphasis on user data protection.
+
+- **amazon's logistics milestone**: reporting that 60% of prime orders in major u.s. metros are now delivered on the same or next day, underlining amazon's dominance and efficiency in e-commerce logistics.
+
+tune in for a concise exploration of these pivotal moments and what they mean for the future of tech. stay ahead of the curve with our daily tech briefing
+
+Polished Script (Spanish):
+soy wall-e, y esta es tu actualización de ai briefing. samsung electronics anunció que sus ganancias operativas para el primer trimestre aumentaron un impresionante 932.8% gracias a un repunte en los precios de los chips de memoria impulsado por el optimismo hacia la inteligencia artificial. la compañía proyecta que la demanda futura sea impulsada en gran medida por la ia generativa, mientras mantiene una expectativa estable para la demanda móvil y anticipa un impacto en la demanda de pc debido a la estacionalidad del segundo trimestre. en noticias de google, la compañía está causando revuelo con gemini, su conjunto insignia de modelos, aplicaciones y servicios de ia generativa, presentando tres versiones distintas: gemini ultra, pro y nano. mientras tanto, tesla experimenta un aumento en sus acciones después de superar un hito importante para lanzar su tecnología avanzada de asistencia al conductor en china, provocando un aumento del 15% en el precio de sus acciones. finalmente, la fcc ha multado a at&t, sprint, t-mobile y verizon con casi 200 millones de dólares por compartir ilegalmente datos de ubicación de los clientes sin su consentimiento. en el frente del comercio electrónico, amazon informa que casi el 60% de los pedidos de prime en las principales áreas metropolitanas de ee.uu. están llegando en el mismo día o al día siguiente, un aumento notable desde el trimestre anterior. eso es todo por hoy. nos vemos de nuevo aquí mañana
+
+Podcast Title (Spanish):
+EP-9 "samsung Impulsa Ganancias Con Ia 📈, Google Despliega Gemini 🤖, Avances y Multas en Telecomunicaciones 📱"
+
+Podcast Description (Spanish):
+descripción:
+bienvenidos a tu actualización de ai briefing con soy wall-e, donde exploramos las últimas noticias y tendencias en tecnología, inteligencia artificial y más. en cada episodio, te traemos una visión concisa de los acontecimientos más importantes del sector. en este episodio, discutimos:
+
+- el impresionante aumento del 932.8% en ganancias operativas de samsung electronics en el primer trimestre, impulsado por el repunte de los precios de chips de memoria y el optimismo hacia la inteligencia artificial.
+- las expectativas de samsung sobre la demanda futura centrada en la ia generativa, la demanda móvil estable y el impacto de la estacionalidad en la demanda de pcs.
+- la presentación de gemini por parte de google, un conjunto insignia de modelos, aplicaciones y servicios de ia generativa, incluyendo gemini ultra, pro y nano.
+- el aumento del 15% en las acciones de tesla tras superar un importante hito para lanzar su tecnología avanzada de asistencia al conductor en china.
+- la multa de casi 200 millones de dólares impuesta por la fcc a at&t, sprint, t-mobile, y verizon por compartir ilegalmente datos de ubicación de clientes sin su consentimiento.
+- el informe de amazon sobre el notable aumento en la entrega de pedidos de prime en el mismo día o al día siguiente en las principales áreas metropolitanas de ee.uu.
+
+acompáñanos en este recorrido por el apasionante mundo de la tecnología y la inteligencia artificial. ¡nos vemos de nuevo aquí mañana!
+
+Polished Script (Chinese):
+我是wall-e，欢迎来到ai简报。今天我们有几条重要的科技新闻要分享。
+
+首先，三星电子公布了其第一季度的财务业绩，经营利润较上年同期飙升了932.8%，这一成绩远超预期。这一增长得益于人工智能带动的内存芯片价格回升。三星表示，旗舰智能手机galaxy s24的强劲销售和内存半导体价格上涨推动了收入增加。分析师们认为，随着ai计算需求的增加，三星的nand闪存业务将迎来进一步的增长。
+
+接下来，我们看到谷歌全力推进其全新的生成性ai平台——gemini。gemini包括三个不同级别的模型：gemini ultra、gemini pro和gemini nano，它们均能处理多种数据类型，包括音频、图像和视频。谷歌承诺，这些模型未来将能够执行一系列多模态任务。
+
+与此同时，特斯拉股价在中国推出其先进的自动驾驶辅助技术后大幅上涨。中国当局批准了特斯拉车辆，满足了国家的数据安全要求，这意味着特斯拉的全自动驾驶技术(fsd)即将在全球最大的电动车市场——中国上市。
+
+在另一条新闻中，美国联邦通信委员会(fcc)对美国最大的移动运营商——at&t、sprint、t-mobile和verizon处以近2亿美元的罚款，原因是它们未经用户同意就非法共享了用户的位置数据。
+
+最后，亚马逊表示，在美国前60大都会区域，几乎60%的prime订单在当天或次日达到客户手中。这一指标显示了亚马逊在提高配送速度方面取得的进展，同时也展示了亚马逊在在线购物竞争中的领导地位。
+
+这就是今天的全部内容。我们明天再见。
+
+Podcast Title (Chinese):
+EP-9 三星财务飙升引领ai芯片潮流 📈，谷歌推出多模态ai平台gemini 🤖，特斯拉在中国大放异彩 🚘
+
+Podcast Description (Chinese):
+欢迎收听ai简报，我是主持人wall-e。在本期节目中，我们将带你了解最新的科技行业动态。以下是我们将要讨论的主要话题：
+
+- 三星电子第一季度财务业绩亮眼，经营利润同比大增932.8%，得益于人工智能对内存芯片需求的推动。
+- 谷歌大力推进新一代生成性ai平台gemini，该平台包括三个不同级别的模型——gemini ultra、gemini pro和gemini nano，未来将能执行多模态任务。
+- 在中国市场推出先进自动驾驶辅助技术后，特斯拉股价大幅上涨，这是因为中国当局批准了特斯拉汽车，满足国家数据安全要求。
+- 美国联邦通信委员会对四大移动运营商——at&t、sprint、t-mobile和verizon因非法共享用户位置数据处以近2亿美元罚款。
+- 亚马逊在美国前60大都会区域实现了近60%的prime订单当天或次日送达，展现了其在提升配送速度和在线购物竞争中的领先地位。
+
+欢迎你的收听，期待与你在下一期节目再会。

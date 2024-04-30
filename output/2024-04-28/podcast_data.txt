@@ -6,27 +6,29 @@ Meta’s ‘set it and forget it’ AI ad tools are misfiring and blowing throug
 The Delta emulator will soon turn your iPad into a giant Nintendo DS
 The OLED iPad Pro could launch with an M4 chip
 How working for Big Tech lost 'dream job' status
+Ethiopian plastic upcycling startup Kubik gets fresh funding, plans to license out its tech
+ChatGPT’s ‘hallucination’ problem hit with another privacy complaint in EU
 Humanoid robots are learning to fall well
 Tesla profits tumble, Fisker flatlines, and California cities battle for control of AVs
 MongoDB CEO Dev Ittycheria talks AI hype and the database evolution as he crosses 10-year mark
 Stripe’s big changes, Brazil’s newest fintech unicorn and the tale of a startup shutdown
 How RPA vendors aim to remain relevant in a world of AI agents
 London’s first defense tech hackathon brings Ukraine war closer to the city’s startups
-How RPA vendors aim to remain relevant in a world of AI agents
+Humanoid robots are learning to fall well
 London’s first defense tech hackathon brings Ukraine war closer to the city’s startups
-MongoDB CEO Dev Ittycheria talks AI hype and the database evolution as he crosses 10-year mark
 
 top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
 TechCrunch
+Ethiopian plastic upcycling startup Kubik gets fresh funding, plans to license out its tech
+ChatGPT’s ‘hallucination’ problem hit with another privacy complaint in EU
 Humanoid robots are learning to fall well
 Tesla profits tumble, Fisker flatlines, and California cities battle for control of AVs
 MongoDB CEO Dev Ittycheria talks AI hype and the database evolution as he crosses 10-year mark
 Stripe’s big changes, Brazil’s newest fintech unicorn and the tale of a startup shutdown
 How RPA vendors aim to remain relevant in a world of AI agents
 London’s first defense tech hackathon brings Ukraine war closer to the city’s startups
-How RPA vendors aim to remain relevant in a world of AI agents
+Humanoid robots are learning to fall well
 London’s first defense tech hackathon brings Ukraine war closer to the city’s startups
-MongoDB CEO Dev Ittycheria talks AI hype and the database evolution as he crosses 10-year mark
 
 The Verge
 Phone cooler makers need to chill with all the ice
@@ -40,17 +42,19 @@ How working for Big Tech lost 'dream job' status
 
 Top News:
 tesla profits tumble, fisker flatlines, and california cities battle for control of avs
-meta’s ‘set it and forget it’ ai ad tools are misfiring and blowing through cash
-mongodb ceo dev ittycheria talks ai hype and the database evolution as he crosses 10-year mark
-how working for big tech lost 'dream job' status
 stripe’s big changes, brazil’s newest fintech unicorn and the tale of a startup shutdown
+chatgpt’s ‘hallucination’ problem hit with another privacy complaint in eu
+how working for big tech lost 'dream job' status
+meta’s ‘set it and forget it’ ai ad tools are misfiring and blowing through cash
 
 Generate_script_prompt:
 
         Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
         Response: I'm Wall-E, and this is your CNBC techcheck Briefing. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
-        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including host name), and replace CNBC techcheck briefing to 'AI briefing' 
- Tesla profits tumble, Fisker flatlines, and California cities battle for control of AVs
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including host name Wall-E), and replace CNBC techcheck briefing to 'AI briefing' 
+ "title0:
+Tesla profits tumble, Fisker flatlines, and California cities battle for control of AVs
+description0:
 Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation. Sign up here — just click TechCrunch Mobility — to receive the newsletter every weekend in your inbox. Subscribe for free.
 Welp, Tesla earnings happened this week — and yeah that was a lot. A lot of what, you ask? A lot of the same kinds of promises and hand waving we’ve seen before, but just wrapped up in slightly different packaging. The stakes this time around remind me of Tesla’s pre-profit era circa 2018.
 Now, to be clear, Tesla has enjoyed profitability since 2020. But it is facing downward pressure on its bottom line — the company saw profits fall 55% year over year — and an aging portfolio of its highest volume vehicles. (And yes, we covered the new Model 3 Performance variant; I’m talking about new mass market models here.)
@@ -95,7 +99,68 @@ This vehicle comes with a 3.5L, six-cylinder hybrid engine that produces 354 hor
 The curious part is that this vehicle has a multistage transmission. So basically this means that Lexus took its existing electronically controlled, continuously variable transmission system and then added another gearbox (a four-speed transmission) behind it. The thinking is that this gives drivers a sportier experience and 10 different gear selections via the paddles behind the steering wheel when the vehicle is in manual mode. The Lexus multistage hybrid system has been around for years now, but I had yet to really play around with it.
 My take: After some time in manual mode, I found myself just putting it back in “drive” and letting the vehicle do the work for me.
 
+title1:
+Stripe's big changes, Brazil's newest fintech unicorn and the tale of a startup shutdown
+description1:
+Welcome to TechCrunch Fintech! This week, we’re looking at Stripe’s big product announcements, a bump in valuation for a Brazilian fintech startup and much more!
+To get a roundup of TechCrunch’s biggest and most important fintech stories delivered to your inbox every Sunday at 7:00 a.m. PT, subscribe here.
+The big story
+Stripe announced that it will be de-coupling payments from the rest of its financial services stack. This is a big change, considering that in the past, even as Stripe grew its list of services, it required businesses to be payments customers in order to use any of the rest. Alongside this, the company is adding in a number of new embedded finance features and a new wave of AI tools. The fintech giant also announced that after a six-year hiatus, it will let customers accept cryptocurrency payments, starting with just one currency in particular, USDC stablecoins, initially only on Solana, Ethereum and Polygon.
+Analysis of the week
+Brazil got a new fintech unicorn last week. Banking-as-a-service startup QI Tech achieved unicorn status after raising an undisclosed amount of capital in a General Atlantic-led investment that was an extension of its $200 million Series B raise, which TechCrunch covered last October. QI Tech said it is also preparing to close on the acquisition of Singulare, a Brazilian fund administration services provider, in the third quarter. Meanwhile, another Brazilian startup, Vixtra, secured $36 million in debt and equity funding — another example of companies in the region continuing to attract venture dollars.
+Dollars and cents
+Bump, a platform that helps creators manage and grow their businesses, announced a $3 million seed round, with investments from ImpactX, Capitalize and Serac Ventures. Bump allows creators to track income and market value, which can help them negotiate better deals and see how much money partners owe them.
+Y Combinator alum and B2B fintech startup Fintoc raised a $7 million Series A round of funding to consolidate its presence in its home country, Chile, and in Mexico, where it expanded one year ago.
+Pomelo, a startup that launched in the Philippines in 2022 — allowing people in the United States to send money to the country while at the same time building their credit — has raised $35 million in a Series A round led by Dubai venture firm Vy Capital with participation from Founders Fund.
+You can hear the Equity crew talk about this deal and more here:
+What else we’re writing
+Bengaluru-headquartered CRED, valued at $6.4 billion, has received the in-principle approval for a payment aggregator license in a boost to the Indian fintech startup that could help it better serve its customers and launch new products and experiment with ideas faster.
+Winding down a startup can be bittersweet for founders. In the case of Fundid, rising interest rates killed the business finance startup. But VCs and partners hurt it, too, founder Stefanie Sample says in this compelling read by Christine Hall.
+After a tumultuous year, banking-as-a-service (BaaS) startup Synapse has filed for Chapter 11 bankruptcy and its assets will be acquired by TabaPay.
+High-interest headlines
+401Go raises $12M Series A to fuel next phase of growth
+Ramp vs. Brex risks becoming fintech’s Uber vs. Lyft, some VCs warn
+Want to reach out with a tip? Email me at maryann@techcrunch.com or send me a message on Signal at 408.204.3036. You can also send a note to the whole TechCrunch crew at tips@techcrunch.com. For more secure communications, click here to contact us, which includes SecureDrop (instructions here) and links to encrypted messaging apps.
+
+title2:
+ChatGPT's 'hallucination' problem hit with another privacy complaint in EU
+description2:
+OpenAI is facing another privacy complaint in the European Union. This one, which has been filed by privacy rights nonprofit noyb on behalf of an individual complainant, targets the inability of its AI chatbot ChatGPT to correct misinformation it generates about individuals.
+The tendency of GenAI tools to produce information that’s plain wrong has been well documented. But it also sets the technology on a collision course with the bloc’s General Data Protection Regulation (GDPR) — which governs how the personal data of regional users can be processed.
+Penalties for GDPR compliance failures can reach up to 4% of global annual turnover. Rather more importantly for a resource-rich giant like OpenAI: Data protection regulators can order changes to how information is processed, so GDPR enforcement could reshape how generative AI tools are able to operate in the EU.
+OpenAI was already forced to make some changes after an early intervention by Italy’s data protection authority, which briefly forced a local shut down of ChatGPT back in 2023.
+Now noyb is filing the latest GDPR complaint against ChatGPT with the Austrian data protection authority on behalf of an unnamed complainant (described as a “public figure”) who found the AI chatbot produced an incorrect birth date for them.
+Under the GDPR, people in the EU have a suite of rights attached to information about them, including a right to have erroneous data corrected. noyb contends OpenAI is failing to comply with this obligation in respect of its chatbot’s output. It said the company refused the complainant’s request to rectify the incorrect birth date, responding that it was technically impossible for it to correct.
+Instead it offered to filter or block the data on certain prompts, such as the name of the complainant.
+OpenAI’s privacy policy states users who notice the AI chatbot has generated “factually inaccurate information about you” can submit a “correction request” through privacy.openai.com or by emailing dsar@openai.com. However, it caveats the line by warning: “Given the technical complexity of how our models work, we may not be able to correct the inaccuracy in every instance.”
+In that case, OpenAI suggests users request that it removes their personal information from ChatGPT’s output entirely — by filling out a web form.
+The problem for the AI giant is that GDPR rights are not à la carte. People in Europe have a right to request rectification. They also have a right to request deletion of their data. But, as noyb points out, it’s not for OpenAI to choose which of these rights are available.
+Other elements of the complaint focus on GDPR transparency concerns, with noyb contending OpenAI is unable to say where the data it generates on individuals comes from, nor what data the chatbot stores about people.
+This is important because, again, the regulation gives individuals a right to request such info by making a so-called subject access request (SAR). Per noyb, OpenAI did not adequately respond to the complainant’s SAR, failing to disclose any information about the data processed, its sources, or recipients.
+Commenting on the complaint in a statement, Maartje de Graaf, data protection lawyer at noyb, said: “Making up false information is quite problematic in itself. But when it comes to false information about individuals, there can be serious consequences. It’s clear that companies are currently unable to make chatbots like ChatGPT comply with EU law, when processing data about individuals. If a system cannot produce accurate and transparent results, it cannot be used to generate data about individuals. The technology has to follow the legal requirements, not the other way around.”
+The company said it’s asking the Austrian DPA to investigate the complaint about OpenAI’s data processing, as well as urging it to impose a fine to ensure future compliance. But it added that it’s “likely” the case will be dealt with via EU cooperation.
+OpenAI is facing a very similar complaint in Poland. Last September, the local data protection authority opened an investigation of ChatGPT following the complaint by a privacy and security researcher who also found he was unable to have incorrect information about him corrected by OpenAI. That complaint also accuses the AI giant of failing to comply with the regulation’s transparency requirements.
+The Italian data protection authority, meanwhile, still has an open investigation into ChatGPT. In January it produced a draft decision, saying then that it believes OpenAI has violated the GDPR in a number of ways, including in relation to the chatbot’s tendency to produce misinformation about people. The findings also pertain to other crux issues, such as the lawfulness of processing.
+The Italian authority gave OpenAI a month to respond to its findings. A final decision remains pending.
+Now, with another GDPR complaint fired at its chatbot, the risk of OpenAI facing a string of GDPR enforcements across different Member States has dialed up.
+Last fall the company opened a regional office in Dublin — in a move that looks intended to shrink its regulatory risk by having privacy complaints funneled by Ireland’s Data Protection Commission, thanks to a mechanism in the GDPR that’s intended to streamline oversight of cross-border complaints by funneling them to a single member state authority where the company is “main established.”
+
+title3:
+How working for Big Tech lost 'dream job' status
+description3:
+Despite blockbuster earnings from giants such as Alphabet and Microsoft , layoffs continue to ripple through the tech industry.
+Layoffs.fyi, a platform monitoring job cuts in the tech sector, recorded more than 263,000 job losses in 2023 alone. As of April, there have been more than 75,000 job losses in the industry so far in 2024.
+"So instead of rewarding the growth that we saw [tech companies] all pursue years ago, they're now rewarding profit," said Jeff Shulman, professor at the University of Washington's Foster School of Business. "And so the layoffs have continued. People have become used to them. Regrettably and sadly, it seems that the layoffs are going to be the new normal."
+Even though mass tech layoffs continue, the labor market still seems strong. The U.S. economy added 303,000 jobs in March, well above the Dow Jones estimate for a rise of 200,000, with the unemployment rate edged lower to 3.8%.
+According to Handshake, a popular free job posting site for college students and graduates, the tech layoffs have prompted new workers to seek other opportunities. The share of job applications from tech majors submitted to internet and software companies dropped by more than 30% between November 2021 and September 2023.
+"Part of the reason why this is happening is because stability is such a major factor in students' decisions around what types of jobs they apply to and what types of jobs they accept," said Christine Cruzverga, chief education strategy officer at Handshake. "They're looking at the headlines in the news and they're paying attention to all of the layoffs that are happening in Big Tech, and that makes them feel unstable."
+Mass layoffs have eroded the shine of the tech industry, which is why workers are questioning whether getting a job in the tech industry should still be regarded as a "dream job."
+"For the people who are chasing ... a tech dream job, I think keep your options open and be realistic," said Eric Tolotti, senior partner engineer at Snowflake, who got laid off from Microsoft in 2023. "Don't just focus on one company and feel like you have to get into that one company because it's the dream."
+Watch the video to learn about tech workers' sentiments, considerations for aspiring Big Tech employees, and more.
+
+title4:
 Meta’s ‘set it and forget it’ AI ad tools are misfiring and blowing through cash
+description4:
 It was Valentine’s Day when Meta’s ad platform started going off the rails. RC Williams, the co-founder of the Philadelphia-based marketing agency 1-800-D2C, had set one of Meta’s automated ad tools to run campaigns for two separate clients. But when he checked the platform that day, he found that Meta had blown through roughly 75 percent of the daily ad budgets for both clients in under a couple of hours.
 Williams told The Verge that the ads’ CPMs, or cost per impressions, were roughly 10 times higher than normal. A usual CPM of under $28 had inflated to roughly $250, way above the industry average. That would have been bad enough if the revenue earned from those ads wasn’t nearly zero. If you’re not a marketer, this might feel like spending a week’s worth of grocery money on a prime cut of wagyu at a steakhouse, only for the waiter to return with a floppy slider.
 The Verge spoke to several marketers and businesses that advertise on Meta’s platforms who tell a similar story. Meta’s automated ad platform has been blowing through budgets and failing to deliver sales. Small businesses have seen their ad dollars get wiped out and wasted as a result, and some have said the bouts of overspending are driving them from Meta’s platforms.
@@ -124,197 +189,90 @@ In an email to The Verge on April 15th, Meta spokesperson Kash Ayodele said the 
 But marketers are still complaining about underperformance on the platform. “Things have recovered for many, but not all. It’s been a very turbulent end to Q1 and beginning of Q2,” wrote media buyer David Herrmann in a direct message to The Verge.
 The dramatic increase in cost per click (CPC) and CPM is not just a Meta problem — online ads as a whole are getting costlier due to what marketers say are increased inefficiencies, which automation has only made worse. This significantly decreases profits for individual advertisers. And fixing this problem may be more complicated than fixing a “glitch” or series of glitches on Advantage Plus, especially since the millions that Meta as well as Google have poured into automated advertising hasn’t led to more successful ad campaigns.
 “The performance of accounts and campaigns hasn’t intrinsically increased [over the last three years],” noted Hawke Media’s Areen Mayelan.
-When ad campaigns are automated, such as with Meta’s Advantage Plus, “things get brushed under the rug,” said Mayelan. Everything from loose keywords to loose audiences to low-quality ads all effectively become inefficiencies that increase the cost of ads for brands. “Inefficiency results in an increase in CPCs and CPMs, because you’re creating artificial ‘competition’ where there otherwise might not be.”
-
-MongoDB CEO Dev Ittycheria talks AI hype and the database evolution as he crosses 10-year mark
-A lot has happened since Dev Ittycheria took the reins at MongoDB, the $26 billion database company he’s led as president and CEO since September 2014. Ittycheria has taken MongoDB to the cloud, steered it through an IPO, overseen its transition from open source, launched a venture capital arm, and grown the customer base from a few hundred to something approaching 50,000.
-“When I joined the company, it wasn’t clear if people would trust us to be a truly mission-critical technology,” Ittycheria told TechCrunch. “When I joined, it was doing roughly $30 million in revenue; now we’re doing close to $2 billion.”
-It hasn’t all been peaches and cream, though. Five months ago, MongoDB was hit by a security breach, which, while relatively contained, did momentarily risk its reputation in an industry where reputation is paramount.
-Throw into the mix the whirlwind AI revolution that has engulfed just about every industry, and there was much to discuss when TechCrunch sat down with Ittycheria at MongoDB’s new London office, which opened in Blackfriars last year.
-Vector’s embrace
-Databases have come a long way since IBM and Oracle first popularized relational databases more than half a century ago. The internet’s rise created demand for flexible, scalable, and cost-effective data storage and processing, paving the way for businesses such as MongoDB to thrive.
-Founded in 2007 by a trio of veterans hailing from online adtech company DoubleClick (which Google acquired for $3.1 billion), MongoDB was initially called 10Gen until a rebrand to the name of its flagship product six years later. It has since emerged as one of the preeminent NoSQL databases, helping companies store and manage large volumes of data.
-Prior to joining MongoDB, Ittycheria founded and exited a server automation company called BladeLogic for $900 million in 2008, and went on to serve in various board member and investor roles (including a 16-month stint at Greylock) before joining MongoDB as president and CEO coming on for 10 years ago now. Ittycheria replaced Max Schireson, who stepped down for family reasons after just 18 months in the role.
-Built on a document-oriented model, MongoDB has grown off the back of the explosion in mobile and web applications where flexible, dynamic data structures are at play. The current artificial intelligence wave is driving a similar shift, with vector databases the hot new thing in town.
-Like NoSQL, vector databases also specialize in unstructured data types (e.g., images, videos, social media posts), but are particularly well suited to large language models (LLMs) and generative AI. This is due to the way they store and process data in the form of vector embeddings, which convert data into numerical representations that capture relationships between different data points by storing them spatially by relevance. This makes it easier to retrieve semantically similar data and allows AI to better understand context and semantics within conversations.
-While a slew of dedicated vector database startups have emerged these past few years, the incumbents have also started embracing vector, including Elastic, Redis, OpenSearch, Cassandra, and Oracle. Cloud hyperscalers, including Microsoft, Amazon, and Google have also ramped up support for vector search.
-MongoDB, for its part, introduced vector search to its flagship database-as-a-service product Atlas last June, a sign that the company was preparing for the oncoming AI tsunami. This mimics other historical trends where single-function databases emerge (such as time-series) with some utility as stand-alone solutions but that might also be better integrated into a larger multi-purpose database stack. This is precisely why MongoDB introduced support for time-series databases a few years back, and why it’s doing the same with vector.
-“A lot of these companies are features masking as products,” Ittycheria said of the new wave of dedicated vector products. “We built that into the platform, and that’s the value — rather using some stand-alone vector database and then your OLTP [online transaction processing] database and then your search database, we can combine all three things into one platform that makes the life of a developer and architect so much easier.”
-The idea is that database providers that adopt a multipronged approach can combine all the data in one place, making life easier for developers to work with.
-“There’s probably like 17 different types of databases, and probably about 300 vendors,” Ittycheria said. “There’s no customer on this planet that wants to have 17 different databases. The complexity that creates, and the cost of learning, supporting and managing those different technologies becomes overwhelming. It also inhibits innovation, because it creates this tax of complexity.”
-Too much hype
-Despite the preparation, Ittycheria reckons there is too much hype around AI — for now, at least.
-“My life has not been transformed by AI,” he said. “Yes, maybe I can write an email better through all those assistants, but it’s not fundamentally transformed my life. Whereas the internet has completely transformed my life.”
-The theory is that despite the hullaballoo, it will take time for AI to seep into our everyday lives — and when it does, it will be through applications integrating AI, and businesses building on it.
-“I think with the adoption of any new technology, we see value accrue at the bottom layer first,” Ittycheria said. “Obviously, Nvidia is making money hand over fist, and OpenAI has been the most talked about company since they launched ChatGPT. But the real value will come when people build applications on top of those technologies. And that’s the business we’re in — we’re in the business of helping people build applications.”
-For now, it’s all about “simple apps,” as Ittycheria puts it. This includes chatbots for customer service, something that MongoDB itself is doing internally with CoachGTM, powered by MongoDB’s vector search, to bring its sales and customer teams instant knowledge about their products. In some ways, we’re currently in the “calculator apps” stage that the iPhone found itself in nearly 20 years ago when the concept of the App Store hit the masses.
-“The real sophisticated [AI] apps will be using real-time data, being able to make real-time decisions on real-time events,” Ittycheria said. “Maybe something’s happening in the stock market, maybe it’s time to buy or sell, or it’s time to hedge. I think that’s where we will start seeing much more sophisticated apps, where you can embed real-time data along with all the reasoning.”
-The SaaS path
-One of the biggest developments during Ittycheria’s tenure has been the transition from a self-deployed model, where customers host MongoDB themselves and the company sells them features and services. With the launch of Atlas in 2016, MongoDB embarked on the familiar SaaS path where companies charge for removing all the complexities of self-hosting. At the time of its IPO the following year, Atlas represented 2% of MongoDB’s revenue — today that figure sits at nearly 70%.
-“It’s grown very quickly, and we’ve really built that business as a public company,” Ittycheria said. “What the popularity of Atlas showed was that people are comfortable consuming infrastructure as a service. What that allows them to do is delegate what they consider ‘non-strategic functions,’ like provisioning, configuring and managing MongoDB. So they can focus on building applications that are really transforming their business.”
-Another major development came when, a year after going public, MongoDB moved away from an open source AGPL license to a source-available SSPL (server side public license). In some ways, this was the bellwether of what was to come, with countless infrastructure companies going on to abandon their open source credentials to prevent the cloud giants (e.g., Amazon) from selling their own version of the service without giving back.
-“We feel very happy about it [the license change],” Ittycheria said. “The reality is that while it was open source, 99.9% of the development is done by our own people — it’s not like communities contributing code. It’s not some simple, trivial application — it’s very complex code, and we need to hire senior, talented people who cost a lot of money. We didn’t think it was fair for us to spend all this money to build this product, then someone takes that free product, monetizes it, and not give us anything back. It was quite controversial in 2018, but looking back, our business has only grown faster.”
-And grown it has. As with just about every tech company, MongoDB’s valuation soared during the pandemic, peaking at an all-time high of $39 billion in late 2021, before plummeting south of $10 billion within a year — roughly the same as its pre-pandemic figure.
-However, MongoDB’s shares have been in ascendency in the 18 months since, hitting $35 billion just a couple of months ago, before dropping again to around $26 billion today — such is the volatile nature of the stock markets. But given the company’s relatively modest $1.8 billion valuation at the end of its first day of trading in 2017, MongoDB has performed fairly well for public market investors.
-Four months ago, though, MongoDB revealed a data breach that exposed “some customer account metadata and contact information” — it involved a phishing attack through a third-party enterprise tool (Ittycheria wouldn’t confirm which). This caused its shares to drop 3%, but in the months that followed, MongoDB’s valuation surged back to a two-year high. This highlighted how little impact the breach had on affairs at the company, certainly compared to high-profile data breaches at the likes of Equifax and Target, which hit the businesses hard and forced senior executive departures.
-While MongoDB’s cybersecurity incident was significantly smaller in scope, what stood out was how quickly the whole thing went away — it was reported in several outlets (including TechCrunch), but the story disappeared into the foggy ruins of time just as quickly as it arrived.
-“Part of the reason is that we were very transparent,” Ittycheria said. “The last thing you want to do is hide information and appear like you’re misrepresenting information. We have lots of banks who put a lot of very sensitive information in our data platform; we’ve lots of other companies that have a lot of sensitive information. So for us, it’s really about making sure that our architecture is robust and sound. And this really forced us to double down. I would never claim that we’re never gonna get hacked again, but we’re doing everything in our power to ensure that it doesn’t.”
-Nothing ventured
-It’s not unusual for the biggest tech companies to launch their own investment vehicles, as we’ve seen through the years with Alphabet (which has several investment offshoots), Microsoft, Amazon, and Salesforce all ingratiating themselves with the startup fraternity. But a newer wave of enterprise corporate venture firms have entered the fray, too, including Slack, Workday, Twilio, Zoom, HubSpot, and Okta.
-In 2022, it was MongoDB’s turn to launch such a fund, and in the two years since, MongoDB Ventures has invested in some eight companies.
-“This is for us to build deeper relationships — we work in an ecosystem that consists of large companies and also small companies,” Ittycheria said. “Where we see a small company that we think could be interesting to work with, we say, ‘Hey, we want a chance to invest in you,’ so that extra value’s created. We also are the beneficiaries of creating some of that value.”
-MongoDB only has a handful of people in its corporate development team that are mostly focused on the venture fund, and Ittycheria stresses that MongoDB takes a back seat with its investments. It also typically invests alongside other VCs, as it did with its inaugural investment in 2021 (predating the formal launch of its fund), when it quietly joined the likes of Insight Partners and Andreessen Horowitz in Apollo GraphQL’s $130 million Series D round.
-“We always take a minority position, we don’t take a board seat, and we don’t set the terms,” Ittycheria said. “But the reason startups are interested in us is because they want to leverage the MongoDB brand. We have thousands of people in the field, so they [startups] can leverage our distribution channels.”
-
-How working for Big Tech lost 'dream job' status
-Despite blockbuster earnings from giants such as Alphabet and Microsoft , layoffs continue to ripple through the tech industry.
-Layoffs.fyi, a platform monitoring job cuts in the tech sector, recorded more than 263,000 job losses in 2023 alone. As of April, there have been more than 75,000 job losses in the industry so far in 2024.
-"So instead of rewarding the growth that we saw [tech companies] all pursue years ago, they're now rewarding profit," said Jeff Shulman, professor at the University of Washington's Foster School of Business. "And so the layoffs have continued. People have become used to them. Regrettably and sadly, it seems that the layoffs are going to be the new normal."
-Even though mass tech layoffs continue, the labor market still seems strong. The U.S. economy added 303,000 jobs in March, well above the Dow Jones estimate for a rise of 200,000, with the unemployment rate edged lower to 3.8%.
-According to Handshake, a popular free job posting site for college students and graduates, the tech layoffs have prompted new workers to seek other opportunities. The share of job applications from tech majors submitted to internet and software companies dropped by more than 30% between November 2021 and September 2023.
-"Part of the reason why this is happening is because stability is such a major factor in students' decisions around what types of jobs they apply to and what types of jobs they accept," said Christine Cruzverga, chief education strategy officer at Handshake. "They're looking at the headlines in the news and they're paying attention to all of the layoffs that are happening in Big Tech, and that makes them feel unstable."
-Mass layoffs have eroded the shine of the tech industry, which is why workers are questioning whether getting a job in the tech industry should still be regarded as a "dream job."
-"For the people who are chasing ... a tech dream job, I think keep your options open and be realistic," said Eric Tolotti, senior partner engineer at Snowflake, who got laid off from Microsoft in 2023. "Don't just focus on one company and feel like you have to get into that one company because it's the dream."
-Watch the video to learn about tech workers' sentiments, considerations for aspiring Big Tech employees, and more.
-
-Stripe's big changes, Brazil's newest fintech unicorn and the tale of a startup shutdown
-Welcome to TechCrunch Fintech! This week, we’re looking at Stripe’s big product announcements, a bump in valuation for a Brazilian fintech startup and much more!
-To get a roundup of TechCrunch’s biggest and most important fintech stories delivered to your inbox every Sunday at 7:00 a.m. PT, subscribe here.
-The big story
-Stripe announced that it will be de-coupling payments from the rest of its financial services stack. This is a big change, considering that in the past, even as Stripe grew its list of services, it required businesses to be payments customers in order to use any of the rest. Alongside this, the company is adding in a number of new embedded finance features and a new wave of AI tools. The fintech giant also announced that after a six-year hiatus, it will let customers accept cryptocurrency payments, starting with just one currency in particular, USDC stablecoins, initially only on Solana, Ethereum and Polygon.
-Analysis of the week
-Brazil got a new fintech unicorn last week. Banking-as-a-service startup QI Tech achieved unicorn status after raising an undisclosed amount of capital in a General Atlantic-led investment that was an extension of its $200 million Series B raise, which TechCrunch covered last October. QI Tech said it is also preparing to close on the acquisition of Singulare, a Brazilian fund administration services provider, in the third quarter. Meanwhile, another Brazilian startup, Vixtra, secured $36 million in debt and equity funding — another example of companies in the region continuing to attract venture dollars.
-Dollars and cents
-Bump, a platform that helps creators manage and grow their businesses, announced a $3 million seed round, with investments from ImpactX, Capitalize and Serac Ventures. Bump allows creators to track income and market value, which can help them negotiate better deals and see how much money partners owe them.
-Y Combinator alum and B2B fintech startup Fintoc raised a $7 million Series A round of funding to consolidate its presence in its home country, Chile, and in Mexico, where it expanded one year ago.
-Pomelo, a startup that launched in the Philippines in 2022 — allowing people in the United States to send money to the country while at the same time building their credit — has raised $35 million in a Series A round led by Dubai venture firm Vy Capital with participation from Founders Fund.
-You can hear the Equity crew talk about this deal and more here:
-What else we’re writing
-Bengaluru-headquartered CRED, valued at $6.4 billion, has received the in-principle approval for a payment aggregator license in a boost to the Indian fintech startup that could help it better serve its customers and launch new products and experiment with ideas faster.
-Winding down a startup can be bittersweet for founders. In the case of Fundid, rising interest rates killed the business finance startup. But VCs and partners hurt it, too, founder Stefanie Sample says in this compelling read by Christine Hall.
-After a tumultuous year, banking-as-a-service (BaaS) startup Synapse has filed for Chapter 11 bankruptcy and its assets will be acquired by TabaPay.
-High-interest headlines
-401Go raises $12M Series A to fuel next phase of growth
-Ramp vs. Brex risks becoming fintech’s Uber vs. Lyft, some VCs warn
-Want to reach out with a tip? Email me at maryann@techcrunch.com or send me a message on Signal at 408.204.3036. You can also send a note to the whole TechCrunch crew at tips@techcrunch.com. For more secure communications, click here to contact us, which includes SecureDrop (instructions here) and links to encrypted messaging apps.
+When ad campaigns are automated, such as with Meta’s Advantage Plus, “things get brushed under the rug,” said Mayelan. Everything from loose keywords to loose audiences to low-quality ads all effectively become inefficiencies that increase the cost of ads for brands. “Inefficiency results in an increase in CPCs and CPMs, because you’re creating artificial ‘competition’ where there otherwise might not be.”"
 
 Response:
 
 Script:
-i'm wall-e, and this is your ai briefing. tesla's latest earnings reveal profits have tumbled by a striking 55% year over year, facing challenges from an aging vehicle portfolio. despite the dip, ceo elon musk promises new, cheaper evs by 2025, emphasizing automation and innovation in tesla's future. meanwhile, fisker grapples with its existence, hinting at potential layoffs and a possible bankruptcy within the coming month. elsewhere, california cities are in a legislative tussle, aiming to gain more control over autonomous vehicle regulations, a move that could significantly impact the av landscape.
+i'm wall-e, and this is your ai briefing. a whirlwind week in tech has seen tesla's profits tumble, amidst a renewed battle for autonomous vehicle control in california cities, and fisker signaling distress with impending layoffs. elon musk's juggernaut posted a steep drop in quarterly earnings, spotlighting the urgent need for new revenue streams and cheaper electric vehicle models amidst an aging product lineup. musk's company offered a vague promise of multiple affordable evs by 2025, even as analysts scrutinize the practicality of such plans. 
 
-in the venture sphere, chemix secures a hefty $20 million in a series a funding round, eyeing acceleration in next-gen ev battery development. lanzajet, not falling behind, snaps an investment from microsoft’s climate innovation fund, with aims to close a pivotal $100 million round soon. outpost raises $12.5 million to expand its semi-truck parking facilities network, reflecting a growing interest in logistic solutions.
+in fintech news, stripe announced a significant overhaul, decoupling payments from its broader financial suite and flirting with cryptocurrency payments, to mixed reactions. brazil cheers as fintech unicorn qi tech emerges, highlighting a vibrant startup scene in the region. meanwhile, openai finds itself grappling with privacy concerns in europe as noyb, a privacy rights nonprofit, files a complaint against chatgpt for generating and spreading misinformation about individuals, stirring up gdpr compliance anxieties.
 
-on the tech front, the national highway traffic safety administration closes its investigation into tesla’s autopilot with sharp critiques, highlighting the need for more robust driver engagement systems amidst escalating automation capabilities. in parallel, stark realities hit the electric vehicle and tech industry with faraday future facing potential nasdaq delisting and fisker's financial woes, underscoring the volatility in the ev market.
+the tech job market reels from over 75,000 layoffs in 2024 alone, shaking the very foundation of what was once considered the dream job sector. major players alphabet and microsoft report strong earnings but this does little to quell the unease permeating big tech's workforce. as confidence wanes, upcoming tech talents are pivoting towards more stable industries, reshaping the landscape of career aspirations in tech.
 
-as we look to the skies, amazon halts its prime air drone delivery operations in california, signaling a recalibration in its futuristic delivery methods. joby aviation, on the flip side, strides forward, signing a promising agreement to kickstart an electric air taxi service ecosystem in abu dhabi.
+meta faces backlash from advertisers over its ai-driven ad tools, which have reportedly been misfiring, leading to significant financial losses for small businesses. the automated system, advantage plus shopping campaigns, promised to be a "set it and forget it" solution but has left marketers scrambling as budgets are blown through with little to no return on investment. meta's response has been tepid, leaving many to question the viability of automated ad strategies moving forward.
 
-diving deep into in-car technology, elektrobit reveals an automotive operating system certified for safety applications, a significant stride towards software-defined vehicles. amidst these waves of innovation and challenge, the tech industry continues its relentless march forward, promising a future shaped by automation, sustainability, and new mobility solutions.
-
-that's all from the ai desk today. stay tuned for more updates tomorrow
+that's all for today. we'll see you back here tomorrow
 
 Polished Script:
-i'm wall-e, and this is your tech briefing. in tesla's latest earnings call, the electric vehicle giant reported a substantial 55% decline in profits year-over-year, citing challenges with an aging vehicle lineup. despite the financial hit, ceo elon musk is looking ahead, pledging to introduce new, more affordable electric vehicles by 2025. musk cites automation and innovation as cornerstones of tesla's strategy moving forward. in contrast, the future looks uncertain for fisker, with the company hinting at potential layoffs and even bankruptcy in the near future.
+i'm wall-e, welcoming you to today’s tech briefing. tesla’s recent financial disclosures reveal a significant drop in profits, spotlighting a critical juncture for elon musk’s electric vehicle powerhouse. amidst escalating battles over autonomous vehicle deployment in californian cities, tesla’s focus turns towards unveiling cost-effective ev models to rejuvenate its aging lineup. the company’s commitment to rolling out multiple affordable evs by 2025 is under heavy scrutiny by industry analysts, questioning the feasibility of such ambitious plans.
 
-switching gears to autonomous vehicles, cities across california are pushing for greater legislative power to regulate these self-driving machines. this move could significantly reshape the landscape of autonomous vehicle operations.
+in the fintech realm, stripe is embracing transformation, separating its payment processing from its comprehensive financial solutions suite. this strategic shift includes a foray into cryptocurrency transactions, eliciting a polarized response from the sector. meanwhile, brazil's fintech ecosystem is strengthened with qi tech’s emergence as a unicorn, marking a significant milestone for the vibrant startup culture in latin america.
 
-in the venture space, chemix has nailed down a hefty $20 million in series a funding, with plans to speed up the development of next-generation ev batteries. not far behind, lanzajet has caught the eye of microsoft’s climate innovation fund, aiming to close a crucial $100 million funding round soon. meanwhile, outpost is expanding its semi-truck parking network with a fresh $12.5 million in funding, highlighting a growing focus on logistics solutions.
+privacy concerns in europe have placed openai in a challenging position, as noyb— a renowned privacy rights organization— lodges a formal complaint against chatgpt. the accusation stems from the ai’s propensity to create and disseminate misinformation about individuals, raising alarms over gdpr compliance.
 
-on the regulatory front, the national highway traffic safety administration has concluded its investigation into tesla’s autopilot system with a series of criticisms. the agency is calling for more effective systems to ensure driver engagement amid increasing automation capabilities. meanwhile, the ev and tech sectors face ongoing challenges, with faraday future at risk of being delisted from nasdaq and fisker battling financial difficulties, underscoring the volatile nature of the ev market.
+the technology job market is facing unprecedented instability, with over 75,000 layoffs recorded in 2024 alone. this upheaval has cast a shadow over what was once perceived as a dream career domain. despite alphabet and microsoft showcasing robust earnings, the prevailing uncertainty fails to pacify the apprehensions clouding tech’s workforce landscape. this shifting dynamic is prompting emerging tech talents to reconsider their career trajectories, favoring stability over the volatile tech sector.
 
-looking to the skies, amazon is pausing its prime air drone delivery operations in california, a move that suggests a reevaluation of its delivery strategy. on a brighter note, joby aviation is making strides with a new agreement to establish an electric air taxi service ecosystem in abu dhabi.
+on the advertising front, meta is facing criticism due to the erratic performance of its ai-driven advertising tools. the advantage plus shopping campaigns, initially touted as a hands-off, reliable marketing solution, are now under fire for depleting budgets without delivering expected returns. this has left marketers and small businesses in distress, casting doubts on the reliability of automated advertising strategies.
 
-in the realm of automotive technology, elektrobit has unveiled a safety-certified operating system for vehicles, marking a significant step toward the future of software-defined vehicles.
-
-amidst these waves of innovation and challenge, the tech industry continues its relentless march forward, with the promise of a future shaped by automation, sustainability, and groundbreaking mobility solutions.
-
-that wraps up today's tech briefing. stay tuned for more updates tomorrow
+stay tuned for more updates in the tech world. we’ll be back with more insights tomorrow
 
 Podcast Title:
-EP-8 Tesla's Profit Plunge & Future Evs 📉🚘, Autonomous Vehicle Regulation Battles 🤖🚦, Breakthroughs in Ev Battery Tech & Funding Surge 💡💰
+EP-8 Tesla's Profits Dip Amid Ev Challenges 🚗, Stripe's Fintech Evolution 💳, Chatgpt Faces Privacy Backlash 🔒
 
 Podcast Description:
-welcome to your tech briefing with wall-e, a concise dive into the latest in the world of technology, electric vehicles, and beyond. in this episode, we navigate through a landscape of innovation, challenge, and change. here's what we discuss:
+description:
 
-- tesla's recent earnings report reveals a 55% decline in profits year-over-year, attributed to an aging vehicle lineup. elon musk responds with plans for new, affordable electric vehicles by 2025.
-- the uncertain future of fisker, facing potential layoffs and bankruptcy.
-- efforts in california to gain more control over the regulation of autonomous vehicles.
-- investment highlights including chemix's $20 million series a for next-gen ev batteries, lanzajet nearing a $100 million funding milestone backed by microsoft, and outpost's expansion in logistics solutions with $12.5 million in new funding.
-- criticism from the national highway traffic safety administration on tesla's autopilot system, urging more effective systems for ensuring driver engagement.
-- the volatile ev market showcases its risks with faraday future's delisting threats and fisker's financial hardships.
-- in delivery innovation, amazon reevaluates its prime air drone delivery in california, while joby aviation gears up for an electric air taxi service in abu dhabi.
-- a notable advancement in automotive technology from elektrobit, introducing a safety-certified operating system for vehicles.
+welcome to today's tech briefing, hosted by wall-e. dive deep into the latest trends, controversies, and insights in the tech industry, from automotive revolutions to the evolving job market. in today's episode:
 
-join us for a journey through the evolving world of technology, exploring the intersection of automation, sustainability, and mobility solutions. stay tuned for tomorrow's briefing for more tech insights
+- tesla’s financial downturn highlights challenges in the ev sector, including efforts to introduce cost-effective models amid competition and analyst skepticism.
+- stripe’s strategic transformation within fintech, my disaggregating its services and venturing into cryptocurrency, amidst a backdrop of brazil's fintech success with qi tech becoming a unicorn.
+- openai faces privacy backlash in europe as noyb files a complaint against chatgpt for potential gdpr violations, underscoring ai’s intricate relationship with misinformation.
+- over 75,000 layoffs rock the technology job market in 2024, bringing to light the sector's instability and the changing attitudes of tech talents towards their careers.
+- meta’s ai-driven advertising tools come under scrutiny for not delivering on promises, affecting marketers and small businesses, and raising questions about the efficiency of automated advertising strategies.
+
+join us for a comprehensive look at these developments, aimed at keeping you informed and ahead in the technology curve. tune in tomorrow for more insights from the tech world
 
 Polished Script (Spanish):
-soy wall-e, y esto es tu resumen de noticias tecnológicas en el estilo de ai briefing. tesla ha visto caer sus beneficios, mientras que fisker se ha estancado, y las ciudades de california luchan por el control de los vehículos autónomos. esta semana, las ganancias de tesla se convirtieron en el centro de atención, y sí, fue bastante impactante. un montón de lo mismo que hemos visto antes, pero en un empaque ligeramente diferente. tesla, que ha disfrutado de rentabilidad desde el 2020, enfrenta una presión descendente en sus resultados financieros, con una caída del 55% en sus ganancias año tras año.
+soy wall-e, y esta es tu sesión informativa de ai briefing. en las noticias de hoy, tesla ve caer sus ganancias mientras fisker se estanca, y las ciudades de california luchan por el control de los vehículos autónomos. mientras tanto, stripe anuncia grandes cambios y brasil da la bienvenida a su nuevo unicornio fintech. en otra parte, openai enfrenta otra queja de privacidad en la unión europea debido al problema de "alucinación" de chatgpt. además, trabajar para big tech ha perdido su estatus de "trabajo soñado". y en una historia relacionada con la publicidad, la herramienta de anuncios ia de meta está fallando y consumiendo rápidamente el presupuesto de los anunciantes.
 
-el ceo de tesla, elon musk, necesita generar nuevas fuentes de ingresos rápidamente. musk presentó un plan opaco con pocos detalles para lanzar varios evs más económicos en 2025. también prometió niveles mayores de capacidad de conducción automatizada en su software de asistencia al conductor, fsd, y un robotaxi (otra vez). los accionistas respondieron con entusiasmo, ya que el futuro es ahora, o tal vez el próximo año. ok, tal vez al final de la década. de cualquier manera, es emocionante.
+tesla reportó una caída del 55% en las ganancias año tras año, provocando al ceo elon musk a buscar nuevas fuentes de ingresos con urgencia. stripe, por otro lado, ha decidido desvincular los pagos del resto de su pila de servicios financieros y volver a permitir pagos en criptomonedas después de seis años. mientras tanto, qi tech, un startup de fintech brasileño, ha alcanzado el estatus de unicornio después de una ronda de inversión liderada por general atlantic.
 
-valeo cto geoffrey bouquot abandona la empresa después de ocho años. valeo, un proveedor de piezas de automóviles francés, ha incursionado en el sector de ev y la conducción automatizada. sin embargo, este último trimestre reflejó lo que está sucediendo en el resto del sector. las ventas de su sistema de electrificación de alto voltaje cayeron casi a la mitad.
+en europa, openai enfrenta una nueva queja de privacidad en relación con chatgpt y su tendencia a generar información incorrecta sobre individuos, lo que podría chocar con el gdpr. de vuelta en los estados unidos, más de 263,000 despidos se han registrado en el sector tecnológico solo en 2023, cambiando la percepción de los trabajos en big tech de ser empleos de ensueño. finalmente, las empresas pequeñas expresan frustración con las herramientas de anuncios automatizadas de meta, las cuales han estado gastando presupuestos rápidamente sin entregar ventas, llevando a algunos a cuestionar la eficacia de la automatización en publicidad online.
 
-entre tanto, la administración nacional de tráfico y seguridad vial cerró una larga investigación sobre el sistema de asistencia al conductor autopilot de tesla después de revisar cientos de accidentes que involucraban su mal uso.
-
-en el ámbito de ev, fisker planea más despidos menos de dos meses después de reducir el 15% de su fuerza laboral. la compañía espera buscar protección por bancarrota en los próximos 30 días si no puede conseguir el dinero necesario.
-
-por último, meta lucha con sus herramientas de publicidad ai, las cuales han estado consumiendo presupuestos rápidamente y fallando en generar ventas.
-
-eso es todo por hoy. nos vemos aquí mañana
+eso es todo por hoy. nos vemos de vuelta aquí mañana
 
 Podcast Title (Spanish):
-EP-8 Tesla Tropezando 📉, el Futuro Autónomo 🚗💨, Meta y Sus Desafíos de Ia 🤖💰
+EP-8 Tesla en Búsqueda de Ingresos 📉, Openai y la Privacidad en Europa 🇪🇺, el Ascenso de Fintech en Brasil 🚀
 
 Podcast Description (Spanish):
-descripción:  
-bienvenido a "tu resumen de noticias tecnológicas", el podcast presentado por soy wall-e que te trae lo último en el mundo de la tecnología con un enfoque especial en la inteligencia artificial. en esta edición, exploramos los desafíos y desarrollos más recientes de gigantes de la industria como tesla, fisker, y las contiendas legales en california sobre vehículos autónomos. también profundizamos en los cambios estratégicos y financieros dentro de empresas clave del sector automotriz y tecnológico.
+bienvenido a tu sesión informativa de ai briefing con soy wall-e. en este podcast exploramos las últimas noticias y tendencias en el mundo de la tecnología y la inteligencia artificial. hoy, discutiremos una variedad de temas importantes que están dando forma al futuro de la industria:
 
-- la impactante caída del 55% año tras año en las ganancias de tesla y la presión para encontrar nuevas fuentes de ingresos.
-- los planes de elon musk para lanzar vehículos eléctricos (evs) más económicos y promesas de mayor capacidad de conducción automatizada para 2025.
-- la salida del cto de valeo, geoffrey bouquot, y la disminución en las ventas de sistemas de electrificación de alto voltaje.
-- el cierre de una larga investigación de la administración nacional de tráfico y seguridad vial sobre el sistema autopilot de tesla tras revisar cientos de accidentes.
-- los desafíos financieros de fisker y sus planes de despidos y posible búsqueda de protección por bancarrota.
-- los problemas que enfrenta meta con sus herramientas de publicidad ai que consumen presupuestos rápidamente sin generar ventas.
+- tesla ve una significativa caída en sus ganancias, un 55% año tras año, mientras que elon musk busca nuevas fuentes de ingresos.
+- la lucha de ciudades californianas por el control de los vehículos autónomos.
+- stripe anuncia importantes cambios y reabre sus puertas a las criptomonedas después de seis años.
+- brasil celebra la llegada de un nuevo unicornio fintech: qi tech, tras una exitosa ronda de financiación.
+- openai enfrenta quejas en europa por problemas de privacidad con chatgpt, específicamente su tendencia a generar datos incorrectos.
+- la industria tecnológica ve un cambio en la percepción de los "trabajos de ensueño", con más de 263,000 despidos en 2023.
+- pequeñas empresas reportan problemas con la herramienta de anuncios automatizados de meta que consume rápidamente los presupuestos sin generar ventas.
 
-únete a nosotros para mantenerte informado sobre las últimas tendencias y discusiones en el apasionante mundo de la tecnología. nos vemos aquí mañana
+únete a nosotros mientras desglosamos estas noticias y discutimos cómo pueden afectar el panorama tecnológico y empresarial global. nos vemos de vuelta aquí mañana para otra sesión informativa
 
 Polished Script (Chinese):
-我是wall-e，欢迎收看ai简报。特斯拉盈利下滑，菲斯克陷入困境，加州城市争夺自动驾驶控制权。特斯拉本周公布了财报——确实是很多。你可能会问，什么事这么多？就是我们以前见过的那种承诺和手势，只不过这次包装得稍微不同一些。这次的局面让我想起了2018年、特斯拉尚未盈利的时期。
-
-说得清楚点，自2020年以来，特斯拉一直盈利。但它正面临着对其收入底线的下行压力——公司的利润同比下降了55%——以及其最高销量车型的老化。特斯拉首席执行官埃隆·马斯克需要尽快产生新的收入来源。公司不能等两年或更久才推出一个新平台来交付一款低于25,000美元的电动汽车。
-
-因此，马斯克调整了那个计划，根据我们目前所知的信息不多。在第一季度收益电话会议上，马斯克提出了一个启动多款更便宜电动汽车的模糊计划，可能在2025年（甚至可能在2024年末）。
-
-马斯克明白，市场过去奖励他因为是一个前瞻性思考者和创新者——即便这些计划没有实现。因此，马斯克也拉动了那个未来主义者的杠杆，承诺在其fsd驾驶辅助软件中实现更高水平的自动驾驶能力和一个机器人出租车（再次）。不要忘记，马斯克在公司的自主日活动上宣布，特斯拉将在次年启动一个机器人出租车网络。自2016年以来，马斯克一直在谈论特斯拉网络及其允许车主将他们的车辆放在叫车应用程序上的雄心。
-
-近期，因为未来现在或许是明年。好吧，也许是这个十年的末尾？不管怎样，这很令人兴奋。
-
-在一个不相关的注释中，最近离职的高知名度特斯拉高管drew baglino出售了价值1.8147亿美元、大约114万股的他的股票。文件描述这是一个股票期权的行使。
-
-小鸟告诉我，valeo cto geoffrey bouquot在公司工作了八年后即将离职。对于那些不熟悉的人，valeo是一家法国汽车零部件供应商，已经进入了电动汽车和自动驾驶领域。公司甚至拥有一个致力于汽车应用的人工智能研究中心。
-
-meta的“设定后忽略”的ai广告工具出现了故障，耗费了大量资金。在情人节那天，meta的广告平台开始脱轨。费城市场营销机构1-800-d2c的联合创始人rc williams为两个不同的客户设置了一个meta的自动化广告工具来运行广告活动。但当他那天检查平台时，发现meta在几个小时内就消耗了两个客户约75%的日常广告预算。
-
-mongodb首席执行官dev ittycheria谈论了ai的炒作和数据库进化，同时他在mongodb担任首席执行官的时间已经超过了10年。自从ittycheria于2014年9月接任mongodb总裁兼首席执行官以来，发生了很多事情。ittycheria带领mongodb进入云计算，引导其通过首次公开募股，监督其从开源到商业的转变，启动了一个风险投资部门，并将客户基础从几百增加到接近50,000。
-
-尽管大型科技公司如alphabet和microsoft的盈利报告惊人，但科技行业的裁员仍在继续。layoffs.fyi，一个监测科技行业裁员情况的平台，记录了2023年单独超过263,000个工作岗位的流失。截至4月，2024年迄今为止，该行业已经有超过75,000个工作岗位流失。
-
-stripe宣布了一系列重大产品变更，巴西最新的金融科技独角兽以及一家初创公司关闭的故事。这周，我们将会关注stripe的重大产品公告，一家巴西金融科技初创公司估值上涨，还有更多！
-
-这就是今天的全部内容，我们明天再见。
+我是wall-e，欢迎来到ai简讯。特斯拉的利润下滑，菲斯克停滞不前，加州城市争夺自动驾驶车辆的控制权。即便在alphabet和microsoft等巨头公布了爆炸性的收益报告后，裁员浪潮仍在科技行业中蔓延。据layoffs.fyi平台记录，仅2023年就有超过263,000个工作岗位被裁。截至2024年4月，今年迄今为止已有超过75,000个工作岗位被裁。stripe宣布将支付业务与其余金融服务解耦，这是一个重大的变动。而openai面临着又一项在欧盟的隐私投诉，此次投诉针对的是其人工智能聊天机器人chatgpt产生的关于个人的错误信息。在广告方面，meta的“一键设置并忘记”ai广告工具出现了故障，导致广告费用被迅速耗尽，但收益几乎为零。所有这些新闻均凸显了我们正处在一个快速变化的科技环境中。明天我们再会。
 
 Podcast Title (Chinese):
-EP-8 特斯拉财报揭盈利下滑📉, 自动驾驶竞赛加速🚗, meta广告工具失控💸
+EP-8 特斯拉盈利下滑📉，科技行业裁员潮🔍，stripe金融变革💳 - ai简讯精选
 
 Podcast Description (Chinese):
-欢迎来到ai简报，我是您的主持人wall-e。在这个节目中，我们深入探讨科技界的最新动态，特别关注人工智能、自动驾驶技术、以及科技企业的盈利情况。以下是我们本期节目的内容要点：
+description:
+欢迎收听ai简讯，我是您的主持人wall-e。在这个为您带来最新科技新闻的播客中，我们涵盖了多个重要的科技行业动态，包括公司业绩、裁员潮、创新变动和法律挑战。以下为本期内容概览：
 
-- 特斯拉财报揭示，利润同比下降55%，面临收入底线的下行压力，以及旗舰车型老化问题。埃隆·马斯克提出在2024年末或2025年推出多款更便宜的电动汽车的计划。
-- 特斯拉计划提升其fsd驾驶辅助软件的自动驾驶能力，并承诺将推出一个机器人出租车网络。
-- valeo的cto geoffrey bouquot即将离职，valeo是一家进入电动汽车和自动驾驶领域的法国汽车零部件供应商。
-- meta的ai广告工具出现故障，导致资金大量流失。
-- mongodb首席执行官dev ittycheria谈论ai的炒作与数据库的进化过程，mongodb在云计算、ipo、从开源到商业的转变方面取得了显著成就。
-- 尽管大型科技公司的盈利报告令人震惊，但科技领域的裁员状况仍在持续，2023年和2024年至今的裁员人数超过338,000人。
-- stripe宣布一系列重大产品变更，一个巴西金融科技初创公司的估值上涨，以及一家初创公司的关闭故事。
+- 特斯拉利润下滑，同时菲斯克处于停滞状态。
+- 加州城市间展开竞争，以争夺自动驾驶车辆的控制权。
+- 即便在alphabet和microsoft等科技巨头公布强劲财报后，科技行业的裁员潮持续不断。2023年迄今已有超过263,000个岗位被裁，而2024年4月，裁员数已达75,000。
+- stripe宣布将其支付业务与其他金融服务分离，标志着其战略方向上的重大变化。
+- openai面临欧盟的新一轮隐私投诉，此次投诉涉及chatgpt生成的个人错误信息。
+- meta的ai广告工具出现故障，导致广告预算被迅速耗尽而收益微乎其微。
 
-确保收听ai简报，了解科技世界的最新动态和深刻洞察。我们明天再会！
+我们处在一个充满挑战与机遇的快速变化科技环境中。敬请期待我们的下一期播客，了解更多最新的科技趋势和新闻。

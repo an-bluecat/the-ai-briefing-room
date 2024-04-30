@@ -4,35 +4,10 @@ import datetime
 import os
 import requests
 from dotenv import load_dotenv
+from utils import get_day_of_week, spanish_title_case, english_title_case
 
 load_dotenv()
 
+print(get_day_of_week(datetime.date.today().strftime('%Y-%m-%d')))  
 
-azure_api_key = os.getenv('AZURE_OPENAI_API_KEY')
-azure_endpoint = os.getenv('AZURE_OPENAI_ENDPOINT')
 
-# Your deployment name
-deployment_name = 'podcast_tts'
-
-# URL for the request
-url = f"{azure_endpoint}/openai/deployments/{deployment_name}/audio/speech?api-version=2024-02-15-preview"
-
-# Headers and data payload
-headers = {
-    "api-key": azure_api_key,
-    "Content-Type": "application/json"
-}
-data = {
-    "model": "tts-1-hd",
-    "input": "I'm excited to try text to speech.",
-    "voice": "alloy"
-}
-
-# Sending POST request
-response = requests.post(url, headers=headers, json=data)
-
-# Saving the response content to a file
-with open('speech.mp3', 'wb') as file:
-    file.write(response.content)
-
-print("Audio file saved as 'speech.mp3'")

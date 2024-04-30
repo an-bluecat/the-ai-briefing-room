@@ -90,7 +90,7 @@ def classify_titles(titles):
                 {"role": "user", "content": prompt_text}
             ]
         )
-        print(response)
+       # print(response)
         output = response.choices[0].message.content
         return output
     except Exception as e:
