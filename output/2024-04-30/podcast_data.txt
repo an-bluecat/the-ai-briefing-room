@@ -1,0 +1,329 @@
+
+Titles:
+Beats announces Solo 4 headphones and $79.99 Solo Buds
+The Rabbit R1’s first software update addresses its dismal battery life
+Turns out the Rabbit R1 was just an Android app all along
+iOS 17.5 beta lets you keep Find My on during iPhone repairs
+Apple’s latest AirPods Pro with USB-C have returned to their all-time low
+Fubo drops Discovery networks and blasts WBD for abusing its power
+Google is building a fart button into Android
+New York Daily News, Chicago Tribune, and others sue OpenAI and Microsoft
+Google fired a software engineer over an anti-war demonstration — he says he wasn’t even protesting
+Tesla layoffs hit Supercharger team just as it’s poised to take over EV charging
+Binance founder’s sentencing hearing
+Amazon expands enterprise AI play with wider availability of its Q chatbot
+Binance founder Changpeng Zhao sentenced to four months in prison
+CBP is interrogating TikTok employees
+Kobo and iFixit partner for OEM parts and repair guides
+If your iPhone alarm has gone quiet, Apple says it’s working on a fix
+Pixel 8A leak reveals $499 starting price
+Amazon profit more than triples, topping Wall Street expectations
+Binance's Zhao set to keep growing $33 billion fortune even in prison
+Amazon cost cuts drive operating margin into double digits for first time
+Tesla shares drop nearly 6% after Musk cuts about 500 jobs in Supercharger team
+Super Micro pushes up full-year revenue forecast on strong AI demand
+Pinterest shares soar 18% on earnings beat, strong revenue growth
+AMD says it will sell $4 billion in AI chips; stock drops on in-line forecast
+Amazon's cloud margin widens on accelerating revenue growth
+Amazon’s advertising revenue jumps 24% in first quarter
+Doctors tap personal savings to pay costs from Change Healthcare cyberattack
+Binance founder Changpeng Zhao sentenced to 4 months in prison after plea deal
+Eight newspaper publishers sue Microsoft and OpenAI over copyright infringement
+Meta hit with major EU probe into disinformation handling ahead of European elections
+ISS endorses most of activist Ancora's nominees for Norfolk Southern board
+Musk lays off Tesla senior executives, The Information reports
+Binance founder to find out if prison is coming — what lawyers are expecting
+Microsoft to invest $1.7 billion into AI infrastructure in Indonesia
+Europe may need to impose tariffs of up to 55% to curb Chinese EV imports: report
+Midi is building a digital platform for an oft-overlooked area of women’s health
+Razer hit with $1.1M FTC fine over glowing ‘N95’ mask COVID claims
+With $175M in new funding, Island is putting the browser at the center of enterprise security
+Screenshots suggest TikTok is circumventing Apple App Store commissions
+Twitch’s TikTok-like discovery feed is rolling out to all users
+Amazon CodeWhisperer is now called Q Developer and is expanding its functions
+EU watchdog questions secrecy around lawmakers’ encryption-breaking CSAM scanning proposal
+How European disability tech startups are leveraging AI
+Elon Musk guts Tesla’s charging team after winning over major automakers
+Bill to strengthen national tipline for missing and exploited children heads to Biden’s desk
+Ring the alarm bells, the iPhone alarm isn’t working
+Samsung’s operating profit soars 930% as AI tailwinds drive demand for memory chips
+TechCrunch Minute: OpenAI’s media deal rush continues with FT deal
+Productive solar technologies draw investors as global off-grid solar sector funding slumps
+Shinkei’s humane, quality-preserving fish-harvesting tech could upend the seafood industry
+Sam’s Club’s AI-powered exit tech reaches 20% of stores
+Seam wants to make customer data accessible to every business user
+US fines telcos $200M for sharing customer location data without consent
+Notable Capital’s Hans Tung on why founders need to play the long game
+The Browser Company releases Arc for Windows
+Elon Musk guts Tesla’s charging team after winning over major automakers
+Razer hit with $1.1M FTC fine over glowing ‘N95’ mask COVID claims
+Bumble’s Opening Move feature takes the pressure off women to come up with a new message every time
+Change Healthcare hackers broke in using stolen credentials — and no MFA, says UHG CEO
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+Midi is building a digital platform for an oft-overlooked area of women’s health
+Razer hit with $1.1M FTC fine over glowing ‘N95’ mask COVID claims
+With $175M in new funding, Island is putting the browser at the center of enterprise security
+Screenshots suggest TikTok is circumventing Apple App Store commissions
+Twitch’s TikTok-like discovery feed is rolling out to all users
+Amazon CodeWhisperer is now called Q Developer and is expanding its functions
+EU watchdog questions secrecy around lawmakers’ encryption-breaking CSAM scanning proposal
+How European disability tech startups are leveraging AI
+Elon Musk guts Tesla’s charging team after winning over major automakers
+Bill to strengthen national tipline for missing and exploited children heads to Biden’s desk
+Ring the alarm bells, the iPhone alarm isn’t working
+Samsung’s operating profit soars 930% as AI tailwinds drive demand for memory chips
+TechCrunch Minute: OpenAI’s media deal rush continues with FT deal
+Productive solar technologies draw investors as global off-grid solar sector funding slumps
+Shinkei’s humane, quality-preserving fish-harvesting tech could upend the seafood industry
+Sam’s Club’s AI-powered exit tech reaches 20% of stores
+Seam wants to make customer data accessible to every business user
+US fines telcos $200M for sharing customer location data without consent
+Notable Capital’s Hans Tung on why founders need to play the long game
+The Browser Company releases Arc for Windows
+Elon Musk guts Tesla’s charging team after winning over major automakers
+Razer hit with $1.1M FTC fine over glowing ‘N95’ mask COVID claims
+Bumble’s Opening Move feature takes the pressure off women to come up with a new message every time
+Change Healthcare hackers broke in using stolen credentials — and no MFA, says UHG CEO
+
+The Verge
+Beats announces Solo 4 headphones and $79.99 Solo Buds
+The Rabbit R1’s first software update addresses its dismal battery life
+Turns out the Rabbit R1 was just an Android app all along
+iOS 17.5 beta lets you keep Find My on during iPhone repairs
+Apple’s latest AirPods Pro with USB-C have returned to their all-time low
+Fubo drops Discovery networks and blasts WBD for abusing its power
+Google is building a fart button into Android
+New York Daily News, Chicago Tribune, and others sue OpenAI and Microsoft
+Google fired a software engineer over an anti-war demonstration — he says he wasn’t even protesting
+Tesla layoffs hit Supercharger team just as it’s poised to take over EV charging
+Binance founder’s sentencing hearing
+Amazon expands enterprise AI play with wider availability of its Q chatbot
+Binance founder Changpeng Zhao sentenced to four months in prison
+CBP is interrogating TikTok employees
+Kobo and iFixit partner for OEM parts and repair guides
+If your iPhone alarm has gone quiet, Apple says it’s working on a fix
+Pixel 8A leak reveals $499 starting price
+
+CNBC Tech
+Amazon profit more than triples, topping Wall Street expectations
+Binance's Zhao set to keep growing $33 billion fortune even in prison
+Amazon cost cuts drive operating margin into double digits for first time
+Tesla shares drop nearly 6% after Musk cuts about 500 jobs in Supercharger team
+Super Micro pushes up full-year revenue forecast on strong AI demand
+Pinterest shares soar 18% on earnings beat, strong revenue growth
+AMD says it will sell $4 billion in AI chips; stock drops on in-line forecast
+Amazon's cloud margin widens on accelerating revenue growth
+Amazon’s advertising revenue jumps 24% in first quarter
+Doctors tap personal savings to pay costs from Change Healthcare cyberattack
+Binance founder Changpeng Zhao sentenced to 4 months in prison after plea deal
+Eight newspaper publishers sue Microsoft and OpenAI over copyright infringement
+Meta hit with major EU probe into disinformation handling ahead of European elections
+ISS endorses most of activist Ancora's nominees for Norfolk Southern board
+Musk lays off Tesla senior executives, The Information reports
+Binance founder to find out if prison is coming — what lawyers are expecting
+Microsoft to invest $1.7 billion into AI infrastructure in Indonesia
+Europe may need to impose tariffs of up to 55% to curb Chinese EV imports: report
+
+Top News:
+amazon profit more than triples, topping wall street expectations
+tesla shares drop nearly 6% after musk cuts about 500 jobs in supercharger team
+binance founder changpeng zhao sentenced to four months in prison
+amd says it will sell $4 billion in ai chips; stock drops on in-line forecast
+meta hit with major eu probe into disinformation handling ahead of european elections
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E and Tuesday April 30), and replace CNBC techcheck briefing to 'AI briefing' 
+ "title0:
+Amazon (AMZN) Q1 earnings report 2024
+description0:
+Amazon reported better-than-expected earnings and revenue for the first quarter, driven by growth in advertising and cloud computing. The stock ticked higher in extended trading.
+Here's how the company did:
+Earnings per share: 98 cents vs. 83 cents expected by LSEG
+98 cents vs. 83 cents expected by LSEG Revenue: $143.3 billion vs. $142.5 billion expected by LSEG
+Wall Street is also looking at these key numbers:
+Amazon Web Services: $25 billion vs. $24.5 billion in revenue, according to StreetAccount
+$25 billion vs. $24.5 billion in revenue, according to StreetAccount Advertising: $11.8 billion vs. 11.7 billion in revenue, according to StreetAccount
+Operating income soared more than 200% in the period to $15.3 billion, far outpacing revenue growth, the latest sign that the company's cost-cutting measures and focus on efficiency is bolstering its bottom line. AWS accounted for 62% of total operating profit. Net income also more than tripled to $10.4 billion, or 98 cents a share, from $3.17 billion, or 31 cents a share, a year ago.
+Sales increased 13% from $127.4 billion a year earlier.
+Amazon expects a continued jump in profitability for the second quarter but at a more measured pace. The company said operating income will be $10 billion to $14 billion, up from $7.7 billion a year earlier.
+Revenue in the current quarter is expected to be in the $144 billion to $149 billion range, Amazon said, representing growth of 7% to 11%. Analysts were expecting growth of 12% to $150.1 billion, according to LSEG.
+Sales at AWS accelerated 17% in the first quarter to $25 billion, topping Wall Street's forecast for sales growth of 12% to $24.5 billion. For the past year, growth in AWS has slowed, as businesses trimmed their cloud spend. But Amazon executives have said they're seeing cost optimizations taper off, and they've indicated that demand for generative artificial intelligence can be a boon for its cloud business.
+Amazon's earnings growth has been driven in part by widespread cost-cutting, tweaks to its fulfillment operations, and the stabilizing of cloud spending. CEO Andy Jassy has become more disciplined in the company's spending, while growing profitable services like advertising, cloud computing, Prime memberships and its third-party marketplace.
+The company has laid off more than 27,000 employees since late 2022, with the cuts bleeding into 2024. During the first quarter, Amazon let go hundreds of staffers in its health and AWS businesses.
+Amazon's advertising unit saw sales surge 24%, just ahead of consensus estimates. It's the first report since Amazon started running ads in Prime Video, a move analysts predict could generate significant revenue over time.
+The company's ad business, which grew faster than retail or cloud computing, has become an increasingly important profit driver for Amazon and has emerged as a main player in online advertising.
+That market overall started growing again after a brutal 2022, when brands reeled in spending to cope with inflation and rising interest rates. Meta , Snap and Google parent Alphabet all reported first-quarter results last week and showed better-than-expected revenue growth, which was primarily driven by improvements across their ad businesses.
+Revenue from third-party seller services, which includes commissions collected by Amazon, fulfillment, shipping fees and other charges, continued to surge. Sales in the unit grew 16% year over year to $34.5 billion.
+Amazon remains a standout among mega-cap internet companies in that it's yet to implement a quarterly dividend, even as cash and equivalents jumped to $73.9 billion in the quarter from $54.3 billion a year earlier. Meta announced its first dividend in February at 50 cents a share, and Alphabet followed, telling investors last week that it will start paying a dividend of 20 cents a share. Those companies also announced plans to buy back tens of billions of dollars in stock.
+This story is developing. Check back for updates.
+
+title1:
+Tesla shares drop after Musk cuts about 500 jobs in Supercharger team
+description1:
+Tesla shares fell nearly 6% on Tuesday following news that CEO Elon Musk was pressing ahead with more job cuts at Tesla , impacting an estimated 500 employees in its Supercharger team.
+The stock closed at $183.28 and is now down 26% for the year.
+According to The Information, Musk sent an email to managers at Tesla overnight announcing the departure of key executives, including Senior Director of EV Charging Rebecca Tinucci, and Director of Vehicle Programs Daniel Ho. In the email, Musk also expressed consternation that Tesla management hadn't thinned out the company's staff more promptly at his direction.
+Several employees whose roles were cut and one person who is still working at Tesla in California confirmed with CNBC the details of the ongoing reorganization, asking to remain unnamed to discuss sensitive issues. Other laid-off Tesla employees posted publicly about Tesla shrinking the Supercharger team.
+In cutting that group, Tesla revealed it's throttling the expansion of its Supercharger network in the U.S. The move comes after Tesla struck partnerships with Ford , GM and other industry players ensuring they would manufacture cars using the Tesla NACS (North American Charging Standard) for compatibility with Tesla charging stations, and allowing those companies' customers to use Tesla stations.
+The layoffs now underway are part of a massive cost-cutting measure by Tesla following a 9% drop in revenue in the first quarter this year, the steepest year-over-year decline since 2012. Profits were cut in half during the first three months of 2024 as Tesla discounted cars and issued incentives to spur demand.
+Current and former employees told CNBC that Tesla began laying off some employees as early as January, with the broader cuts picking up this month. They said some colleagues who thought their jobs were safe received termination notices on Friday and Tuesday.
+Tesla gave no warning to investors about a pullback in plans to build out charging infrastructure. Nor did the company give a heads up to some charging network partners, including small and medium-sized businesses that install and maintain EV charging equipment for Tesla at key locations around the United States.
+Andres Pinter, co-CEO of Supercharger network contractor Bullet EV, told CNBC, "My team woke up to a sharp kick in the pants this morning. Emails we sent to twenty or so different charger construction contacts were bounced with the same autoreply reading, 'This email address is no longer valid. Any future emails sent to this address will not be received.'"
+Pinter said he thinks "It will take years for the other charger networks to catch up," but Tesla abandoning a near-term plan to expand aggressively in the U.S. leaves room for other players.
+Musk wrote on X that "Tesla still plans to grow the Supercharger network, just at a slower pace for new locations and more focus on 100% uptime and expansion of existing locations."
+Tesla makes money from environmental credits and fees for charging sessions, and already operates about one in three public, electric vehicle charging stations in the U.S.
+Transportation has been responsible for 25% of carbon emissions from human activity globally, according to estimates by the non-profit International Council on Clean Transportation. While Musk has more recently talked up AI initiatives at Tesla, and its quest to develop self-driving technology, the company reiterated in its annual report out this week that its mission is to "accelerate the world's transition to sustainable energy.".
+The decline in Tesla's stock on Tuesday followed a 15% rally on Monday, the best trading day of the year. The rally came after news reports said a visit by Musk to China had yielded an important deal with Baidu for mapping tech that could power future self-driving software in the country for Tesla.
+Tesla has long promised but has not yet delivered autonomous vehicles.
+In a note to investors out this week, JL Warren Capital founder Junheng Li wrote that there are too many "missing critical details," to justify the gains on Monday. "We believe that the take rate and incremental revenue from the localized FSD– assuming the similar level of autonomous as TSLA's latest v12 – will be significantly lower in China than in the US."
+Xpeng, Nio and other EV makers currently offer level 2 systems that are given away to buyers as an incentive in China.
+WATCH: Tesla's tentative autonomous driving deal in China is not enough to make it 'magnificent' yet
+
+title2:
+Binance founder Changpeng Zhao sentenced to four months in prison
+description2:
+Binance founder Changpeng Zhao was sentenced to four months in prison for failing to establish adequate anti-money laundering protections. Zhao, once the head of the largest crypto exchange in the world, pleaded guilty in November 2023.
+Judge Richard Jones says that Zhao prioritized “Binance’s growth and profits over compliance with US laws and regulations.” While Jones doesn’t think Zhao is likely to reoffend, the scale of the crime is notable.
+Binance “violated US law on an unprecedented scale”
+Though Zhao is not as well-known as FTX fraudster Sam Bankman-Fried, he is a more important figure in the crypto world. The Chinese-Canadian entrepreneur founded Binance in 2017. Though he was required to step down as CEO of the exchange as part of his plea agreement, he is still the controlling shareholder of the company, which one person told Bloomberg was “a massive shitcoin casino.” Binance listed many more tokens than competitors such as Coinbase.
+Prosecutors requested three years of prison time, double the sentencing guideline of 18 months, because the “scope and ramifications of Zhao’s misconduct were massive,” they wrote in their sentencing memo. They also suggested that Zhao’s sentence should “reflect the significant harm to US national security caused by his criminal acts.”
+Binance allowed sanctions violations of more than $898 million, according to prosecutors, and “violated US law on an unprecedented scale.” Zhao and other Binance executives didn’t comply with US laws, including the Bank Secrecy Act (BSA), and didn’t adequately implement anti-money laundering efforts. As a result, Iranian customers were able to transact at least $1.1 million with US customers in violation of sanctions. Other sanctioned countries, such as Cuba and Syria, were able to transact as well.
+Zhao’s lawyers, in their own sentencing memo, said that Zhao deserved no jail time, as “no defendant in a remotely similar BSA case has ever been sentenced to incarceration.” Zhao traveled from his home in the UAE to enter his guilty plea. He has remained in the US “away from his home, partner, and young children for five and a half months,” his lawyers wrote. Besides, Binance has taken action to fix their anti-money laundering procedures, they wrote.
+In the crypto world, Zhao has long been known as a cowboy with a reputation for flouting US laws. In October 2022, Sam Bankman-Fried, CEO of rival exchange FTX, tweeted (and deleted) that he was “excited to see [Zhao] repping the industry in DC going forward! uh, he is still allowed to go to DC, right?” A week after that, Zhao tweeted he’d sell his holdings of FTX’s token in response to a blockbuster story in CoinDesk. Since Binance had been an early investor in FTX, that was a pretty sizable amount. “We won’t support people who lobby against other industry players behind their backs,” Zhao said.
+By publicly broadcasting his trade, Zhao began the run on FTX that eventually revealed the fraud at the exchange. Bankman-Fried was sentenced to 25 years in prison in March after being found guilty in a jury trial of seven counts of conspiracy and fraud charges.
+
+title3:
+AMD earnings report Q1 2024
+description3:
+Lisa Su, president and CEO of AMD, talks about the AMD EPYC processor during a keynote address at the 2019 CES in Las Vegas, Nevada, U.S., January 9, 2019.
+Advanced Micro Devices reported first-quarter earnings and sales on Tuesday that were slightly ahead of Wall Street expectations, and provided an in-line forecast for the current quarter.
+Shares dropped 7% in extended trading.
+Here's how it did versus LSEG consensus expectations for the quarter ended in March:
+Earnings per share : 62 cents adjusted versus 61 cents expected
+: 62 cents adjusted versus 61 cents expected Revenue: $5.47 billion vs. $5.46 billion expected.
+AMD said it expects about $5.7 billion in sales in the current quarter, in line with Wall Street estimates of the same approximate total. That would represent about 6% annual growth.
+The company reported net income of $123 million, or 7 cents per share, versus a net loss of $139 million, or 9 cents per share, during the year-earlier period. Revenue was up about 2% from a year earlier.
+AMD shares have risen 14% in 2024, so despite meeting forecast estimates and signaling growth in AI chip sales, Tuesday's results were not enough to prevent the stock from sliding.
+The chipmaker said its closely watched Data Center segment grew 80% year-over-year to $2.3 billion thanks to sales of its MI300 series AI chips, which compete with Nvidia's graphics processing units.
+CEO Lisa Su said Microsoft, Meta, and Oracle use AMD's MI300X. AMD said it had sold over $1 billion of the chips since it launched in the fourth quarter of 2023.
+AMD expects $4 billion in 2024 AI chip sales, up from a $3.5 billion forecast in January. For comparison, Nvidia, the biggest vendor of AI server chips, reported $18.4 billion in sales — mostly AI chips — in its data center segment alone for the January quarter, the most recent for which financial results are available.
+Su told investors on Tuesday that the company was working on new AI chips and successors to the current generation. "We're getting much closer to our top AI customers. They're actually giving us significant feedback on the road map," Su said.
+AMD also makes central processors that are often paired with advanced AI chips in servers. Su told analysts on a call that the company believed it had taken market share in the server CPU segment — likely from Intel . Su said that AMD sees "signs of improving demand" for its CPUs due to the AI server boom.
+AMD's weakest division was its gaming segment, which was down 48% year over year to $922 million, which the company said was due to lower chip sales for game consoles and PCs. AMD makes chips for Sony's PlayStation 5, for example. AMD's gaming sales trailed a StreetAccount estimate of $969 million.
+AMD's original business, processors for chips and PCs, is reported as client segment revenue. AMD reported $1.4 billion in first-quarter sales, an 85% annual increase, suggesting that last year's PC slump is over. AMD's PC processors can run artificial intelligence programs locally, which would allow it to power so-called "AI PCs" that many industry participants are banking on to drive new laptop and desktop sales.
+The company's embedded segment, made up of products acquired as part of the Xilinx acquisition in 2022, reported falling sales, dropping 46% year over year to $846 million, lagging Wall Street expectations of $942 million.
+
+title4:
+Meta hit with major EU disinformation probe ahead of elections
+description4:
+Mark Zuckerberg, CEO of Meta testifies before the Senate Judiciary Committee at the Dirksen Senate Office Building on January 31, 2024 in Washington, DC.
+Meta on Tuesday was hit by the European Commission — the executive body of the European Union — with a major investigation into its compliance with the EU's strict internet content rules.
+The commission said it is investigating Meta over concerns the company hasn't done enough to ensure effective combating of disinformation ahead of upcoming European Parliament elections.
+The European Parliament elections are due to take place on June 6-9.
+In the commission's statement Tuesday, it said it suspects Meta is incompliant with DSA (Digital Services Act) obligations regarding tackling deceptive advertisements, disinformation campaigns and coordinated inauthentic behavior in the EU.
+The commission also said Meta may have infringed the DSA by demoting political content in the recommendation systems of Instagram and Facebook, which it said may have violated transparency requirements.
+"We have a well-established process for identifying and mitigating risks on our platforms," a Meta spokesperson told CNBC via email.
+"We look forward to continuing our cooperation with the European Commission and providing them with further details of this work.""
+
+Response:
+
+Script:
+i'm wall-e, and this is your ai briefing for tuesday, april 30th. amazon has surpassed expectations in its q1 earnings, evidencing robust growth in advertising and cloud computing sectors. the surge in operating income, more than tripling net income at $10.4 billion, and significant sales growth from amazon web services highlight the effective cost-cutting measures and efficiency focus under ceo andy jassy's helm. despite substantial layoffs, amazon's advertising and third-party seller services continue to exhibit strong performance, propelling the company ahead in the competitive online advertising and cloud computing markets.
+
+turning to tesla, the company's shares took a hit, dropping nearly 6% after elon musk announced another round of job cuts, affecting around 500 employees in the supercharger team. this move indicates a scaling back on the expansion of its supercharger network in the u.s., raising concerns among investors and industry partners alike. despite tesla's reassurance of continued growth in the supercharger network, albeit at a slower pace, the cuts are part of a broader cost-cutting strategy amid falling revenues and profits.
+
+binance founder changpeng zhao faces a four-month prison sentence for failing to uphold anti-money laundering measures, marking a significant moment in the regulatory oversight of the crypto industry. the sentencing underscores the growing scrutiny and expectations of compliance in the rapidly evolving sector.
+
+amd's first-quarter earnings have slightly outpaced wall street expectations, with data center segment growth driven by sales of its ai chips. despite the positive performance, shares fell 7% in extended trading, reflecting the market's high expectations, particularly around ai chips and server growth. ceo lisa su's announcement of anticipated ai chip sales reaching $4 billion in 2024 signals confidence in the company's strategic direction amidst a competitive landscape.
+
+lastly, meta faces a major eu investigation over its compliance with internet content rules ahead of the european parliament elections. the european commission's probe into meta's efforts to combat disinformation and its content recommendation practices highlights the intensifying regulatory scrutiny on big tech firms to uphold high standards of information integrity and transparency.
+
+that's all for today. we'll see you back here tomorrow
+
+Polished Script:
+i'm wall-e, welcoming you to today's tech briefing for tuesday, april 30th. starting off with amazon, the tech giant impressively outperformed market anticipations in its first-quarter earnings, showcasing vigorous expansion within its advertising and cloud computing arenas. under the stewardship of ceo andy jassy, the company's operational income astonishingly surged, tripling net gains to $10.4 billion. key to this success has been a significant uptick in sales from amazon web services, alongside notable efficiencies and cost-reduction efforts. despite facing considerable layoffs, the pillars of advertising and third-party seller services remained resilient, thrusting amazon to the forefront of the highly competitive spheres of online advertising and cloud computing.
+
+shifting gears to tesla, the electric car titan observed a near 6% dip in its shares following elon musk's revelation of impending job cuts, impacting roughly 500 members of its supercharger team. this development signals a potential deceleration in the expansion of tesla’s supercharger network across the u.s., sparking investor and industry partner apprehensions. nevertheless, tesla maintains its commitment to grow the network, albeit at a moderated pace, attributing the job reductions to a wider strategic cost-minimization initiative amidst declining revenue and profits.
+
+in the realm of cryptocurrency, binance’s founder, changpeng zhao, finds himself grappling with a four-month prison sentence due to non-compliance with anti-money laundering protocols. this event marks a pivotal juncture in the regulatory surveillance over the cryptocurrency industry, emphasizing the escalating expectations for adherence to compliance within the rapidly maturing sector.
+
+turning our attention to amd, the semiconductor powerhouse has marginally exceeded wall street forecasts for its first-quarter earnings, owed largely to the robust growth of its data center segment propelled by elevated sales of its ai chips. despite the favorable outcome, amd shares declined 7% in post-market trading, a reflection of the market's lofty anticipations, particularly concerning ai chips and server growth prospects. ceo lisa su projects ai chip sales to hit the $4 billion mark by 2024, underscoring confidence in amd’s strategic pathway amidst a fiercely competitive landscape.
+
+lastly, meta finds itself under the microscope of a significant eu investigation concerning its adherence to internet content regulations in the lead-up to the european parliament elections. the european commission's inquiry into meta's actions against disinformation and its content recommendation protocols underscores an intensification in regulatory oversight on major tech corporations, pressing them to uphold superior standards of information integrity and transparency.
+
+and with that, we wrap up today’s tech briefing. looking forward to bringing you more updates tomorrow
+
+Podcast Title:
+EP-10 "amazon's Earnings Triumph 📈, Tesla's Charged Challenge ⚡, Binance Faces Compliance Heat 🔒"
+
+Podcast Description:
+welcome to our tech briefing podcast for tuesday, april 30th, where we dive into the latest happenings in the world of technology. here’s what’s on the agenda for today’s episode:
+
+- amazon's impressive first-quarter earnings: explore how amazon surprised the market with a triple in net gains to $10.4 billion, led by its advertising and cloud computing domains, under ceo andy jassy's leadership.
+- tesla's workforce adjustment: discuss how a 6% dip in tesla shares followed elon musk's announcement of job cuts affecting approximately 500 members of its supercharger team, impacting the expansion pace of tesla’s supercharger network.
+- binance regulatory woes: uncover the implications of binance founder changpeng zhao's four-month prison sentence for failing to comply with anti-money laundering regulations, highlighting the growing regulatory scrutiny in the cryptocurrency industry.
+- amd's forward momentum: delve into amd's first-quarter earnings, which slightly surpassed wall street predictions due to the demand for its ai chips, and ceo lisa su’s bullish outlook on ai chip sales reaching $4 billion by 2024.
+- meta under eu investigation: learn about the european commission's investigation into meta for its content regulation practices ahead of the european parliament elections, indicating increased regulatory pressure on tech giants to maintain information integrity.
+
+stay informed with our succinct coverage of these critical developments in the tech industry. tune in for an insightful journey through the dynamic and ever-evolving tech landscape
+
+Polished Script (Spanish):
+soy wall-e y esta es tu sesión informativa de ai para el martes 30 de abril. amazon superó las expectativas de ganancias e ingresos para el primer trimestre, impulsado por el crecimiento en publicidad y computación en la nube. las acciones subieron en el trading extendido. esto marca un punto fuerte para amazon, ya que su división de servicios web, aws, contribuyó con $25 mil millones a los ingresos, superando las expectativas de wall street. el ceo andy jassy ha liderado esfuerzos de recorte de costos y ha priorizado servicios rentables como la publicidad y aws. amazon también ha despedido a más de 27,000 empleados desde finales de 2022, con recortes que se extienden hasta 2024.
+
+en otra noticia, las acciones de tesla cayeron casi un 6% después de que elon musk anunciara la eliminación de unos 500 empleos en el equipo de supercharger, marcando un recorte en la expansión de su red de carga en los ee. uu. este esfuerzo de reducción de costos sigue a una disminución del 9% en los ingresos de tesla en el primer trimestre del año, la caída más empinada desde 2012.
+
+changpeng zhao, fundador de binance, fue sentenciado a cuatro meses de prisión por no establecer protecciones adecuadas contra el lavado de dinero. este hecho marca un momento significativo para la industria cripto, ya que binance es una de las mayores exchanges de criptomonedas del mundo.
+
+advanced micro devices (amd) reportó ganancias y ventas del primer trimestre ligeramente por encima de las expectativas de wall street, aunque las acciones cayeron un 7% en trading extendido. la ceo lisa su destacó el crecimiento en el segmento de data center, impulsado por las ventas de sus chips de ia mi300, que compiten con las unidades de procesamiento gráfico de nvidia.
+
+finalmente, meta enfrenta una importante investigación por parte de la comisión europea sobre su cumplimiento de las estrictas reglas de contenido de internet de la ue, particularmente en relación con la lucha contra la desinformación antes de las próximas elecciones al parlamento europeo.
+
+eso es todo por hoy. nos vemos aquí mañana
+
+Podcast Title (Spanish):
+EP-10 Amazon y Aws Impulsan Ganancias 💼, Desafíos de Tesla y Binance 📉, Meta Bajo Investigación en Europa 🌍
+
+Podcast Description (Spanish):
+descripción:
+
+en este episodio de tu sesión informativa de ai, exploramos las últimas noticias y desarrollos que están marcando la pauta en la tecnología y la economía mundial. acompáñanos mientras analizamos las siguientes claves:
+
+- amazon supera expectativas en el primer trimestre gracias al crecimiento de su publicidad y servicios en la nube, aws, con un notable ingreso de $25 mil millones. detalles sobre las estrategias de costos del ceo andy jassy y las reducciones de personal.
+- tesla anuncia recortes de empleos en su equipo de supercharger, reflejando una disminución en la expansión de su red de carga en ee.uu. y una caída en ingresos que no se había visto desde el 2012.
+- el fundador de binance, changpeng zhao, recibe una sentencia de prisión por fallos en protecciones contra el lavado de dinero, un evento trascendental para la industria de las criptomonedas.
+- advanced micro devices (amd) muestra resultados ligeramente por encima de las expectativas, enfatizando el crecimiento en el segmento de data center y la competencia con nvidia gracias a sus chips de inteligencia artificial.
+- meta se ve envuelta en una investigación de la comisión europea por su posible incumplimiento con las regulaciones de contenido en internet de la ue, enfocándose en la desinformación antes de las elecciones al parlamento europeo.
+
+sumérgete con nosotros en el análisis de estos temas que están definiendo el futuro de la tecnología y la economía global
+
+Polished Script (Chinese):
+我是wall-e，欢迎收听4月30日星期二的ai简讯。亚马逊在第一季度的盈利和收入超出了预期，股价在盘后交易中小幅上涨。得益于广告和云计算业务的增长，该公司的业绩表现强劲。
+
+特斯拉股价因马斯克裁减大约500个超级充电站团队的职位而下跌近6%。这是特斯拉管理层在马斯克的指导下并未及时精简员工人数引发的又一波裁员潮。
+
+比特币交易所binance的创始人赵长鹏因未能建立充分的反洗钱保护措施而被判入狱四个月。法官指出，赵长鹏将binance的增长和利润置于美国法律和法规遵循之上。
+
+先进微设备公司(amd)周二公布了第一季度的收入和盈利，略高于华尔街预期，并提供了与当前季度相符的预测。不过，该公司股价在盘后交易中下跌了7%。
+
+meta因欧盟委员会对其进行的一项重大调查而受到打击，调查涉及该公司对抗欧洲议会选举前的虚假信息的效果。
+
+以上就是今天的全部内容。我们明天再见。
+
+Podcast Title (Chinese):
+EP-10 "亚马逊盈利超预期📈, 特斯拉裁员风波🚗, 加密货币交易所法律挑战💼"
+
+Podcast Description (Chinese):
+欢迎收听我们的最新一期ai简讯，这一期我们将带你快速了解近期科技界和金融市场的重要动态。本期内容包括：
+
+- 亚马逊第一季度盈利和收入超出预期，主要得益于广告和云计算业务的增长，股价小幅上涨。
+- 特斯拉因为裁减大约500个超级充电站团队的职位，股价下跌近6%，反映出管理层在马斯克指导下的又一轮裁员。
+- 比特币交易所binance的创始人赵长鹏因未能建立充分的反洗钱保护措施被判入狱四个月，显示了公司增长和利润被置于法规遵循之上的问题。
+- 先进微设备公司（amd）第一季度的收入和盈利略高于华尔街预期但股价在盘后交易中下跌了7%，并提供了当前季度的预测。
+- meta因欧盟委员会对其针对抗击欧洲议会选举前虚假信息的重大调查而受到打击。
+
+请保持关注，了解更多科技金融领域的最新动态。我们明天再见。

@@ -1,0 +1,311 @@
+
+Titles:
+Asus won’t say if the ROG Ally’s SD card reader will ever be truly fixed
+Snapchat will soon let you edit your messages after sending
+UnitedHealth CEO admits it paid $22 million ransom to BlackCat
+Crunchyroll is about to get a little more expensive, just like all the other streamers
+How to play Netflix’s cloud games without waiting for an invitation
+Walmart is about to launch a 4K Chromecast that’s also a smart speaker
+AI security bill aims to prevent safety breaches of AI models
+T-Mobile owns Mint Mobile
+WhatsApp’s new feature lets you plan your next event
+Tesla reportedly shrinks its gigacasting manufacturing ambitions
+It’s getting way easier to join PS5 multiplayer games with a friend
+This Qi2 3-in-1 charger has the best price we’ve seen from any brand
+Starfield is finally getting a 60fps mode on Xbox
+Microsoft’s OpenAI investment was triggered by Google fears, emails reveal
+Audible tries book recommendations based on your streaming history
+LastPass goes independent over a year after serious breaches
+Anthropic finally releases a Claude mobile app
+Amazon CEO Andy Jassy broke federal labor law with anti-union remarks
+One-third of Americans could be impacted by Change Healthcare cyberattack
+Masimo CEO Kiani puts shares on margin to keep ownership before proxy fight
+Qualcomm gives robust revenue forecast as company pushes AI-powered smartphones
+Google lays off hundreds of 'Core' employees, moves some positions to India and Mexico
+UnitedHealth CEO tells lawmakers the company paid hackers a $22 million ransom
+Amazon-backed Anthropic launches iPhone app to compete with OpenAI's ChatGPT
+Super Micro plummets 14% after posting revenue miss
+Bitcoin extends its slide to start May, falling to $57,000 as Fed leaves rates unchanged
+Tesla retreats from next-generation ‘gigacasting’ manufacturing process
+Binance's Zhao set to keep growing $33 billion fortune even in prison
+Amazon cost cuts drive operating margin into double digits for first time
+Europe may need to impose tariffs of up to 55% to curb Chinese EV imports, research says
+Haun Ventures is riding the bitcoin high
+Snapchat launches new AR and ML tools for brands and advertisers
+From Connie Chan to Ethan Kurzweil, venture capitalists continue to play musical chairs
+Anthropic launches new iPhone app and premium plan for businesses
+NASA orders studies from private space companies on Mars mission support roles
+UnitedHealthcare CEO says ‘maybe a third’ of US citizens were affected by recent hack
+A comprehensive list of 2023 & 2024 tech layoffs
+Pinterest says its AI-powered collages are now more engaging than Pins
+Tiger Global-backed Innovaccer in talks to raise $250M in new funding, sources say
+Airbnb releases group booking features as it taps into AI for customer service
+Snapchat’s ‘My AI’ chatbot can now set in-app reminders and countdowns
+Google lays off staff from Flutter, Dart and Python teams weeks before its developer conference
+Microsoft taps Sanctuary AI for general-purpose robot research
+Substack now lets writers paywall their ‘Chat’ discussion spaces
+Atlassian launches Rovo, its new AI teammate
+TechCrunch Minute: Razer’s Zephyr mask lands it in regulatory hot water
+Atlassian combines Jira Software and Work Management tools
+WhatsApp now lets users plan and schedule events in Communities
+A new venture capital supergroup is forming
+UnitedHealth CEO tells Senate all systems now have multi-factor authentication after hack
+From Connie Chan to Ethan Kurzweil, venture capitalists continue to play musical chairs
+NASA orders studies from private space companies on Mars mission support roles
+Tiger Global-backed Innovaccer in talks to raise $250M in new funding, sources say
+Google lays off staff from Flutter, Dart and Python teams weeks before its developer conference
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+Haun Ventures is riding the bitcoin high
+Snapchat launches new AR and ML tools for brands and advertisers
+From Connie Chan to Ethan Kurzweil, venture capitalists continue to play musical chairs
+Anthropic launches new iPhone app and premium plan for businesses
+NASA orders studies from private space companies on Mars mission support roles
+UnitedHealthcare CEO says ‘maybe a third’ of US citizens were affected by recent hack
+A comprehensive list of 2023 & 2024 tech layoffs
+Pinterest says its AI-powered collages are now more engaging than Pins
+Tiger Global-backed Innovaccer in talks to raise $250M in new funding, sources say
+Airbnb releases group booking features as it taps into AI for customer service
+Snapchat’s ‘My AI’ chatbot can now set in-app reminders and countdowns
+Google lays off staff from Flutter, Dart and Python teams weeks before its developer conference
+Microsoft taps Sanctuary AI for general-purpose robot research
+Substack now lets writers paywall their ‘Chat’ discussion spaces
+Atlassian launches Rovo, its new AI teammate
+TechCrunch Minute: Razer’s Zephyr mask lands it in regulatory hot water
+Atlassian combines Jira Software and Work Management tools
+WhatsApp now lets users plan and schedule events in Communities
+A new venture capital supergroup is forming
+UnitedHealth CEO tells Senate all systems now have multi-factor authentication after hack
+From Connie Chan to Ethan Kurzweil, venture capitalists continue to play musical chairs
+NASA orders studies from private space companies on Mars mission support roles
+Tiger Global-backed Innovaccer in talks to raise $250M in new funding, sources say
+Google lays off staff from Flutter, Dart and Python teams weeks before its developer conference
+
+The Verge
+Asus won’t say if the ROG Ally’s SD card reader will ever be truly fixed
+Snapchat will soon let you edit your messages after sending
+UnitedHealth CEO admits it paid $22 million ransom to BlackCat
+Crunchyroll is about to get a little more expensive, just like all the other streamers
+How to play Netflix’s cloud games without waiting for an invitation
+Walmart is about to launch a 4K Chromecast that’s also a smart speaker
+AI security bill aims to prevent safety breaches of AI models
+T-Mobile owns Mint Mobile
+WhatsApp’s new feature lets you plan your next event
+Tesla reportedly shrinks its gigacasting manufacturing ambitions
+It’s getting way easier to join PS5 multiplayer games with a friend
+This Qi2 3-in-1 charger has the best price we’ve seen from any brand
+Starfield is finally getting a 60fps mode on Xbox
+Microsoft’s OpenAI investment was triggered by Google fears, emails reveal
+Audible tries book recommendations based on your streaming history
+LastPass goes independent over a year after serious breaches
+Anthropic finally releases a Claude mobile app
+
+CNBC Tech
+Amazon CEO Andy Jassy broke federal labor law with anti-union remarks
+One-third of Americans could be impacted by Change Healthcare cyberattack
+Masimo CEO Kiani puts shares on margin to keep ownership before proxy fight
+Qualcomm gives robust revenue forecast as company pushes AI-powered smartphones
+Google lays off hundreds of 'Core' employees, moves some positions to India and Mexico
+UnitedHealth CEO tells lawmakers the company paid hackers a $22 million ransom
+Amazon-backed Anthropic launches iPhone app to compete with OpenAI's ChatGPT
+Super Micro plummets 14% after posting revenue miss
+Bitcoin extends its slide to start May, falling to $57,000 as Fed leaves rates unchanged
+Tesla retreats from next-generation ‘gigacasting’ manufacturing process
+Binance's Zhao set to keep growing $33 billion fortune even in prison
+Amazon cost cuts drive operating margin into double digits for first time
+Europe may need to impose tariffs of up to 55% to curb Chinese EV imports, research says
+
+Top News:
+unitedhealth ceo tells lawmakers the company paid hackers a $22 million ransom
+amazon ceo andy jassy broke federal labor law with anti-union remarks
+one-third of americans could be impacted by change healthcare cyberattack
+google lays off hundreds of 'core' employees, moves some positions to india and mexico
+qualcomm gives robust revenue forecast as company pushes ai-powered smartphones
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E and Wednesday May 1), and replace CNBC techcheck briefing to 'AI briefing' 
+ "title0:
+UnitedHealth CEO says company paid hackers $22 million ransom
+description0:
+UnitedHealth CEO Andrew Witty testifies before the Senate Finance Committee on Capitol Hill on May 1, 2024 in Washington, DC.
+UnitedHealth Group CEO Andrew Witty confirmed for the first time that the company paid a $22 million ransom to hackers who breached its subsidiary Change Healthcare and caused widespread fallout across the health-care sector. Witty's comments were made during a Wednesday hearing before the U.S. Senate Committee on Finance.
+Change Healthcare provides payment, revenue management and other solutions like e-prescription software. The company disconnected affected systems when the threat was detected, leaving many doctors temporarily unable to fill prescriptions or get paid for their services.
+UnitedHealth told CNBC in April that it paid a ransom to try and protect patient data. Earlier reports had discovered a $22 million transfer on Bitcoin's blockchain, but the company had not confirmed the figure until now.
+"The decision to pay a ransom was mine," Witty said. "This was one of the hardest decisions I've ever had to make, and I wouldn't wish it on anyone."
+UnitedHealth is one of the largest companies in the world, with a roughly $450 billion market cap. Its business unit Optum — which provides care to 103 million customers — and Change Healthcare — which touches one in three patient records — merged in 2022.
+Committee Chairman Sen. Ron Wyden, D-Ore., said in his opening remarks that the Change Healthcare breach serves as a "dire warning about the consequences of too-big-to-fail mega-corporations."
+"Companies that are so big have an obligation to protect their customers and to lead on this issue," Wyden said.
+Witty told the committee that cybercriminals accessed Change Healthcare through a server that was not protected by multi-factor authentication, or MFA, which requires users to verify their identity in at least two different ways. He said UnitedHealth now has MFA in place across all external-facing systems.
+"As a result of this malicious cyberattack, patients and providers have experienced disruptions and people are worried about their private health data," Witty said. "To all those impacted, let me be very clear: I am deeply, deeply sorry."
+Sen. Thom Tillis, R-N.C., held up a bright yellow copy of "Hacking for Dummies" during the hearing, saying the breach is UnitedHealth's responsibility to fix.
+"This is some basic stuff that was missed, so shame on internal audit, external audit and your systems folks tasked with redundancy, they're not doing their job," Tillis said.
+A filing with the U.S. Securities and Exchange Commission said that UnitedHealth discovered that a cyber threat actor accessed part of Change Healthcare's information technology network in late February.
+Witty said Change Healthcare's core systems are back online, though some of its secondary support functions are still being restored.
+UnitedHealth said in February that the ransomware group Blackcat was behind the attack. Blackcat, which also goes by the names Noberus and ALPHV, steals sensitive data from institutions and threatens to publish it unless a ransom is paid, according to a December release from the U.S. Department of Justice.
+UnitedHealth confirmed in April that files containing protected health information and personally identifiable information were compromised in the breach. The company said a data review is ongoing, so it could be months before the company can notify affected individuals.
+Witty said Wednesday that UnitedHealth is working with regulators to assess the breach and to inform people if their information has been compromised "as soon as possible."
+Early in March, UnitedHealth launched a temporary funding assistance program to help support providers that have experienced cash flow disruptions due to the cyberattack. There are no fees, interest or other costs on top of the payments, and providers have 45 days to repay the funds once their standard payment operations resume.
+During the hearing, Witty said the company has not yet asked anyone for loan repayments, and it will be up to providers to determine when their operations have officially returned to normal.
+Witty did not directly disclose whether UnitedHealth will provide additional support to providers who may be contending with other loans and interest payments because of the breach.
+Sen. Michael Bennet, D-Colo., pressed Witty to share how UnitedHealth is working to ensure something like the Change Healthcare breach will not happen again. Witty said the company plans to share what it discovers about the breach with others, adding that there's a need to focus on reducing the rate of cyberattacks on the health-care sector.
+"We are clearly trying to take our responsibility in this attack. We are also trying to learn from it," he said.
+
+title1:
+Amazon CEO Andy Jassy broke federal labor law with anti-union remarks
+description1:
+Amazon CEO Andy Jassy violated federal labor law in comments he made to media outlets about unionization efforts at the company, a National Labor Relations Board judge ruled Wednesday.
+NLRB Administrative Law Judge Brian Gee cited interviews Jassy gave in 2022 to CNBC's "Squawk Box," Bloomberg Television and at The New York Times' DealBook conference. The interviews coincided with an upswing in union campaigns in Amazon's warehouse and delivery operations.
+Jassy told CNBC in April 2022 that if employees were to vote in a union, they may be less empowered in the workplace and things would become "much slower" and "more bureaucratic." Similarly, in the Bloomberg interview, Jassy remarked, "if you see something on the line that you think could be better for your team or you or your customers, you can't just go to your manager and say, 'Let's change it.'"
+At the DealBook conference, Jassy said that without a union the workplace isn't "bureaucratic, it's not slow."
+Gee said the comments "threatened employees that, if they selected a union, they would become less empowered and would find it harder to get things done quickly."
+The NLRB filed the complaint against Amazon and Jassy in October 2022. In his ruling Wednesday, Gee said Jassy's other comments that unionization would change workers' relationship with their employer were lawful. But the Amazon chief's other remarks that employees would be less empowered and "better off" without a union violated labor law, "because they went beyond merely commenting on the employee-employer relationship."
+Amazon spokesperson Mary Kate Paradis said in a statement that the company disagrees with the NLRB's ruling and that it intends to appeal.
+"The decision reflects poorly on the state of free speech rights today, and we remain optimistic that we will be able to continue to engage in a reasonable discussion on these issues where all perspectives have an opportunity to be heard," Paradis said.
+The judge recommends Amazon be ordered to "cease and desist" from making such comments in the future, and that the company be required to post and distribute a notice about the order to employees nationwide.
+
+title2:
+One-third of Americans could be hit by Change Healthcare cyberattack
+description2:
+UnitedHealth Group CEO Andrew Witty on Wednesday told lawmakers that data from an estimated one-third of Americans could have been compromised in the cyberattack on its subsidiary Change Healthcare, and that the company paid a $22 million ransom to hackers.
+Witty testified in front of the Subcommittee on Oversight and Investigations, which falls under the House of Representatives' Committee on Energy and Commerce. He said the investigation into the breach is still ongoing, so the exact number of people affected remains unknown. The one-third figure is a rough estimate.
+UnitedHealth has previously said the cyberattack likely impacts a "substantial proportion of people in America," according to an April release. The company confirmed that files containing protected health information and personally identifiable information were compromised in the breach.
+It will likely be months before UnitedHealth is able to notify individuals, given the "complexity of the data review," the release said. The company is offering free access to identity theft protection and credit monitoring for individuals concerned about their data.
+Witty also testified in front of the U.S. Senate Committee on Finance on Wednesday, when he confirmed for the first time that the company paid a $22 million ransom to the hackers that breached Change Healthcare. At the hearing before the House legislators later that afternoon, Witty said the payment was made in bitcoin.
+UnitedHealth disclosed that a cyberthreat actor breached part of Change Healthcare's information technology network late in February. The company disconnected the affected systems when the threat was detected, and the disruption has caused widespread fallout across the U.S. health-care sector.
+Witty told the subcommittee in his written testimony that the cyberattackers used "compromised credentials" to infiltrate Change Healthcare's systems on Feb. 12 and deployed a ransomware that encrypted the network nine days later.
+The portal that the bad actors initially accessed was not protected by multifactor authentication, or MFA, which requires users to verify their identities in at least two different ways.
+Witty told both committees Wednesday that UnitedHealth now has MFA in place across all external-facing systems.
+
+title3:
+Google cuts hundreds of 'Core' workers, moves jobs to India, Mexico
+description3:
+Sundar Pichai, chief executive officer of Alphabet Inc., during Stanford's 2024 Business, Government, and Society forum in Stanford, California, US, on Wednesday, April 3, 2024.
+Just ahead of its blowout first-quarter earnings report on April 25, Google laid off at least 200 employees from its "Core" teams, in a reorganization that will include moving some roles to India and Mexico, CNBC has learned.
+The Core unit is responsible for building the technical foundation behind the company's flagship products and for protecting users' online safety, according to Google's website. Core teams include key technical units from information technology, its Python developer team, technical infrastructure, security foundation, app platforms, core developers, and various engineering roles.
+At least 50 of the positions eliminated were in engineering at the company's offices in Sunnyvale, California, filings show. Many Core teams will hire corresponding roles in Mexico and India, according to internal documents viewed by CNBC.
+Asim Husain, vice president of Google Developer Ecosystem, announced news of the layoffs to his team in an email last week. He also spoke at a town hall and told employees that this was the biggest planned reduction for his team this year, an internal document shows.
+"We intend to maintain our current global footprint while also expanding in high-growth global workforce locations so that we can operate closer to our partners and developer communities," Husain wrote in the email.
+Alphabet has been slashing headcount since early last year, when the company announced plans to eliminate about 12,000 jobs, or 6% of its workforce, following a downturn in the online ad market. Even with digital advertising rebounding recently, Alphabet has continued downsizing, with layoffs across multiple organizations this year.
+Chief Financial Officer Ruth Porat announced in mid-April that the company's finance department would undergo restructuring, entailing layoffs and moving positions to Bangalore and Mexico City. The company's search boss, Prabhakar Raghavan, told employees at an all-hands meeting in March that Google plans to build teams closer to users in key markets, including India and Brazil, where labor is cheaper than in the U.S.
+The latest cuts come as the company enjoys its fastest growth rate since early 2022, alongside improving profit margins. Last week, Alphabet reported a 15% jump in first-quarter revenue from a year earlier and announced its first-ever dividend and a $70 billion buyback.
+
+title4:
+Qualcomm earnings report fiscal Q2 2024
+description4:
+Qualcomm CEO Cristiano Amon responds to a question during a keynote conversation at CES 2024, an annual consumer electronics trade show, in Las Vegas, Nevada, on Jan. 10, 2024.
+Qualcomm reported fiscal second-quarter earnings on Wednesday that surpassed Wall Street expectations, and provided a strong guide for the current quarter.
+Shares rose about 4% in extended trading.
+Here's how it did versus LSEG consensus estimates for the quarter ended March 24:
+Earnings per share : $2.44 adjusted vs. $2.32 expected
+: $2.44 adjusted vs. $2.32 expected Revenue: $9.39 billion adjusted vs. $9.34 billion expected
+Net income during the quarter was $2.33 billion, or $2.06 per share, versus $1.7 billion, or $1.52 per share, in the year-earlier period.
+Qualcomm said it expected between $8.8 billion and $9.6 billion in sales in the current quarter, higher than Wall Street expectations of $9.05 billion. Analysts were looking for earnings guidance of $2.17 per share, versus the company's forecast of between $2.15 and $2.35.
+The company said on the earnings call that it expected overall handset revenues to decline during the current quarter by "mid-single digit percent" because of a lack of summer smartphone launches, which is a typical seasonal pattern.
+Qualcomm's most important business is its handsets business. It sells processors, modems and other parts for smartphones — primarily Android devices, but also some modem parts in iPhones.
+Handset sales rose 1% year over year to $6.18 billion, signaling that the smartphone market may be recovering after a few years of post-Covid slumping. Qualcomm called out strong demand for "premium tier" smartphones that require the most advanced chips, especially in China. It said quarterly revenue from Chinese phone makers jumped 40% from the year-earlier period.
+"We have not seen signs of weakness in the Android premium market in China," Qualcomm CEO Cristiano Amon said on an earnings call with analysts. "A lot of the strength is really coming from premium devices on Oppo, OnePlus, Vivo."
+Qualcomm calls the phones that use its best chips "AI-powered smartphones," citing features such as generative email completion, live translation, and virtual assistants that use the chips specialized "NPU" AI section. One such phone is Samsung's Galaxy S24 Ultra, which launched earlier this year.
+"We are seeing the very first instances of on-device AI and Gen AI being launched in premium devices and that is resonating well with the consumer," Amon said, adding that the company is targeting performance per watt as its primary artificial intelligence benchmark.
+The company's automotive business, which sells chips to automakers, also showed signs of growth, rising 35% year over year to $603 million. Qualcomm said it expected consecutive double digit percentage growth in the division in the current quarter. Revenue in the "Internet of Things" business — lower-cost chips and chips for virtual reality — declined 11% year over year to $1.24 billion.
+Those three business lines are reported together as QCT, the company's chip business, which saw a 1% year-over-year sales increase to $8.03 billion.
+The company's licensing business, QTL, in which it collects fees from companies that want to integrate 5G or cellular technology into their products, increased 2% to $1.32 billion from the year-earlier period.
+Qualcomm said it paid $895 million in dividends and repurchased $731 million in shares during the quarter, and raised its quarterly dividend to 85 cents from 80 cents previously."
+
+Response:
+
+Script:
+i'm wall-e, and this is your ai briefing for wednesday, may 1. unitedhealth group is front and center in today's news as ceo andrew witty testified before the senate finance committee, revealing the company paid a whopping $22 million ransom in a significant cybersecurity breach. this cyberattack, specifically targeting subsidiary change healthcare, jeopardized information potentially affecting one-third of americans, underscoring the dire consequences of mega-corporations' vulnerabilities. in response, unitedhealth has accelerated the implementation of multi-factor authentication across its systems, aiming to bolster its cyber defenses and mitigate future risks.
+
+meanwhile, amazon finds itself in legal hot water as ceo andy jassy is reprimanded by a national labor relations board judge for comments deemed to violate federal labor laws. jassy's remarks concerning unionization efforts within the company have sparked controversy, suggesting that unionized employees would face a more cumbersome, bureaucratic workplace—a stance the nlrb has challenged, demanding amazon to cease such assertions.
+
+in tech labor news, google is making headlines by cutting hundreds of jobs within its 'core' teams, shifting some positions to india and mexico as part of a broader cost-cutting and reorganization strategy. this move follows alphabet's ongoing efforts to streamline operations amid a challenging advertising market, despite reporting a 15% jump in revenue and marking its fastest growth rate since early 2022.
+
+on the earnings front, qualcomm delivers a robust fiscal second-quarter report, surpassing analysts' expectations with a notable rise in shares during extended trading. the chipmaker's optimistic outlook, particularly in the premium smartphone market in china, reflects a recovery in handset sales and a strong demand for high-end devices featuring advanced ai capabilities. qualcomm's strategic emphasis on ai-powered smartphones, automotive growth, and consistent share repurchases further underscores its bullish stance in the competitive tech landscape.
+
+that's all for today. we'll see you back here tomorrow
+
+Polished Script:
+i'm wall-e, welcoming you to today’s tech briefing for wednesday, may 1st. let's dive into the significant happenings across the tech landscape today.
+
+starting off with unitedhealth group making waves in the headlines, the ceo, andrew witty, found himself under the spotlight before the senate finance committee. in a startling revelation, witty disclosed that the conglomerate shelled out $22 million in ransom following a severe cybersecurity breach targeting its subsidiary, change healthcare. this attack put the data of approximately one-third of americans at risk, highlighting the grim reality of cybersecurity vulnerabilities in giant corporations. in an effort to fortify its defenses against future cyber threats, unitedhealth is stepping up its game by implementing multi-factor authentication across its systems.
+
+switching gears to amazon, where ceo andy jassy faces scrutiny from a national labor relations board judge. jassy's recent remarks on unionization within the company have stirred the pot, suggesting that unionized employees might find themselves entangled in a more cumbersome, bureaucratic work environment. the nlrb has raised the flag on these comments, deeming them in violation of federal labor laws and has called on amazon to refrain from making such statements.
+
+in the realm of tech labor, google is in the spotlight for its decision to eliminate hundreds of jobs within its ‘core’ teams. in a strategic move aimed at cost-cutting and reorganization, some positions are being relocated to india and mexico. this decision is part of alphabet’s broader initiative to streamline operations amidst a tough advertising market, despite marking its fastest revenue growth since early 2022 with a 15% jump.
+
+on the earnings beat, qualcomm is turning heads with its impressive fiscal second-quarter report. outshining analysts' forecasts, the chipmaker saw its shares rise in extended trading, buoyed by a positive outlook. fueled by a resurgence in handset sales in china and robust demand for premium smartphones equipped with advanced ai capabilities, qualcomm is doubling down on its commitment to ai-powered smartphones, automotive growth, and ongoing share repurchases, signaling a bullish approach in the cutthroat tech arena.
+
+that wraps up today’s round-up. we'll catch up on more tech news tomorrow
+
+Podcast Title:
+EP-11 "unitedhealth's $22m Cyber Ransom 💻, Amazon's Union Controversy 🏢, Qualcomm's Ai Surge 📈"
+
+Podcast Description:
+tech briefing: unveiling today's critical updates - may 1
+
+dive into the latest tech developments with our expert insights:
+
+- unitedhealth group's cybersecurity breach: ceo andrew witty reveals a $22 million ransom payment following a significant attack on change healthcare. discover how this incident impacts data security and unitedhealth's plans to bolster its defenses.
+
+- amazon under fire: ceo andy jassy's comments on unionization draw criticism from the nlrb, marking a pivotal moment in the company's labor relations. learn about the implications for amazon's work environment and legal standing.
+
+- google's job cuts and reorganization: google announces job eliminations and relocations as part of a cost-cutting measure. understand the strategic motivations behind these moves and their impact on the tech giant’s future.
+
+- qualcomm's financial triumph: with a fiscal second-quarter report that surpasses expectations, qualcomm is on the rise. explore how a boost in handset sales and strategic focus on ai and automotive sectors are propelling qualcomm's success.
+
+join us for a concise overview of these pivotal stories in the tech world, offering essential knowledge for anyone keeping pace with the rapidly evolving technological landscape
+
+Polished Script (Spanish):
+soy wall-e, y esta es tu sesión informativa de ai briefing para el miércoles 1 de mayo. el ceo de unitedhealth, andrew witty, testificó ante el comité de finanzas del senado en capitol hill el 1 de mayo de 2024 en washington, dc, confirmando por primera vez que la compañía pagó un rescate de $22 millones a los hackers que violaron su filial change healthcare, causando un amplio impacto en el sector de la salud. witty describió la decisión como una de las más difíciles que ha tenido que tomar. en otro frente, un juez de la nlrb dictaminó que el ceo de amazon, andy jassy, violó la ley federal laboral con comentarios anti-sindicales hechos a medios de comunicación. amazon planea apelar esta decisión.
+
+adicionalmente, hasta un tercio de los estadounidenses podrían verse afectados por el ciberataque a change healthcare, reveló witty, detallando que la investigación sigue en curso. google, por su parte, ha despedido a cientos de trabajadores de sus equipos "core", trasladando algunos puestos a india y méxico, en un movimiento decidido por el ceo de alphabet inc., sundar pichai. esto se produce justo antes de que la compañía anunciara un aumento del 15% en los ingresos del primer trimestre en comparación con el año anterior.
+
+en el ámbito de las ganancias, qualcomm superó las expectativas de wall street para su segundo trimestre fiscal del 2024, con un ingreso neto de $2.33 mil millones. las ventas de teléfonos móviles aumentaron un 1%, indicando una posible recuperación del mercado de smartphones después de unos años de desaceleración post-covid. qualcomm destacó una fuerte demanda de smartphones "premium" en china. su negocio de automoción también mostró signos de crecimiento, aumentando un 35% en comparación con el año pasado.
+
+eso es todo por hoy. nos vemos aquí mañana
+
+Podcast Title (Spanish):
+EP-11 "unitedhealth Paga Rescate Millonario 💰, Conflictos Laborales en Amazon 🏭, Qualcomm Surca Éxitos 📱"
+
+Podcast Description (Spanish):
+description:
+bienvenido a ai briefing, el podcast que te mantiene al día con las últimas noticias del mundo de la tecnología y los negocios. en nuestra sesión informativa del miércoles 1 de mayo, cubrimos los siguientes puntos destacados:
+
+- el ceo de unitedhealth, andrew witty, testifica ante el comité de finanzas del senado sobre el pago de un rescate de $22 millones a los hackers que atacaron change healthcare, afectando significativamente al sector de la salud.
+- controversia en amazon: el ceo andy jassy enfrenta acusaciones por violar la ley federal laboral con comentarios anti-sindicales, con una decisión que amazon planea apelar.
+- revelaciones sobre el ciberataque a change healthcare indican que hasta un tercio de los estadounidenses podrían estar afectados. la investigación continúa.
+- google reduce su fuerza laboral en equipos "core", trasladando algunos puestos a india y méxico, seguido de un anuncio de un aumento del 15% en los ingresos del primer trimestre.
+- qualcomm supera las expectativas de wall street para el segundo trimestre fiscal del 2024, con signos de recuperación en el mercado de smartphones y un crecimiento del 35% en su negocio de automoción.
+
+acompáñanos en este recorrido informativo para mantenerte al tanto de los cambios y desarrollos más recientes en el sector tecnológico y corporativo. nos vemos aquí mañana para más actualizaciones
+
+Polished Script (Chinese):
+我是wall-e，这是您周三5月1日的ai简讯。联合健康集团（unitedhealth group）首席执行官安德鲁·维蒂（andrew witty）在5月1日，2024年华盛顿特区参加美国参议院财政委员会听证会时证实，该公司为了应对其子公司change healthcare遭受的黑客攻击，支付了2200万美元的赎金。维蒂的这番话是他第一次公开确认支付赎金的金额。change healthcare提供支付、收益管理以及电子处方软件等解决方案。在检测到威胁后，公司切断了受影响系统的连接，导致许多医生暂时无法开具处方或获得付款。
+
+亚马逊（amazon）首席执行官安迪·贾西（andy jassy）的反工会言论违反了联邦劳工法，美国国家劳工关系委员会（nlrb）的一位行政法官周三做出了这一裁决。法官引用了贾西在2022年接受cnbc的“squawk box”、彭博电视和《纽约时报》dealbook会议采访中的言论。
+
+谷歌（google）在其第一季度收益报告发布前夕，裁减了至少200名“核心”团队的员工，并计划将某些角色转移到印度和墨西哥。这些“核心”团队负责构建公司旗舰产品的技术基础并保护用户的在线安全。
+
+高通（qualcomm）周三公布了超出华尔街预期的2024财年第二季度收益，并为当前季度提供了强劲的指引。该公司表示，由于夏季智能手机的发布缺失，预计当前季度的整体手机收入将下降“中位数百分比”。
+
+这就是今天的所有内容。我们明天在这里见。
+
+Podcast Title (Chinese):
+EP-11 "联合健康集团支付黑客赎金2200万美元 💸, 亚马逊ceo违反联邦劳工法案 🚫, 谷歌裁员转移至印墨 🌏"
+
+Podcast Description (Chinese):
+在这个集中，wall-e带您快速了解5月1日的ai简讯。本集内容包括：
+
+- 联合健康集团首席执行官安德鲁·维蒂确认，为解决change healthcare遭受的黑客攻击，支付了2200万美元的赎金。change healthcare是提供支付、收益管理以及电子处方软件的公司。
+
+- 亚马逊首席执行官安迪·贾西因其反工会言论，被美国国家劳工关系委员会的一位行政法官裁定违反联邦劳工法。这一裁决是基于贾西在过去一年的多次公开讲话。
+
+- 谷歌在其第一季度收益报告前夕，宣布裁减至少200名核心团队员工，并计划将某些角色转移到印度和墨西哥。这些核心团队负责谷歌旗舰产品的技术发展和用户在线安全。
+
+- 高通发布2024财年第二季度收益，超出市场预期，并为当前季度提供了积极的财务指引。但公司表示，由于夏季智能手机发布的缺失，预计手机业务收入将会下降。
+
+我们将在明天的节目中带给您更多精彩内容，敬请期待。
