@@ -1,3 +1,3 @@
 # the-ai-briefing-room
 
-![Design Diagram](briefing-room.jpg)
+![Design Diagram](design_diagram.jpg)
