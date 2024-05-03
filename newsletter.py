@@ -101,22 +101,70 @@ def send_email(subject, message, to_email, is_markdown=False):
     except Exception as e:
         print(f"Failed to send email: {e}")
 
-# Example usage
-content = """Podcast Description:
-tech briefing: unveiling today's critical updates - may 1
 
-dive into the latest tech developments with our expert insights:
+# Database
 
-- unitedhealth group's cybersecurity breach: ceo andrew witty reveals a $22 million ransom payment following a significant attack on change healthcare. discover how this incident impacts data security and unitedhealth's plans to bolster its defenses.
+import sqlite3
+# Database functions
+def init_db():
+    conn = sqlite3.connect('subscribers.db')
+    c = conn.cursor()
+    c.execute('''
+        CREATE TABLE IF NOT EXISTS subscribers (
+            email TEXT NOT NULL UNIQUE
+        )
+    ''')
+    conn.commit()
+    conn.close()
 
-- amazon under fire: ceo andy jassy's comments on unionization draw criticism from the nlrb, marking a pivotal moment in the company's labor relations. learn about the implications for amazon's work environment and legal standing.
+def add_subscriber(email):
+    conn = sqlite3.connect('subscribers.db')
+    c = conn.cursor()
+    try:
+        c.execute('INSERT INTO subscribers (email) VALUES (?)', (email,))
+        conn.commit()
+    except sqlite3.IntegrityError:
+        print("Email already exists in the database.")
+    conn.close()
 
-- google's job cuts and reorganization: google announces job eliminations and relocations as part of a cost-cutting measure. understand the strategic motivations behind these moves and their impact on the tech giant's future.
+def get_subscribers():
+    conn = sqlite3.connect('subscribers.db')
+    c = conn.cursor()
+    c.execute('SELECT email FROM subscribers')
+    emails = c.fetchall()
+    conn.close()
+    return [email[0] for email in emails]
 
-- qualcomm's financial triumph: with a fiscal second-quarter report that surpasses expectations, qualcomm is on the rise. explore how a boost in handset sales and strategic focus on ai and automotive sectors are propelling qualcomm's success.
 
-join us for a concise overview of these pivotal stories in the tech world, offering essential knowledge for anyone keeping pace with the rapidly evolving technological landscape
-"""
-title = "Unitedhealth's $22m Cyber Ransom 💻, Amazon's Union Controversy 🏢, Qualcomm's Ai Surge 📈"
-newsletter_content = generate_newsletter(content)
-send_email(title, newsletter_content, '1835928575qq@gmail.com', is_markdown=True)
+
+# Main function
+def main():
+    init_db()
+    # Example usage
+    add_subscriber('1835928575qq@gmail.com')
+    add_subscriber('xiaozhang20030215@gmail.com')
+    subscribers = get_subscribers()  # Retrieve all subscribers
+    print(subscribers)
+    content = """Podcast Description:
+    tech briefing: unveiling today's critical updates - may 1
+
+    dive into the latest tech developments with our expert insights:
+
+    - unitedhealth group's cybersecurity breach: ceo andrew witty reveals a $22 million ransom payment following a significant attack on change healthcare. discover how this incident impacts data security and unitedhealth's plans to bolster its defenses.
+
+    - amazon under fire: ceo andy jassy's comments on unionization draw criticism from the nlrb, marking a pivotal moment in the company's labor relations. learn about the implications for amazon's work environment and legal standing.
+
+    - google's job cuts and reorganization: google announces job eliminations and relocations as part of a cost-cutting measure. understand the strategic motivations behind these moves and their impact on the tech giant’s future.
+
+    - qualcomm's financial triumph: with a fiscal second-quarter report that surpasses expectations, qualcomm is on the rise. explore how a boost in handset sales and strategic focus on ai and automotive sectors are propelling qualcomm's success.
+
+    join us for a concise overview of these pivotal stories in the tech world, offering essential knowledge for anyone keeping pace with the rapidly evolving technological landscape
+    """
+    title = "Unitedhealth's $22m Cyber Ransom 💻, Amazon's Union Controversy 🏢, Qualcomm's Ai Surge 📈"
+    newsletter_content = generate_newsletter(content)
+    for email in subscribers:
+        send_email(title, newsletter_content, email, is_markdown=True)
+
+# Execute the main function
+if __name__ == '__main__':
+    main()
