@@ -80,7 +80,7 @@ def send_email(subject, message, to_email, is_markdown=False):
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587
     smtp_username = 'aibriefingroom@gmail.com'
-    smtp_password = 'dxlm tcut yvts czmt'
+    smtp_password = os.getenv("SMTP_PASSWORD")
 
     msg = MIMEMultipart()
     msg['From'] = smtp_username
@@ -140,7 +140,7 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 # Path to your downloaded service account key file
-SERVICE_ACCOUNT_FILE = '/content/ai-briefing-room-key.json'
+SERVICE_ACCOUNT_FILE = 'ai-briefing-room-key.json'
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 def google_sheets_service():
@@ -152,7 +152,7 @@ def google_sheets_service():
 
 def get_subscribers(service):
     """Retrieves subscriber emails from a specific Google Sheets range."""
-    SPREADSHEET_ID = '1AuzY3dvOkbj5GdPie4KHyWMNrY9acInB3Lp6CzBSE6o'
+    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
     RANGE_NAME = 'response!B2:B'  # Make sure to adjust the sheet name and range as necessary
     result = service.spreadsheets().values().get(
         spreadsheetId=SPREADSHEET_ID, range=RANGE_NAME).execute()
