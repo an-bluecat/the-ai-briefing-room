@@ -3,3 +3,4 @@
 .gitignore
 .env
 *.pyc
+*.json
