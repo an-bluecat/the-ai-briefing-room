@@ -28,7 +28,7 @@ After running the script, the output will be organized into folders by date with
 
 
 ### Configuration
-Create a .env file in the root directory of your project and add the following content:
+1. Create a `.env` file in the root directory of your project and add the following content:
 
 ```
 AZURE_OPENAI_API_KEY = [your Azure key]
@@ -39,3 +39,21 @@ PASSWORD = [anchor login password]
 ```
 
 Replace [xxx] with your actual credentials
+
+2. Create a JSON file named `ai-briefing-room-key.json` with obfuscated details for sensitive fields:
+```
+{
+    "type": "service_account",
+    "project_id": "YOUR_PROJECT_ID",
+    "private_key_id": "YOUR_PRIVATE_KEY_ID",
+    "private_key": "YOUR_PRIVATE_KEY",
+    "client_email": "YOUR_CLIENT_EMAIL",
+    "client_id": "YOUR_CLIENT_ID",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/YOUR_CLIENT_EMAIL",
+    "universe_domain": "googleapis.com"
+}
+```
+
