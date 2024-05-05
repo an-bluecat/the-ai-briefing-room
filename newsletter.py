@@ -4,7 +4,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from openai import AzureOpenAI
 
-TLDR_example = """
+TLDR_EXAMPLE = """
 Sign Up |Advertise|View Online
 TLDR
 
@@ -35,7 +35,7 @@ Apple Acquires French AI Company Specializing in On-Device Processing (3 minute 
 Apple has acquired Paris-based artificial intelligence startup Datakalab amid its push to deliver on-device AI tools. Datakalab specializes in algorithm compression and embedded AI systems.
 
 Stop receiving emails here.
-AlphaSignal, 214 Barton Springs RD, Austin, Texas 94123, United States
+TLDR, 214 Barton Springs RD, Austin, Texas 94123, United States
 """
 
 MODEL = "GPT4"
@@ -48,7 +48,7 @@ client = AzureOpenAI(
 
 def generate_newsletter(content):
     # role = f"You are a helpful podcast content summarizer. You need to summarize the podcast and decorate it in Markdown. \n\n You can reference this example but style it with markdown: \n\n{TLDR_example}\n"
-    role = f"""You are a professional newsletter editor specialized in technology topics. Your task is to summarize the provided content into a concise, engaging, and informative markdown newsletter. The newsletter should be easy to read, include bullet points for key facts, subheadings for different sections, and incorporate a formal yet engaging tone. Use hyperlinks appropriately to encourage readers to engage further. Use combination of emoji. \n\n You can reference this example but style it with markdown {TLDR_example}"""
+    role = f"""You are a professional newsletter editor specialized in technology topics. Your task is to summarize the provided content into a concise, engaging, and informative markdown newsletter. The newsletter should be easy to read, include bullet points for key facts, subheadings for different sections, and incorporate a formal yet engaging tone. Use hyperlinks appropriately to encourage readers to engage further. Use combination of emoji. \n\n You can reference this example but style it with markdown {TLDR_EXAMPLE}"""
 
 
     prompt = f"Create a professional markdown newsletter style email summary for the podcast content: {content}"
@@ -80,7 +80,7 @@ def send_email(subject, message, to_email, is_markdown=False):
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587
     smtp_username = 'aibriefingroom@gmail.com'
-    smtp_password = 'dxlm tcut yvts czmt'
+    smtp_password = os.getenv("SMTP_PASSWORD")
 
     msg = MIMEMultipart()
     msg['From'] = smtp_username
@@ -140,7 +140,7 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 # Path to your downloaded service account key file
-SERVICE_ACCOUNT_FILE = '/content/ai-briefing-room-key.json'
+SERVICE_ACCOUNT_FILE = 'ai-briefing-room-key.json'
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 def google_sheets_service():
@@ -152,17 +152,14 @@ def google_sheets_service():
 
 def get_subscribers(service):
     """Retrieves subscriber emails from a specific Google Sheets range."""
-    SPREADSHEET_ID = '1AuzY3dvOkbj5GdPie4KHyWMNrY9acInB3Lp6CzBSE6o'
+    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
     RANGE_NAME = 'response!B2:B'  # Make sure to adjust the sheet name and range as necessary
     result = service.spreadsheets().values().get(
         spreadsheetId=SPREADSHEET_ID, range=RANGE_NAME).execute()
     rows = result.get('values', [])
     return [row[0] for row in rows if row]
 
-# Main function
-use_sheet = True
-
-def main():
+def send_newsletter(content, use_sheet = True):
     if use_sheet:
       service = google_sheets_service()
       subscribers = get_subscribers(service)
@@ -170,26 +167,7 @@ def main():
       init_db()
       subscribers = get_subscribers()  # Retrieve all subscribers
     print(subscribers)
-    content = """Podcast Description:
-    tech briefing: unveiling today's critical updates - may 1
-
-    dive into the latest tech developments with our expert insights:
-
-    - unitedhealth group's cybersecurity breach: ceo andrew witty reveals a $22 million ransom payment following a significant attack on change healthcare. discover how this incident impacts data security and unitedhealth's plans to bolster its defenses.
-
-    - amazon under fire: ceo andy jassy's comments on unionization draw criticism from the nlrb, marking a pivotal moment in the company's labor relations. learn about the implications for amazon's work environment and legal standing.
-
-    - google's job cuts and reorganization: google announces job eliminations and relocations as part of a cost-cutting measure. understand the strategic motivations behind these moves and their impact on the tech giant’s future.
-
-    - qualcomm's financial triumph: with a fiscal second-quarter report that surpasses expectations, qualcomm is on the rise. explore how a boost in handset sales and strategic focus on ai and automotive sectors are propelling qualcomm's success.
-
-    join us for a concise overview of these pivotal stories in the tech world, offering essential knowledge for anyone keeping pace with the rapidly evolving technological landscape
-    """
     title = "Unitedhealth's $22m Cyber Ransom 💻, Amazon's Union Controversy 🏢, Qualcomm's Ai Surge 📈"
     newsletter_content = generate_newsletter(content)
     for email in subscribers:
         send_email(title, newsletter_content, email, is_markdown=True)
-
-# Execute the main function
-if __name__ == '__main__':
-    main()
