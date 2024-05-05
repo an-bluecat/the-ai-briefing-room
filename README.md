@@ -1,6 +1,5 @@
 # the-ai-briefing-room
-
-![Design Diagram](design_diagram.jpg)
+![briefing-room drawio](https://github.com/an-bluecat/the-ai-briefing-room/assets/45247795/d0764c1a-306a-4970-9f81-311dc6c23d00)
 
 ### Installation
 
