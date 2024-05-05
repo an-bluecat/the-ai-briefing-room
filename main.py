@@ -14,7 +14,7 @@ from openai import AzureOpenAI
 from utils import spanish_title_case, english_title_case, get_day_of_week
 import sys
 import requests
-
+from newsletter import send_newsletter
 
 # Setup basic configuration for logging
 logging.basicConfig(level=logging.INFO,
@@ -95,10 +95,10 @@ class NewsPodcastOrchestrator:
         Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
         Response: I'm Wall-E, and this is your CNBC techcheck Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
         """
-        
+
         month, day, day_of_week = get_day_of_week(self.date.strftime('%Y-%m-%d'))
-        intro_date = day_of_week + " " + month + " " + str(day) 
-        
+        intro_date = day_of_week + " " + month + " " + str(day)
+
         prompt = f"Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E and {intro_date}), and replace CNBC techcheck briefing to 'AI briefing' \n {news_concat}\n" + \
             output_response_prompt + "\n"
         response_begin = "Response:"
@@ -136,14 +136,14 @@ class NewsPodcastOrchestrator:
         """Polishes the podcast script using the GPT API."""
 
         month, day, day_of_week = get_day_of_week(self.date.strftime('%Y-%m-%d'))
-        intro_date = day_of_week + " " + month + " " + str(day) 
-        
+        intro_date = day_of_week + " " + month + " " + str(day)
+
         # Make a request to the GPT API to polish the script
         input_ask = script + f"""
         This is not up to standards with the style of 'CNBC techcheck', here is a example. Carefully inspect the language style, sentence structure, use of words and order of words in sentences of the following examples of 'CNBC techcheck'. Start the podcast with "i'm wall-e, welcoming you to today's tech briefing for {intro_date}.:
 example 1:
 "I'm Julia Boorstin, and this is your tech Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow."
-example 2: 
+example 2:
 "I'm Steve Kovach, and this is your tech Briefing for Tuesday March 23rd. AMD revealing today its latest AI chips. The new chips will be for so-called AI PCs, or PCs with special processors, for tasks like real-time language translation, or using tools like Microsoft's Copilot Assistant more efficiently. Last month, Intel put its latest AI PC chip in Microsoft's new Surface computer lineup, and Qualcomm is expected to put its chips in PCs starting next month. Sticking with AI, Microsoft announcing today a $1.5 billion investment in G42, a startup based in the United Arab Emirates. As part of the deal, G42 will use Microsoft's Azure Cloud to run its AI applications, and Microsoft President Brad Smith will join the company's board. Microsoft has made several foreign AI and cloud investments so far this year. Some examples include the company said it would open a headquarters in London, invest in the French startup Mistral, and invest $2.9 billion in AI infrastructure in Japan. Now over to China. Baidu, the Chinese search company, announced its AI chatbot ErnieBot has surpassed 200 million users. ErnieBot launched last year, and other companies like Samsung and Honor have integrated Ernie into their devices. Apple is reportedly going to partner with Baidu as well to help power new AI features in devices sold in China. That's all from today. We'll see you back here tomorrow."
 Make my original podcast script more like the examples above to an extend that it is similar in style, language, sentence structure, and use of words and so closely resembled so that no one can tell the difference between the style.
 refined podcast script:
@@ -161,7 +161,7 @@ refined podcast script:
 
         input_ask = f"""
             Generate a description for this podcast. Summarize topics discussed. This will be the script we use for the podcast description on Apple Podcast. So please be concise, use bullet point when possible. Please use plain text, no markdown.
-            Here's the podcast script: 
+            Here's the podcast script:
             "
             {script}
             "
@@ -383,11 +383,13 @@ Podcast Description (Chinese):
 {chinese_description}
 """
             output_file_path = f"{output_directory}podcast_data.txt"
-
             # Write the output data to the file
             with open(output_file_path, 'w') as file:
                 file.write(output_data)
                 logging.info(f"All data saved to {output_file_path}.")
+
+            # Send the newsletter
+            send_newsletter(content=podcast_description)
 
         else:
             logging.error("Failed to generate podcast script or title.")
