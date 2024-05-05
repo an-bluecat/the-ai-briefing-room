@@ -36,6 +36,9 @@ AZURE_OPENAI_ENDPOINT = [your Azure password]
 API_VERSION = "2024-02-01"
 EMAIL = [anchor login email]
 PASSWORD = [anchor login password]
+SMTP_PASSWORD = ""
+SPREADSHEET_ID = ""
+
 ```
 
 Replace [xxx] with your actual credentials
