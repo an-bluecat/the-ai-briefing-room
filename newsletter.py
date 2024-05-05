@@ -135,15 +135,40 @@ def get_subscribers():
     conn.close()
     return [email[0] for email in emails]
 
+# Google sheet
+from google.oauth2 import service_account
+from googleapiclient.discovery import build
 
+# Path to your downloaded service account key file
+SERVICE_ACCOUNT_FILE = '/content/ai-briefing-room-key.json'
+SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+
+def google_sheets_service():
+    """Creates a Google Sheets service client using service account credentials."""
+    creds = service_account.Credentials.from_service_account_file(
+        SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+    service = build('sheets', 'v4', credentials=creds)
+    return service
+
+def get_subscribers(service):
+    """Retrieves subscriber emails from a specific Google Sheets range."""
+    SPREADSHEET_ID = '1AuzY3dvOkbj5GdPie4KHyWMNrY9acInB3Lp6CzBSE6o'
+    RANGE_NAME = 'response!B2:B'  # Make sure to adjust the sheet name and range as necessary
+    result = service.spreadsheets().values().get(
+        spreadsheetId=SPREADSHEET_ID, range=RANGE_NAME).execute()
+    rows = result.get('values', [])
+    return [row[0] for row in rows if row]
 
 # Main function
+use_sheet = True
+
 def main():
-    init_db()
-    # Example usage
-    add_subscriber('1835928575qq@gmail.com')
-    add_subscriber('xiaozhang20030215@gmail.com')
-    subscribers = get_subscribers()  # Retrieve all subscribers
+    if use_sheet:
+      service = google_sheets_service()
+      subscribers = get_subscribers(service)
+    else:
+      init_db()
+      subscribers = get_subscribers()  # Retrieve all subscribers
     print(subscribers)
     content = """Podcast Description:
     tech briefing: unveiling today's critical updates - may 1
