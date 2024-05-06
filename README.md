@@ -1,5 +1,6 @@
 # the-ai-briefing-room
-![briefing-room drawio](https://github.com/an-bluecat/the-ai-briefing-room/assets/45247795/d0764c1a-306a-4970-9f81-311dc6c23d00)
+![briefing-room drawio (1)](https://github.com/an-bluecat/the-ai-briefing-room/assets/45247795/a2e186b8-59bd-4cd6-b590-b353a0a113bd)
+
 
 ### Installation
 
