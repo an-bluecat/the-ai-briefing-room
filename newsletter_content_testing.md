@@ -1,4 +1,4 @@
-### 🍏 Apple's Surprising Announcement
+### 🍎 Apple's Surprising Announcement
 
 - **Event Scheduled:** Discover details about Apple's unexpected event happening tomorrow morning.
 - **What to Expect:** The tech community is buzzing about the anticipated expansion of the iPad lineup and the introduction of an M4 chip. 
