@@ -4,40 +4,15 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from openai import AzureOpenAI
 
-TLDR_EXAMPLE = """
-Sign Up |Advertise|View Online
-TLDR
 
-Together With Bland AI
-TLDR AI 2024-04-26
-AI phone calls?! The world's fastest conversational AI was released and it sounds just like a human (Sponsor)
-
-AI lab, Bland AI has released a hyper-realistic sounding AI phone agent, and it's blowing everyone's minds.
-It can be used for anything: sales, instantly calling and pre-qualifying leads, customer support…
-It can handle over 1,000,000 business phone calls simultaneously.
-It can respond at human level speeds... with any voice.
-Developers and companies are loving this. Impacts on the job market are coming soon...
-
-Skeptical? Try calling it yourself >> Bland.ai
-
-(P.S. TLDR readers can sign up here and access something even crazier...)
-
-🚀
-Headlines & Launches
-Snowflake Arctic - LLM for Enterprise AI (11 minute read)
-
-The Snowflake AI Research Team has introduced Snowflake Arctic, an enterprise-grade LLM that delivers top-tier performance in SQL generation, coding, and instruction-following benchmarks at a fraction of traditional costs. Arctic leverages a unique architecture and an open-source approach, making advanced LLM capabilities accessible to a wider audience. The model is available on Hugging Face and will be integrated into various platforms and services.
-Nvidia acquires AI workload management startup Run:ai for $700M (3 minute read)
-
-Nvidia is acquiring AI infrastructure optimization firm Run:ai for approximately $700 million to enhance its DGX Cloud AI platform, allowing customers improved management of their AI workloads. The acquisition will support complex AI deployments across multiple data center locations. Run:ai had previous VC investments and a broad customer base, including Fortune 500 companies.
-Apple Acquires French AI Company Specializing in On-Device Processing (3 minute read)
-
-Apple has acquired Paris-based artificial intelligence startup Datakalab amid its push to deliver on-device AI tools. Datakalab specializes in algorithm compression and embedded AI systems.
-
-Stop receiving emails here.
-TLDR, 214 Barton Springs RD, Austin, Texas 94123, United States
-"""
-
+TLDR_EXAMPLE = ""
+with open("newsletter.md", 'r', encoding='utf-8') as file:
+    TLDR_EXAMPLE = file.read()
+    
+TLDR_TITLE_EXAMPLE = ""
+with open("newsletter_title.md", 'r', encoding='utf-8') as file:
+    TLDR_TITLE_EXAMPLE = file.read()
+    
 MODEL = "GPT4"
 
 client = AzureOpenAI(
@@ -46,6 +21,31 @@ client = AzureOpenAI(
     api_version=os.getenv("API_VERSION")
 )
 
+def generate_newsletter_title(content):
+    role = f"""
+    You are a professional newsletter title generator specialized in technology topics. Your task is to generate the overall title based on the newsletter. The title of the newsletter should be 1 line only, easy to read, include bullet points for key facts. Use combination of emoji.
+    You can reference this example but style it with markdown {TLDR_TITLE_EXAMPLE}. You must generate only 1 line title because the title should be concise enough."""
+
+    prompt = f"Create a professional title in newsletter style for the podcast content: {content}"
+
+    try:
+        response = client.chat.completions.create(
+            model=MODEL,
+            messages=[
+                {"role": "system", "content": role},
+                {"role": "user", "content": prompt}
+            ],
+            temperature=0.7,
+            max_tokens=800,
+            top_p=0.95,
+            frequency_penalty=0,
+            presence_penalty=0,
+            stop=None
+        )
+        return response.choices[0].message.content
+    except Exception as e:
+        print(f"Error while generating newsletter: {e}")
+        return None
 def generate_newsletter(content):
     # role = f"You are a helpful podcast content summarizer. You need to summarize the podcast and decorate it in Markdown. \n\n You can reference this example but style it with markdown: \n\n{TLDR_example}\n"
     role = f"""You are a professional newsletter editor specialized in technology topics. Your task is to summarize the provided content into a concise, engaging, and informative markdown newsletter. The newsletter should be easy to read, include bullet points for key facts, subheadings for different sections, and incorporate a formal yet engaging tone. Use hyperlinks appropriately to encourage readers to engage further. Use combination of emoji. \n\n You can reference this example but style it with markdown {TLDR_EXAMPLE}"""
@@ -167,7 +167,15 @@ def send_newsletter(content, use_sheet = True):
       init_db()
       subscribers = get_subscribers()  # Retrieve all subscribers
     print(subscribers)
-    title = "Unitedhealth's $22m Cyber Ransom 💻, Amazon's Union Controversy 🏢, Qualcomm's Ai Surge 📈"
+
     newsletter_content = generate_newsletter(content)
+    newsletter_content = "###" + "###".join(newsletter_content.split("###")[1:]).split("---")[0] # remove title and intro, and summary at the end
+    title = generate_newsletter_title(newsletter_content)
+    newsletter_content += "\n\n[🔊 Listen to the Full Podcast Episode Here](https://open.spotify.com/show/4MSGKsQXnyohBPdyFyp6wN)"
+    # with open('newsletter_content_testing.md', 'w', encoding='utf-8') as file:
+    #     file.write(newsletter_content)
+    # with open('newsletter_title_testing.md', 'w', encoding='utf-8') as file:
+    #     file.write(title)
     for email in subscribers:
         send_email(title, newsletter_content, email, is_markdown=True)
+        print(email)
