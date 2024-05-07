@@ -171,7 +171,7 @@ def send_newsletter(content, use_sheet = True):
     newsletter_content = generate_newsletter(content)
     newsletter_content = "###" + "###".join(newsletter_content.split("###")[1:]).split("---")[0] # remove title and intro, and summary at the end
     title = generate_newsletter_title(newsletter_content).lstrip("#")
-    newsletter_content += "\n\n[🔊 Listen to the Full Podcast Episode Here](https://open.spotify.com/show/4MSGKsQXnyohBPdyFyp6wN)"
+    newsletter_content += "\n\n[🔊 Listen to the Full Podcast Episode Here](https://podcasters.spotify.com/pod/show/aibriefingroom)"
     # with open('newsletter_content_testing.md', 'w', encoding='utf-8') as file:
     #     file.write(newsletter_content)
     # with open('newsletter_title_testing.md', 'w', encoding='utf-8') as file:
