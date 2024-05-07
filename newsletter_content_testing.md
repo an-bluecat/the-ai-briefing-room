@@ -26,4 +26,4 @@
 
 
 
-[🔊 Listen to the Full Podcast Episode Here](https://open.spotify.com/show/4MSGKsQXnyohBPdyFyp6wN)
+[🔊 Listen to the Full Podcast Episode Here](https://podcasters.spotify.com/pod/show/aibriefingroom)
