@@ -36,8 +36,8 @@ AZURE_OPENAI_ENDPOINT = [your Azure password]
 API_VERSION = "2024-02-01"
 EMAIL = [anchor login email]
 PASSWORD = [anchor login password]
-SMTP_PASSWORD = ""
-SPREADSHEET_ID = ""
+SMTP_PASSWORD = [SMTP Password]
+SPREADSHEET_ID = [Google SpreadSheet Id]
 
 ```
 
@@ -47,11 +47,11 @@ Replace [xxx] with your actual credentials
 ```
 {
     "type": "service_account",
-    "project_id": "YOUR_PROJECT_ID",
-    "private_key_id": "YOUR_PRIVATE_KEY_ID",
-    "private_key": "YOUR_PRIVATE_KEY",
-    "client_email": "YOUR_CLIENT_EMAIL",
-    "client_id": "YOUR_CLIENT_ID",
+    "project_id": [Project ID],
+    "private_key_id": [Private Key ID],
+    "private_key": [Private Key],
+    "client_email": [Client Email],
+    "client_id": [Client ID],
     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
     "token_uri": "https://oauth2.googleapis.com/token",
     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
