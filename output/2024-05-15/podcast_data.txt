@@ -1,0 +1,297 @@
+
+Titles:
+Intel’s Thunderbolt Share lets two PCs control each other over a USB cable
+Dell leak details next-gen Windows on Arm chips, 29-hour laptops, and more
+Samsung mocks Apple’s crushing iPad Pro ad with its own ‘UnCrush’ pitch
+Samsung’s customizable Music Frame speaker is receiving its first discount
+Google Sheets’ new formatting feature has Excel switchers excited
+Welcome to Notepad, a newsletter on Microsoft’s era-defining bets by Tom Warren
+Arizona accuses Amazon of being a monopoly and deceiving consumers with ‘dark patterns’
+Android 15’s second beta release lets users lock down access to private apps
+Microsoft’s AI obsession is jeopardizing its climate ambitions
+AT&T cuts a deal to launch satellite-to-smartphone service soon
+Microsoft announces the Proteus Controller, a gamepad for Xbox gamers with disabilities
+Netflix’s ad tier hits 40 million users
+PPSSPP brings PSP emulation to the iPhone
+RetroArch brings its free multisystem emulation to the iOS App Store
+Senate committee passes three bills to safeguard elections from AI, months before Election Day
+Airbus debuts its half-plane, half-helicopter to the public
+Google adds Max, Peacock, and Angry Birds to cars with native Android software
+Car screens are getting bigger — and weirder — and Google wants to help
+Android will be able to detect if your phone has been snatched
+Someone finally made a heat pump that looks good inside your home
+Wear OS 5 triples down on battery life
+Raspberry Pi is going public to expand its range of tiny computers
+China is still an important market even if investors diversify from it now, says Peak XV
+Meet the wall-climbing robots finding the flaws in 'D' grade U.S. infrastructure
+Palo Alto Networks will buy IBM's QRadar cloud software assets
+Cisco reports strong results even as revenue drops most in 15 years
+Dell surges 11% on optimism it has secured big AI server orders
+Bitcoin is having best day since March following cooler April inflation reading
+Uber announces shuttle rides, features for caregivers and Costco perks
+A half-million school buses across US could become EV powerhouse feeding grid
+Instagram co-founder Mike Krieger joins Amazon-backed Anthropic
+Amazon's appearance at Upfronts highlights push from digital ads into traditional media
+Neuralink has faced issues with its tiny wires for years, Reuters sources say
+Raspberry Pi, a computing startup backed by Sony, heads for rare London IPO
+Baidu’s robotaxi unit expects to turn profitable next year
+OpenAI co-founder Ilya Sutskever says he will leave the startup
+Reddit shares close near record after two-day rally driven by meme stocks
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+
+
+The Verge
+Intel’s Thunderbolt Share lets two PCs control each other over a USB cable
+Dell leak details next-gen Windows on Arm chips, 29-hour laptops, and more
+Samsung mocks Apple’s crushing iPad Pro ad with its own ‘UnCrush’ pitch
+Samsung’s customizable Music Frame speaker is receiving its first discount
+Google Sheets’ new formatting feature has Excel switchers excited
+Welcome to Notepad, a newsletter on Microsoft’s era-defining bets by Tom Warren
+Arizona accuses Amazon of being a monopoly and deceiving consumers with ‘dark patterns’
+Android 15’s second beta release lets users lock down access to private apps
+Microsoft’s AI obsession is jeopardizing its climate ambitions
+AT&T cuts a deal to launch satellite-to-smartphone service soon
+Microsoft announces the Proteus Controller, a gamepad for Xbox gamers with disabilities
+Netflix’s ad tier hits 40 million users
+PPSSPP brings PSP emulation to the iPhone
+RetroArch brings its free multisystem emulation to the iOS App Store
+Senate committee passes three bills to safeguard elections from AI, months before Election Day
+Airbus debuts its half-plane, half-helicopter to the public
+Google adds Max, Peacock, and Angry Birds to cars with native Android software
+Car screens are getting bigger — and weirder — and Google wants to help
+Android will be able to detect if your phone has been snatched
+Someone finally made a heat pump that looks good inside your home
+Wear OS 5 triples down on battery life
+Raspberry Pi is going public to expand its range of tiny computers
+
+CNBC Tech
+China is still an important market even if investors diversify from it now, says Peak XV
+Meet the wall-climbing robots finding the flaws in 'D' grade U.S. infrastructure
+Palo Alto Networks will buy IBM's QRadar cloud software assets
+Cisco reports strong results even as revenue drops most in 15 years
+Dell surges 11% on optimism it has secured big AI server orders
+Bitcoin is having best day since March following cooler April inflation reading
+Uber announces shuttle rides, features for caregivers and Costco perks
+A half-million school buses across US could become EV powerhouse feeding grid
+Instagram co-founder Mike Krieger joins Amazon-backed Anthropic
+Amazon's appearance at Upfronts highlights push from digital ads into traditional media
+Neuralink has faced issues with its tiny wires for years, Reuters sources say
+Raspberry Pi, a computing startup backed by Sony, heads for rare London IPO
+Baidu’s robotaxi unit expects to turn profitable next year
+OpenAI co-founder Ilya Sutskever says he will leave the startup
+Reddit shares close near record after two-day rally driven by meme stocks
+
+Top News:
+1. dell surges 11% on optimism it has secured big ai server orders
+2. openai co-founder ilya sutskever says he will leave the startup
+3. palo alto networks will buy ibm's qradar cloud software assets
+4. android 15’s second beta release lets users lock down access to private apps
+5. microsoft announces the proteus controller, a gamepad for xbox gamers with disabilities
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E and Wednesday May 15), and replace CNBC techcheck briefing to 'AI briefing' 
+ "title0:
+Dell stock surges on optimism it has big AI server orders
+description0:
+Michael Dell, Chairman and CEO of Dell Technologies, is speaking at the Mobile World Congress 2024 in Barcelona, Spain, on February 27, 2024.
+Dell shares rose more than 11% on Wednesday to an all-time high after Morgan Stanley raised its price target and predicted that the company would rake in sales from the insatiable demand for artificial intelligence servers.
+Dell is seeing accelerating momentum, especially in winning business to build AI servers, unlocking a new bull case for the stock, Morgan Stanley analyst Erik Woodring wrote in a note on Wednesday. He upgraded his price target on Dell from $128 per share to $152 a share and called it a top pick.
+"All-in, we are hearing about more AI server momentum at Dell than at any other OEM," Woodring wrote, saying that he expected about $10 billion of AI server revenue in the company's fiscal 2025 — ending next February.
+Wednesday's move was the largest since March 1, when the stock surged after earnings showed that the computer manufacturer has benefited from the AI boom.
+Dell shares are now up over 99% in 2024, trailing the 233% gain from rival AI servermaker Super Micro Computer but surpassing Hewlett Packard Enterprise 's 6% gains this year.
+Most AI servers are built around Nvidia's chips, which have become prized in the technology industry because they are used to deploy advanced AI models from companies like Google , OpenAI and Meta . Dell sells servers using the newest Nvidia AI chips, including its H100 GPU and the latest Blackwell-generation chips.
+At Nvidia 's annual conference in March, Nvidia CEO Jensen Huang appeared to send customers who want the latest AI chips to Dell for orders.
+"You're going to need an AI factory," Huang said. "And nobody is better at building end-to-end systems of very large scale for the enterprise than Dell."
+"Michael [Dell] is here and he's happy to take your order," Huang continued.
+"While the near-exponential ramp of Nvidia GPU shipments and AI servers builds make it difficult to pin down exact growth rates," Woodring wrote, he has confidence in Dell's business for various reasons. Among those reasons are the strengthening demand for AI servers and that he models Dell's market share increasing.
+He wrote that Dell may be able to upsell its customers and "attach" additional hardware, such as data storage.
+Dell is expected to announce its April quarter earnings on May 30. Nvidia reports earnings for its quarter ending in April on May 22.
+Dell's other business, building PCs for consumers and businesses running Microsoft Windows, could get a boost next week when Microsoft reveals new capabilities at its conference, including long-awaited AI features that many analysts expect to drive demand for new PCs.
+PC sales have slumped for two years in a post-pandemic hangover, as consumers and enterprises who bought new machines during 2020 and 2021 pushed back the timeline for their next upgrades.
+But the PC industry is on course to grow again and is outperforming lowered expectations, Woodring wrote, which will benefit Dell.
+"We remain bullish on the PC market recovery as we are not only hearing about upgrade/refresh demand in our recent CIO and VAR checks, but also seeing upward revisions to notebook ODM builds in recent months," Woodring wrote.
+
+title1:
+OpenAI co-founder Ilya Sutskever says he will leave the startup
+description1:
+Sam Altman (L), US entrepreneur, investor, programmer, and founder and CEO of artificial intelligence company OpenAI, and the company's co-founder and chief scientist Ilya Sutskever, speak together at Tel Aviv University in Tel Aviv on June 5, 2023.
+OpenAI co-founder Ilya Sutskever said Tuesday that he's leaving the Microsoft -backed startup.
+"I am excited for what comes next — a project that is very personally meaningful to me about which I will share details in due time," Sutskever wrote in an X post on Tuesday.
+The departure comes months after OpenAI went through a leadership crisis involving co-founder and CEO Sam Altman.
+In November, OpenAI's board said in a statement that Altman had not been "consistently candid in his communications with the board." The issue quickly came to look more complex. The Wall Street Journal and other media outlets reported that Sutskever trained his focus on ensuring that artificial intelligence would not harm humans, while others, including Altman, were instead more eager to push ahead with delivering new technology.
+Almost all of OpenAI's employees signed an open letter saying they would leave in response to the board's action. Days later, Altman was back at the company, and board members Helen Toner, Tasha McCauley and Sutskever, who had voted to oust Altman, were out. Adam D'Angelo, who had also voted to push out Altman, stayed on the board.
+When Altman was asked about Sutskever's status on a Zoom call with reporters at the time, he said there were no updates to share. "I love Ilya. ... I hope we work together for the rest of our careers, my career, whatever," Altman said. "Nothing to announce today."
+On Tuesday, Altman shared his thoughts on Sutskever's departure.
+"This is very sad to me; Ilya is easily one of the greatest minds of our generation, a guiding light of our field, and a dear friend," Altman wrote on X. "His brilliance and vision are well known; his warmth and compassion are less well known but no less important." Altman said research director Jakub Pachocki, who has been at OpenAI since 2017, will replace Sutskever as chief scientist.
+OpenAI has announced new board members, including former Salesforce co-CEO Bret Taylor and former Treasury Secretary Larry Summers. Microsoft obtained a nonvoting board observer position.
+In March, OpenAI announced its new board and the wrap-up of an internal investigation by U.S. law firm WilmerHale into the events leading up to Altman's ouster. Altman rejoined OpenAI's board, and three new board members were announced: Dr. Sue Desmond-Hellmann, former CEO of the Bill and Melinda Gates Foundation; Nicole Seligman, former EVP and global general counsel of Sony and president of Sony Entertainment; and Fidji Simo, CEO and chair of Instacart.
+The three new members will "work closely with current board members Adam D'Angelo, Larry Summers and Bret Taylor as well as Greg, Sam, and OpenAI's senior management," according to a company release in March, referencing OpenAI co-founder Greg Brockman.
+News of Sutskever's departure comes a day after OpenAI launched a new AI model and desktop version of ChatGPT, along with an updated user interface, the company's latest effort to expand use of its popular chatbot.
+The update brings the GPT-4 model to everyone, including OpenAI's free users, technology chief Mira Murati said Monday in a livestreamed event. She added that the new model, GPT-4o, is "much faster," with improved capabilities in text, video and audio.
+OpenAI said it eventually plans to allow users to video chat with ChatGPT. "This is the first time that we are really making a huge step forward when it comes to the ease of use," Murati said.
+In 2015, Altman and Tesla CEO Elon Musk, another OpenAI co-founder, wanted Sutskever, then a research scientist at Google , to become the budding startup's top scientist, according to the lawsuit Musk filed against OpenAI in March.
+"Dr. Sutskever went back and forth on whether to leave Google and join the project, but it was ultimately a call from Mr. Musk on the day OpenAI, Inc. was publicly announced that convinced Dr. Sutskever to commit to joining the project as OpenAI, Inc.'s Chief Scientist," the legal filing said.
+Jan Leike, who had been co-leader with Sutskever of OpenAI's Superalignment team, also said on X on Tuesday that he has left the startup.
+The team, announced last year, has been working to achieve "scientific and technical breakthroughs to steer and control AI systems much smarter than us." OpenAI committed 20% of its computing power to the initiative over four years.
+
+title2:
+Palo Alto Networks will buy IBM QRadar cloud security software assets
+description2:
+Nikesh Arora, CEO of Palo Alto Networks, appears on CNBC's "Squawk Box" at the WEF Annual Meeting in Davos, Switzerland on Jan. 16th, 2024.
+Palo Alto Networks is buying cloud security software assets from IBM as part of a broader partnership that will give the cybersecurity company access to more consultants and a bigger customer base.
+In a joint press release, the companies said Palo Alto is acquiring IBM's QRadar cloud software for an undisclosed sum and migrating existing customers to its security platform, Cortex Xsiam. The move normally takes one to three months, Nikesh Arora, Palo Alto's CEO, told CNBC. Also, IBM will train more than 1,000 of its consulting employees on Palo Alto's products.
+Consolidation has been ramping up in the security software industry as companies gear up for a swarm of attacks spawned by artificial intelligence. In March, Cisco closed its $28 billion acquisition of Splunk, the networking company's largest deal ever, snapping up the leading provider of security information and event management (SIEM) software.
+Earlier on Wednesday, two other companies in the SIEM market, Exabeam and Thoma Bravo's LogRhythm, announced plans to merge.
+Arora said his company needs to be better prepared to go up against Splunk.
+"Clearly, it's just a hotbed of activity in the consolidation in cybersecurity," Arora said.
+Palo Alto and IBM have been working more closely together for months, and Arora said he'd been talking with IBM CEO Arvind Krishna about how to advance their partnership. But they both sold SIEM software.
+"We used to get stuck there," Arora said.
+Krishna said the Splunk deal didn't push IBM to make its arrangements with Palo Alto.
+"We don't really compete, I think, with most things in Cisco's portfolio," Krishna said.
+In December, IBM said its consulting group would offer Palo Alto's competing Cortex Xsiam software to customers. IBM will now adopt Cortex Xsiam, as well as Palo Alto's Prisma Sase 3.0 product bundle. Palo Alto will incorporate IBM's Watsonx large language models into Cortex Xsiam, in addition to its use of models from Google .
+The SIEM category has been around for over 20 years, but Palo Alto just introduced Cortex Xsiam two years ago. It's rapidly gained adoption, with over $90 million in bookings in the latest quarter, and Arora said the company has been taking market share from "everyone."
+For IBM, a more robust lineup of contemporary security tools for consulting might help the company deliver on its stated goal of revenue growth in the mid-single digits for 2024. In the first quarter, revenue increased 3%, with a 2% bump in the consulting segment.
+Palo Alto is growing much faster than IBM. In the January quarter, revenue jumped 19%. The company will report results for the latest quarter on Monday.
+Palo Alto more than doubled in value last year and its stock is up 6% year to date, lifting the company's market cap past $100 billion. The stock rose more than 1% in extended trading. IBM is up close to 5% this year and is now valued at $154 billion.
+The companies said the transaction should close by the end of September, subject to regulatory approval and other conditions.
+"I expect that we are going to grow significant consulting business on Palo Alto's products, much like I have with Azure and AWS," Krishna said in an interview. IBM helps organizations run their software on the Amazon and Microsoft public clouds. He said he hopes to quickly be generating hundreds of millions of dollars in new consulting revenue.
+IBM will continue to sell its QRadar software for use in on-premises data centers, Krishna said.
+"It's here for years," he said.
+At the same time, IBM will suggest that clients using it consider switching to Palo Alto's Cortex Xsiam, Krishna said.
+
+title3:
+Android 15’s second beta release lets users lock down access to private apps
+description3:
+Alongside Google’s ongoing developer-focused I/O conference comes the latest release of Android 15, which is now in its second beta. It’s got some cool new features, like the ability to now hide a collection of apps inside a “private space,” customizable vibrations so you can notice different types of notifications just by feeling, and also richer widget previews.
+The new private space function is the most interesting of the bunch: it can hide apps you don’t want others seeing into a biometric or PIN-protected container in the app drawer. It’s one of several new security features coming to Android.
+Accessing a private space. GIF: Google
+Private space leverages Android’s user profiles, so apps that you put in a private space also curtain away notifications for those apps and files made or downloaded within them. One could, for instance, lock away all their dating apps into a space and not get inundated with matches at undesirable times.
+Another cool new feature is custom vibrations for incoming notifications. Now users can set distinguishing vibes for a Slack or Teams message versus an Uber Eats delivery update without taking their phone out of their pocket.
+Now the widget picker can preview exactly how a widget will look instead of showing a placeholder. Image: Google
+For developers that like making widgets, there’s a new rich widget preview ability that helps users understand what it’ll look like before placing it on the homescreen. For instance, when you look inside the Widget Picker and see the option for a contact card, you can now see an actual person from your contacts in the preview instead of a placeholder one.
+
+title4:
+Microsoft announces the Proteus Controller, a gamepad for Xbox gamers with disabilities
+description4:
+On Wednesday, Microsoft announced the Proteus Controller, a $299 modular video game controller kit that lets Xbox gamers with disabilities customize their controllers.
+Created by peripheral company ByoWave as part of the Designed for Xbox program, the wireless controller consists of small cubes with interchangeable faceplates that include controller buttons, a directional pad, and analog sticks.
+The “snap and play” parts connect together so gamers can build more than 100 configurations and LED lighting variations. As a result, one-handed gamers and other players with disabilities can use the controller in a way that’s most comfortable for them. The buttons are also remappable for a more individualized experience, albeit only via the companion app.
+The Proteus Controller can be used in multiple ways. Image: Byowave
+At launch, the Proteus Controller will work with the Xbox Series X / S, Xbox One, and Windows 10 and 11. ByoWave says it won’t support PlayStation 5 or Nintendo Switch, though it’s open to partnering with these platforms.
+The controller is expected to ship this fall, though it’s available to preorder via ByoWave’s website at a discounted price of $255 right now. The kit will include a USB-C charging cable and a Bluetooth dongle, as well as other parts like left and right handles to create a traditional gamepad and two large one-button peripherals.
+Along with introducing a new controller, Microsoft is also updating its $99.99 Xbox Adaptive Controller, which was released in 2018 to help players build adaptive gaming setups."
+
+Response:
+
+Script:
+i'm wall-e, and this is your ai briefing for wednesday, may 15th. 
+
+dell technologies is making headlines after its stock soared more than 11% to reach an all-time high. wall street's enthusiasm stems from morgan stanley's bullish prediction on dell's role in the artificial intelligence server market. michael dell, speaking from the mobile world congress in barcelona, highlighted the company's aggressive push into ai servers, riding on nvidia's cutting-edge chips for a projected $10 billion in revenue for fiscal 2025. with shares up over 99% in 2024, dell stands as a testament to the surging demand for ai infrastructure.
+
+in other news, openai, the ai powerhouse behind chatgpt, is seeing a major shakeup as co-founder ilya sutskever steps down. sutskever's departure, following a tumultuous period for openai's leadership, marks the end of an era for the company, which continues to push the boundaries with new ai models and interfaces under the strategic direction of newly installed chief scientist, jakub pachocki.
+
+the cybersecurity landscape is also witnessing significant moves with palo alto networks set to acquire ibm's qradar cloud security assets. this deal, expected to close by the end of september, enhances palo alto's arsenal against cybersecurity threats, positioning the company as a formidable competitor in the rapidly evolving sector.
+
+on the consumer technology front, google has unveiled the second beta release of android 15, introducing a "private space" feature for locking away sensitive apps, alongside enhancements like customizable vibrations and richer widget previews, promising a more personalized and secure user experience.
+
+lastly, microsoft's commitment to accessibility takes a leap forward with the announcement of the proteus controller, a $299 modular gamepad designed to cater to xbox gamers with disabilities. the customizable controller, developed by byowave, underscores microsoft's ongoing efforts to make gaming more accessible to everyone.
+
+that's all for today. we'll see you back here tomorrow
+
+Polished Script:
+i'm wall-e, welcoming you to today's tech briefing for wednesday, may 15th. in today's news, dell technologies is making waves on wall street, with its stock surging more than 11% to a record high. this uptick comes on the heels of morgan stanley's optimistic outlook on the company's expansion into the artificial intelligence server market. speaking from the mobile world congress in barcelona, michael dell spotlighted the company's push into ai servers, leveraging state-of-the-art chips from nvidia, aiming for a revenue target of $10 billion by fiscal 2025. with shares climbing over 99% in 2024, dell's trajectory underscores the burgeoning demand for ai infrastructure.
+
+in other developments, openai is experiencing a notable shift in its leadership, as co-founder ilya sutskever steps aside. this move follows a series of challenges in openai's leadership dynamics, marking a significant transition for the firm that continues to innovate with cutting-edge ai models and interfaces, under the strategic guidance of its new chief scientist, jakub pachocki.
+
+on the cybersecurity front, palo alto networks is poised to bolster its defences through the acquisition of ibm’s qradar cloud security assets. this transaction, slated for completion by the end of september, promises to fortify palo alto networks' position in the battle against cybersecurity threats, cementing its status as a key player in the ever-evolving sector.
+
+turning to consumer technology, google has rolled out the second beta of android 15, introducing a "private space" feature for concealing sensitive apps, among other enhancements such as customizable vibrations and enriched widget previews. these updates herald a more tailored and secure user experience.
+
+lastly, microsoft’s dedication to accessibility shines with the unveiling of the proteus controller, a $299 modular gamepad designed by byowave. this innovation caters to xbox gamers with disabilities, highlighting microsoft’s commitment to making gaming accessible to a wider audience.
+
+that wraps up our briefing for today. join us again tomorrow for more tech news updates
+
+Podcast Title:
+EP-21 "dell’s Ai Server Surge 🚀, Openai Leadership Shifts 🔄, Palo Alto's Cybersecurity Powerplay 🛡️"
+
+Podcast Description:
+description:
+
+join wall-e in today's tech briefing for a comprehensive update on the latest happenings in the tech world, delivered every wednesday. in this episode, we touch upon a range of pivotal developments and breakthroughs in the industry:
+
+- dell technologies' remarkable surge on wall street, credited to an optimistic forecast from morgan stanley and the company's aggressive push into the artificial intelligence server market, targeting $10 billion in revenue by fiscal 2025.
+  
+- leadership transition at openai with co-founder ilya sutskever stepping aside, amidst challenges and the continuous innovation in ai models and interfaces under new chief scientist, jakub pachocki.
+
+- palo alto networks' strategic acquisition of ibm’s qradar cloud security assets to strengthen their cybersecurity measures, reinforcing their position against rising cybersecurity threats.
+
+- google’s latest android 15 beta release featuring a "private space" for hiding sensitive apps, customizable vibrations, and improved widget previews, aiming for a more personalized and secure user experience.
+
+- microsoft’s unveiling of the proteus controller, a $299 modular gamepad designed to make xbox gaming more accessible for gamers with disabilities, highlighting microsoft’s commitment to inclusivity in gaming.
+
+don't miss out on these insightful updates that shape the tech landscape. tune in tomorrow for more tech news highlights!
+
+Polished Script (Spanish):
+soy wall-e, y esta es tu sesión informativa de ai briefing para el miércoles 15 de mayo. las acciones de dell se dispararon más del 11% el miércoles alcanzando un máximo histórico después de que morgan stanley aumentara su objetivo de precio y predijera que la empresa generaría ventas por la demanda insaciable de servidores de inteligencia artificial. michael dell, presidente y ceo de dell technologies, expresó en el mobile world congress 2024 en barcelona, españa, el optimismo en la aceleración del momentum de dell, especialmente en ganar negocios para construir servidores de ia, lo que desbloquea un nuevo caso alcista para la acción. esto sitúa a dell en una posición clave frente a la competencia, con un aumento de más del 99% en sus acciones en 2024.
+
+por otro lado, el cofundador de openai, ilya sutskever, anunció su partida de la start-up respaldada por microsoft. este movimiento llega meses después de una crisis de liderazgo en openai involucrando al cofundador y ceo, sam altman. la partida de sutskever marca un punto de inflexión en la empresa, sugiriendo posibles cambios futuros en su dirección tecnológica.
+
+mientras tanto, palo alto networks está comprando activos de software de seguridad en la nube de ibm como parte de una asociación más amplia, lo que le dará a la compañía de ciberseguridad acceso a más consultores y una base de clientes más grande. este movimiento es una clara señal de una consolidación en aumento en el sector de software de seguridad, preparándose para un aluvión de ataques originados por la inteligencia artificial.
+
+en otro sector de la tecnología, google ha lanzado la segunda beta de android 15, introduciendo características como una "zona privada" para aplicaciones y vibraciones personalizables para notificaciones. estas mejoras en seguridad y personalización demuestran la continua evolución de android para satisfacer las demandas de privacidad y comodidad de los usuarios.
+
+por último, microsoft ha anunciado el controlador proteus, un kit de videojuego modular para jugadores de xbox con discapacidades. a un precio de $299, este controlador permite personalizaciones extensas, ofreciendo una experiencia de juego más inclusiva. este desarrollo subraya el compromiso de microsoft con la accesibilidad, ofreciendo soluciones innovadoras que abordan las necesidades de una amplia gama de jugadores.
+
+eso es todo por hoy. nos vemos de nuevo mañana
+
+Podcast Title (Spanish):
+EP-21 "dell Alcanza Máximo Histórico 📈, Cambios en Openai 💔, Avances en Accesibilidad de Xbox 🎮"
+
+Podcast Description (Spanish):
+descripción:
+
+en este episodio de ai briefing, nos sumergimos en las últimas noticias del mundo de la inteligencia artificial y la tecnología para el miércoles 15 de mayo. los puntos clave incluyen:
+
+- el histórico aumento del 11% en las acciones de dell, alcanzando máximos históricos gracias a la previsión optimista de morgan stanley sobre la demanda de servidores de ia, con comentarios del presidente y ceo, michael dell, en el mobile world congress 2024.
+
+- la partida de ilya sutskever, cofundador de openai, en medio de una crisis de liderazgo, marcando un posible cambio en la dirección tecnológica de la empresa.
+
+- palo alto networks expande su presencia en el mercado de seguridad en la nube al adquirir activos de software de seguridad de ibm, una movida que señala la creciente consolidación en el sector de software de seguridad.
+
+- google presenta la segunda beta de android 15, introduciendo nuevas características de seguridad y personalización, incluida una "zona privada" para aplicaciones y vibraciones personalizables.
+
+- microsoft anuncia el lanzamiento del controlador proteus, un innovador mando de juego modular diseñado para jugadores con discapacidades a un precio de $299, promoviendo una experiencia de juego más inclusiva.
+
+únete a nosotros para explorar estas emocionantes actualizaciones y entender cómo están modelando el futuro de la tecnología y la inteligencia artificial. nos vemos en el próximo episodio
+
+Polished Script (Chinese):
+我是wall-e，这是您的ai简报，周三5月15日。戴尔股价在预测其将获得大量人工智能服务器订单的乐观情绪下飙升。戴尔科技的董事长兼首席执行官迈克尔·戴尔（michael dell）将在2024年2月27日的西班牙巴塞罗那移动世界大会上发言。星期三，戴尔的股价上涨了超过11%，达到历史最高点，此前摩根士丹利提高了其价格目标，并预测该公司将因人工智能服务器的旺盛需求而大幅增长销售额。摩根士丹利分析师埃里克·伍德林（erik woodring）在周三的一份报告中写道，特别是在获得构建人工智能服务器业务方面，戴尔正显示出加速势头，这为股票解锁了新的看涨情境。他将戴尔的目标股价从每股128美元上调至152美元，并称其为首选股票。
+
+openai的联合创始人伊利亚·苏茨克弗（ilya sutskever）表示，他将离开这家得到微软支持的初创公司。“我对接下来的计划感到兴奋——一个对我个人意义非常深远的项目，我将在适当的时候分享细节，”苏茨克弗周二在x平台上写道。这次离职是在openai经历了涉及联合创始人兼首席执行官萨姆·奥特曼（sam altman）的领导力危机几个月后发生的。
+
+palo alto networks将购买ibm的qradar云安全软件资产，作为更广泛合作的一部分，这将使得这家网络安全公司能够接触到更多的顾问和更大的客户群。两家公司在一份联合新闻稿中表示，palo alto将以未公开的金额收购ibm的qradar云软件，并将现有客户迁移到其安全平台cortex xsiam。这一举措通常需要一到三个月的时间。
+
+在谷歌持续面向开发者的i/o大会上，android 15的最新发布现已进入其第二个测试版。它带来了一些酷炫的新功能，例如现在可以隐藏一系列应用到一个“私密空间”中，可定制振动，让您通过触感就能注意到不同类型的通知，以及更丰富的小部件预览。
+
+微软公司宣布了proteus controller，这是一款为残障玩家设计的xbox游戏手柄。这款由周边设备公司byowave创建，作为designed for xbox计划的一部分的无线控制器套件，包括了带有控制器按钮、方向键和模拟摇杆的小型方块和可互换面板。
+
+今天的节目到此结束。我们明天再会。
+
+Podcast Title (Chinese):
+EP-21 "dell股价飙升📈，openai联合创始人离职🚶‍♂️, android 15新功能亮相📱"
+
+Podcast Description (Chinese):
+在这一期的ai简报中，我们聚焦于一系列激动人心的行业发展和重大新闻。以下是我们本期讨论的主要话题：
+
+- 戴尔股价在乐观的市场预期下大幅上涨，归功于预测的人工智能服务器订单激增。摩根士丹利分析师将其目标价格上调至152美元，并称戴尔为首选股票。
+- openai联合创始人伊利亚·苏茨克弗离开公司，并提到他将专注于一个对他个人具有深远意义的项目。
+- palo alto networks计划收购ibm的qradar云安全软件资产，加强两家公司的合作，扩展其安全平台cortex xsiam到更广泛的顾客和顾问群体。
+- 谷歌在其i/o开发者大会上推出android 15的第二个测试版，新功能包括私密空间隐藏应用、可定制的振动反馈和更丰富的小部件预览。
+- 微软推出了proteus controller，这是一款专为残疾玩家设计的xbox游戏手柄，采用了模块化设计，保证了高度的可定制性和易用性。
+
+确保不错过这些洞察行业动态和技术进展的精彩讨论。加入我们，一起探索科技世界的最新动态。

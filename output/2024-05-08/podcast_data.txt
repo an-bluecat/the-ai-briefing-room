@@ -1,0 +1,256 @@
+
+Titles:
+Microsoft says it needs games like Hi-Fi Rush the day after killing its studio
+Intel and motherboard makers disagree on how to stabilize your crashing i9 CPU
+Microsoft’s ‘air gapped’ AI is a bot set up to process top-secret info
+A Disney, Hulu, and Max streaming bundle is on the way
+China’s Chang’e 6 Moon probe has a mysterious guest on board
+OpenAI’s Model Spec outlines some basic rules for AI
+Walmart shopper data will soon feed targeted ads on Disney Plus and Hulu
+People sure are pressed about Apple’s crushing iPad commercial
+The Xbox app on Windows is getting even more handheld-friendly
+Inside Microsoft’s Xbox turmoil
+You can save 15 percent on an LG C3, now as low as $847
+The judge in Epic v. Apple thinks Apple’s being shady about buttons and links
+Marvel is bringing a mixed reality edition of What If…? to the Vision Pro
+You can get a $100 gift card when you preorder Google’s Pixel 8A
+Google DeepMind’s new AI can model DNA, RNA, and ‘all life’s molecules’
+Uber’s not out of the woods yet
+Intel expects revenue blow after US blocks chip sales to Huawei
+A new iPhone shortcut replicates Android’s best new feature
+Stack Overflow is feeding programmers’ answers to AI, whether they like it or not
+EU seeks information from X on content moderation amid first major probe under new tech rules
+Shopify shares plunge 18% on weak guidance
+Uber reports first-quarter results that beat expectations for revenue, but posts net loss
+In Tesla Autopilot probe, U.S. prosecutors focus on securities, wire fraud, Reuters reports
+FTX says most customers of the bankrupt crypto exchange will get money back
+Monzo boosts funding round to $610 million to crack U.S. market, launch pensions
+Big Tech is eating data to win in AI but it's not 'winner takes all,' CEO says
+Reddit shares soar 11% after company reports revenue pop in first earnings report
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+
+
+The Verge
+Microsoft says it needs games like Hi-Fi Rush the day after killing its studio
+Intel and motherboard makers disagree on how to stabilize your crashing i9 CPU
+Microsoft’s ‘air gapped’ AI is a bot set up to process top-secret info
+A Disney, Hulu, and Max streaming bundle is on the way
+China’s Chang’e 6 Moon probe has a mysterious guest on board
+OpenAI’s Model Spec outlines some basic rules for AI
+Walmart shopper data will soon feed targeted ads on Disney Plus and Hulu
+People sure are pressed about Apple’s crushing iPad commercial
+The Xbox app on Windows is getting even more handheld-friendly
+Inside Microsoft’s Xbox turmoil
+You can save 15 percent on an LG C3, now as low as $847
+The judge in Epic v. Apple thinks Apple’s being shady about buttons and links
+Marvel is bringing a mixed reality edition of What If…? to the Vision Pro
+You can get a $100 gift card when you preorder Google’s Pixel 8A
+Google DeepMind’s new AI can model DNA, RNA, and ‘all life’s molecules’
+Uber’s not out of the woods yet
+Intel expects revenue blow after US blocks chip sales to Huawei
+A new iPhone shortcut replicates Android’s best new feature
+Stack Overflow is feeding programmers’ answers to AI, whether they like it or not
+
+CNBC Tech
+EU seeks information from X on content moderation amid first major probe under new tech rules
+Shopify shares plunge 18% on weak guidance
+Uber reports first-quarter results that beat expectations for revenue, but posts net loss
+In Tesla Autopilot probe, U.S. prosecutors focus on securities, wire fraud, Reuters reports
+FTX says most customers of the bankrupt crypto exchange will get money back
+Monzo boosts funding round to $610 million to crack U.S. market, launch pensions
+Big Tech is eating data to win in AI but it's not 'winner takes all,' CEO says
+Reddit shares soar 11% after company reports revenue pop in first earnings report
+
+Top News:
+eu seeks information from x on content moderation amid first major probe under new tech rules
+shopify shares plunge 18% on weak guidance
+uber reports first-quarter results that beat expectations for revenue, but posts net loss
+in tesla autopilot probe, u.s. prosecutors focus on securities, wire fraud, reuters reports
+ftx says most customers of the bankrupt crypto exchange will get money back
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E and Wednesday May 8), and replace CNBC techcheck briefing to 'AI briefing' 
+ "title0:
+EU seeks information from X on content moderation amid DSA probe
+description0:
+The European Union is seeking information from social media platform X about cuts to its content moderation resources as part of its first major investigation into the company under its tough new laws governing online content.
+The European Commission, the EU's executive arm, said in a statement Wednesday that it's requested information from X under the Digital Services Act, its groundbreaking tech law which requires online platforms to take a far stricter approach to policing illegal and harmful content on their platforms.
+The commission said it was concerned about X's transparency report submitted to the regulator in March 2024, which showed it had cut its team of content moderators by nearly 20% compared with the number of moderators it reported in an early October 2023 transparency report.
+X reduced linguistic coverage within the EU from 11 languages to seven, the commission said, again citing X's transparency report.
+The commission said it's seeking further details from X on risk assessments and mitigation measures linked to the impact of generative artificial intelligence on electoral processes, dissemination of illegal material and protection of fundamental rights.
+X, which was formerly known as Twitter, was not immediately available for comment when contacted by CNBC.
+X must provide information requested by the EU on its content moderation resources and generative AI by May 17, the commission said. Remaining answers to questions from the commission must be provided no later than May 27, the agency said.
+
+title1:
+Shopify shares plunge 18% on weak guidance
+description1:
+Shopify shares tumbled 18% on Wednesday, shaving almost $20 billion off the company's value, after the company gave revenue and profit guidance for the current quarter that spooked investors.
+Here's how the company did for the first quarter, compared with consensus expectations from LSEG:
+Earnings per share: 20 cents adjusted vs. 17 cents expected
+20 cents adjusted vs. 17 cents expected Revenue: $1.86 billion vs. $1.85 billion expected
+The better-than-expected first-quarter results were overshadowed by Shopify's outlook for the current quarter. The Canadian e-commerce company said it expects second-quarter revenue to grow at a high-teens percentage rate year over year, which is in line with consensus estimates for growth of 19.5%, but still represents a slowdown from recent quarters. Shopify has posted year-over-year revenue growth in the low-to-mid 20s for the past six quarters.
+On a conference call with analysts, Shopify executives said consumer spending in the U.S. remains strong, but "we have factored in headwinds related to [foreign exchange] from the strong U.S. dollar and some softness in European consumer spending in our Q2 outlook."
+Gross margins for the second quarter are expected to decrease by about 50 basis points compared with the first quarter, as a result of the sale of Shopify's logistics business to freight forwarder Flexport last May. Meanwhile, Shopify said it expects operating expenses to increase in the low- to mid-single digits quarter over quarter, while Wall Street had projected flat growth.
+Baird analysts said in a note to clients Wednesday morning that the higher operating expense guide clouded "an otherwise solid Q1 report as the company is probably leaning into marketing and R&D (AI/GenAI) investments."
+Shopify, which makes tools for companies to sell products online, in recent quarters has stepped up its artificial intelligence features for businesses, including "Shopify Magic," which can automatically generate listings and edit images, among other things. Rivals including Amazon , Etsy and eBay have also introduced AI features for sellers on their platforms.
+"Without a clear positive impact on [gross merchandise volume] and revenues from recent investments, investors will question the margin trajectory which will rerate the stock a bit," the Baird analysts wrote. They have an outperform rating on Shopify's stock.
+While it has invested in AI, Shopify has pulled back in other areas like logistics services. Last May, the company laid off 20% of its workforce as it navigated a post-pandemic slump in e-commerce.
+Shopify President Harley Finkelstein said in an interview with CNBC's "Squawk on the Street" that the company is "long-term-focused."
+"We want to be able to make those investments for the future, which is why we gave the guide we did," Finkelstein said.
+The company reported a net loss of $273 million, or 21 cents per share, compared with a profit of $68 million, or 5 cents per share, during the year-ago quarter.
+Shopify said gross merchandise volume, or the total volume of merchandise sold on the platform, increased 23% to $60.9 billion. That surpassed consensus expectations of $59.5 billion, according to StreetAccount.
+
+title2:
+Uber (UBER) Q1 2024 earnings
+description2:
+Uber reported first-quarter results Wednesday that came in slightly above analysts' estimates for revenue, but the ride-hailing company posted an unexpected net loss.
+Shares of Uber closed down more than 5% Wednesday.
+Here's how the company did:
+Loss per share: 32 cents vs. earnings of 23 cents expected by LSEG
+32 cents vs. earnings of 23 cents expected by LSEG Revenue: $10.13 billion vs. $10.11 billion expected by LSEG
+Uber's revenue grew 15% in its first quarter from $8.82 billion a year prior. The company reported $37.65 billion in gross bookings for the period, which is short of the $37.93 billion expected by analysts, according to StreetAccount.
+The company's net loss widened to $654 million, or a 32-cent loss per share, from a loss of $157 million, or an 8-cent loss per share, in the same quarter last year. Uber said its net loss includes a $721 million net headwind from unrealized losses related to the reevaluation of its equity investments.
+In an interview with CNBC's "Squawk Box" on Wednesday, Uber CEO Dara Khosrowshahi said the company's move to a loss had "nothing to do with the operating business."
+"We did have to mark down those equity stakes that resulted in a loss," he said. "We don't expect that to keep happening going forward."
+However, Uber cannot predict the markets, Khosrowshahi added.
+Uber reported adjusted EBITDA of $1.38 billion, up 82% year over year and slightly above the $1.31 billion expected by analysts polled by StreetAccount.
+For its second quarter, Uber said it expects to report gross bookings between $38.75 billion and $40.25 billion, compared with StreetAccount estimates of $40 billion. Uber anticipates adjusted EBITDA of $1.45 billion to $1.53 billion, compared with the $1.49 billion expected by analysts.
+The number of Uber's monthly active platform consumers reached 149 million in its first quarter, up 15% year over year from 130 million. There were 2.6 billion trips completed on the platform during the period, up 21% year over year.
+"Demand for Uber remains robust across our platform, supported by our improving marketplace experience, the continued shift of consumer spending from goods to services, and the secular trend towards on-demand transportation and delivery," Khosrowshahi said in prepared remarks Wednesday.
+Here's how Uber's largest business segments performed:
+Mobility (gross bookings): $18.67 billion, up 25% year over year.
+Delivery (gross bookings): $17.7 billion, up 18% year over year.
+Uber's mobility segment reported $5.63 billion in revenue, up 30% from a year earlier and 2% quarter over quarter. StreetAccount analysts were expecting $5.52 billion. Uber said "business model changes" negatively impacted its mobility revenue margin by 180 basis points during the period.
+"To drive user growth and win more of their daily trips, we are focused on increasing our penetration of core use cases, while also expanding into new consumer segments," Khosrowshahi said in his prepared remarks.
+The company's delivery segment reported $3.21 billion in revenue, up 4% from the year prior and 3% quarter over quarter. Analysts were expecting $3.28 billion, according to StreetAccount. Uber said its delivery revenue margin was negatively impacted by 230 basis points due to "business model changes" in the first quarter.
+The company's freight business booked $1.28 billion in sales for the quarter, a decrease of 8% year over year and flat quarter over quarter.
+
+title3:
+In Tesla Autopilot probe, U.S. prosecutors focus on securities, wire fraud, Reuters reports
+description3:
+U.S. prosecutors are examining whether Tesla committed securities or wire fraud by misleading investors and consumers about its electric vehicles' self-driving capabilities, three people familiar with the matter told Reuters.
+Tesla's Autopilot and Full Self-Driving systems assist with steering, braking and lane changes — but are not fully autonomous. While Tesla has warned drivers to stay ready to take over driving, the Justice Department is examining other statements by Tesla and Chief Executive Elon Musk suggesting its cars can drive themselves.
+U.S. regulators have separately investigated hundreds of crashes, including fatal ones, that have occurred in Teslas with Autopilot engaged, resulting in a mass recall by the automaker.
+Reuters exclusively reported the U.S. criminal investigation into Tesla in October 2022, and is now the first to report the specific criminal liability federal prosecutors are examining.
+Investigators are exploring whether Tesla committed wire fraud, which involves deception in interstate communications, by misleading consumers about its driver-assistance systems, the sources said. They are also examining whether Tesla committed securities fraud by deceiving investors, two of the sources said.
+The Securities and Exchange Commission is also investigating Tesla's representations about driver-assistance systems to investors, one of the people said. The SEC declined to comment.
+Tesla did not respond to a request for comment. Last October, it disclosed in a filing that the Justice Department had asked the company for information about Autopilot and Full Self-Driving.
+The Justice Department declined to comment.
+The probe, which is not evidence of wrongdoing, could result in criminal charges, civil sanctions, or no action. Prosecutors are far from deciding how to proceed, one of the sources said, in part because they are sifting through voluminous documents Tesla provided in response to subpoenas.
+Reuters could not determine the specific statements prosecutors are reviewing as potentially illegal. Musk has aggressively touted the prowess of Tesla's driver-assistance technology for nearly a decade.
+Tesla videos demonstrating the technology that remain archived on its website say: "The person in the driver's seat is only there for legal reasons. He is not doing anything. The car is driving itself."
+A Tesla engineer testified in 2022 in a lawsuit over a fatal crash involving Autopilot that one of the videos, posted in October 2016, intended to show the technology's potential and did not accurately portray its capabilities at the time. Musk nevertheless posted the video on social media, writing: "Tesla drives itself (no human input at all) thru urban streets to highway streets, then finds a parking spot."
+In a conference call with reporters in 2016, Musk described Autopilot as "probably better" than a human driver. During an October 2022 call, Musk addressed a forthcoming FSD upgrade he said would allow customers to travel "to your work, your friend's house, to the grocery store without you touching the wheel."
+
+title4:
+Most customers of crypto firm will get all money back
+description4:
+Sam Bankman-Fried, co-founder of FTX Cryptocurrency Derivatives Exchange, arrives at court in New York, US, on Thursday, Feb. 16, 2023.
+Almost all customers of collapsed cryptocurrency exchange FTX will get their money back — and more, according to a court filing.
+FTX estimates that it owes creditors around $11.2 billion, according to a reorganization plan published late Tuesday. The company said it has between $14.5 billion and $16.3 billion to distribute to creditors.
+Customers whose claims amount to $50,000 or less will receive approximately 118% of the amount of their allowed claim, the plan says. Around 98% of creditors will receive this compensation.
+The reorganization plan, which still needs to be approved by the bankruptcy court, will likely bring some relief to FTX customers, whose money has been locked up with the exchange since it filed for bankruptcy protection in November 2022."
+
+Response:
+
+Script:
+i'm wall-e, and this is your ai briefing for wednesday, may 8th.
+
+the european union has intensified its scrutiny on social media platform x, formerly known as twitter, launching a major investigation under its groundbreaking digital services act. the probe, aimed at understanding x's content moderation strategies, comes in the wake of the company significantly reducing its content moderation team and linguistic coverage within the eu. concerns have also been raised about x's handling of generative artificial intelligence and its potential effects on electoral processes and the dissemination of illegal material. the eu expects detailed information from x by may 27th.
+
+in the e-commerce sector, shares of shopify took a sharp 18% dive after the company provided a weaker-than-expected guidance for the current quarter, despite surpassing first-quarter revenue and earnings expectations. shopify's shift towards increased marketing and r&d investments, particularly in artificial intelligence to enhance online selling tools, has not gone unnoticed. however, with these investments yet to show a clear positive impact on revenues, investors remain cautious.
+
+uber, the global ride-hailing giant, reported its first-quarter results with revenue slightly above analyst estimates but shocked the market with an unexpected net loss. ceo dara khosrowshahi attributed the loss primarily to markdowns on equity stakes and maintains an optimistic outlook for the company's diverse service segments despite the short-term setback.
+
+in regulatory news, u.s. prosecutors are reportedly scrutinizing tesla over potential securities or wire fraud, related to its representations of the self-driving capabilities of its vehicles. while the investigation is still in the early stages, this adds another layer of scrutiny on the electric vehicle manufacturer which has already faced several challenges relating to its autopilot and full self-driving technologies.
+
+lastly, in a positive turnaround from the cryptocurrency sector, ftx customers have a glimmer of hope as a court filing suggests that almost all will recover their funds, and more, after the exchange's spectacular collapse last year. this marks a significant development for the countless creditors affected by the bankruptcy, offering a semblance of relief amidst the ongoing tumult in the crypto market.
+
+that wraps up our ai briefing for today. we'll see you back here tomorrow
+
+Polished Script:
+i'm wall-e, welcoming you to today's tech briefing for wednesday, may 8th. 
+
+the european union is sharpening its focus on social media platform x, the artist formerly known as twitter, embarking on a substantial investigation courtesy of its landmark digital services act. this deep dive is set to unravel the mysteries of x's content moderation blueprints, especially after the brand trimmed down its content moderation workforce and scaled back on language support across the continent. the spotlight is also on x's dance with generative artificial intelligence, probing its influence on the sanctity of electoral affairs and the spread of illicit content. the clock is ticking for x to unfold their story by may 27th.
+
+swiveling to the buzzing world of e-commerce, shopify's shares witnessed a startling 18% plunge, following a forecast that didn't quite match up to market spirits, despite the firm cruising past its first-quarter revenue and earnings benchmarks. the pivot towards a beefed-up marketing and r&d crusade, with artificial intelligence at its heart aiming to polish online merchandising tools, has caught many eyes. yet, the jury's still out as these advancements have yet to carve a clear revenue uptrend, leaving investors treading lightly.
+
+uber, our global companion in ride-hailing, unfolded its first-quarter tale with revenues that slightly outdid the analysts' scripts but dropped a bombshell with an unexpected net loss. ceo dara khosrowshahi credits these figures primarily to adjustments in equity stakes, though he remains buoyant about the firm's broad spectrum of services weathering this transient squall.
+
+on the regulatory front, u.s. prosecutors are currently piecing together a puzzle around tesla, exploring pathways of potential securities or wire fraud, tied intimately to the ambitious tales spun about its self-driving tech prowess. this inquiry, still in its tender phases, layers onto the existing scrutiny over the electric titan's autopilot and full self-driving narratives.
+
+and finally, casting a beam of light onto the crypto realm, ftx's customers might just see the silver lining as court filings hint at an almost full recovery post the exchange's dramatic nosedive last year. this breath of hope marks a pivotal chapter for legions of creditors caught in the crossfire, painting a stroke of relief amid the crypto market’s ongoing saga.
+
+that's the wrap on our tech briefing for today. we’ll converge right here, tomorrow
+
+Podcast Title:
+EP-16 "eu Scrutinizes X's Content Strategy 🕵️‍♂️, Shopify's Ai Pivot Stumbles 💻, Tesla Under Legal Loupe ⚖️"
+
+Podcast Description:
+join us on wall-e's daily tech briefing for wednesday, may 8th, for the latest pulse on the technology landscape. dive into a comprehensive roundup of pivotal stories shaping the tech world, featuring:
+
+- the european union's investigative spotlight on social media platform x (formerly twitter), focusing on content moderation practices and the use of generative ai, in alignment with the digital services act regulations.
+
+- shopify's unsettling 18% share drop, as future forecasts fail to excite investors despite surpassing first-quarter financial expectations, and its promising yet unproven ai-enhanced marketing and research initiatives.
+
+- uber's latest financial disclosure, revealing slight revenue growth but an unexpected net loss, with ceo dara khosrowshahi attributing this to equity stake adjustments yet remaining optimistic.
+
+- the u.s. legal system exploring potential legal challenges facing tesla, focusing on securities or wire fraud related to its self-driving technology claims amidst ongoing scrutiny.
+
+- a glimmer of hope for ftx's customers, with new court filings suggesting a possible full recovery for creditors following the cryptocurrency exchange's collapse, offering a rare positive note in the crypto industry's tumultuous journey.
+
+tune in for these stories and more, delivering the essential news to keep you informed in the ever-evolving world of technology. stay ahead with our daily briefs, right here, tomorrow
+
+Polished Script (Spanish):
+soy wall-e y este es tu resumen de ai briefing para el miércoles 8 de mayo. la unión europea está buscando información de la plataforma de redes sociales x sobre los recortes en sus recursos de moderación de contenido como parte de su primera gran investigación sobre la compañía bajo sus nuevas leyes estrictas que gobiernan el contenido en línea. la comisión europea dijo en un comunicado el miércoles que ha solicitado información de x bajo la ley de servicios digitales, su innovadora ley tecnológica que requiere que las plataformas en línea adopten un enfoque mucho más estricto para controlar el contenido ilegal y dañino en sus plataformas. las acciones de shopify se desplomaron un 18% el miércoles, eliminando casi 20 mil millones de dólares de su valor, después de que la compañía ofreciera una guía de ingresos y ganancias para el trimestre actual que asustó a los inversores. uber reportó resultados del primer trimestre el miércoles que superaron ligeramente las estimaciones de los analistas para los ingresos, pero la compañía de viajes compartidos publicó una pérdida neta inesperada. los fiscales estadounidenses están examinando si tesla cometió fraude de valores o fraude electrónico al engañar a los inversores y consumidores sobre las capacidades de conducción autónoma de sus vehículos eléctricos, dijeron tres personas familiarizadas con el asunto a reuters. casi todos los clientes de la exchange de criptomonedas colapsada ftx recuperarán su dinero, y más, según un expediente judicial. eso es todo por hoy. nos vemos aquí mañana
+
+Podcast Title (Spanish):
+EP-16 "investigación de la Ue a X Por Moderación 🕵️‍♂️, Caída de Shopify y Uber Sorprende 😱, Tesla Bajo Escrutinio Por Fraude 🚘"
+
+Podcast Description (Spanish):
+descubre las últimas noticias y acontecimientos en el mundo de la tecnología y la inteligencia artificial con "soy wall-e", tu resumen de ai briefing. en nuestro episodio del miércoles 8 de mayo, abordamos temas cruciales que están moldeando el panorama tecnológico:
+
+- la unión europea inicia una gran investigación sobre la plataforma de redes sociales x, enfocándose en los recortes de sus recursos de moderación de contenido bajo la nueva y estricta ley de servicios digitales.
+
+- shopify ve caer sus acciones un 18%, perdiendo casi 20 mil millones de dólares en valor, tras anunciar una preocupante guía de ingresos y ganancias para el trimestre actual.
+
+- uber supera ligeramente las estimaciones de ingresos del primer trimestre de los analistas, pero sorprende con una pérdida neta inesperada.
+
+- fiscales estadounidenses investigan a tesla por posible fraude de valores y fraude electrónico, relacionado con las capacidades de conducción autónoma de sus vehículos eléctricos.
+
+- la mayoría de los clientes de la exchange de criptomonedas colapsada ftx recuperarán su dinero, según un expediente judicial.
+
+sintoniza para mantener tu dedo en el pulso de la innovación y los desafíos en el sector tecnológico. nos vemos aquí mañana para más actualizaciones
+
+Polished Script (Chinese):
+我是wall-e，这是您的ai简报，周三5月8日。欧盟正就内容调节问题向x社交媒体平台寻求信息，这是根据其严格的新在线内容管制法进行的首次重大调查。欧盟委员会周三表示，它已根据数字服务法（digital services act）要求x提供信息，该法要求在线平台对其平台上的非法和有害内容采取更为严格的监管措施。委员会表示，它对x在3月份提交给监管机构的透明度报告表示关切，报告显示与2023年10月初的透明度报告相比，其内容调节团队人数减少了近20％。 
+
+shopify股票周三暴跌18%，公司价值几乎蒸发了200亿美元，这是因为该公司发布了当前季度的营收和利润指导，令投资者感到不安。尽管第一季度的结果好于预期，但shopify对当前季度的前景表示，预计第二季度的收入年增率将处于高青少年百分比，这与增长19.5%的共识预测一致，但仍低于近几个季度。
+
+另一方面，uber第一季度的业绩略高于分析师对收入的预期，但该公司公布了意外的净亏损。uber的股票周三收盘下跌了5%以上。uber表示，其净亏损扩大至6.54亿美元，或每股亏损32美分，远高于去年同期的亏损。
+
+在美国检察官对特斯拉autopilot系统进行调查中，焦点集中在特斯拉是否在其电动汽车的自动驾驶能力方面误导了投资者和消费者的证券欺诈或电信欺诈上。这项调查尚未表明有任何不当行为，但可能导致刑事指控、民事制裁或不采取任何行动。
+
+关于ftx加密货币交易所崩溃后，几乎所有客户都将收回自己的钱——甚至更多，根据法庭文件显示。ftx估计它欠债约112亿美元，该公司表示拥有145亿到163亿美元用于偿还债权人。
+
+这就是今天的内容。我们明天再会。
+
+Podcast Title (Chinese):
+EP-16 "欧盟挑战x平台内容管控🔍，shopify市值蒸发惊人💸，uber亏损加剧🚖"
+
+Podcast Description (Chinese):
+description:
+《ai简报》是您获取最新科技与金融新闻的首选播客。在这一集中，您的主持人wall-e将携您了解以下要点：
+
+- 欧盟对x社交媒体平台进行内容调节问题调查，基于新的数字服务法，关注平台如何管理非法和有害内容。
+- shopify股票大跌18%，在其发布当前季度收入和利润预期后，公司价值蒸发近200亿美元，尽管第一季度业绩超出预期。
+- uber第一季度业绩略超分析师预期，但净亏损扩大至6.54亿美元，导致股价下跌5%以上。
+- 美国检察官调查特斯拉autopilot系统，探讨公司是否在自动驾驶能力方面误导了投资者和消费者。
+- ftx加密货币交易所崩溃后，根据法庭文件，几乎所有客户都将收回自己的钱，即使公司欠债达112亿美元。
+
+加入我们，深入了解这些热门话题背后的故事，见证科技与金融领域的最新动态。

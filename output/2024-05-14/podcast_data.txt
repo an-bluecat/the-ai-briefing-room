@@ -1,0 +1,260 @@
+
+Titles:
+Amazon Web Services CEO to step down
+Google now offers ‘web’ search — and an AI opt-out button
+OpenAI chief scientist Ilya Sutskever is officially leaving
+Android apps will soon let you use your face to control your cursor
+Meta will shut down its Teams competitor Workplace next year
+iPads finally get battery health info and adaptive charging, but only the new ones
+Eight TikTok creators file their own suit against the divest-or-ban law
+Sonos customers unleash frustrations over redesigned app in community AMA
+Google’s new LearnLM AI model focuses on education
+Bumble apologizes for its anti-celibacy ad fumble
+Google’s Gemini video search makes factual error in demo
+Blink and you missed it: Google has a new pair of prototype AR glasses
+Watch this screaming, rainbow-clad musician demo Google’s AI DJ
+The Blink Mini 2 security cam is an even better value now that it’s on sale for $30
+Google’s invisible AI watermark will help identify generative text and video
+Google will let you create personalized AI chatbots
+Gemini is about to get better at understanding what’s on your phone screen
+Google’s Circle to Search will help you with your math homework
+OpenAI co-founder Ilya Sutskever says he will leave the startup
+Google CEO Pichai says company will 'sort it out' if OpenAI misused YouTube for AI
+Google I/O wrap-up: Gemini AI updates, new search features and more announced
+Tesla is sued over air pollution from factory operations in Fremont, California
+Reddit shares close near record after two-day rally driven by meme stocks
+Why bitcoin hasn't joined the latest meme stock craze this week
+Google rolls out its most powerful AI models as competition from OpenAI heats up
+Amazon Web Services CEO Adam Selipsky to step down
+What to expect for Tesla's Supercharger network now that the team is dismantled
+Alibaba shares fall 6% after the Chinese tech giant posts 86% drop in profit
+Klarna says 90% of its employees are using generative AI daily
+Why OpenAI is first company to top CNBC Disruptor 50 list for two years in a row
+The 2024 CNBC Disruptor 50: How we chose the companies
+2024 CNBC Disruptor 50 full list: OpenAI is the first back-to-back No. 1 company
+Tencent posts fastest profit growth in 3 years as online ads, business services offset slower gaming
+Sony reports 7% drop in annual profit as PlayStation 5 sales miss trimmed target
+Uber to acquire Foodpanda's Taiwan business for $950 million, creating a potential monopoly
+China drives EV boom this year amid strong demand for hybrid vehicles
+Early Facebook investor Accel raises $650 million Europe and Israel fund
+OpenAI launches new AI model GPT-4o and desktop version of ChatGPT
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+
+
+The Verge
+Amazon Web Services CEO to step down
+Google now offers ‘web’ search — and an AI opt-out button
+OpenAI chief scientist Ilya Sutskever is officially leaving
+Android apps will soon let you use your face to control your cursor
+Meta will shut down its Teams competitor Workplace next year
+iPads finally get battery health info and adaptive charging, but only the new ones
+Eight TikTok creators file their own suit against the divest-or-ban law
+Sonos customers unleash frustrations over redesigned app in community AMA
+Google’s new LearnLM AI model focuses on education
+Bumble apologizes for its anti-celibacy ad fumble
+Google’s Gemini video search makes factual error in demo
+Blink and you missed it: Google has a new pair of prototype AR glasses
+Watch this screaming, rainbow-clad musician demo Google’s AI DJ
+The Blink Mini 2 security cam is an even better value now that it’s on sale for $30
+Google’s invisible AI watermark will help identify generative text and video
+Google will let you create personalized AI chatbots
+Gemini is about to get better at understanding what’s on your phone screen
+Google’s Circle to Search will help you with your math homework
+
+CNBC Tech
+OpenAI co-founder Ilya Sutskever says he will leave the startup
+Google CEO Pichai says company will 'sort it out' if OpenAI misused YouTube for AI
+Google I/O wrap-up: Gemini AI updates, new search features and more announced
+Tesla is sued over air pollution from factory operations in Fremont, California
+Reddit shares close near record after two-day rally driven by meme stocks
+Why bitcoin hasn't joined the latest meme stock craze this week
+Google rolls out its most powerful AI models as competition from OpenAI heats up
+Amazon Web Services CEO Adam Selipsky to step down
+What to expect for Tesla's Supercharger network now that the team is dismantled
+Alibaba shares fall 6% after the Chinese tech giant posts 86% drop in profit
+Klarna says 90% of its employees are using generative AI daily
+Why OpenAI is first company to top CNBC Disruptor 50 list for two years in a row
+The 2024 CNBC Disruptor 50: How we chose the companies
+2024 CNBC Disruptor 50 full list: OpenAI is the first back-to-back No. 1 company
+Tencent posts fastest profit growth in 3 years as online ads, business services offset slower gaming
+Sony reports 7% drop in annual profit as PlayStation 5 sales miss trimmed target
+Uber to acquire Foodpanda's Taiwan business for $950 million, creating a potential monopoly
+China drives EV boom this year amid strong demand for hybrid vehicles
+Early Facebook investor Accel raises $650 million Europe and Israel fund
+OpenAI launches new AI model GPT-4o and desktop version of ChatGPT
+
+Top News:
+amazon web services ceo to step down
+openai chief scientist ilya sutskever is officially leaving
+google will let you create personalized ai chatbots
+tesla is sued over air pollution from factory operations in fremont, california
+google’s invisible ai watermark will help identify generative text and video
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E and Tuesday May 14), and replace CNBC techcheck briefing to 'AI briefing' 
+ "title0:
+Amazon Web Services CEO to step down
+description0:
+A little over three years ago when Jeff announced my new role, one of my first jobs was to identify who’d take over and lead AWS. It was important to me that we had somebody who understood AWS, valued our culture, would provide strong continuity, and could keep growing the business. We had strong leaders in AWS, several of whom could lead the overall business in the long-term, but who’d benefit from a few more years gaining experience and learning under a more seasoned CEO.
+Adam Selipsky was one of the first VPs we hired in AWS back in 2005, and spent 11 years excellently leading AWS Sales, Marketing, and Support, before leaving to become the CEO of Tableau. I’ve always had a lot of respect for Adam, and we met several times to discuss the possibility of coming back to lead AWS. In those conversations, we agreed that if he accepted the role, he’d likely do it for a few years, and that one of the things he’d focus on during that time was helping prepare the next generation of leadership.
+We were fortunate that Adam agreed to step in and lead AWS, and has deftly led the business, while also developing his leadership team. Adam is now going to move onto his next challenge (after taking a well-deserved respite), and Matt Garman will become CEO of AWS, effective June 3rd.
+I’d like to thank Adam for everything he’s done to lead AWS over the past three years. He took over in the middle of the pandemic, which presented a wide array of leadership and business challenges. Under his direction, the team made the right long-term decision to help customers become more efficient in their spend, even if it meant less short-term revenue for AWS. Throughout, the team continued to invent and release new services at a rapid clip, including several impactful Generative AI services, such as Amazon Bedrock and Amazon Q. Adam leaves AWS in a strong position, having reached a $100 billion annual revenue run rate this past quarter, with YoY revenue accelerating again. And perhaps most importantly, AWS continues to lead on operational performance, security, reliability, and the overall breadth and depth of our services. I’m deeply appreciative of Adam’s leadership during this time, and for the entire team’s dedication to deliver for customers and the business.
+As some of you may know, Matt started at Amazon as a MBA intern during the summer of 2005, and joined the company full-time in 2006 as one of the first AWS product managers. Initially working across all of AWS, Matt helped create our first service level agreements, define new features, and create new pricing plans. He then became our first product manager for EC2, and led EC2 product management in its early, formative years. During that time, he also led the team that defined, launched, and operated EBS. Matt eventually became the general manager of all AWS Compute services in 2016, which he did for about four years. In 2020, after having been deeply involved in our product organization for 14 years, I asked Matt to move to the demand generation side of AWS to lead WW Sales, Marketing, Support, and Professional Services.
+Matt has an unusually strong set of skills and experiences for his new role. He’s very customer focused, a terrific product leader, inventive, a clever problem-solver, right a lot, has high standards and meaningful bias for action, and in the 18 years he’s been in AWS, he’s been one of the better learners I’ve encountered. Matt knows our customers and business as well as anybody in the world, and has senior leadership experience on both the product and demand generation sides. I’m excited to see Matt and his outstanding AWS leadership team continue to invent our future—it’s still such early days in AWS.
+Thank you again to Adam for his leadership, and please join me in congratulating Matt.
+Andy
+
+title1:
+OpenAI chief scientist Ilya Sutskever is officially leaving
+description1:
+Ilya and OpenAI are going to part ways. This is very sad to me; Ilya is easily one of the greatest minds of our generation, a guiding light of our field, and a dear friend. His brilliance and vision are well known; his warmth and compassion are less well known but no less important.
+OpenAI would not be what it is without him. Although he has something personally meaningful he is going to go work on, I am forever grateful for what he did here and committed to finishing the mission we started together. I am happy that for so long I got to be close to such genuinely remarkable genius, and someone so focused on getting to the best future for humanity.
+Jakub is going to be our new Chief Scientist. Jakub is also easily one of the greatest minds of our generation; I am thrilled he is taking the baton here. He has run many of our most important projects, and I am very confident he will lead us to make rapid and safe progress towards our mission of ensuring that AGI benefits everyone.
+
+title2:
+Google will let you create personalized AI chatbots
+description2:
+Google is adding a bunch of new features to its Gemini AI, and one of the most powerful is a personalization option called “Gems” that allows users to create custom versions of the Gemini assistant with varying personalities.
+Gems lets you create iterations of chatbots that can help you with certain tasks and retain specific characteristics, kind of like making your own bot in Character.AI, the service that lets you talk to virtualized versions of popular characters and celebrities or even a fake psychiatrist. Google says you can make Gemini your gym buddy, sous-chef, coding partner, creative writing guide, or anything you can dream up. Gems feels similar to OpenAI’s GPT Store that lets you make customized ChatGPT chatbots.
+You can set up a gem by telling Gemini what to do and how to respond. For instance, you can tell it to be your running coach, provide you with a daily run schedule, and to sound upbeat and motivating. Then, in one click, Gemini will make a gem for you as you’ve described. The Gems feature is available “soon” to Gemini Advanced subscribers.
+
+title3:
+Tesla sued over air pollution from factory in Fremont, California
+description3:
+Tesla is being sued by the nonprofit Environmental Democracy Project, which alleges "ongoing failure to comply with the Clean Air Act" at the electric vehicle company's assembly plant in Fremont, California.
+In the suit, filed in federal court in San Francisco on Monday, the environmental group accused Tesla of violating that law "hundreds of times since January 2021, emitting harmful pollution into the neighborhoods surrounding the Factory."
+While Tesla has long touted the climate benefits of driving EVs, its manufacturing practices have been decried by environmentalists for years. Tesla landed at 89 on the 2023 Toxic 100 Air Polluters list, an annual study by the Political Economy Research Institute at the University of Massachusetts at Amherst. The Environmental Protection Agency fined Tesla $275,000 in 2022, saying the company had failed to measure, track and maintain records about its own emissions or to minimize air pollutants from painting operations at the facility.
+Separately, Tesla was sued by 25 counties in California for its handling of hazardous waste materials at facilities throughout the state earlier this year, and promptly settled with those counties. And in Germany, environmentalists have been protesting Tesla's clearing of forests to build a factory outside Berlin, as well as the company's water consumption.
+The latest lawsuit in California described Tesla's environmental violations as "ongoing" and said that residents and employees in the surrounding area have been exposed to "excess amounts of air pollution, including nitrogen oxides, arsenic, cadmium, and other harmful chemicals."
+Tesla didn't immediately respond to a request for comment.
+The Bay Area Air Quality Management District, an environmental regulator, recently accused Tesla of allowing "unabated emissions" in Fremont that should have been prevented. The agency said that Tesla has received 112 violation notices since 2019 and that it is now seeking an abatement order that would force the company to implement changes to its factory operations.
+"The violations are frequent, recurring, and can negatively affect public health and the environment," the regulator said in a statement earlier this month.
+Air pollution from the assembly plant is the result of equipment that frequently breaks down, allowing emissions to vent directly into the air without proper filtration, regulators have said. Additionally, Tesla employees or contractors have allegedly shut off air pollution controls in the factory, particularly when the company was having trouble with other paint shop equipment.
+The paint shop is where unpainted vehicle bodies are primed, painted and coated before final assembly. Tesla's has a history of repeated fires, CNBC previously reported.
+In Tesla's recent quarterly report, the company maintained that its mission is to "accelerate the world's transition to sustainable energy."
+However, in spearheading a massive reorganization at Tesla of late, CEO Elon Musk has been promoting its research and development efforts on artificial intelligence and self-driving software, robotaxis and humanoid robots, rather than electric cars and solar energy products.
+Musk told investors on the company's first-quarter earnings call to think of Tesla and its value "almost entirely in terms of solving autonomy." He recently called climate activists "communists," sharing derisive memes targeting them on X.
+WATCH: How Tesla may have just killed its most important product — Superchargers
+
+title4:
+Google’s invisible AI watermark will help identify generative text and video
+description4:
+Among Google’s swath of new AI models and tools announced today, the company is also expanding its AI content watermarking and detection technology to work across two new mediums.
+Google’s DeepMind CEO, Demis Hassabis, took the stage for the first time at the Google I/O developer conference on Tuesday to talk not only about the team’s new AI tools, like the Veo video generator, but also about the new upgraded SynthID watermark imprinting system. It can now mark video that was digitally generated as well as AI-generated text.
+Watermarking AI-generated content will matter increasingly as the technology gains prevalence, especially when AI gets used for malicious purposes. It’s already been used to spread political misinformation, claim someone said something they haven’t, and create nonconsensual sexual content.
+SynthID was announced last August and started as a tool to imprint AI imagery in a way that humans can’t visually decipher — but can be detected by the system. The approach is different from other aspiring watermarking protocol standards like C2PA, which adds cryptographic metadata to AI-generated content.
+Google had also enabled SynthID to inject inaudible watermarks into AI-generated music that was made using DeepMind’s Lyria model. SynthID is just one of several AI safeguards in development to combat misuse by the tech, safeguards that the Biden administration is directing federal agencies to build guidelines around."
+
+Response:
+
+Script:
+i'm wall-e, and this is your ai briefing for tuesday, may 14th. amazon web services is undergoing a leadership change as ceo adam selipsky steps down to welcome matt garman as his successor starting june 3rd. selipsky's tenure was marked by significant growth and the development of impactful generative ai services, including amazon bedrock and amazon q, propelling aws to a $100 billion annual revenue run rate. garman, an amazon veteran, is praised for his deep understanding of the business and customer focus, promising to guide aws through its next growth phase.
+
+in other news, openai's chief scientist, ilya sutskever, is officially leaving the company. sutskever, recognized as one of the greatest minds of our generation, played a pivotal role in openai's success. jakub, touted to be of equal intellectual heft, steps in as the new chief scientist, aiming to further openai's mission of ensuring agi benefits everyone.
+
+google introduces a new dimension to user interaction with ai, unveiling the ability to create personalized ai chatbots called gems. this feature allows subscribers to tailor chatbot personalities for a variety of tasks, embodying google's commitment to enhancing user experiences with ai technology.
+
+in the meantime, tesla finds itself in the midst of environmental scrutiny. the electric vehicle giant is sued over allegations of air pollution at its fremont, california factory, illustrating the complex balance between technological advancement and environmental responsibility. tesla's commitment to sustainable energy contrasts with regulatory challenges and public scrutiny over its manufacturing practices.
+
+lastly, google is set to bolster the integrity of ai-generated content with an invisible ai watermark. this technology aims to distinguish ai-generated text and video, demonstrating google's proactive approach in addressing ai's potential for misuse, including political misinformation and nonconsensual content.
+
+that's all for today. we'll see you back here tomorrow
+
+Polished Script:
+i'm wall-e, welcoming you to today's tech briefing for tuesday, may 14th. 
+
+in the headlining news, amazon web services (aws) announces a top-tier leadership transition, with ceo adam selipsky stepping down to pass the baton to matt garman, starting june 3rd. during selipsky’s era, aws witnessed a monumental rise, breaking into a $100 billion annual revenue milestone and pioneering in generative ai with innovative services such as amazon bedrock and amazon q. matt garman, celebrated for his extensive familiarity and customer-centric approach within the amazon ecosystem, is set to steer aws into its forthcoming phase of expansion. 
+
+transitioning to the ai domain, openai bids farewell to its chief scientist, ilya sutskever, acclaimed as one of this generation’s brilliant minds. sutskever's instrumental contributions have been pivotal to openai’s trajectory. stepping into this significant void is jakub, recognized for his intellectual prowess, who aspires to propel openai’s mission to democratize agi benefits for all. 
+
+google is redefining user-ai dynamics by unveiling a groundbreaking feature – personalized ai chatbots, named gems. this innovation allows users to customize chatbot functionalities, reflecting google’s dedication towards enriching ai user experiences. 
+
+switching gears to the automotive and environmental landscape, tesla is currently under the environmental regulators’ microscope, facing a lawsuit over alleged air pollution violations at its fremont, california, manufacturing hub. this development underscores the intricate balance between advancing technology and maintaining environmental stewardship, a narrative tesla continues to navigate amidst its pursuit of renewable energy solutions.
+
+lastly, google is championing the integrity of ai-produced content through the introduction of an invisible ai watermark technology. this initiative aims to authenticate ai-generated texts and videos, marking google’s proactive stance in curbing potential misuses of ai capabilities, notably in the realms of political misinformation and nonconsensual media distribution.
+
+that wraps up today’s tech briefing. join us again tomorrow for more updates from the tech world
+
+Podcast Title:
+EP-20 "amazon's Leadership Leap 🚀, Openai's Genius Shift 🧠, Google Innovates with Personal Ai 🤖"
+
+Podcast Description:
+join wall-e on today's tech briefing for all the significant happenings this tuesday, may 14th, within the tech world. dive into concise summaries and insightful discussions on pivotal moments shaping the technology landscape:
+
+- leadership shift at aws: ceo adam selipsky steps down, welcoming matt garman as the new head. learn about aws's journey to a $100 billion milestone under selipsky and what garman’s customer-first leadership could mean for its future.
+
+- openai's new era: discover the departure of chief scientist ilya sutskever and the introduction of jakub to lead. we discuss openai's ongoing mission and what this change in leadership entails for the advancement of agi.
+
+- google’s personalized ai: unpacking the introduction of gems, personalized ai chatbots, and what it signifies for the future of user-ai interactions.
+
+- tesla’s environmental scrutiny: explore the environmental lawsuit against tesla’s california manufacturing plant and its implications for the balance between technology advancement and environmental responsibility.
+
+- google's ai watermark initiative: a look into google's new technology to authenticate ai-generated content, its impact on preventing misinformation, and ensuring the integrity of ai applications.
+
+tune into this episode for these stories and more, illuminating the latest in technology, ai advancements, corporate leadership changes, environmental challenges, and innovative solutions to maintain authenticity in the digital age
+
+Polished Script (Spanish):
+soy wall-e, y este es tu resumen de ai briefing para el martes 14 de mayo. amazon web services anuncia un cambio de liderazgo, con el ceo adam selipsky preparándose para dejar su puesto y matt garman tomando las riendas a partir del 3 de junio. selipsky, quien regresó a aws para liderar la compañía después de un período como ceo de tableau, ha sido elogiado por navegar la empresa a través de desafíos significativos, incluida la pandemia, y por impulsar el desarrollo y lanzamiento de nuevos servicios de ia generativa. bajo su liderazgo, aws alcanzó una tasa de ingresos anuales de $100 mil millones. garman, un veterano de aws con más de 18 años en la compañía, es visto como el líder adecuado para continuar la innovación y el crecimiento de aws.
+
+en otras noticias, ilya sutskever, el científico jefe de openai, está oficialmente dejando la compañía. considerado como una de las mentes más brillantes de nuestra generación, sutskever ha sido fundamental en el avance de openai. será reemplazado por jakub, también aclamado por su genialidad y capacidad de liderazgo, asegurando que openai continúe su misión de beneficiar a todos con la agi de manera segura y rápida.
+
+google ha anunciado que permitirá a los usuarios crear chatbots de ia personalizados a través de su asistente gemini. esta nueva función llamada "gems" permitirá a los usuarios crear versiones del chatbot que pueden retener características específicas y ayudar con tareas particulares, promoviendo una personalización profunda en la interacción con la ia.
+
+tesla enfrenta un nuevo desafío legal, con una demanda presentada por la organización sin fines de lucro environmental democracy project. la demanda acusa a tesla de violar repetidamente la ley de aire limpio en su planta de ensamblaje en fremont, california, alegando que la compañía ha emitido contaminación nociva en las áreas circundantes, agravada por el mal funcionamiento del equipo y prácticas deficientes en la gestión de la contaminación del aire.
+
+y finalmente, google anunció una actualización significativa de su tecnología de detección y marcado de contenido generativo. la compañía está expandiendo synthid, su sistema de marca de agua ai, para marcar tanto texto como video generados por ia, con el objetivo de ayudar a identificar contenido generativo y combatir el uso malicioso de estas tecnologías avanzadas.
+
+eso es todo por hoy. nos vemos aquí mañana
+
+Podcast Title (Spanish):
+EP-20 "cambio de Guardia en Aws 🔄, Innovación Abierta en Openai 🧠, y Google Personaliza Chatbots Con Gemini 💬"
+
+Podcast Description (Spanish):
+descripción:
+bienvenido a tu resumen de ai briefing, donde te traemos las últimas noticias sobre inteligencia artificial y tecnología. en el episodio de hoy, martes 14 de mayo, cubrimos eventos importantes y anuncios en el mundo de la ia y la tecnología:
+
+- amazon web services anuncia un cambio de liderazgo: adam selipsky se prepara para dejar su puesto siendo reemplazado por matt garman el 3 de junio. bajo el liderazgo de selipsky, aws alcanzó una tasa de ingresos anuales de $100 mil millones.
+
+- ilya sutskever, el científico jefe de openai, deja oficialmente la compañía, siendo reemplazado por jakub. esta transición asegura que openai continúe su misión de avanzar y beneficiar a todos con la agi de forma segura.
+
+- google anuncia "gems", una nueva función en su asistente gemini que permite a los usuarios crear chatbots de ia personalizados, promoviendo una interacción personalizada con la ia.
+
+- tesla enfrenta un desafío legal por supuestamente violar la ley de aire limpio en su planta de ensamblaje en fremont, california, presentada por la organización sin fines de lucro environmental democracy project.
+
+- google expande synthid, su sistema de marca de agua de ia, para marcar tanto texto como video generados por ia, con el fin de combatir el uso malicioso de tecnologías avanzadas.
+
+acompáñanos para mantenerte al día con el rápido avance de la tecnología y cómo está moldeando nuestro mundo. nos vemos mañana para más actualizaciones
+
+Polished Script (Chinese):
+我是wall-e，这是您周二5月14日的ai简报。aws（亚马逊云计算服务）首席执行官即将离职。三年多前，杰夫宣布我的新职务时，我的首要任务之一就是确定谁将接替并领导aws。对我来说，非常重要的是我们有一个了解aws、重视我们文化、能够提供强大连续性并能够继续发展业务的人。aws拥有众多强大的领导者，其中几位可以长期领导整体业务，但他们可以从在更有经验的首席执行官的指导下获得几年的经验和学习的好处。亚当·塞利普斯是我们在2005年聘请的第一批aws副总裁之一，在离开成为tableau的首席执行官之前，他出色地领导了aws的销售、市场及支持工作11年。亚当同意接任并领导aws，并在此期间巧妙地领导了业务，同时也发展了他的领导团队。亚当即将迎接下一个挑战（在享受应得的休息后），马特·加曼将于6月3日起成为aws的首席执行官。
+
+openai首席科学家ilya sutskever正式离职。尽管他将去做一些对他个人有意义的工作，但我对他在这里所做的一切感激不尽，并致力于完成我们一起开始的使命。jakub将成为我们的新首席科学家，我相信他将带领我们迅速而安全地向着我们的使命——确保agi造福所有人——取得进展。
+
+谷歌允许您创建个性化的ai聊天机器人。谷歌在其gemini ai中新增了一系列新功能，其中最有力的一个是个性化选项“gems”，允许用户创建具有不同个性的gemini助手的定制版本。
+
+特斯拉因加利福尼亚州弗里蒙特工厂的空气污染被起诉。特斯拉被非营利组织环境民主项目告上法庭，指控电动汽车公司的装配工厂持续未能遵守《清洁空气法》。
+
+谷歌宣布了一系列新的ai模型和工具，公司也扩展了其ai内容水印和检测技术，现在可以跨两种新媒介工作了。谷歌的deepmind ceo，demis hassabis在周二的谷歌i/o开发者大会上首次发表讲话，不仅谈论团队的新ai工具，如veo视频生成器，还谈及新升级的synthid水印印记系统。现在，它可以标记数字生成的视频以及ai生成的文本。
+
+就是这样结束今天的ai简报。我们明天再见。
+
+Podcast Title (Chinese):
+EP-20 aws迎新ceo 🔄, openai科学家变动 🧠, 个性化ai助手时代 🤖
+
+Podcast Description (Chinese):
+ai简报：5月14日周二更新
+
+本期节目中，我们探讨了一系列关于人工智能和科技界最新动态的主题，包括：
+
+- aws首席执行官离职与接任情况：介绍了aws首席执行官的离职消息及其继任者亚当·塞利普斯和马特·加曼的相关背景。
+- openai首席科学家离职：ilya sutskever离开openai，jakub接任首席科学家，确保agi技术使众人受益。
+- 谷歌推出个性化ai聊天机器人：了解谷歌gemini ai中新增的个性化选项"gems"，允许用户创建具有不同个性的定制版本。
+- 特斯拉空气污染诉讼：非营利组织环境民主项目因加利福尼亚州弗里蒙特工厂违反《清洁空气法》起诉特斯拉。
+- 谷歌ai模型和工具更新：探讨谷歌在i/o开发者大会上公布的新ai模型，如veo视频生成器，以及新升级的synthid水印系统可以标记ai生成的视频和文本。
+  
+以上内容为您带来最新的ai行业动态，确保您不错过任何重要信息。欢迎收听，并期待您的反馈。
