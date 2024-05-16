@@ -10,18 +10,18 @@ from newsplease import NewsPlease
 import re
 import difflib
 from addMusic import add_bgm
-from openai import AzureOpenAI
 from utils import spanish_title_case, english_title_case, get_day_of_week
 import sys
 import requests
-from newsletter import send_newsletter
+#from newsletter import send_newsletter
 
 # Setup basic configuration for logging
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Configuration constants
-TEXT_MODEL = "GPT4"
+#TEXT_MODEL = "GPT4"
+TEXT_MODEL = "gpt-4-turbo-preview"
 MAX_RETRIES = 1
 RETRY_DELAY = 2  # seconds in case of retries
 PRODUCTION_MODE = True  # Set to True to enable audio file generation
@@ -32,16 +32,16 @@ class NewsPodcastOrchestrator:
     """ Orchestrates the creation of a podcast script from scraped news, using OpenAI's GPT models. """
 
     def __init__(self, api_key, date, news_to_URL):
-
+        '''
+        # Depricated since azure api is not working
         self.azure_client = AzureOpenAI(
             azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
             api_key=os.getenv("AZURE_OPENAI_API_KEY"),
             api_version=os.getenv("API_VERSION")
         )
+        '''
 
-        # depricated
-       # self.openai_client = openai.OpenAI(api_key=api_key)
-
+        self.openai_client = openai.OpenAI(api_key=api_key)
         self.date = date
         self.news_to_URL = news_to_URL
 
@@ -50,7 +50,7 @@ class NewsPodcastOrchestrator:
         attempts = 0
         while attempts < MAX_RETRIES:
             try:
-                completion = self.azure_client.chat.completions.create(
+                completion = self.openai_client.chat.completions.create(
                     model=TEXT_MODEL,
                     messages=[{"role": "system", "content": role},
                               {"role": "user", "content": input_ask}]
@@ -171,6 +171,8 @@ refined podcast script:
 
         return self.ask_gpt(input_ask)
 
+    # depricated since azure api is not working
+    '''
     def generate_speech(self, script, output_path):
 
         azure_api_key = os.getenv('AZURE_OPENAI_API_KEY')
@@ -201,25 +203,24 @@ refined podcast script:
             file.write(response.content)
 
         print(f"Audio file saved as {output_path}")
-
+    '''
     def text_to_speech(self, script, output_path, language='English'):
         """ Converts the generated script to speech and saves the audio file. Now supports multiple languages. """
 
         try:
-            '''
-            depricated since we don't use openai
+            
             response = self.openai_client.audio.speech.create(
-                model="tts-1", voice="alloy", input=script)
+                model="tts-1-hd", voice="alloy", input=script)
             speech_file_path = Path(
                 output_path) / f"{language}.mp3"
             response.stream_to_file(speech_file_path)
+            
             '''
-
             speech_file_path = Path(
                 output_path) / f"{language}.mp3"
 
             self.generate_speech(script, speech_file_path)
-
+            '''
             final_podcast_path = Path(output_path) / \
                 f"{language}_final_podcast.mp3"
 
@@ -248,7 +249,7 @@ def remove_leading_numbers(lst):
     # This regular expression matches any leading numbers followed by a dot and any amount of whitespace
     pattern = re.compile(r'^\d+\.\s*')
     # This will apply the regex substitution to each string in the list
-    return [pattern.sub('', s) for s in lst]
+    return [pattern.sub('', s.strip()) for s in lst]
 
 
 # Example usage:
@@ -258,7 +259,7 @@ if __name__ == "__main__":
 
     api_key = os.getenv('OPENAI_API_KEY')
     # api_key = os.getenv('AZURE_OPENAI_API_KEY')
-
+    print(api_key)
     today = datetime.date.today()
    # today = datetime.date(2024, 4, 28)
     today_date = today.strftime('%Y-%m-%d')
@@ -389,7 +390,7 @@ Podcast Description (Chinese):
                 logging.info(f"All data saved to {output_file_path}.")
 
             # Send the newsletter
-            send_newsletter(content=podcast_description)
+         #   send_newsletter(content=podcast_description)
 
         else:
             logging.error("Failed to generate podcast script or title.")

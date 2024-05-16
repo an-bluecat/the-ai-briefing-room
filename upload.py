@@ -42,14 +42,12 @@ def upload_podcast(language= "English", date = "2024-04-24", title = "AI Briefin
     continue_to_app_button.click()
     time.sleep(5)
     
-    shadow_host = driver.find_element(By.CSS_SELECTOR, 'chrome-app')
-
-    # Use JavaScript to access the shadow root of the shadow host
-    shadow_root = driver.execute_script('return arguments[0].shadowRoot', shadow_host)
-
-    # Find elements within the shadow root
-    nav_element = shadow_root.find_element(By.CSS_SELECTOR, 'nav[data-testid="sidenav"]')
     
+    change_language_button = WebDriverWait(driver, 10).until(
+        EC.element_to_be_clickable((By.XPATH, "//chrome-app/div/nav/div/div/dl/dd[7]"))
+    )
+    
+   
     '''
     # This gets the which podcast for us
     first_div = WebDriverWait(driver, 10).until(
@@ -60,7 +58,7 @@ def upload_podcast(language= "English", date = "2024-04-24", title = "AI Briefin
     print(f"Text of the first div: {first_text}")
     '''
     time.sleep(5)
-    
+    '''
     # new episode
     driver.get("https://podcasters.spotify.com/pod/dashboard/episode/wizard")
     time.sleep(5)
@@ -107,7 +105,7 @@ def upload_podcast(language= "English", date = "2024-04-24", title = "AI Briefin
     )
     next_button.click()
     time.sleep(3)
-    
+    '''
 
 
 
