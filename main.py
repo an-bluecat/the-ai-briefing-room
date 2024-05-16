@@ -20,7 +20,7 @@ logging.basicConfig(level=logging.INFO,
 
 # Configuration constants
 #TEXT_MODEL = "GPT4"
-TEXT_MODEL = "gpt-4-turbo-preview"
+TEXT_MODEL = "gpt-4o"
 MAX_RETRIES = 1
 RETRY_DELAY = 2  # seconds in case of retries
 PRODUCTION_MODE = True  # Set to True to enable audio file generation
