@@ -13,6 +13,12 @@ To generate a podcast episode, use the following command:
 
 `python main.py [episode number]`
 
+`cd newsLetter`
+
+change the date here:file_path = "../output/2024-05-07/podcast_data.txt"
+
+`python newsletter.py`
+
 Replace [episode number] with the actual number of the episode you want to generate.
 
 ### Output
