@@ -20,7 +20,7 @@ MODEL = "GPT4"
 load_dotenv()
 
 client = OpenAI(
-    api_key = os.environ.get("OPENAI_API_KEY")
+    api_key = os.environ.get("OPENAI_API_KEY"),
     organization = os.getenv('OPENAI_ORGANIZATION_ID')
 )
 def generate_newsletter_title(content):

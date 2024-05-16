@@ -40,7 +40,10 @@ class NewsPodcastOrchestrator:
         )
         '''
 
-        self.openai_client = openai.OpenAI(api_key=api_key)
+        self.openai_client = openai.OpenAI(
+            api_key = os.environ.get("OPENAI_API_KEY"),
+            organization = os.getenv('OPENAI_ORGANIZATION_ID')
+        )
         self.date = date
         self.news_to_URL = news_to_URL
 
