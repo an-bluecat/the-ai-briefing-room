@@ -157,7 +157,7 @@ def select_events_by_source(titles):
 
 if __name__ == '__main__':
     load_dotenv()
-    TEXT_MODEL = "gpt-4-turbo-preview"
+    TEXT_MODEL = "gpt-4o"
     client = OpenAI()
     client.api_key = os.getenv('OPENAI_API_KEY')
     group_by_source = True  # Change to true for new mode
