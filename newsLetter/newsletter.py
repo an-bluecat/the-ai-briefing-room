@@ -202,11 +202,7 @@ def extract_podcast_description(file_path):
     else:
         return None   
 if __name__ == "__main__":
-    # Get xample title template
-    TLDR_TITLE_EXAMPLE = ""
-    with open("newsletter_title.md", 'r', encoding='utf-8') as file:
-        TLDR_TITLE_EXAMPLE = file.read()
     # Path to your file, should keep it updated
-    file_path = "../output/2024-05-07/podcast_data.txt"
+    file_path = "../output/2024-05-16/podcast_data.txt"
     format_newsletter(content = extract_podcast_description(file_path))
     send_newsletter(use_sheet = True)
