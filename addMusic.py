@@ -29,6 +29,3 @@ def add_bgm(podcast_path, bgm_path, final_path):
 
 # Replace 'your_podcast.mp3' and 'your_bgm.mp3' with your actual file paths
 #add_bgm('output/2024-04-23/English_speech_2024-0423-2242.mp3', 'bgm.mp3')
-
-string = "el futuro de tiktok en la balanza ⚖️, avances y desafíos de tesla 🚗💸, innovación en reparabilidad electrónica con framework 💻✨"
-print(string.title())

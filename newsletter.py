@@ -3,6 +3,7 @@ import os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from openai import AzureOpenAI
+from dotenv import load_dotenv
 
 
 TLDR_EXAMPLE = ""
@@ -14,6 +15,8 @@ with open("newsletter_title.md", 'r', encoding='utf-8') as file:
     TLDR_TITLE_EXAMPLE = file.read()
     
 MODEL = "GPT4"
+
+load_dotenv()
 
 client = AzureOpenAI(
     azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
@@ -167,7 +170,7 @@ def send_newsletter(content, use_sheet = True):
       init_db()
       subscribers = get_subscribers()  # Retrieve all subscribers
     print(subscribers)
-
+    '''
     newsletter_content = generate_newsletter(content)
     newsletter_content = "###" + "###".join(newsletter_content.split("###")[1:]).split("---")[0] # remove title and intro, and summary at the end
     title = generate_newsletter_title(newsletter_content).lstrip("#")
@@ -179,3 +182,4 @@ def send_newsletter(content, use_sheet = True):
     for email in subscribers:
         send_email(title, newsletter_content, email, is_markdown=True)
         print(email)
+    '''
