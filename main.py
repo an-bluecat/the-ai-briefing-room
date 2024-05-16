@@ -9,10 +9,9 @@ from newsScraper import scrape_verge, scrape_cnbctech, scrape_techcrunch, scrape
 from newsplease import NewsPlease
 import re
 import difflib
-from addMusic import add_bgm
-from utils import spanish_title_case, english_title_case, get_day_of_week
+from utils.addMusic import add_bgm
+from utils.utils import spanish_title_case, english_title_case, get_day_of_week
 import sys
-import requests
 #from newsletter import send_newsletter
 
 # Setup basic configuration for logging
@@ -25,7 +24,7 @@ TEXT_MODEL = "gpt-4-turbo-preview"
 MAX_RETRIES = 1
 RETRY_DELAY = 2  # seconds in case of retries
 PRODUCTION_MODE = True  # Set to True to enable audio file generation
-BGM_PATH = "bgm.mp3"
+BGM_PATH = "assets/bgm.mp3"
 
 
 class NewsPodcastOrchestrator:

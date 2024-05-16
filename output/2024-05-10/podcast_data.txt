@@ -1,0 +1,241 @@
+
+Titles:
+Gaze upon Dell’s leaked Qualcomm X Elite-powered laptops
+GameStop will buy and sell rare Pokémon cards — but it doesn’t want to catch ‘em all
+Verizon, AT&T, and T-Mobile’s ‘unlimited’ plans just got a $10M slap on the wrist
+Amazon’s Matter Casting is shaping up so nicely, I want to use it everywhere
+Bungie’s classic sci-fi shooter Marathon is now free on Steam
+Biden really, really doesn’t want China to flood the US with cheap EVs
+EA is prototyping in-game ads even as we speak
+Kobo’s Elipsa 2E, our favorite e-reader for taking notes, is down to its best price yet
+Sam Altman shoots down reports of search engine launch ahead of Google I/O
+How to watch the possible aurora borealis this weekend
+A rare geomagnetic storm is heading to Earth — here’s what it means for critical infrastructure
+Apple might bring AI transcription to Voice Memos and Notes
+Fisker’s brakes can’t catch a break
+The Oura Ring will soon be able to gauge how ‘old’ your heart is
+The beginning and end of the iPad
+Elon Musk's X loses lawsuit against Bright Data over data scraping
+Protesters try to break into Tesla's Germany factory, multiple people arrested
+Sam Altman's nuclear energy company Oklo plunges 54% in NYSE debut
+House committee asks Microsoft's Brad Smith to attend hearing on security lapses
+China's SMIC warns of fierce chip competition as it misses profit estimates
+Tesla accused by NLRB of creating policies to chill unionizing efforts in Buffalo
+Apple apologizes for iPad Pro ad showing hydraulic press destroying guitars, piano
+Google employees question execs over 'decline in morale' after blowout earnings
+Alibaba rolls out latest version of its large language model to meet AI demand
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+
+
+The Verge
+Gaze upon Dell’s leaked Qualcomm X Elite-powered laptops
+GameStop will buy and sell rare Pokémon cards — but it doesn’t want to catch ‘em all
+Verizon, AT&T, and T-Mobile’s ‘unlimited’ plans just got a $10M slap on the wrist
+Amazon’s Matter Casting is shaping up so nicely, I want to use it everywhere
+Bungie’s classic sci-fi shooter Marathon is now free on Steam
+Biden really, really doesn’t want China to flood the US with cheap EVs
+EA is prototyping in-game ads even as we speak
+Kobo’s Elipsa 2E, our favorite e-reader for taking notes, is down to its best price yet
+Sam Altman shoots down reports of search engine launch ahead of Google I/O
+How to watch the possible aurora borealis this weekend
+A rare geomagnetic storm is heading to Earth — here’s what it means for critical infrastructure
+Apple might bring AI transcription to Voice Memos and Notes
+Fisker’s brakes can’t catch a break
+The Oura Ring will soon be able to gauge how ‘old’ your heart is
+The beginning and end of the iPad
+
+CNBC Tech
+Elon Musk's X loses lawsuit against Bright Data over data scraping
+Protesters try to break into Tesla's Germany factory, multiple people arrested
+Sam Altman's nuclear energy company Oklo plunges 54% in NYSE debut
+House committee asks Microsoft's Brad Smith to attend hearing on security lapses
+China's SMIC warns of fierce chip competition as it misses profit estimates
+Tesla accused by NLRB of creating policies to chill unionizing efforts in Buffalo
+Apple apologizes for iPad Pro ad showing hydraulic press destroying guitars, piano
+Google employees question execs over 'decline in morale' after blowout earnings
+Alibaba rolls out latest version of its large language model to meet AI demand
+
+Top News:
+elon musk's x loses lawsuit against bright data over data scraping
+sam altman's nuclear energy company oklo plunges 54% in nyse debut
+china's smic warns of fierce chip competition as it misses profit estimates
+tesla accused by nlrb of creating policies to chill unionizing efforts in buffalo
+alibaba rolls out latest version of its large language model to meet ai demand
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E and Friday May 10), and replace CNBC techcheck briefing to 'AI briefing' 
+ "title0:
+Elon Musk's X loses lawsuit against Bright Data over data scraping
+description0:
+A federal judge in California dismissed a lawsuit filed by Elon Musk's X against Israel's Bright Data, in a case that involved the scraping of public online data and its appropriate uses.
+X, formerly Twitter, sued Bright Data, alleging the company "scrapes data from X" and sells it "using elaborate technical measures to evade X Corp.'s anti-scraping technology." X also claimed the company violated its terms of service and copyright.
+Data scraping occurs when automated programs scour publicly accessible websites to collect data, which can later be used for a wide range of purposes, including training artificial intelligence models and targeting online ads. The practice is generally legal in the U.S. when it involves scraping publicly accessible data, according to a 2022 ruling that capped off an extended legal battle involving LinkedIn.
+X was previously seeking more than $1 million in damages from unknown defendants over "unlawfully scraping data associated with Texas residents," according to a suit that was filed in Dallas County.
+In dismissing the complaint, Judge William Alsup wrote, "X Corp. wants it both ways: to keep its safe harbors yet exercise a copyright owner's right to exclude, wresting fees from those who wish to extract and copy X users' content."
+Giving social networks complete control over the collection and use of public web data "risks the possible creation of information monopolies that would disserve the public interest," the judge wrote. He added that X was not "looking to protect X users' privacy," and was "happy to allow the extraction and copying of X users' content so long as it gets paid."
+A representative for X didn't immediately respond to a request for comment.
+Meta previously filed a complaint against Bright Data and was similarly unsuccessful.
+Bright Data said in an emailed statement that its victories against Meta and X show that public information online "belongs to all of us, and any attempt to deny the public access will fail."
+"What is happening now is unprecedented, the implications impact general business, research, AI and beyond," the company said.
+Bright Data says it only scrapes publicly available data that's visible to anyone without a login. At the time of the suit's filing, X made the information Bright Data scraped available to anyone.
+
+title1:
+Sam Altman's Oklo plunges 54% in NYSE debut after SPAC
+description1:
+Sam Altman, CEO of OpenAI, attends the 54th annual meeting of the World Economic Forum in Davos, Switzerland, on Jan. 18, 2024.
+Sam Altman is now chairman of a public company. But it's not OpenAI.
+On Friday, advanced nuclear fission company Oklo started trading on the New York Stock Exchange. The company, which has yet to generate any revenue, went public through a special purpose acquisition company (SPAC) called AltC Acquisition Corp., founded and led by Altman.
+Under the ticker symbol "OKLO ," shares plummeted 54% on Friday to $8.45, valuing the company at about $364 million. Oklo received roughly $306 million in gross proceeds in the transaction, according to a release.
+Oklo's business model is based on commercializing nuclear fission, the reaction that fuels all nuclear power plants. Instead of conventional reactors, the company aims to use mini nuclear reactors housed in A-frame structures. Its goal is to sell the energy to end users such as the U.S. Air Force and big tech companies.
+Oklo is currently working to build its first small-scale reactor in Idaho, which could eventually power the types of data centers that OpenAI and other artificial intelligence companies need to run their AI models and services.
+Altman is co-founder and CEO of OpenAI, which has been valued at over $80 billion by private investors. He's said that he sees nuclear energy as one of the best ways to solve the problem of growing demand for AI, and the energy that powers the technology, without relying on fossil fuels. Microsoft co-founder Bill Gates and Amazon founder Jeff Bezos have also invested in nuclear plants in recent years.
+"I don't see a way for us to get there without nuclear," Altman told CNBC in 2023. "I mean, maybe we could get there just with solar and storage. But from my vantage point, I feel like this is the most likely and the best way to get there."
+In an interview with CNBC Thursday, Oklo CEO Jacob DeWitte confirmed that the company has yet to generate revenue and has no nuclear plants deployed at the moment. He said the company is targeting 2027 for its first plant to come online.
+Going the SPAC route is risky. So-called reverse mergers became popular in the low-interest rate days of 2020 and 2021 when tech valuations were soaring and investors were looking for growth over profit. But the SPAC market collapsed in 2022 alongside rising rates and hasn't recovered.
+AI-related companies, on the other hand, are the new darlings of Wall Street.
+"SPACs haven't exactly had the best performances in the past couple of years, so for us to have sort of the outcome that we've had here is obviously a function of the work we put in, but also what we're building and also the fact that the market sees the opportunity sets here," said DeWitte, who co-founded the company in 2013. "I think it's very promising on multiple fronts for [the] nuclear, AI, data center push, as well as the energy transition piece."
+The company has seen its fair share of regulatory setbacks. In 2022, the U.S. Nuclear Regulatory Commission denied Oklo's application for an Idaho reactor. The company has been working on a new application, which it isn't aiming to submit to the NRC until early next year, DeWitte said, adding that it's currently in the "pre-application engagement" stage with the commission.
+Altman got involved with Oklo while president of the startup incubator Y Combinator. Oklo went into the program in 2014 after an earlier meeting between Altman and DeWitte. In 2015, Altman invested in the company and became chairman.
+It's not Altman's only foray into nuclear energy or other infrastructure that could power large-scale AI growth.
+In 2021, Altman led a $500 million funding round in clean energy firm Helion, which is working to develop and commercialize nuclear fusion. Helion said in a blog post at the time that the capital would go toward its electricity demonstration generator, Polaris, "which we expect to demonstrate net electricity from fusion in 2024."
+Altman didn't respond to a request for comment.
+In recent years, Altman has also poured money into chip endeavors and investments that could help power the AI tools OpenAI builds.
+Just before his brief ouster as OpenAI CEO in November, he was reportedly seeking billions of dollars for a chip venture codenamed "Tigris" to eventually compete with Nvidia .
+Altman in 2018 invested in AI chip startup Rain Neuromorphics, based near OpenAI's San Francisco headquarters. The next year, OpenAI signed a letter of intent to spend $51 million on Rain's chips. In December, the U.S. compelled a Saudi Aramco-backed venture capital firm to sell its shares in Rain.
+DeWitte told CNBC that the data center represents "a pretty exciting opportunity."
+"What we've seen is there's a lot of interest with AI, specifically," he said. "AI compute needs are significant. It opens the door for a lot of different approaches in terms of how people think about designing and developing AI infrastructure."
+WATCH: Investing in the future of AI
+
+title2:
+China's SMIC warns of fierce chip competition as it misses profit estimates
+description2:
+BEIJING, CHINA - DECEMBER 04: A logo hangs on the building of the Beijing branch of Semiconductor Manufacturing International Corporation (SMIC) on December 4, 2020 in Beijing, China. (Photo by VCG/VCG via Getty Images)
+Semiconductor Manufacturing International Corporation on Friday warned of intense competition in the chip industry after its first-quarter profit missed expectations.
+"Competition in the industry has been increasingly fierce and the pricing for commodity products basically follows the market trends," SMIC said on Friday during the firm's earnings call.
+"The company fulfills its [long-term view] through constructing quality technology platforms that leap here in mainland China by one to two generations," said SMIC.
+SMIC, China's biggest contract chip manufacturer, is seen as critical to Beijing's ambitions of cutting foreign reliance in its domestic semiconductor industry as the U.S. continues to curb China's tech power. SMIC lags behind Taiwan's TSMC and South Korea's Samsung Electronics, according to analysts.
+The company's first-quarter net income plunged 68.9% from a year earlier to $71.79 million, compared with LSEG analysts' average estimate of $80.49 million.
+Gross margin slid to 13.7% in the quarter – the lowest the firm has ever recorded in nearly 12 years – according to LSEG data.
+Revenue for the first quarter was $1.75 billion, up 19.7% from a year earlier, as customers stocked up on chips, SMIC said. This handily beat LSEG estimate of $1.69 billion.
+
+title3:
+Tesla accused by NLRB of chilling worker unionizing efforts in Buffalo
+description3:
+Elon Musk, co-founder of Tesla and SpaceX and owner of X Holdings Corp., speaks at the Milken Institute's Global Conference at the Beverly Hilton Hotel,on May 6, 2024 in Beverly Hills, California.
+Tesla is being accused of taking steps to keep employees in Buffalo, New York, from unionizing, according to a complaint from the National Labor Relations Board.
+On Tuesday, the NLRB's regional director for Buffalo, Linda Leslie, filed the complaint. In it, she said Tesla "promulgated and maintained," an acceptable use policy for workplace technology in 2023 that was meant to "discourage its employees from forming, joining, or assisting the Union or engaging in other concerted activities," after allegations were raised by members of Workers United.
+CNBC obtained a copy of the complaint through a Freedom of Information Act request.
+The policy restricted Tesla workers from "recording, unauthorized solicitating [sic] or promoting," and "creating channels and distribution lists," among other things, the complaint said.
+The NLRB also claims the policy had the effect of "interfering with, restraining, and coercing employees in the exercise of rights guaranteed" under the National Labor Relations Act, which generally protects workers' rights to discuss organizing, join a union, and collectively negotiate for better pay and working conditions.
+The Tesla Buffalo plant was supposed to manufacture solar panels, but has been used more recently to assemble electric vehicle charging equipment, and to house a team of AI software data labelers.
+Last month, the Buffalo plant was home to a number of job cuts put in place as part of a broader restructuring at the electric vehicle company. According to a WARN notice filed in the state, Tesla is laying off 285 employees in the state of New York, mostly at the Buffalo factory. The company is eliminating thousands of jobs worldwide after declining EV sales in the first quarter.
+Tesla and CEO Elon Musk have clashed with union proponents for years and were found to have engaged in union-busting. In 2021, the NLRB decided that Tesla violated labor laws when it fired a union activist, and when Musk wrote on Twitter in 2018: "Nothing stopping Tesla team at our car plant from voting union. Could do so tmrw if they wanted. But why pay union dues & give up stock options for nothing?"
+An administrative court ordered the CEO to remove the post. Tesla challenged the order but its petition for review was denied. The post in question remains on Musk's X account, where he has 182.7 million listed followers.
+Tesla has also faced workers' rights challenges in Europe. Last year, Swedish service technicians began a strike that continues today, with the labor group allowing for some authorized work to take place at times. The employees in Sweden, where a majority of the workplace is involved in unions, are seeking a collective bargaining agreement with Tesla.
+Tesla didn't immediately respond to a request for comment.
+Read the complaint here:
+
+title4:
+Alibaba rolls out latest version of its large language model
+description4:
+The logo of the Alibaba office building is seen in the Huangpu District in Shanghai, June 16, 2023.
+Alibaba Cloud said on Thursday it released the latest version of its large language model after more than 90,000 deployments by companies.
+Jingren Zhou, chief technology officer of Alibaba Cloud, said in a statement the firm has seen "many creative applications of the models from across the industries," including consumer electronics and gaming.
+"We look forward to collaborating with our customers and developers in seizing the immense
+growth opportunities presented by the latest surge in the generative AI development," said Zhou.
+Alibaba Cloud said the latest version of its Tongyi Qianwen model, Qwen2.5, possesses "remarkable advancements in reasoning, code comprehension, and textual understanding compared to its predecessor Qwen2.0."
+Large language models power artificial intelligence applications like OpenAI's ChatGPT. They are trained on vast amounts of data to generate humanlike responses to user prompts.
+The latest Qwen model fares better than OpenAI's GPT-4 model in language and creation capabilities, but fell short in other categories like knowledge, reasoning and math, according to a March analysis by large language model evaluation platform OpenCompass."
+
+Response:
+
+Script:
+i'm wall-e, and this is your ai briefing for friday, may 10th.
+
+elon musk’s social media platform x, formerly known as twitter, faced a defeat in a courtroom battle against israel's bright data. a california judge dismissed x’s lawsuit accusing bright data of improperly scraping its data. the ruling emphasized the importance of public access to online information, marking a setback for x, which sought over $1 million in damages for the alleged scraping activities. this comes after similar legal challenges by other tech giants have failed, underscoring the ongoing debate over data scraping and its implications for privacy and copyright claims.
+
+in market news, sam altman’s nuclear fission venture, oklo, experienced a rough start in its nyse debut, nosediving 54% post a merger with spac altc acquisition corp. despite no revenue or operational reactors yet, oklo aims to revolutionize energy for ai data centers and more, with altman betting big on nuclear’s role in powering future technological advances. the stark debut highlights the volatile nature of spac mergers in the shifting sands of tech valuation.
+
+overseas, china's smic cautioned of the intensifying competition in the chip sector after missing profit expectations. as the us tightens its grip on china's tech ambitions, smic's struggles reflect broader tensions and the criticality of semiconductor independence for beijing. despite a revenue increase, smic’s profitability and margins are squeezed, underscoring the challenging landscape for global chip manufacturers amidst geopolitical pressures and market dynamics.
+
+back in the us, tesla finds itself under scrutiny from the national labor relations board over allegations of dampening unionizing efforts in its buffalo facility. the complaint highlights policies reportedly inhibiting workers’ rights, adding to the series of labor disputes that have dogged elon musk’s enterprises. as tesla confronts a union push, the broader tech industry watches closely, recognizing the potential ripple effects on labor relations in the sector.
+
+lastly, alibaba cloud has unveiled the latest iteration of its large language model, tongyi qianwen qwen2.5. boasting significant advancements over its predecessor, alibaba positions this release as a pivotal moment in the generative ai race. while qwen2.5 outperforms in certain aspects, its comparison with openai's gpt-4 indicates the fierce competition and rapid innovation characterizing the ai landscape.
+
+that's all for today. we'll see you back here tomorrow
+
+Polished Script:
+i'm wall-e, welcoming you to today's tech briefing for friday, may 10. 
+
+elon musk's social media giant, x, formerly known as twitter, has encountered a legal hurdle, losing a court battle to israel-based bright data. a california judge has ruled against x, spotlighting the contentious issue of data scraping. x, seeking damages exceeding $1 million for alleged unauthorized data appropriation, finds itself at a crossroads with this decision. this event throws a spotlight on the broader implications for data privacy and the tech industry's ongoing struggle with data scraping practices.
+
+turning to the stock market, sam altman's nuclear fission endeavor, oklo, made a turbulent entry into the nyse following its merger with spac altc acquisition corp. the stock plummeted by 54%, a stark indication of the market's skepticism. despite lacking revenue and functional reactors, oklo's ambition to transform the energy landscape, particularly for ai data centers, remains undeterred. this event underscores the unpredictable nature of spac mergers amid fluctuating tech valuations.
+
+overseas, china's semiconductor manufacturer smic has issued a warning about increasing competition in the chip industry after falling short of profit expectations. amid escalating efforts by the us to curb china's technological rise, smic's challenges underscore the vital importance of semiconductor autonomy for beijing. although the company reported a revenue uptick, pressure on profitability and margins remains, highlighting the complex dynamics facing global chipmakers in a landscape shaped by geopolitical tensions and market forces.
+
+in the us, tesla is in the spotlight as the national labor relations board investigates allegations of the company hindering unionizing efforts at its buffalo facility. this inquiry sheds light on a range of labor disputes affecting elon musk's enterprises, marking another chapter in the complex narrative of labor relations within the tech industry. with tesla at the center of a unionization drive, the broader tech community watches with keen interest, mindful of the potential implications for workplace dynamics across the sector.
+
+lastly, in a significant development in the ai realm, alibaba cloud has announced the release of its enhanced large language model, tongyi qianwen qwen2.5. boasting remarkable advancements, this launch is seen as a pivotal moment in the competitive landscape of generative ai. while qwen2.5 shows impressive capabilities, the ongoing comparisons with openai's gpt-4 are a testament to the fierce competition and rapid innovation that define today's ai industry.
+
+that wraps up today's tech briefing. see you back here tomorrow for more updates
+
+Podcast Title:
+EP-18 "x's Legal Setback Over Data Scraping ⚖️, Oklo's Stock Plunge Amid Spac Woes 📉, Alibaba's Leap in Ai with Qwen2.5 🤖"
+
+Podcast Description:
+dive into the latest tech insights with our friday, may 10, tech briefing. join wall-e as we navigate through the most significant happenings in the tech world, offering thoughtful analysis on each topic. this episode covers a range of crucial developments:
+
+- a legal setback for elon musk's x (formerly twitter) as it loses to bright data in a court case over data scraping, spotlighting issues of data privacy and tech industry's data practices.
+- sam altman's nuclear fission company, oklo, experiences a sharp decline on the nyse amidst skepticism, despite its ambitious energy transformation goals.
+- smic, china's leading semiconductor manufacturer, discusses the challenges of increasing competition and us restrictions, hinting at the ongoing global tech and trade tensions.
+- tesla faces a probe by the national labor relations board on alleged anti-union activities, highlighting ongoing labor disputes within musk's enterprises.
+- alibaba cloud introduces its advanced ai model, qwen2.5, setting a new bar in the competitive generative ai landscape and drawing comparisons with openai's gpt-4.
+
+tune in to unpack these stories and understand their broader implications for the tech industry and beyond
+
+Polished Script (Spanish):
+soy wall-e, y este es tu resumen informativo de ai briefing para el viernes 10 de mayo. elon musk's x pierde una demanda contra bright data por raspado de datos. un juez federal en california desestimó una demanda interpuesta por x de elon musk contra bright data de israel en un caso que involucraba el raspado de datos públicos en línea y sus usos adecuados. en otra noticia, la compañía de fisión nuclear avanzada oklo, dirigida por sam altman, cae un 54% en su debut en la nyse después de spac. oklo, que aún no genera ingresos, comenzó a cotizar en la bolsa de nueva york el viernes. además, el fabricante de chips smic de china advierte sobre la feroz competencia de chips ya que no cumplió con las estimaciones de ganancias. "la competencia en la industria ha sido cada vez más feroz," dijo smic el viernes durante la llamada de ganancias de la firma. tesla es acusada por la nlrb de enfriar los esfuerzos de sindicalización de los trabajadores en buffalo, según una queja de la junta nacional de relaciones laborales. por último, alibaba lanza la última versión de su modelo de lenguaje extenso. alibaba cloud dijo el jueves que lanzó la última versión de su modelo de lenguaje grande después de más de 90,000 implementaciones por parte de empresas. esto es todo por hoy. nos vemos aquí mañana
+
+Podcast Title (Spanish):
+EP-18 "x de Elon Musk Pierde Demanda Vs Bright Data 📉, Desplome de Oklo en la Nyse 💥, Alibaba Revela Su Nuevo Modelo de Lenguaje 💬"
+
+Podcast Description (Spanish):
+description:
+
+¡bienvenido a tu resumen informativo de ai briefing! en cada episodio, soy wall-e, y te traeré las noticias más relevantes y actuales del mundo de la tecnología y la inteligencia artificial. en el episodio de este viernes 10 de mayo, cubrimos una amplia gama de temas que incluyen:
+
+- la derrota de x, de elon musk, en una demanda contra bright data por el tema del raspado de datos públicos en línea.
+- la caída del 54% en el debut en la nyse de la compañía de fisión nuclear avanzada oklo, dirigida por sam altman, que aún no genera ingresos.
+- smic, el fabricante de chips de china, advierte sobre la creciente competencia en la industria de chips y su repercusión en las estimaciones de ganancias.
+- tesla enfrenta acusaciones por parte de la nlrb de enfriar esfuerzos de sindicalización de trabajadores en su planta de buffalo.
+- alibaba lanza la última versión de su modelo de lenguaje extenso, presentando avances significativos después de más de 90,000 implementaciones por empresas.
+
+únete a nosotros para profundizar en estas historias y entender cómo están dando forma al futuro de la tecnología y la ia. no te pierdas nuestro resumen para mantenerte al tanto de las innovaciones y cambios en el panorama tecnológico global. nos vemos aquí mañana para más actualizaciones
+
+Polished Script (Chinese):
+我是wall-e，这是您的ai简报，为您带来周五5月10日的技术新闻。elon musk的x公司对以色列的bright data因数据刮取问题提起的诉讼被加州一名联邦法官驳回。bright data声称，其战胜x和meta的官司显示，公共在线信息“属于我们所有人，任何尝试阻止公众访问的行为都会失败”。sam altman主导的先进核裂变公司oklo在纽约证交所首次公开募股后，股价暴跌54%，尽管ai相关公司最近成为华尔街新宠。此外，中国最大的芯片制造商smic警告称，由于第一季度利润未达预期，芯片行业竞争日趋激烈。同时，nlrb指控特斯拉在其布法罗工厂采取行动阻碍员工组建工会。最后，阿里巴巴云发布了其大型语言模型的最新版本，jingren zhou表示，期待与客户和开发者合作，把握由最新一轮生成式ai发展带来的巨大增长机会。
+
+这就是今天的ai简报，我们明天再见。
+
+Podcast Title (Chinese):
+EP-18 x公司诉讼败诉事件 🏛️, oklo股价暴跌震荡市场 📉, 阿里大语言模型新风向 🤖
+
+Podcast Description (Chinese):
+欢迎收听由wall-e主持的ai简报，这个播客将为您提供最新的技术新闻和深入分析。我们的目标是让您紧跟技术发展的脉搏，无论是大公司的动向还是行业的整体趋势。下面是我们在5月10日周五播出内容的概要：
+
+- elon musk的x公司对以色列bright data提起的数据刮取诉讼在加州被一名联邦法官驳回。bright data表示，这一判决证明了公共在线信息属于大众，任何阻止公众访问尝试都将失败。
+
+- sam altman领导的先进核裂变公司oklo在纽约证券交易所的ipo后，股价暴跌54%。这一事件发生在ai相关公司最近成为华尔街宠儿的背景下。
+
+- 中国最大的芯片制造商smic发出警告称，由于第一季度利润未达预期，芯片行业的竞争正在变得日益激烈。
+
+- nlrb指控特斯拉在其布法罗工厂采取措施阻碍员工组建工会。
+
+- 阿里巴巴云发布了其大型语言模型的最新版本，jingren zhou期待与客户和开发者合作，共同把握生成式ai的巨大增长机遇。
+
+请继续关注我们的节目，了解更多技术新闻和深入分析。我们明天再见。

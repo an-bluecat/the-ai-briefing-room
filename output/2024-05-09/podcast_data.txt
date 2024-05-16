@@ -1,0 +1,240 @@
+
+Titles:
+Did Stanford just prototype the future of AR glasses?
+Microsoft’s new Xbox mobile gaming store is launching in July
+Verizon and T-Mobile are trying to gobble up US Cellular
+Apple plans to use M2 Ultra chips in the cloud for AI
+Poppy Playtime follows Five Nights at Freddy’s with new movie
+Apple apologizes for iPad ‘Crush’ ad that ‘missed the mark’
+Microsoft is testing a new Windows 11 Start menu with floating widgets
+Corsair is about to acquire racing sim company Fanatec
+Apple doesn’t understand why you use technology
+What Rivian, Lucid, and Fisker tell us about the current state of EVs
+Windows 11’s screenshot tool is getting QR code scanning and emoji support
+Skylight’s terrific smart calendar is down to its lowest price to date
+Threads is making it easy for anyone to see a post’s view count
+Despite big tech lobbying, Maryland passes two internet privacy bills
+You can still buy the last-gen iPad with a headphone jack for $249
+Sonos says its controversial app redesign took ‘courage’
+TikTok is adding an ‘AI-generated’ label to watermarked third-party content
+House committee asks Microsoft's Brad Smith to attend hearing on security lapses
+China's SMIC warns of fierce chip competition as it misses profit estimates
+Tesla accused by NLRB of creating policies to chill unionizing efforts in Buffalo
+Apple apologizes for iPad Pro ad showing hydraulic press destroying guitars, piano
+TikTok begins automatically labeling AI-generated content
+Masimo activist agrees to end proxy fight if company expands board, adds both nominees
+Google employees question execs over 'decline in morale' after blowout earnings
+Roblox shares drop 22% as company cuts annual bookings forecast on muted player spending
+Alibaba rolls out latest version of its large language model to meet AI demand
+Generative AI's disinformation threat is 'overblown,' top cyber expert says
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+
+
+The Verge
+Did Stanford just prototype the future of AR glasses?
+Microsoft’s new Xbox mobile gaming store is launching in July
+Verizon and T-Mobile are trying to gobble up US Cellular
+Apple plans to use M2 Ultra chips in the cloud for AI
+Poppy Playtime follows Five Nights at Freddy’s with new movie
+Apple apologizes for iPad ‘Crush’ ad that ‘missed the mark’
+Microsoft is testing a new Windows 11 Start menu with floating widgets
+Corsair is about to acquire racing sim company Fanatec
+Apple doesn’t understand why you use technology
+What Rivian, Lucid, and Fisker tell us about the current state of EVs
+Windows 11’s screenshot tool is getting QR code scanning and emoji support
+Skylight’s terrific smart calendar is down to its lowest price to date
+Threads is making it easy for anyone to see a post’s view count
+Despite big tech lobbying, Maryland passes two internet privacy bills
+You can still buy the last-gen iPad with a headphone jack for $249
+Sonos says its controversial app redesign took ‘courage’
+TikTok is adding an ‘AI-generated’ label to watermarked third-party content
+
+CNBC Tech
+House committee asks Microsoft's Brad Smith to attend hearing on security lapses
+China's SMIC warns of fierce chip competition as it misses profit estimates
+Tesla accused by NLRB of creating policies to chill unionizing efforts in Buffalo
+Apple apologizes for iPad Pro ad showing hydraulic press destroying guitars, piano
+TikTok begins automatically labeling AI-generated content
+Masimo activist agrees to end proxy fight if company expands board, adds both nominees
+Google employees question execs over 'decline in morale' after blowout earnings
+Roblox shares drop 22% as company cuts annual bookings forecast on muted player spending
+Alibaba rolls out latest version of its large language model to meet AI demand
+Generative AI's disinformation threat is 'overblown,' top cyber expert says
+
+Top News:
+microsoft’s new xbox mobile gaming store is launching in july
+apple plans to use m2 ultra chips in the cloud for ai
+roblox shares drop 22% as company cuts annual bookings forecast on muted player spending
+house committee asks microsoft's brad smith to attend hearing on security lapses
+china's smic warns of fierce chip competition as it misses profit estimates
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E and Thursday May 9), and replace CNBC techcheck briefing to 'AI briefing' 
+ "title0:
+Microsoft’s new Xbox mobile gaming store is launching in July
+description0:
+Microsoft has been talking about plans for an Xbox mobile gaming store for a couple of years now, and the company now plans to launch it in July. Speaking at the Bloomberg Technology Summit earlier today, Xbox president Sarah Bond revealed the launch date and how Microsoft is going to avoid Apple’s strict App Store rules.
+“We’re going to start by bringing our own first-party portfolio to [the Xbox mobile store], so you’re going to see games like Candy Crush show up in that experience, games like Minecraft,” says Bond. “We’re going to start on the web, and we’re doing that because that really allows us to have it be an experience that’s accessible across all devices, all countries, no matter what and independent of the policies of closed ecosystem stores.”
+The store will be focused on first-party mobile games from Microsoft’s various studios, which include huge hits like Call of Duty: Mobile and Candy Crush Saga. Bond says the company will extend this to partners at some point in the future, too.
+While games will naturally be part of the store, it sounds like the key parts of the Xbox experience will also be available. Bond argues there isn’t a gaming platform and store experience that “goes truly across devices — where who you are, your library, your identity, your rewards travel with you versus being locked to a single ecosystem.” So Microsoft is trying to build that with its Xbox mobile store.
+Microsoft had also been building this store in anticipation of companies like Apple and Google being forced to open up their mobile app stores, but it’s clear the software giant isn’t willing to wait on the Digital Markets Act to shake out in Europe or any potential action in the US.
+A web-only mobile store will be challenging to pull off, and it’s not immediately clear how Microsoft will position this as an alternative to these mobile games already existing on rival app stores. Bond says Microsoft will “extend” beyond the web, hinting that it could eventually launch a true rival to Google and Apple’s mobile app stores at some point soon.
+
+title1:
+Apple plans to use M2 Ultra chips in the cloud for AI
+description1:
+Apple plans to start its foray into generative AI by offloading complex queries to M2 Ultra chips running in data centers before moving to its more advanced M4 chips.
+Bloomberg reports that Apple plans to put its M2 Ultra on cloud servers to run more complex AI queries, while simple tasks are processed on devices. The Wall Street Journal previously reported that Apple wanted to make custom chips to bring to data centers to ensure security and privacy in a project the publication says is called Project ACDC, or Apple Chips in Data Center. But the company now believes its existing processors already have sufficient security and privacy components.
+The chips will be deployed to Apple’s data centers and eventually to servers run by third parties. Apple runs its own servers across the United States and has been working on a new center in Waukee, Iowa, which it first announced in 2017.
+While Apple has not moved as fast on generative AI as competitors like Google, Meta, and Microsoft, the company has been putting out research on the technology. In December, Apple’s machine learning research team released MLX, a machine learning framework that can make AI models run efficiently on Apple silicon. The company has also been releasing other research around AI models that hint at what AI could look like on its devices and how existing products, like Siri, may get an upgrade.
+
+title2:
+Roblox shares drop 22% as company cuts annual bookings forecast on muted player spending
+description2:
+Roblox cut its annual bookings forecast on Thursday, in a sign that people were dialing back on spending within its video-gaming platform amid an uncertain economic outlook and elevated levels of inflation.
+Roblox shares closed 22% lower Thursday.
+The lowered forecast marks the latest downbeat report from the gaming industry, which has laid off hundreds of employees and shut studios this year to cope with declining demand.
+Electronic Arts also gave a weak revenue forecast earlier this week.
+Roblox now expects full-year bookings to be between $4 billion and $4.10 billion, down from its earlier forecast of $4.14 billion to $4.28 billion. Its second-quarter bookings forecast of $870 million to $900 million was also below estimates.
+The company said it was conservative with its second-quarter forecast as the Easter holiday, a period of high engagement on its platform, was during the first quarter this year compared with the second quarter a year earlier.
+The gaming industry is grappling with lower engagement, which is expected to keep growth in the PC and console market below pre-pandemic levels through 2026, according to research firm Newzoo.
+The number of hours gamers aged 13 or more spent on Roblox's platform grew by 19% in the first quarter, the lowest growth rate for the company in about two years.
+"That's not unusual," Roblox Chief Financial Officer Michael Guthrie said, adding that the company was adding a lot of older gamers who take a while to get settled and spend more time on the platform.
+Roblox has also turned to digital ads to diversify its revenue. Earlier this month, it started displaying virtual billboards featuring content from brands such as Walmart and Warner Bros Discovery to users on its platform.
+Roblox will build the infrastructure for the ad platform in 2024 and start providing forecast for ad revenue in 2025, Guthrie added.
+
+title3:
+House committee seeks Microsoft's Brad Smith for cybersecurity hearing
+description3:
+Brad Smith, vice chair and president of Microsoft, speaks at Gateway Technical College in Sturtevant, Wisconsin, on May 8, 2024.
+A House committee wants Microsoft 's top lawyer, Brad Smith, to attend a hearing this month on exploits of the company's software that resulted in hackers obtaining U.S. government officials' emails.
+Politicians regularly request that technology companies send their leaders to Washington. The CEOs of Alphabet, Meta and TikTok have all answered questions from members of Congress in recent years. Microsoft, the world's most valuable public company, sells subscriptions to email software that's pervasive in business and government, making it an obvious target for hackers.
+A proposed hearing before the House Committee on Homeland Security, at 10 a.m. ET on May 22 in Washington, would go over Microsoft's response to China's breach of U.S. government officials' email accounts, which the company disclosed last summer. The attack involved accounts belonging to Commerce Secretary Gina Raimondo, the Rep. Don Bacon, R-Neb., and Nicholas Burns, the U.S. ambassador to China.
+But Smith might not necessarily show up at the time the committee asked about in a letter it sent him on Thursday.
+"We're always committed to providing Congress with information that is important to the nation's security, and we look forward to discussing the specifics of the best time and way to do this," a Microsoft spokesperson told CNBC in an email on Thursday.
+Last month, the Cyber Safety Review Board said in a 34-page report on the attack that "Microsoft's customers would benefit from its CEO and board of directors directly focusing on the company's security culture."
+Microsoft CEO Satya Nadella directed employees to put security first in a memo last week. The company announced operational changes that address shortcomings that the independent federal board identified in the report.
+Charlie Bell, executive vice president for security, said the Microsoft would "improve the accuracy, effectiveness, transparency, and velocity of public messaging and customer engagement" after the board expressed concern about the company not correcting an error in a corporate blog post for months.
+In January, Microsoft reported another cyberattack. This time, Russian intelligence gained access to some of the company's top executives' email accounts.
+Committee chairman Mark Green, R-Tenn., and Bennie Thompson, D-Miss., said in their letter inviting Smith to the hearing that they were encouraged by the company's plans to overhaul its security practices. But they said the company's failure to stop attacks put Americans at risk.
+"Given the gravity of the issues discussed above and the need for thorough examination and oversight, it is critical that you appear before the committee," Green and Thompson wrote.
+WATCH: Microsoft needs to prioritize security over feature development: Former CISA Director Chris Krebs
+
+title4:
+China's SMIC warns of fierce chip competition as it misses profit estimates
+description4:
+BEIJING, CHINA - DECEMBER 04: A logo hangs on the building of the Beijing branch of Semiconductor Manufacturing International Corporation (SMIC) on December 4, 2020 in Beijing, China. (Photo by VCG/VCG via Getty Images)
+Semiconductor Manufacturing International Corporation on Friday warned of intense competition in the chip industry after its first-quarter profit missed expectations.
+"Competition in the industry has been increasingly fierce and the pricing for commodity products basically follows the market trends," SMIC said on Friday during the firm's earnings call.
+"The company fulfills its [long-term view] through constructing quality technology platforms that leap here in mainland China by one to two generations," said SMIC.
+SMIC, China's biggest contract chip manufacturer, is seen as critical to Beijing's ambitions of cutting foreign reliance in its domestic semiconductor industry as the U.S. continues to curb China's tech power. SMIC lags behind Taiwan's TSMC and South Korea's Samsung Electronics, according to analysts.
+The company's first-quarter net income plunged 68.9% from a year earlier to $71.79 million, compared with LSEG analysts' average estimate of $80.49 million.
+Gross margin slid to 13.7% in the quarter – the lowest the firm has ever recorded in nearly 12 years – according to LSEG data.
+Revenue for the first quarter was $1.75 billion, up 19.7% from a year earlier, as customers stocked up on chips, SMIC said. This handily beat LSEG estimate of $1.69 billion.
+"In the first quarter, the IC [integrated circuits] industry was still in the recovery stage and customer inventory gradually improved. Compared to three months ago, we have noticed that our global customers are more willing to build up inventory," SMIC said on Friday.
+Customers are building up inventory to brace for competition and respond to market demand, the firm said, adding that it was unable to fulfil a few rush orders in the first quarter as some production lines were running at near maximum capacity."
+
+Response:
+
+Script:
+i'm wall-e, and this is your ai briefing for thursday, may 9th. microsoft's gaming division is set to launch its mobile xbox store this july, stepping away from traditional app marketplaces. xbox president sarah bond emphasized a web-based approach, focusing initially on first-party mobile games such as candy crush and minecraft. this move aims to negate the restrictions of apple and google’s app stores while fostering a truly cross-device gaming experience.
+
+in other news, apple is advancing into generative ai with its m2 ultra chips, setting the stage for an ai infrastructure that balances complex queries via cloud data centers and simpler tasks on devices. project acdc, as insiders call it, is leveraging apple’s existing silicon for enhanced security within its data centers. despite trailing behind tech giants like google and meta in ai, apple’s developments signify a strong upcoming focus on ai technologies.
+
+meanwhile, roblox shares took a hit, dropping 22% after the company reduced its annual bookings forecast. a slowdown in user spending and the broader economic challenges have dampened growth prospects, prompting roblox to adjust its financial outlook downward. the gaming platform is navigating through these turbulent times by introducing digital ads and diversifying revenue streams, eyeing a future ad platform infrastructure build-out in 2024.
+
+amid cybersecurity concerns, a house committee has summoned microsoft's brad smith for a hearing on recent security breaches, including the china-linked email hack of u.s. officials. this invitation underlines the pressing need for tech leaders to address and reinforce cybersecurity measures, especially for services pivotal to government operations.
+
+finally, china’s semiconductor manufacturing international corporation (smic) faces tough competition in the chip sector, reporting a substantial drop in first-quarter profits and the lowest gross margin in nearly twelve years. as the industry struggles with a fiercely competitive landscape, smic's focus on advancing its technology platforms and capacity expansions are vital for its long-term strategy amidst global tech tensions.
+
+that’s all for today. we'll see you back here tomorrow
+
+Polished Script:
+i'm wall-e, welcoming you to today's tech briefing for thursday, may 9th. kicking things off, microsoft's gaming division is gearing up for a groundbreaking move this july, as it debuts its mobile xbox store. in a bold pivot from traditional app marketplaces, xbox president sarah bond is championing a web-based storefront, initially spotlighting first-party titles such as candy crush and minecraft. this strategic shift is aimed squarely at bypassing the limitations imposed by apple and google’s app stores, all while promoting a seamless cross-device gaming experience.
+
+switching gears to apple, the tech giant is making waves in the generative ai space with its m2 ultra chips. this marks a notable leap towards developing an ai ecosystem that adeptly balances complex cloud-based computations with simpler on-device processing. codenamed project acdc, this initiative seeks to harness apple’s cutting-edge silicon technology, ensuring fortified security across its data centers. despite coming in behind tech behemoths like google and meta in the ai race, apple’s latest endeavors underscore its intensified focus on ai innovation.
+
+in the gaming world, roblox is facing turbulent weather as its shares plummeted by 22% following a revised downward forecast in annual bookings. the gaming platform is grappling with a decline in user spending and broader economic headwinds. in response, roblox is diversifying its revenue streams, including the rollout of digital advertising, as it prepares for a future ad platform infrastructure expansion in 2024.
+
+in cybersecurity news, microsoft's brad smith has been summoned by a house committee for a discussion on recent security breaches, including a significant email hack of u.s. officials linked to china. this move underscores the urgent call for tech luminaries to bolster cybersecurity measures, particularly for services critical to government functions.
+
+lastly, china’s semiconductor manufacturing international corporation (smic) is navigating through choppy waters. the chipmaker reported a significant dip in first-quarter profits and the slimmest gross margin in almost twelve years. amidst a fiercely competitive landscape, smic's dedication to technological advancement and capacity expansion remains crucial for its strategy in the face of global tech tensions.
+
+that wraps up our tech briefing for today. see you right back here tomorrow
+
+Podcast Title:
+EP-17 "xbox Goes Mobile 📱, Apple's Ai Ambitions with M2 Ultra Chips 💡, Roblox's Revenue Rethink 🎮"
+
+Podcast Description:
+join wall-e in today's tech briefing as we navigate through the major happenings in the tech world this thursday, may 9th. our concise, in-depth discussion covers a range of pivotal topics reshaping the technology landscape:
+
+- microsoft's innovative launch of a mobile xbox store in july, proposing a web-based platform for first-party titles like candy crush and minecraft. this strategic move aims to sidestep traditional app store limitations and enhance cross-device gaming experiences.
+
+- apple's advancement into the generative ai sector with the introduction of the m2 ultra chips under project acdc, focusing on a balanced ai ecosystem that prioritizes both complex cloud computations and on-device processing.
+
+- the gaming giant roblox confronts a significant downturn, with shares nosediving by 22% due to a slump in user spending and broader economic factors. the company is geared towards diversifying revenue through digital advertising and a future ad platform in 2024.
+
+- a spotlight on cybersecurity as microsoft's brad smith engages with a house committee regarding recent security lapses, highlighting the imperative for heightened cybersecurity protocols especially for critical government services.
+
+- an overview of china’s semiconductor leader smic facing financial strains amid fierce competition and global tech tensions, emphasizing its commitment to technological innovation and capacity expansion.
+
+stay tuned for an insightful journey into these compelling stories, unveiling the dynamics of today's tech environment
+
+Polished Script (Spanish):
+soy wall-e, y esta es su ai briefing para el jueves 9 de mayo. microsoft finalmente lanzará su tan esperada tienda de juegos móviles xbox en julio. en el bloomberg technology summit, la presidenta de xbox, sarah bond, reveló detalles sobre cómo la compañía planea esquivar las estrictas reglas de la app store de apple, comenzando en la web para asegurar accesibilidad en todos los dispositivos y países, independientemente de las políticas de tiendas de ecosistemas cerrados. la tienda se centrará inicialmente en juegos móviles de primera parte de microsoft, con títulos como candy crush y minecraft, con planes de expandirse a socios en el futuro.
+
+apple, buscando su entrada en el mundo del ai generativo, utilizará chips m2 ultra en la nube para procesar consultas complejas antes de migrar a los chips m4 más avanzados. estos chips se implementarán tanto en los centros de datos propios de apple como en servidores de terceros, marcando un movimiento hacia una mayor eficiencia en el procesamiento ai en sus dispositivos y posiblemente mejoras en productos existentes como siri.
+
+por otro lado, roblox vio caer sus acciones en un 22% tras recortar su pronóstico de reservas anuales debido a un gasto de jugador más moderado en medio de un panorama económico incierto e inflación elevada. la industria del juego enfrenta una demanda decreciente, lo que ha llevado a despidos y cierres de estudios. roblox ahora espera que las reservas para el año completo estén entre 4 mil millones y 4.1 mil millones de dólares, ajustando también sus expectativas para el segundo trimestre.
+
+en el ámbito de la seguridad cibernética, un comité de la cámara de representantes busca que brad smith, vicepresidente y presidente de microsoft, participe en una audiencia este mes sobre explotaciones del software de la compañía que resultaron en hackers obteniendo correos electrónicos de oficiales del gobierno estadounidense. esto ocurre mientras microsoft anuncia cambios operativos en respuesta a un reporte del cyber safety review board, enfocándose en la seguridad sobre el desarrollo de nuevas características.
+
+finalmente, smic de china advierte sobre una intensa competencia en la industria de chips tras no cumplir con las expectativas de ganancias del primer trimestre. la compañía, esencial para las ambiciones de beijing de reducir la dependencia extranjera en la industria de semiconductores del país, reportó una caída en sus ingresos netos y márgenes brutos, aunque sobrepasó las expectativas de ingresos gracias a los clientes acumulando chips ante la competencia y la demanda del mercado.
+
+eso es todo por hoy. nos vemos aquí mañana
+
+Podcast Title (Spanish):
+EP-17 Lanzamiento de Xbox Mobile 🎮, Avance de Apple en Ai 🍏, Desafíos de Roblox y Seguridad Cibernética 🛡️
+
+Podcast Description (Spanish):
+bienvenido a su ai briefing, su dosis diaria de tecnología y negocios con soy wall-e. acompáñenos cada jueves para descubrir las últimas tendencias, innovaciones y dramas en el mundo de la tecnología y la inteligencia artificial. en este episodio:
+
+- microsoft anuncia el lanzamiento de la tienda de juegos móviles xbox en julio, evadiendo las reglas de la app store de apple y enfocándose inicialmente en juegos propios como candy crush y minecraft.
+- apple avanza en el mundo del ai generativo con chips m2 ultra y prepara la transición a chips m4 más avanzados para mejorar la eficiencia en el procesamiento ai y potenciar productos como siri.
+- roblox ajusta su pronóstico de reservas anuales a la baja, entre 4 mil millones y 4.1 mil millones de dólares, debido a un gasto de jugador más moderado y un entorno económico desafiante.
+- un comité de la cámara de representantes busca testimonio de brad smith de microsoft sobre explotaciones de software que comprometieron correos electrónicos gubernamentales, mientras microsoft prioriza la seguridad cibernética.
+- smic de china enfrenta una intensa competencia en la industria de semiconductores, reportando caída en ingresos netos y márgenes brutos pero superando expectativas de ingresos gracias a la acumulación de chips por parte de sus clientes.
+
+sintonice para obtener una visión experta y análisis en profundidad de estas historias y más. manténgase al día con lo que está sucediendo en el mundo de la tecnología y cómo podría afectarlo. nos vemos aquí, mañana
+
+Polished Script (Chinese):
+我是wall-e，这是周四5月9日的ai简报。微软公司宣布，其备受期待的xbox移动游戏商店将于7月正式上线。在今天早些时候的彭博科技峰会上，xbox总裁sarah bond透露了启动日期，并详述了微软如何打算避开苹果严格的app store规则。bond表示，“我们将从首发自家的游戏组合开始，所以你将会在该平台上看到像《糖果粉碎》和《我的世界》这样的游戏。”商店将专注于微软旗下各个工作室的首个移动游戏，其中包括像《使命召唤：手机版》和《糖果粉碎传奇》这样的大热门游戏。
+
+苹果公司计划开启其生成式ai之旅，最初将复杂查询任务委托给在数据中心运行的m2 ultra芯片处理，随后转移到更先进的m4芯片上。据彭博社报道，苹果计划将m2 ultra芯片部署在云服务器上，以运行更复杂的ai查询，同时简单任务在设备上处理。
+
+roblox的股票在公司削减了年度预订预测后，周四下跌了22%。这是因为在不确定的经济前景和高通胀水平下，人们在其视频游戏平台上的消费有所减少。这一下调的预测标志着游戏行业最新的低迷报告，今年该行业已经裁员数百人并关闭工作室以应对需求下降。
+
+众议院委员会寻求微软公司的高级律师brad smith出席本月关于公司软件漏洞利用的听证会，这导致黑客获取了美国政府官员的电子邮件。为了回应中国对美国政府官员电子邮件账户的攻击，众议院国土安全委员会提议于5月22日上午10点在华盛顿举行听证会。
+
+中国的半导体制造国际公司（smic）在其第一季度利润低于预期后，警告说芯片行业的竞争非常激烈。smic表示，“行业竞争日益激烈，商品产品的定价基本上遵循市场趋势。”这是作为北京减少对国内半导体业外国依赖志向的关键公司，smic被视为对抗美国继续限制中国科技实力的一部分。
+
+这就是今天的ai简报。我们明天见。
+
+Podcast Title (Chinese):
+EP-17 微软xbox移动商店盛大启幕 🎮, 苹果ai芯片新征程 🍏, 游戏行业经济阴影下的挑战 📉
+
+Podcast Description (Chinese):
+在这期ai简报中，我们将带你了解最新的科技动态，内容精彩纷呈，涵盖了游戏、ai技术、市场趋势以及国际科技政策等多个领域。以下是本期内容的要点概括：
+
+- 微软宣布旗下期待已久的xbox移动游戏商店将于7月正式上线，商店将首发包括《糖果粉碎》和《我的世界》在内的自家游戏。
+- 苹果公司计划开启其生成式ai之旅，最初将复杂查询任务委托给运行在数据中心的m2 ultra芯片处理，未来将使用更先进的m4芯片。
+- roblox股票因公司削减年度预订预测后下跌22%，反映了在不确定的经济形势下，游戏行业需求的下降。
+- 众议院委员会邀请微软公司的高级律师brad smith出席关于公司软件漏洞利用的听证会，以探讨黑客获取美国政府官员电子邮件的事件。
+- 中国半导体制造国际公司(smic)在第一季度利润低于预期后，警告说芯片行业的竞争非常激烈。作为减少对外国依赖的关键公司，smic的动态值得关注。
+
+加入我们，探索这些最新的科技进展和市场动态。

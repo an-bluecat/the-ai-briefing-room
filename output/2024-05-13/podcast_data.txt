@@ -1,0 +1,277 @@
+
+Titles:
+Sony names new PlayStation leaders following Jim Ryan’s retirement
+The WashG1 is Dyson’s first mop
+TikTok is testing AI-generated search results
+AI gun detection company name-dropped Disney in its successful pitch to NYC
+Google’s Pixel 9 lineup appears in hands-on photos five months early
+Roku will start streaming live MLB games for free
+RFK Jr. sues Meta for ‘election interference’ after it temporarily removed a campaign video
+Melinda French Gates to leave the Bill & Melinda Gates Foundation
+Apple finally adds iPhone alerts for third-party Bluetooth trackers
+Square Enix plans to ‘aggressively pursue’ multiplatform game releases
+ChatGPT will be able to talk to you like Scarlett Johansson in Her
+Zelda: Majora’s Mask is now a native PC game, and every N64 title could follow its lead
+Apple News Plus is ready to work offline
+Cruise is back driving autonomously for the first time since pedestrian-dragging incident
+Denon adds Siri to its smart speakers
+Tile owner Life360 picks satellites over partnering with Apple or Google
+Apple is almost ready to sell the Vision Pro outside the US
+You can already save up to $50 on the forthcoming iPad Pro and iPad Air
+OpenAI’s custom GPT Store is now open to all for free
+ChatGPT is getting a Mac app
+OpenAI releases GPT-4o, a faster model that’s free for all ChatGPT users
+Ikea is adding energy monitoring to its Home Smart app
+Meta Quest’s new Travel Mode will put more glassholes on your next flight
+AI boom to keep supply of high-end memory chips tight this year, analysts warn
+Early Facebook investor Accel raises $650 million Europe and Israel fund
+Amazon-backed Anthropic launches its Claude AI chatbot across Europe
+Apple's new iPad Pro is thin and fast, but the software needs an update
+OpenAI launches new AI model and desktop version of ChatGPT
+Google, Apple partner to alert people when location trackers are following them
+Melinda French Gates to resign from Gates Foundation to pursue own philanthropy
+Freetrade, Britain's answer to Robinhood, says its CEO is stepping down
+Amazon's Zoox under investigation by NHTSA after two crashes
+Microsoft and Amazon to invest $5.6 billion into France as Macron courts tech giants
+Squarespace to go private in $7 billion private-equity deal
+Google's Demis Hassabis is the man tasked with turning AI research into profits
+SoftBank Vision Fund posts first annual gain on investments in 3 years
+Musk wins court reprieve in fight against Australian government over stabbing videos
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+
+
+The Verge
+Sony names new PlayStation leaders following Jim Ryan’s retirement
+The WashG1 is Dyson’s first mop
+TikTok is testing AI-generated search results
+AI gun detection company name-dropped Disney in its successful pitch to NYC
+Google’s Pixel 9 lineup appears in hands-on photos five months early
+Roku will start streaming live MLB games for free
+RFK Jr. sues Meta for ‘election interference’ after it temporarily removed a campaign video
+Melinda French Gates to leave the Bill & Melinda Gates Foundation
+Apple finally adds iPhone alerts for third-party Bluetooth trackers
+Square Enix plans to ‘aggressively pursue’ multiplatform game releases
+ChatGPT will be able to talk to you like Scarlett Johansson in Her
+Zelda: Majora’s Mask is now a native PC game, and every N64 title could follow its lead
+Apple News Plus is ready to work offline
+Cruise is back driving autonomously for the first time since pedestrian-dragging incident
+Denon adds Siri to its smart speakers
+Tile owner Life360 picks satellites over partnering with Apple or Google
+Apple is almost ready to sell the Vision Pro outside the US
+You can already save up to $50 on the forthcoming iPad Pro and iPad Air
+OpenAI’s custom GPT Store is now open to all for free
+ChatGPT is getting a Mac app
+OpenAI releases GPT-4o, a faster model that’s free for all ChatGPT users
+Ikea is adding energy monitoring to its Home Smart app
+Meta Quest’s new Travel Mode will put more glassholes on your next flight
+
+CNBC Tech
+AI boom to keep supply of high-end memory chips tight this year, analysts warn
+Early Facebook investor Accel raises $650 million Europe and Israel fund
+Amazon-backed Anthropic launches its Claude AI chatbot across Europe
+Apple's new iPad Pro is thin and fast, but the software needs an update
+OpenAI launches new AI model and desktop version of ChatGPT
+Google, Apple partner to alert people when location trackers are following them
+Melinda French Gates to resign from Gates Foundation to pursue own philanthropy
+Freetrade, Britain's answer to Robinhood, says its CEO is stepping down
+Amazon's Zoox under investigation by NHTSA after two crashes
+Microsoft and Amazon to invest $5.6 billion into France as Macron courts tech giants
+Squarespace to go private in $7 billion private-equity deal
+Google's Demis Hassabis is the man tasked with turning AI research into profits
+SoftBank Vision Fund posts first annual gain on investments in 3 years
+Musk wins court reprieve in fight against Australian government over stabbing videos
+
+Top News:
+ai boom to keep supply of high-end memory chips tight this year, analysts warn
+microsoft and amazon to invest $5.6 billion into france as macron courts tech giants
+openai launches new ai model and desktop version of chatgpt
+google, apple partner to alert people when location trackers are following them
+melinda french gates to resign from gates foundation to pursue own philanthropy
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E and Monday May 13), and replace CNBC techcheck briefing to 'AI briefing' 
+ "title0:
+AI boom to keep supply of high-end memory chips 'tight' through 2024
+description0:
+A Samsung Electronics Co. 12-layer HBM3E, top, and other DDR modules arranged in Seoul, South Korea, on Thursday, April 4, 2024. Samsung's profit rebounded sharply in the first quarter of 2024, reflecting a turnaround in the company's pivotal semiconductor division and robust sales of Galaxy S24 smartphones. Photographer: SeongJoon Cho/Bloomberg via Getty Images
+High-performance memory chips are likely to remain in tight supply this year, as explosive AI demand drives a shortage for these chips, according to analysts.
+SK Hynix and Micron – two of the world's largest memory chip suppliers – are out of high-bandwidth memory chips for 2024, while the stock for 2025 is also nearly sold out, according to the firms.
+"We expect the general memory supply to remain tight throughout 2024," Kazunori Ito, director of equity research at Morningstar said in a report last week.
+The demand for AI chipsets has boosted the high-end memory chip market, hugely benefiting firms such Samsung Electronics and SK Hynix, the top two memory chipmakers in the world. While SK Hynix already supplies chips to Nvidia , the company is reportedly considering Samsung as a potential supplier too.
+High-performance memory chips play a crucial role in the training of large language models (LLMs) such as OpenAI's ChatGPT, which led AI adoption to skyrocket. LLMs need these chips to remember details from past conversations with users and their preferences to generate human-like responses to queries.
+"The manufacturing of these chips are more complex and ramping up production has been difficult. This likely sets up shortages through the rest of 2024 and through much of 2025," said William Bailey, director at Nasdaq IR Intelligence.
+HBM's production cycle is longer by 1.5 to 2 months compared with DDR5 memory chip commonly found in personal computers and servers, market intelligence firm TrendForce said in March.
+
+title1:
+Microsoft and Amazon to invest $5.6 billion into France
+description1:
+A Microsoft logo seen displayed on a smartphone screen and Amazon logo in the background in Athens, Greece on October 5, 2023.
+Microsoft and Amazon are ploughing billions of dollars into France.
+Microsoft said in a statement Monday that it's committing 4 billion euros ($4.3 billion) toward expanding its cloud and AI infrastructure in France, in addition to funding AI skilling and support for France's technology industry.
+The company said it plans to bring up to 25,000 of the most advanced GPUs, or graphics processing units, to France by the end of 2025. Microsoft will also train 1 million people and support 2,500 AI startups by 2027.
+The announcement was made during the "Choose France" summit, a gathering dedicated to encouraging foreign investment in France.
+“This major investment demonstrates a steadfast commitment to supporting digital innovation and economic growth in France,” said Microsoft's president, Brad Smith, in a statement Monday.
+“We are building state-of-the-art Cloud and AI infrastructure, training people with AI skills, and supporting French startups as they use our technology with confidence to grow in a fair and responsible way.”
+As part of its investment, Microsoft will also open a new data center in the French city of Mulhouse.
+Amazon, meanwhile, made a commitment of its own to invest 1.2 billion euros in France.
+The money will go toward creating more than 3,000 jobs in France — in addition to the 2,000 new jobs Amazon's already announced for 2024 — as well as broadly increasing the company's footprint in the country, according to Frederic Duval, Amazon's country manager.
+"The expansion of our logistics network supports local economic development, creates quality jobs and allows us to reduce the carbon footprint of our deliveries while improving the overall customer experience," Duval said in a statement Monday.
+Collectively, the commitments from Microsoft and Amazon to France amount to $5.6 billion of funding. In total, France reportedly bagged a record 15 billion euros of investment commitments from foreign companies at the annual Choose France summit on Monday.
+French President Emmanuel Macron has been trying to promote France as an artificial intelligence hub. Paris is already a major center of AI research and development, with Facebook having established one of its main AI labs, FAIR, there in 2015.
+Last year, at the VivaTech technology fair in Paris, Macron announced 500 million euros in fresh funding to create new AI "champions," adding to previous commitments from the government, including a promise to pump 1.5 billion euros into AI before 2022.
+Microsoft is also on a charm offensive of its own with its commitment to invest billions of euros into France at a time when French officials have expressed concerns with the Redmond, Washington-based tech giant's investment in AI startup Mistral.
+Microsoft recently invested 15 million euros into Mistral. The deal saw Microsoft getting a stake in Mistral and the latter adding its large language model to the technology giant's Azure cloud computing platform.
+Microsoft has pushed back on competition concerns surrounding its investment in Mistral, saying that the company remains independent and that its partnership is a minority equity investment and a commercial relationship, not a merger. Britain's competition regulator is seeking feedback on the deal.
+
+title2:
+OpenAI launches new AI model and desktop version of ChatGPT
+description2:
+OpenAI, backed by Microsoft , has been valued by more than $80 billion by investors. The company, founded in 2015, is under pressure to stay on top of the generative AI market while finding ways to make money as it spends massive sums on processors and infrastructure to build and train its models.
+"This is the first time that we are really making a huge step forward when it comes to the ease of use," Murati said.
+The update brings GPT-4 to everyone, including OpenAI's free users, technology chief Mira Murati said in a livestreamed event. She added that the new model, GPT-4o, is "much faster," with improved capabilities in text, video and audio. OpenAI said it eventually plans to allow users to video chat with ChatGPT.
+OpenAI on Monday launched a new AI model and desktop version of ChatGPT, along with an updated user interface, the company's latest effort to expand use of its popular chatbot.
+The o in GPT-4o stands for omni. The new model allows ChatGPT to handle 50 different languages with improved speed and quality, and it will also be available via OpenAI's API making it possible for developers to begin building applications using the new model today, Murati said.
+She added that GPT-4o is twice as fast as, and half the cost of, GPT-4 Turbo.
+OpenAI team members demonstrated the new model's audio capabilities, for example, asking it to help calm someone down ahead of a public speech. OpenAI researcher Mark Chen said the model is able to "perceive your emotion," adding the model can also handle users interrupting it. The team also asked it to analyze a user's facial expression to comment on the emotions the person may be experiencing.
+"Hey there, what's up? How can I brighten your day today?" ChatGPT's audio mode said when a user greeted it.
+The company plans to test Voice Mode in the coming weeks, with early access for paid subscribers to ChatGPT Plus, according to a blog post. OpenAI also said the new model can respond to users' audio prompts "in as little as 232 milliseconds, with an average of 320 milliseconds, which is similar to human response time in a conversation."
+Chen demonstrated the model's ability to tell a bedtime story and asked it to change the tone of its voice to be more dramatic or robotic. He even asked it to sing the story.
+In addition, OpenAI's new model can function as a translator, even in audio mode, the company said. Chen demonstrated the tool's ability to listen to Murati speaking Italian while he spoke English and to translate into their respective languages as they conversed.
+Team members also demonstrated the model's ability to solve math equations and help write code, positioning it as a stronger competitor to Microsoft's own GitHub Copilot.
+For OpenAI, the launch was one of the company's biggest announcements since the August kickoff of ChatGPT Enterprise, the AI chatbot's business tier. That tool was in development for "under a year" and had the help of more than 20 companies of varying sizes and industries, OpenAI Chief Operating Officer Brad Lightcap told CNBC at the time.
+OpenAI, Microsoft and Google are at the helm of a generative AI gold rush as companies in seemingly every industry race to add AI-powered chatbots and agents to key services to avoid being left behind by competitors. Earlier this month, OpenAI rival Anthropic announced its first-ever enterprise offering and a free iPhone app.
+A record $29.1 billion was invested across nearly 700 generative AI deals in 2023, an increase of more than 260% from the prior year, according to PitchBook. The market is predicted to top $1 trillion in revenue within a decade.
+Some in the industry have raised concerns about the speed at which untested new services are coming to market, and academics and ethicists are distressed about the technology's tendency to propagate bias.
+After ChatGPT's launch in November 2022, it broke records at the time as the fastest-growing consumer app in history, and now has about 100 million weekly active users. OpenAI says that more than 92% of Fortune 500 companies are using the platform.
+Murati said during the Monday event that OpenAI wants to "remove some of the mysticism from the technology."
+"Over the next few weeks, we'll be rolling out these capabilities to everyone," she said.
+The new model will first roll out on Tuesday to customers of ChatGPT Plus and Team, and then to Enterprise later, a blog post on Monday said. It will also be available to free users of ChatGPT starting Monday, with usage limits. Users of ChatGPT Plus will have five times more message capacity than free users, and clients of ChatGPT Team and Enterprise will have even greater usage limits.
+Murati concluded the livestreamed event by thanking Nvidia CEO Jensen Huang and his company for providing the necessary graphics processing units (GPUs) to power OpenAI's technology.
+"I just want to thank the incredible OpenAI team, and also thanks to Jensen and the Nvidia team for bringing us the most advanced GPUs to make this demo possible today," she said.
+
+title3:
+Google and Apple partner to fight location tracker stalking
+description3:
+Apple and Google announced Monday that updated iPhones and Android phones will show alerts warning users that there is a wireless location tracking device nearby, in case the user was not aware they were being tracked and wants to stop it.
+The move is the latest sign that the two major platforms are working to fix the downside of wireless trackers — such as Apple's AirTag — that can be useful for finding lost or stolen objects by displaying their location on a digital map, but can also be used by criminals to track people.
+IPhone and Android devices with up-to-date software will receive a message telling them that a Bluetooth tracker is "found moving with you." Users can then have the tracker play a sound to make it easier to find, and access instructions on how to disable it.
+When AirTags were first introduced by Apple in 2021, they quickly found an audience among users who would attach the tiny devices to their keys, luggage or even their car, allowing them to use Apple's global network of devices and crowdsourced Bluetooth signals to quickly locate their lost objects, such as checked baggage that never arrived after a flight.
+But the devices were also used for crime, and some victims said they were slipped an AirTag at a crowded bar to be tracked. Since then, Apple has been working with Google to integrate alerts and warnings into iOS and Android to tamp down criminal misuse. Alerts specifically warning against an AirTag traveling with the user were already built into Android.
+The AirTag is also now just one of many Bluetooth trackers. Apple and Google allow third-party companies, such as Chipolo and Motorola, to build their own devices.
+But when third-party companies build so-called "Find My" lost device trackers, they have to build them to Apple and Google's specifications, which will now require unwanted tracking alerts.
+Apple and Google said they were working together to create a public industry specification for these kinds of Bluetooth tracker devices, but although the official standard is not finished, both companies have implemented the alerts into their operating systems, starting with Apple's iOS 17.5, which will be released on Monday, and Android devices with version 6.0 or newer.
+
+title4:
+Melinda French Gates to leave Bill & Melinda Gates Foundation
+description4:
+Melinda Gates, co-founder of the Bill and Melinda Gates foundation arrives at the Elysee Palace in Paris, France on July 01, 2021.
+Melinda French Gates, the former wife of Microsoft co-founder Bill Gates, announced on Monday she would resign as co-chair of the Bill & Melinda Gates Foundation next month.
+French Gates said in a statement on X that it was a "critical moment" to protect and advance women's rights around the world. The announcement comes almost exactly three years after the Gates' announced their divorce.
+She said she will have "an additional $12.5 billion to commit to my work on behalf of women and families" as a result of her resignation and the Gates' divorce agreement. The couple divorced in May 2021.
+Bill Gates said in a separate statement, "I am sorry to see Melinda leave, but I am sure she will have a huge impact in her future philanthropic work."
+The Gates Foundation's work has focused on worldwide anti-poverty and global health initiatives, including anti-malaria efforts in Africa, and extensive investment across the Indian subcontinent and South Asia.
+French Gates has also devoted significant amounts of time and money toward gender-equality initiatives worldwide. In 2015, she founded Pivotal Ventures, a separate entity from the Gates Foundation, which is focused on removing barriers to access and opportunity for minorities and women in the U.S."
+
+Response:
+
+Script:
+i'm wall-e, and this is your ai briefing for monday, may 13th. in the world of technology, the ai boom is pushing the demand for high-end memory chips to new heights. analysts warn that the supply of these chips will remain "tight" through 2024, as companies like samsung electronics and sk hynix struggle to keep up with the explosive demand driven by ai applications. this trend is particularly fueled by the need for high-performance chips in the development of large language models similar to openai's chatgpt, intensifying the supply challenges.
+
+in a massive move to bolster france's tech sector, microsoft and amazon have announced plans to invest a combined total of $5.6 billion into the country. this investment aims to expand cloud and ai infrastructure, with microsoft promising to bring up to 25,000 advanced gpus to france by the end of 2025 and train 1 million people in ai. amazon will focus on creating over 3,000 jobs and expanding its logistics network in france. this development comes as french president emmanuel macron pushes to establish france as a global hub for artificial intelligence innovation.
+
+openai is not sitting back either; the company has launched a new ai model and a desktop version of chatgpt, introducing gpt-4o with improvements in speed, quality, and multi-language support. this update is significant as it represents openai's effort to maintain its leadership in the generative ai market, attracting more developers and users with its enhanced capabilities and user interface. with the backing of microsoft, openai continues to innovate, offering new tools that promise to revolutionize how we interact with ai technologies.
+
+in a collaborative effort to address privacy concerns, google and apple have announced updates to their respective operating systems that will alert users to the presence of wireless location tracking devices such as apple's airtag. this move aims to combat the misuse of such devices for stalking and unauthorized tracking, showcasing the tech giants' commitment to user safety and privacy.
+
+lastly, melinda french gates has announced her departure from the bill & melinda gates foundation. with plans to commit an additional $12.5 billion to her work on behalf of women and families, french gates' decision marks a significant shift in her philanthropic focus following her divorce from microsoft co-founder bill gates. their foundation has been a major force in global health and anti-poverty initiatives.
+
+that's all for today. we'll see you back here tomorrow
+
+Polished Script:
+i'm wall-e, welcoming you to today's tech briefing for monday, may 13th. the surge in artificial intelligence has escalated the demand for high-end memory chips to unprecedented levels. industry analysts caution that the availability of these critical components will remain constrained through 2024. major manufacturers, including samsung electronics and sk hynix, are grappling to meet the burgeoning demand, largely propelled by the necessity for sophisticated chips in crafting large language models like openai's chatgpt. this surge underscores the ongoing challenges in the supply chain.
+
+in an ambitious stride to fortify france's position in the tech arena, tech giants microsoft and amazon have unveiled plans to inject a staggering $5.6 billion into the country. this move is aimed at expanding cloud services and ai infrastructure, with microsoft committing to deploy up to 25,000 advanced gpus across france by the end of 2025 and to train 1 million individuals in ai technologies. on the other hand, amazon is set to generate more than 3,000 jobs and to broaden its logistics footprint in the nation. these investments underscore french president emmanuel macron's vision to transform france into a leading hub for artificial intelligence innovation.
+
+on the innovation front, openai isn't resting on its laurels. the ai disruptor has rolled out a new ai model alongside a desktop iteration of chatgpt, dubbed gpt-4o. touted for its enhanced speed, quality, and expanded multi-language support, this update is pivotal in openai's quest to dominate the generative ai market. bolstered by microsoft's support, openai is poised to redefine user interaction with ai technologies through these advanced and accessible tools.
+
+addressing growing privacy concerns, tech behemoths google and apple have announced updates to their operating systems. these enhancements are designed to notify users of the presence of wireless location tracking gadgets, such as apple's airtag, aiming to counteract their misuse for stalking and unauthorized tracking purposes. this initiative reflects both companies' commitment to bolstering user safety and privacy in the digital age.
+
+in philanthropy news, melinda french gates has signaled her exit from the bill & melinda gates foundation. pledging an additional $12.5 billion to champion women and families, french gates is pivoting her philanthropic focus following her divorce from microsoft co-founder bill gates. this transition is poised to impact global health and anti-poverty endeavors significantly.
+
+that wraps up today's briefing. join us again tomorrow for more updates from the tech world
+
+Podcast Title:
+EP-19 "ai Chip Crunch Intensifies 🧠💾, France's $5.6b Tech Infusion 🇫🇷💡, Openai's Gpt-4o Leap Forward 🚀"
+
+Podcast Description:
+welcome to today's tech briefing. tune in to our podcast for your daily dose of tech updates and insights. in this episode for monday, may 13th, we delve into a range of topics shaking the tech industry:
+
+- the burgeoning demand for high-end memory chips, driven by the ai surge, with industry analysts warning of a supply constraint extending through 2024. we cover the challenges faced by major manufacturers like samsung electronics and sk hynix.
+
+- france's ambitious tech initiatives, including a massive $5.6 billion investment from tech titans microsoft and amazon to boost the country's cloud services and ai infrastructure. discover how these investments align with president emmanuel macron’s vision for france as a leading ai innovation hub.
+
+- openai's latest rollout, gpt-4o, and a desktop version of chatgpt, which promise enhanced speed, quality, and multi-language support, signifying a significant step forward in the generative ai market with microsoft's backing.
+
+- the efforts by google and apple to enhance user privacy and safety through operating system updates. these updates are specifically designed to notify users about the presence of wireless location tracking devices, addressing the pivotal issue of stalking and unauthorized tracking.
+
+- melinda french gates’ philanthropic shift post her divorce from bill gates, with a focus on empowering women and families through an additional $12.5 billion pledge. we explore the potential impacts on global health and anti-poverty initiatives.
+
+stay informed with our comprehensive coverage of the latest in tech. join us tomorrow for more updates
+
+Polished Script (Spanish):
+soy wall-e, y esta es su sesión informativa ai briefing para el lunes 13 de mayo. la explosiva demanda de ai mantiene la oferta de chips de memoria de alto rendimiento 'apretada' hasta 2024. según los analistas, es probable que los chips de memoria de alto rendimiento sigan siendo escasos este año, ya que la demanda explosiva de inteligencia artificial provoca una escasez de estos chips. sk hynix y micron, dos de los mayores proveedores de chips de memoria del mundo, se han quedado sin chips de memoria de alto ancho de banda para 2024, mientras que el stock para 2025 también está casi agotado. "esperamos que el suministro general de memoria siga siendo ajustado durante todo el 2024", dijo kazunori ito, director de investigación de acciones en morningstar. la demanda de chipsets ai ha impulsado enormemente el mercado de chips de memoria de gama alta, beneficiando enormemente a empresas como samsung electronics y sk hynix, los dos principales fabricantes de chips de memoria del mundo. 
+
+microsoft y amazon invertirán 5.600 millones de dólares en francia. microsoft dijo en un comunicado el lunes que se compromete con 4 mil millones de euros hacia la expansión de su infraestructura de nube y ai en francia, además de financiar la capacitación en ai y el apoyo a la industria tecnológica del país. amazon, por su parte, se comprometió a invertir 1.200 millones de euros en francia. el dinero se destinará a la creación de más de 3.000 empleos en francia.
+
+openai lanza un nuevo modelo de ai y una versión de escritorio de chatgpt. la adición trae gpt-4 a todos, incluidos los usuarios gratuitos de openai, dijo la directora tecnológica mira murati en un evento transmitido en vivo. la modelo, gpt-4o, es "mucho más rápida", con capacidades mejoradas en texto, video y audio. openai dijo que planea permitir a los usuarios chatear por video con chatgpt.
+
+google y apple se unen para luchar contra el acecho mediante rastreadores de ubicación. los iphone y dispositivos android actualizados mostrarán alertas advirtiendo a los usuarios que hay un dispositivo de rastreo de ubicación inalámbrico cercano, en caso de que el usuario no estuviera al tanto de que estaba siendo rastreado y quiera detenerlo.
+
+melinda french gates dejará la fundación bill & melinda gates. melinda french gates anunció el lunes que renunciará como co-presidenta de la fundación bill & melinda gates el próximo mes. dijo que tendrá "12.500 millones de dólares adicionales para comprometerme con mi trabajo en nombre de las mujeres y las familias" como resultado de su renuncia y el acuerdo de divorcio de los gates.
+
+eso es todo por hoy. nos vemos aquí mañana
+
+Podcast Title (Spanish):
+EP-19 "escasez Global de Chips Hasta 2024 💾, Mega Inversiones de Microsoft y Amazon en Francia 🇫🇷, Gpt-4o Revoluciona Chatgpt 🗣️"
+
+Podcast Description (Spanish):
+en este episodio de ai briefing, soy wall-e te trae las últimas noticias y desarrollos en el mundo de la tecnología y la inteligencia artificial del lunes 13 de mayo. descubre las tendencias actuales y cómo están moldeando el futuro de la industria tecnológica. aquí los temas discutidos:
+
+- la demanda explosiva de inteligencia artificial que afecta la disponibilidad de chips de memoria de alto rendimiento, con una escasez que se espera continúe hasta 2024. grandes fabricantes como sk hynix y micron ya están sin stocks hasta 2025.
+
+- microsoft y amazon realizan inversiones masivas en francia, sumando un total de 5.600 millones de dólares, con el objetivo de expandir la infraestructura de nube y ai, además de crear más de 3.000 empleos.
+
+- openai lanza un nuevo modelo de ai, gpt-4o, y una versión de escritorio de chatgpt con mejoras significativas en rapidez y capacidades en texto, video, y audio.
+
+- google y apple se unen en la lucha contra el acecho mediante rastreadores de ubicación, implementando alertas en iphones y dispositivos android para advertir a los usuarios sobre dispositivos de rastreo de ubicación cercanos.
+
+- melinda french gates anuncia su renuncia como co-presidenta de la fundación bill & melinda gates, comprometiendo 12.500 millones de dólares adicionales para apoyar a mujeres y familias tras su divorcio de bill gates.
+
+mantente al tanto de las últimas tendencias y acontecimientos en el mundo de la tecnología con nosotros. nos vemos en el siguiente episodio
+
+Polished Script (Chinese):
+我是wall-e，这是您周一5月13日的ai简报。在人工智能需求爆炸性增长的推动下，高性能内存芯片今年将继续供应紧张。分析师表示，sk hynix和micron——全球最大的两家内存芯片供应商——的高带宽内存芯片在2024年已经售罄，而2025年的存货也几乎售罄。微软和亚马逊宣布将向法国投资56亿美金，以扩大其云计算和ai基础设施，并支持法国的技术产业。此外，openai发布了chatgpt的新ai模型和桌面版本，以及更新的用户界面，这是该公司扩大其受欢迎聊天机器人使用的最新努力。苹果和谷歌联手对抗定位跟踪器跟踪，更新的iphone和android手机将显示警告，提醒用户附近有无线定位跟踪设备。最后，梅琳达·法国·盖茨宣布，她将在下个月辞去比尔及梅琳达·盖茨基金会联席主席的职务。这是今天的重点新闻，我们明天再会。
+
+Podcast Title (Chinese):
+EP-19 "高性能内存芯片供应紧张💾，法国获巨额云计算ai投资💰，chatgpt推新版及界面更新🤖"
+
+Podcast Description (Chinese):
+description:
+欢迎收听我们的ai简报，我是您的主持人wall-e。在这期节目中，我们将涵盖以下要点：
+
+- 随着人工智能需求的爆炸性增长，高性能内存芯片在今年将继续面临供应紧张的局面。两大全球最大的内存芯片供应商sk hynix和micron的高带宽内存芯片，预计到2024年将全部售罄，2025年的库存也几乎告罄。
+
+- 微软和亚马逊宣布计划向法国投资56亿美金，旨在扩大其在法国的云计算及ai基础设施，同时也致力于支持当地的技术产业发展。
+
+- openai推出了chatgpt的新ai模型以及桌面版本和更新的用户界面，这标志着该公司在扩大其广受欢迎的聊天机器人使用方面迈出的最新步伐。
+
+- 苹果和谷歌联合采取措施抵制定位跟踪器，即将在更新的iphone和android手机上显示警告，提醒用户注意附近可能存在的无线定位跟踪设备。
+
+- 梅琳达·法国·盖茨宣布将在下个月退出比尔及梅琳达·盖茨基金会联席主席职位。
+
+加入我们，深入了解这些最新动态，为您的周一带来最新、最有价值的信息。我们明天再会。
