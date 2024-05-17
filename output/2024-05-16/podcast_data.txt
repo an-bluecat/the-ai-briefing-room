@@ -1,0 +1,255 @@
+
+Titles:
+iMessage is having some issues today
+Google’s Gemini AI plan for schools promises extra data protection and privacy
+Newspaper conglomerate Gannett is adding AI-generated summaries to the top of its articles
+OpenAI strikes Reddit deal to train its AI on your posts
+TikTok is testing hour-long videos
+Grand Theft Auto VI is launching in fall 2025
+Two brothers accused of stealing $25 million worth of crypto
+Google’s making it easier for people with low vision to find objects using their phone
+A quantum-entangled photon traveled 35 kilometers under the streets of Boston
+LG’s $100,000 rollable OLED TV is canceled
+Epic Games Store’s Mega Sale kicks off with a free Dragon Age: Inquisition download
+Strava will add AI, dark mode, and night heatmaps
+Sony’s new PlayStation PC overlay is a simple start
+House passes bill that would make ticket sellers show total prices upfront
+Threads starts testing a TweetDeck-like feed of real-time posts
+You could be eligible for a piece of Apple’s $35 million iPhone 7 settlement
+The new ‘Hulu for Sports’ streaming service has a name: Venu Sports
+Sony’s new Xperia 1 VI flagship zooms in on photography nerds
+The Mac vs. PC war is back on
+Reddit soars after announcing OpenAI deal that allows use of its data for training AI models
+After Adobe collapse, Figma deal allows employees to sell shares at $12.5 billion valuation
+Meta slapped with child safety probe under sweeping EU tech law
+Microsoft offers relocation to hundreds of China-based AI staff
+India 'very favorable' for IPOs, Peak XV says, as economy and investor sentiment stays strong
+China is still an important market even if investors diversify from it now, says Peak XV
+Meet the wall-climbing robots finding the flaws in 'D' grade U.S. infrastructure
+Raspberry Pi, a computing startup backed by Sony, heads for rare London IPO
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+
+
+The Verge
+iMessage is having some issues today
+Google’s Gemini AI plan for schools promises extra data protection and privacy
+Newspaper conglomerate Gannett is adding AI-generated summaries to the top of its articles
+OpenAI strikes Reddit deal to train its AI on your posts
+TikTok is testing hour-long videos
+Grand Theft Auto VI is launching in fall 2025
+Two brothers accused of stealing $25 million worth of crypto
+Google’s making it easier for people with low vision to find objects using their phone
+A quantum-entangled photon traveled 35 kilometers under the streets of Boston
+LG’s $100,000 rollable OLED TV is canceled
+Epic Games Store’s Mega Sale kicks off with a free Dragon Age: Inquisition download
+Strava will add AI, dark mode, and night heatmaps
+Sony’s new PlayStation PC overlay is a simple start
+House passes bill that would make ticket sellers show total prices upfront
+Threads starts testing a TweetDeck-like feed of real-time posts
+You could be eligible for a piece of Apple’s $35 million iPhone 7 settlement
+The new ‘Hulu for Sports’ streaming service has a name: Venu Sports
+Sony’s new Xperia 1 VI flagship zooms in on photography nerds
+The Mac vs. PC war is back on
+
+CNBC Tech
+Reddit soars after announcing OpenAI deal that allows use of its data for training AI models
+After Adobe collapse, Figma deal allows employees to sell shares at $12.5 billion valuation
+Meta slapped with child safety probe under sweeping EU tech law
+Microsoft offers relocation to hundreds of China-based AI staff
+India 'very favorable' for IPOs, Peak XV says, as economy and investor sentiment stays strong
+China is still an important market even if investors diversify from it now, says Peak XV
+Meet the wall-climbing robots finding the flaws in 'D' grade U.S. infrastructure
+Raspberry Pi, a computing startup backed by Sony, heads for rare London IPO
+
+Top News:
+reddit soars after announcing openai deal that allows use of its data for training ai models
+meta slapped with child safety probe under sweeping eu tech law
+microsoft offers relocation to hundreds of china-based ai staff
+raspberry pi, a computing startup backed by sony, heads for rare london ipo
+after adobe collapse, figma deal allows employees to sell shares at $12.5 billion valuation
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E and Thursday May 16), and replace CNBC techcheck briefing to 'AI briefing' 
+ "title0:
+Reddit soars after announcing OpenAI deal on AI training models
+description0:
+The trading floor of the New York Stock Exchange prepares for the social media platform Reddit's initial public offering in New York City on March 21, 2024.
+Reddit shares surged 11% in extended trading on Thursday after the social media company announced a partnership with OpenAI that will allow the ChatGPT maker to train its artificial intelligence models on Reddit content.
+As part of the deal, OpenAI will gain access to Reddit's Data application programming interface, or API, "which provides real-time, structured, and unique content from Reddit," according to a release.
+In exchange, Reddit will begin offering certain AI features to users and moderators, powered by OpenAI, which will also become a Reddit advertising partner. Google announced a similar partnership with Reddit in February, allowing the company to train its AI models, such as Gemini, on Reddit content via access to the platform's API.
+"Reddit has become one of the internet's largest open archives of authentic, relevant, and always up to date human conversations about anything and everything," CEO Steve Huffman said in Thursday's release. "Including it in ChatGPT upholds our belief in a connected internet, helps people find more or what they're looking for, and helps new audiences find community on Reddit."
+OpenAI CEO Sam Altman is a former board member and major shareholder in Reddit, with a stake valued at about $750 million after Thursday's pop. OpenAI Chief Operating Officer Brad Lightcap spearheaded the deal, which was approved by the company's board, the release said.
+Earlier this week, OpenAI launched a new AI model and desktop version of ChatGPT, along with an updated user interface, the company's latest effort to expand use of its popular chatbot. The update brings GPT-4 to everyone, including OpenAI's free users, Chief Technology Officer Mira Murati said Monday in a livestreamed event.
+Murati said the new model, GPT-4o, is "much faster," with improved capabilities in text, video and audio. OpenAI said it eventually plans to allow users to video chat with ChatGPT.
+For Reddit, the deal provides another spark following a rally on Monday and Tuesday tied to a broader surge in so-called meme stocks such as GameStop . Reddit, which went public in March and reached a record close a few days after its initial public offering, is back to trading near its high of $65.11.
+WATCH: OpenAI co-founder and chief scientist leaving company
+
+title1:
+Meta slapped with child safety probe under sweeping EU tech law
+description1:
+Mark Zuckerberg, CEO of Meta testifies before the Senate Judiciary Committee at the Dirksen Senate Office Building on January 31, 2024 in Washington, DC.
+Facebook parent company Meta on Thursday was hit with a major investigation from the European Union into alleged breaches of the bloc's strict online content law over child safety risks.
+The European Commission, the EU's executive body, said in a statement that it is investigating whether the social media giant's Facebook and Instagram platforms "may stimulate behavioural addictions in children, as well as create so-called 'rabbit-hole effects.'"
+The commission added it is concerned about age verifications on Meta's platforms, as well as privacy risks linked to the company's recommendation algorithms.
+"We want young people to have safe, age-appropriate experiences online and have spent a decade developing more than 50 tools and policies designed to protect them," a Meta spokesperson told CNBC by email.
+"This is a challenge the whole industry is facing, and we look forward to sharing details of our work with the European Commission."
+The commission said its decision to initiate an investigation comes of the back of a preliminary analysis of risk assessment report provided by Meta in September 2023.
+Thierry Breton, the EU's commissioner for internal market, said in a statement that the regulator is "not convinced [that Meta] has done enough to comply with the DSA obligations to mitigate the risks of negative effects to the physical and mental health of young Europeans on its platforms."
+The EU said it will carry out an in-depth investigation into Meta's child protection measures "as a matter of priority." The bloc can continue to gather evidence via requests for information, interviews, or inspections.
+
+title2:
+Microsoft offers relocation to hundreds of China-based AI staff
+description2:
+Microsoft has reportedly asked China-based cloud computing and artificial intelligence operations employees to consider relocating out of the country, as Washington cracks down on Beijing's access to the advanced technology.
+The Wall Street Journal broke the story on Thursday, reporting that the staff, mostly comprising Chinese engineers, had been offered the opportunity to transfer to countries including the U.S., Ireland, Australia, and New Zealand, according to unnamed sources.
+One source told WSJ that Microsoft had made the offer to about 700 to 800 people in total who were involved in machine learning and other work related to cloud computing.
+CNBC could not independently verify the report.
+In a statement shared with CNBC, a Microsoft spokesperson confirmed that the company had "shared an optional internal transfer opportunity with a subset of employees" without supplying details on the number and affiliation of staff affected.
+"We remain committed to the region and will continue to operate in this and other markets where we have a presence," the spokesperson said, adding that the potential transfers would not impact operations.
+Microsoft employs roughly 7,000 engineers for its Asia-Pacific research-and-development group, with most of this workforce based in China, the WSJ reports.
+The move comes amid U.S. efforts to prevent China from developing cutting-edge AI technology, which could be used for military purposes. In the past two years, the U.S. has placed waves of restrictions on China limiting its ability to buy advanced chips and chip-making equipment that can be deployed to train AI models.
+
+title3:
+Sony-backed Raspberry Pi heads for rare London IPO
+description3:
+British computing startup Raspberry Pi on Wednesday said it plans to list in London, in a rare win for the U.K. stock market.
+Raspberry Pi, which makes tiny single-board computers, is considering an initial public offering on the main market of the London Stock Exchange. In a filing, the company said it plans to publish a registration document to make disclosures about its business as part of the IPO process.
+The IPO is a win for the London stock market, which has been struggling to attract high-growth tech companies. A slew of major U.K. tech firms have chosen New York over London for their listings over the last year.
+British chip designer Arm listed in September 2023 on the Nasdaq in New York, in a major blow to London's bid to attract large tech listings. More recently, British retail tech pioneer Ocado has faced calls from investors to move its listing from London to New York, according to the Sunday Telegraph.
+Sky News reported on Tuesday that Klarna is eyeing up New York as the preferred venue for a highly anticipated IPO slated for early 2025. A Klarna spokesperson said the company has nothing to share on the location of an eventual IPO.
+
+title4:
+Figma tender offer values company at $12.5 billion
+description4:
+Dylan Field, co-founder and CEO of Figma, speaks at the startup's Config conference in San Francisco on May 10, 2022.
+Figma, a cloud-based design tool company, said Thursday it will allow investors, including current and former employees, to sell their shares in a tender offer that values the company at $12.5 billion.
+That's up 25% from the valuation at which the company fundraised in 2021, but below the $20 billion acquisition offer Adobe made in 2022. Adobe and Figma called off the planned acquisition in December following regulatory scrutiny.
+The San Francisco-based startup expects the size of the tender to be between $600 million and $900 million, with support from more than 25 current and new investors. A16z, Sequoia and Kleiner Perkins are participating in the offer.
+Figma is used by tens of thousands of employees inside Microsoft , which spends millions per year on its deployment. Google , Oracle and Salesforce also use the company's software.
+In June 2021, during the heyday of mega financings, Figma was valued at $10 billion in a funding round that included participation from Morgan Stanley's Counterpoint Global. That was before the 2022 market plunge sent many cloud stocks down by more than half and largely halted pre-IPO rounds.
+Adobe initially said acquiring Figma would be a natural complement to the company's portfolio, writing in the original announcement that "the combination of Adobe and Figma will usher in a new era of collaborative creativity." In December, a regulatory filing said Adobe would pay Figma a $1 billion breakup fee.
+— CNBC's Jordan Novet contributed to this report."
+
+Response:
+
+Script:
+i'm wall-e, and this is your ai briefing for thursday, may 16th.
+
+reddit shares soared 11% in extended trading after announcing a partnership with openai. this collaboration will allow openai to train its ai models on reddit content through reddit's data api. in return, reddit will integrate ai features for users and moderators and welcome openai as an advertising partner. following a similar move by google in february, reddit's ceo, steve huffman, highlighted the platform's role as a vast archive of human conversations. openai recently launched a new ai model, gpt-4o, which boasts faster capabilities in text, video, and audio.
+
+moving on, meta, the parent company of facebook, faces a major investigation by the european union over child safety risks. the eu is probing whether meta's platforms, facebook and instagram, induce behavioral addictions in children and create "rabbit-hole effects." the commission cited concerns about age verification and privacy risks linked to recommendation algorithms. meta's spokesperson emphasized the company's decade-long commitment to child safety, highlighting over 50 tools and policies developed to protect young users.
+
+microsoft is reportedly offering relocation opportunities to hundreds of its china-based ai staff amid u.s. efforts to curb beijing's access to advanced technology. according to the wall street journal, around 700 to 800 employees involved in machine learning and cloud computing have been given the option to relocate to countries like the u.s., ireland, australia, and new zealand. a microsoft spokesperson confirmed the internal transfer opportunity, stating it wouldn't impact overall operations.
+
+in a rare win for the u.k. stock market, british computing startup raspberry pi announced plans to list on the london stock exchange. known for its tiny single-board computers, the company sees this ipo as a significant milestone. london's stock market has struggled to attract high-growth tech firms, with many opting for new york instead. this listing aims to boost the u.k.'s profile in the tech sector.
+
+lastly, figma, the cloud-based design tool company, is initiating a tender offer valuing the company at $12.5 billion. this offer allows investors, including current and former employees, to sell their shares. the valuation marks a 25% increase from figma's 2021 fundraising but falls short of adobe's $20 billion acquisition offer that was called off in december. the tender is expected to be between $600 million and $900 million, backed by over 25 investors, including a16z, sequoia, and kleiner perkins.
+
+that's all for today. we'll see you back here tomorrow
+
+Polished Script:
+"i'm wall-e, welcoming you to today's tech briefing for thursday, may 16.
+
+reddit shares jumped 11% in after-hours trading following news of a partnership with openai. this collaboration will enable openai to train its ai models using reddit content via reddit's data api. in exchange, reddit will incorporate ai features for its users and moderators and bring openai on board as an advertising partner. following in google's footsteps, reddit ceo steve huffman underscored the platform's value as a vast archive of human conversations. openai recently rolled out gpt-4o, a new ai model boasting enhanced capabilities in text, video, and audio.
+
+over to meta, the company is under scrutiny from the european union over potential child safety risks. the eu is investigating whether facebook and instagram contribute to behavioral addictions in children and create "rabbit-hole effects." concerns about age verification and privacy issues related to recommendation algorithms are at the forefront. a meta spokesperson highlighted the company's decade-long commitment to child safety, citing over 50 tools and policies aimed at protecting young users.
+
+switching gears to microsoft—reports indicate the company is offering relocation options to hundreds of its china-based ai staff amidst u.s. efforts to restrict beijing's access to advanced technology. according to the wall street journal, around 700 to 800 employees involved in machine learning and cloud computing have the opportunity to move to countries like the u.s., ireland, australia, and new zealand. a microsoft spokesperson confirmed the internal transfer option, assuring it won't affect overall operations.
+
+in a boost for the u.k. stock market, british computing startup raspberry pi is gearing up for a listing on the london stock exchange. famous for its single-board computers, the company views this ipo as a significant milestone. london's stock market has struggled to attract high-growth tech firms, with many opting for new york instead. this listing aims to elevate the u.k.'s standing in the tech sector.
+
+lastly, design tool company figma is launching a tender offer valuing the company at $12.5 billion. this offer allows investors, including current and former employees, to sell their shares. while the valuation marks a 25% increase from figma's 2021 fundraising, it falls short of adobe's $20 billion acquisition offer that was called off in december. the tender is expected to range between $600 million and $900 million, backed by over 25 investors, including andreessen horowitz, sequoia, and kleiner perkins.
+
+that's all for today. we'll see you back here tomorrow."
+
+Podcast Title:
+EP-100 "reddit & Openai Team Up 🤖, Eu Probes Meta on Child Safety 🛡️, Microsoft's Ai Staff Relocate 🌏"
+
+Podcast Description:
+tech briefing for thursday, may 16
+
+join wall-e for your daily dose of tech updates! here's what we'll cover in today's episode:
+
+- reddit surges 11% after-hours due to a partnership with openai.
+  - details on how reddit content will be used to train ai models.
+  - integration of ai features for reddit users and moderators.
+  - openai coming on board as an advertising partner.
+
+- meta faces eu scrutiny over child safety concerns.
+  - investigation into potential behavioral addictions and privacy issues.
+  - meta's commitment to child safety through various tools and policies.
+
+- microsoft's internal transfer offer for china-based ai staff.
+  - relocation options to countries like the u.s., ireland, australia, and new zealand.
+  - continued operations assurance despite staff moves.
+
+- raspberry pi's plans for a london stock exchange listing.
+  - significance of this ipo for the u.k. stock market.
+  - impact on the u.k.'s tech sector standing.
+
+- figma's tender offer valuing the company at $12.5 billion.
+  - opportunity for investors and employees to sell shares.
+  - comparison with adobe's previous $20 billion acquisition offer.
+
+stay tuned for all these updates and more on today's tech landscape!
+
+Polished Script (Spanish):
+soy wall-e, y esta es tu ai briefing para el jueves 16 de mayo. reddit se disparó después de anunciar un acuerdo con openai sobre modelos de entrenamiento de ia. las acciones de reddit aumentaron un 11% en operaciones posteriores al cierre luego de que la compañía de redes sociales anunció una asociación con openai que permitirá al creador de chatgpt entrenar sus modelos de inteligencia artificial con contenido de reddit. como parte del acuerdo, openai tendrá acceso a la api de datos de reddit, que proporciona contenido estructurado y único en tiempo real. a cambio, reddit comenzará a ofrecer ciertas características de ia a usuarios y moderadores, impulsadas por openai, que también se convertirá en un socio publicitario de reddit.
+
+meta recibió una investigación de seguridad infantil bajo una extensa ley tecnológica de la ue. la comisión europea dijo que está investigando si las plataformas facebook e instagram de meta pueden estimular adicciones comportamentales en niños, así como crear efectos de «madriguera de conejo». también está preocupada por las verificaciones de edad en las plataformas de meta, así como por los riesgos de privacidad asociados con los algoritmos de recomendación de la compañía.
+
+microsoft ofrece reubicación a cientos de empleados de ia con sede en china. según el wall street journal, microsoft ha preguntado a empleados de operaciones de computación en la nube e inteligencia artificial con sede en china si considerarían reubicarse fuera del país. la empresa ofreció esta posibilidad a unos 700 a 800 trabajadores, principalmente ingenieros.
+
+raspberry pi, respaldada por sony, se dirige a una rara salida a bolsa en londres. la startup británica de computación raspberry pi dijo que planea salir a bolsa en londres, lo que representa una rara victoria para el mercado de valores del reino unido. la compañía está contemplando una oferta pública inicial en el mercado principal de la bolsa de valores de londres.
+
+figma lanzó una oferta de compra que valora a la compañía en 12.5 mil millones de dólares. la herramienta de diseño basada en la nube permitirá a inversores, incluidos empleados actuales y anteriores, vender sus acciones. esto representa un aumento del 25% desde la valoración obtenida en 2021, pero aún por debajo de la oferta de adquisición de 20 mil millones de dólares que adobe hizo en 2022.
+
+eso es todo por hoy. nos vemos de nuevo aquí mañana
+
+Podcast Title (Spanish):
+EP-100 'reddit Se Asocia Con Openai 🚀, Investigación de Meta Por Seguridad Infantil 🔍, Microsoft Reubica Empleados de Ia 🌏'
+
+Podcast Description (Spanish):
+ai briefing para el 16 de mayo:
+
+- reddit anuncia un acuerdo con openai para el entrenamiento de modelos de inteligencia artificial, incrementando sus acciones en un 11%.
+- meta es investigada por la comisión europea bajo una ley tecnológica de la ue sobre seguridad infantil en facebook e instagram, incluyendo efectos de "madriguera de conejo" y problemas de privacidad.
+- microsoft ofrece reubicación a cientos de empleados de operaciones de ia y computación en la nube con sede en china.
+- raspberry pi, respaldada por sony, planea salir a bolsa en londres.
+- figma lanza una oferta de compra valorando la compañía en 12.5 mil millones de dólares, permitiendo a los inversores vender acciones.
+
+nos vemos nuevamente mañana para más actualizaciones
+
+Polished Script (Chinese):
+我是wall-e，以下是您5月16日星期四的ai简报。
+
+reddit周四宣布与openai达成协议，用于培训其人工智能模型，股价随即飙升11%。根据这项协议，openai将能够访问reddit的数据api，从而获得实时结构化的独特内容。作为交换，reddit将向用户和版主提供由openai支持的某些ai功能，openai还将成为reddit的广告合作伙伴。今年2月，google也宣布了类似的合作协议。openai最近发布了新的ai模型和桌面版本的chatgpt，同时开放了gpt-4给所有用户。
+
+meta周四遭到欧盟重大调查，涉及对儿童安全风险的在线内容法违规。欧盟委员会表示，正在调查meta旗下的facebook和instagram平台是否会导致儿童行为成瘾及“兔子洞效应”。并对平台的年龄验证和推荐算法的隐私风险表示担忧。meta发言人强调其已开发超过50种工具和政策来保护年轻用户。
+
+微软据报已要求在中国的云计算和人工智能员工考虑搬迁到其他国家，这一举措摊上了美国对中国获取先进技术的限制。据《华尔街日报》报道，微软提供了转移到美国、爱尔兰、澳大利亚和新西兰等国的机会，共涉及大约700至800名员工。
+
+由sony支持的英国计算机初创公司raspberry pi宣布计划在伦敦进行罕见的ipo上市。这是伦敦股市的一次胜利，因为许多英国高成长科技公司在过去一年中选择了在纽约上市。raspberry pi的上市文件将披露其业务信息。
+
+云设计工具公司figma周四表示，将允许投资者包括现任和前任员工通过一项价值125亿美元的收购要约出售股份。这一估值比公司在2021年的融资估值高出25%，但低于adobe在2022年提出的200亿美元收购报价。figma的主要用户包括微软、google、oracle和salesforce。
+
+今天的ai简报就到这里，我们明天再见。
+
+Podcast Title (Chinese):
+EP-100 reddit 与 openai 合作 🚀，meta 遭欧盟调查 🕵️‍♂️，微软员工搬迁计划 🌏
+
+Podcast Description (Chinese):
+描述：
+
+- reddit与openai达成协议，利用其数据api来训练ai模型，作为交换，openai将向reddit用户和版主提供ai功能，并成为其广告合作伙伴。
+- meta遭到欧盟调查，涉及其平台上对儿童安全风险的在线内容法违规，重点包括年龄验证和推荐算法的隐私风险。
+- 微软要求其在中国的云计算和人工智能员工考虑搬迁到其他国家，以应对美国对中国获取先进技术的限制。
+- 由sony支持的英国计算机初创公司raspberry pi宣布计划在伦敦进行ipo上市。
+- 云设计工具公司figma允许投资者和员工通过收购要约出售股份，估值为125亿美元。
+
+敬请收听更多精彩内容！
