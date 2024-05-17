@@ -13,6 +13,12 @@ To generate a podcast episode, use the following command:
 
 `python main.py [episode number]`
 
+`cd newsLetter`
+
+change the date here:file_path = "../output/2024-05-07/podcast_data.txt"
+
+`python newsletter.py`
+
 Replace [episode number] with the actual number of the episode you want to generate.
 
 ### Output
@@ -31,9 +37,8 @@ After running the script, the output will be organized into folders by date with
 1. Create a `.env` file in the root directory of your project and add the following content:
 
 ```
-AZURE_OPENAI_API_KEY = [your Azure key]
-AZURE_OPENAI_ENDPOINT = [your Azure password]
-API_VERSION = "2024-02-01"
+os.environ['OPENAI_API_KEY'] = [your openai key]
+os.environ['OPENAI_ORGANIZATION_ID'] = [your openai org id]
 EMAIL = [anchor login email]
 PASSWORD = [anchor login password]
 SMTP_PASSWORD = [SMTP Password]

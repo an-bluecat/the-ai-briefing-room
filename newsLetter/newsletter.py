@@ -2,7 +2,8 @@ import smtplib
 import os
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from openai import AzureOpenAI
+from openai import OpenAI
+
 from dotenv import load_dotenv
 
 
@@ -18,37 +19,35 @@ MODEL = "GPT4"
 
 load_dotenv()
 
-client = AzureOpenAI(
-    azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"),
-    api_key=os.getenv("AZURE_OPENAI_API_KEY"),
-    api_version=os.getenv("API_VERSION")
+client = OpenAI(
+    api_key = os.environ.get("OPENAI_API_KEY"),
+    organization = os.getenv('OPENAI_ORGANIZATION_ID')
 )
-
 def generate_newsletter_title(content):
     role = f"""
-    You are a professional newsletter title generator specialized in technology topics. Your task is to generate the overall title based on the newsletter. The title of the newsletter should be 1 line only, easy to read, include bullet points for key facts. Use combination of emoji.
-    You can reference this example but style it with markdown {TLDR_TITLE_EXAMPLE}. You must generate only 1 line title because the title should be concise enough."""
+    You are a professional newsletter title generator specialized in technology topics. Your task is to generate the overall title based on the newsletter. The title of the newsletter should be 1 line only, easy to read, include bullet points for key facts. Use a combination of emoji.
+    You can reference this example but style it with markdown {{TLDR_TITLE_EXAMPLE}}. You must generate only 1 line title because the title should be concise enough."""
 
     prompt = f"Create a professional title in newsletter style for the podcast content: {content}"
-
     try:
-        response = client.chat.completions.create(
-            model=MODEL,
+        completion = client.chat.completions.create(
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": role},
                 {"role": "user", "content": prompt}
             ],
+            max_tokens=100,
             temperature=0.7,
-            max_tokens=800,
             top_p=0.95,
             frequency_penalty=0,
-            presence_penalty=0,
-            stop=None
+            presence_penalty=0
         )
-        return response.choices[0].message.content
+        return completion.choices[0].message
     except Exception as e:
-        print(f"Error while generating newsletter: {e}")
+        
+        print(f"Error while generating newsletter title: {e}")
         return None
+    
 def generate_newsletter(content):
     # role = f"You are a helpful podcast content summarizer. You need to summarize the podcast and decorate it in Markdown. \n\n You can reference this example but style it with markdown: \n\n{TLDR_example}\n"
     role = f"""You are a professional newsletter editor specialized in technology topics. Your task is to summarize the provided content into a concise, engaging, and informative markdown newsletter. The newsletter should be easy to read, include bullet points for key facts, subheadings for different sections, and incorporate a formal yet engaging tone. Use hyperlinks appropriately to encourage readers to engage further. Use combination of emoji. \n\n You can reference this example but style it with markdown {TLDR_EXAMPLE}"""
@@ -57,22 +56,22 @@ def generate_newsletter(content):
     prompt = f"Create a professional markdown newsletter style email summary for the podcast content: {content}"
 
     try:
-        response = client.chat.completions.create(
-            model=MODEL,
+        completion = client.chat.completions.create(
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": role},
                 {"role": "user", "content": prompt}
             ],
+            max_tokens=1000,
             temperature=0.7,
-            max_tokens=800,
             top_p=0.95,
             frequency_penalty=0,
-            presence_penalty=0,
-            stop=None
+            presence_penalty=0
         )
-        return response.choices[0].message.content
+        return completion.choices[0].message
     except Exception as e:
-        print(f"Error while generating newsletter: {e}")
+        
+        print(f"Error while generating newsletter title: {e}")
         return None
 
 def send_email(subject, message, to_email, is_markdown=False):
@@ -162,24 +161,48 @@ def get_subscribers(service):
     rows = result.get('values', [])
     return [row[0] for row in rows if row]
 
-def send_newsletter(content, use_sheet = True):
+def format_newsletter(content):
+    newsletter_content = generate_newsletter(content).content
+    newsletter_content = "###" + "###".join(newsletter_content.split("###")[1:]).split("---")[0] # remove title and intro, and summary at the end
+    title = generate_newsletter_title(newsletter_content).content.lstrip("#")
+    newsletter_content += "\n\n[🔊 Listen to the Full Podcast Episode Here](https://podcasters.spotify.com/pod/show/aibriefingroom)"
+    with open('newsletter_content_testing.md', 'w', encoding='utf-8') as file:
+        file.write(newsletter_content)
+    with open('newsletter_title_testing.md', 'w', encoding='utf-8') as file:
+        file.write(title)
+
+def send_newsletter(use_sheet = True):
     if use_sheet:
       service = google_sheets_service()
       subscribers = get_subscribers(service)
     else:
       init_db()
       subscribers = get_subscribers()  # Retrieve all subscribers
-    print(subscribers)
-    '''
-    newsletter_content = generate_newsletter(content)
-    newsletter_content = "###" + "###".join(newsletter_content.split("###")[1:]).split("---")[0] # remove title and intro, and summary at the end
-    title = generate_newsletter_title(newsletter_content).lstrip("#")
-    newsletter_content += "\n\n[🔊 Listen to the Full Podcast Episode Here](https://podcasters.spotify.com/pod/show/aibriefingroom)"
-    # with open('newsletter_content_testing.md', 'w', encoding='utf-8') as file:
-    #     file.write(newsletter_content)
-    # with open('newsletter_title_testing.md', 'w', encoding='utf-8') as file:
-    #     file.write(title)
+    # subscribers = ['jc12020@nyu.edu'] testing purpose
+    with open('newsletter_content_testing.md', 'r', encoding='utf-8') as file:
+        newsletter_content = file.read()
+
+    with open('newsletter_title_testing.md', 'r', encoding='utf-8') as file:
+        title = file.read()
+
     for email in subscribers:
         send_email(title, newsletter_content, email, is_markdown=True)
         print(email)
-    '''
+
+def extract_podcast_description(file_path):
+    import re
+    with open(file_path, 'r', encoding='utf-8') as file:
+        content = file.read()
+    
+    # Use regex to find the podcast description
+    match = re.search(r"Podcast Description:\n(.*?)\nPolished Script \(Spanish\):", content, re.DOTALL)
+    if match:
+        podcast_description = match.group(1).strip()
+        return podcast_description
+    else:
+        return None   
+if __name__ == "__main__":
+    # Path to your file, should keep it updated
+    file_path = "../output/2024-05-16/podcast_data.txt"
+    format_newsletter(content = extract_podcast_description(file_path))
+    send_newsletter(use_sheet = True)
