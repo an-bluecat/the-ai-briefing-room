@@ -1,8 +1,8 @@
 name: Upload Podcast
 
 on:
-  schedule:
-    - cron: '0 22 * * *' # This cron expression means "every day at 10 PM UTC"
+  #schedule:
+   # - cron: '0 22 * * *' # This cron expression means "every day at 10 PM UTC"
   workflow_dispatch: # Allows manual triggering
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.7.3' # Specify the Python version you need
+          python-version: '3.7.9' # Specify the Python version you need
 
       - name: Install dependencies
         run: |
