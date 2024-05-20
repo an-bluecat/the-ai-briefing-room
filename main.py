@@ -12,7 +12,7 @@ import difflib
 from utils.addMusic import add_bgm
 from utils.utils import spanish_title_case, english_title_case, get_day_of_week
 import sys
-from newsLetter.newsletter import send_newsletter, extract_podcast_description, format_newsletter
+from newsLetter.newsletter import send_newsletter, format_newsletter
 
 # Setup basic configuration for logging
 logging.basicConfig(level=logging.INFO,
@@ -257,7 +257,11 @@ def remove_leading_numbers(lst):
     # This will apply the regex substitution to each string in the list
     return [pattern.sub('', s.strip()) for s in lst]
 
-
+def format_title(title):
+    title = title.replace("\"","").replace("*","")
+    episode_num, real_title = title.split(" ")[0], " ".join(title.split(" ")[1:])
+    capitalized_content = ', '.join([subtitle.strip().capitalize() for subtitle in real_title.split(',')])
+    return episode_num + ": " + capitalized_content
 # Example usage:
 if __name__ == "__main__":
     # Load environment variables from .env file
@@ -303,6 +307,7 @@ if __name__ == "__main__":
         podcast_title = episode_number + \
             english_title_case(
                 orchestrator.generate_podcast_title(polished_script))
+        podcast_title = format_title(podcast_title)
         TRANSLATE = False
         if TRANSLATE:
             # Translate the polished script, description, and title to Spanish and Chinese
@@ -396,8 +401,7 @@ Podcast Description (Chinese):
                 logging.info(f"All data saved to {output_file_path}.")
 
             # Send the newsletter
-            title, content = format_newsletter(extract_podcast_description(content=output_data))
-            send_newsletter(content, title, use_sheet=True)
+            send_newsletter(podcast_title, format_newsletter(podcast_description), use_sheet=True, test=True)
 
         else:
             logging.error("Failed to generate podcast script or title.")
