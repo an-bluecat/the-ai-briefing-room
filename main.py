@@ -12,7 +12,7 @@ import difflib
 from utils.addMusic import add_bgm
 from utils.utils import spanish_title_case, english_title_case, get_day_of_week
 import sys
-#from newsletter import send_newsletter
+from newsLetter.newsletter import send_newsletter, extract_podcast_description, format_newsletter
 
 # Setup basic configuration for logging
 logging.basicConfig(level=logging.INFO,
@@ -211,13 +211,13 @@ refined podcast script:
         """ Converts the generated script to speech and saves the audio file. Now supports multiple languages. """
 
         try:
-            
+
             response = self.openai_client.audio.speech.create(
                 model="tts-1-hd", voice="alloy", input=script)
             speech_file_path = Path(
                 output_path) / f"{language}.mp3"
             response.stream_to_file(speech_file_path)
-            
+
             '''
             speech_file_path = Path(
                 output_path) / f"{language}.mp3"
@@ -235,6 +235,9 @@ refined podcast script:
             logging.info(
                 f"Generated {language} speech saved to {speech_file_path}.")
             return speech_file_path
+
+
+
         except Exception as e:
             logging.error(f"Failed to convert text to speech: {e}")
             return None
@@ -393,7 +396,8 @@ Podcast Description (Chinese):
                 logging.info(f"All data saved to {output_file_path}.")
 
             # Send the newsletter
-         #   send_newsletter(content=podcast_description)
+            title, content = format_newsletter(extract_podcast_description(content=output_data))
+            send_newsletter(content, title, use_sheet=True)
 
         else:
             logging.error("Failed to generate podcast script or title.")

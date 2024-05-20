@@ -1,0 +1,186 @@
+
+Titles:
+Two students find security bug that could let millions do laundry for free
+The Mac Pro and Studio won’t get the M4 nod until mid-2025
+Sonos is teasing its ‘most requested product ever’ on Tuesday
+All the news about Blue Origin’s first crewed flight since 2022
+Musk launches SpaceX’s Starlink internet services in Indonesia, says more investments could come
+Microsoft set to unveil its vision for AI PCs at Build developer conference
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+
+
+The Verge
+Two students find security bug that could let millions do laundry for free
+The Mac Pro and Studio won’t get the M4 nod until mid-2025
+Sonos is teasing its ‘most requested product ever’ on Tuesday
+All the news about Blue Origin’s first crewed flight since 2022
+
+CNBC Tech
+Musk launches SpaceX’s Starlink internet services in Indonesia, says more investments could come
+Microsoft set to unveil its vision for AI PCs at Build developer conference
+
+Top News:
+musk launches spacex’s starlink internet services in indonesia, says more investments could come  
+microsoft set to unveil its vision for ai pcs at build developer conference  
+sonos is teasing its ‘most requested product ever’ on tuesday  
+all the news about blue origin’s first crewed flight since 2022  
+two students find security bug that could let millions do laundry for free
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E and Sunday May 19), and replace CNBC techcheck briefing to 'AI briefing' 
+ "title0:
+Musk launches SpaceX’s Starlink internet services in Indonesia
+description0:
+Tech billionaire Elon Musk (2nd L) speaks next to Indonesia's Health Minister Budi Gunadi Sadikin (L) during a ceremony held to inaugurate satellite unit Starlink at a community health center in Denpasar on Indonesia's resort island of Bali on May 19, 2024. Musk launched on May 19 his Starlink service on Indonesia's resort island of Bali as the country aims to extend internet to its remote areas. Millions of people in Indonesia, a vast archipelago of more than 17,000 islands, are not currently hooked up to reliable internet services. (Photo by SONNY TUMBELAKA / AFP) (Photo by SONNY TUMBELAKA/AFP via Getty Images)
+Elon Musk has launched SpaceX's Starlink satellite internet services in Indonesia as the Southeast Asian nation seeks to boost internet connectivity in remote areas.
+The inauguration took place at a community health center in Bali on Sunday, with the SpaceX founder telling local media he was "very excited" to bring internet services to areas with limited or no connectivity and that internet connectivity can be "a life-saver to remote medical clinics."
+"It is really important to emphasize the importance of internet connectivity and how much of a life-changer and a life-saver it can be," Musk told local media on Sunday.
+SpaceX, which manufactures and launches advanced rockets and spacecraft, is also a developer of Starlink satellites which provide internet connectivity to remote locations. Starlink is already available in Southeast Asia in Malaysia and the Philippines.
+Indonesia, the world's largest archipelago with more than 17,000 islands, faces an urban-rural connectivity divide where millions of people living in rural areas have limited or no access to internet services.
+Communication and Informatics Minister Budi Arie Setiadi previously said Starlink would help Indonesia extend internet access to regions not covered by local internet providers, according to Indonesian news agency Antara.
+
+title1:
+The year of AI PCs
+description1:
+Microsoft Chief Executive Officer (CEO) Satya Narayana Nadella speaks at a live Microsoft event in the Manhattan borough of New York City, October 26, 2016.
+Microsoft 's Build developer conference kicks off on Tuesday, giving the company the opportunity to showcase its latest artificial intelligence projects, following high-profile events this month hosted by OpenAI and Google .
+One area where Microsoft has a distinct advantage over others in the AI race is in its ownership of Windows, which gives the company a massive PC userbase.
+Microsoft CEO Satya Nadella said in January that 2024 will mark the year when AI will become the "first-class part of every PC."
+The company already offers its Copilot chatbot assistant in the Bing search engine and, for a fee, in Office productivity software. Now, PC users will get to hear more about how AI will be embedded in Windows and what they can do with it on new AI PCs.
+Build comes days after Google I/O, where the search giant unveiled its most powerful AI model yet and showed how its Gemini AI will work on computers and phones. Prior to Google's event, OpenAI announced its new GPT-4o model. Microsoft is OpenAI's lead investor, and its Copilot technology is based on OpenAI's models..
+For Microsoft, the challenge is twofold: keeping a prominent position in AI and bolstering PC sales, which have been in the doldrums for the past two years following an upgrade cycle during the pandemic.
+In a recent note on Dell to investors, Morgan Stanley analyst Erik Woodring wrote that he remains "bullish on the PC market recovery" due to commentary from customers and recent "upward revisions to notebook" original design manufacturer (ODM) builds.
+Technology industry researcher Gartner estimated that PC shipments increased 0.9% in the quarter after a multi-year slump. Demand for PCs was "slightly better than expected," Microsoft CFO Amy Hood said on the company's quarterly earnings call last month.
+
+title2:
+Sonos is teasing its ‘most requested product ever’ on Tuesday
+description2:
+Sonos is teasing, both in emails and on social media, that its “most requested product ever” is “coming soon” on May 21st (this Tuesday). This, of course, is almost certainly the Sonos Ace, its first wireless headphones.
+Sonos has been expected to launch the Ace in June, but given the company’s “most requested” phrasing here and the fact that the headphones recently appeared for sale by authorized dealer Schuurman, it seems they’re coming sooner than that.
+A launch this week could help Sonos with some of the ire surrounding the roll-out of its new app earlier this month. The app was ostensibly created in part to support the Sonos Ace, but is missing key features like a sleep timer or those related to local library management. And getting those features back in the app may take months.
+Image: Schuurman
+Sonos is also gearing up to release the Roam 2, likewise rumored for June. That speaker will look nearly identical to the original Roam and Roam SL, but with a color-matched “Sonos” and a dedicated Bluetooth pairing button. For all its good qualities, the first Roam had some annoying drawbacks, like requiring Wi-Fi setup before you can use Bluetooth, and an unintuitive pairing process even when you can.
+Image: Sonos
+
+title3:
+All the news about Blue Origin’s first crewed flight since 2022
+description3:
+Blue Origin carried out its first crewed launch since 2022 on May 19th, sending six space tourists into space for a brief period of weightlessness. The New Shepard rocket took off at about an hour after its 9:30AM ET launch window started and passed the Kármán line — the 62-mile-high line that separates the Earth’s atmosphere from space — about three and a half minutes later, reaching a peak of about 347,000 feet high less than a minute after that.
+One of NS-25’s passengers was Ed Dwight, who, with the backing of President John F. Kennedy’s administration, trained for NASA’s space program in the early 1960s, but wasn’t ultimately selected to become an astronaut. His seat on NS-25 was sponsored by the nonprofit Space for Humanity.
+The five other passengers on the flight were Mason Angel, Sylvain Chiron, Kenneth L. Hess, Carol Schaller, and Gopi Thotakura.
+This was Blue Origin’s seventh crewed flight. Blue Origin paused its space tourism flights in 2022 after a booster malfunctioned on an uncrewed flight in September that year, prompting the Federal Aviation Administration to investigate the failure and require it to carry out 21 corrective actions.
+
+title4:
+Two students find security bug that could let millions do laundry for free
+description4:
+A security lapse could let millions of college students do free laundry, thanks to one company. That’s because of a vulnerability that two University of California, Santa Cruz students found in internet-connected washing machines in commercial use in several countries, according to TechCrunch.
+The two students, Alexander Sherbrooke and Iakov Taranenko, apparently exploited an API for the machines’ app to do things like remotely command them to work without payment and update a laundry account to show it had millions of dollars in it. The company that owns the machines, CSC ServiceWorks, claims to have more than a million laundry and vending machines in service at colleges, multi-housing communities, laundromats, and more in the US, Canada, and Europe.
+CSC never responded when Sherbrooke and Taranenko reported the vulnerability via emails and a phone call in January, TechCrunch writes. Despite that, the students told the outlet that the company “quietly wiped out” their false millions after they contacted it.
+The lack of response led them to tell others about their findings. That includes that the company has a published list of commands, which the two told TechCrunch enables connecting to all of CSC’s network-connected laundry machines. CSC ServiceWorks didn’t immediately respond to The Verge’s request for comment.
+CSC’s vulnerability is a good reminder that the security situation with the internet of things still isn’t sorted out. For the exploit the students found, maybe CSC shoulders the risk, but in other cases, lax cybersecurity practices have made it possible for hackers or company contractors to view strangers’ security camera footage or gain access to smart plugs."
+
+Response:
+
+Script:
+i'm wall-e, and this is your ai briefing for sunday, may 19th.
+
+elon musk has launched spacex's starlink satellite internet services in indonesia, bringing connectivity to some of the remotest parts of the archipelago. the launch, which took place at a community health center in bali, aims to bridge the urban-rural connectivity divide in a nation where millions lack reliable internet access. musk emphasized the critical role of internet connectivity in improving lives, particularly for remote medical clinics.
+
+next, microsoft's build developer conference kicks off this tuesday, and the tech giant is set to highlight its advancements in artificial intelligence. microsoft ceo satya nadella has declared 2024 as the year ai becomes a "first-class part of every pc," leveraging their vast windows user base. following high-profile ai events by openai and google, microsoft plans to showcase how its copilot chatbot assistant will be further integrated into windows. with a notable uptick in pc shipments, microsoft's presentation could be crucial for both its ai positioning and the pc market's recovery.
+
+in other news, sonos is generating buzz by teasing its "most requested product ever," almost certainly its first wireless headphones, the sonos ace, set for a may 21st launch. this early release comes as the company addresses controversies surrounding its new app, which lacks several key features. sonos is also preparing to launch the roam 2 speaker, set for june, which aims to correct the drawbacks of its predecessor.
+
+meanwhile, blue origin successfully conducted its first crewed launch since 2022, sending six space tourists, including ed dwight, a pioneering astronaut trainee from the 1960s, into space. this mission marks blue origin's seventh crewed flight and follows a pause due to a 2022 booster malfunction that prompted a regulatory investigation.
+
+lastly, security researchers at the university of california, santa cruz have identified a vulnerability in csc serviceworks' internet-connected washing machines that could affect millions. the flaw allows users to bypass payment systems and manipulate laundry accounts. despite alerts from the researchers, csc serviceworks has yet to publicly address the issue, highlighting ongoing security concerns within the internet of things landscape.
+
+that's all for today. we'll see you back here tomorrow
+
+Polished Script:
+i'm wall-e, welcoming you to today's tech briefing for sunday, may 19.
+
+elon musk has rolled out spacex's starlink satellite internet services in indonesia, targeting some of the remotest parts of the archipelago. the launch event took place at a community health center in bali, with the goal of bridging the urban-rural connectivity divide in a country where millions lack reliable internet access. musk highlighted the importance of internet connectivity in enhancing lives, especially for remote medical clinics.
+
+next, microsoft is gearing up for its build developer conference this tuesday, where the tech giant plans to showcase its latest advancements in artificial intelligence. ceo satya nadella has declared 2024 as the year ai becomes a "first-class part of every pc," leveraging their extensive windows user base. following significant ai events by openai and google, microsoft aims to demonstrate how its copilot chatbot assistant will be further integrated into windows. with a notable rise in pc shipments, microsoft's presentation could be pivotal for both its ai positioning and the pc market's recovery.
+
+in other news, sonos is creating excitement by teasing its "most requested product ever," almost certainly its first wireless headphones, the sonos ace, set for a may 21 launch. this early release comes as the company addresses controversies surrounding its new app, which misses several key features. sonos is also set to launch the roam 2 speaker in june, aiming to improve upon the shortcomings of its predecessor.
+
+meanwhile, blue origin successfully conducted its first crewed launch since 2022, sending six space tourists, including ed dwight, a pioneering astronaut trainee from the 1960s, into space. this mission marks blue origin's seventh crewed flight and follows a hiatus due to a 2022 booster malfunction that led to a regulatory investigation.
+
+lastly, security researchers at the university of california, santa cruz, have identified a vulnerability in csc serviceworks' internet-connected washing machines that could impact millions. the flaw allows users to bypass payment systems and manipulate laundry accounts. despite alerts from the researchers, csc serviceworks has yet to publicly address the issue, underscoring ongoing security concerns in the internet of things landscape.
+
+that's all for today. we'll see you back here tomorrow
+
+Podcast Title:
+EP-999 Elon Musk's Starlink in Indonesia 🌐, Microsoft's Ai Integration 🖥️, Sonos' Wireless Headphones Launch 🎧
+
+Podcast Description:
+welcome to today's tech briefing for sunday, may 19. here's what's happening in the world of technology:
+
+- **elon musk's starlink in indonesia**: spacex's starlink satellite internet services are launched in indonesia, aiming to improve connectivity in remote parts of the archipelago, including a highlight event at a community health center in bali.
+- **microsoft build developer conference**: microsoft is set to showcase ai advancements, with ceo satya nadella declaring 2024 as the year ai becomes integral to all pcs, featuring its copilot chatbot assistant.
+- **sonos product launches**: sonos teases its first wireless headphones, the sonos ace, and plans to release the roam 2 speaker, following controversies over its new app's missing features.
+- **blue origin's successful crewed launch**: blue origin returns with its seventh crewed flight, sending six space tourists into space, including ed dwight, a pioneering astronaut trainee from the 1960s.
+- **security flaw in internet-connected washing machines**: university of california, santa cruz researchers uncover a vulnerability in csc serviceworks' washing machines that could lead to bypassed payment systems and account manipulation.
+
+join us as we delve into these stories and more. stay tuned for tomorrow's update!
+
+Polished Script (Spanish):
+soy wall-e, y esta es tu ai briefing de cnbc para el domingo 19 de mayo. elon musk ha lanzado los servicios de internet satelital starlink de spacex en indonesia, mientras la nación del sudeste asiático busca mejorar la conectividad a internet en áreas remotas. la inauguración tuvo lugar en un centro de salud comunitario en bali, y el fundador de spacex expresó su entusiasmo por llevar servicios de internet a zonas con conectividad limitada o nula, destacando que la conectividad puede ser un "salvavidas" para clínicas médicas remotas.
+
+la conferencia de desarrolladores build de microsoft comienza este martes, ofreciendo a la compañía la oportunidad de mostrar sus últimos proyectos de inteligencia artificial, después de eventos de alto perfil organizados por openai y google este mes. satya nadella, ceo de microsoft, dijo en enero que 2024 marcará el año donde la ia se convertirá en una "parte fundamental de cada pc". los usuarios de pc podrán escuchar más sobre cómo la ia se integrará en windows y lo que podrán hacer con las nuevas pcs con ia.
+
+sonos está provocando, tanto en correos electrónicos como en redes sociales, que su “producto más solicitado” estará “próximamente” el 21 de mayo. se espera casi con certeza que se trate de los ace, sus primeros auriculares inalámbricos. este lanzamiento rápido podría ayudar a sonos a mitigar algunas de las críticas por el lanzamiento de su nueva app, la cual carece de características importantes. sonos también prepara el lanzamiento del roam 2, un altavoz con mejoras en la conectividad bluetooth.
+
+blue origin realizó su primer lanzamiento tripulado desde 2022, enviando a seis turistas espaciales al espacio para experimentar un breve período de ingravidez. uno de los pasajeros fue ed dwight, quien entrenó para el programa espacial de la nasa en los años 60. este fue el séptimo vuelo tripulado de blue origin, y el primero desde una pausa en 2022 debido a un fallo en un vuelo no tripulado que llevó a una investigación de la faa.
+
+una falla de seguridad podría permitir que millones de estudiantes universitarios hagan lavandería gratis, gracias a una vulnerabilidad que dos estudiantes de la universidad de california, santa cruz, encontraron en máquinas de lavandería conectadas a internet. exploitaron una api para comandar las máquinas sin pago. a pesar de haber contactado a la compañía, csc serviceworks, esta no respondió inicialmente, aunque parece haber corregido el problema silenciosamente.
+
+eso es todo por hoy. nos vemos aquí mañana
+
+Podcast Title (Spanish):
+EP-999 Starlink en Indonesia 📡, Ia en Build de Microsoft 🤖, Sonos Lanza Auriculares Inalámbricos 🎧
+
+Podcast Description (Spanish):
+descripción:
+
+- elon musk lanza los servicios de internet satelital starlink de spacex en indonesia, con el objetivo de mejorar la conectividad en áreas remotas, comenzando en un centro de salud comunitario en bali.
+- la conferencia de desarrolladores build de microsoft comienza este martes, donde se presentarán los últimos proyectos de inteligencia artificial. satya nadella, ceo de microsoft, destaca que la ia será una parte fundamental de cada pc en 2024.
+- sonos anuncia el lanzamiento de su "producto más solicitado" para el 21 de mayo, probablemente los auriculares inalámbricos ace, además prepara el lanzamiento del altavoz roam 2.
+- blue origin realiza su primer lanzamiento tripulado desde 2022, llevando a seis turistas espaciales, incluyendo a ed dwight, al espacio para experimentar ingravidez.
+- una falla de seguridad en máquinas de lavandería conectadas a internet fue descubierta por dos estudiantes de la universidad de california, santa cruz, permitiendo que millones de estudiantes hicieran lavandería gratis. la compañía involucrada, csc serviceworks, aparentemente corrigió el problema de forma silenciosa.
+
+¡nos vemos en el próximo episodio!
+
+Polished Script (Chinese):
+我是wall-e，这里是你在2024年5月19日的ai简报。
+
+埃隆·马斯克在印度尼西亚启动了spacex的starlink卫星互联网服务。这一启动在巴厘岛的一个社区健康中心举行。这位spacex创始人表示，非常高兴能为那些有限或没有互联网连接的地区提供互联网服务，并强调了互联网连接对于偏远医疗诊所的重要性。starlink卫星互联网服务已经在马来西亚和菲律宾提供，预计将帮助印度尼西亚扩展互联网接入，特别是那些本地互联网供应商未覆盖的地区。
+
+微软将于星期二开启其build开发者大会，展示其最新的人工智能项目。微软ceo萨提亚·纳德拉在1月份表示，2024年将是人工智能成为每台电脑“第一类部分”的年份。微软已经在bing搜索引擎和office生产力软件中提供其copilot聊天助手，现在pc用户将听到更多关于人工智能在windows中的嵌入及其新ai pc的使用方法。
+
+sonos即将在本周二（5月21日）发布其“有史以来最受期待的产品”，这几乎可以确定是sonos ace——其首款无线耳机。虽然最初预计会在6月份发布，但现在看来将提前到本周。sonos也准备发布roam 2，这款音箱基本与原版roam和roam sl外观相同，但增加了颜色匹配的“sonos”标志和一个专用蓝牙配对按钮。
+
+蓝色起源自2022年以来的首次载人发射于5月19日成功进行，将六名太空游客送入太空体验短暂的失重。new shepard火箭在发射窗口打开一个小时后起飞，并在三分半钟后通过了地球与太空的分界线——卡门线。这是蓝色起源的第七次载人飞行，此前因2022年9月的一次无人飞行引发助推器故障，暂停了其太空旅游飞行。
+
+两名加州大学圣克鲁兹分校的学生发现了一个安全漏洞，可以让数百万大学生免费洗衣。他们利用一个api漏洞可以在无需支付的情况下远程控制洗衣机，并将洗衣账户余额显示为数百万美元。这家拥有这些机器的公司，csc serviceworks，尽管学生进行了多次报告，但未给予回应。随后，学生们决定向外界披露他们的发现，提醒物联网安全仍需关注。
+
+以上就是今天的全部内容，我们明天再见。
+
+Podcast Title (Chinese):
+EP-999 spacex starlink 在印尼启动 🌐, 微软 build 大会 📅, sonos 即将发布首款无线耳机 🎧
+
+Podcast Description (Chinese):
+description:
+- 埃隆·马斯克在印度尼西亚启动了spacex的starlink卫星互联网服务，旨在为偏远地区提供互联网连接。
+- 微软即将举行build开发者大会，展示其最新的人工智能项目，包括ai在windows系统中的应用。
+- sonos将提前发布其首款无线耳机sonos ace，并推出新款音箱roam 2。
+- 蓝色起源成功进行自2022年以来首次载人发射，将六名太空游客送入太空。
+- 两名加州大学圣克鲁兹分校的学生发现了洗衣机的安全漏洞，可以让数百万学生免费洗衣，提示物联网安全问题。
+
+欢迎收听今天的ai简报，我们明天再见！
