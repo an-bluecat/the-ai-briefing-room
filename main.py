@@ -27,6 +27,7 @@ PRODUCTION_MODE = True  # Set to True to enable audio file generation
 BGM_PATH = "assets/bgm.mp3"
 
 
+
 class NewsPodcastOrchestrator:
     """ Orchestrates the creation of a podcast script from scraped news, using OpenAI's GPT models. """
 
@@ -243,7 +244,7 @@ refined podcast script:
         output_response_prompt = ""
         if language:
             output_response_prompt = f"Output the Title in {language}."
-        input_ask = "Generate a title for this podcast. Include three key topics (if there are many, choose the three most important ones). Incorporate emojis where appropriate. Follow the style of titles such as: 'Tesla Showcases FSD Demo 🚗, Adam Neuman's WeWork Bid 💰, CSV Conundrums 🖥️','Anthropic’s $4B Amazon Boost 💰, Brex's Valuation Leap to $12B 💳, Strategies for Success ✨','The OpenAI Voice Revolution 🗣️, AI Safety Measures 🦺, LLMs Go Mobile 📱'. Here's the transcript excerpt: " + transcript + "\n" + output_response_prompt + "\nTitle:"
+        input_ask = "Generate a title for this podcast. Include three key topics (if there are many, choose the three most important ones). Incorporate emojis where appropriate. Pay attention to capitalization of titles. Follow the style of titles such as: Tesla Showcases FSD Demo 🚗, Adam Neuman's WeWork Bid 💰, CSV Conundrums 🖥️,Anthropic’s $4B Amazon Boost 💰, Brex's Valuation Leap to $12B 💳, Strategies for Success ✨,The OpenAI Voice Revolution 🗣️, AI Safety Measures 🦺, LLMs Go Mobile 📱. Here's the transcript excerpt: " + transcript + "\n" + output_response_prompt + "\nTitle:"
         return self.ask_gpt(input_ask)
 
 
