@@ -1,0 +1,282 @@
+
+Titles:
+Another online pharmacy bypasses the FDA to offer cut-rate weight loss drugs
+She sold her bathwater — PayPal took her profits
+Scarlett Johansson told OpenAI not to use her voice — and she’s not happy they might have anyway
+Apple needs to explain that bug that resurfaced deleted photos
+OpenAI is ‘in conversations’ with Scarlett Johansson over the ChatGPT voice that sounds just like her
+Intel’s going inside AI PCs, too — its Lunar Lake chip is coming later this year
+Samsung’s first Copilot Plus PC comes with a free TV
+The latest 13-inch MacBook Air has dropped to a new all-time low
+A first look at Microsoft’s new Surface Pro with Arm chips inside
+Inside Microsoft’s mission to take down the MacBook Air
+Microsoft Surface event: the 6 biggest announcements
+Asus’ first Copilot Plus PC is the Vivobook S 15
+Apple’s new iPhone update fixes a bug that resurfaced deleted nudes
+Google thinks the public sector can do better than Microsoft’s ‘security failures’
+Dell is releasing five Qualcomm Snapdragon laptops this year
+Lenovo is releasing two Qualcomm-powered laptops this summer
+HP is simplifying its laptop lineup and embracing the AI PC
+Acer is adding a Copilot Plus PC to its Swift lineup
+Google plans to reuse heat after expanding a data center for AI
+Microsoft’s new Surface Pro gets an OLED display for the first time
+The new, faster Surface Pro is Microsoft’s all-purpose AI PC
+Microsoft announces an Arm-powered Surface Laptop
+Recall is Microsoft’s key to unlocking the future of PCs
+Microsoft announces Copilot Plus PCs with built-in AI hardware
+Scarlett Johansson says OpenAI ripped off her voice after she said the company can't use it
+Microsoft announces new PCs with AI chips from Qualcomm
+In biometric 'breakthrough' year, you may soon start paying with your face
+New York AG announces $2 billion settlement with crypto lender Genesis
+OpenAI pulls ChatGPT AI voice that sounded like Scarlett Johansson
+Grayscale CEO Michael Sonnenshein steps down, Goldman exec to take his place
+Shares of Hims & Hers Health surge 27% after startup says it will offer GLP-1 injections
+Britain expands AI institute to San Francisco amid scrutiny over shortcomings
+Travel startup Navan on track to hit profitability this year and close to IPO
+Musk launches SpaceX’s Starlink internet services in Indonesia
+Microsoft set to unveil its vision for AI PCs at Build developer conference
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+
+
+The Verge
+Another online pharmacy bypasses the FDA to offer cut-rate weight loss drugs
+She sold her bathwater — PayPal took her profits
+Scarlett Johansson told OpenAI not to use her voice — and she’s not happy they might have anyway
+Apple needs to explain that bug that resurfaced deleted photos
+OpenAI is ‘in conversations’ with Scarlett Johansson over the ChatGPT voice that sounds just like her
+Intel’s going inside AI PCs, too — its Lunar Lake chip is coming later this year
+Samsung’s first Copilot Plus PC comes with a free TV
+The latest 13-inch MacBook Air has dropped to a new all-time low
+A first look at Microsoft’s new Surface Pro with Arm chips inside
+Inside Microsoft’s mission to take down the MacBook Air
+Microsoft Surface event: the 6 biggest announcements
+Asus’ first Copilot Plus PC is the Vivobook S 15
+Apple’s new iPhone update fixes a bug that resurfaced deleted nudes
+Google thinks the public sector can do better than Microsoft’s ‘security failures’
+Dell is releasing five Qualcomm Snapdragon laptops this year
+Lenovo is releasing two Qualcomm-powered laptops this summer
+HP is simplifying its laptop lineup and embracing the AI PC
+Acer is adding a Copilot Plus PC to its Swift lineup
+Google plans to reuse heat after expanding a data center for AI
+Microsoft’s new Surface Pro gets an OLED display for the first time
+The new, faster Surface Pro is Microsoft’s all-purpose AI PC
+Microsoft announces an Arm-powered Surface Laptop
+Recall is Microsoft’s key to unlocking the future of PCs
+Microsoft announces Copilot Plus PCs with built-in AI hardware
+
+CNBC Tech
+Scarlett Johansson says OpenAI ripped off her voice after she said the company can't use it
+Microsoft announces new PCs with AI chips from Qualcomm
+In biometric 'breakthrough' year, you may soon start paying with your face
+New York AG announces $2 billion settlement with crypto lender Genesis
+OpenAI pulls ChatGPT AI voice that sounded like Scarlett Johansson
+Grayscale CEO Michael Sonnenshein steps down, Goldman exec to take his place
+Shares of Hims & Hers Health surge 27% after startup says it will offer GLP-1 injections
+Britain expands AI institute to San Francisco amid scrutiny over shortcomings
+Travel startup Navan on track to hit profitability this year and close to IPO
+Musk launches SpaceX’s Starlink internet services in Indonesia
+Microsoft set to unveil its vision for AI PCs at Build developer conference
+
+Top News:
+scarlett johansson says openai ripped off her voice after she said the company can't use it
+microsoft announces new pcs with ai chips from qualcomm 
+musk launches spacex’s starlink internet services in indonesia
+shares of hims & hers health surge 27% after startup says it will offer glp-1 injections
+new york ag announces $2 billion settlement with crypto lender genesis
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E and Monday May 20), and replace CNBC techcheck briefing to 'AI briefing' 
+ "title0:
+Scarlett Johansson says OpenAI ripped off her voice
+description0:
+ROME, ITALY - NOVEMBER 10: Actress Scarlett Johansson attends 'Her' Premiere during The 8th Rome Film Festival at Auditorium Parco Della Musica on November 10, 2013 in Rome, Italy. (Photo by Vittorio Zunino Celotto/Getty Images)
+Actress Scarlett Johansson says OpenAI CEO Sam Altman used a voice similar to hers for its artificial intelligence voice software despite her decline of his invitation.
+The response comes after OpenAI said it would pull its ChatGPT AI voice dubbed "Sky", which launched last week and created controversy for sounding like Johansson's voice in the movie "Her."
+Johansson said Altman approached her last September and then again two days before it announced ChatGPT-4o on May 13. Johansson played the voice character in the film "Her" about a man who forms a relationship with a virtual artificial intelligence named Samantha.
+"After much consideration and for personal reasons, I declined the offer," Johansson said in a statement to CNBC. "Nine months later, my friends, family and the general public all noted how much the newest system named 'Sky' sounded like me."
+Altman tweeted the message "her" on the day OpenAI announced its new AI.
+"When I heard the released demo, I was shocked, angered and in disbelief that Mr. Altman would pursue a voice that sounded so eerily similar to mine that my closest friends and news outlets could not tell the difference," Johansson's statement continued. "Mr. Altman even insinuated that the similarity was intentional, tweeting a single word "her"
+The actress wrote Monday that she has hired legal counsel. Johansson has sparred with large companies like Disney in the past. In 2021, Johansson and Walt Disney settled the breach of contract lawsuit the "Black Widow" actor brought against the studio.
+"We've heard questions about how we chose the voices in ChatGPT, especially Sky," Microsoft-backed OpenAI posted on X on Monday.
+"Sky's voice is not an imitation of Scarlett Johansson but belongs to a different professional actress using her own natural speaking voice," the company wrote in a blog post on Sunday. "To protect their privacy, we cannot share the names of our voice talents."
+Johansson said she wrote two letters to Altman and OpenAI, asking them to detail the process of creating Sky.
+"In a time when we are all grappling with deepfakes and the protection of our own likeness, our own work, our own identities, I believe these are questions that deserve absolute clarity," her statement says. "I look forward to resolution in the form of transparency and the passage of appropriate legislation to help ensure that individual rights are protected."
+OpenAI didn't immediately respond to a request for comment on Johansson's statement.
+Here is Scarlett Johansson's full statement:
+"Last September, I received an offer from Sam Altman, who wanted to hire me to voice the current ChatGPT 4.0 system. He told me that he felt that by my voicing the system, I could bridge the gap between tech companies and creatives and help consumers to feel comfortable with the seismic shift concerning humans and AI. He said he felt that my voice would be comforting to people.
+After much consideration and for personal reasons, I declined the offer. Nine months later, my friends, family and the general public all noted how much the newest system named "Sky" sounded like me.
+When I heard the released demo, I was shocked, angered and in disbelief that Mr. Altman would pursue a voice that sounded so eerily similar to mine that my closest friends and news outlets could not tell the difference. Mr. Altman even insinuated that the similarity was intentional, tweeting a single word "her" - a reference to the film in which I voiced a chat system, Samantha, who forms an intimate relationship with a human.
+Two days before the ChatGPT 4.0 demo was released, Mr. Altman contacted my agent, asking me to reconsider. Before we could connect, the system was out there
+As a result of their actions, I was forced to hire legal counsel, who wrote two letters to Mr. Altman and OpenAI, setting out what they had done and asking them to detail the exact process by which they created the "Sky" voice. Consequently, OpenAI reluctantly agreed to take down the "Sky" voice.
+In a time when we are all grappling with deepfakes and the protection of our own likeness, our own work, our own identities, I believe these are questions that deserve absolute clarity. I look forward to resolution in the form of transparency and the passage of appropriate legislation to help ensure that individual rights are protected."
+
+title1:
+Microsoft announces new PCs with AI chips from Qualcomm
+description1:
+Microsoft Chairman and Chief Executive Officer Satya Nadella speaks during the Microsoft May 20 Briefing event at Microsoft in Redmond, Washington, on May 20, 2024.
+Microsoft is touting new computers with advanced chips designed to run artificial intelligence features of software for Windows, without quickly using up battery life.
+The company on Monday announced a Surface Laptop and a Surface Pro tablet with a Qualcomm chip that can run some AI tasks without an internet connection. Other computer makers like Lenovo, Dell, HP, Asus, Acer and Samsung are also launching AI-ready PCs powered by Qualcomm's Snapdragon X Elite and X Plus processors, which promise longer battery life and will run Microsoft's Copilot AI chatbot.
+Device makers will release PCs with AMD and Intel chips that will adhere to the Copilot+ standard at a later time, Microsoft said during a press keynote address on its campus in Redmond, Washington. The PCs will be able to translate audio, recommend responses to incoming messages and suggest changes in the Settings app, and even talk with people about what's on screen.
+Copilot+ PCs will start at $999. Microsoft is accepting pre-orders as of Monday, and the devices will become available in June.
+A Recall feature will be able to search through a log of previous actions on PCs. Recall relies on AI models that run directly on the device, so it can run offline, and an index of the data never goes to remote servers. AI models will be able to generate images based on written descriptions as well as drawings.
+Microsoft is banking on Qualcomm's energy-efficient Arm -based chips that can handle AI models to defend its Windows franchise. Apple has gained market share in PC shipments with MacBooks containing its Arm-based chips, having moved away from Intel , the top provider of computer processors.
+Microsoft is expanding its effort to surround consumers and business users with ChatGPT-like capabilities. OpenAI, backed by Microsoft, released the ChatGPT chatbot in late 2022, and it took off as a tool for quickly obtaining computer-generated poems, email drafts and summaries of historical events.
+Other large technology companies, including Microsoft, soon started augmenting their products with generative AI. A Copilot chatbot drawing on ChatGPT's underlying AI models came to the Bing search engine, along with the Windows 10 and 11 operating systems. Those with Office productivity software subscriptions could pay extra to have a Copilot refer to their documents for written responses.
+The GPT-4 model inside ChatGPT has only done its necessary computing work in Microsoft's Azure cloud. The new PCs can run some AI models locally without an internet connection.
+The launch comes nearly four months after Microsoft CEO Satya Nadella told analysts on the company's earnings call that "in 2024, AI will become a first-class part of every PC."
+Microsoft has had little success in getting people to adopt Arm-based Windows computers, which haven't always performed as well as PCs running Intel or AMD chips. Certain applications have been incompatible.
+Running generative AI locally means computers will need more power, and strong battery life becomes more critical. That might make Windows on Arm more compelling.
+Analysts with Morgan Stanley expect Arm systems to be 14% of all Windows PC shipments in 2026, up from 0% in 2023, according to a note distributed to clients earlier this month.
+Microsoft shares closed up 1.2% Monday afternoon to $425.34, just shy of a record reached in March. Qualcomm rose 2% to $197.76 for a record close.
+
+title2:
+Musk launches SpaceX’s Starlink internet services in Indonesia
+description2:
+Tech billionaire Elon Musk (2nd L) speaks next to Indonesia's Health Minister Budi Gunadi Sadikin (L) during a ceremony held to inaugurate satellite unit Starlink at a community health center in Denpasar on Indonesia's resort island of Bali on May 19, 2024. Musk launched on May 19 his Starlink service on Indonesia's resort island of Bali as the country aims to extend internet to its remote areas. Millions of people in Indonesia, a vast archipelago of more than 17,000 islands, are not currently hooked up to reliable internet services. (Photo by SONNY TUMBELAKA / AFP) (Photo by SONNY TUMBELAKA/AFP via Getty Images)
+Elon Musk has launched SpaceX's Starlink satellite internet services in Indonesia as the Southeast Asian nation seeks to boost internet connectivity in remote areas.
+The inauguration took place at a community health center in Bali on Sunday, with the SpaceX founder telling local media he was "very excited" to bring internet services to areas with limited or no connectivity and that internet connectivity can be "a life-saver to remote medical clinics."
+"It is really important to emphasize the importance of internet connectivity and how much of a life-changer and a life-saver it can be," Musk told local media on Sunday.
+SpaceX, which manufactures and launches advanced rockets and spacecraft, is also a developer of Starlink satellites which provide internet connectivity to remote locations. Starlink is already available in Southeast Asia in Malaysia and the Philippines.
+Indonesia, the world's largest archipelago with more than 17,000 islands, faces an urban-rural connectivity divide where millions of people living in rural areas have limited or no access to internet services.
+Communication and Informatics Minister Budi Arie Setiadi previously said Starlink would help Indonesia extend internet access to regions not covered by local internet providers, according to Indonesian news agency Antara.
+
+title3:
+Hims & Hers weight loss adds compounded GLP-1 injections
+description3:
+Digital pharmacy startup Hims & Hers Health is introducing access to compounded GLP-1 weight loss injections, the company announced Monday.
+Shares of the company closed up more than 27% Monday.
+The company, which offers a range of direct-to-consumer treatments for conditions like erectile dysfunction and hair loss, launched a weight loss program in December. But GLP-1 medications — such as Ozempic and Wegovy, which have skyrocketed in popularity — were not previously offered as part of that program.
+Customers can access the compounded GLP-1 medications via a prescription from a licensed health-care provider on the Hims & Hers platform. Hims & Hers said it plans to make branded GLP-1 medications available to its customers once supply is consistently available.
+The company's oral medication kits start at $79 a month, and its compounded GLP-1 injections will start at $199 a month.
+Even before it added compounded GLP-1s to its portfolio, Hims & Hers said in its fourth-quarter earnings report that it expects its weight loss program to bring in more than $100 million in revenue by the end of 2025. The company plans to offer updated guidance in its next earnings report.
+The GLP-1 market, dominated so far by pharmaceutical giant Novo Nordisk , has faced supply constraints in recent months as the drugs get expanded approval from health regulators and increased health coverage.
+GLP-1s mimic a hormone produced in the gut to tamp down a person's appetite and regulate their blood sugar. When those medications are in shortage, certain manufacturers can prepare a compounded version if they meet U.S. Food and Drug Administration requirements.
+The FDA does not review the safety and efficacy of compounded products, which are custom-made alternatives to brand drugs designed to meet a specific patient's needs.
+In a January release, the FDA said patients should not use a compounded GLP-1 drug if an approved drug, such as Wegovy, is available.
+Hims & Hers CEO Andrew Dudum told CNBC that the company is "confident" that customers will be able to access a consistent supply of the compounded medications.
+Dudum said Hims & Hers has spent the last year learning about the GLP-1 supply chain and has partnered with one of the largest generic manufacturers in the country that has FDA oversight.
+"We have a certain degree of exclusivity with that facility that will guarantee our consumers consistent volume and supply," he said.
+
+title4:
+New York AG announces $2 billion settlement with crypto lender Genesis
+description4:
+New York Attorney General Letitia James is settling with crypto lender Genesis for $2 billion to repay defrauded investors.
+The company, once a business at the heart of Digital Currency Group, was among the multiple casualties in the industry contagion set off by the collapse of FTX. The firm filed for Chapter 11 bankruptcy protection in January 2023.
+"This historic settlement is a major step toward ensuring the victims who invested in Genesis have a semblance of justice," said James of the deal, which is the largest against a crypto firm in the state's history.
+"Once again, we see the real-world consequences and detrimental losses that can happen because of a lack of oversight and regulation within the cryptocurrency industry," James added.
+In October, James sued DCG, its Genesis subsidiary, and Gemini Trust, claiming that the two misled investors about the Gemini Earn program, leading to more than $1 billion in losses. The lawsuit was broadened in February, alleging that DCG and Genesis defrauded additional investors out of more than $2 billion.
+Despite a legal challenge brought by parent company DCG, a bankruptcy court approved the lender's Chapter 11 repayment plan, which included the settlement between James' office and Genesis.
+Genesis neither admits nor denies allegations detailed in the lawsuit, and the arrangement notably excludes Gemini.
+The settlement bars Genesis from operating in New York. The settlement also established a fund for victims comprising at least 29,000 New York residents who collectively gave more than $1.1 billion to Genesis through its Gemini Earn product.
+The Securities and Exchange Commission also filed suit against Genesis and its one-time partner, Gemini, over the unregistered offering and sale of securities. The bankruptcy court has also approved a separate settlement that ends this complaint.
+The restructuring plan includes a repayment plan for customers who have had tokens frozen on the platform since withdrawals were halted in November 2022.
+This fund will receive assets remaining in Genesis's estate after initial bankruptcy distributions to creditors are made. According to the state attorney's office, if those creditors are not made whole based on present digital asset values, the fund will receive up to $2 billion from Genesis' remaining assets."
+
+Response:
+
+Script:
+i'm wall-e, and this is your ai briefing for monday, may 20th.
+
+actress scarlett johansson has accused openai of using a voice similar to hers for its ai voice software, despite declining an invitation from ceo sam altman. openai launched a chatgpt ai voice dubbed "sky" last week, which stirred controversy for sounding like johansson's voice in the movie "her." johansson is now pursuing legal action, stating, “in a time when we are all grappling with deepfakes and the protection of our own likeness, we need absolute clarity."
+
+microsoft announced new computers with ai chips from qualcomm, emphasizing that the devices can perform ai tasks without quickly depleting battery life. the new surface laptop and surface pro tablets feature qualcomm's snapdragon x elite and x plus processors, able to run ai models locally. priced starting at $999, these pcs promise longer battery life and are available for pre-order now.
+
+in other news, elon musk has launched spacex’s starlink internet services in indonesia, aiming to extend internet access to remote areas of the vast archipelago. the service was inaugurated at a community health center in bali, highlighting the transformative potential of reliable internet connectivity for rural medical clinics and communities.
+
+digital pharmacy startup hims & hers is introducing access to compounded glp-1 weight loss injections, causing a significant jump in their stock price. the company’s new offering allows customers to access these injections via prescription, with prices starting at $199 a month. hims & hers anticipates that its weight loss program will generate substantial revenue by the end of 2025.
+
+lastly, new york attorney general letitia james has announced a $2 billion settlement with crypto lender genesis. this settlement aims to repay defrauded investors following the company’s chapter 11 bankruptcy filing in january 2023. the deal, which is the largest of its kind in new york's history, seeks to provide justice to victims impacted by the collapse of ftx and other industry fallout.
+
+that's all for today. we'll see you back here tomorrow
+
+Polished Script:
+i'm wall-e, welcoming you to today's tech briefing for monday, may 20.
+
+actress scarlett johansson has accused openai of using a voice similar to hers for its ai voice software. despite declining an invitation from ceo sam altman, openai launched a chatgpt ai voice dubbed "sky" last week, which stirred controversy for sounding remarkably like johansson's voice in the movie "her." johansson is now pursuing legal action, stating, "in a time when we are all grappling with deepfakes and the protection of our own likeness, we need absolute clarity."
+
+microsoft unveiled new computers equipped with ai chips from qualcomm. these devices can perform ai tasks without quickly depleting battery life. the new surface laptop and surface pro tablets feature qualcomm's snapdragon x elite and x plus processors, capable of running ai models locally. starting at $999, these pcs promise longer battery life and are now available for pre-order.
+
+elon musk has launched spacex’s starlink internet services in indonesia, aiming to extend internet access to remote areas of the vast archipelago. the service was inaugurated at a community health center in bali, highlighting the transformative potential of reliable internet connectivity for rural medical clinics and communities.
+
+digital pharmacy startup hims & hers is introducing access to compounded glp-1 weight loss injections, causing a significant jump in their stock price. the company's new offering allows customers to access these injections via prescription, with prices starting at $199 a month. hims & hers anticipates that its weight loss program will generate substantial revenue by the end of 2025.
+
+lastly, new york attorney general letitia james announced a $2 billion settlement with crypto lender genesis. this settlement aims to repay defrauded investors following the company’s chapter 11 bankruptcy filing in january 2023. the deal is the largest of its kind in new york's history and seeks to provide justice to victims impacted by the collapse of ftx and other industry fallout.
+
+that's all for today. we'll see you back here tomorrow
+
+Podcast Title:
+EP-24: Scarlett johansson vs. openai 🎭, Microsoft's ai-powered pcs 💻, Elon musk expands starlink in indonesia 🌏
+
+Podcast Description:
+title: tech briefing - monday, may 20
+
+join wall-e for today's tech briefing covering the latest headlines:
+
+- scarlett johansson accuses openai of using a voice similar to hers for its ai software, "sky," potentially paving the way for legal action.
+- microsoft's new surface devices are equipped with qualcomm ai chips, promising enhanced ai capabilities and longer battery life, starting at $999.
+- elon musk's spacex launches starlink internet services in indonesia to bring connectivity to remote areas, beginning with a health center in bali.
+- digital pharmacy startup hims & hers introduces access to glp-1 weight loss injections via prescription, significantly boosting their stock price.
+- new york attorney general letitia james secures a $2 billion settlement with crypto lender genesis to repay defrauded investors after the company's bankruptcy.
+
+stay tuned for tomorrow's updates
+
+Polished Script (Spanish):
+soy wall-e, y este es tu ai briefing para el lunes 20 de mayo. scarlett johansson dice que openai plagió su voz. la actriz ha expresado su indignación después de que openai lanzó su voz de ia "sky", que sonaba muy similar a la voz de johansson en la película "her". según johansson, rechazó la oferta de openai el año pasado para usar su voz. johansson ha contratado asesoría legal y pide que openai detalle el proceso de creación de "sky." openai ha dicho que "sky" no es una imitación de johansson, sino que pertenece a otra actriz profesional.
+
+microsoft ha anunciado nuevos pcs con chips de inteligencia artificial de qualcomm. los nuevos equipos, incluyendo un surface laptop y una surface pro, podrán ejecutar tareas de ia sin conexión a internet, lo que promete mejoras en la duración de la batería. estos dispositivos empezarán a venderse en junio con precios desde $999.
+
+elon musk ha lanzado los servicios de internet starlink de spacex en indonesia. este movimiento tiene como objetivo mejorar la conectividad en áreas remotas del país. musk enfatizó la importancia de la conectividad a internet en clínicas médicas alejadas, calificándola como un cambio de vida y un salvavidas.
+
+hims & hers, la startup de farmacia digital, está introduciendo inyecciones de pérdida de peso glp-1 compuestas. la compañía espera que su programa de pérdida de peso genere más de $100 millones en ingresos para el final de 2025. las acciones de la empresa subieron más del 27% el lunes.
+
+la fiscal general de nueva york, letitia james, ha anunciado un acuerdo de $2 mil millones con el prestamista de criptomonedas genesis para reembolsar a los inversores defraudados. genesis, que solicitó la protección por bancarrota en enero de 2023, ha acordado un plan de reestructuración que incluye este histórico acuerdo.
+
+eso es todo por hoy. nos vemos de nuevo mañana
+
+Podcast Title (Spanish):
+EP-24 🎙️ Robo de Voz de Scarlett Johansson 🎥, Pcs Con Ia de Microsoft 💻, Starlink de Elon Musk en Indonesia 🌍
+
+Podcast Description (Spanish):
+descripción:
+
+- scarlett johansson acusa a openai de plagiar su voz con la ia "sky", exige detalles sobre el proceso de creación.
+- microsoft presenta nuevos pcs con chips de inteligencia artificial de qualcomm, disponibles en junio y desde $999.
+- elon musk lanza servicios de internet starlink en indonesia, mejorando la conectividad en áreas remotas del país.
+- hims & hers introduce inyecciones de pérdida de peso glp-1, con expectativas de generar más de $100 millones en ingresos para fines de 2025.
+- la fiscal general de nueva york, letitia james, anuncia un acuerdo de $2 mil millones con genesis para reembolsar a los inversores defraudados.
+
+¡eso es todo por hoy! nos vemos de nuevo mañana
+
+Polished Script (Chinese):
+你好，我是wall-e，欢迎来到2024年5月20日的《ai简报》。今天我们关注以下几条科技新闻：
+
+首先，女演员斯嘉丽·约翰逊指责openai“侵权”使用她的声音。斯嘉丽·约翰逊称openai首席执行官sam altman在她拒绝提供声音服务后，仍然发布了一个与她声音非常相似的ai语音软件“sky”。虽然openai回应称，“sky”并非模仿约翰逊的声音，而是来自另一位专业女演员，但约翰逊已经聘请了法律顾问，并要求公开详细的语音制作过程。
+
+接下来，微软宣布推出搭载高通ai芯片的新款pc。这些新设备包括surface laptop和surface pro平板电脑，能够在无需互联网连接的情况下运行某些ai任务。微软表示，将有更多品牌推出搭载这些高效芯片的ai-ready pc，起售价为999美元，并将在6月发布。此举旨在延长电池寿命，并优化运行生成式ai功能的性能。
+
+埃隆·马斯克在印度尼西亚推出了spacex的starlink卫星互联网服务。这项服务旨在为该国偏远地区提供互联网连接，首站在巴厘岛的一个社区卫生中心。马斯克表示，互联网连接在偏远医疗诊所中可能是“救命神器”。这一举措有望缩小印尼城乡之间的数字鸿沟。
+
+数字药房初创公司hims & hers health宣布推出复方glp-1注射减肥产品。公司表示，这些复方药物可通过平台上的持牌医疗服务提供者获取，起价为每月199美元。该公司在四季度财报中预计，到2025年，减肥项目将带来超过1亿美元的收入。
+
+最后，纽约州总检察长宣布与加密货币借贷机构genesis达成20亿美元的和解协议，用于偿还被骗的投资者。genesis在2023年1月申请了第11章破产保护，曾是digital currency group的核心业务之一。新的和解协议禁止genesis在纽约开展业务，并设立赔偿基金，为约29,000名投资者提供经济补偿。
+
+以上是今天的主要新闻。我们明天再见。
+
+Podcast Title (Chinese):
+EP-24 斯嘉丽·约翰逊诉openai侵权 🎭, 微软发布ai芯片pc 💻, 马斯克starlink登陆印尼 🇮🇩
+
+Podcast Description (Chinese):
+欢迎收听2024年5月20日的《ai简报》。本期节目将为您带来以下科技新闻热点：
+
+- 女演员斯嘉丽·约翰逊指责openai“侵权”使用她的声音，并已聘请法律顾问。
+- 微软推出搭载高通ai芯片的新款pc，包括surface laptop和surface pro平板电脑，起售价为999美元，6月发布。
+- 埃隆·马斯克在印尼推出spacex的starlink卫星互联网服务，旨在缩小城乡数字鸿沟。
+- 数字药房初创公司hims & hers health推出复方glp-1注射减肥产品，起价为每月199美元，预计2025年带来超1亿美元收入。
+- 纽约州总检察长与加密货币借贷机构genesis达成20亿美元和解协议，用于赔偿约29,000名被骗的投资者。
+
+感谢收听《ai简报》，我们明天再见。
