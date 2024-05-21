@@ -1,4 +1,6 @@
 from datetime import datetime
+from datetime import datetime, timedelta
+
 
 def get_day_of_week(date):
     date_obj = datetime.strptime(date, '%Y-%m-%d')
@@ -14,7 +16,25 @@ def get_day_of_week(date):
 
     # Return the month, date, and day of the week in a tuple
     return [month_name, date_obj.day, day_of_week_name]
+
+def get_next_weekday(date):
+    date_obj = datetime.strptime(date, '%Y-%m-%d')
     
+    # If today is Friday (4), Saturday (5), or Sunday (6), add days to get to Monday (0)
+    if date_obj.weekday() >= 4:  
+        days_until_monday = 7 - date_obj.weekday()
+        next_weekday = date_obj + timedelta(days=days_until_monday)
+    else:
+        next_weekday = date_obj + timedelta(days=1)
+    
+    return next_weekday
+
+def get_upload_date(date):
+    next_weekday = get_next_weekday(date)
+    upload_datetime = next_weekday.replace(hour=5, minute=0, second=0, microsecond=0)
+    month_name, day, day_of_week_name = get_day_of_week(upload_datetime.strftime('%Y-%m-%d'))
+    unix_time = int(upload_datetime.timestamp())
+    return month_name, day, day_of_week_name, unix_time
 
 def spanish_title_case(text):
     # Words to keep in lowercase unless they are the first word
