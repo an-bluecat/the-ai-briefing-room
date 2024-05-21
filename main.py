@@ -26,9 +26,8 @@ MAX_RETRIES = 1
 RETRY_DELAY = 2  # seconds in case of retries
 PRODUCTION_MODE = True  # Set to True to enable audio file generation
 BGM_PATH = "assets/bgm.mp3"
-STATUS = "publish" # can change to draft for testing
+STATUS = "draft" # can change to draft for testing
 TYPE = "public"
-
 
 
 class NewsPodcastOrchestrator:
