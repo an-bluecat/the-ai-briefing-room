@@ -13,6 +13,7 @@ from utils.addMusic import add_bgm
 from utils.utils import spanish_title_case, english_title_case, get_day_of_week
 import sys
 from newsLetter.newsletter import send_newsletter, extract_podcast_description, format_newsletter
+from utils.uploadPodbean import upload_podcast_episode
 
 # Setup basic configuration for logging
 logging.basicConfig(level=logging.INFO,
@@ -25,6 +26,8 @@ MAX_RETRIES = 1
 RETRY_DELAY = 2  # seconds in case of retries
 PRODUCTION_MODE = True  # Set to True to enable audio file generation
 BGM_PATH = "assets/bgm.mp3"
+STATUS = "publish" # can change to draft for testing
+TYPE = "public"
 
 
 
@@ -163,7 +166,21 @@ refined podcast script:
             output_response_prompt = f"Output the Description in {language}."
 
         input_ask = f"""
-            Generate a description for this podcast. Summarize topics discussed. This will be the script we use for the podcast description on Apple Podcast. So please be concise, use bullet point when possible. Please use plain text, no markdown.
+            Generate a description for this podcast. Summarize topics discussed. This will be the script we use for the podcast description on Apple Podcast. So please be concise, use bullet point when possible. Please only output html, nothing else.
+            
+            Example:
+            <p>welcome to wall-e's tech briefing for monday, may 20th! dive into today's top tech stories:</p>
+            <ul>
+            <li><strong>microsoft build conference highlights:</strong> introduction of copilot+ pcs with dedicated npus for enhanced ai experiences, revamped surface devices with impressive battery life and new display technology.</li>
+            <li><strong>surface refresh:</strong> new surface laptop with up to 22 hours of battery life and wi-fi 7, plus a surface pro featuring an oled hdr display and optional 5g connectivity.</li>
+            <li><strong>scarlett johansson & chatgpt controversy:</strong> actress scarlett johansson reveals unsettling similarities between her voice and openai’s new ai voice feature "sky," sparking a legal inquiry.</li>
+            <li><strong>qualcomm’s snapdragon x elite processors:</strong> launch of new pcs equipped with these ai-driven processors focused on energy efficiency and enhanced ai performance.</li>
+            <li><strong>seekout layoffs:</strong> the recruiting startup lays off 30% of its workforce amid financial challenges, marking its second round of layoffs in less than a year.</li>
+            <li><strong>google engage sdk:</strong> announced at google i/o 2024, this feature aims to increase user engagement by allowing developers to highlight content and deals within installed apps.</li>
+            </ul>
+
+            <p>stay tuned for tomorrow's tech updates!</p>
+            
             Here's the podcast script:
             "
             {script}
@@ -174,39 +191,6 @@ refined podcast script:
 
         return self.ask_gpt(input_ask)
 
-    # depricated since azure api is not working
-    '''
-    def generate_speech(self, script, output_path):
-
-        azure_api_key = os.getenv('AZURE_OPENAI_API_KEY')
-        azure_endpoint = os.getenv('AZURE_OPENAI_ENDPOINT')
-
-        # Your deployment name
-        deployment_name = 'podcast_tts'
-
-        # URL for the request
-        url = f"{azure_endpoint}/openai/deployments/{deployment_name}/audio/speech?api-version=2024-02-15-preview"
-
-        # Headers and data payload
-        headers = {
-            "api-key": azure_api_key,
-            "Content-Type": "application/json"
-        }
-        data = {
-            "model": "tts-1-hd",
-            "input": script,
-            "voice": "alloy"
-        }
-
-        # Sending POST request
-        response = requests.post(url, headers=headers, json=data)
-
-        # Saving the response content to a file
-        with open(output_path, 'wb') as file:
-            file.write(response.content)
-
-        print(f"Audio file saved as {output_path}")
-    '''
     def text_to_speech(self, script, output_path, language='English'):
         """ Converts the generated script to speech and saves the audio file. Now supports multiple languages. """
 
@@ -247,7 +231,7 @@ refined podcast script:
         output_response_prompt = ""
         if language:
             output_response_prompt = f"Output the Title in {language}."
-        input_ask = "Generate a title for this podcast. Include three key topics (if there are many, choose the three most important ones). Incorporate emojis where appropriate. Pay attention to capitalization of titles. Follow the style of titles such as: Tesla Showcases FSD Demo 🚗, Adam Neuman's WeWork Bid 💰, CSV Conundrums 🖥️,Anthropic’s $4B Amazon Boost 💰, Brex's Valuation Leap to $12B 💳, Strategies for Success ✨,The OpenAI Voice Revolution 🗣️, AI Safety Measures 🦺, LLMs Go Mobile 📱. Here's the transcript excerpt: " + transcript + "\n" + output_response_prompt + "\nTitle:"
+        input_ask = "Generate a title for this podcast. Must include three key topics (if there are many, choose the three most important ones). Incorporate emojis where appropriate. Pay attention to capitalization of titles. Follow the style of titles such as: Tesla Showcases FSD Demo 🚗, Adam Neuman's WeWork Bid 💰, CSV Conundrums 🖥️,Anthropic’s $4B Amazon Boost 💰, Brex's Valuation Leap to $12B 💳, Strategies for Success ✨,The OpenAI Voice Revolution 🗣️, AI Safety Measures 🦺, LLMs Go Mobile 📱. Here's the transcript excerpt: " + transcript + "\n" + output_response_prompt + "\nTitle:"
         return self.ask_gpt(input_ask)
 
 
@@ -263,11 +247,10 @@ if __name__ == "__main__":
     # Load environment variables from .env file
     load_dotenv()
 
+    CLIENT_ID = os.getenv("PODBEAN_CLIENT_ID")
+    CLIENT_SECRET = os.getenv("PODBEAN_CLIENT_SECRET")
     api_key = os.getenv('OPENAI_API_KEY')
-    # api_key = os.getenv('AZURE_OPENAI_API_KEY')
-    print(api_key)
     today = datetime.date.today()
-   # today = datetime.date(2024, 4, 28)
     today_date = today.strftime('%Y-%m-%d')
 
     if len(sys.argv) > 1:
@@ -303,39 +286,9 @@ if __name__ == "__main__":
         podcast_title = episode_number + \
             english_title_case(
                 orchestrator.generate_podcast_title(polished_script))
-        TRANSLATE = False
-        if TRANSLATE:
-            # Translate the polished script, description, and title to Spanish and Chinese
-            spanish_script = orchestrator.translate_text(
-                polished_script, "Spanish")
-            spanish_description = orchestrator.translate_text(
-                podcast_description, "Spanish")
-            spanish_title = episode_number + spanish_title_case(orchestrator.translate_text(
-                podcast_title, "Spanish"))
-
-            chinese_script = orchestrator.translate_text(
-                polished_script, "Chinese")
-            chinese_description = orchestrator.translate_text(
-                podcast_description, "Chinese")
-            chinese_title = episode_number + orchestrator.translate_text(
-                podcast_title, "Chinese")
-        else:
-            _, spanish_script = orchestrator.generate_podcast_script(
-                news_concat, language="Spanish")
-            _, chinese_script = orchestrator.generate_podcast_script(
-                news_concat, language="Chinese")
-            spanish_description = orchestrator.generate_podcast_description(
-                spanish_script, language="Spanish")
-            chinese_description = orchestrator.generate_podcast_description(
-                chinese_script, language="Chinese")
-            spanish_title = episode_number + spanish_title_case(orchestrator.generate_podcast_title(
-                spanish_script, language="Spanish"))
-            chinese_title = episode_number + orchestrator.generate_podcast_title(
-                chinese_script, language="Chinese")
-
             # Text to Speech for each language, including the original English
         if PRODUCTION_MODE:
-            for language, cur_script in [('English', polished_script), ('Spanish', spanish_script), ('Chinese', chinese_script)]:
+            for language, cur_script in [('English', polished_script)]:
                 print(f"Generating podcast in {language}...")
                 audio_file_path = orchestrator.text_to_speech(
                     cur_script, output_directory, language)
@@ -370,24 +323,6 @@ Podcast Title:
 
 Podcast Description:
 {podcast_description}
-
-Polished Script (Spanish):
-{spanish_script}
-
-Podcast Title (Spanish):
-{spanish_title}
-
-Podcast Description (Spanish):
-{spanish_description}
-
-Polished Script (Chinese):
-{chinese_script}
-
-Podcast Title (Chinese):
-{chinese_title}
-
-Podcast Description (Chinese):
-{chinese_description}
 """
             output_file_path = f"{output_directory}podcast_data.txt"
             # Write the output data to the file
@@ -396,8 +331,11 @@ Podcast Description (Chinese):
                 logging.info(f"All data saved to {output_file_path}.")
 
             # Send the newsletter
-            title, content = format_newsletter(extract_podcast_description(content=output_data))
-            send_newsletter(content, title, use_sheet=True)
+         #   title, content = format_newsletter(extract_podcast_description(content=output_data))
+         #   send_newsletter(content, title, use_sheet=True)
+
+            file_path = f"{output_directory}English_final_podcast.mp3"
+            upload_podcast_episode(CLIENT_ID, CLIENT_SECRET, file_path, podcast_title, podcast_description, STATUS, TYPE, episode_prefix)
 
         else:
             logging.error("Failed to generate podcast script or title.")

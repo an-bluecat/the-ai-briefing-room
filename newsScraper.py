@@ -67,14 +67,18 @@ def scrape_cnbctech(current_date):
     return articles
 
 
+
 def scrape_techcrunch(current_date):
     url = 'https://techcrunch.com/'
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
-    items = soup.find_all('h2', class_='post-block__title') + \
-        soup.find_all('h3', class_='mini-view__item__title')
-    articles = [[item.text.strip(), item.a['href']]
-                for item in items if is_today(item.a['href'], current_date)]
+    data_links = soup.find_all('a', attrs={'data-destinationlink': True})
+    
+    # Debugging: print the number of data_links found
+   # print(f"Number of data links found: {len(data_links)}")
+    
+    # Extract the href attributes and text of these links
+    articles = [[link.text.strip(), link['href']] for link in data_links if is_today(link['href'], current_date) and len(link.text.strip()) > 0]
     return articles
 
 
