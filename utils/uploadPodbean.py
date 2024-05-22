@@ -14,7 +14,7 @@ STATUS = "draft"
 TYPE = "public"
 FILE_NAME = "output/2024-05-16/English_final_podcast.mp3"
 
-def upload_podcast_episode(client_id, client_secret, file_name, title, content, status, type_, episode_number=None):
+def upload_podcast_episode(client_id, client_secret, file_name, title, content, status, type_, episode_number=None, publish_timestamp=None):
     # Step 1: Obtain OAuth token
     def get_oauth_token(client_id, client_secret):
         url = 'https://api.podbean.com/v1/oauth/token'
@@ -76,7 +76,7 @@ def upload_podcast_episode(client_id, client_secret, file_name, title, content, 
             return False
 
     # Step 5: Publish episode
-    def publish_episode(access_token, title, content, status, type_, media_key, episode_number=None):
+    def publish_episode(access_token, title, content, status, type_, media_key, episode_number=None, publish_timestamp=None):
         url = 'https://api.podbean.com/v1/episodes'
         headers = {
             'User-Agent': USER_AGENT,
@@ -88,8 +88,11 @@ def upload_podcast_episode(client_id, client_secret, file_name, title, content, 
             'status': status,
             'type': type_,
             'media_key': media_key,
-            'episode_number':  episode_number
+            'episode_number':  episode_number,
+            'publish_timestamp': publish_timestamp
         }
+        
+        print("Publishing Episode:", data)
 
         response = requests.post(url, headers=headers, data=data)
 
@@ -108,10 +111,10 @@ def upload_podcast_episode(client_id, client_secret, file_name, title, content, 
         presigned_url, media_key = get_upload_authorization(access_token, file_name)
         if presigned_url and media_key:
             if upload_file_to_presigned_url(presigned_url, file_name):
-                publish_episode(access_token, title, content, status, type_, media_key)
+                publish_episode(access_token, title, content, status, type_, media_key, episode_number, publish_timestamp)
 
 if __name__ == '__main__':
     CLIENT_ID = os.getenv("PODBEAN_CLIENT_ID")
     CLIENT_SECRET = os.getenv("PODBEAN_CLIENT_SECRET")
     
-    upload_podcast_episode(CLIENT_ID, CLIENT_SECRET, FILE_NAME, TITLE, CONTENT, STATUS, TYPE, 24)
+    upload_podcast_episode(CLIENT_ID, CLIENT_SECRET, FILE_NAME, TITLE, CONTENT, STATUS, TYPE, 24, 1670000000)

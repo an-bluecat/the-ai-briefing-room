@@ -4,7 +4,6 @@ on:
   #schedule:
    # - cron: '0 22 * * *' # This cron expression means "every day at 10 PM UTC"
   workflow_dispatch: # Allows manual triggering
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,5 +23,9 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run script
+        env:
+          PODBEAN_CLIENT_ID: ${{ secrets.PODBEAN_CLIENT_ID }}
+          PODBEAN_CLIENT_SECRET: ${{ secrets.PODBEAN_CLIENT_SECRET }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python upload.py

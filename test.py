@@ -1,10 +1,13 @@
-from newsScraper import scrape_cnbctech, is_today
+from newsScraper import scrape_cnbctech, is_today, scrape_verge, scrape_techcrunch
 from datetime import datetime
 import requests
 from bs4 import BeautifulSoup
 import re
+import datetime
+from utils.utils import get_day_of_week, get_next_weekday, get_upload_date, spanish_title_case, english_title_case
 
-current_dat = datetime.now().date()
+today =   datetime.date.today()
+
 
 def test_scrape_cnbctech():
     url = 'https://techcrunch.com/'
@@ -20,6 +23,5 @@ def test_scrape_cnbctech():
     print(articles)
     return articles
 
-   
-   
-test_scrape_cnbctech()
+
+print(get_upload_date('2024-05-21'))

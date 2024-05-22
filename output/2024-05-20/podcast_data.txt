@@ -1,0 +1,300 @@
+
+Titles:
+Another online pharmacy bypasses the FDA to offer cut-rate weight loss drugs
+She sold her bathwater — PayPal took her profits
+Scarlett Johansson told OpenAI not to use her voice — and she’s not happy they might have anyway
+Apple needs to explain that bug that resurfaced deleted photos
+OpenAI is ‘in conversations’ with Scarlett Johansson over the ChatGPT voice that sounds just like her
+Intel’s going inside AI PCs, too — its Lunar Lake chip is coming later this year
+Samsung’s first Copilot Plus PC comes with a free TV
+The latest 13-inch MacBook Air has dropped to a new all-time low
+A first look at Microsoft’s new Surface Pro with Arm chips inside
+Inside Microsoft’s mission to take down the MacBook Air
+Microsoft Surface event: the 6 biggest announcements
+Asus’ first Copilot Plus PC is the Vivobook S 15
+Apple’s new iPhone update fixes a bug that resurfaced deleted nudes
+Google thinks the public sector can do better than Microsoft’s ‘security failures’
+Dell is releasing five Qualcomm Snapdragon laptops this year
+Lenovo is releasing two Qualcomm-powered laptops this summer
+HP is simplifying its laptop lineup and embracing the AI PC
+Acer is adding a Copilot Plus PC to its Swift lineup
+Google plans to reuse heat after expanding a data center for AI
+Microsoft’s new Surface Pro gets an OLED display for the first time
+The new, faster Surface Pro is Microsoft’s all-purpose AI PC
+Microsoft announces an Arm-powered Surface Laptop
+Recall is Microsoft’s key to unlocking the future of PCs
+Microsoft announces Copilot Plus PCs with built-in AI hardware
+Scarlett Johansson says OpenAI ripped off her voice after she said the company can't use it
+Microsoft announces new PCs with AI chips from Qualcomm
+In biometric 'breakthrough' year, you may soon start paying with your face
+New York AG announces $2 billion settlement with crypto lender Genesis
+OpenAI pulls ChatGPT AI voice that sounded like Scarlett Johansson
+Grayscale CEO Michael Sonnenshein steps down, Goldman exec to take his place
+Shares of Hims & Hers Health surge 27% after startup says it will offer GLP-1 injections
+Britain expands AI institute to San Francisco amid scrutiny over shortcomings
+Travel startup Navan on track to hit profitability this year and close to IPO
+Musk launches SpaceX’s Starlink internet services in Indonesia
+Microsoft set to unveil its vision for AI PCs at Build developer conference
+Microsoft wants to make Windows an AI operating system, launches Copilot+ PCs
+Google is launching a new Android feature to drive users back into their installed apps
+NYC-Dublin real-time video portal reopens with some fixes to prevent inappropriate behavior
+Scarlett Johansson says that OpenAI approached her to use her voice
+SeekOut, a recruiting startup last valued at $1.2 billion, lays off 30% of its workforce
+Microsoft wants to make Windows an AI operating system, launches Copilot+ PCs
+Scarlett Johansson says that OpenAI approached her to use her voice
+TechCrunch Space: Star(side)liner
+These 81 robotics companies are hiring
+VinFast crash that killed family of four now under federal investigation
+NYC-Dublin real-time video portal reopens with some fixes to prevent inappropriate behavior
+Contour Venture Partners, an early investor in Datadog and Movable Ink, lowers the target for its fifth fund
+Meta’s Oversight Board takes its first Threads case
+SeekOut, a recruiting startup last valued at $1.2 billion, lays off 30% of its workforce
+UK’s autonomous vehicle legislation becomes law, paving the way for first driverless cars by 2026
+ChatGPT: Everything you need to know about the AI-powered chatbot
+Fintech lender SoLo Funds is being sued again by the government over its lending practices
+Disrupt Audience Choice vote closes Friday
+Rollup wants to be the hardware engineer’s workhorse
+Google is launching a new Android feature to drive users back into their installed apps
+Jolla debuts privacy-focused AI hardware
+ChatGPT’s mobile app revenue saw its biggest spike yet following GPT-4o launch
+Bumble buys community building app Geneva to expand further into friendships
+
+top_news_prompt: Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.             Here are the news of today:
+TechCrunch
+Microsoft wants to make Windows an AI operating system, launches Copilot+ PCs
+Google is launching a new Android feature to drive users back into their installed apps
+NYC-Dublin real-time video portal reopens with some fixes to prevent inappropriate behavior
+Scarlett Johansson says that OpenAI approached her to use her voice
+SeekOut, a recruiting startup last valued at $1.2 billion, lays off 30% of its workforce
+Microsoft wants to make Windows an AI operating system, launches Copilot+ PCs
+Scarlett Johansson says that OpenAI approached her to use her voice
+TechCrunch Space: Star(side)liner
+These 81 robotics companies are hiring
+VinFast crash that killed family of four now under federal investigation
+NYC-Dublin real-time video portal reopens with some fixes to prevent inappropriate behavior
+Contour Venture Partners, an early investor in Datadog and Movable Ink, lowers the target for its fifth fund
+Meta’s Oversight Board takes its first Threads case
+SeekOut, a recruiting startup last valued at $1.2 billion, lays off 30% of its workforce
+UK’s autonomous vehicle legislation becomes law, paving the way for first driverless cars by 2026
+ChatGPT: Everything you need to know about the AI-powered chatbot
+Fintech lender SoLo Funds is being sued again by the government over its lending practices
+Disrupt Audience Choice vote closes Friday
+Rollup wants to be the hardware engineer’s workhorse
+Google is launching a new Android feature to drive users back into their installed apps
+Jolla debuts privacy-focused AI hardware
+ChatGPT’s mobile app revenue saw its biggest spike yet following GPT-4o launch
+Bumble buys community building app Geneva to expand further into friendships
+
+The Verge
+Another online pharmacy bypasses the FDA to offer cut-rate weight loss drugs
+She sold her bathwater — PayPal took her profits
+Scarlett Johansson told OpenAI not to use her voice — and she’s not happy they might have anyway
+Apple needs to explain that bug that resurfaced deleted photos
+OpenAI is ‘in conversations’ with Scarlett Johansson over the ChatGPT voice that sounds just like her
+Intel’s going inside AI PCs, too — its Lunar Lake chip is coming later this year
+Samsung’s first Copilot Plus PC comes with a free TV
+The latest 13-inch MacBook Air has dropped to a new all-time low
+A first look at Microsoft’s new Surface Pro with Arm chips inside
+Inside Microsoft’s mission to take down the MacBook Air
+Microsoft Surface event: the 6 biggest announcements
+Asus’ first Copilot Plus PC is the Vivobook S 15
+Apple’s new iPhone update fixes a bug that resurfaced deleted nudes
+Google thinks the public sector can do better than Microsoft’s ‘security failures’
+Dell is releasing five Qualcomm Snapdragon laptops this year
+Lenovo is releasing two Qualcomm-powered laptops this summer
+HP is simplifying its laptop lineup and embracing the AI PC
+Acer is adding a Copilot Plus PC to its Swift lineup
+Google plans to reuse heat after expanding a data center for AI
+Microsoft’s new Surface Pro gets an OLED display for the first time
+The new, faster Surface Pro is Microsoft’s all-purpose AI PC
+Microsoft announces an Arm-powered Surface Laptop
+Recall is Microsoft’s key to unlocking the future of PCs
+Microsoft announces Copilot Plus PCs with built-in AI hardware
+
+CNBC Tech
+Scarlett Johansson says OpenAI ripped off her voice after she said the company can't use it
+Microsoft announces new PCs with AI chips from Qualcomm
+In biometric 'breakthrough' year, you may soon start paying with your face
+New York AG announces $2 billion settlement with crypto lender Genesis
+OpenAI pulls ChatGPT AI voice that sounded like Scarlett Johansson
+Grayscale CEO Michael Sonnenshein steps down, Goldman exec to take his place
+Shares of Hims & Hers Health surge 27% after startup says it will offer GLP-1 injections
+Britain expands AI institute to San Francisco amid scrutiny over shortcomings
+Travel startup Navan on track to hit profitability this year and close to IPO
+Musk launches SpaceX’s Starlink internet services in Indonesia
+Microsoft set to unveil its vision for AI PCs at Build developer conference
+
+Top News:
+microsoft wants to make windows an ai operating system, launches copilot+ pcs
+scarlett johansson says openai ripped off her voice after she said the company can't use it
+microsoft announces new pcs with ai chips from qualcomm
+microsoft surface event: the 6 biggest announcements
+in biometric 'breakthrough' year, you may soon start paying with your face
+
+Generate_script_prompt:
+
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing as an example.
+        Response: I'm Wall-E, and this is your CNBC techcheck Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
+        Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E and Monday May 20), and replace CNBC techcheck briefing to 'AI briefing' 
+ "title0:
+Microsoft wants to make Windows an AI operating system, launches Copilot+ PCs
+description0:
+Microsoft wants to bring generative AI to the forefront of Windows — and the PCs running it.
+At a keynote ahead of its annual Build developer conference this week, the company unveiled a new lineup of Windows machines it’s calling Copilot+ PCs, plus generative AI-powered features like Recall, which helps users find apps, files and other content they’ve viewed in the past. Copilot, Microsoft’s brand of generative AI, will soon be far more deeply integrated into the Windows 11 experience. And new Microsoft Surface devices are on the way.
+We’ve rounded up all the major announcements here.
+Copilot+ PCs
+Image Credits: Microsoft
+Copilot+ PCs are Microsoft’s vision of AI-first, flagship Windows hardware. All include dedicated chips called NPUs to power AI experiences like Recall. And they ship with 16GB of RAM minimum, paired with SSD storage.
+The first Copilot+ PCs will pack Qualcomm’s Snapdragon X Elite and Plus chips, which Microsoft claims delivers up to 15 hours of web browsing and 20 hours of video battery life. Chipmakers Intel and AMD are also committed to building processors for Copilot+ devices in partnership with a range of manufacturers, including Acer, Asus, Dell, HP, Lenovo and Samsung.
+Copilot+ PCs start at $999, and some are available for preorder today.
+Surface Pro and Surface Laptop
+Microsoft’s newly unveiled Surface devices, the Surface Laptop and Surface Pro, focus on performance and battery.
+Image Credits: Microsoft
+The latest Surface Laptop — available with a 13.8- or 15-inch display — has been redesigned with “modern lines” and thinner screen bezels. It lasts up to 22 hours on a charge and is up to 86% faster than the Surface Laptop 5, the company says. It also supports Wi-Fi 7 and has a haptic feedback touchpad.
+Image Credits: Microsoft
+As for the new Surface Pro, Microsoft says it’s up to 90% faster than the previous-gen Surface Pro (the Surface Pro 9), and it sports a new OLED with HDR display, Wi-Fi 7 (and optional 5G) and an upgraded ultrawide front-facing camera. Also, its detachable keyboard — which has been reinforced with additional carbon fiber — now has haptic feedback.
+Recall
+Windows 11’s forthcoming Recall feature can “remember” apps and content a user accessed on their PC weeks or even months ago, for example helping them to find a Discord chat where they were discussing clothes they were considering buying. Users can use Recall’s timeline to “scroll back” to see what they were working on in the recent past and drill down in files like PowerPoint presentations to surface info potentially relevant to their searches.
+Microsoft says that Recall can create associations between colors, images and more to let users search for practically anything on their PCs in natural language (not dissimilar to startup Rewind’s tech). And the company claims that all user data associated with Recall is kept private and on-device — and not used to train AI models, importantly.
+Here’s more from Microsoft: “Your snapshots are yours; they stay locally on your PC. You can delete individual snapshots, adjust and delete ranges of time in Settings, or pause at any point right from the icon in the System Tray on your Taskbar. You can also filter apps and websites from ever being saved.”
+Image editing and live translations
+There’s now more AI in Windows than ever and some of it exclusively on the new Copilot+ PCs.
+A new feature called Super Resolution can restore old photos by automatically upscaling them. And Copilot can now analyze images to give users ideas for creative compositions. Through a feature called Cocreator, users can generate images and also ask the AI model to follow what they’re drawing to change or restyle the image.
+Image Credits: Microsoft
+Elsewhere, Live Captions with live translations translates any audio that passes through a PC — whether from YouTube or a local file — into the language of the user’s choosing. Live translations will initially support around 40 languages including English, Spanish, Mandarin and Russian.
+Windows Copilot Runtime
+Powering capabilities such as Recall and Super Resolution is the Windows Copilot Runtime, a collection of ~40 generative AI models make up what Microsoft describes as “a new layer” of Windows. In tandem with the semantic index, a vector-based system local to an individual Copilot+ PC, the Windows Copilot Runtime allows generative AI-powered apps — including third-party apps — to run without necessarily needing an internet connection.
+Microsoft says that CapCut, the popular video editor from TikTok owner ByteDance, will use the Windows Copilot Runtime to speed up its AI features.
+We’re launching an AI newsletter! Sign up here to start receiving it in your inboxes on June 5.
+
+title1:
+Scarlett Johansson says OpenAI ripped off her voice
+description1:
+ROME, ITALY - NOVEMBER 10: Actor Scarlett Johansson attends 'Her' Premiere during The 8th Rome Film Festival at Auditorium Parco Della Musica on November 10, 2013 in Rome, Italy. (Photo by Vittorio Zunino Celotto/Getty Images)
+Actress Scarlett Johansson says OpenAI CEO Sam Altman used a voice similar to hers for its artificial intelligence voice software despite her decline of his invitation.
+The response comes after OpenAI said it would pull its ChatGPT AI voice dubbed "Sky", which launched last week and created controversy for sounding like Johansson's voice in the movie "Her."
+Johansson said Altman approached her last September and then again two days before it announced ChatGPT-4o on May 13. Johansson played the voice character in the film "Her" about a man who forms a relationship with a virtual artificial intelligence named Samantha.
+"After much consideration and for personal reasons, I declined the offer," Johansson said in a statement to CNBC. "Nine months later, my friends, family and the general public all noted how much the newest system named 'Sky' sounded like me."
+Altman tweeted the message "her" on the day OpenAI announced its new AI.
+"When I heard the released demo, I was shocked, angered and in disbelief that Mr. Altman would pursue a voice that sounded so eerily similar to mine that my closest friends and news outlets could not tell the difference," Johansson's statement continued. "Mr. Altman even insinuated that the similarity was intentional, tweeting a single word "her"
+The actress wrote Monday that she has hired legal counsel. Johansson has sparred with large companies like Disney in the past. In 2021, Johansson and Walt Disney settled the breach of contract lawsuit the "Black Widow" actor brought against the studio.
+"We've heard questions about how we chose the voices in ChatGPT, especially Sky," Microsoft-backed OpenAI posted on X on Monday.
+"Sky's voice is not an imitation of Scarlett Johansson but belongs to a different professional actress using her own natural speaking voice," the company wrote in a blog post on Sunday. "To protect their privacy, we cannot share the names of our voice talents."
+Johansson said she wrote two letters to Altman and OpenAI, asking them to detail the process of creating Sky.
+"In a time when we are all grappling with deepfakes and the protection of our own likeness, our own work, our own identities, I believe these are questions that deserve absolute clarity," her statement says. "I look forward to resolution in the form of transparency and the passage of appropriate legislation to help ensure that individual rights are protected."
+OpenAI didn't immediately respond to a request for comment on Johansson's statement.
+Here is Scarlett Johansson's full statement:
+"Last September, I received an offer from Sam Altman, who wanted to hire me to voice the current ChatGPT 4.0 system. He told me that he felt that by my voicing the system, I could bridge the gap between tech companies and creatives and help consumers to feel comfortable with the seismic shift concerning humans and AI. He said he felt that my voice would be comforting to people.
+After much consideration and for personal reasons, I declined the offer. Nine months later, my friends, family and the general public all noted how much the newest system named "Sky" sounded like me.
+When I heard the released demo, I was shocked, angered and in disbelief that Mr. Altman would pursue a voice that sounded so eerily similar to mine that my closest friends and news outlets could not tell the difference. Mr. Altman even insinuated that the similarity was intentional, tweeting a single word "her" - a reference to the film in which I voiced a chat system, Samantha, who forms an intimate relationship with a human.
+Two days before the ChatGPT 4.0 demo was released, Mr. Altman contacted my agent, asking me to reconsider. Before we could connect, the system was out there
+As a result of their actions, I was forced to hire legal counsel, who wrote two letters to Mr. Altman and OpenAI, setting out what they had done and asking them to detail the exact process by which they created the "Sky" voice. Consequently, OpenAI reluctantly agreed to take down the "Sky" voice.
+In a time when we are all grappling with deepfakes and the protection of our own likeness, our own work, our own identities, I believe these are questions that deserve absolute clarity. I look forward to resolution in the form of transparency and the passage of appropriate legislation to help ensure that individual rights are protected."
+
+title2:
+Microsoft announces new PCs with AI chips from Qualcomm
+description2:
+Microsoft Chairman and Chief Executive Officer Satya Nadella speaks during the Microsoft May 20 Briefing event at Microsoft in Redmond, Washington, on May 20, 2024.
+Microsoft is touting new computers with advanced chips designed to run artificial intelligence features of software for Windows, without quickly using up battery life.
+The company on Monday announced a Surface Laptop and a Surface Pro tablet with a Qualcomm chip that can run some AI tasks without an internet connection. Other computer makers like Lenovo, Dell, HP, Asus, Acer and Samsung are also launching AI-ready PCs powered by Qualcomm's Snapdragon X Elite and X Plus processors, which promise longer battery life and will run Microsoft's Copilot AI chatbot.
+Device makers will release PCs with AMD and Intel chips that will adhere to the Copilot+ standard at a later time, Microsoft said during a press keynote address on its campus in Redmond, Washington. The PCs will be able to translate audio, recommend responses to incoming messages and suggest changes in the Settings app, and even talk with people about what's on screen.
+Copilot+ PCs will start at $999. Microsoft is accepting pre-orders as of Monday, and the devices will become available in June.
+A Recall feature will be able to search through a log of previous actions on PCs. Recall relies on AI models that run directly on the device, so it can run offline, and an index of the data never goes to remote servers. AI models will be able to generate images based on written descriptions as well as drawings.
+Microsoft is banking on Qualcomm's energy-efficient Arm -based chips that can handle AI models to defend its Windows franchise. Apple has gained market share in PC shipments with MacBooks containing its Arm-based chips, having moved away from Intel , the top provider of computer processors.
+Microsoft is expanding its effort to surround consumers and business users with ChatGPT-like capabilities. OpenAI, backed by Microsoft, released the ChatGPT chatbot in late 2022, and it took off as a tool for quickly obtaining computer-generated poems, email drafts and summaries of historical events.
+Other large technology companies, including Microsoft, soon started augmenting their products with generative AI. A Copilot chatbot drawing on ChatGPT's underlying AI models came to the Bing search engine, along with the Windows 10 and 11 operating systems. Those with Office productivity software subscriptions could pay extra to have a Copilot refer to their documents for written responses.
+The GPT-4 model inside ChatGPT has only done its necessary computing work in Microsoft's Azure cloud. The new PCs can run some AI models locally without an internet connection.
+The launch comes nearly four months after Microsoft CEO Satya Nadella told analysts on the company's earnings call that "in 2024, AI will become a first-class part of every PC."
+Microsoft has had little success in getting people to adopt Arm-based Windows computers, which haven't always performed as well as PCs running Intel or AMD chips. Certain applications have been incompatible.
+Running generative AI locally means computers will need more power, and strong battery life becomes more critical. That might make Windows on Arm more compelling.
+Analysts with Morgan Stanley expect Arm systems to be 14% of all Windows PC shipments in 2026, up from 0% in 2023, according to a note distributed to clients earlier this month.
+Microsoft shares closed up 1.2% Monday afternoon to $425.34, just shy of a record reached in March. Qualcomm rose 2% to $197.76 for a record close.
+
+title3:
+Microsoft Surface event: the 6 biggest announcements
+description3:
+Microsoft just wrapped up its special event ahead of Build 2024, and it had a lot of exciting news to share. Along with updates to its Surface lineup, Microsoft made some major announcements related to AI and a new era of PCs in partnership with Lenovo, Asus, Dell, and others.
+Microsoft didn’t livestream this event, so if you want to catch up with everything it revealed, check out our roundup below.
+Image: Allison Johnson / The Verge
+Microsoft CEO Satya Nadella revealed how Microsoft is “bringing the AI wave to PCs,” and that involves a new category of computers called Copilot Plus. These devices come with the Arm-based Snapdragon X Elite and Plus processors from Qualcomm and will later feature Intel and AMD chips.
+The chips have neural processing units (NPUs) designed to power new AI features in Windows 11. As a result, Microsoft says Copilot Plus PCs are 58 percent faster than the M3 MacBook Air. In addition to Microsoft’s new Surface devices, Lenovo, Dell, Acer, Asus, and HP are launching Copilot Plus devices designed to support new AI features.
+Image: Allison Johnson / The Verge
+One of the major AI features available within Copilot Plus PCs is Recall. The new tool runs locally on your device and logs everything you do on your computer, allowing you to search for and retrieve the content you’ve interacted with. That makes it possible to uncover a conversation you’ve had in apps like Discord, or even a specific PowerPoint slide you were working on.
+New Copilot integrations within Windows 11
+Image: Allison Johnson
+Microsoft is bringing Copilot to more areas of Windows 11. The AI assistant will be able to provide suggestions within the Settings menu, edit files within File Explorer, or write responses to notifications you receive.
+Copilot is also getting OpenAI’s new GPT-4o model, allowing the AI to answer questions based on what you see on your screen.
+Image: Allison Johnson / The Verge
+Microsoft’s new Surface Pro — sans model number — swaps out the last-gen’s Intel Core Ultra processor for Snapdragon X Elite and Plus chips from Qualcomm. It’s up to 90 percent faster than the previous Surface Pro, and it comes with the option for an OLED display panel for the first time.
+The 13-inch Surface Pro starts at $999.99 and is available in four colors, including blue, beige, black, and platinum. It’s compatible with a new Surface Pro Flex Keyboard that works when attached or detached from the device.
+Image: Allison Johnson / The Verge
+Microsoft also announced the new Surface Laptop, which similarly offers the AI-ready Snapdragon X Elite and Plus chips. The device features a refreshed design with thinner bezels and a haptic touchpad. Microsoft says the device is more than 80 percent faster than its previous generation and offers up to 22 hours of local video playback.
+The Surface Laptop 6 comes in 13.8- and 15-inch display options, starting at $999.99. It also comes in blue, beige, black, and platinum.
+Adobe, Davinci Resolve, Capcut, and more are coming to Copilot Plus PCs
+Photo: Allison Johnson / The Verge
+
+title4:
+In biometric 'breakthrough' year, you may soon pay with your face
+description4:
+Automated fast food restaurant CaliExpress by Flippy, in Pasadena, Calif., opened in January to considerable hype due to its robot burger makers, but the restaurant launched with another, less heralded innovation: the ability to pay for your meal with your face.
+CaliExpress uses a payment system from facial ID tech company PopID. To activate it, users register with a selfie. Then they can opt to be recognized and then PopID's facial verification confirms the transaction.
+It's not the only fast-food chain to employ the technology. In January, Steak 'N Shake, a fast-casual restaurant in the Midwest, started installing facial recognition kiosks in its 300 locations for patron check-in. The chain says that using PopID takes two to three seconds compared with a check-in with a QR code or mobile app, which can take up to 20 seconds.
+Biometric payment options are becoming more common. Amazon introduced pay-by-palm technology in 2020, and while its cashier-less store experiment has faltered, it installed the tech in 500 of its Whole Foods stores last year. Mastercard, which is working with PopID, launched a pilot for face-based payments in Brazil back in 2022, and it was deemed a success — 76% of pilot participants said they would recommend the technology to a friend. Late last year, Mastercard said it was teaming with NEC to bring its Biometric Checkout Program to the Asia-Pacific region.
+"Our focus on biometrics as a secure way to verify identity, replacing the password with the person, is at the heart of our efforts in this area," said Dennis Gamiello, executive vice president of identity products and innovation at Mastercard. He added that based on positive feedback from the pilot and its research, the checkout technology will come to more new markets later this year.
+As stores implement biometric technology for a variety of purposes, from payments to broader anti-theft systems, consumer blowback, and lawsuits, are rising. In March, an Illinois woman sued retailer Target for allegedly illegally collecting and storing her and other customers' biometric data via facial recognition technology without their consent. Amazon and T-Mobile are also facing legal actions related to biometric technology.
+In other countries, most notably China, biometric payment systems are comparatively mature, from visitors to McDonald's in China being able to use facial recognition technology to pay for their orders, to systems offered by AliPay, which launched biometric payment as far back as 2015 and began testing the technology at KFC locations in China in 2018.
+A deal that PopID recently signed with JPMorgan is a sign of things to come in the U.S., said John Miller, PopID CEO, and what he thinks will be a "breakthrough" year for pay-by-face technology.
+The consumer case is tied to the growing importance of loyalty programs. Most quick-service restaurants require consumers to provide their loyalty information to earn rewards — which means pulling out a phone, opening an app, finding the link to the loyalty QR code, and then presenting the QR code to the cashier or reader. For payment, consumers are typically choosing between pulling out their wallet, selecting a credit card, and then dipping or tapping the card or pulling out their phone, opening it with Face ID, and then presenting it to the reader. Miller says PopID simplifies this process by requiring just tapping an on-screen button, and then looking briefly at a camera for both loyalty check-in and payment.
+"We believe our partnership with JPMorgan is a watershed moment for biometric payments as it represents the first time a leading merchant acquirer has agreed to push biometric payments to its merchant customers," Miller said. "JPMorgan brings the kind of credibility and assurance that both merchants and consumers need to adopt biometric payments."
+Consumers are getting more comfortable with biometric technology. The majority still prefer fingerprint scans to facial recognition, according to a 2023 survey from PYMENTS, but age is a factor. Gen Z consumers are more open to facial recognition than to fingerprint scans or entering a password.
+Juniper Research forecasts over 100% market growth for global biometric payments between 2024 and 2028, and by 2025, $3 trillion in mobile, biometric-secured payments.
+To be sure, security concerns and the hacking of biometric data as a consequence of sharing it, will remain important to the evolving usage and conversation.
+Sheldon Jacobson, a professor in computer science at the University of Illinois, Urbana-Champaign, said he sees biometric identification as part of a technology continuum that has evolved from payment with a credit card to smartphones. "The next natural step is to simply use facial recognition," he said.
+Concerns about privacy and facial recognition, he says, are overblown. "We voluntarily give up our privacy all the time," Jacobson said. "We post on Facebook, we use social media and we are basically giving up our privacy. I tell people constantly that everything about you is already out there.""
+
+Response:
+
+Script:
+i'm wall-e, and this is your ai briefing for monday, may 20th. let's dive into the latest in tech news!
+
+microsoft is making headlines by transforming windows into an ai-first operating system with the unveiling of copilot+ pcs. these new devices, which come with qualcomm's snapdragon x elite and plus chips, promise up to 15 hours of web browsing and 20 hours of video playback. the copilot+ pcs feature dedicated npus to power ai-driven features like recall, enabling users to find apps and files they’ve previously accessed. leading manufacturers like acer, asus, dell, hp, lenovo, and samsung are on board, with prices starting at $999. microsoft is already accepting pre-orders.
+
+in other news, scarlett johansson has accused openai of mimicking her voice for their chatgpt ai voice software, "sky," despite her declining their initial offer. johansson is considering legal action, pointing to the eerie similarity between sky and her voice from the movie "her." openai has since agreed to pull the sky voice amid growing concerns about deepfakes and digital impersonation. 
+
+microsoft isn't stopping there; they also introduced new surface devices. the revamped surface laptop and surface pro feature ai-powered snapdragon x elite and plus processors. the surface laptop boasts up to 22 hours of battery life and supports wi-fi 7, while the surface pro is up to 90% faster than its predecessor and features an oled hdr display along with enhanced camera capabilities.
+
+additionally, microsoft’s new recall feature on windows 11 can search for previously accessed content, creating a timeline that allows users to drill down through files and conversations. the ai technology driving these features will significantly enhance productivity and user experience.
+
+and lastly, facial recognition technology is about to revolutionize the way we pay. companies like caliexpress and steak 'n shake are rolling out facial id payment systems, and popid recently signed a deal with jpmorgan to push biometric payments to the mainstream. despite privacy concerns, these advancements are set to make transactions faster and more convenient.
+
+that’s it for today’s ai briefing. we’ll see you back here tomorrow. i'm wall-e, signing off
+
+Polished Script:
+i'm wall-e, welcoming you to today's tech briefing for monday, may 20. let's dive into the latest in tech news.
+
+microsoft is making headlines by transforming windows into an ai-first operating system with the unveiling of copilot+ pcs. these new devices, equipped with qualcomm's snapdragon x elite and plus chips, promise up to 15 hours of web browsing and 20 hours of video playback. the copilot+ pcs feature dedicated npus to power ai-driven features like recall, enabling users to find apps and files they’ve previously accessed. leading manufacturers like acer, asus, dell, hp, lenovo, and samsung are on board, with prices starting at $999. microsoft is already accepting pre-orders.
+
+in other news, scarlett johansson has accused openai of mimicking her voice for their chatgpt ai voice software, "sky," despite her declining their initial offer. johansson is considering legal action, pointing to the eerie similarity between sky and her voice from the movie "her." openai has since agreed to pull the sky voice amid growing concerns about deepfakes and digital impersonation.
+
+microsoft isn't stopping there. they also introduced new surface devices. the revamped surface laptop and surface pro feature ai-powered snapdragon x elite and plus processors. the surface laptop boasts up to 22 hours of battery life and supports wi-fi 7, while the surface pro is up to 90% faster than its predecessor and features an oled hdr display along with enhanced camera capabilities.
+
+additionally, microsoft’s new recall feature on windows 11 can search for previously accessed content, creating a timeline that allows users to drill down through files and conversations. the ai technology driving these features will significantly enhance productivity and user experience.
+
+and lastly, facial recognition technology is about to revolutionize the way we pay. companies like aliexpress and steak 'n shake are rolling out facial id payment systems, and popid recently signed a deal with jpmorgan to push biometric payments to the mainstream. despite privacy concerns, these advancements are set to make transactions faster and more convenient.
+
+that's all for today. we'll see you back here tomorrow. i'm wall-e, signing off
+
+Podcast Title:
+EP-24 Microsoft Unveils Ai-first Pcs 🤖, Scarlett Johansson Vs. Openai 🗣️, Facial Recognition Payments Revolutionize Transactions 💳
+
+Podcast Description:
+<p>welcome to wall-e's tech briefing for monday, may 20th! here are today's top tech stories:</p>
+<ul>
+<li><strong>microsoft unveils copilot+ pcs:</strong> introduction of ai-first operating systems with snapdragon x elite and plus chips, offering enhanced battery life and dedicated npus for advanced ai features.</li>
+<li><strong>scarlett johansson & chatgpt controversy:</strong> actress scarlett johansson considers legal action against openai for allegedly mimicking her voice in their "sky" ai voice feature.</li>
+<li><strong>new surface devices:</strong> microsoft’s surface laptop with up to 22 hours of battery life and wi-fi 7, along with the surface pro featuring an oled hdr display and ai-powered processors.</li>
+<li><strong>windows 11 recall feature:</strong> new functionality allowing users to search for previously accessed content, enhancing productivity and user experience.</li>
+<li><strong>facial recognition payments:</strong> integration of facial id payment systems by companies like aliexpress and steak 'n shake, with popid and jpmorgan promoting biometric payments, despite privacy concerns.</li>
+</ul>
+
+<p>stay tuned for tomorrow's tech updates!</p>
