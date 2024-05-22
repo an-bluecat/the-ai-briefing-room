@@ -10,10 +10,13 @@ from newsplease import NewsPlease
 import re
 import difflib
 from utils.addMusic import add_bgm
-from utils.utils import spanish_title_case, english_title_case, get_day_of_week
+from utils.utils import spanish_title_case, english_title_case, get_day_of_week, get_upload_date
 import sys
 from newsLetter.newsletter import send_newsletter, extract_podcast_description, format_newsletter
 from utils.uploadPodbean import upload_podcast_episode
+import json
+import pytz
+
 
 # Setup basic configuration for logging
 logging.basicConfig(level=logging.INFO,
@@ -26,8 +29,9 @@ MAX_RETRIES = 1
 RETRY_DELAY = 2  # seconds in case of retries
 PRODUCTION_MODE = True  # Set to True to enable audio file generation
 BGM_PATH = "assets/bgm.mp3"
-STATUS = "draft" # can change to draft for testing
+STATUS = "future" # can change to draft for testing
 TYPE = "public"
+pdt = pytz.timezone('America/Los_Angeles')
 
 
 class NewsPodcastOrchestrator:
@@ -82,10 +86,15 @@ class NewsPodcastOrchestrator:
         # get top news titles from the sources
         grouped_sources = scrape_and_group_by_source(self.date)
         formatted_text = format_grouped_titles_by_source(grouped_sources)
-        input_ask = "You are creating newsletters for audience. From the list of sources and their news, consider the frequency of the event being discussed and how interesting audience find them to be. Then, select the top 5 news events that you would include in the newsletter:\n\n" + \
-            "Grouped By Source:\n" + formatted_text
-        input_ask = "Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events. \
-            Here are the news of today:\n" + formatted_text
+       
+        input_ask = '''Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events. Also, exclude these news events talked about yesterday:
+                microsoft wants to make windows an ai operating system, launches copilot+ pcs
+                scarlett johansson says openai ripped off her voice after she said the company can't use it
+                microsoft announces new pcs with ai chips from qualcomm
+                microsoft surface event: the 6 biggest announcements
+                in biometric 'breakthrough' year, you may soon start paying with your face
+
+            Here are the news of today:\n''' + formatted_text
         role = "Output the response as string titles in the seperated by newline. Each title should be exactly how it is in the news source."
 
         output = self.ask_gpt(input_ask, role)
@@ -101,7 +110,7 @@ class NewsPodcastOrchestrator:
         Response: I'm Wall-E, and this is your CNBC techcheck Briefing for Monday April 29th. Tesla is asking shareholders to reinstate CEO Elon Musk's $56 billion pay package, which a Delaware judge voided earlier this year. The judge ruled that the record-setting compensation deal was, quote, deeply flawed. Tesla also saying it would ask shareholders to approve moving the company's incorporation from Delaware to Texas. The company has hired a proxy solicitor and plans to spend millions of dollars to help secure votes for the two proposals. Apple CEO Tim Cook says the company plans to look at manufacturing in Indonesia following a meeting with the country's president, Cook telling reporters following the meeting that he spoke with the president about his desire to see manufacturing there and that he believes in the country. The comments come as Apple is pushed to diversify its supply chain with more manufacturing outside of China in countries such as Vietnam and India. Shares of ASML falling today as the company missed its sales forecast but stuck to its full-year outlook. Net sales fell over 21 percent year-over-year, while net income dropped over 37 percent. ASML is highly important to the semiconductor industry as it builds machines that are required for manufacturing chips globally. Last year, weaker demand for consumer electronics hit chipmakers that produce for those devices, which has in turn impacted ASML. That's all for today. We'll see you back here tomorrow.
         """
 
-        month, day, day_of_week = get_day_of_week(self.date.strftime('%Y-%m-%d'))
+        month, day, day_of_week, _ = get_upload_date(self.date.strftime('%Y-%m-%d')) 
         intro_date = day_of_week + " " + month + " " + str(day)
 
         prompt = f"Prompt: Give a quick tech news update script in the style of CNBC techcheck briefing using the following news titles and content. Closely follow how CNBC techcheck chooses context to put into the script, the langauge style and sentence structure. Use the same beginning and ending(including mentioning host Wall-E and {intro_date}), and replace CNBC techcheck briefing to 'AI briefing' \n {news_concat}\n" + \
@@ -139,8 +148,7 @@ class NewsPodcastOrchestrator:
 
     def polish_podcast_script(self, script):
         """Polishes the podcast script using the GPT API."""
-
-        month, day, day_of_week = get_day_of_week(self.date.strftime('%Y-%m-%d'))
+        month, day, day_of_week, _ = get_upload_date(self.date.strftime('%Y-%m-%d')) 
         intro_date = day_of_week + " " + month + " " + str(day)
 
         # Make a request to the GPT API to polish the script
@@ -249,8 +257,13 @@ if __name__ == "__main__":
     CLIENT_ID = os.getenv("PODBEAN_CLIENT_ID")
     CLIENT_SECRET = os.getenv("PODBEAN_CLIENT_SECRET")
     api_key = os.getenv('OPENAI_API_KEY')
-    today = datetime.date.today()
+    
+    pdt_now = datetime.datetime.now(pdt)
+    today = pdt_now.date()
+   # today = datetime.date(2024, 5, 21)
     today_date = today.strftime('%Y-%m-%d')
+    
+    _,_,_, publish_unix = get_upload_date(today_date)
 
     if len(sys.argv) > 1:
         episode_prefix = sys.argv[1]
@@ -299,44 +312,33 @@ if __name__ == "__main__":
 
             # Prepare the output text data
             # output_data = f"Titles:\n{chr(10).join(titles)}\n\ntop_news_prompt: {top_news_prompt}\n\nTop News:\n{chr(10).join(top_news)}\n\nGenerate_scipt_prompt:\n{generate_script_prompt}\n\nScript:\n{script}\n\npolished_script:\n{polished_script}\n\nPodcast Title:\n{podcast_title}\n\npodcast_description:\n{podcast_description}\n"
-            output_data = f"""
-Titles:
-{chr(10).join(titles)}
+        
+        output_data = {
+            "Titles": titles,
+            "top_news_prompt": top_news_prompt,
+            "Top News": top_news,
+            "Generate_script_prompt": generate_script_prompt,
+            "Script": script,
+            "Polished Script": polished_script,
+            "Podcast Title": podcast_title,
+            "Podcast Description": podcast_description
+        }
 
-top_news_prompt: {top_news_prompt}
+        # Define the output file path
+        output_file_path = f"{output_directory}podcast_data.json"
 
-Top News:
-{chr(10).join(top_news)}
-
-Generate_script_prompt:
-{generate_script_prompt}
-
-Script:
-{script}
-
-Polished Script:
-{polished_script}
-
-Podcast Title:
-{podcast_title}
-
-Podcast Description:
-{podcast_description}
-"""
-            output_file_path = f"{output_directory}podcast_data.txt"
-            # Write the output data to the file
-            with open(output_file_path, 'w') as file:
-                file.write(output_data)
-                logging.info(f"All data saved to {output_file_path}.")
-
+        with open(output_file_path, 'w') as file:
+            json.dump(output_data, file, indent=4)
             # Send the newsletter
          #   title, content = format_newsletter(extract_podcast_description(content=output_data))
          #   send_newsletter(content, title, use_sheet=True)
 
-            file_path = f"{output_directory}English_final_podcast.mp3"
-            upload_podcast_episode(CLIENT_ID, CLIENT_SECRET, file_path, podcast_title, podcast_description, STATUS, TYPE, episode_prefix)
 
-        else:
-            logging.error("Failed to generate podcast script or title.")
+        file_path = f"{output_directory}English_final_podcast.mp3"
+        
+        print(publish_unix)
+        upload_podcast_episode(CLIENT_ID, CLIENT_SECRET, file_path, podcast_title, podcast_description, STATUS, TYPE, episode_prefix, publish_unix)
+
+      
     else:
         logging.error("Failed to identify top news.")

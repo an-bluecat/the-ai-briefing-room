@@ -1,6 +1,6 @@
 from datetime import datetime
 from datetime import datetime, timedelta
-
+import pytz
 
 def get_day_of_week(date):
     date_obj = datetime.strptime(date, '%Y-%m-%d')
@@ -30,10 +30,19 @@ def get_next_weekday(date):
     return next_weekday
 
 def get_upload_date(date):
+    pst = pytz.timezone('America/Los_Angeles')
     next_weekday = get_next_weekday(date)
+    
+    # Set the time to 5 AM PST
     upload_datetime = next_weekday.replace(hour=5, minute=0, second=0, microsecond=0)
-    month_name, day, day_of_week_name = get_day_of_week(upload_datetime.strftime('%Y-%m-%d'))
-    unix_time = int(upload_datetime.timestamp())
+    
+    # Localize to PST
+    upload_datetime_pst = pst.localize(upload_datetime)
+    
+    # Convert to Unix timestamp
+    unix_time = int(upload_datetime_pst.timestamp())
+    month_name, day, day_of_week_name = get_day_of_week(upload_datetime_pst.strftime('%Y-%m-%d'))
+    
     return month_name, day, day_of_week_name, unix_time
 
 def spanish_title_case(text):
