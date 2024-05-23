@@ -27,13 +27,6 @@ jobs:
           count=$(cat count.txt)
           echo "current_count=$count" >> $GITHUB_ENV
 
-      - name: Increment count
-        id: increment
-        run: |
-          new_count=$((current_count + 1))
-          echo $new_count > count.txt
-          echo "new_count=$new_count" >> $GITHUB_ENV
-
       - name: Commit and push count changes
         run: |
           git config --global user.name "github-actions[bot]"
@@ -56,6 +49,13 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python main.py ${{ env.new_count }}
+
+      - name: Increment count
+        id: increment
+        run: |
+          new_count=$((current_count + 1))
+          echo $new_count > count.txt
+          echo "new_count=$new_count" >> $GITHUB_ENV
 
       - name: Commit and push new files
         run: |
