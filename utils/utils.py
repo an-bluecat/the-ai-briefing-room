@@ -1,6 +1,9 @@
 from datetime import datetime
 from datetime import datetime, timedelta
 import pytz
+from PIL import Image
+import os
+
 
 def get_day_of_week(date):
     date_obj = datetime.strptime(date, '%Y-%m-%d')
@@ -68,3 +71,28 @@ def english_title_case(text):
         else:
             new_title.append(word.capitalize())
     return ' '.join(new_title)
+
+
+def compress_image_to_target_size(input_path, target_size_mb, initial_quality=85, step=5):
+    """
+    Compresses an image to ensure its size is below a target size in MB, overwriting the original image.
+
+    :param input_path: Path to the input image.
+    :param target_size_mb: Target size in MB.
+    :param initial_quality: Initial quality for compression.
+    :param step: Step to reduce quality in each iteration.
+    """
+    target_size_bytes = target_size_mb * 1024 * 1024
+    quality = initial_quality
+
+    with Image.open(input_path) as img:
+        while True:
+            img.save(input_path, 'JPEG', quality=quality)
+            output_size = os.path.getsize(input_path)
+            
+            if output_size <= target_size_bytes or quality <= step:
+                break
+
+            quality -= step
+            if quality <= 0:
+                raise ValueError("Cannot compress image to the desired size.")

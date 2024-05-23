@@ -10,12 +10,13 @@ from newsplease import NewsPlease
 import re
 import difflib
 from utils.addMusic import add_bgm
-from utils.utils import spanish_title_case, english_title_case, get_day_of_week, get_upload_date
+from utils.utils import spanish_title_case, english_title_case, get_day_of_week, get_upload_date, compress_image_to_target_size
 import sys
-from newsLetter.newsletter import send_newsletter, extract_podcast_description, format_newsletter
+#from newsLetter.newsletter import send_newsletter, extract_podcast_description, format_newsletter
 from utils.uploadPodbean import upload_podcast_episode
 import json
 import pytz
+import requests
 
 
 # Setup basic configuration for logging
@@ -29,7 +30,7 @@ MAX_RETRIES = 1
 RETRY_DELAY = 2  # seconds in case of retries
 PRODUCTION_MODE = True  # Set to True to enable audio file generation
 BGM_PATH = "assets/bgm.mp3"
-STATUS = "future" # can change to draft for testing
+STATUS = "draft" # can change to draft for testing
 TYPE = "public"
 pdt = pytz.timezone('America/Los_Angeles')
 
@@ -87,13 +88,7 @@ class NewsPodcastOrchestrator:
         grouped_sources = scrape_and_group_by_source(self.date)
         formatted_text = format_grouped_titles_by_source(grouped_sources)
        
-        input_ask = '''Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events. Also, exclude these news events talked about yesterday:
-                microsoft wants to make windows an ai operating system, launches copilot+ pcs
-                scarlett johansson says openai ripped off her voice after she said the company can't use it
-                microsoft announces new pcs with ai chips from qualcomm
-                microsoft surface event: the 6 biggest announcements
-                in biometric 'breakthrough' year, you may soon start paying with your face
-
+        input_ask = '''Suppose you are the chief editor at CNBC-TechCheck-Briefing. You need to select 5 most important news events to put into today's briefing(You might be able to see some hint by how many times a news event is reported, but also consider what your audience of CNBC-TechCheck-Briefing is interested in). Return the title of the event in order of importance for these unqiue events.
             Here are the news of today:\n''' + formatted_text
         role = "Output the response as string titles in the seperated by newline. Each title should be exactly how it is in the news source."
 
@@ -240,7 +235,45 @@ refined podcast script:
             output_response_prompt = f"Output the Title in {language}."
         input_ask = "Generate a title for this podcast. Must include three key topics (if there are many, choose the three most important ones). Incorporate emojis where appropriate. Pay attention to capitalization of titles. Follow the style of titles such as: Tesla Showcases FSD Demo 🚗, Adam Neuman's WeWork Bid 💰, CSV Conundrums 🖥️,Anthropic’s $4B Amazon Boost 💰, Brex's Valuation Leap to $12B 💳, Strategies for Success ✨,The OpenAI Voice Revolution 🗣️, AI Safety Measures 🦺, LLMs Go Mobile 📱. Here's the transcript excerpt: " + transcript + "\n" + output_response_prompt + "\nTitle:"
         return self.ask_gpt(input_ask)
+    
+    def generate_podcast_cover(self, titles, dir):
+        """ Genearted podcast cover art from the provided titles. """
+        
+        gpt_prompt = f'''
+        {titles}
+        Use these news titles, generate a description of image formed if I'm using these three titles to create a cover image for a podcast episode. I don't want any text in the image. 
+        Only output the description.
+        Example: 
+        A cover image with three main sections. On the left, a sleek, futuristic PC with the Microsoft logo and holographic elements showcases AI integration. On the right, an abstract representation of Scarlett Johansson and the OpenAI logo, suggesting a confrontation or debate with stylized silhouettes or digital avatars. At the bottom, a hand holding a smartphone with a facial recognition interface and payment confirmation screen, surrounded by symbols of digital transactions like credit card icons or currency symbols. The background features digital circuits, holographic effects, and vibrant colors.  
+        '''
+        image_prompt = self.ask_gpt(
+            input_ask=gpt_prompt,
+        )
+        
+        response = self.openai_client.images.generate(
+            model="dall-e-3",
+            prompt=image_prompt,
+            size="1024x1024",
+            quality="standard",
+            n=1,
+        )
+        
+        image_url = response.data[0].url
+        print(f"Generated image URL: {image_url}")
 
+        image_response = requests.get(image_url)
+
+        # Check if the request was successful
+        if image_response.status_code == 200:
+            with open(f'{dir}generated_image.jpeg', 'wb') as file:
+                file.write(image_response.content)
+            print("Image downloaded successfully!")
+            compress_image_to_target_size(f'{dir}generated_image.jpeg', 1)
+        else:
+            print("Failed to download the image")
+        
+        return image_prompt,f'{dir}generated_image.jpeg'
+                
 
 def remove_leading_numbers(lst):
     # This regular expression matches any leading numbers followed by a dot and any amount of whitespace
@@ -296,8 +329,9 @@ if __name__ == "__main__":
         podcast_description = orchestrator.generate_podcast_description(
             polished_script)
         podcast_title = episode_number + \
-            english_title_case(
-                orchestrator.generate_podcast_title(polished_script))
+                english_title_case(orchestrator.generate_podcast_title(polished_script))
+                
+        image_prompt, podcast_cover = orchestrator.generate_podcast_cover(podcast_title, output_directory)  
             # Text to Speech for each language, including the original English
         if PRODUCTION_MODE:
             for language, cur_script in [('English', polished_script)]:
@@ -309,6 +343,7 @@ if __name__ == "__main__":
                         f"Podcast in {language} completed successfully. Audio file at: {audio_file_path}")
                 else:
                     logging.error(f"Failed to generate {language} audio file.")
+                    
 
             # Prepare the output text data
             # output_data = f"Titles:\n{chr(10).join(titles)}\n\ntop_news_prompt: {top_news_prompt}\n\nTop News:\n{chr(10).join(top_news)}\n\nGenerate_scipt_prompt:\n{generate_script_prompt}\n\nScript:\n{script}\n\npolished_script:\n{polished_script}\n\nPodcast Title:\n{podcast_title}\n\npodcast_description:\n{podcast_description}\n"
@@ -321,7 +356,8 @@ if __name__ == "__main__":
             "Script": script,
             "Polished Script": polished_script,
             "Podcast Title": podcast_title,
-            "Podcast Description": podcast_description
+            "Podcast Description": podcast_description,
+            "Image Prompt": image_prompt,
         }
 
         # Define the output file path
@@ -336,8 +372,8 @@ if __name__ == "__main__":
 
         file_path = f"{output_directory}English_final_podcast.mp3"
         
-        print(publish_unix)
-        upload_podcast_episode(CLIENT_ID, CLIENT_SECRET, file_path, podcast_title, podcast_description, STATUS, TYPE, episode_prefix, publish_unix)
+       # print(publish_unix)
+        upload_podcast_episode(CLIENT_ID, CLIENT_SECRET, file_path, podcast_cover, podcast_title,podcast_description, STATUS, TYPE, episode_prefix, publish_unix)
 
       
     else:

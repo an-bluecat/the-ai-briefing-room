@@ -12,9 +12,11 @@ TITLE = "Good fdsday"  # title
 CONTENT = "Time you <b>enjoy</b> wasting, wdsfas not wasted."  # description
 STATUS = "draft"
 TYPE = "public"
-FILE_NAME = "output/2024-05-16/English_final_podcast.mp3"
+PODCAST_FILE_NAME = "output/2024-05-16/English_final_podcast.mp3"
+PODCAST_COVER_ART = "assets/sample.jpg"
 
-def upload_podcast_episode(client_id, client_secret, file_name, title, content, status, type_, episode_number=None, publish_timestamp=None):
+
+def upload_podcast_episode(client_id, client_secret, podcast_file_name, podcast_cover_art, title, content, status, type_, episode_number=None, publish_timestamp=None):
     # Step 1: Obtain OAuth token
     def get_oauth_token(client_id, client_secret):
         url = 'https://api.podbean.com/v1/oauth/token'
@@ -34,7 +36,7 @@ def upload_podcast_episode(client_id, client_secret, file_name, title, content, 
         return os.path.getsize(filename)
 
     # Step 3: Get upload authorization and presigned URL
-    def get_upload_authorization(access_token, filename):
+    def get_upload_authorization(access_token, filename, content_type='audio/mpeg'):
         url = 'https://api.podbean.com/v1/files/uploadAuthorize'
         
         absolute_path = os.path.abspath(filename)
@@ -49,7 +51,7 @@ def upload_podcast_episode(client_id, client_secret, file_name, title, content, 
             'access_token': access_token,
             'filename': os.path.basename(absolute_path),
             'filesize': filesize,
-            'content_type': 'audio/mpeg'
+            'content_type': content_type
         }
         headers = {'User-Agent': USER_AGENT}
 
@@ -64,19 +66,22 @@ def upload_podcast_episode(client_id, client_secret, file_name, title, content, 
             return None, None
 
     # Step 4: Upload file using presigned URL
-    def upload_file_to_presigned_url(presigned_url, filename):
-        headers = {'Content-Type': 'audio/mpeg'}
+    def upload_file_to_presigned_url(presigned_url, filename, content_type='audio/mpeg'):
+        if presigned_url is None:
+            print("Presigned URL is missing.")
+            return False
+        headers = {'Content-Type': content_type}
         with open(filename, 'rb') as f:
             response = requests.put(presigned_url, data=f, headers=headers)
         if response.status_code == 200:
-            print("File successfully uploaded.")
+            print(f"{content_type}: File successfully uploaded.")
             return True
         else:
-            print("Failed to upload file:", response.status_code, response.text)
+            print(f"{content_type}: Failed to upload file:", response.status_code, response.text)
             return False
 
     # Step 5: Publish episode
-    def publish_episode(access_token, title, content, status, type_, media_key, episode_number=None, publish_timestamp=None):
+    def publish_episode(access_token, title, content, status, type_, media_key, logo_key, episode_number=None, publish_timestamp=None):
         url = 'https://api.podbean.com/v1/episodes'
         headers = {
             'User-Agent': USER_AGENT,
@@ -88,6 +93,7 @@ def upload_podcast_episode(client_id, client_secret, file_name, title, content, 
             'status': status,
             'type': type_,
             'media_key': media_key,
+            'logo_key': logo_key,
             'episode_number':  episode_number,
             'publish_timestamp': publish_timestamp
         }
@@ -108,13 +114,20 @@ def upload_podcast_episode(client_id, client_secret, file_name, title, content, 
 
     access_token = get_oauth_token(client_id, client_secret)
     if access_token:
-        presigned_url, media_key = get_upload_authorization(access_token, file_name)
-        if presigned_url and media_key:
-            if upload_file_to_presigned_url(presigned_url, file_name):
-                publish_episode(access_token, title, content, status, type_, media_key, episode_number, publish_timestamp)
-
+        presigned_url, media_key = get_upload_authorization(access_token, podcast_file_name, content_type='audio/mpeg')
+        presigned_url2, logo_key = get_upload_authorization(access_token, podcast_cover_art, content_type='image/jpg')
+        
+        if presigned_url and media_key and presigned_url2 and logo_key:
+            if upload_file_to_presigned_url(presigned_url, podcast_file_name, content_type='audio/mpeg') and upload_file_to_presigned_url(presigned_url2, podcast_cover_art, content_type='image/jpg'):
+                publish_episode(access_token, title, content, status, type_, media_key,logo_key, episode_number, publish_timestamp)
+            else: 
+                print("Failed to upload file or get presigned URL.")
+        else:
+            print("Failed to upload file or get presigned URL.")
+            
+            
 if __name__ == '__main__':
     CLIENT_ID = os.getenv("PODBEAN_CLIENT_ID")
     CLIENT_SECRET = os.getenv("PODBEAN_CLIENT_SECRET")
     
-    upload_podcast_episode(CLIENT_ID, CLIENT_SECRET, FILE_NAME, TITLE, CONTENT, STATUS, TYPE, 24, 1670000000)
+    upload_podcast_episode(CLIENT_ID, CLIENT_SECRET, PODCAST_FILE_NAME,PODCAST_COVER_ART, TITLE, CONTENT, STATUS, TYPE, 24)
