@@ -4,6 +4,7 @@ on:
   #schedule:
    # - cron: '0 22 * * *' # This cron expression means "every day at 10 PM UTC"
   workflow_dispatch: # Allows manual triggering
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,6 +18,32 @@ jobs:
         with:
           python-version: '3.12.0' # Specify the Python version you need
 
+      - name: Read current count
+        id: read_count
+        run: |
+          if [ ! -f count.txt ]; then
+            echo "0" > count.txt
+          fi
+          count=$(cat count.txt)
+          echo "current_count=$count" >> $GITHUB_ENV
+
+      - name: Increment count
+        id: increment
+        run: |
+          new_count=$((current_count + 1))
+          echo $new_count > count.txt
+          echo "new_count=$new_count" >> $GITHUB_ENV
+
+      - name: Commit and push count changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add count.txt
+          git commit -m "Increment count to ${{ env.new_count }}"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -28,4 +55,14 @@ jobs:
           PODBEAN_CLIENT_SECRET: ${{ secrets.PODBEAN_CLIENT_SECRET }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          python upload.py
+          python upload.py ${{ env.new_count }}
+
+      - name: Commit and push new files
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Add new files created by upload script"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
