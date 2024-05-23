@@ -373,7 +373,7 @@ if __name__ == "__main__":
         file_path = f"{output_directory}English_final_podcast.mp3"
         
        # print(publish_unix)
-      #  upload_podcast_episode(CLIENT_ID, CLIENT_SECRET, file_path, podcast_cover, podcast_title,podcast_description, STATUS, TYPE, episode_prefix, publish_unix)
+        upload_podcast_episode(CLIENT_ID, CLIENT_SECRET, file_path, podcast_cover, podcast_title,podcast_description, STATUS, TYPE, episode_prefix, publish_unix)
 
       
     else:
