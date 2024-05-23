@@ -3,5 +3,4 @@
 .gitignore
 .env
 *.pyc
-*.json
 ai-briefing-room-key.json

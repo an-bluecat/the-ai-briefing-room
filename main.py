@@ -311,7 +311,7 @@ if __name__ == "__main__":
     titles = [x[0] for x in all_news]
     news_to_URL = {news[0].lower(): news[1] for news in all_news}
 
-    output_directory = f'./output/{today_date}/'
+    output_directory = f'output/{today_date}/'
     # add today as file path of output_directory
     os.makedirs(output_directory, exist_ok=True)
 
@@ -373,7 +373,7 @@ if __name__ == "__main__":
         file_path = f"{output_directory}English_final_podcast.mp3"
         
        # print(publish_unix)
-        upload_podcast_episode(CLIENT_ID, CLIENT_SECRET, file_path, podcast_cover, podcast_title,podcast_description, STATUS, TYPE, episode_prefix, publish_unix)
+      #  upload_podcast_episode(CLIENT_ID, CLIENT_SECRET, file_path, podcast_cover, podcast_title,podcast_description, STATUS, TYPE, episode_prefix, publish_unix)
 
       
     else:
