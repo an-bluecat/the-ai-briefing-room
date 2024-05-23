@@ -2,7 +2,7 @@ name: Upload Podcast
 
 on:
   schedule:
-    - cron: '0 6 * * 1-5' # This runs at 6 AM UTC, which is 10 PM PST the previous day, Monday to Friday
+    - cron: '0 4 * * 1-5' # This runs at 4 AM UTC, which is 8 PM PST the previous day, Monday to Friday
   workflow_dispatch: # Allows manual triggering
 
 jobs:
