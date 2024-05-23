@@ -55,7 +55,7 @@ jobs:
           PODBEAN_CLIENT_SECRET: ${{ secrets.PODBEAN_CLIENT_SECRET }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          python upload.py ${{ env.new_count }}
+          python main.py ${{ env.new_count }}
 
       - name: Commit and push new files
         run: |
