@@ -18,6 +18,9 @@ jobs:
         with:
           python-version: '3.12.0' # Specify the Python version you need
 
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
       - name: Read current count
         id: read_count
         run: |
