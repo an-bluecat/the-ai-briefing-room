@@ -33,7 +33,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Write Google Cloud Service Account Key
-      run: echo "${{ secrets.GOOGLE_KEY_JSON }}" > google-key.json
+      run: echo "${{ secrets.GOOGLE_KEY }}" > google-key.json
 
     - name: Run backend script
       run: python3 newsLetter/newsletter.py
