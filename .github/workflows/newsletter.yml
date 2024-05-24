@@ -33,7 +33,7 @@ jobs:
         pip install -r requirements.txt
 
     - name: Write Google Cloud Service Account Key
-      run: echo "${{ secrets.AI_BRIEFING_ROOM_KEY_JSON }}" > ai-briefing-room-key.json
+      run: echo "${{ secrets.GOOGLE_KEY_JSON }}" > google-key.json
 
     - name: Verify Google Cloud Service Account Key
       run: cat ai-briefing-room-key.json
@@ -43,4 +43,3 @@ jobs:
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         OPENAI_ORGANIZATION_ID: ${{ secrets.OPENAI_ORGANIZATION_ID }}
-        GOOGLE_APPLICATION_CREDENTIALS: ${{ github.workspace }}/ai-briefing-room-key.json
