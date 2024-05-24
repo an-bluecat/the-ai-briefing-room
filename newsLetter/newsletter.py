@@ -152,7 +152,7 @@ def send_email(subject:str, message:str, to_email, is_markdown=True)->None:
 
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587
-    smtp_username = 'aibriefingroom@gmail.com'
+    smtp_username = os.getenv("EMAIL")
     smtp_password = os.getenv("SMTP_PASSWORD")
 
     msg_root = MIMEMultipart('related')
