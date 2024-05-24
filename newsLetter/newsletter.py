@@ -238,13 +238,13 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 # Path to your downloaded service account key file
-SERVICE_ACCOUNT_FILE = 'google-key.json'
+SERVICE_ACCOUNT_INFO = json.loads(os.getenv('GOOGLE_KEY'))
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 def google_sheets_service():
     """Creates a Google Sheets service client using service account credentials."""
-    creds = service_account.Credentials.from_service_account_file(
-        SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+    creds = service_account.Credentials.from_service_account_info(
+        SERVICE_ACCOUNT_INFO, scopes=SCOPES)
     service = build('sheets', 'v4', credentials=creds)
     return service
 
@@ -266,7 +266,7 @@ def format_newsletter(content: str)->tuple[str, str]:
     return newsletter_content
 
 
-TEST = False
+TEST = True
 TEST_EMAIL = '1835928575qq@gmail.com'
 
 def send_newsletter(newsletter_content:str, title:str, use_sheet = True, test = False) -> None:
