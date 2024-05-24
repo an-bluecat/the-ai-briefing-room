@@ -49,6 +49,7 @@ joblib==1.4.0
 langdetect==1.0.9
 lxml==5.2.1
 lxml_html_clean==0.1.1
+Markdown==3.6
 news-please==1.5.44
 newspaper3k==0.2.8
 nltk==3.8.1
