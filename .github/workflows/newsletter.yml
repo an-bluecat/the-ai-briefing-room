@@ -32,11 +32,9 @@ jobs:
         python3 -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Write Google Cloud Service Account Key
-      run: echo "${{ secrets.GOOGLE_KEY }}" > google-key.json
-
     - name: Run backend script
       run: python3 newsLetter/newsletter.py
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         OPENAI_ORGANIZATION_ID: ${{ secrets.OPENAI_ORGANIZATION_ID }}
+        GOOGLE_KEY: ${{ secrets.GOOGLE_KEY }}
