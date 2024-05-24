@@ -252,7 +252,7 @@ def format_newsletter(content: str)->tuple[str, str]:
     # remove title and intro, and summary at the end
     # newsletter_content = "###" + "###".join(newsletter_content.split("###")[1:]).split("---")[0]
     # title = generate_newsletter_title(newsletter_content).content.lstrip("#")
-    newsletter_content += "Stay informed with Wall-E's tech updates, and see you back here tomorrow!\n\n---\n\n[🔊 Listen to the Full Podcast Episode Here](https://podcasters.spotify.com/pod/show/aibriefingroom)"
+    newsletter_content += "Stay informed with Wall-E's tech updates, and see you back here tomorrow!\n\n---\n\n[🔊 Listen to the Full Podcast Episode Here](https://aibriefingroom.podbean.com/)"
     return newsletter_content
 
 
