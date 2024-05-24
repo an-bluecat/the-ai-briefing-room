@@ -3,7 +3,7 @@ name: Send Newsletter
 on:
   schedule:
     # Run at 15:00 UTC every day, which is 7:00 AM PST
-    - cron: '0 15 * * 2-6'
+    - cron: '0 15 * * 1-5'
   workflow_dispatch:  # This allows manual triggering of the workflow
 
 jobs:

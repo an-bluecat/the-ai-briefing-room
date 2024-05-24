@@ -289,8 +289,9 @@ def send_newsletter(newsletter_content:str, subject:str, use_sheet = True, test 
             print(email)
 
 if __name__ == "__main__":
-    yesterday = datetime.now() - timedelta(days=1)
-    formatted_date = yesterday.strftime('%Y-%m-%d')
+
+    previous_day = datetime.now() - timedelta(days=3) if datetime.now().weekday() == 0 else datetime.now() - timedelta(days=1)
+    formatted_date = previous_day.strftime('%Y-%m-%d')
     # Path to your file, should keep it updated
     with open(root_dir / 'output' / formatted_date / 'podcast_data.json', 'r') as file:
         data = json.load(file)
