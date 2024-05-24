@@ -281,7 +281,10 @@ def send_newsletter(newsletter_content:str, title:str, use_sheet = True, test = 
 
     for email in subscribers:
         send_email(title, newsletter_content, email, is_markdown=True)
-        print(email)
+
+        # Only print the email if it is a test
+        if test:
+            print(email)
 
 if __name__ == "__main__":
     yesterday = datetime.now() - timedelta(days=1)
