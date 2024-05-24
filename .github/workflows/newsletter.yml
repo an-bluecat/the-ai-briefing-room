@@ -1,4 +1,4 @@
-name: Upload Newsletter
+name: Scheduled Job
 
 on:
   schedule:
@@ -34,3 +34,6 @@ jobs:
 
     - name: Run newsletter script
       run: python3 newsLetter/newsletter.py
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        OPENAI_ORGANIZATION_ID: ${{ secrets.OPENAI_ORGANIZATION_ID }}
