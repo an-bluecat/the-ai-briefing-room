@@ -168,7 +168,7 @@ refined podcast script:
             output_response_prompt = f"Output the Description in {language}."
 
         input_ask = f"""
-            Generate a description for this podcast. Summarize topics discussed. This will be the script we use for the podcast description on Apple Podcast. So please be concise, use bullet point when possible. Please only output html, nothing else.
+            Generate a description for this podcast. Summarize topics discussed. This will be the script we use for the podcast description on Apple Podcast. So please be concise, use bullet point when possible. Please only output html without the root element, nothing else.
             
             Example:
             <p>welcome to wall-e's tech briefing for monday, may 20th! dive into today's top tech stories:</p>
