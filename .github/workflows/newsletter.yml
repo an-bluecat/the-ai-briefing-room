@@ -35,9 +35,6 @@ jobs:
     - name: Write Google Cloud Service Account Key
       run: echo "${{ secrets.GOOGLE_KEY_JSON }}" > google-key.json
 
-    - name: Verify Google Cloud Service Account Key
-      run: cat ai-briefing-room-key.json
-
     - name: Run backend script
       run: python3 newsLetter/newsletter.py
       env:
