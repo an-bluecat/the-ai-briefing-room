@@ -116,14 +116,14 @@ def generate_html_content(heading, date, content)->str:
         <div class="content">
             {html_content}
         </div>
-        <div class="footer">
+        <!-- <div class="footer">
             <p>Follow us on:</p>
-            <!-- <div class="social-icons">
+            <div class="social-icons">
                 <img src="data:image/png;base64,{fb_image_base64}" alt="Facebook" />
                 <img src="data:image/png;base64,{linkedin_image_base64}" alt="LinkedIn" />
-            </div> -->
+            </div>
             <p>Contact us at: aibriefingroom@gmail.com</p>
-        </div>
+        </div> -->
     </body>
     </html>
     """
