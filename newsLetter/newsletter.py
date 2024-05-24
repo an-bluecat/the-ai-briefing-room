@@ -164,14 +164,16 @@ def send_email(subject:str, message:str, to_email, is_markdown=True)->None:
     msg_root.attach(msg_alternative)
 
     if is_markdown:
-        greeting = "## Hey friend,\n### Welcome to today's edition of AI Briefing Room.\n### Let's dive into it!"
+        # Yu An suggest not to have the greeting
+        # greeting = "## Hey friend,\n### Welcome to today's edition of AI Briefing Room.\n### Let's dive into it!"
+        greeting = ""
         print('Generating HTML content...')
         message = generate_html_content(heading="Wall-E's Tech Briefing", greeting=greeting, content=message)
         msg_alternative.attach(MIMEText(message, 'html'))
         assets_dir = root_dir / 'assets'
         image_files = {
-            'icon_facebook': assets_dir / 'fb.svg',
-            'icon_linkedin': assets_dir / 'in.svg',
+            'icon_facebook': assets_dir / 'fb.png',
+            'icon_linkedin': assets_dir / 'in.png',
         }
         for cid, file_path in image_files.items():
             with open(file_path, 'rb') as img_file:
@@ -236,7 +238,7 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 # Path to your downloaded service account key file
-SERVICE_ACCOUNT_FILE = 'ai-briefing-room-key.json'
+SERVICE_ACCOUNT_FILE = 'google-key.json'
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 def google_sheets_service():
