@@ -266,7 +266,7 @@ def format_newsletter(content: str)->tuple[str, str]:
     return newsletter_content
 
 
-TEST = True
+TEST = False
 TEST_EMAIL = '1835928575qq@gmail.com'
 
 def send_newsletter(newsletter_content:str, title:str, use_sheet = True, test = False) -> None:
