@@ -2,8 +2,8 @@ name: Send Newsletter
 
 on:
   schedule:
-    # Run at 13:00 UTC every day, which is 5:00 AM PST
-    - cron: '0 13 * * 2-6'
+    # Run at 15:00 UTC every day, which is 7:00 AM PST
+    - cron: '0 15 * * 2-6'
   workflow_dispatch:  # This allows manual triggering of the workflow
 
 jobs:
@@ -32,11 +32,12 @@ jobs:
         python3 -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Write Google Cloud Service Account Key
-      run: echo "${{ secrets.GOOGLE_KEY_JSON }}" > google-key.json
-
     - name: Run backend script
       run: python3 newsLetter/newsletter.py
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         OPENAI_ORGANIZATION_ID: ${{ secrets.OPENAI_ORGANIZATION_ID }}
+        GOOGLE_KEY: ${{ secrets.GOOGLE_KEY }}
+        EMAIL: ${{ secrets.EMAIL }}
+        SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+        SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}

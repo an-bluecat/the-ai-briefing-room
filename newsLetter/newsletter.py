@@ -10,6 +10,8 @@ import json
 from dotenv import load_dotenv
 from pathlib import Path
 import mimetypes
+from copy import deepcopy
+import base64
 
 newsLetter_dir = Path(__file__).parent
 root_dir = newsLetter_dir.parent
@@ -59,10 +61,19 @@ client = OpenAI(
 #         print(f"Error while generating newsletter title: {e}")
 #         return None
 
-def generate_html_content(heading, greeting, content)->str:
+def encode_image_to_base64(file_path):
+    with open(file_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode("utf-8")
+
+def generate_html_content(heading, date, content)->str:
     from markdown import markdown
     html_content = markdown(content)
-    html_greeting = markdown(greeting)
+
+    # Base64 encoding images
+    assets_dir = root_dir / 'assets'
+    fb_image_base64 = encode_image_to_base64(assets_dir / 'fb.png')
+    linkedin_image_base64 = encode_image_to_base64(assets_dir / 'in.png')
+
     return f"""
     <html>
     <head>
@@ -74,13 +85,11 @@ def generate_html_content(heading, greeting, content)->str:
                 padding: 20px;
             }}
             .header {{
+                text-align: center;
                 background-color: #1a73e8;
                 color: white;
                 padding: 10px;
                 border-radius: 10px;
-            }}
-            .heading {{
-                text-align: center;
             }}
             .content {{
                 background-color: white;
@@ -101,18 +110,18 @@ def generate_html_content(heading, greeting, content)->str:
     </head>
     <body>
         <div class="header">
-            <h1 class="heading">{heading}</h1>
-            <p>{html_greeting}</p>
+            <h1>{heading}</h1>
+            <h3>{date}</h3>
         </div>
         <div class="content">
             {html_content}
         </div>
         <div class="footer">
             <p>Follow us on:</p>
-            <div class="social-icons">
-                <img src="cid:icon_facebook" alt="Facebook" />
-                <img src="cid:icon_linkedin" alt="LinkedIn" />
-            </div>
+            <!-- <div class="social-icons">
+                <img src="data:image/png;base64,{fb_image_base64}" alt="Facebook" />
+                <img src="data:image/png;base64,{linkedin_image_base64}" alt="LinkedIn" />
+            </div> -->
             <p>Contact us at: aibriefingroom@gmail.com</p>
         </div>
     </body>
@@ -145,60 +154,41 @@ def generate_newsletter(content:str)->str:
         print(f"Error while generating newsletter title: {e}")
         return None
 
-def send_email(subject:str, message:str, to_email, is_markdown=True)->None:
-    if message is None:
-        print("No newsletter content to send.")
-        return
-
+def send_email(prepared_msg: MIMEMultipart, to_email: str) -> None:
     smtp_server = 'smtp.gmail.com'
     smtp_port = 587
-    smtp_username = 'aibriefingroom@gmail.com'
+    smtp_username = os.getenv("EMAIL")
     smtp_password = os.getenv("SMTP_PASSWORD")
+
+    msg = deepcopy(prepared_msg)
+    msg['To'] = to_email
+
+    try:
+        server = smtplib.SMTP(smtp_server, smtp_port)
+        server.starttls()
+        server.login(smtp_username, smtp_password)
+        server.sendmail(smtp_username, to_email, msg.as_string())
+        server.quit()
+        print("Email sent successfully to", to_email)
+    except Exception as e:
+        print(f"Failed to send email to {to_email}: {e}")
+
+def prepare_email(subject: str, message: str, is_markdown=True) -> MIMEMultipart:
+    smtp_username = os.getenv("EMAIL")
 
     msg_root = MIMEMultipart('related')
     msg_root['From'] = smtp_username
-    msg_root['To'] = to_email
     msg_root['Subject'] = subject
 
     msg_alternative = MIMEMultipart('alternative')
     msg_root.attach(msg_alternative)
 
     if is_markdown:
-        # Yu An suggest not to have the greeting
-        # greeting = "## Hey friend,\n### Welcome to today's edition of AI Briefing Room.\n### Let's dive into it!"
-        greeting = ""
-        print('Generating HTML content...')
-        message = generate_html_content(heading="Wall-E's Tech Briefing", greeting=greeting, content=message)
         msg_alternative.attach(MIMEText(message, 'html'))
-        assets_dir = root_dir / 'assets'
-        image_files = {
-            'icon_facebook': assets_dir / 'fb.png',
-            'icon_linkedin': assets_dir / 'in.png',
-        }
-        for cid, file_path in image_files.items():
-            with open(file_path, 'rb') as img_file:
-                img_data = img_file.read()
-                mime_type, _ = mimetypes.guess_type(file_path)
-                if mime_type is None:
-                    raise TypeError(f'Could not guess image MIME subtype for {file_path}')
-                _, subtype = mime_type.split('/')
-                img = MIMEImage(img_data, _subtype=subtype)
-                img.add_header('Content-ID', f'<{cid}>')
-                img.add_header('Content-Disposition', 'inline', filename=Path(file_path).name)
-                msg_root.attach(img)
     else:
         msg_root.attach(MIMEText(message, 'plain'))
 
-    try:
-        server = smtplib.SMTP(smtp_server, smtp_port)
-        server.starttls()
-        server.login(smtp_username, smtp_password)
-        server.sendmail(smtp_username, to_email, msg_root.as_string())
-        server.quit()
-        print("Email sent successfully!")
-    except Exception as e:
-        print(f"Failed to send email: {e}")
-
+    return msg_root
 
 # Database
 
@@ -238,13 +228,13 @@ from google.oauth2 import service_account
 from googleapiclient.discovery import build
 
 # Path to your downloaded service account key file
-SERVICE_ACCOUNT_FILE = 'google-key.json'
+SERVICE_ACCOUNT_INFO = json.loads(os.getenv('GOOGLE_KEY'))
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 def google_sheets_service():
     """Creates a Google Sheets service client using service account credentials."""
-    creds = service_account.Credentials.from_service_account_file(
-        SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+    creds = service_account.Credentials.from_service_account_info(
+        SERVICE_ACCOUNT_INFO, scopes=SCOPES)
     service = build('sheets', 'v4', credentials=creds)
     return service
 
@@ -262,14 +252,14 @@ def format_newsletter(content: str)->tuple[str, str]:
     # remove title and intro, and summary at the end
     # newsletter_content = "###" + "###".join(newsletter_content.split("###")[1:]).split("---")[0]
     # title = generate_newsletter_title(newsletter_content).content.lstrip("#")
-    newsletter_content += "Stay informed with Wall-E's tech updates, and see you back here tomorrow!\n\n---\n\n[🔊 Listen to the Full Podcast Episode Here](https://podcasters.spotify.com/pod/show/aibriefingroom)"
+    newsletter_content += "Stay informed with Wall-E's tech updates, and see you back here tomorrow!\n\n---\n\n[🔊 Listen to the Full Podcast Episode Here](https://aibriefingroom.podbean.com/)"
     return newsletter_content
 
 
 TEST = False
 TEST_EMAIL = '1835928575qq@gmail.com'
 
-def send_newsletter(newsletter_content:str, title:str, use_sheet = True, test = False) -> None:
+def send_newsletter(newsletter_content:str, subject:str, use_sheet = True, test = False) -> None:
     if test:
         subscribers = [TEST_EMAIL] # testing purpose
     elif use_sheet:
@@ -279,9 +269,24 @@ def send_newsletter(newsletter_content:str, title:str, use_sheet = True, test = 
       init_db()
       subscribers = get_subscribers()  # Retrieve all subscribers
 
+    print(f'Generated newsletter content...')
+    date = datetime.now().strftime('%m/%d/%Y')  # You can set a common greeting here if needed
+    html_content = generate_html_content(
+        heading=f"Wall-E's Tech Briefing",
+        date=date,
+        content=newsletter_content
+    )
+
+    # Prepare the email content once
+    prepared_msg = prepare_email(subject, html_content, is_markdown=True)
+
+
     for email in subscribers:
-        send_email(title, newsletter_content, email, is_markdown=True)
-        print(email)
+        send_email(prepared_msg, email)
+
+        # Only print the email if it is a test
+        if test:
+            print(email)
 
 if __name__ == "__main__":
     yesterday = datetime.now() - timedelta(days=1)
@@ -289,7 +294,17 @@ if __name__ == "__main__":
     # Path to your file, should keep it updated
     with open(root_dir / 'output' / formatted_date / 'podcast_data.json', 'r') as file:
         data = json.load(file)
-        title, description, script = data['Podcast Title'], data['Podcast Description'], data['Polished Script']
+        subject, description, script = data['Podcast Title'], data['Podcast Description'], data['Polished Script']
 
-    newsletter_content = format_newsletter(f'Podcast Description: {description}\n Podcast Script: {script}')
-    send_newsletter(newsletter_content, title, use_sheet=True, test=TEST)
+        # Remove the episode prefix from the title
+        import re
+        pattern = r"EP-\d+ "
+        subject = re.sub(pattern, "", subject)
+
+
+    if TEST:
+        newsletter_content = """sumary_line"""
+    else:
+        newsletter_content = format_newsletter(f'Podcast Description: {description}\n Podcast Script: {script}')
+
+    send_newsletter(newsletter_content, subject, use_sheet=True, test=TEST)

@@ -3,4 +3,3 @@
 .gitignore
 .env
 *.pyc
-google-key.json
