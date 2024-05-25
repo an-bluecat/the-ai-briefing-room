@@ -272,7 +272,7 @@ refined podcast script:
         else:
             print("Failed to download the image")
         
-        return image_prompt,f'{dir}generated_image.jpeg'
+        return image_prompt,f'{dir}{today}generated_image.jpeg'
                 
 
 def remove_leading_numbers(lst):
