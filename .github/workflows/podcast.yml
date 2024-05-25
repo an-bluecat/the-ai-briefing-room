@@ -35,14 +35,13 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Upload Podcast
+      - name: Upload Podcast [${{ env.current_count }}]
         env:
           PODBEAN_CLIENT_ID: ${{ secrets.PODBEAN_CLIENT_ID }}
           PODBEAN_CLIENT_SECRET: ${{ secrets.PODBEAN_CLIENT_SECRET }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python main.py ${{ env.current_count }}
-        name: Upload Podcast [${{ env.current_count }}]
 
 
       - name: Increment count
