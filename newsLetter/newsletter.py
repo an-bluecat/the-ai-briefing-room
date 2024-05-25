@@ -116,14 +116,14 @@ def generate_html_content(heading, date, content)->str:
         <div class="content">
             {html_content}
         </div>
-        <div class="footer">
+        <!-- <div class="footer">
             <p>Follow us on:</p>
-            <!-- <div class="social-icons">
+            <div class="social-icons">
                 <img src="data:image/png;base64,{fb_image_base64}" alt="Facebook" />
                 <img src="data:image/png;base64,{linkedin_image_base64}" alt="LinkedIn" />
-            </div> -->
+            </div>
             <p>Contact us at: aibriefingroom@gmail.com</p>
-        </div>
+        </div> -->
     </body>
     </html>
     """
@@ -289,8 +289,9 @@ def send_newsletter(newsletter_content:str, subject:str, use_sheet = True, test 
             print(email)
 
 if __name__ == "__main__":
-    yesterday = datetime.now() - timedelta(days=1)
-    formatted_date = yesterday.strftime('%Y-%m-%d')
+
+    previous_day = datetime.now() - timedelta(days=3) if datetime.now().weekday() == 0 else datetime.now() - timedelta(days=1)
+    formatted_date = previous_day.strftime('%Y-%m-%d')
     # Path to your file, should keep it updated
     with open(root_dir / 'output' / formatted_date / 'podcast_data.json', 'r') as file:
         data = json.load(file)
