@@ -2,7 +2,7 @@ name: Upload Podcast
 
 on:
   schedule:
-    - cron: '0 4 * * 1-5' # This runs at 4 AM UTC, which is 8 PM PST the previous day, Monday to Friday
+    - cron: '0 4 * * 2-6' # This runs at 4 AM UTC Tuesday to Saturday, which is 8 PM PST the previous day, Monday to Friday
   workflow_dispatch: # Allows manual triggering
 
 jobs:
@@ -35,13 +35,15 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Upload podcast
+      - name: Upload Podcast
         env:
           PODBEAN_CLIENT_ID: ${{ secrets.PODBEAN_CLIENT_ID }}
           PODBEAN_CLIENT_SECRET: ${{ secrets.PODBEAN_CLIENT_SECRET }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python main.py ${{ env.current_count }}
+        name: Upload Podcast [${{ env.current_count }}]
+
 
       - name: Increment count
         id: increment

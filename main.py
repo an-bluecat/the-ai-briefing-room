@@ -265,10 +265,10 @@ refined podcast script:
 
         # Check if the request was successful
         if image_response.status_code == 200:
-            with open(f'{dir}generated_image.jpeg', 'wb') as file:
+            with open(f'{dir}{today}generated_image.jpeg', 'wb') as file:
                 file.write(image_response.content)
             print("Image downloaded successfully!")
-            compress_image_to_target_size(f'{dir}generated_image.jpeg', 1)
+            compress_image_to_target_size(f'{dir}{today}generated_image.jpeg', 1)
         else:
             print("Failed to download the image")
         
