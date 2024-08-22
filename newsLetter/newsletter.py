@@ -314,7 +314,7 @@ def unsubscribe_user(service, email: str) -> bool:
     
     return False
 
-TEST = True
+TEST = False
 TEST_EMAIL = '1835928575qq@gmail.com'
 
 def send_newsletter(newsletter_content:str, subject:str, use_sheet = True, test = False) -> None:
