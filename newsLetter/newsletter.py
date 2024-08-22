@@ -255,8 +255,20 @@ def format_newsletter(content: str)->tuple[str, str]:
     newsletter_content += "Stay informed with Wall-E's tech updates, and see you back here tomorrow!\n\n---\n\n[🔊 Listen to the Full Podcast Episode Here](https://aibriefingroom.podbean.com/)"
     return newsletter_content
 
-def signup_newsletter(name: str, email: str, preferences: list) -> None:
-    service = google_sheets_service()
+def email_exists(service, email: str) -> bool:
+    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+    RANGE_NAME = 'response!B:B'  # Assuming email is in column B
+
+    result = service.spreadsheets().values().get(
+        spreadsheetId=SPREADSHEET_ID,
+        range=RANGE_NAME
+    ).execute()
+
+    emails = result.get('values', [])
+    emails_flat = [email_row[0] for email_row in emails if email_row]  # Flatten the list
+    return email in emails_flat
+
+def signup_newsletter(service, name: str, email: str, preferences: list, ) -> None:
     SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
     RANGE_NAME = 'response!A:D'
 
@@ -274,8 +286,33 @@ def signup_newsletter(name: str, email: str, preferences: list) -> None:
 
     print(f"Added {name} to the newsletter list...")
 
+def unsubscribe_user(service, email: str) -> bool:
+    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+    RANGE_NAME = 'response!B:E'  # Assuming email is in column B and unsubscribed is in column E
 
+    result = service.spreadsheets().values().get(
+        spreadsheetId=SPREADSHEET_ID,
+        range=RANGE_NAME
+    ).execute()
 
+    values = result.get('values', [])
+    
+    for idx, row in enumerate(values):
+        if len(row) > 0 and row[0] == email:
+            # If the email matches, update the 5th column (unsubscribed) with "True"
+            cell_range = f'response!E{idx + 1}'
+            update_body = {
+                "values": [["True"]]
+            }
+            service.spreadsheets().values().update(
+                spreadsheetId=SPREADSHEET_ID,
+                range=cell_range,
+                valueInputOption="USER_ENTERED",
+                body=update_body
+            ).execute()
+            return True
+    
+    return False
 
 TEST = True
 TEST_EMAIL = '1835928575qq@gmail.com'
