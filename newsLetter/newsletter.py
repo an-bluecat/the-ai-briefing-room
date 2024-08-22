@@ -255,8 +255,29 @@ def format_newsletter(content: str)->tuple[str, str]:
     newsletter_content += "Stay informed with Wall-E's tech updates, and see you back here tomorrow!\n\n---\n\n[🔊 Listen to the Full Podcast Episode Here](https://aibriefingroom.podbean.com/)"
     return newsletter_content
 
+def signup_newsletter(name: str, email: str, preferences: list) -> None:
+    service = google_sheets_service()
+    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+    RANGE_NAME = 'response!A:D'
 
-TEST = False
+    # Prepare the values to be appended
+    date = datetime.now().strftime('%m/%d/%Y')
+    values = [[date, email, name, ', '.join(preferences)]]
+    body = {'values': values}
+    result = service.spreadsheets().values().append(
+        spreadsheetId = SPREADSHEET_ID, 
+        range=RANGE_NAME, 
+        valueInputOption='RAW', 
+        insertDataOption="INSERT_ROWS", 
+        body=body
+    ).execute()
+
+    print(f"Added {name} to the newsletter list...")
+
+
+
+
+TEST = True
 TEST_EMAIL = '1835928575qq@gmail.com'
 
 def send_newsletter(newsletter_content:str, subject:str, use_sheet = True, test = False) -> None:
