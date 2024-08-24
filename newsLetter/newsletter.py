@@ -12,6 +12,7 @@ from pathlib import Path
 import mimetypes
 from copy import deepcopy
 import base64
+import uuid
 
 newsLetter_dir = Path(__file__).parent
 root_dir = newsLetter_dir.parent
@@ -271,11 +272,15 @@ def email_exists(service, email: str) -> bool:
 
 def signup_newsletter(service, name: str, email: str, preferences: list, ) -> None:
     SPREADSHEET_ID = os.getenv(SPREADSHEET_SRC)
-    RANGE_NAME = 'response!A:D'
+    RANGE_NAME = 'response!A:F'
+
+    # Unsubscribed UUID
+    def generate_unsubscribed_uuid():
+        return str(uuid.uuid4())
 
     # Prepare the values to be appended
     date = datetime.now().strftime('%m/%d/%Y')
-    values = [[date, email, name, ', '.join(preferences)]]
+    values = [[date, email, name, ', '.join(preferences), "", generate_unsubscribed_uuid()]]
     body = {'values': values}
     result = service.spreadsheets().values().append(
         spreadsheetId = SPREADSHEET_ID, 
@@ -287,6 +292,8 @@ def signup_newsletter(service, name: str, email: str, preferences: list, ) -> No
 
     print(f"Added {name} to the newsletter list...")
 
+
+""" Unsubscribe by email (deprecated) """
 def unsubscribe_user(service, email: str) -> bool:
     SPREADSHEET_ID = os.getenv(SPREADSHEET_SRC)
     RANGE_NAME = 'response!B:E'  # Assuming email is in column B and unsubscribed is in column E
@@ -314,6 +321,37 @@ def unsubscribe_user(service, email: str) -> bool:
             return True
     
     return False
+
+
+""" Unsubscribe by user's UUID """
+def unsubscribe_user_uuid(service, uuid: str) -> bool:
+    SPREADSHEET_ID = os.getenv(SPREADSHEET_SRC)
+    RANGE_NAME = 'response!F:F'  # Assuming uuid is in column F and unsubscribed is in column E
+
+    result = service.spreadsheets().values().get(
+        spreadsheetId=SPREADSHEET_ID,
+        range=RANGE_NAME
+    ).execute()
+
+    values = result.get('values', [])
+    
+    for idx, row in enumerate(values):
+        if len(row) > 0 and row[0] == uuid:
+            # If the uuid matches, update the 5th column (unsubscribed) with "True"
+            cell_range = f'response!E{idx + 1}'
+            update_body = {
+                "values": [["True"]]
+            }
+            service.spreadsheets().values().update(
+                spreadsheetId=SPREADSHEET_ID,
+                range=cell_range,
+                valueInputOption="USER_ENTERED",
+                body=update_body
+            ).execute()
+            return True
+    
+    return False
+
 
 TEST = False
 TEST_EMAIL = '1835928575qq@gmail.com'

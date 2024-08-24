@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from newsLetter.newsletter import signup_newsletter, email_exists, google_sheets_service, unsubscribe_user
+from newsLetter.newsletter import signup_newsletter, email_exists, google_sheets_service, unsubscribe_user, unsubscribe_user_uuid
 
 app = Flask(__name__)
 
@@ -27,7 +27,7 @@ def signup():
     
 
 @app.route('/newsletter/unsubscribe', methods=['POST'])
-def unsubscribe():
+def unsubscribe_by_email():
     data = request.get_json()
     email = data.get('email')
 
@@ -43,6 +43,21 @@ def unsubscribe():
             return jsonify({'message': 'User unsubscribed successfully'}), 200
         else:
             return jsonify({'error': 'Email not found'}), 404
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+    
+
+@app.route('/newsletter/unsubscribe/<uuid>', methods=['GET'])
+def unsubscribe_by_uuid(uuid):
+    try:
+        # Initialize Google Sheets service
+        service = google_sheets_service()
+
+        # Unsubscribe the user by marking the 5th column as "True"
+        if unsubscribe_user_uuid(service, uuid):
+            return jsonify({'message': 'User unsubscribed successfully'}), 200
+        else:
+            return jsonify({'error': 'Invalid unsubscription link'}), 404
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
