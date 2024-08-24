@@ -47,6 +47,5 @@ def unsubscribe():
         return jsonify({'error': str(e)}), 500
 
 
-# TODO: Unsubscribe feature
 if __name__ == '__main__':
     app.run()

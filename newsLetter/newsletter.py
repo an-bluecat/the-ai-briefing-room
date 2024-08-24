@@ -230,6 +230,7 @@ from googleapiclient.discovery import build
 # Path to your downloaded service account key file
 SERVICE_ACCOUNT_INFO = json.loads(os.getenv('GOOGLE_KEY'))
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+SPREADSHEET_SRC = "NEW_SPREADSHEET_ID"
 
 def google_sheets_service():
     """Creates a Google Sheets service client using service account credentials."""
@@ -240,7 +241,7 @@ def google_sheets_service():
 
 def get_subscribers(service):
     """Retrieves subscriber emails from a specific Google Sheets range."""
-    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+    SPREADSHEET_ID = os.getenv(SPREADSHEET_SRC)
     RANGE_NAME = 'response!B2:B'
     result = service.spreadsheets().values().get(
         spreadsheetId=SPREADSHEET_ID, range=RANGE_NAME).execute()
@@ -256,7 +257,7 @@ def format_newsletter(content: str)->tuple[str, str]:
     return newsletter_content
 
 def email_exists(service, email: str) -> bool:
-    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+    SPREADSHEET_ID = os.getenv(SPREADSHEET_SRC)
     RANGE_NAME = 'response!B:B'  # Assuming email is in column B
 
     result = service.spreadsheets().values().get(
@@ -269,7 +270,7 @@ def email_exists(service, email: str) -> bool:
     return email in emails_flat
 
 def signup_newsletter(service, name: str, email: str, preferences: list, ) -> None:
-    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+    SPREADSHEET_ID = os.getenv(SPREADSHEET_SRC)
     RANGE_NAME = 'response!A:D'
 
     # Prepare the values to be appended
@@ -287,7 +288,7 @@ def signup_newsletter(service, name: str, email: str, preferences: list, ) -> No
     print(f"Added {name} to the newsletter list...")
 
 def unsubscribe_user(service, email: str) -> bool:
-    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+    SPREADSHEET_ID = os.getenv(SPREADSHEET_SRC)
     RANGE_NAME = 'response!B:E'  # Assuming email is in column B and unsubscribed is in column E
 
     result = service.spreadsheets().values().get(
