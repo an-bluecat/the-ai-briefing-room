@@ -28,6 +28,9 @@ with open(newsLetter_dir / "newsletter_title.md", 'r', encoding='utf-8') as file
 
 MODEL = "GPT4"
 
+with open('config.json', 'r') as file:
+    config = json.load(file)
+
 load_dotenv()
 
 client = OpenAI(
@@ -231,9 +234,7 @@ from googleapiclient.discovery import build
 # Path to your downloaded service account key file
 SERVICE_ACCOUNT_INFO = json.loads(os.getenv('GOOGLE_KEY'))
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-SPREADSHEET_SRC = os.getenv('SPREADSHEET_SRC')
 
-print("Running on", SPREADSHEET_SRC)
 
 def google_sheets_service():
     """Creates a Google Sheets service client using service account credentials."""
@@ -244,7 +245,7 @@ def google_sheets_service():
 
 def get_subscribers(service):
     """Retrieves subscriber emails from a specific Google Sheets range."""
-    SPREADSHEET_ID = os.getenv(SPREADSHEET_SRC)
+    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
     RANGE_NAME = 'response!B2:B'
     result = service.spreadsheets().values().get(
         spreadsheetId=SPREADSHEET_ID, range=RANGE_NAME).execute()
@@ -259,8 +260,13 @@ def format_newsletter(content: str)->tuple[str, str]:
     newsletter_content += "Stay informed with Wall-E's tech updates, and see you back here tomorrow!\n\n---\n\n[🔊 Listen to the Full Podcast Episode Here](https://aibriefingroom.podbean.com/)"
     return newsletter_content
 
+
 def email_exists(service, email: str) -> bool:
-    SPREADSHEET_ID = os.getenv(SPREADSHEET_SRC)
+    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+
+    if USE_NEW_SPREADSHEET:
+        SPREADSHEET_ID = os.getenv("NEW_SPREADSHEET_ID")
+
     RANGE_NAME = 'response!B:B'  # Assuming email is in column B
 
     result = service.spreadsheets().values().get(
@@ -273,11 +279,17 @@ def email_exists(service, email: str) -> bool:
     return email in emails_flat
 
 def signup_newsletter(service, name: str, email: str, preferences: list) -> None:
-    SPREADSHEET_ID = os.getenv(SPREADSHEET_SRC)
+    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+
+    if USE_NEW_SPREADSHEET:
+        SPREADSHEET_ID = os.getenv("NEW_SPREADSHEET_ID")
+
     RANGE_NAME = 'response!A:F'
 
     # Prepare the values to be appended
     date = datetime.now().strftime('%m/%d/%Y')
+
+    # Note: value of preferences is currently defaulted to an empty list
     values = [[date, email, name, ', '.join(preferences), "", str(uuid.uuid4())]]
     body = {'values': values}
     result = service.spreadsheets().values().append(
@@ -293,7 +305,11 @@ def signup_newsletter(service, name: str, email: str, preferences: list) -> None
 
 """ Unsubscribe by email (deprecated) """
 def unsubscribe_user(service, email: str) -> bool:
-    SPREADSHEET_ID = os.getenv(SPREADSHEET_SRC)
+    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+
+    if USE_NEW_SPREADSHEET:
+        SPREADSHEET_ID = os.getenv("NEW_SPREADSHEET_ID")
+
     RANGE_NAME = 'response!B:E'  # Assuming email is in column B and unsubscribed is in column E
 
     result = service.spreadsheets().values().get(
@@ -323,7 +339,11 @@ def unsubscribe_user(service, email: str) -> bool:
 
 """ Unsubscribe by user's UUID """
 def unsubscribe_user_uuid(service, uuid: str) -> bool:
-    SPREADSHEET_ID = os.getenv(SPREADSHEET_SRC)
+    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+
+    if USE_NEW_SPREADSHEET:
+        SPREADSHEET_ID = os.getenv("NEW_SPREADSHEET_ID")
+
     RANGE_NAME = 'response!F:F'  # Assuming uuid is in column F and unsubscribed is in column E
 
     result = service.spreadsheets().values().get(
@@ -351,7 +371,8 @@ def unsubscribe_user_uuid(service, uuid: str) -> bool:
     return False
 
 
-TEST = False
+TEST = config["debug_mode"]
+USE_NEW_SPREADSHEET = config["use_new_spreadsheet"]
 TEST_EMAIL = '1835928575qq@gmail.com'
 
 def send_newsletter(newsletter_content:str, subject:str, use_sheet = True, test = False) -> None:
