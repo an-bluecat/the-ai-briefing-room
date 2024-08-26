@@ -231,7 +231,9 @@ from googleapiclient.discovery import build
 # Path to your downloaded service account key file
 SERVICE_ACCOUNT_INFO = json.loads(os.getenv('GOOGLE_KEY'))
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-SPREADSHEET_SRC = "NEW_SPREADSHEET_ID"
+SPREADSHEET_SRC = os.getenv('SPREADSHEET_SRC')
+
+print("Running on", SPREADSHEET_SRC)
 
 def google_sheets_service():
     """Creates a Google Sheets service client using service account credentials."""
@@ -270,17 +272,13 @@ def email_exists(service, email: str) -> bool:
     emails_flat = [email_row[0] for email_row in emails if email_row]  # Flatten the list
     return email in emails_flat
 
-def signup_newsletter(service, name: str, email: str, preferences: list, ) -> None:
+def signup_newsletter(service, name: str, email: str, preferences: list) -> None:
     SPREADSHEET_ID = os.getenv(SPREADSHEET_SRC)
     RANGE_NAME = 'response!A:F'
 
-    # Unsubscribed UUID
-    def generate_unsubscribed_uuid():
-        return str(uuid.uuid4())
-
     # Prepare the values to be appended
     date = datetime.now().strftime('%m/%d/%Y')
-    values = [[date, email, name, ', '.join(preferences), "", generate_unsubscribed_uuid()]]
+    values = [[date, email, name, ', '.join(preferences), "", str(uuid.uuid4())]]
     body = {'values': values}
     result = service.spreadsheets().values().append(
         spreadsheetId = SPREADSHEET_ID, 

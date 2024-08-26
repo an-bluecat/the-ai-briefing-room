@@ -8,7 +8,7 @@ def signup():
     data = request.get_json()
     name = data.get('name')
     email = data.get('email')
-    preferences = data.get('preferences', [])
+    preferences = data.get('preferences', []) # Default value is an empty list
     service = google_sheets_service()
 
     if not name or not email:
