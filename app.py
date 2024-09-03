@@ -1,14 +1,21 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from newsLetter.newsletter import signup_newsletter, email_exists, google_sheets_service, unsubscribe_user, unsubscribe_user_uuid
 
 app = Flask(__name__)
 
 @app.route('/newsletter/signup', methods=['POST'])
 def signup():
-    data = request.get_json()
-    name = data.get('name')
-    email = data.get('email')
-    preferences = data.get('preferences', []) # Default value is an empty list
+    # Check if the request is JSON (API requqest) or form data (from the web interface)
+    if request.is_json:
+        data = request.get_json()
+        name = data.get('name')
+        email = data.get('email')
+        preferences = data.get('preferences', []) # Default value is an empty list
+    else:
+        name = request.form.get('name')
+        email = request.form.get('email')
+        preferences = request.form.getlist('preferences')
+
     service = google_sheets_service()
 
     if not name or not email:
@@ -60,6 +67,11 @@ def unsubscribe_by_uuid(uuid):
             return jsonify({'error': 'Invalid unsubscription link'}), 404
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
+
+@app.route('/subscribe', methods=['GET'])
+def show_subscribe_form():
+    return render_template('subscribe.html')
 
 
 if __name__ == '__main__':
