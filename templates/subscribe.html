@@ -8,37 +8,111 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <title>Subscribe to Newsletter</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa; /* Light background color */
+        color: #333;
+      }
+
+      .left-column {
+        background: linear-gradient(150deg, #1C73E8 33%, #104082 100%);
+        color: white;
+        padding: 50px;
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .right-column {
+        background-color: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        height: 100vh;
+      }
+
+      .signup-card {
+        background-color: #F4F4F9;
+        color: #000;
+        border-radius: 5px;
+        padding: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-primary {
+        background-color: #000000;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #333333;
+      }
+
+      .custom-image {
+        max-width: 70%;
+        height: auto;
+      }
+    </style>
+    <title>Subscribe to Wall-E's Tech Briefing</title>
   </head>
   <body>
-    <div class="container mt-5">
-      <h2>Subscribe to Our Tech Newsletter</h2>
-      <form method="POST" action="/newsletter/signup">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            name="name"
-            placeholder="Enter your name"
-            required
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col-md-6 left-column">
+          <h1>Welcome to Wall-E</h1>
+          <p>
+            Your personal AI news anchor that brews fresh and steamy news for
+            you every morning.
+          </p>
+          <div class="signup-card">
+            <h4 class="mb-2"><b>Subscribe Now</b></h4>
+            <form id="subscriptionForm" action="/newsletter/signup" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="col-md-6 right-column">
+          <img
+            src="{{ url_for('static', filename='feature_preview.png') }}"
+            alt="AI Briefing Room"
+            class="custom-image"
           />
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            name="email"
-            placeholder="Enter your email"
-            required
-          />
-        </div>
-        <!-- Add any other fields like preferences here -->
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-      </form>
+      </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

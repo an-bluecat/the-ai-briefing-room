@@ -374,10 +374,11 @@ def unsubscribe_user_uuid(service, uuid: str) -> bool:
 TEST = config["debug_mode"]
 USE_NEW_SPREADSHEET = config["use_new_spreadsheet"]
 TEST_EMAIL = '1835928575qq@gmail.com'
+TEST_EMAIL2 = 'benny.wu.new@gmail.com'
 
 def send_newsletter(newsletter_content:str, subject:str, use_sheet = True, test = False) -> None:
     if test:
-        subscribers = [TEST_EMAIL] # testing purpose
+        subscribers = [TEST_EMAIL, TEST_EMAIL2] # testing purpose
     elif use_sheet:
       service = google_sheets_service()
       subscribers = get_subscribers(service)
@@ -420,7 +421,8 @@ if __name__ == "__main__":
 
 
     if TEST:
-        newsletter_content = """sumary_line"""
+        # newsletter_content = """sumary_line"""
+        newsletter_content = format_newsletter(f'Podcast Description: {description}\n Podcast Script: {script}')
     else:
         newsletter_content = format_newsletter(f'Podcast Description: {description}\n Podcast Script: {script}')
 
