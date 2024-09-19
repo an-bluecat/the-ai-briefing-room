@@ -12,6 +12,7 @@ from pathlib import Path
 import mimetypes
 from copy import deepcopy
 import base64
+import uuid
 
 newsLetter_dir = Path(__file__).parent
 root_dir = newsLetter_dir.parent
@@ -26,6 +27,9 @@ with open(newsLetter_dir / "newsletter_title.md", 'r', encoding='utf-8') as file
     TLDR_TITLE_EXAMPLE = file.read()
 
 MODEL = "GPT4"
+
+with open('config.json', 'r') as file:
+    config = json.load(file)
 
 load_dotenv()
 
@@ -231,6 +235,7 @@ from googleapiclient.discovery import build
 SERVICE_ACCOUNT_INFO = json.loads(os.getenv('GOOGLE_KEY'))
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
+
 def google_sheets_service():
     """Creates a Google Sheets service client using service account credentials."""
     creds = service_account.Credentials.from_service_account_info(
@@ -256,12 +261,124 @@ def format_newsletter(content: str)->tuple[str, str]:
     return newsletter_content
 
 
-TEST = False
+def email_exists(service, email: str) -> bool:
+    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+
+    if USE_NEW_SPREADSHEET:
+        SPREADSHEET_ID = os.getenv("NEW_SPREADSHEET_ID")
+
+    RANGE_NAME = 'response!B:B'  # Assuming email is in column B
+
+    result = service.spreadsheets().values().get(
+        spreadsheetId=SPREADSHEET_ID,
+        range=RANGE_NAME
+    ).execute()
+
+    emails = result.get('values', [])
+    emails_flat = [email_row[0] for email_row in emails if email_row]  # Flatten the list
+    return email in emails_flat
+
+def signup_newsletter(service, name: str, email: str, preferences: list) -> None:
+    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+
+    if USE_NEW_SPREADSHEET:
+        SPREADSHEET_ID = os.getenv("NEW_SPREADSHEET_ID")
+
+    RANGE_NAME = 'response!A:F'
+
+    # Prepare the values to be appended
+    date = datetime.now().strftime('%m/%d/%Y')
+
+    # Note: value of preferences is currently defaulted to an empty list
+    values = [[date, email, name, ', '.join(preferences), "", str(uuid.uuid4())]]
+    body = {'values': values}
+    result = service.spreadsheets().values().append(
+        spreadsheetId = SPREADSHEET_ID, 
+        range=RANGE_NAME, 
+        valueInputOption='RAW', 
+        insertDataOption="INSERT_ROWS", 
+        body=body
+    ).execute()
+
+    print(f"Added {name} to the newsletter list...")
+
+
+""" Unsubscribe by email (deprecated) """
+def unsubscribe_user(service, email: str) -> bool:
+    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+
+    if USE_NEW_SPREADSHEET:
+        SPREADSHEET_ID = os.getenv("NEW_SPREADSHEET_ID")
+
+    RANGE_NAME = 'response!B:E'  # Assuming email is in column B and unsubscribed is in column E
+
+    result = service.spreadsheets().values().get(
+        spreadsheetId=SPREADSHEET_ID,
+        range=RANGE_NAME
+    ).execute()
+
+    values = result.get('values', [])
+    
+    for idx, row in enumerate(values):
+        if len(row) > 0 and row[0] == email:
+            # If the email matches, update the 5th column (unsubscribed) with "True"
+            cell_range = f'response!E{idx + 1}'
+            update_body = {
+                "values": [["True"]]
+            }
+            service.spreadsheets().values().update(
+                spreadsheetId=SPREADSHEET_ID,
+                range=cell_range,
+                valueInputOption="USER_ENTERED",
+                body=update_body
+            ).execute()
+            return True
+    
+    return False
+
+
+""" Unsubscribe by user's UUID """
+def unsubscribe_user_uuid(service, uuid: str) -> bool:
+    SPREADSHEET_ID = os.getenv("SPREADSHEET_ID")
+
+    if USE_NEW_SPREADSHEET:
+        SPREADSHEET_ID = os.getenv("NEW_SPREADSHEET_ID")
+
+    RANGE_NAME = 'response!F:F'  # Assuming uuid is in column F and unsubscribed is in column E
+
+    result = service.spreadsheets().values().get(
+        spreadsheetId=SPREADSHEET_ID,
+        range=RANGE_NAME
+    ).execute()
+
+    values = result.get('values', [])
+    
+    for idx, row in enumerate(values):
+        if len(row) > 0 and row[0] == uuid:
+            # If the uuid matches, update the 5th column (unsubscribed) with "True"
+            cell_range = f'response!E{idx + 1}'
+            update_body = {
+                "values": [["True"]]
+            }
+            service.spreadsheets().values().update(
+                spreadsheetId=SPREADSHEET_ID,
+                range=cell_range,
+                valueInputOption="USER_ENTERED",
+                body=update_body
+            ).execute()
+            return True
+    
+    return False
+
+
+TEST = config["debug_mode"]
+USE_NEW_SPREADSHEET = config["use_new_spreadsheet"]
 TEST_EMAIL = '1835928575qq@gmail.com'
+TEST_EMAIL2 = 'benny.wu.new@gmail.com'
 
 def send_newsletter(newsletter_content:str, subject:str, use_sheet = True, test = False) -> None:
     if test:
-        subscribers = [TEST_EMAIL] # testing purpose
+        subscribers = [TEST_EMAIL, TEST_EMAIL2] # testing purpose
     elif use_sheet:
       service = google_sheets_service()
       subscribers = get_subscribers(service)
@@ -304,7 +421,8 @@ if __name__ == "__main__":
 
 
     if TEST:
-        newsletter_content = """sumary_line"""
+        # newsletter_content = """sumary_line"""
+        newsletter_content = format_newsletter(f'Podcast Description: {description}\n Podcast Script: {script}')
     else:
         newsletter_content = format_newsletter(f'Podcast Description: {description}\n Podcast Script: {script}')
 
