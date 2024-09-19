@@ -41,3 +41,4 @@ jobs:
         EMAIL: ${{ secrets.EMAIL }}
         SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
         SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        NEW_SPREADSHEET_ID: ${{ secrets.NEW_SPREADSHEET_ID }}
